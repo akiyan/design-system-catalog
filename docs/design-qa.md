@@ -64,3 +64,5 @@ Status: PASS. Ant Design, Microsoft Fluent 2, Astryx, Adobe React Aria and GitHu
 The remaining 62 systems retain descending release-date order. All 67 entries appear exactly once. Matching category filters retain the featured group; the public-sector category shows its usual date-sorted list. Sequential mobile controls, touch gestures, Home/End and J/K follow the displayed order. Default selection and homepage OG image use the first featured entry.
 
 Reviewed `featured-desktop.png` at 1440×1024 and `featured-mobile.png` at 390×844. Existing thumbnail density, preview proportions, bilingual descriptions and mobile header behavior are preserved. No mobile horizontal overflow was observed. All 17 browser tests passed locally, including featured ordering/deduplication and category behavior.
+
+Production deployment: https://23450f90.design-system-catalog-925.pages.dev. All 17 production checks passed across the main run and a focused rerun: the sequential all-path check initially hit the 30-second network deadline at `/dsfr/`, then all 67 paths passed in 3.2 seconds with a larger test deadline. No application failure was found.
