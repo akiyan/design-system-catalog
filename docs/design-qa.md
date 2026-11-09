@@ -26,3 +26,5 @@ Production https://0e83ca87.design-system-catalog-925.pages.dev deployed success
 ## Compact mobile header
 
 Status: PASS. Mobile hides the keyboard-help button and places the title and language selector on one line. Verified both languages at 320, 390 and 700px with no overlap or horizontal overflow. Category controls appear only in the mobile list and return when leaving details; desktop controls remain visible. Reviewed `mobile-compact-header.png` and `mobile-compact-detail.png`. The full 14-test suite passed for the header changes; all three mobile tests passed after restricting category controls to the list.
+
+Production compact header and list-only category controls verified at 320px after deployment to https://83d5a10d.design-system-catalog-925.pages.dev.
