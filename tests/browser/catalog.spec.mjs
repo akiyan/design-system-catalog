@@ -80,19 +80,20 @@ test('automatic language detection follows browser preference', async ({browser}
   }
 });
 
-test('manual language selection persists, translates metadata/help, and returns to auto', async ({page}) => {
+test('manual language selection persists, translates metadata/help, and switches back to Japanese', async ({page}) => {
   await page.goto('/dads/'); await ready(page);
-  await page.getByRole('combobox').selectOption('en');
+  await page.getByRole('button',{name:'English',exact:true}).click();
   await expect(page.locator('html')).toHaveAttribute('lang','en');
   await expect(page.locator('.preview-heading h1')).toHaveText('Digital Agency Design System (DADS)');
   await expect(page.locator('.source-meta')).toContainText('Japan');
+  await page.getByRole('button',{name:'Keyboard shortcuts',exact:true}).focus();
   await page.keyboard.press('?');
   await expect(page.getByRole('dialog',{name:'Keyboard shortcuts'})).toBeVisible();
   await page.keyboard.press('Escape');
   await page.reload(); await ready(page);
   await expect(page.locator('html')).toHaveAttribute('lang','en');
-  await expect(page.getByRole('combobox')).toHaveValue('en');
-  await page.getByRole('combobox').selectOption('auto');
+  await expect(page.getByRole('button',{name:'English',exact:true})).toHaveAttribute('aria-pressed','true');
+  await page.getByRole('button',{name:'日本語',exact:true}).click();
   await expect(page.locator('html')).toHaveAttribute('lang','ja');
 });
 
@@ -116,7 +117,7 @@ test('keyboard selection, boundaries, screenshot switching, zoom and help focus'
   const close=page.getByRole('button',{name:'ヘルプを閉じる'});
   await expect(close).toBeFocused(); await page.keyboard.press('Tab'); await expect(close).toBeFocused();
   await page.keyboard.press('Escape'); await expect(page.locator('.help-dialog')).not.toBeVisible(); await expect(help).toBeFocused();
-  const language=page.getByRole('combobox'); await language.focus();
+  const language=page.getByRole('button',{name:'日本語',exact:true}); await language.focus();
   await page.keyboard.press('?'); await expect(page.locator('.help-dialog')).not.toBeVisible();
   await expect(active(page)).toContainText('Astryx');
 });
@@ -197,7 +198,7 @@ test('mobile list has no selected state and detail buttons browse the active cat
   await expect(page.locator('.system-position')).toHaveText('2 / 12');
   await page.getByRole('link',{name:'前のデザインシステム',exact:true}).click();
   await expect(page).toHaveURL(/\/canada\/$/);
-  await page.getByRole('combobox').selectOption('en');
+  await page.getByRole('button',{name:'English',exact:true}).click();
   await page.setViewportSize({width:320,height:740});
   await expect(page.getByRole('link',{name:'Next design system',exact:true})).toBeVisible();
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);

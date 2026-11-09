@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { ArrowSquareOut, ArrowLeft, CaretLeft, CaretRight, GithubLogo, Keyboard, Translate, X, ImageBroken } from '@phosphor-icons/react';
+import { ArrowSquareOut, ArrowLeft, CaretLeft, CaretRight, GithubLogo, Keyboard, X, ImageBroken } from '@phosphor-icons/react';
 import { systems, systemPath, systemFromPath, systemName } from './catalog';
 import { messages, detectLanguage } from './i18n';
 
@@ -174,7 +174,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
     if (!ready) return;
     const onKeyDown = event => {
       if (event.isComposing || event.ctrlKey || event.metaKey || event.altKey || event.defaultPrevented) return;
-      const editable = event.target instanceof HTMLElement && event.target.closest('input, textarea, select, [contenteditable]:not([contenteditable="false"])');
+      const editable = event.target instanceof HTMLElement && event.target.closest('.language-control, input, textarea, select, [contenteditable]:not([contenteditable="false"])');
       if (editable) return;
       if (event.key === '?') {
         event.preventDefault();
@@ -233,11 +233,10 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
         <nav className="filters" aria-label={t.category}>
           {categories.map(id => <button key={id} type="button" disabled={!ready} aria-pressed={category === id} className={category === id ? 'filter active' : 'filter'} onClick={() => chooseCategory(id)}>{t[id]}<span>{id === 'all' ? systems.length : systems.filter(s => s.category === id).length}</span></button>)}
         </nav>
-        <label className="language-control"><Translate size={19} aria-hidden="true" /><span className="sr-only">{t.language}</span>
-          <select value={languagePreference} onChange={e => chooseLanguage(e.target.value)} disabled={!ready}>
-            <option value="auto">{t.auto}</option><option value="ja" lang="ja">日本語</option><option value="en" lang="en">English</option>
-          </select>
-        </label>
+        <div className="language-control" role="group" aria-label={t.language}>
+          <button type="button" lang="ja" aria-pressed={language === 'ja'} disabled={!ready} onClick={() => chooseLanguage('ja')}>日本語</button>
+          <button type="button" lang="en" aria-pressed={language === 'en'} disabled={!ready} onClick={() => chooseLanguage('en')}>English</button>
+        </div>
         <button className="help-trigger" type="button" disabled={!ready} aria-label={t.help} title={`${t.help} (?)`} onClick={() => setHelpOpen(true)}><Keyboard size={22} /><kbd>?</kbd></button>
       </div>
     </header>

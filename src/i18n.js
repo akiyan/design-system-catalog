@@ -1,7 +1,7 @@
 export const messages = {
  ja: {
  title:'デザインシステムカタログ', all:'すべて', public:'政府・公共', oss:'企業・OSS', newest:'公開日が新しい順',
- language:'表示言語', auto:'自動 / Auto', help:'キーボード操作', skip:'カタログへ移動', list:'デザインシステム一覧',
+ language:'表示言語', help:'キーボード操作', skip:'カタログへ移動', list:'デザインシステム一覧',
  browseSystems:'デザインシステムを切り替え', previousSystem:'前のデザインシステム', nextSystem:'次のデザインシステム', previousShort:'前へ', nextShort:'次へ',
  preview:'選択中のデザインシステム', back:'一覧に戻る', official:'公式サイト', newTab:'新しいタブで開く',
  enlarge:'拡大表示', views:'プレビュー画面', closeZoom:'拡大表示を閉じる', previous:'前のプレビュー', next:'次のプレビュー',
@@ -15,7 +15,7 @@ export const messages = {
  },
  en: {
  title:'Design System Catalog', all:'All', public:'Government', oss:'Companies & OSS', newest:'Newest first',
- language:'Display language', auto:'Auto / 自動', help:'Keyboard shortcuts', skip:'Skip to catalog', list:'Design systems',
+ language:'Display language', help:'Keyboard shortcuts', skip:'Skip to catalog', list:'Design systems',
  browseSystems:'Browse design systems', previousSystem:'Previous design system', nextSystem:'Next design system', previousShort:'Previous', nextShort:'Next',
  preview:'Selected design system', back:'Back to list', official:'Official site', newTab:'Opens in a new tab',
  enlarge:'Enlarge preview', views:'Preview screens', closeZoom:'Close enlarged preview', previous:'Previous preview', next:'Next preview',

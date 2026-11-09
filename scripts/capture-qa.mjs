@@ -18,7 +18,7 @@ await page.screenshot({ path: 'docs/update-desktop.png' });
 await page.keyboard.press('?');
 await page.screenshot({ path: 'docs/update-keyboard-help.png' });
 await page.keyboard.press('Escape');
-await page.getByRole('combobox').selectOption('en');
+await page.getByRole('button',{name:'English',exact:true}).click();
 await page.screenshot({ path: 'docs/update-english.png' });
 await page.setViewportSize({ width: 390, height: 844 });
 await page.screenshot({ path: 'docs/update-mobile-detail.png' });

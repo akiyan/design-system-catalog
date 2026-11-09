@@ -64,3 +64,9 @@ a.system-row{cursor:pointer}
 }
 
 @media(max-width:700px){.catalog-app.mobile-detail .header-controls .filters{display:none}}
+
+.language-control{display:flex;align-items:stretch;gap:0;border:1px solid #cbd1dd;border-radius:5px;background:#fff;padding:2px}
+.language-control button{font-size:12px;min-height:32px;padding:5px 9px;border-radius:3px;white-space:nowrap}
+.language-control button[aria-pressed="true"]{background:var(--blue);color:#fff;font-weight:650}
+.language-control button:hover:not([aria-pressed="true"]){background:#edf1f7}
+@media(max-width:700px){.language-control{width:auto;margin:0;gap:0}.language-control button{font-size:10px;min-height:30px;padding:4px 6px}}
