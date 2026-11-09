@@ -48,6 +48,8 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
   const helpDialog = useRef(null);
   const officialLink = useRef(null);
   const rowRefs = useRef({});
+  const workspace = useRef(null);
+  const listScrollTop = useRef(0);
   const t = messages[language];
   const filtered = systems.filter(s => category === 'all' || s.category === category);
   const selected = systems.find(s => s.id === selectedId) || systems[0];
@@ -79,6 +81,9 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
       setMobilePreview(Boolean(restored));
       setZoomOpen(false);
       setHelpOpen(false);
+      if (window.matchMedia('(max-width: 700px)').matches) {
+        requestAnimationFrame(() => workspace.current?.scrollTo({ top: restored ? 0 : listScrollTop.current, behavior: 'instant' }));
+      }
     };
     window.addEventListener('popstate', onPopState);
     return () => window.removeEventListener('popstate', onPopState);
@@ -118,6 +123,10 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
   }
 
   function selectSystem(system, { showDetail = true, focus = false } = {}) {
+    if (isMobile && showDetail) {
+      if (!mobilePreview) listScrollTop.current = workspace.current?.scrollTop || 0;
+      requestAnimationFrame(() => workspace.current?.scrollTo({ top: 0, behavior: 'instant' }));
+    }
     setSelectedId(system.id);
     setViewIndex(0);
     setMobilePreview(showDetail);
@@ -130,6 +139,14 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
         row?.scrollIntoView({ block: 'nearest', behavior: 'instant' });
       });
     }
+  }
+
+  function returnToList() {
+    setMobilePreview(false);
+    requestAnimationFrame(() => {
+      rowRefs.current[selected.id]?.focus({ preventScroll: true });
+      workspace.current?.scrollTo({ top: listScrollTop.current, behavior: 'instant' });
+    });
   }
 
   function chooseCategory(id) {
@@ -211,8 +228,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
         officialLink.current?.click();
       } else if (event.key === 'Escape' && mobilePreview) {
         event.preventDefault();
-        setMobilePreview(false);
-        requestAnimationFrame(() => rowRefs.current[selected.id]?.focus());
+        returnToList();
       }
     };
     window.addEventListener('keydown', onKeyDown);
@@ -240,7 +256,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
         <button className="help-trigger" type="button" disabled={!ready} aria-label={t.help} title={`${t.help} (?)`} onClick={() => setHelpOpen(true)}><Keyboard size={22} /><kbd>?</kbd></button>
       </div>
     </header>
-    <main className={`workspace ${mobilePreview ? 'mobile-preview' : ''}`}>
+    <main ref={workspace} className={`workspace ${mobilePreview ? 'mobile-preview' : ''}`}>
       <section id="catalog-list" className="catalog-list" aria-label={t.list} tabIndex={-1}>
         <div className="list-toolbar"><span>{t.newest}</span><span>{filtered.length}</span></div>
         <p className="sr-only" role="status">{filtered.length} {t.count} — {systemName(selected, language)}</p>
@@ -259,7 +275,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
       </section>
       <section className="preview-panel" aria-label={t.preview}>
         <div className="mobile-detail-toolbar">
-          <button className="back-to-list text-button" onClick={() => { setMobilePreview(false); requestAnimationFrame(() => rowRefs.current[selected.id]?.focus()); }}><ArrowLeft size={18} />{t.back}</button>
+          <button className="back-to-list text-button" onClick={returnToList}><ArrowLeft size={18} />{t.back}</button>
           <nav className="system-navigation" aria-label={t.browseSystems}>
             {previousSystem ? <a href={systemPath(previousSystem)} aria-label={t.previousSystem} onClick={event => { if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0 || !ready) return; event.preventDefault(); navigateAdjacent(previousSystem); }}><CaretLeft size={18} />{t.previousShort}</a> : <button disabled aria-label={t.previousSystem}><CaretLeft size={18} />{t.previousShort}</button>}
             <span className="system-position" role="status">{selectedIndex + 1} / {filtered.length}</span>

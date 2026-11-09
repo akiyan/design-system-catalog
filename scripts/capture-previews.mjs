@@ -1,11 +1,18 @@
 import { chromium } from '@playwright/test';
-import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, access } from 'node:fs/promises';
 const systems = JSON.parse(await readFile(new URL('../src/data/systems.json', import.meta.url)));
 await mkdir('public/previews', {recursive:true});
 const browser = await chromium.launch({headless:true});
-const requestedIds=process.argv.slice(2).flatMap(value=>value.split(','));
+const requestedIds=process.argv.slice(2).filter(value=>!value.startsWith('--')).flatMap(value=>value.split(','));
 const selectedSystems=requestedIds.length?systems.filter(s=>requestedIds.includes(s.id)):systems;
-const jobs = selectedSystems.flatMap(s=>s.views.map((v,i)=>({...v,id:s.id,index:i})));
+let jobs = selectedSystems.flatMap(s=>s.views.map((v,i)=>({...v,id:s.id,index:i})));
+if(process.argv.includes('--missing')) {
+ const pending=[];
+ for(const job of jobs) {
+  try { await access(`public/previews/${job.id}-${job.index}.webp`); } catch { pending.push(job); }
+ }
+ jobs=pending;
+}
 const results=[];
 async function work() {
  const context=await browser.newContext({viewport:{width:1440,height:1000},deviceScaleFactor:1,locale:'en-US',reducedMotion:'reduce'});
@@ -30,7 +37,7 @@ async function work() {
     if(await button.count() && await button.first().isVisible()) await button.first().click().catch(()=>{});
    }
    const title=await page.title();
-   if(/sign in|log in|login/i.test(title)) throw new Error('Authentication required; excluded from previews');
+   if(/404|page not found|not found|sign in|log in|login/i.test(title)) throw new Error('Unavailable or authentication-required source; excluded from previews');
    const text=await page.locator('body').first().innerText();
    if(text.length<100 || /Access denied|Just a moment|Checking your browser/i.test(text.slice(0,300))) throw new Error('Blocked or empty source');
    await page.screenshot({path:`public/previews/${job.id}-${job.index}.webp`,type:'webp',quality:88});
@@ -43,4 +50,4 @@ async function work() {
 }
 await Promise.all([work(),work(),work()]);
 await browser.close();
-await writeFile(requestedIds.length>1?'docs/capture-manifest-additions.json':requestedIds.length?`docs/capture-manifest-${requestedIds[0]}.json`:'docs/capture-manifest.json',JSON.stringify({capturedAt:new Date().toISOString(),viewport:{width:1440,height:1000},results},null,2));
+await writeFile(process.argv.includes('--missing')?'docs/capture-manifest-expanded-views.json':requestedIds.length>1?'docs/capture-manifest-additions.json':requestedIds.length?`docs/capture-manifest-${requestedIds[0]}.json`:'docs/capture-manifest.json',JSON.stringify({capturedAt:new Date().toISOString(),viewport:{width:1440,height:1000},results},null,2));

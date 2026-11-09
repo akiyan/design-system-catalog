@@ -34,3 +34,11 @@ Production compact header and list-only category controls verified at 320px afte
 Status: PASS. Replaced the select menu with two pressed-state buttons, 日本語 and English, and removed Auto. Browser-language detection still applies before an explicit choice; manual choices persist. Reviewed `mobile-language-toggle.png` and checked both languages at 320/390/700px for header overlap and overflow. Updated language tests for button interaction, persisted selection and shortcut exclusion while a language button has focus. All 14 tests passed across the full run and the focused rerun after adapting help-dialog focus to the new buttons.
 
 Language detection and persistent toggle tests also passed against production after deployment to https://b11791fa.design-system-catalog-925.pages.dev.
+
+## Expanded source captures and mobile scroll reset
+
+Status: PASS. Added 109 official source captures, bringing the total to 170 across 43 systems. 37 systems now have multiple views. Captures include data tables, dialogs, selection menus, text fields, navigation, colors, typography, spacing and brand applications where available. Reviewed all six contact sheets. Capture manifests and discovery evidence record the original source URLs. Existing captures and ordering were preserved. Systems with limited accessible public documentation keep their verified existing capture.
+
+Mobile selection resets the shared workspace scroll after the detail layout is committed. Returning to the list restores its saved offset without focus scrolling. A regression test opens GOV.UK from a deeply scrolled list, verifies detail scrollTop=0, returns to the original offset, and opens it again.
+
+All 15 browser tests passed against the local static preview. Desktop/mobile screenshots were updated with no console errors.

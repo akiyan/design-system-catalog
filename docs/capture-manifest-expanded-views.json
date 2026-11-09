@@ -1,0 +1,329 @@
+{
+  "capturedAt": "2026-11-09T13:42:30.630Z",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "results": [
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://gestalt.pinterest.systems/web/table",
+      "id": "gestalt",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://gestalt.pinterest.systems/v1/web/table",
+      "title": "Table - Gestalt"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://gestalt.pinterest.systems/web/modal",
+      "id": "gestalt",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://gestalt.pinterest.systems/v1/web/modal",
+      "title": "Modal - Gestalt"
+    },
+    {
+      "label": "選択メニュー",
+      "labelEn": "Select menus",
+      "url": "https://gestalt.pinterest.systems/web/selectlist",
+      "id": "gestalt",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://gestalt.pinterest.systems/v1/web/selectlist",
+      "title": "SelectList - Gestalt"
+    },
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://www.designsystem.tech.gov.sg/components/data-table",
+      "id": "sgds",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://www.designsystem.tech.gov.sg/components/data-table",
+      "title": "Data table – Singapore Government Design System"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://www.designsystem.tech.gov.sg/components/modal",
+      "id": "sgds",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://www.designsystem.tech.gov.sg/components/modal",
+      "title": "Modal – Singapore Government Design System"
+    },
+    {
+      "label": "選択メニュー",
+      "labelEn": "Select menus",
+      "url": "https://www.designsystem.tech.gov.sg/components/select",
+      "id": "sgds",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://www.designsystem.tech.gov.sg/components/select",
+      "title": "Select – Singapore Government Design System"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://astryx.atmeta.com/components/Dialog",
+      "id": "astryx",
+      "index": 5,
+      "status": "captured",
+      "finalUrl": "https://astryx.atmeta.com/components/Dialog",
+      "title": "Dialog · Astryx"
+    },
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://designers.italia.it/design-system/componenti/tables/",
+      "id": "italia",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://designers.italia.it/design-system/componenti/tables/",
+      "title": "Tables - Designers Italia"
+    },
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://astryx.atmeta.com/components/Table",
+      "id": "astryx",
+      "index": 4,
+      "status": "captured",
+      "finalUrl": "https://astryx.atmeta.com/components/Table",
+      "title": "Table · Astryx"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://designers.italia.it/design-system/componenti/modal/",
+      "id": "italia",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://designers.italia.it/design-system/componenti/modal/",
+      "title": "Modal - Designers Italia"
+    },
+    {
+      "label": "フォーム",
+      "labelEn": "Forms",
+      "url": "https://designers.italia.it/design-system/componenti/form/",
+      "id": "italia",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://designers.italia.it/design-system/componenti/form/",
+      "title": "Form - Designers Italia"
+    },
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://vibes.freee.co.jp/?path=/docs/lv2-listtable-listtable--docs",
+      "id": "vibes",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://vibes.freee.co.jp/?path=/docs/lv2-listtable-listtable--docs",
+      "title": "lv2 / listTable / ListTable - Docs ⋅ Storybook"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://vibes.freee.co.jp/?path=/docs/lv2-dialogs-messagedialog--docs",
+      "id": "vibes",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://vibes.freee.co.jp/?path=/docs/lv2-dialogs-messagedialog--docs",
+      "title": "lv2 / dialogs / MessageDialog - Docs ⋅ Storybook"
+    },
+    {
+      "label": "入力フォーム",
+      "labelEn": "Text fields",
+      "url": "https://vibes.freee.co.jp/?path=/docs/lv2-formfields-formattedtextfield--docs",
+      "id": "vibes",
+      "index": 4,
+      "status": "captured",
+      "finalUrl": "https://vibes.freee.co.jp/?path=/docs/lv2-formfields-formattedtextfield--docs",
+      "title": "lv2 / formFields / FormattedTextField - Docs ⋅ Storybook"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://semi.design/zh-CN/show/modal",
+      "id": "semi",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://semi.design/zh-CN/show/modal",
+      "title": "Modal 模态对话框 - Semi Design"
+    },
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://semi.design/zh-CN/show/table",
+      "id": "semi",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://semi.design/zh-CN/show/table",
+      "title": "Table 表格 - Semi Design"
+    },
+    {
+      "label": "余白",
+      "labelEn": "Spacing",
+      "url": "https://www.ikyu.co.jp/design_guideline/spacing",
+      "id": "ikyu",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://www.ikyu.co.jp/design_guideline/spacing",
+      "title": "余白 - IKYU Design Guideline"
+    },
+    {
+      "label": "タイポグラフィ",
+      "labelEn": "Typography",
+      "url": "https://francfranc.io/design-system-guidelines/design-system/essence-of-basic-design/typeface",
+      "id": "francfranc",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://francfranc.io/design-system-guidelines/design-system/essence-of-basic-design/typeface/",
+      "title": "Typeface - Francfranc Brand Identity"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://smarthr.design/products/components/dialog/",
+      "id": "smarthr",
+      "index": 4,
+      "status": "captured",
+      "finalUrl": "https://smarthr.design/products/components/dialog/",
+      "title": "Dialog | コンポーネント | SmartHR Design System"
+    },
+    {
+      "label": "フォーム",
+      "labelEn": "Forms",
+      "url": "https://semi.design/zh-CN/input/form",
+      "id": "semi",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://semi.design/zh-CN/input/form",
+      "title": "Form 表单 - Semi Design"
+    },
+    {
+      "label": "Webデザイン",
+      "labelEn": "Web design",
+      "url": "https://francfranc.io/design-system-guidelines/design-system/application/web-design",
+      "id": "francfranc",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://francfranc.io/design-system-guidelines/design-system/application/web-design/",
+      "title": "Web Design（Digital Media Design） - Francfranc Brand Identity"
+    },
+    {
+      "label": "UIガイド",
+      "labelEn": "UI guidelines",
+      "url": "https://styleguide.audi.com/hub/442",
+      "id": "audi",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://styleguide.audi.com/document/2865#/-/ui-introduction",
+      "title": "UI Introduction - Introduction - User Interface (SP)"
+    },
+    {
+      "label": "タイポグラフィ",
+      "labelEn": "Typography",
+      "url": "https://styleguide.audi.com/r/tAzGPKqNqmrIblNFMgcASk5Nj2sJ0b5wFLp1D2qZGZ0",
+      "id": "audi",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://styleguide.audi.com/document/1811#/-/typography",
+      "title": "Typography - Basics - Brand"
+    },
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://tdesign.tencent.com/react/components/table",
+      "id": "tdesign",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://tdesign.tencent.com/react/components/table",
+      "title": "Table 表格 | TDesign"
+    },
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://ant.design/components/table",
+      "id": "ant",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://ant.design/components/table",
+      "title": "Table - Ant Design"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://tdesign.tencent.com/react/components/dialog",
+      "id": "tdesign",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://tdesign.tencent.com/react/components/dialog",
+      "title": "Dialog 对话框 | TDesign"
+    },
+    {
+      "label": "フォーム",
+      "labelEn": "Forms",
+      "url": "https://tdesign.tencent.com/react/components/form",
+      "id": "tdesign",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://tdesign.tencent.com/react/components/form",
+      "title": "Form 表单 | TDesign"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://ant.design/components/modal",
+      "id": "ant",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://ant.design/components/modal",
+      "title": "Modal - Ant Design"
+    },
+    {
+      "label": "フォーム",
+      "labelEn": "Forms",
+      "url": "https://ant.design/components/form",
+      "id": "ant",
+      "index": 4,
+      "status": "captured",
+      "finalUrl": "https://ant.design/components/form",
+      "title": "Form - Ant Design"
+    },
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://primer.style/product/components/data-table/",
+      "id": "primer",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://primer.style/product/components/data-table/",
+      "title": "DataTable | Primer"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://primer.style/product/components/dialog/",
+      "id": "primer",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://primer.style/product/components/dialog/",
+      "title": "Dialog | Primer"
+    },
+    {
+      "label": "フォーム",
+      "labelEn": "Forms",
+      "url": "https://primer.style/product/ui-patterns/forms/",
+      "id": "primer",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://primer.style/product/ui-patterns/forms/",
+      "title": "Forms | Primer"
+    }
+  ]
+}

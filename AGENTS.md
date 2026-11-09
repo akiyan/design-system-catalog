@@ -47,3 +47,5 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - On mobile, category filters are visible only on the list screen. Hide them while viewing system details.
 
 - Language controls use a two-option 日本語 / English toggle on all screen sizes. Do not offer an Auto option. Detect browser language on first visit; persist explicit choices. Keep the toggle on the same mobile header row as the title.
+- Provide multiple official captures per system beyond overview and buttons. Prefer practical component examples such as forms, tables, dialogs and navigation; keep screenshots tied to their original source pages.
+- Opening mobile details starts at the top. Returning to the list restores its previous scroll position. Do not carry list scroll offsets into the detail screen.

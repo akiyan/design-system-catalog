@@ -27,6 +27,21 @@
         "label": "タイポグラフィ",
         "url": "https://design.digital.go.jp/dads/foundations/typography/",
         "labelEn": "Typography"
+      },
+      {
+        "label": "テーブル",
+        "labelEn": "Tables",
+        "url": "https://design.digital.go.jp/dads/components/table/"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://design.digital.go.jp/dads/components/modal-dialog/"
+      },
+      {
+        "label": "選択メニュー",
+        "labelEn": "Select menus",
+        "url": "https://design.digital.go.jp/dads/components/select/"
       }
     ],
     "published": {
@@ -74,6 +89,21 @@
         "label": "入力フォーム",
         "url": "https://design-system.service.gov.uk/components/text-input/",
         "labelEn": "Text inputs"
+      },
+      {
+        "label": "テーブル",
+        "labelEn": "Tables",
+        "url": "https://design-system.service.gov.uk/components/table/"
+      },
+      {
+        "label": "選択メニュー",
+        "labelEn": "Select menus",
+        "url": "https://design-system.service.gov.uk/components/select/"
+      },
+      {
+        "label": "カラー",
+        "labelEn": "Colors",
+        "url": "https://design-system.service.gov.uk/styles/colour/"
       }
     ],
     "published": {
@@ -122,6 +152,21 @@
         "label": "入力フォーム",
         "url": "https://designsystem.digital.gov/components/text-input/",
         "labelEn": "Text inputs"
+      },
+      {
+        "label": "テーブル",
+        "labelEn": "Tables",
+        "url": "https://designsystem.digital.gov/components/table/"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://designsystem.digital.gov/components/modal/"
+      },
+      {
+        "label": "選択メニュー",
+        "labelEn": "Select menus",
+        "url": "https://designsystem.digital.gov/components/select/"
       }
     ],
     "published": {
@@ -168,6 +213,21 @@
         "label": "ボタン",
         "url": "https://cloudscape.design/components/button/",
         "labelEn": "Buttons"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://cloudscape.design/components/dialog/"
+      },
+      {
+        "label": "選択メニュー",
+        "labelEn": "Select menus",
+        "url": "https://cloudscape.design/components/select/"
+      },
+      {
+        "label": "ナビゲーション",
+        "labelEn": "Navigation",
+        "url": "https://cloudscape.design/components/side-navigation/"
       }
     ],
     "published": {
@@ -204,6 +264,21 @@
         "label": "概要",
         "url": "https://gestalt.pinterest.systems/",
         "labelEn": "Overview"
+      },
+      {
+        "label": "テーブル",
+        "labelEn": "Tables",
+        "url": "https://gestalt.pinterest.systems/web/table"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://gestalt.pinterest.systems/web/modal"
+      },
+      {
+        "label": "選択メニュー",
+        "labelEn": "Select menus",
+        "url": "https://gestalt.pinterest.systems/web/selectlist"
       }
     ],
     "published": {
@@ -241,6 +316,21 @@
         "label": "概要",
         "url": "https://www.designsystem.tech.gov.sg/",
         "labelEn": "Overview"
+      },
+      {
+        "label": "テーブル",
+        "labelEn": "Tables",
+        "url": "https://www.designsystem.tech.gov.sg/components/data-table"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://www.designsystem.tech.gov.sg/components/modal"
+      },
+      {
+        "label": "選択メニュー",
+        "labelEn": "Select menus",
+        "url": "https://www.designsystem.tech.gov.sg/components/select"
       }
     ],
     "published": {
@@ -290,6 +380,21 @@
         "label": "テーマ",
         "url": "https://astryx.atmeta.com/themes",
         "labelEn": "Themes"
+      },
+      {
+        "label": "入力フォーム",
+        "labelEn": "Text fields",
+        "url": "https://astryx.atmeta.com/components/TextInput"
+      },
+      {
+        "label": "テーブル",
+        "labelEn": "Tables",
+        "url": "https://astryx.atmeta.com/components/Table"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://astryx.atmeta.com/components/Dialog"
       }
     ],
     "published": {
@@ -331,6 +436,21 @@
         "label": "コンポーネント",
         "url": "https://design-system.agriculture.gov.au/components",
         "labelEn": "Components"
+      },
+      {
+        "label": "テーブル",
+        "labelEn": "Tables",
+        "url": "https://design-system.agriculture.gov.au/components/table"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://design-system.agriculture.gov.au/components/modal"
+      },
+      {
+        "label": "入力フォーム",
+        "labelEn": "Text fields",
+        "url": "https://design-system.agriculture.gov.au/components/text-input"
       }
     ],
     "published": {
@@ -368,6 +488,21 @@
         "label": "概要",
         "url": "https://designsystem.gov.cz/",
         "labelEn": "Overview"
+      },
+      {
+        "label": "テーブル",
+        "labelEn": "Tables",
+        "url": "https://designsystem.gov.cz/organismy/table"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://designsystem.gov.cz/komponenty/dialog"
+      },
+      {
+        "label": "選択メニュー",
+        "labelEn": "Select menus",
+        "url": "https://designsystem.gov.cz/komponenty/select"
       }
     ],
     "published": {
@@ -405,6 +540,21 @@
         "label": "概要",
         "url": "https://designers.italia.it/",
         "labelEn": "Overview"
+      },
+      {
+        "label": "テーブル",
+        "labelEn": "Tables",
+        "url": "https://designers.italia.it/design-system/componenti/tables/"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://designers.italia.it/design-system/componenti/modal/"
+      },
+      {
+        "label": "フォーム",
+        "labelEn": "Forms",
+        "url": "https://designers.italia.it/design-system/componenti/form/"
       }
     ],
     "published": {
@@ -479,6 +629,21 @@
         "label": "概要",
         "url": "https://design-system.canada.ca/",
         "labelEn": "Overview"
+      },
+      {
+        "label": "テーブル",
+        "labelEn": "Tables",
+        "url": "https://design-system.canada.ca/en/components/table"
+      },
+      {
+        "label": "選択メニュー",
+        "labelEn": "Select menus",
+        "url": "https://design-system.canada.ca/en/components/select"
+      },
+      {
+        "label": "ナビゲーション",
+        "labelEn": "Navigation",
+        "url": "https://design-system.canada.ca/en/components/side-navigation"
       }
     ],
     "published": {
@@ -516,6 +681,21 @@
         "label": "概要",
         "url": "https://cfpb.github.io/design-system/",
         "labelEn": "Overview"
+      },
+      {
+        "label": "テーブル",
+        "labelEn": "Tables",
+        "url": "https://cfpb.github.io/design-system/components/tables"
+      },
+      {
+        "label": "入力フォーム",
+        "labelEn": "Text fields",
+        "url": "https://cfpb.github.io/design-system/components/text-inputs"
+      },
+      {
+        "label": "選択メニュー",
+        "labelEn": "Select menus",
+        "url": "https://cfpb.github.io/design-system/components/selects"
       }
     ],
     "published": {
@@ -552,6 +732,11 @@
         "label": "概要",
         "url": "https://style.bristol.gov.uk/",
         "labelEn": "Overview"
+      },
+      {
+        "label": "ナビゲーション",
+        "labelEn": "Navigation",
+        "url": "https://style.bristol.gov.uk/patterns/navigation"
       }
     ],
     "published": {
@@ -634,6 +819,21 @@
         "label": "概要",
         "labelEn": "Overview",
         "url": "https://ui.one-design-system.sansan.com/?path=/docs/one-ui-component-library--docs"
+      },
+      {
+        "label": "並べ替え",
+        "labelEn": "Reordering",
+        "url": "https://ui.one-design-system.sansan.com/?path=/docs/components-datadisplay-sortable-documents-guide--docs"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://ui.one-design-system.sansan.com/?path=/docs/components-overlay-dialog-documents-guide--docs"
+      },
+      {
+        "label": "選択メニュー",
+        "labelEn": "Select menus",
+        "url": "https://ui.one-design-system.sansan.com/?path=/docs/components-form-combobox-documents-guide--docs"
       }
     ],
     "published": {
@@ -677,6 +877,16 @@
         "label": "概要",
         "labelEn": "Overview",
         "url": "https://charcoal-web.pixiv.design/"
+      },
+      {
+        "label": "カラー",
+        "labelEn": "Colors",
+        "url": "https://pixiv.github.io/charcoal/?path=/docs/theme-color--docs"
+      },
+      {
+        "label": "タイポグラフィ",
+        "labelEn": "Typography",
+        "url": "https://pixiv.github.io/charcoal/?path=/docs/tailwind-config-typography--docs"
       }
     ],
     "published": {
@@ -721,6 +931,21 @@
         "label": "概要",
         "labelEn": "Overview",
         "url": "https://serendie.design/"
+      },
+      {
+        "label": "テーブル",
+        "labelEn": "Tables",
+        "url": "https://serendie.design/components/data-table"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://serendie.design/components/modal-dialog"
+      },
+      {
+        "label": "入力フォーム",
+        "labelEn": "Text fields",
+        "url": "https://serendie.design/components/text-field"
       }
     ],
     "published": {
@@ -802,6 +1027,21 @@
         "label": "概要",
         "labelEn": "Overview",
         "url": "https://vibes.freee.co.jp/?path=/docs/doc-readme--docs"
+      },
+      {
+        "label": "テーブル",
+        "labelEn": "Tables",
+        "url": "https://vibes.freee.co.jp/?path=/docs/lv2-listtable-listtable--docs"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://vibes.freee.co.jp/?path=/docs/lv2-dialogs-messagedialog--docs"
+      },
+      {
+        "label": "入力フォーム",
+        "labelEn": "Text fields",
+        "url": "https://vibes.freee.co.jp/?path=/docs/lv2-formfields-formattedtextfield--docs"
       }
     ],
     "published": {
@@ -845,6 +1085,21 @@
         "label": "ボタン",
         "labelEn": "Buttons",
         "url": "https://vitals.ubie.life/components/button"
+      },
+      {
+        "label": "選択メニュー",
+        "labelEn": "Select menus",
+        "url": "https://vitals.ubie.life/components/select"
+      },
+      {
+        "label": "カラー",
+        "labelEn": "Colors",
+        "url": "https://vitals.ubie.life/tokens/color/semantic"
+      },
+      {
+        "label": "タイポグラフィ",
+        "labelEn": "Typography",
+        "url": "https://vitals.ubie.life/tokens/typography"
       }
     ],
     "published": {
@@ -888,6 +1143,21 @@
         "label": "ボタン",
         "labelEn": "Buttons",
         "url": "https://design.gitlab.com/components/button"
+      },
+      {
+        "label": "テーブル",
+        "labelEn": "Tables",
+        "url": "https://design.gitlab.com/components/table"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://design.gitlab.com/components/modal"
+      },
+      {
+        "label": "入力フォーム",
+        "labelEn": "Text fields",
+        "url": "https://design.gitlab.com/components/text-input"
       }
     ],
     "published": {
@@ -1003,6 +1273,21 @@
         "label": "概要",
         "labelEn": "Overview",
         "url": "https://semi.design/"
+      },
+      {
+        "label": "テーブル",
+        "labelEn": "Tables",
+        "url": "https://semi.design/zh-CN/show/table"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://semi.design/zh-CN/show/modal"
+      },
+      {
+        "label": "フォーム",
+        "labelEn": "Forms",
+        "url": "https://semi.design/zh-CN/input/form"
       }
     ],
     "published": {
@@ -1047,6 +1332,21 @@
         "label": "ボタン",
         "labelEn": "Buttons",
         "url": "https://arco.design/react/components/button"
+      },
+      {
+        "label": "テーブル",
+        "labelEn": "Tables",
+        "url": "https://arco.design/react/components/table"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://arco.design/react/components/modal"
+      },
+      {
+        "label": "選択メニュー",
+        "labelEn": "Select menus",
+        "url": "https://arco.design/react/components/select"
       }
     ],
     "published": {
@@ -1087,6 +1387,21 @@
         "label": "概要",
         "labelEn": "Overview",
         "url": "https://spectrum.adobe.com/"
+      },
+      {
+        "label": "テーブル",
+        "labelEn": "Tables",
+        "url": "https://spectrum.adobe.com/web/rsp/components/table"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://spectrum.adobe.com/web/rsp/components/standard-dialog"
+      },
+      {
+        "label": "入力フォーム",
+        "labelEn": "Text fields",
+        "url": "https://spectrum.adobe.com/web/rsp/components/text-field"
       }
     ],
     "published": {
@@ -1126,6 +1441,21 @@
         "label": "概要",
         "labelEn": "Overview",
         "url": "https://www.carbondesignsystem.com/"
+      },
+      {
+        "label": "テーブル",
+        "labelEn": "Tables",
+        "url": "https://www.carbondesignsystem.com/building-blocks/core/components/data-table"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://www.carbondesignsystem.com/building-blocks/core/components/modal"
+      },
+      {
+        "label": "入力フォーム",
+        "labelEn": "Text fields",
+        "url": "https://www.carbondesignsystem.com/building-blocks/core/components/text-input"
       }
     ],
     "published": {
@@ -1165,6 +1495,21 @@
         "label": "概要",
         "labelEn": "Overview",
         "url": "https://fluent2.microsoft.design/"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://fluent2.microsoft.design/components/web/react/core/dialog/usage"
+      },
+      {
+        "label": "選択メニュー",
+        "labelEn": "Select menus",
+        "url": "https://fluent2.microsoft.design/components/web/react/core/select/usage"
+      },
+      {
+        "label": "カラー",
+        "labelEn": "Colors",
+        "url": "https://fluent2.microsoft.design/color"
       }
     ],
     "published": {
@@ -1203,6 +1548,21 @@
         "label": "概要",
         "labelEn": "Overview",
         "url": "https://baseweb.design/"
+      },
+      {
+        "label": "テーブル",
+        "labelEn": "Tables",
+        "url": "https://baseweb.design/components/data-table"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://baseweb.design/components/dialog"
+      },
+      {
+        "label": "選択メニュー",
+        "labelEn": "Select menus",
+        "url": "https://baseweb.design/components/select"
       }
     ],
     "published": {
@@ -1279,6 +1639,21 @@
         "label": "概要",
         "labelEn": "Overview",
         "url": "https://spindle.ameba.design/"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://spindle.ameba.design/components/modal/"
+      },
+      {
+        "label": "入力フォーム",
+        "labelEn": "Text fields",
+        "url": "https://spindle.ameba.design/components/textfield/"
+      },
+      {
+        "label": "カラー",
+        "labelEn": "Colors",
+        "url": "https://spindle.ameba.design/styles/color/"
       }
     ],
     "published": {
@@ -1317,6 +1692,26 @@
         "label": "概要",
         "labelEn": "Overview",
         "url": "https://smarthr.design/"
+      },
+      {
+        "label": "テーブル",
+        "labelEn": "Tables",
+        "url": "https://smarthr.design/products/components/table/"
+      },
+      {
+        "label": "カラー",
+        "labelEn": "Colors",
+        "url": "https://smarthr.design/basics/colors/"
+      },
+      {
+        "label": "タイポグラフィ",
+        "labelEn": "Typography",
+        "url": "https://smarthr.design/products/design-tokens/typography/"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://smarthr.design/products/components/dialog/"
       }
     ],
     "published": {
@@ -1354,6 +1749,21 @@
         "label": "概要",
         "labelEn": "Overview",
         "url": "https://www.ikyu.co.jp/design_guideline/"
+      },
+      {
+        "label": "カラー",
+        "labelEn": "Colors",
+        "url": "https://www.ikyu.co.jp/design_guideline/color"
+      },
+      {
+        "label": "タイポグラフィ",
+        "labelEn": "Typography",
+        "url": "https://www.ikyu.co.jp/design_guideline/typography"
+      },
+      {
+        "label": "余白",
+        "labelEn": "Spacing",
+        "url": "https://www.ikyu.co.jp/design_guideline/spacing"
       }
     ],
     "published": {
@@ -1391,6 +1801,21 @@
         "label": "概要",
         "labelEn": "Overview",
         "url": "https://francfranc.io/design-system-guidelines/design-system/"
+      },
+      {
+        "label": "カラー",
+        "labelEn": "Colors",
+        "url": "https://francfranc.io/design-system-guidelines/glossary/brand-identity-guidelines/color"
+      },
+      {
+        "label": "タイポグラフィ",
+        "labelEn": "Typography",
+        "url": "https://francfranc.io/design-system-guidelines/design-system/essence-of-basic-design/typeface"
+      },
+      {
+        "label": "Webデザイン",
+        "labelEn": "Web design",
+        "url": "https://francfranc.io/design-system-guidelines/design-system/application/web-design"
       }
     ],
     "published": {
@@ -1430,6 +1855,21 @@
         "label": "概要",
         "labelEn": "Overview",
         "url": "https://designsystem.porsche.com/v4/"
+      },
+      {
+        "label": "テーブル",
+        "labelEn": "Tables",
+        "url": "https://designsystem.porsche.com/v4/components/table/configurator/"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://designsystem.porsche.com/v4/components/modal/configurator/"
+      },
+      {
+        "label": "選択メニュー",
+        "labelEn": "Select menus",
+        "url": "https://designsystem.porsche.com/v4/components/select/configurator/"
       }
     ],
     "published": {
@@ -1468,6 +1908,16 @@
         "label": "概要",
         "labelEn": "Overview",
         "url": "https://styleguide.audi.com/"
+      },
+      {
+        "label": "UIガイド",
+        "labelEn": "UI guidelines",
+        "url": "https://styleguide.audi.com/hub/442"
+      },
+      {
+        "label": "タイポグラフィ",
+        "labelEn": "Typography",
+        "url": "https://styleguide.audi.com/r/tAzGPKqNqmrIblNFMgcASk5Nj2sJ0b5wFLp1D2qZGZ0"
       }
     ],
     "published": {
@@ -1505,6 +1955,21 @@
         "label": "概要",
         "labelEn": "Overview",
         "url": "https://cds.coinbase.com/"
+      },
+      {
+        "label": "入力フォーム",
+        "labelEn": "Text fields",
+        "url": "https://cds.coinbase.com/components/inputs/TextInput/"
+      },
+      {
+        "label": "選択メニュー",
+        "labelEn": "Select menus",
+        "url": "https://cds.coinbase.com/components/inputs/SelectAlpha/"
+      },
+      {
+        "label": "ナビゲーション",
+        "labelEn": "Navigation",
+        "url": "https://cds.coinbase.com/components/navigation/NavigationBar/"
       }
     ],
     "published": {
@@ -1545,6 +2010,21 @@
         "label": "概要",
         "labelEn": "Overview",
         "url": "https://tdesign.tencent.com/"
+      },
+      {
+        "label": "テーブル",
+        "labelEn": "Tables",
+        "url": "https://tdesign.tencent.com/react/components/table"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://tdesign.tencent.com/react/components/dialog"
+      },
+      {
+        "label": "フォーム",
+        "labelEn": "Forms",
+        "url": "https://tdesign.tencent.com/react/components/form"
       }
     ],
     "published": {
@@ -1583,6 +2063,26 @@
         "label": "概要",
         "labelEn": "Overview",
         "url": "https://ant.design/"
+      },
+      {
+        "label": "カラー",
+        "labelEn": "Colors",
+        "url": "https://ant.design/docs/spec/colors/"
+      },
+      {
+        "label": "テーブル",
+        "labelEn": "Tables",
+        "url": "https://ant.design/components/table"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://ant.design/components/modal"
+      },
+      {
+        "label": "フォーム",
+        "labelEn": "Forms",
+        "url": "https://ant.design/components/form"
       }
     ],
     "published": {
@@ -1622,6 +2122,21 @@
         "label": "概要",
         "labelEn": "Overview",
         "url": "https://kumo-ui.com/"
+      },
+      {
+        "label": "テーブル",
+        "labelEn": "Tables",
+        "url": "https://kumo-ui.com/components/table"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://kumo-ui.com/components/dialog"
+      },
+      {
+        "label": "選択メニュー",
+        "labelEn": "Select menus",
+        "url": "https://kumo-ui.com/components/select"
       }
     ],
     "published": {
@@ -1661,6 +2176,21 @@
         "label": "概要",
         "labelEn": "Overview",
         "url": "https://www.patternfly.org/"
+      },
+      {
+        "label": "テーブル",
+        "labelEn": "Tables",
+        "url": "https://www.patternfly.org/components/table"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://www.patternfly.org/components/modal"
+      },
+      {
+        "label": "入力フォーム",
+        "labelEn": "Text fields",
+        "url": "https://www.patternfly.org/components/forms/text-input"
       }
     ],
     "published": {
@@ -1699,6 +2229,21 @@
         "label": "概要",
         "labelEn": "Overview",
         "url": "https://primer.style/"
+      },
+      {
+        "label": "テーブル",
+        "labelEn": "Tables",
+        "url": "https://primer.style/product/components/data-table/"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://primer.style/product/components/dialog/"
+      },
+      {
+        "label": "フォーム",
+        "labelEn": "Forms",
+        "url": "https://primer.style/product/ui-patterns/forms/"
       }
     ],
     "published": {

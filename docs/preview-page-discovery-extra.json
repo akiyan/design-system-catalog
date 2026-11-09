@@ -1,0 +1,300 @@
+[
+  {
+    "url": "https://oneaudi.github.io/unified-web",
+    "links": [
+      {
+        "text": "Skip to content",
+        "url": "https://oneaudi.github.io/unified-web/?path=/docs/introduction--documentation#storybook-preview-wrapper"
+      },
+      {
+        "text": "",
+        "url": "https://oneaudi.github.io/unified-web"
+      },
+      {
+        "text": "Introduction",
+        "url": "https://oneaudi.github.io/unified-web/?path=/docs/introduction--documentation"
+      },
+      {
+        "text": "Skip to content",
+        "url": "https://oneaudi.github.io/unified-web/?path=/docs/introduction--documentation#storybook-preview-wrapper"
+      },
+      {
+        "text": "Migration",
+        "url": "https://oneaudi.github.io/unified-web/?path=/docs/migration--documentation"
+      },
+      {
+        "text": "Legal Notice",
+        "url": "https://oneaudi.github.io/unified-web/?path=/docs/legal-notice--documentation"
+      },
+      {
+        "text": "Skip to sidebar",
+        "url": "https://oneaudi.github.io/unified-web/?path=/docs/introduction--documentation#introduction--documentation"
+      }
+    ]
+  },
+  {
+    "url": "https://shopify.dev/docs/api/app-home/web-components/media-and-visuals/icon",
+    "links": [
+      {
+        "text": "Skip to main content",
+        "url": "https://shopify.dev/docs/api/app-home/latest/web-components/media-and-visuals/icon#main-content"
+      },
+      {
+        "text": "",
+        "url": "https://shopify.dev/docs"
+      },
+      {
+        "text": "Apps",
+        "url": "https://shopify.dev/docs/apps/build"
+      },
+      {
+        "text": "Storefronts",
+        "url": "https://shopify.dev/docs/storefronts"
+      },
+      {
+        "text": "Agents",
+        "url": "https://shopify.dev/docs/agents"
+      },
+      {
+        "text": "Changelog",
+        "url": "https://shopify.dev/changelog"
+      },
+      {
+        "text": "Help",
+        "url": "https://shopify.dev/support"
+      },
+      {
+        "text": "Log in",
+        "url": "http://dev.shopify.com/dashboard"
+      },
+      {
+        "text": "",
+        "url": "https://www.shopify.com/editions/fall2026?utm_source=shopify-dev&utm_medium=shopify-dev&utm_campaign=fall2026_rkerbz&utm_content=shopify-dev-medallion-v1&utm_term=medallion#dev"
+      },
+      {
+        "text": "Back to all APIsPolaris",
+        "url": "https://shopify.dev/docs/api"
+      },
+      {
+        "text": "Overview",
+        "url": "https://shopify.dev/docs/api/app-home/latest"
+      },
+      {
+        "text": "Getting started",
+        "url": "https://shopify.dev/docs/api/app-home/latest#getting-started"
+      },
+      {
+        "text": "Building your app",
+        "url": "https://shopify.dev/docs/api/app-home/latest#building-your-app"
+      },
+      {
+        "text": "Page patterns",
+        "url": "https://shopify.dev/docs/api/app-home/latest#page-patterns"
+      },
+      {
+        "text": "Direct API access",
+        "url": "https://shopify.dev/docs/api/app-home/latest#direct-api-access"
+      },
+      {
+        "text": "Configuration",
+        "url": "https://shopify.dev/docs/api/app-home/latest#configuration"
+      },
+      {
+        "text": "Testing and deployment",
+        "url": "https://shopify.dev/docs/api/app-home/latest#testing-and-deployment"
+      },
+      {
+        "text": "Resources",
+        "url": "https://shopify.dev/docs/api/app-home/latest#resources"
+      },
+      {
+        "text": "Overview",
+        "url": "https://shopify.dev/docs/api/app-home/latest/web-components"
+      },
+      {
+        "text": "Versioning",
+        "url": "https://shopify.dev/docs/api/app-home/latest/web-components/versioning"
+      },
+      {
+        "text": "Avatar",
+        "url": "https://shopify.dev/docs/api/app-home/latest/web-components/media-and-visuals/avatar"
+      },
+      {
+        "text": "Icon",
+        "url": "https://shopify.dev/docs/api/app-home/latest/web-components/media-and-visuals/icon"
+      },
+      {
+        "text": "Properties",
+        "url": "https://shopify.dev/docs/api/app-home/latest/web-components/media-and-visuals/icon#properties"
+      },
+      {
+        "text": "Examples",
+        "url": "https://shopify.dev/docs/api/app-home/latest/web-components/media-and-visuals/icon#examples"
+      },
+      {
+        "text": "Available icons",
+        "url": "https://shopify.dev/docs/api/app-home/latest/web-components/media-and-visuals/icon#available-icons"
+      },
+      {
+        "text": "Best practices",
+        "url": "https://shopify.dev/docs/api/app-home/latest/web-components/media-and-visuals/icon#best-practices"
+      },
+      {
+        "text": "Limitations",
+        "url": "https://shopify.dev/docs/api/app-home/latest/web-components/media-and-visuals/icon#limitations"
+      },
+      {
+        "text": "Image",
+        "url": "https://shopify.dev/docs/api/app-home/latest/web-components/media-and-visuals/image"
+      },
+      {
+        "text": "Thumbnail",
+        "url": "https://shopify.dev/docs/api/app-home/latest/web-components/media-and-visuals/thumbnail"
+      },
+      {
+        "text": "button",
+        "url": "https://shopify.dev/docs/api/app-home/latest/web-components/actions/button"
+      },
+      {
+        "text": "badge",
+        "url": "https://shopify.dev/docs/api/app-home/latest/web-components/feedback-and-status-indicators/badge"
+      },
+      {
+        "text": "chip",
+        "url": "https://shopify.dev/docs/api/app-home/latest/web-components/typography-and-content/chip"
+      },
+      {
+        "text": "Anchor to Use cases",
+        "url": "https://shopify.dev/docs/api/app-home/latest/web-components/media-and-visuals/icon#use-cases"
+      },
+      {
+        "text": "Anchor to Properties",
+        "url": "https://shopify.dev/docs/api/app-home/latest/web-components/media-and-visuals/icon#properties"
+      },
+      {
+        "text": "Anchor to color",
+        "url": "https://shopify.dev/docs/api/app-home/latest/web-components/media-and-visuals/icon#icon-propertydetail-color"
+      },
+      {
+        "text": "Anchor to interestFor",
+        "url": "https://shopify.dev/docs/api/app-home/latest/web-components/media-and-visuals/icon#icon-propertydetail-interestfor"
+      },
+      {
+        "text": "Anchor to size",
+        "url": "https://shopify.dev/docs/api/app-home/latest/web-components/media-and-visuals/icon#icon-propertydetail-size"
+      },
+      {
+        "text": "Anchor to tone",
+        "url": "https://shopify.dev/docs/api/app-home/latest/web-components/media-and-visuals/icon#icon-propertydetail-tone"
+      },
+      {
+        "text": "Anchor to type",
+        "url": "https://shopify.dev/docs/api/app-home/latest/web-components/media-and-visuals/icon#icon-propertydetail-type"
+      },
+      {
+        "text": "Anchor to Examples",
+        "url": "https://shopify.dev/docs/api/app-home/latest/web-components/media-and-visuals/icon#examples"
+      },
+      {
+        "text": "Anchor to Display icons",
+        "url": "https://shopify.dev/docs/api/app-home/latest/web-components/media-and-visuals/icon#display-icons"
+      },
+      {
+        "text": "Anchor to Apply semantic tones",
+        "url": "https://shopify.dev/docs/api/app-home/latest/web-components/media-and-visuals/icon#apply-semantic-tones"
+      },
+      {
+        "text": "Anchor to Reduce the size",
+        "url": "https://shopify.dev/docs/api/app-home/latest/web-components/media-and-visuals/icon#reduce-the-size"
+      },
+      {
+        "text": "Anchor to Apply subdued color",
+        "url": "https://shopify.dev/docs/api/app-home/latest/web-components/media-and-visuals/icon#apply-subdued-color"
+      },
+      {
+        "text": "Anchor to Add an ID",
+        "url": "https://shopify.dev/docs/api/app-home/latest/web-components/media-and-visuals/icon#add-an-id"
+      },
+      {
+        "text": "Anchor to Connect to related content",
+        "url": "https://shopify.dev/docs/api/app-home/latest/web-components/media-and-visuals/icon#connect-to-related-content"
+      },
+      {
+        "text": "Anchor to Use in buttons",
+        "url": "https://shopify.dev/docs/api/app-home/latest/web-components/media-and-visuals/icon#use-in-buttons"
+      },
+      {
+        "text": "Anchor to Use in badges",
+        "url": "https://shopify.dev/docs/api/app-home/latest/web-components/media-and-visuals/icon#use-in-badges"
+      },
+      {
+        "text": "Anchor to Available icons",
+        "url": "https://shopify.dev/docs/api/app-home/latest/web-components/media-and-visuals/icon#available-icons"
+      },
+      {
+        "text": "Anchor to Best practices",
+        "url": "https://shopify.dev/docs/api/app-home/latest/web-components/media-and-visuals/icon#best-practices"
+      },
+      {
+        "text": "Anchor to Limitations",
+        "url": "https://shopify.dev/docs/api/app-home/latest/web-components/media-and-visuals/icon#limitations"
+      },
+      {
+        "text": "image",
+        "url": "https://shopify.dev/docs/api/app-home/latest/web-components/media-and-visuals/image"
+      },
+      {
+        "text": "Developer changelog",
+        "url": "https://shopify.dev/changelog"
+      },
+      {
+        "text": "Shopify Editions",
+        "url": "https://www.shopify.com/editions"
+      },
+      {
+        "text": "Shopify Partners Program",
+        "url": "https://www.shopify.com/partners?shpxid=222dd762-CA08-48FF-E4D4-FF926B8FFCAD"
+      },
+      {
+        "text": "Shopify App Store",
+        "url": "https://apps.shopify.com/?shpxid=222dd762-CA08-48FF-E4D4-FF926B8FFCAD"
+      },
+      {
+        "text": "Terms of service",
+        "url": "https://www.shopify.com/legal/terms?shpxid=222dd762-CA08-48FF-E4D4-FF926B8FFCAD"
+      },
+      {
+        "text": "API terms of use",
+        "url": "https://www.shopify.com/legal/api-terms?shpxid=222dd762-CA08-48FF-E4D4-FF926B8FFCAD"
+      },
+      {
+        "text": "Privacy policy",
+        "url": "https://www.shopify.com/legal/privacy?shpxid=222dd762-CA08-48FF-E4D4-FF926B8FFCAD"
+      },
+      {
+        "text": "Partners Program Agreement",
+        "url": "https://www.shopify.com/partners/terms?shpxid=222dd762-CA08-48FF-E4D4-FF926B8FFCAD"
+      },
+      {
+        "text": "About Shopify",
+        "url": "https://www.shopify.com/about?shpxid=222dd762-CA08-48FF-E4D4-FF926B8FFCAD"
+      },
+      {
+        "text": "Shopify Plus",
+        "url": "https://www.shopify.com/plus?shpxid=222dd762-CA08-48FF-E4D4-FF926B8FFCAD"
+      },
+      {
+        "text": "Careers",
+        "url": "https://www.shopify.com/careers?shpxid=222dd762-CA08-48FF-E4D4-FF926B8FFCAD"
+      },
+      {
+        "text": "Investors",
+        "url": "https://investors.shopify.com/home/default.aspx?shpxid=222dd762-CA08-48FF-E4D4-FF926B8FFCAD"
+      },
+      {
+        "text": "Press and media",
+        "url": "https://shopify.com/news?shpxid=7db0d4e4-24E8-4087-58FA-7EE470CA745A"
+      }
+    ]
+  }
+]

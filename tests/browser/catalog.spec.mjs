@@ -110,7 +110,7 @@ test('keyboard selection, boundaries, screenshot switching, zoom and help focus'
   await page.keyboard.press('ArrowRight');
   await expect(page.locator('.main-preview img')).toHaveAttribute('src','/previews/astryx-1.webp');
   await page.keyboard.press('v'); await expect(page.locator('.zoom-dialog')).toBeVisible();
-  await page.keyboard.press('ArrowRight'); await expect(page.locator('.zoom-navigation')).toContainText('3 / 3');
+  await page.keyboard.press('ArrowRight'); await expect(page.locator('.zoom-navigation')).toContainText(`3 / ${systems.find(s=>s.id==='astryx').views.length}`);
   await page.keyboard.press('Escape'); await expect(page.locator('.zoom-dialog')).not.toBeVisible();
   const help=page.getByRole('button',{name:'キーボード操作',exact:true}); await help.focus();
   await page.keyboard.press('?'); await expect(page.locator('.help-dialog')).toBeVisible();
@@ -236,4 +236,21 @@ test('touch swipes browse systems without opening zoom, vertical gestures and ta
   await swipe(-100);
   await expect(page).toHaveURL(/\/patternfly\/$/);
   await context.close();
+});
+
+test('mobile details start at top and returning restores the list scroll offset', async ({page}) => {
+  await page.setViewportSize({width:390,height:844});
+  await page.goto('/'); await ready(page);
+  const row=page.locator('.system-row').filter({hasText:'GOV.UK'});
+  await row.scrollIntoViewIfNeeded();
+  const before=await page.locator('.workspace').evaluate(e=>e.scrollTop);
+  expect(before).toBeGreaterThan(100);
+  await row.click();
+  await expect(page).toHaveURL(/\/govuk\/$/);
+  await expect.poll(()=>page.locator('.workspace').evaluate(e=>e.scrollTop)).toBe(0);
+  await expect(page.getByRole('button',{name:'一覧に戻る',exact:true})).toBeInViewport();
+  await page.getByRole('button',{name:'一覧に戻る',exact:true}).click();
+  await expect.poll(()=>page.locator('.workspace').evaluate(e=>e.scrollTop)).toBe(before);
+  await row.click();
+  await expect.poll(()=>page.locator('.workspace').evaluate(e=>e.scrollTop)).toBe(0);
 });

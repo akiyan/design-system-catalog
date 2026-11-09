@@ -1,0 +1,779 @@
+{
+  "capturedAt": "2026-11-09T13:41:09.249Z",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "results": [
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://design.digital.go.jp/dads/components/modal-dialog/",
+      "id": "dads",
+      "index": 4,
+      "status": "captured",
+      "finalUrl": "https://design.digital.go.jp/dads/components/modal-dialog/",
+      "title": "モーダルダイアログ（概要）｜デジタル庁デザインシステムβ版"
+    },
+    {
+      "label": "選択メニュー",
+      "labelEn": "Select menus",
+      "url": "https://design.digital.go.jp/dads/components/select/",
+      "id": "dads",
+      "index": 5,
+      "status": "captured",
+      "finalUrl": "https://design.digital.go.jp/dads/components/select/",
+      "title": "セレクトボックス（概要）｜デジタル庁デザインシステムβ版"
+    },
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://design.digital.go.jp/dads/components/table/",
+      "id": "dads",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://design.digital.go.jp/dads/components/table/",
+      "title": "テーブル／データテーブル（概要）｜デジタル庁デザインシステムβ版"
+    },
+    {
+      "label": "カラー",
+      "labelEn": "Colors",
+      "url": "https://design-system.service.gov.uk/styles/colour/",
+      "id": "govuk",
+      "index": 5,
+      "status": "captured",
+      "finalUrl": "https://design-system.service.gov.uk/styles/colour/",
+      "title": "Colour – GOV.UK Design System"
+    },
+    {
+      "label": "選択メニュー",
+      "labelEn": "Select menus",
+      "url": "https://design-system.service.gov.uk/components/select/",
+      "id": "govuk",
+      "index": 4,
+      "status": "captured",
+      "finalUrl": "https://design-system.service.gov.uk/components/select/",
+      "title": "Select – GOV.UK Design System"
+    },
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://design-system.service.gov.uk/components/table/",
+      "id": "govuk",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://design-system.service.gov.uk/components/table/",
+      "title": "Table – GOV.UK Design System"
+    },
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://designsystem.digital.gov/components/table/",
+      "id": "uswds",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://designsystem.digital.gov/components/table/",
+      "title": "Table | U.S. Web Design System (USWDS)"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://designsystem.digital.gov/components/modal/",
+      "id": "uswds",
+      "index": 4,
+      "status": "captured",
+      "finalUrl": "https://designsystem.digital.gov/components/modal/",
+      "title": "Modal | U.S. Web Design System (USWDS)"
+    },
+    {
+      "label": "選択メニュー",
+      "labelEn": "Select menus",
+      "url": "https://designsystem.digital.gov/components/select/",
+      "id": "uswds",
+      "index": 5,
+      "status": "captured",
+      "finalUrl": "https://designsystem.digital.gov/components/select/",
+      "title": "Select | U.S. Web Design System (USWDS)"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://cloudscape.design/components/dialog/",
+      "id": "cloudscape",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://cloudscape.design/components/dialog/",
+      "title": "Dialog - Cloudscape Design System"
+    },
+    {
+      "label": "選択メニュー",
+      "labelEn": "Select menus",
+      "url": "https://cloudscape.design/components/select/",
+      "id": "cloudscape",
+      "index": 4,
+      "status": "captured",
+      "finalUrl": "https://cloudscape.design/components/select/",
+      "title": "Select - Cloudscape Design System"
+    },
+    {
+      "label": "ナビゲーション",
+      "labelEn": "Navigation",
+      "url": "https://cloudscape.design/components/side-navigation/",
+      "id": "cloudscape",
+      "index": 5,
+      "status": "captured",
+      "finalUrl": "https://cloudscape.design/components/side-navigation/",
+      "title": "Side navigation - Cloudscape Design System"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://design-system.agriculture.gov.au/components/modal",
+      "id": "agds",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://design-system.agriculture.gov.au/components/modal",
+      "title": "Modal | Agriculture Design System"
+    },
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://design-system.agriculture.gov.au/components/table",
+      "id": "agds",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://design-system.agriculture.gov.au/components/table",
+      "title": "Table | Agriculture Design System"
+    },
+    {
+      "label": "入力フォーム",
+      "labelEn": "Text fields",
+      "url": "https://astryx.atmeta.com/components/TextInput",
+      "id": "astryx",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://astryx.atmeta.com/components/TextInput",
+      "title": "Text Input · Astryx"
+    },
+    {
+      "label": "入力フォーム",
+      "labelEn": "Text fields",
+      "url": "https://design-system.agriculture.gov.au/components/text-input",
+      "id": "agds",
+      "index": 4,
+      "status": "captured",
+      "finalUrl": "https://design-system.agriculture.gov.au/components/text-input",
+      "title": "Text input | Agriculture Design System"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://designsystem.gov.cz/komponenty/dialog",
+      "id": "czech",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://designsystem.gov.cz/komponenty/dialog",
+      "title": "Dialog | Design systém gov.cz"
+    },
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://designsystem.gov.cz/organismy/table",
+      "id": "czech",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://designsystem.gov.cz/organismy/table",
+      "title": "Table | Design systém gov.cz"
+    },
+    {
+      "label": "選択メニュー",
+      "labelEn": "Select menus",
+      "url": "https://designsystem.gov.cz/komponenty/select",
+      "id": "czech",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://designsystem.gov.cz/komponenty/select",
+      "title": "Select | Design systém gov.cz"
+    },
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://design-system.canada.ca/en/components/table",
+      "id": "canada",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://design-system.canada.ca/en/components/table/",
+      "title": "Table - Use case | GC Design System"
+    },
+    {
+      "label": "選択メニュー",
+      "labelEn": "Select menus",
+      "url": "https://design-system.canada.ca/en/components/select",
+      "id": "canada",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://design-system.canada.ca/en/components/select/",
+      "title": "Select - Use case | GC Design System"
+    },
+    {
+      "label": "ナビゲーション",
+      "labelEn": "Navigation",
+      "url": "https://design-system.canada.ca/en/components/side-navigation",
+      "id": "canada",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://design-system.canada.ca/en/components/side-navigation/",
+      "title": "Side navigation - Use case | GC Design System"
+    },
+    {
+      "label": "入力フォーム",
+      "labelEn": "Text fields",
+      "url": "https://cfpb.github.io/design-system/components/text-inputs",
+      "id": "cfpb",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://cfpb.github.io/design-system/components/text-inputs",
+      "title": "Text inputs - CFPB Design System"
+    },
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://cfpb.github.io/design-system/components/tables",
+      "id": "cfpb",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://cfpb.github.io/design-system/components/tables",
+      "title": "Tables - CFPB Design System"
+    },
+    {
+      "label": "選択メニュー",
+      "labelEn": "Select menus",
+      "url": "https://cfpb.github.io/design-system/components/selects",
+      "id": "cfpb",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://cfpb.github.io/design-system/components/selects",
+      "title": "Selects - CFPB Design System"
+    },
+    {
+      "label": "ナビゲーション",
+      "labelEn": "Navigation",
+      "url": "https://style.bristol.gov.uk/patterns/navigation",
+      "id": "bristol",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://style.bristol.gov.uk/patterns/navigation/",
+      "title": "Pattern Library | Bristol City Council"
+    },
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://ui.one-design-system.sansan.com/?path=/docs/components-datadisplay-sortable-documents-guide--docs",
+      "id": "sansan",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://ui.one-design-system.sansan.com/?path=/docs/components-datadisplay-sortable-documents-guide--docs",
+      "title": "Components / DataDisplay / Sortable / documents / Guide - Docs ⋅ Storybook"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://ui.one-design-system.sansan.com/?path=/docs/components-overlay-dialog-documents-guide--docs",
+      "id": "sansan",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://ui.one-design-system.sansan.com/?path=/docs/components-overlay-dialog-documents-guide--docs",
+      "title": "Components / Overlay / Dialog / documents / Guide - Docs ⋅ Storybook"
+    },
+    {
+      "label": "選択メニュー",
+      "labelEn": "Select menus",
+      "url": "https://ui.one-design-system.sansan.com/?path=/docs/components-form-combobox-documents-guide--docs",
+      "id": "sansan",
+      "index": 4,
+      "status": "captured",
+      "finalUrl": "https://ui.one-design-system.sansan.com/?path=/docs/components-form-combobox-documents-guide--docs",
+      "title": "Components / Form / ComboBox / documents / Guide - Docs ⋅ Storybook"
+    },
+    {
+      "label": "カラー",
+      "labelEn": "Colors",
+      "url": "https://pixiv.github.io/charcoal/?path=/docs/theme-color--docs",
+      "id": "charcoal",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://pixiv.github.io/charcoal/?path=/docs/theme-color--docs",
+      "title": "theme / Color - Docs ⋅ Storybook"
+    },
+    {
+      "label": "タイポグラフィ",
+      "labelEn": "Typography",
+      "url": "https://pixiv.github.io/charcoal/?path=/docs/tailwind-config-typography--docs",
+      "id": "charcoal",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://pixiv.github.io/charcoal/?path=/docs/tailwind-config-typography--docs",
+      "title": "tailwind-config / Typography - Docs ⋅ Storybook"
+    },
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://serendie.design/components/data-table",
+      "id": "serendie",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://serendie.design/components/data-table/",
+      "title": "Data Table | Serendie Design System"
+    },
+    {
+      "label": "入力フォーム",
+      "labelEn": "Text fields",
+      "url": "https://serendie.design/components/text-field",
+      "id": "serendie",
+      "index": 4,
+      "status": "captured",
+      "finalUrl": "https://serendie.design/components/text-field/",
+      "title": "Text Field | Serendie Design System"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://serendie.design/components/modal-dialog",
+      "id": "serendie",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://serendie.design/components/modal-dialog/",
+      "title": "Modal Dialog | Serendie Design System"
+    },
+    {
+      "label": "カラー",
+      "labelEn": "Colors",
+      "url": "https://vitals.ubie.life/tokens/color/semantic",
+      "id": "vitals",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://vitals.ubie.life/tokens/color/semantic/",
+      "title": "Semantic Colors | Ubie Vitals"
+    },
+    {
+      "label": "選択メニュー",
+      "labelEn": "Select menus",
+      "url": "https://vitals.ubie.life/components/select",
+      "id": "vitals",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://vitals.ubie.life/components/select/",
+      "title": "Select | Ubie Vitals"
+    },
+    {
+      "label": "タイポグラフィ",
+      "labelEn": "Typography",
+      "url": "https://vitals.ubie.life/tokens/typography",
+      "id": "vitals",
+      "index": 4,
+      "status": "captured",
+      "finalUrl": "https://vitals.ubie.life/tokens/typography/",
+      "title": "Typography | Ubie Vitals"
+    },
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://design.gitlab.com/components/table",
+      "id": "pajamas",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://design.gitlab.com/components/table/",
+      "title": "Table | Pajamas Design System"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://design.gitlab.com/components/modal",
+      "id": "pajamas",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://design.gitlab.com/components/modal/",
+      "title": "Modal | Pajamas Design System"
+    },
+    {
+      "label": "入力フォーム",
+      "labelEn": "Text fields",
+      "url": "https://design.gitlab.com/components/text-input",
+      "id": "pajamas",
+      "index": 4,
+      "status": "captured",
+      "finalUrl": "https://design.gitlab.com/components/text-input/",
+      "title": "Text input | Pajamas Design System"
+    },
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://arco.design/react/components/table",
+      "id": "arco",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://arco.design/react/components/table",
+      "title": "表格 Table | ArcoDesign"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://arco.design/react/components/modal",
+      "id": "arco",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://arco.design/react/components/modal",
+      "title": "对话框 Modal | ArcoDesign"
+    },
+    {
+      "label": "選択メニュー",
+      "labelEn": "Select menus",
+      "url": "https://arco.design/react/components/select",
+      "id": "arco",
+      "index": 4,
+      "status": "captured",
+      "finalUrl": "https://arco.design/react/components/select",
+      "title": "选择器 Select | ArcoDesign"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://spectrum.adobe.com/web/rsp/components/standard-dialog",
+      "id": "spectrum",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://spectrum.adobe.com/web/rsp/components/standard-dialog",
+      "title": "Standard dialog"
+    },
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://spectrum.adobe.com/web/rsp/components/table",
+      "id": "spectrum",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://spectrum.adobe.com/web/rsp/components/table",
+      "title": "Table"
+    },
+    {
+      "label": "入力フォーム",
+      "labelEn": "Text fields",
+      "url": "https://spectrum.adobe.com/web/rsp/components/text-field",
+      "id": "spectrum",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://spectrum.adobe.com/web/rsp/components/text-field",
+      "title": "Text field"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://www.carbondesignsystem.com/building-blocks/core/components/modal",
+      "id": "carbon",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://www.carbondesignsystem.com/building-blocks/core/components/modal/guidelines",
+      "title": "Modal | Carbon Design System"
+    },
+    {
+      "label": "入力フォーム",
+      "labelEn": "Text fields",
+      "url": "https://www.carbondesignsystem.com/building-blocks/core/components/text-input",
+      "id": "carbon",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://www.carbondesignsystem.com/building-blocks/core/components/text-input/guidelines",
+      "title": "Text input | Carbon Design System"
+    },
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://www.carbondesignsystem.com/building-blocks/core/components/data-table",
+      "id": "carbon",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://www.carbondesignsystem.com/building-blocks/core/components/data-table/guidelines",
+      "title": "Data table | Carbon Design System"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://fluent2.microsoft.design/components/web/react/core/dialog/usage",
+      "id": "fluent",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://fluent2.microsoft.design/components/web/react/core/dialog/usage",
+      "title": "React Dialog - Fluent 2 Design System"
+    },
+    {
+      "label": "カラー",
+      "labelEn": "Colors",
+      "url": "https://fluent2.microsoft.design/color",
+      "id": "fluent",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://fluent2.microsoft.design/color",
+      "title": "Color - Fluent 2 Design System"
+    },
+    {
+      "label": "選択メニュー",
+      "labelEn": "Select menus",
+      "url": "https://fluent2.microsoft.design/components/web/react/core/select/usage",
+      "id": "fluent",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://fluent2.microsoft.design/components/web/react/core/select/usage",
+      "title": "React Select - Fluent 2 Design System"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://baseweb.design/components/dialog",
+      "id": "baseweb",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://baseweb.design/components/dialog/",
+      "title": "Base Web - Dialog"
+    },
+    {
+      "label": "選択メニュー",
+      "labelEn": "Select menus",
+      "url": "https://baseweb.design/components/select",
+      "id": "baseweb",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://baseweb.design/components/select/",
+      "title": "Base Web - Select"
+    },
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://baseweb.design/components/data-table",
+      "id": "baseweb",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://baseweb.design/components/data-table/",
+      "title": "Base Web - Examples"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://spindle.ameba.design/components/modal/",
+      "id": "spindle",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://spindle.ameba.design/components/modal/",
+      "title": "モーダル - コンポーネント | Spindle"
+    },
+    {
+      "label": "入力フォーム",
+      "labelEn": "Text fields",
+      "url": "https://spindle.ameba.design/components/textfield/",
+      "id": "spindle",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://spindle.ameba.design/components/textfield/",
+      "title": "テキストフィールド - コンポーネント | Spindle"
+    },
+    {
+      "label": "カラー",
+      "labelEn": "Colors",
+      "url": "https://spindle.ameba.design/styles/color/",
+      "id": "spindle",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://spindle.ameba.design/styles/color/",
+      "title": "カラー - スタイル | Spindle"
+    },
+    {
+      "label": "カラー",
+      "labelEn": "Colors",
+      "url": "https://smarthr.design/basics/colors/",
+      "id": "smarthr",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://smarthr.design/basics/colors/",
+      "title": "色 | 基本要素 | SmartHR Design System"
+    },
+    {
+      "label": "タイポグラフィ",
+      "labelEn": "Typography",
+      "url": "https://smarthr.design/products/design-tokens/typography/",
+      "id": "smarthr",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://smarthr.design/products/design-tokens/typography/",
+      "title": "タイポグラフィ | デザイントークン | SmartHR Design System"
+    },
+    {
+      "label": "カラー",
+      "labelEn": "Colors",
+      "url": "https://www.ikyu.co.jp/design_guideline/color",
+      "id": "ikyu",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://www.ikyu.co.jp/design_guideline/color",
+      "title": "カラー - IKYU Design Guideline"
+    },
+    {
+      "label": "タイポグラフィ",
+      "labelEn": "Typography",
+      "url": "https://www.ikyu.co.jp/design_guideline/typography",
+      "id": "ikyu",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://www.ikyu.co.jp/design_guideline/typography",
+      "title": "文字 - IKYU Design Guideline"
+    },
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://smarthr.design/products/components/table/",
+      "id": "smarthr",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://smarthr.design/products/components/table/",
+      "title": "Table | コンポーネント | SmartHR Design System"
+    },
+    {
+      "label": "カラー",
+      "labelEn": "Colors",
+      "url": "https://francfranc.io/design-system-guidelines/glossary/brand-identity-guidelines/color",
+      "id": "francfranc",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://francfranc.io/design-system-guidelines/glossary/brand-identity-guidelines/color/",
+      "title": "Color - Francfranc Brand Identity"
+    },
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://designsystem.porsche.com/v4/components/table/configurator/",
+      "id": "porsche",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://designsystem.porsche.com/v4/components/table/configurator/",
+      "title": "Table: Configurator - Components - Porsche Design System"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://designsystem.porsche.com/v4/components/modal/configurator/",
+      "id": "porsche",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://designsystem.porsche.com/v4/components/modal/configurator/",
+      "title": "Modal: Configurator - Components - Porsche Design System"
+    },
+    {
+      "label": "選択メニュー",
+      "labelEn": "Select menus",
+      "url": "https://designsystem.porsche.com/v4/components/select/configurator/",
+      "id": "porsche",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://designsystem.porsche.com/v4/components/select/configurator/",
+      "title": "Select: Configurator - Components - Porsche Design System"
+    },
+    {
+      "label": "入力フォーム",
+      "labelEn": "Text fields",
+      "url": "https://cds.coinbase.com/components/inputs/TextInput/",
+      "id": "coinbase",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://cds.coinbase.com/components/inputs/TextInput/",
+      "title": "TextInput | Coinbase Design System"
+    },
+    {
+      "label": "選択メニュー",
+      "labelEn": "Select menus",
+      "url": "https://cds.coinbase.com/components/inputs/SelectAlpha/",
+      "id": "coinbase",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://cds.coinbase.com/components/inputs/SelectAlpha/",
+      "title": "Select (Alpha) | Coinbase Design System"
+    },
+    {
+      "label": "ナビゲーション",
+      "labelEn": "Navigation",
+      "url": "https://cds.coinbase.com/components/navigation/NavigationBar/",
+      "id": "coinbase",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://cds.coinbase.com/components/navigation/NavigationBar/",
+      "title": "NavigationBar | Coinbase Design System"
+    },
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://kumo-ui.com/components/table",
+      "id": "kumo",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://kumo-ui.com/components/table/",
+      "title": "Table - Kumo"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://kumo-ui.com/components/dialog",
+      "id": "kumo",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://kumo-ui.com/components/dialog/",
+      "title": "Dialog - Kumo"
+    },
+    {
+      "label": "カラー",
+      "labelEn": "Colors",
+      "url": "https://ant.design/docs/spec/colors/",
+      "id": "ant",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://ant.design/docs/spec/colors",
+      "title": "Colors - Ant Design"
+    },
+    {
+      "label": "選択メニュー",
+      "labelEn": "Select menus",
+      "url": "https://kumo-ui.com/components/select",
+      "id": "kumo",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://kumo-ui.com/components/select/",
+      "title": "Select - Kumo"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://www.patternfly.org/components/modal",
+      "id": "patternfly",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://www.patternfly.org/components/modal/",
+      "title": "PatternFly • Modal"
+    },
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://www.patternfly.org/components/table",
+      "id": "patternfly",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://www.patternfly.org/components/table/",
+      "title": "PatternFly • Table"
+    },
+    {
+      "label": "入力フォーム",
+      "labelEn": "Text fields",
+      "url": "https://www.patternfly.org/components/forms/text-input",
+      "id": "patternfly",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://www.patternfly.org/components/forms/text-input/",
+      "title": "PatternFly • Text input"
+    }
+  ]
+}
