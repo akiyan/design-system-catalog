@@ -43,3 +43,5 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Do not show a selected/current-page state on mobile list rows. Each row opens the detail view.
 - Mobile details provide previous/next system navigation and position within the active category. Stop at list boundaries.
 - Horizontal swipes on the main preview navigate systems (left advances, right goes back). Preserve vertical scrolling and pinch zoom. Screenshot thumbnails continue to switch captures within a system.
+- On mobile, hide the keyboard-help (?) button. Keep the site title and language selector on one line, with category filters on the next row.
+- On mobile, category filters are visible only on the list screen. Hide them while viewing system details.

@@ -225,7 +225,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
     [['Tab', 'Shift + Tab'], t.tab], [['Enter', 'Space'], t.activate],
   ];
 
-  return <div className="catalog-app" data-ready={ready}>
+  return <div className={`catalog-app ${mobilePreview ? 'mobile-detail' : ''}`} data-ready={ready}>
     <a className="skip-link" href="#catalog-list">{t.skip}</a>
     <header className="site-header">
       <a className="site-title" href="/">{t.title}</a>
