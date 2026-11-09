@@ -1,0 +1,253 @@
+{
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "results": [
+    {
+      "id": "sansan",
+      "index": 0,
+      "url": "https://ui.one-design-system.sansan.com/?path=/docs/components-action-button-documents-guide--docs",
+      "file": "public/previews/sansan-0.webp",
+      "status": "captured"
+    },
+    {
+      "id": "sansan",
+      "index": 1,
+      "url": "https://ui.one-design-system.sansan.com/?path=/docs/one-ui-component-library--docs",
+      "file": "public/previews/sansan-1.webp",
+      "status": "captured"
+    },
+    {
+      "id": "charcoal",
+      "index": 0,
+      "url": "https://pixiv.github.io/charcoal/?path=/docs/react-button--docs",
+      "file": "public/previews/charcoal-0.webp",
+      "status": "captured"
+    },
+    {
+      "id": "charcoal",
+      "index": 1,
+      "url": "https://charcoal-web.pixiv.design/",
+      "file": "public/previews/charcoal-1.webp",
+      "status": "captured"
+    },
+    {
+      "id": "serendie",
+      "index": 0,
+      "url": "https://serendie.design/components/button",
+      "file": "public/previews/serendie-0.webp",
+      "status": "captured"
+    },
+    {
+      "id": "serendie",
+      "index": 1,
+      "url": "https://serendie.design/",
+      "file": "public/previews/serendie-1.webp",
+      "status": "captured"
+    },
+    {
+      "id": "sugao",
+      "index": 0,
+      "url": "https://brand.kaonavi.jp/sugao",
+      "file": "public/previews/sugao-0.webp",
+      "status": "captured"
+    },
+    {
+      "id": "vibes",
+      "index": 0,
+      "url": "https://vibes.freee.co.jp/?path=/docs/lv2-buttongroup-buttongroup--docs",
+      "file": "public/previews/vibes-0.webp",
+      "status": "captured"
+    },
+    {
+      "id": "vibes",
+      "index": 1,
+      "url": "https://vibes.freee.co.jp/?path=/docs/doc-readme--docs",
+      "file": "public/previews/vibes-1.webp",
+      "status": "captured"
+    },
+    {
+      "id": "vitals",
+      "index": 0,
+      "url": "https://vitals.ubie.life/",
+      "file": "public/previews/vitals-0.webp",
+      "status": "captured"
+    },
+    {
+      "id": "vitals",
+      "index": 1,
+      "url": "https://vitals.ubie.life/components/button",
+      "file": "public/previews/vitals-1.webp",
+      "status": "captured"
+    },
+    {
+      "id": "pajamas",
+      "index": 0,
+      "url": "https://design.gitlab.com/",
+      "file": "public/previews/pajamas-0.webp",
+      "status": "captured"
+    },
+    {
+      "id": "pajamas",
+      "index": 1,
+      "url": "https://design.gitlab.com/components/button",
+      "file": "public/previews/pajamas-1.webp",
+      "status": "captured"
+    },
+    {
+      "id": "paste",
+      "index": 0,
+      "url": "https://github.com/twilio-labs/paste",
+      "file": "public/previews/paste-0.webp",
+      "status": "captured"
+    },
+    {
+      "id": "wise",
+      "index": 0,
+      "url": "https://wise.design/direction",
+      "file": "public/previews/wise-0.webp",
+      "status": "captured"
+    },
+    {
+      "id": "semi",
+      "index": 0,
+      "url": "https://semi.design/",
+      "file": "public/previews/semi-0.webp",
+      "status": "captured"
+    },
+    {
+      "id": "arco",
+      "index": 0,
+      "url": "https://arco.design/",
+      "file": "public/previews/arco-0.webp",
+      "status": "captured"
+    },
+    {
+      "id": "arco",
+      "index": 1,
+      "url": "https://arco.design/react/components/button",
+      "file": "public/previews/arco-1.webp",
+      "status": "captured"
+    },
+    {
+      "id": "spectrum",
+      "index": 0,
+      "url": "https://spectrum.adobe.com/",
+      "file": "public/previews/spectrum-0.webp",
+      "status": "captured"
+    },
+    {
+      "id": "carbon",
+      "index": 0,
+      "url": "https://www.carbondesignsystem.com/",
+      "file": "public/previews/carbon-0.webp",
+      "status": "captured"
+    },
+    {
+      "id": "fluent",
+      "index": 0,
+      "url": "https://fluent2.microsoft.design/",
+      "file": "public/previews/fluent-0.webp",
+      "status": "captured"
+    },
+    {
+      "id": "baseweb",
+      "index": 0,
+      "url": "https://baseweb.design/",
+      "file": "public/previews/baseweb-0.webp",
+      "status": "captured"
+    },
+    {
+      "id": "polaris",
+      "index": 0,
+      "url": "https://shopify.dev/docs/api/polaris",
+      "file": "public/previews/polaris-0.webp",
+      "status": "captured"
+    },
+    {
+      "id": "spindle",
+      "index": 0,
+      "url": "https://spindle.ameba.design/",
+      "file": "public/previews/spindle-0.webp",
+      "status": "captured"
+    },
+    {
+      "id": "smarthr",
+      "index": 0,
+      "url": "https://smarthr.design/",
+      "file": "public/previews/smarthr-0.webp",
+      "status": "captured"
+    },
+    {
+      "id": "ikyu",
+      "index": 0,
+      "url": "https://www.ikyu.co.jp/design_guideline/",
+      "file": "public/previews/ikyu-0.webp",
+      "status": "captured"
+    },
+    {
+      "id": "francfranc",
+      "index": 0,
+      "url": "https://francfranc.io/design-system-guidelines/design-system/",
+      "file": "public/previews/francfranc-0.webp",
+      "status": "captured"
+    },
+    {
+      "id": "porsche",
+      "index": 0,
+      "url": "https://designsystem.porsche.com/v4/",
+      "file": "public/previews/porsche-0.webp",
+      "status": "captured"
+    },
+    {
+      "id": "audi",
+      "index": 0,
+      "url": "https://styleguide.audi.com/",
+      "file": "public/previews/audi-0.webp",
+      "status": "captured"
+    },
+    {
+      "id": "coinbase",
+      "index": 0,
+      "url": "https://cds.coinbase.com/",
+      "file": "public/previews/coinbase-0.webp",
+      "status": "captured"
+    },
+    {
+      "id": "tdesign",
+      "index": 0,
+      "url": "https://tdesign.tencent.com/",
+      "file": "public/previews/tdesign-0.webp",
+      "status": "captured"
+    },
+    {
+      "id": "ant",
+      "index": 0,
+      "url": "https://ant.design/",
+      "file": "public/previews/ant-0.webp",
+      "status": "captured"
+    },
+    {
+      "id": "kumo",
+      "index": 0,
+      "url": "https://kumo-ui.com/",
+      "file": "public/previews/kumo-0.webp",
+      "status": "captured"
+    },
+    {
+      "id": "patternfly",
+      "index": 0,
+      "url": "https://www.patternfly.org/",
+      "file": "public/previews/patternfly-0.webp",
+      "status": "captured"
+    },
+    {
+      "id": "primer",
+      "index": 0,
+      "url": "https://primer.style/",
+      "file": "public/previews/primer-0.webp",
+      "status": "captured"
+    }
+  ]
+}

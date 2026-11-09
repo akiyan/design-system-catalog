@@ -1,0 +1,90 @@
+[
+  {
+    "repo": "pixiv/charcoal",
+    "status": 200,
+    "created": "2021-08-06T04:06:26Z",
+    "license": "Apache-2.0",
+    "homepage": "https://charcoal-web.pixiv.design/",
+    "url": "https://github.com/pixiv/charcoal"
+  },
+  {
+    "repo": "serendie/serendie",
+    "status": 200,
+    "created": "2025-01-16T09:54:02Z",
+    "license": "MIT",
+    "homepage": "https://serendie.design",
+    "url": "https://github.com/serendie/serendie"
+  },
+  {
+    "repo": "serendie/serendie-design-system",
+    "status": 404,
+    "created": null,
+    "license": null,
+    "homepage": null,
+    "url": null
+  },
+  {
+    "repo": "freee/vibes",
+    "status": 200,
+    "created": "2023-07-06T06:32:37Z",
+    "license": "Apache-2.0",
+    "homepage": "",
+    "url": "https://github.com/freee/vibes"
+  },
+  {
+    "repo": "ubie-oss/ubie-vitals-website",
+    "status": 200,
+    "created": "2022-12-26T16:49:50Z",
+    "license": null,
+    "homepage": "",
+    "url": "https://github.com/ubie-oss/ubie-vitals-website"
+  },
+  {
+    "repo": "ubie-oss/ubie-ui",
+    "status": 200,
+    "created": "2023-09-13T07:22:03Z",
+    "license": "Apache-2.0",
+    "homepage": "",
+    "url": "https://github.com/ubie-oss/ubie-ui"
+  },
+  {
+    "repo": "twilio-labs/paste",
+    "status": 200,
+    "created": "2019-07-23T21:09:36Z",
+    "license": "MIT",
+    "homepage": "https://paste-dsys.com/",
+    "url": "https://github.com/twilio-labs/paste"
+  },
+  {
+    "repo": "douyinfe/semi-design",
+    "status": 200,
+    "created": "2021-10-25T11:47:38Z",
+    "license": "NOASSERTION",
+    "homepage": "https://semi.design",
+    "url": "https://github.com/DouyinFE/semi-design"
+  },
+  {
+    "repo": "arco-design/arco-design",
+    "status": 200,
+    "created": "2021-10-25T03:41:14Z",
+    "license": "MIT",
+    "homepage": "https://arco.design",
+    "url": "https://github.com/arco-design/arco-design"
+  },
+  {
+    "repo": "transferwise/neptune-web",
+    "status": 404,
+    "created": null,
+    "license": null,
+    "homepage": null,
+    "url": null
+  },
+  {
+    "repo": "wise/design-system",
+    "status": 404,
+    "created": null,
+    "license": null,
+    "homepage": null,
+    "url": null
+  }
+]

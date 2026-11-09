@@ -1,0 +1,179 @@
+{
+  "capturedAt": "2026-11-09T12:06:07.447Z",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "results": [
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://spectrum.adobe.com/",
+      "id": "spectrum",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://spectrum.adobe.com/",
+      "title": "Start with Spectrum"
+    },
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://fluent2.microsoft.design/",
+      "id": "fluent",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://fluent2.microsoft.design/",
+      "title": "Home - Fluent 2 Design System"
+    },
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://baseweb.design/",
+      "id": "baseweb",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://baseweb.design/",
+      "title": "Base Web - Base Web React UI framework"
+    },
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://www.carbondesignsystem.com/",
+      "id": "carbon",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://www.carbondesignsystem.com/",
+      "title": "Home | Carbon Design System"
+    },
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://shopify.dev/docs/api/polaris",
+      "id": "polaris",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://shopify.dev/docs/api/polaris",
+      "title": "Polaris references"
+    },
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://spindle.ameba.design/",
+      "id": "spindle",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://spindle.ameba.design/",
+      "title": "Spindle"
+    },
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://smarthr.design/",
+      "id": "smarthr",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://smarthr.design/",
+      "title": "SmartHR Design System"
+    },
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://www.ikyu.co.jp/design_guideline/",
+      "id": "ikyu",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://www.ikyu.co.jp/design_guideline/",
+      "title": "トップ - IKYU Design Guideline"
+    },
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://francfranc.io/design-system-guidelines/design-system/",
+      "id": "francfranc",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://francfranc.io/design-system-guidelines/design-system/",
+      "title": "Design System - Francfranc Brand Identity"
+    },
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://designsystem.porsche.com/v4/",
+      "id": "porsche",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://designsystem.porsche.com/v4/",
+      "title": "Porsche Design System"
+    },
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://cds.coinbase.com/",
+      "id": "coinbase",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://cds.coinbase.com/",
+      "title": "CDS | Coinbase Design System"
+    },
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://styleguide.audi.com/",
+      "id": "audi",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://styleguide.audi.com/",
+      "title": "Home - Brand"
+    },
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://ant.design/",
+      "id": "ant",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://ant.design/",
+      "title": "Ant Design - The world's second most popular React UI framework"
+    },
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://kumo-ui.com/",
+      "id": "kumo",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://kumo-ui.com/",
+      "title": "Kumo"
+    },
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://www.patternfly.org/",
+      "id": "patternfly",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://www.patternfly.org/",
+      "title": "PatternFly"
+    },
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://primer.style/",
+      "id": "primer",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://primer.style/",
+      "title": "Primer"
+    },
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://tdesign.tencent.com/",
+      "id": "tdesign",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://tdesign.tencent.com/",
+      "title": "TDesign - 开源的企业级设计体系，为设计师 & 开发者，打造工作美学"
+    }
+  ]
+}

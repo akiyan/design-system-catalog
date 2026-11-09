@@ -1,0 +1,154 @@
+[
+  {
+    "repo": "adobe/react-spectrum",
+    "status": 200,
+    "created": "2019-09-13T23:32:51Z",
+    "url": "https://github.com/adobe/react-spectrum",
+    "license": "Apache-2.0",
+    "homepage": "https://react-spectrum.adobe.com"
+  },
+  {
+    "repo": "carbon-design-system/carbon",
+    "status": 200,
+    "created": "2017-03-13T14:23:59Z",
+    "url": "https://github.com/carbon-design-system/carbon",
+    "license": "Apache-2.0",
+    "homepage": "https://www.carbondesignsystem.com"
+  },
+  {
+    "repo": "microsoft/fluentui",
+    "status": 200,
+    "created": "2016-06-06T15:03:44Z",
+    "url": "https://github.com/microsoft/fluentui",
+    "license": "NOASSERTION",
+    "homepage": "https://react.fluentui.dev"
+  },
+  {
+    "repo": "uber/baseweb",
+    "status": 200,
+    "created": "2018-03-09T01:32:10Z",
+    "url": "https://github.com/uber/baseweb",
+    "license": "MIT",
+    "homepage": "https://baseweb.design"
+  },
+  {
+    "repo": "Shopify/polaris",
+    "status": 200,
+    "created": "2017-04-20T18:26:34Z",
+    "url": "https://github.com/Shopify/polaris-react-archive",
+    "license": "NOASSERTION",
+    "homepage": "https://shopify.github.io/polaris-react-archive/"
+  },
+  {
+    "repo": "Shopify/polaris-react",
+    "status": 200,
+    "created": "2017-04-20T18:26:34Z",
+    "url": "https://github.com/Shopify/polaris-react-archive",
+    "license": "NOASSERTION",
+    "homepage": "https://shopify.github.io/polaris-react-archive/"
+  },
+  {
+    "repo": "cyberagent/spindle",
+    "status": 404,
+    "created": null,
+    "url": null,
+    "license": null,
+    "homepage": null
+  },
+  {
+    "repo": "kufu/smarthr-ui",
+    "status": 200,
+    "created": "2018-05-10T07:32:43Z",
+    "url": "https://github.com/kufu/smarthr-ui",
+    "license": "MIT",
+    "homepage": "https://story.smarthr-ui.dev"
+  },
+  {
+    "repo": "porsche-design-system/porsche-design-system",
+    "status": 200,
+    "created": "2018-12-07T12:59:44Z",
+    "url": "https://github.com/porsche-design-system/porsche-design-system",
+    "license": "NOASSERTION",
+    "homepage": "https://designsystem.porsche.com"
+  },
+  {
+    "repo": "audi/audi-ui-design",
+    "status": 404,
+    "created": null,
+    "url": null,
+    "license": null,
+    "homepage": null
+  },
+  {
+    "repo": "audi/audi-ui-react",
+    "status": 404,
+    "created": null,
+    "url": null,
+    "license": null,
+    "homepage": null
+  },
+  {
+    "repo": "coinbase/cds",
+    "status": 200,
+    "created": "2024-11-08T16:19:13Z",
+    "url": "https://github.com/coinbase/cds",
+    "license": "NOASSERTION",
+    "homepage": "https://cds.coinbase.com"
+  },
+  {
+    "repo": "Tencent/tdesign",
+    "status": 200,
+    "created": "2021-12-13T14:17:20Z",
+    "url": "https://github.com/Tencent/tdesign",
+    "license": "MIT",
+    "homepage": "https://tdesign.tencent.com"
+  },
+  {
+    "repo": "Tencent/tdesign-react",
+    "status": 200,
+    "created": "2021-12-15T21:50:54Z",
+    "url": "https://github.com/Tencent/tdesign-react",
+    "license": "MIT",
+    "homepage": "https://tdesign.tencent.com/react"
+  },
+  {
+    "repo": "ant-design/ant-design",
+    "status": 200,
+    "created": "2015-04-24T15:37:24Z",
+    "url": "https://github.com/ant-design/ant-design",
+    "license": "MIT",
+    "homepage": "https://ant.design"
+  },
+  {
+    "repo": "cloudflare/kumo",
+    "status": 200,
+    "created": "2025-10-30T14:03:47Z",
+    "url": "https://github.com/cloudflare/kumo",
+    "license": "MIT",
+    "homepage": "https://kumo-ui.com"
+  },
+  {
+    "repo": "patternfly/patternfly",
+    "status": 200,
+    "created": "2018-02-22T16:52:59Z",
+    "url": "https://github.com/patternfly/patternfly",
+    "license": "MIT",
+    "homepage": "https://patternfly.org"
+  },
+  {
+    "repo": "primer/css",
+    "status": 200,
+    "created": "2015-03-19T23:31:21Z",
+    "url": "https://github.com/primer/css",
+    "license": "MIT",
+    "homepage": "https://primer.style/css"
+  },
+  {
+    "repo": "primer/react",
+    "status": 200,
+    "created": "2018-02-17T00:09:05Z",
+    "url": "https://github.com/primer/react",
+    "license": "MIT",
+    "homepage": "https://primer.style/product/getting-started/react/"
+  }
+]

@@ -607,5 +607,1112 @@
     "shortNameEn": "BC Design System",
     "organizationEn": "Government of British Columbia",
     "licenseEn": "Not verified"
+  },
+  {
+    "id": "sansan",
+    "name": "Sansan One Design System",
+    "shortName": "Sansan One Design System",
+    "organization": "Sansan",
+    "organizationEn": "Sansan",
+    "country": "日本",
+    "countryEn": "Japan",
+    "category": "oss",
+    "stack": [
+      "React",
+      "Storybook"
+    ],
+    "license": "公開資料（コードは社内配布。再利用条件は要確認）",
+    "licenseEn": "Public documentation; code is internally distributed. Check reuse terms.",
+    "url": "https://ui.one-design-system.sansan.com/",
+    "views": [
+      {
+        "label": "ボタン",
+        "labelEn": "Buttons",
+        "url": "https://ui.one-design-system.sansan.com/?path=/docs/components-action-button-documents-guide--docs"
+      },
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://ui.one-design-system.sansan.com/?path=/docs/one-ui-component-library--docs"
+      }
+    ],
+    "published": {
+      "date": "2024-12-03",
+      "precision": "day",
+      "estimated": false,
+      "basis": "announcement",
+      "sourceUrl": "https://buildersbox.corp-sansan.com/entry/2025/01/27/130000",
+      "sourceTitle": "Bill Oneにおけるデザインシステムの取り組みの現在地",
+      "note": {
+        "ja": "公式技術ブログが紹介する2024年12月3日の公開発表を採用。実装パッケージは社内配布と説明されている。",
+        "en": "The official engineering blog links the December 3, 2024 public announcement. It describes implementation packages as internally distributed."
+      }
+    },
+    "shortNameEn": "Sansan One Design System"
+  },
+  {
+    "id": "charcoal",
+    "name": "pixiv Charcoal",
+    "shortName": "pixiv Charcoal",
+    "organization": "pixiv",
+    "organizationEn": "pixiv",
+    "country": "日本",
+    "countryEn": "Japan",
+    "category": "oss",
+    "stack": [
+      "React",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "license": "Apache 2.0",
+    "licenseEn": "Apache 2.0",
+    "url": "https://charcoal-web.pixiv.design/",
+    "views": [
+      {
+        "label": "ボタン",
+        "labelEn": "Buttons",
+        "url": "https://pixiv.github.io/charcoal/?path=/docs/react-button--docs"
+      },
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://charcoal-web.pixiv.design/"
+      }
+    ],
+    "published": {
+      "date": "2022-03-31",
+      "precision": "day",
+      "estimated": false,
+      "basis": "announcement",
+      "sourceUrl": "https://www.pixiv.co.jp/2022/03/31/115914",
+      "sourceTitle": "pixiv のデザインシステム実装 charcoal をOSS化",
+      "note": {
+        "ja": "ピクシブの公式発表日。公開対象はWebフロントエンド向けの実装ライブラリ。",
+        "en": "Official pixiv announcement of the open-source web implementation libraries."
+      }
+    },
+    "shortNameEn": "pixiv Charcoal",
+    "repository": "https://github.com/pixiv/charcoal"
+  },
+  {
+    "id": "serendie",
+    "name": "Serendie Design System",
+    "shortName": "Serendie Design System",
+    "organization": "三菱電機",
+    "organizationEn": "Mitsubishi Electric",
+    "country": "日本",
+    "countryEn": "Japan",
+    "category": "oss",
+    "stack": [
+      "React",
+      "TypeScript",
+      "Design tokens"
+    ],
+    "license": "MIT（Serendie UI）",
+    "licenseEn": "MIT (Serendie UI)",
+    "url": "https://serendie.design/",
+    "views": [
+      {
+        "label": "ボタン",
+        "labelEn": "Buttons",
+        "url": "https://serendie.design/components/button"
+      },
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://serendie.design/"
+      }
+    ],
+    "published": {
+      "date": "2024-11-07",
+      "precision": "day",
+      "estimated": false,
+      "basis": "announcement",
+      "sourceUrl": "https://serendie.design/",
+      "sourceTitle": "Serendie Design System — お知らせ",
+      "note": {
+        "ja": "公式サイトのお知らせに記載された初回公開日。Serendie UIのOSS公開は後日。",
+        "en": "Initial public website launch recorded in the official news. Open sourcing the UI implementation followed later."
+      }
+    },
+    "shortNameEn": "Serendie Design System",
+    "repository": "https://github.com/serendie/serendie"
+  },
+  {
+    "id": "sugao",
+    "name": "kaonavi sugao",
+    "shortName": "kaonavi sugao",
+    "organization": "カオナビ",
+    "organizationEn": "kaonavi",
+    "country": "日本",
+    "countryEn": "Japan",
+    "category": "oss",
+    "stack": [
+      "Figma",
+      "Design guidelines"
+    ],
+    "license": "Figma: CC BY 4.0／その他は要確認",
+    "licenseEn": "Figma: CC BY 4.0; check other assets separately",
+    "url": "https://brand.kaonavi.jp/sugao",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://brand.kaonavi.jp/sugao"
+      }
+    ],
+    "published": {
+      "date": "2024-06",
+      "precision": "month",
+      "estimated": true,
+      "basis": "historical-reference",
+      "sourceUrl": "https://cocoda.design/megurukai/p/pc3960411c591",
+      "sourceTitle": "カオナビの担当デザイナーによるsugao公開・運用事例",
+      "note": {
+        "ja": "担当デザイナーによる2024年6月の記事がsugaoとFigma Communityの公開を報告。正確な一般公開日は未確認。2019年は社内設計の開始年。",
+        "en": "A June 2024 case study by the responsible designers reports public sugao and Figma resources. Exact public launch is unconfirmed; 2019 refers to internal design work."
+      }
+    },
+    "shortNameEn": "kaonavi sugao"
+  },
+  {
+    "id": "vibes",
+    "name": "freee vibes",
+    "shortName": "freee vibes",
+    "organization": "freee",
+    "organizationEn": "freee",
+    "country": "日本",
+    "countryEn": "Japan",
+    "category": "oss",
+    "stack": [
+      "React",
+      "TypeScript",
+      "Storybook"
+    ],
+    "license": "Apache 2.0",
+    "licenseEn": "Apache 2.0",
+    "url": "https://vibes.freee.co.jp/",
+    "views": [
+      {
+        "label": "ボタン",
+        "labelEn": "Buttons",
+        "url": "https://vibes.freee.co.jp/?path=/docs/lv2-buttongroup-buttongroup--docs"
+      },
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://vibes.freee.co.jp/?path=/docs/doc-readme--docs"
+      }
+    ],
+    "published": {
+      "date": "2023-12-19",
+      "precision": "day",
+      "estimated": false,
+      "basis": "announcement",
+      "sourceUrl": "https://corp.freee.co.jp/news/20231219_design.html",
+      "sourceTitle": "freee デザインシステム vibes 公開",
+      "note": {
+        "ja": "freeeによる一般公開のプレスリリース日。",
+        "en": "Date of freee’s official public launch announcement."
+      }
+    },
+    "shortNameEn": "freee vibes",
+    "repository": "https://github.com/freee/vibes"
+  },
+  {
+    "id": "vitals",
+    "name": "Ubie Vitals",
+    "shortName": "Ubie Vitals",
+    "organization": "Ubie",
+    "organizationEn": "Ubie",
+    "country": "日本",
+    "countryEn": "Japan",
+    "category": "oss",
+    "stack": [
+      "React",
+      "TypeScript"
+    ],
+    "license": "Apache 2.0（Ubie UI。文書は要確認）",
+    "licenseEn": "Apache 2.0 (Ubie UI); documentation terms need verification",
+    "url": "https://vitals.ubie.life/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://vitals.ubie.life/"
+      },
+      {
+        "label": "ボタン",
+        "labelEn": "Buttons",
+        "url": "https://vitals.ubie.life/components/button"
+      }
+    ],
+    "published": {
+      "date": "2024-01-17",
+      "precision": "day",
+      "estimated": true,
+      "basis": "announcement-reference",
+      "sourceUrl": "https://zenn.dev/ubie_dev/articles/26e63af41709c4",
+      "sourceTitle": "Rebooting Ubie Vitals Design Systems",
+      "note": {
+        "ja": "Ubieの担当者によるウェブサイト公開報告の記事日を参考情報として採用。厳密な公開日は未確認。",
+        "en": "Reference date of the launch report by a Ubie design engineer. The exact website launch date is unconfirmed."
+      }
+    },
+    "shortNameEn": "Ubie Vitals",
+    "repository": "https://github.com/ubie-oss/ubie-ui"
+  },
+  {
+    "id": "pajamas",
+    "name": "GitLab Pajamas",
+    "shortName": "GitLab Pajamas",
+    "organization": "GitLab",
+    "organizationEn": "GitLab",
+    "country": "アメリカ",
+    "countryEn": "United States",
+    "category": "oss",
+    "stack": [
+      "Vue",
+      "SCSS"
+    ],
+    "license": "実装と文書の利用条件を要確認",
+    "licenseEn": "Check implementation and documentation licenses",
+    "url": "https://design.gitlab.com/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://design.gitlab.com/"
+      },
+      {
+        "label": "ボタン",
+        "labelEn": "Buttons",
+        "url": "https://design.gitlab.com/components/button"
+      }
+    ],
+    "published": {
+      "date": "2017",
+      "precision": "year",
+      "estimated": true,
+      "basis": "historical-reference",
+      "sourceUrl": "https://about.gitlab.com/blog/measuring-the-value-of-our-design-system/",
+      "sourceTitle": "Measuring the value of our design system",
+      "note": {
+        "ja": "公式ブログが開発の開始年を2017年と説明。初回一般公開日は未確認のため開始年を参考情報として採用。",
+        "en": "The official blog dates development to 2017. The first public launch is unconfirmed, so the development start year is a reference."
+      }
+    },
+    "shortNameEn": "GitLab Pajamas",
+    "repository": "https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com"
+  },
+  {
+    "id": "paste",
+    "name": "Twilio Paste",
+    "shortName": "Twilio Paste",
+    "organization": "Twilio",
+    "organizationEn": "Twilio",
+    "country": "アメリカ",
+    "countryEn": "United States",
+    "category": "oss",
+    "stack": [
+      "React",
+      "TypeScript",
+      "Design tokens"
+    ],
+    "license": "MIT",
+    "licenseEn": "MIT",
+    "url": "https://github.com/twilio-labs/paste",
+    "views": [
+      {
+        "label": "ソースコード",
+        "labelEn": "Source code",
+        "url": "https://github.com/twilio-labs/paste"
+      }
+    ],
+    "published": {
+      "date": "2019-07-23",
+      "precision": "day",
+      "estimated": true,
+      "basis": "repository-created",
+      "sourceUrl": "https://api.github.com/repos/twilio-labs/paste",
+      "sourceTitle": "Official repository metadata — twilio-labs/paste",
+      "note": {
+        "ja": "公式リポジトリの作成日を参考情報として採用。一般公開日とは限らない。旧公式ドキュメントURLは現在GitHubに転送されるため公式リポジトリを案内。",
+        "en": "Official repository creation date, not a confirmed public launch. The former documentation domain redirects to GitHub, so the official repository is linked."
+      }
+    },
+    "shortNameEn": "Twilio Paste",
+    "repository": "https://github.com/twilio-labs/paste"
+  },
+  {
+    "id": "wise",
+    "name": "Wise Design",
+    "shortName": "Wise Design",
+    "organization": "Wise",
+    "organizationEn": "Wise",
+    "country": "イギリス",
+    "countryEn": "United Kingdom",
+    "category": "oss",
+    "stack": [
+      "Design tokens",
+      "Figma"
+    ],
+    "license": "要確認（ブランド資料を含む）",
+    "licenseEn": "Check reuse terms, including brand assets",
+    "url": "https://wise.design/",
+    "views": [
+      {
+        "label": "デザイン指針",
+        "labelEn": "Direction",
+        "url": "https://wise.design/direction"
+      }
+    ],
+    "published": {
+      "date": "2023-03-01",
+      "precision": "day",
+      "estimated": false,
+      "basis": "announcement",
+      "sourceUrl": "https://wise.design/design-at-wise/stories",
+      "sourceTitle": "Wise Design — Going everywhere",
+      "note": {
+        "ja": "公式記事一覧に掲載された現行デザインシステムの公開発表日。前身となるシステムの開始日ではない。",
+        "en": "Launch announcement of the current design system in the official story index. This does not date earlier predecessor systems."
+      }
+    },
+    "shortNameEn": "Wise Design"
+  },
+  {
+    "id": "semi",
+    "name": "Semi Design",
+    "shortName": "Semi Design",
+    "organization": "ByteDance / Douyin",
+    "organizationEn": "ByteDance / Douyin",
+    "country": "中国",
+    "countryEn": "China",
+    "category": "oss",
+    "stack": [
+      "React",
+      "TypeScript",
+      "SCSS"
+    ],
+    "license": "MIT（同梱ライブラリは個別条件あり）",
+    "licenseEn": "MIT; bundled libraries have their own terms",
+    "url": "https://semi.design/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://semi.design/"
+      }
+    ],
+    "published": {
+      "date": "2021-10-25",
+      "precision": "day",
+      "estimated": true,
+      "basis": "repository-created",
+      "sourceUrl": "https://api.github.com/repos/DouyinFE/semi-design",
+      "sourceTitle": "Official repository metadata — DouyinFE/semi-design",
+      "note": {
+        "ja": "公式リポジトリの作成日を参考情報として採用。厳密な初回一般公開日を示すものではない。",
+        "en": "Official repository creation date used as a reference, not an assertion of the exact public launch."
+      }
+    },
+    "shortNameEn": "Semi Design",
+    "repository": "https://github.com/DouyinFE/semi-design"
+  },
+  {
+    "id": "arco",
+    "name": "Arco Design",
+    "shortName": "Arco Design",
+    "organization": "ByteDance",
+    "organizationEn": "ByteDance",
+    "country": "中国",
+    "countryEn": "China",
+    "category": "oss",
+    "stack": [
+      "React",
+      "Vue",
+      "TypeScript"
+    ],
+    "license": "MIT",
+    "licenseEn": "MIT",
+    "url": "https://arco.design/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://arco.design/"
+      },
+      {
+        "label": "ボタン",
+        "labelEn": "Buttons",
+        "url": "https://arco.design/react/components/button"
+      }
+    ],
+    "published": {
+      "date": "2021-10-25",
+      "precision": "day",
+      "estimated": true,
+      "basis": "repository-created",
+      "sourceUrl": "https://api.github.com/repos/arco-design/arco-design",
+      "sourceTitle": "Official repository metadata — arco-design/arco-design",
+      "note": {
+        "ja": "公式リポジトリの作成日を参考情報として採用。公開発表日とは一致しない可能性がある。",
+        "en": "Official repository creation date used as a reference. It may differ from the public announcement date."
+      }
+    },
+    "shortNameEn": "Arco Design",
+    "repository": "https://github.com/arco-design/arco-design"
+  },
+  {
+    "id": "spectrum",
+    "name": "Adobe Spectrum 2",
+    "shortName": "Adobe Spectrum 2",
+    "shortNameEn": "Adobe Spectrum 2",
+    "organization": "Adobe",
+    "organizationEn": "Adobe",
+    "country": "米国",
+    "countryEn": "United States",
+    "category": "oss",
+    "stack": [
+      "React",
+      "React Aria",
+      "Web Components"
+    ],
+    "license": "Apache-2.0",
+    "licenseEn": "Apache-2.0",
+    "url": "https://spectrum.adobe.com/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://spectrum.adobe.com/"
+      }
+    ],
+    "published": {
+      "date": "2023-12-12",
+      "precision": "day",
+      "estimated": false,
+      "basis": "announcement",
+      "sourceUrl": "https://blog.adobe.com/en/publish/2023/12/12/adobe-unveils-spectrum-2-design-system-reimagining-user-experience-over-100-adobe-applications",
+      "sourceTitle": "Public release evidence — Adobe Spectrum 2",
+      "note": {
+        "ja": "公式発表に記載された公開日。",
+        "en": "Public release date reported by the official announcement."
+      }
+    },
+    "repository": "https://github.com/adobe/react-spectrum"
+  },
+  {
+    "id": "carbon",
+    "name": "IBM Carbon Design System",
+    "shortName": "IBM Carbon Design System",
+    "shortNameEn": "IBM Carbon Design System",
+    "organization": "IBM",
+    "organizationEn": "IBM",
+    "country": "米国",
+    "countryEn": "United States",
+    "category": "oss",
+    "stack": [
+      "React",
+      "Web Components",
+      "Sass"
+    ],
+    "license": "Apache-2.0",
+    "licenseEn": "Apache-2.0",
+    "url": "https://www.carbondesignsystem.com/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://www.carbondesignsystem.com/"
+      }
+    ],
+    "published": {
+      "date": "2017-03-13",
+      "precision": "day",
+      "estimated": true,
+      "basis": "repository-created",
+      "sourceUrl": "https://api.github.com/repos/carbon-design-system/carbon",
+      "sourceTitle": "Public release evidence — IBM Carbon Design System",
+      "note": {
+        "ja": "公式リポジトリの作成日を参考情報として採用。一般公開日とは一致しない可能性がある。",
+        "en": "Official repository creation date used as a reference; public launch may differ."
+      }
+    },
+    "repository": "https://github.com/carbon-design-system/carbon"
+  },
+  {
+    "id": "fluent",
+    "name": "Microsoft Fluent 2",
+    "shortName": "Microsoft Fluent 2",
+    "shortNameEn": "Microsoft Fluent 2",
+    "organization": "Microsoft",
+    "organizationEn": "Microsoft",
+    "country": "米国",
+    "countryEn": "United States",
+    "category": "oss",
+    "stack": [
+      "React",
+      "Web Components",
+      "iOS"
+    ],
+    "license": "MIT（コード） / ブランド素材は別条件",
+    "licenseEn": "MIT for code; separate brand asset terms",
+    "url": "https://fluent2.microsoft.design/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://fluent2.microsoft.design/"
+      }
+    ],
+    "published": {
+      "date": "2023-05",
+      "precision": "month",
+      "estimated": true,
+      "basis": "historical-reference",
+      "sourceUrl": "https://sdtimes.com/msft/microsoft-releases-fluent-2-to-enable-more-creativity-in-design/",
+      "sourceTitle": "Public release evidence — Microsoft Fluent 2",
+      "note": {
+        "ja": "周辺情報から採用した参考日。初回一般公開日を確定するものではない。",
+        "en": "Contextual reference date; this does not establish the exact initial public launch."
+      }
+    },
+    "repository": "https://github.com/microsoft/fluentui"
+  },
+  {
+    "id": "baseweb",
+    "name": "Uber Base Web",
+    "shortName": "Uber Base Web",
+    "shortNameEn": "Uber Base Web",
+    "organization": "Uber",
+    "organizationEn": "Uber",
+    "country": "米国",
+    "countryEn": "United States",
+    "category": "oss",
+    "stack": [
+      "React",
+      "Styletron"
+    ],
+    "license": "MIT",
+    "licenseEn": "MIT",
+    "url": "https://baseweb.design/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://baseweb.design/"
+      }
+    ],
+    "published": {
+      "date": "2018-03-09",
+      "precision": "day",
+      "estimated": true,
+      "basis": "repository-created",
+      "sourceUrl": "https://api.github.com/repos/uber/baseweb",
+      "sourceTitle": "Public release evidence — Uber Base Web",
+      "note": {
+        "ja": "公式リポジトリの作成日を参考情報として採用。一般公開日とは一致しない可能性がある。",
+        "en": "Official repository creation date used as a reference; public launch may differ."
+      }
+    },
+    "repository": "https://github.com/uber/baseweb"
+  },
+  {
+    "id": "polaris",
+    "name": "Shopify Polaris",
+    "shortName": "Shopify Polaris",
+    "shortNameEn": "Shopify Polaris",
+    "organization": "Shopify",
+    "organizationEn": "Shopify",
+    "country": "カナダ",
+    "countryEn": "Canada",
+    "category": "oss",
+    "stack": [
+      "Web Components",
+      "React (archive)"
+    ],
+    "license": "個別の利用条件を確認",
+    "licenseEn": "Check individual terms",
+    "url": "https://shopify.dev/docs/api/polaris",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://shopify.dev/docs/api/polaris"
+      }
+    ],
+    "published": {
+      "date": "2017-04-20",
+      "precision": "day",
+      "estimated": true,
+      "basis": "repository-created",
+      "sourceUrl": "https://api.github.com/repos/Shopify/polaris",
+      "sourceTitle": "Public release evidence — Shopify Polaris",
+      "note": {
+        "ja": "公式リポジトリの作成日を参考情報として採用。一般公開日とは一致しない可能性がある。",
+        "en": "Official repository creation date used as a reference; public launch may differ."
+      }
+    },
+    "repository": "https://github.com/Shopify/polaris-react-archive"
+  },
+  {
+    "id": "spindle",
+    "name": "Spindle",
+    "shortName": "Spindle",
+    "shortNameEn": "Spindle",
+    "organization": "CyberAgent / Ameba",
+    "organizationEn": "CyberAgent / Ameba",
+    "country": "日本",
+    "countryEn": "Japan",
+    "category": "oss",
+    "stack": [
+      "React",
+      "CSS"
+    ],
+    "license": "MIT（コード） / ブランド素材は別条件",
+    "licenseEn": "MIT for code; separate brand asset terms",
+    "url": "https://spindle.ameba.design/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://spindle.ameba.design/"
+      }
+    ],
+    "published": {
+      "date": "2021-09-17",
+      "precision": "day",
+      "estimated": false,
+      "basis": "announcement",
+      "sourceUrl": "https://developers.cyberagent.co.jp/blog/archives/31641/",
+      "sourceTitle": "Public release evidence — Spindle",
+      "note": {
+        "ja": "公式発表に記載された公開日。",
+        "en": "Public release date reported by the official announcement."
+      }
+    },
+    "repository": "https://github.com/openameba/spindle"
+  },
+  {
+    "id": "smarthr",
+    "name": "SmartHR Design System",
+    "shortName": "SmartHR Design System",
+    "shortNameEn": "SmartHR Design System",
+    "organization": "SmartHR",
+    "organizationEn": "SmartHR",
+    "country": "日本",
+    "countryEn": "Japan",
+    "category": "oss",
+    "stack": [
+      "React",
+      "TypeScript"
+    ],
+    "license": "MIT（UIコード） / ブランド素材は別条件",
+    "licenseEn": "MIT（UIコード） / ブランド素材は別条件",
+    "url": "https://smarthr.design/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://smarthr.design/"
+      }
+    ],
+    "published": {
+      "date": "2020-06",
+      "precision": "month",
+      "estimated": false,
+      "basis": "announcement",
+      "sourceUrl": "https://note.com/smarthr_co/n/nd718e87f6513",
+      "sourceTitle": "Public release evidence — SmartHR Design System",
+      "note": {
+        "ja": "公式発表に記載された公開日。",
+        "en": "Public release date reported by the official announcement."
+      }
+    },
+    "repository": "https://github.com/kufu/smarthr-ui"
+  },
+  {
+    "id": "ikyu",
+    "name": "一休 Design Guideline",
+    "shortName": "一休 Design Guideline",
+    "shortNameEn": "Ikyu Design Guideline",
+    "organization": "Ikyu",
+    "organizationEn": "Ikyu",
+    "country": "日本",
+    "countryEn": "Japan",
+    "category": "oss",
+    "stack": [
+      "Design guidelines"
+    ],
+    "license": "個別の利用条件を確認",
+    "licenseEn": "Check individual terms",
+    "url": "https://www.ikyu.co.jp/design_guideline/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://www.ikyu.co.jp/design_guideline/"
+      }
+    ],
+    "published": {
+      "date": "2023-12",
+      "precision": "month",
+      "estimated": false,
+      "basis": "announcement",
+      "sourceUrl": "https://note.com/ikyu_design/n/ndf1204cda1fe",
+      "sourceTitle": "Public release evidence — 一休 Design Guideline",
+      "note": {
+        "ja": "公式発表に記載された公開日。",
+        "en": "Public release date reported by the official announcement."
+      }
+    }
+  },
+  {
+    "id": "francfranc",
+    "name": "Francfranc Design System",
+    "shortName": "Francfranc Design System",
+    "shortNameEn": "Francfranc Design System",
+    "organization": "Francfranc",
+    "organizationEn": "Francfranc",
+    "country": "日本",
+    "countryEn": "Japan",
+    "category": "oss",
+    "stack": [
+      "Design guidelines",
+      "Brand assets"
+    ],
+    "license": "個別の利用条件を確認",
+    "licenseEn": "Check individual terms",
+    "url": "https://francfranc.io/design-system-guidelines/design-system/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://francfranc.io/design-system-guidelines/design-system/"
+      }
+    ],
+    "published": {
+      "date": "2017-09-07",
+      "precision": "day",
+      "estimated": false,
+      "basis": "announcement",
+      "sourceUrl": "https://www.francfranc.co.jp/news/2017/design-guidelines",
+      "sourceTitle": "Public release evidence — Francfranc Design System",
+      "note": {
+        "ja": "公式発表に記載された公開日。",
+        "en": "Public release date reported by the official announcement."
+      }
+    }
+  },
+  {
+    "id": "porsche",
+    "name": "Porsche Design System",
+    "shortName": "Porsche Design System",
+    "shortNameEn": "Porsche Design System",
+    "organization": "Porsche",
+    "organizationEn": "Porsche",
+    "country": "ドイツ",
+    "countryEn": "Germany",
+    "category": "oss",
+    "stack": [
+      "Web Components",
+      "React",
+      "Angular",
+      "Vue"
+    ],
+    "license": "個別の利用条件を確認",
+    "licenseEn": "Check individual terms",
+    "url": "https://designsystem.porsche.com/v4/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://designsystem.porsche.com/v4/"
+      }
+    ],
+    "published": {
+      "date": "2018-12-07",
+      "precision": "day",
+      "estimated": true,
+      "basis": "repository-created",
+      "sourceUrl": "https://api.github.com/repos/porsche-design-system/porsche-design-system",
+      "sourceTitle": "Public release evidence — Porsche Design System",
+      "note": {
+        "ja": "公式リポジトリの作成日を参考情報として採用。一般公開日とは一致しない可能性がある。",
+        "en": "Official repository creation date used as a reference; public launch may differ."
+      }
+    },
+    "repository": "https://github.com/porsche-design-system/porsche-design-system"
+  },
+  {
+    "id": "audi",
+    "name": "Audi Brand Guidelines",
+    "shortName": "Audi Brand Guidelines",
+    "shortNameEn": "Audi Brand Guidelines",
+    "organization": "Audi",
+    "organizationEn": "Audi",
+    "country": "ドイツ",
+    "countryEn": "Germany",
+    "category": "oss",
+    "stack": [
+      "Design guidelines",
+      "Brand assets"
+    ],
+    "license": "個別の利用条件を確認",
+    "licenseEn": "Check individual terms",
+    "url": "https://styleguide.audi.com/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://styleguide.audi.com/"
+      }
+    ],
+    "published": {
+      "date": "2017",
+      "precision": "year",
+      "estimated": true,
+      "basis": "historical-reference",
+      "sourceUrl": "https://www.red-dot.org/de/project/audi-brand-appearance-from-monologue-to-dialogue-15206-15206",
+      "sourceTitle": "Public release evidence — Audi Brand Guidelines",
+      "note": {
+        "ja": "前身となるブランド刷新の受賞年を参考表示。現行ガイドの初回公開年は未確認。",
+        "en": "Award year of the predecessor brand identity used as context. The current guide’s first public release is unconfirmed."
+      }
+    }
+  },
+  {
+    "id": "coinbase",
+    "name": "Coinbase Design System",
+    "shortName": "Coinbase Design System",
+    "shortNameEn": "Coinbase Design System",
+    "organization": "Coinbase",
+    "organizationEn": "Coinbase",
+    "country": "米国",
+    "countryEn": "United States",
+    "category": "oss",
+    "stack": [
+      "React",
+      "React Native"
+    ],
+    "license": "個別の利用条件を確認",
+    "licenseEn": "Check individual terms",
+    "url": "https://cds.coinbase.com/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://cds.coinbase.com/"
+      }
+    ],
+    "published": {
+      "date": "2024-11-08",
+      "precision": "day",
+      "estimated": true,
+      "basis": "repository-created",
+      "sourceUrl": "https://api.github.com/repos/coinbase/cds",
+      "sourceTitle": "Public release evidence — Coinbase Design System",
+      "note": {
+        "ja": "公式リポジトリの作成日を参考情報として採用。一般公開日とは一致しない可能性がある。",
+        "en": "Official repository creation date used as a reference; public launch may differ."
+      }
+    },
+    "repository": "https://github.com/coinbase/cds"
+  },
+  {
+    "id": "tdesign",
+    "name": "Tencent TDesign",
+    "shortName": "Tencent TDesign",
+    "shortNameEn": "Tencent TDesign",
+    "organization": "Tencent",
+    "organizationEn": "Tencent",
+    "country": "中国",
+    "countryEn": "China",
+    "category": "oss",
+    "stack": [
+      "React",
+      "Vue",
+      "Flutter",
+      "WeChat"
+    ],
+    "license": "MIT",
+    "licenseEn": "MIT",
+    "url": "https://tdesign.tencent.com/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://tdesign.tencent.com/"
+      }
+    ],
+    "published": {
+      "date": "2021-12-13",
+      "precision": "day",
+      "estimated": true,
+      "basis": "repository-created",
+      "sourceUrl": "https://api.github.com/repos/Tencent/tdesign",
+      "sourceTitle": "Public release evidence — Tencent TDesign",
+      "note": {
+        "ja": "公式リポジトリの作成日を参考情報として採用。一般公開日とは一致しない可能性がある。",
+        "en": "Official repository creation date used as a reference; public launch may differ."
+      }
+    },
+    "repository": "https://github.com/Tencent/tdesign"
+  },
+  {
+    "id": "ant",
+    "name": "Ant Design",
+    "shortName": "Ant Design",
+    "shortNameEn": "Ant Design",
+    "organization": "Ant Group / Alibaba",
+    "organizationEn": "Ant Group / Alibaba",
+    "country": "中国",
+    "countryEn": "China",
+    "category": "oss",
+    "stack": [
+      "React",
+      "TypeScript"
+    ],
+    "license": "MIT",
+    "licenseEn": "MIT",
+    "url": "https://ant.design/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://ant.design/"
+      }
+    ],
+    "published": {
+      "date": "2015-04-24",
+      "precision": "day",
+      "estimated": true,
+      "basis": "repository-created",
+      "sourceUrl": "https://api.github.com/repos/ant-design/ant-design",
+      "sourceTitle": "Public release evidence — Ant Design",
+      "note": {
+        "ja": "公式リポジトリの作成日を参考情報として採用。一般公開日とは一致しない可能性がある。",
+        "en": "Official repository creation date used as a reference; public launch may differ."
+      }
+    },
+    "repository": "https://github.com/ant-design/ant-design"
+  },
+  {
+    "id": "kumo",
+    "name": "Cloudflare Kumo",
+    "shortName": "Cloudflare Kumo",
+    "shortNameEn": "Cloudflare Kumo",
+    "organization": "Cloudflare",
+    "organizationEn": "Cloudflare",
+    "country": "米国",
+    "countryEn": "United States",
+    "category": "oss",
+    "stack": [
+      "React",
+      "Tailwind CSS",
+      "Base UI"
+    ],
+    "license": "MIT",
+    "licenseEn": "MIT",
+    "url": "https://kumo-ui.com/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://kumo-ui.com/"
+      }
+    ],
+    "published": {
+      "date": "2026-02-03",
+      "precision": "day",
+      "estimated": true,
+      "basis": "historical-reference",
+      "sourceUrl": "https://registry.npmjs.org/@cloudflare/kumo",
+      "sourceTitle": "Public release evidence — Cloudflare Kumo",
+      "note": {
+        "ja": "npmの1.0.0公開日を参考表示。ドキュメントや前身実装の初回公開日とは異なる可能性がある。",
+        "en": "npm version 1.0.0 publication date used as context; documentation and predecessor implementations may have appeared earlier."
+      }
+    },
+    "repository": "https://github.com/cloudflare/kumo"
+  },
+  {
+    "id": "patternfly",
+    "name": "Red Hat PatternFly",
+    "shortName": "Red Hat PatternFly",
+    "shortNameEn": "Red Hat PatternFly",
+    "organization": "Red Hat",
+    "organizationEn": "Red Hat",
+    "country": "米国",
+    "countryEn": "United States",
+    "category": "oss",
+    "stack": [
+      "React",
+      "HTML",
+      "CSS"
+    ],
+    "license": "個別の利用条件を確認",
+    "licenseEn": "Check individual terms",
+    "url": "https://www.patternfly.org/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://www.patternfly.org/"
+      }
+    ],
+    "published": {
+      "date": "2014-02-03",
+      "precision": "day",
+      "estimated": true,
+      "basis": "repository-created",
+      "sourceUrl": "https://api.github.com/repos/patternfly/patternfly-3",
+      "sourceTitle": "Public release evidence — Red Hat PatternFly",
+      "note": {
+        "ja": "公式リポジトリの作成日を参考情報として採用。一般公開日とは一致しない可能性がある。",
+        "en": "Official repository creation date used as a reference; public launch may differ."
+      }
+    },
+    "repository": "https://github.com/patternfly/patternfly"
+  },
+  {
+    "id": "primer",
+    "name": "GitHub Primer",
+    "shortName": "GitHub Primer",
+    "shortNameEn": "GitHub Primer",
+    "organization": "GitHub",
+    "organizationEn": "GitHub",
+    "country": "米国",
+    "countryEn": "United States",
+    "category": "oss",
+    "stack": [
+      "React",
+      "CSS"
+    ],
+    "license": "MIT",
+    "licenseEn": "MIT",
+    "url": "https://primer.style/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://primer.style/"
+      }
+    ],
+    "published": {
+      "date": "2015-03-19",
+      "precision": "day",
+      "estimated": true,
+      "basis": "repository-created",
+      "sourceUrl": "https://api.github.com/repos/primer/css",
+      "sourceTitle": "Public release evidence — GitHub Primer",
+      "note": {
+        "ja": "公式リポジトリの作成日を参考情報として採用。一般公開日とは一致しない可能性がある。",
+        "en": "Official repository creation date used as a reference; public launch may differ."
+      }
+    },
+    "repository": "https://github.com/primer/css"
   }
 ]

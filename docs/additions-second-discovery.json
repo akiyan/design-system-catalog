@@ -1,0 +1,151 @@
+[
+  {
+    "id": "spectrum",
+    "status": 200,
+    "url": "https://spectrum.adobe.com/",
+    "title": [
+      "Start with Spectrum"
+    ],
+    "repos": []
+  },
+  {
+    "id": "carbon",
+    "status": 200,
+    "url": "https://www.carbondesignsystem.com/",
+    "title": [
+      "Home | Carbon Design System"
+    ],
+    "repos": [
+      "https://github.com/carbon-design-system/carbon"
+    ]
+  },
+  {
+    "id": "fluent",
+    "status": 200,
+    "url": "https://fluent2.microsoft.design/",
+    "title": [
+      "Home - Fluent 2 Design System"
+    ],
+    "repos": []
+  },
+  {
+    "id": "baseweb",
+    "status": 200,
+    "url": "https://baseweb.design/",
+    "title": [],
+    "repos": []
+  },
+  {
+    "id": "polaris",
+    "status": 200,
+    "url": "https://shopify.dev/docs/api/polaris",
+    "title": [
+      "Polaris references"
+    ],
+    "repos": []
+  },
+  {
+    "id": "spindle",
+    "status": 200,
+    "url": "https://ameba-spindle.web.app/",
+    "title": [
+      "storybook - Storybook"
+    ],
+    "repos": []
+  },
+  {
+    "id": "smarthr",
+    "status": 200,
+    "url": "https://smarthr.design/",
+    "title": [
+      "SmartHR Design System"
+    ],
+    "repos": []
+  },
+  {
+    "id": "ikyu",
+    "error": "HTTPSConnectionPool(host='design.ikyu.co.jp', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='design.ikyu.co.jp', port=443): Failed to resolve 'design.ikyu.co.jp' ([Errno -2] Name or service not known)\"))"
+  },
+  {
+    "id": "porsche",
+    "status": 200,
+    "url": "https://designsystem.porsche.com/v4/",
+    "title": [
+      "Porsche Design System"
+    ],
+    "repos": [
+      "https://github.com/dequelabs/axe-core",
+      "https://github.com/porsche-design-system/porsche-design-system"
+    ]
+  },
+  {
+    "id": "audi",
+    "error": "HTTPSConnectionPool(host='brand.audi.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='brand.audi.com', port=443): Failed to resolve 'brand.audi.com' ([Errno -2] Name or service not known)\"))"
+  },
+  {
+    "id": "coinbase",
+    "status": 200,
+    "url": "https://cds.coinbase.com/",
+    "title": [
+      "CDS | Coinbase Design System"
+    ],
+    "repos": [
+      "https://github.com/coinbase/cds"
+    ]
+  },
+  {
+    "id": "tdesign",
+    "status": 200,
+    "url": "https://tdesign.tencent.com/",
+    "title": [
+      "TDesign - 开源的企业级设计体系，为设计师 & 开发者，打造工作美学"
+    ],
+    "repos": []
+  },
+  {
+    "id": "ant",
+    "status": 200,
+    "url": "https://ant.design/",
+    "title": [
+      "Ant Design - The world&#x27;s second most popular React UI framework"
+    ],
+    "repos": [
+      "https://github.com/ant-design/ant-design",
+      "https://github.com/websemantics/awesome-ant-design"
+    ]
+  },
+  {
+    "id": "kumo",
+    "status": 200,
+    "url": "https://kumo-ui.com/",
+    "title": [
+      "Kumo"
+    ],
+    "repos": [
+      "https://github.com/cloudflare/kumo"
+    ]
+  },
+  {
+    "id": "patternfly",
+    "status": 200,
+    "url": "https://www.patternfly.org/",
+    "title": [
+      "PatternFly"
+    ],
+    "repos": [
+      "https://github.com/orgs/patternfly",
+      "https://github.com/patternfly/patternfly"
+    ]
+  },
+  {
+    "id": "primer",
+    "status": 200,
+    "url": "https://primer.style/",
+    "title": [
+      "Primer"
+    ],
+    "repos": [
+      "https://github.com/user-attachments/assets"
+    ]
+  }
+]

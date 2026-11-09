@@ -12,7 +12,7 @@ test('newest-first catalog, categories, date evidence, and repository link', asy
   page.on('console', m => { if (m.type() === 'error') errors.push(m.text()); });
   await page.goto('/'); await ready(page);
   await expect(page.getByRole('searchbox')).toHaveCount(0);
-  await expect(page.locator('.system-row')).toHaveCount(15);
+  await expect(page.locator('.system-row')).toHaveCount(systems.length);
   await expect(page.locator('.system-row').first()).toContainText('Astryx');
   const dates = await page.locator('.release-line time').allTextContents();
   expect(dates).toEqual([...dates].sort((a,b) => b.localeCompare(a)));
@@ -22,8 +22,8 @@ test('newest-first catalog, categories, date evidence, and repository link', asy
   await page.getByRole('button', {name:'政府・公共 12',exact:true}).click();
   await expect(page.locator('.system-row')).toHaveCount(12);
   await expect(active(page)).toContainText('GC Design System');
-  await page.getByRole('button', {name:'企業・OSS 3',exact:true}).click();
-  await expect(page.locator('.system-row')).toHaveCount(3);
+  await page.getByRole('button', {name:'企業・OSS 31',exact:true}).click();
+  await expect(page.locator('.system-row')).toHaveCount(31);
   await expect(active(page)).toContainText('Astryx');
   await page.locator('.system-row').filter({hasText:'Gestalt'}).click();
   await expect(page.locator('.release-info .date-reference')).toHaveText('参考');
@@ -48,7 +48,7 @@ test('selection uses paths, survives reload, and restores Back/Forward', async (
   await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', /\/govuk\/$/);
 });
 
-test('all 15 direct paths serve the selected system as static HTML', async ({request}) => {
+test('all catalog direct paths serve the selected system as static HTML', async ({request}) => {
   for (const system of systems) {
     const response = await request.get(`/${system.id}/`);
     expect(response.ok(),system.id).toBe(true);
@@ -99,12 +99,12 @@ test('manual language selection persists, translates metadata/help, and returns 
 test('keyboard selection, boundaries, screenshot switching, zoom and help focus', async ({page}) => {
   await page.goto('/'); await ready(page);
   await page.keyboard.press('j');
-  await expect(active(page)).toContainText('GC Design System');
-  await expect(page).toHaveURL(/\/canada\/$/);
+  await expect(active(page)).toContainText('Cloudflare Kumo');
+  await expect(page).toHaveURL(/\/kumo\/$/);
   await expect(active(page)).toBeFocused();
   await page.keyboard.press('ArrowUp');
   await expect(active(page)).toContainText('Astryx');
-  await page.keyboard.press('End'); await expect(active(page)).toContainText('Bristol');
+  await page.keyboard.press('End'); await expect(active(page)).toContainText('PatternFly');
   await page.keyboard.press('Home'); await expect(active(page)).toContainText('Astryx');
   await page.keyboard.press('ArrowRight');
   await expect(page.locator('.main-preview img')).toHaveAttribute('src','/previews/astryx-1.webp');
@@ -131,7 +131,7 @@ test('keyboard O opens the official site', async ({page,context}) => {
 
 test('all images load and desktop has no horizontal overflow', async ({page}) => {
   await page.goto('/'); await ready(page);
-  await expect(page.locator('.system-row')).toHaveCount(15);
+  await expect(page.locator('.system-row')).toHaveCount(systems.length);
   for (const row of await page.locator('.system-row').all()) {
     await row.scrollIntoViewIfNeeded();
     await expect.poll(()=>row.locator('img').evaluate(e=>e.complete&&e.naturalWidth>0)).toBe(true);
@@ -162,4 +162,24 @@ test('release metadata states precision and identifies every evidence source', a
     expect(entry.published.date.length).toBe(lengths[entry.published.precision]);
     if(entry.published.basis==='repository-created') expect(entry.published.estimated).toBe(true);
   }
+});
+
+
+test('requested additions have source previews, dates, and separate Semi/Arco entries', async ({page,request}) => {
+  const ids=['sansan','charcoal','serendie','sugao','vibes','vitals','pajamas','paste','wise','semi','arco','spectrum','carbon','fluent','baseweb','polaris','spindle','smarthr','ikyu','francfranc','porsche','audi','coinbase','tdesign','ant','kumo','patternfly','primer'];
+  expect(new Set(systems.map(s=>s.id)).size).toBe(43);
+  for(const id of ids) {
+    const entry=systems.find(s=>s.id===id);
+    expect(entry,id).toBeTruthy();
+    expect(entry.category).toBe('oss');
+    for(let i=0;i<entry.views.length;i++) {
+      const response=await request.get(`/previews/${id}-${i}.webp`);
+      expect(response.ok(),`${id}-${i}`).toBe(true);
+      expect(response.headers()['content-type']).toContain('image/');
+    }
+  }
+  expect(systems.some(s=>['adele','openui','designsystemsrepo'].includes(s.id))).toBe(false);
+  await page.goto('/vibes/'); await ready(page);
+  await expect(page.locator('.release-info')).toContainText('2023-12-19');
+  await expect(page.locator('.github-link')).toHaveAttribute('href','https://github.com/akiyan/design-system-catalog');
 });

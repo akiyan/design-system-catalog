@@ -28,3 +28,12 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Selecting a system updates browser history; direct access, reload, and Back/Forward restore the selection.
 - Arrow Up/Down or J/K select systems; Home/End select boundaries; Left/Right switch screenshots; V enlarges; O opens the official site; ? opens the shortcut dialog; Escape closes overlays or returns to the mobile list.
 - Do not intercept shortcuts in editable fields or the language selector. Dialogs must trap and restore focus.
+
+## Additional entry scope
+
+- Add the supplied domestic/overseas design systems; deduplicate existing Cloudscape, GOV.UK and USWDS entries.
+- Semi Design and Arco Design are separate systems.
+- Do not add aggregator, gallery, repository-directory or comparison sites such as Design Systems Repo, Adele or Open UI.
+- For public documentation whose code or assets are restricted, state the actual reuse conditions rather than describing it as freely reusable OSS.
+
+- Deduplicate Digital Agency Design System when adding the second supplied list.

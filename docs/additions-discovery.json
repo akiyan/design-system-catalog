@@ -1,0 +1,119 @@
+[
+  {
+    "id": "sansan",
+    "status": 200,
+    "url": "https://ui.one-design-system.sansan.com/",
+    "title": [
+      "storybook - Storybook"
+    ],
+    "repos": []
+  },
+  {
+    "id": "charcoal",
+    "status": 200,
+    "url": "https://pixiv.github.io/charcoal/",
+    "title": [
+      "storybook - Storybook"
+    ],
+    "repos": []
+  },
+  {
+    "id": "serendie",
+    "status": 200,
+    "url": "https://serendie.design/",
+    "title": [
+      "Serendie Design System"
+    ],
+    "repos": []
+  },
+  {
+    "id": "sugao",
+    "status": 200,
+    "url": "https://brand.kaonavi.jp/",
+    "title": [
+      "kaonavi Brand Deck"
+    ],
+    "repos": []
+  },
+  {
+    "id": "vibes",
+    "status": 200,
+    "url": "https://vibes.freee.co.jp/",
+    "title": [
+      "@storybook/cli - Storybook"
+    ],
+    "repos": []
+  },
+  {
+    "id": "vitals",
+    "status": 200,
+    "url": "https://vitals.ubie.life/",
+    "title": [
+      "Ubie Vitals"
+    ],
+    "repos": [
+      "https://github.com/ubie-oss/ubie-vitals-website"
+    ]
+  },
+  {
+    "id": "pajamas",
+    "status": 200,
+    "url": "https://design.gitlab.com/",
+    "title": [
+      "Pajamas Design System"
+    ],
+    "repos": [
+      "https://gitlab.com/-/ide",
+      "https://gitlab.com/gitlab-org/gitlab-services"
+    ]
+  },
+  {
+    "id": "paste",
+    "status": 200,
+    "url": "https://github.com:443/twilio-labs/paste",
+    "title": [
+      "GitHub - twilio-labs/paste: Paste is a design system for designing and building consistent experiences at Twilio. · GitHub"
+    ],
+    "repos": [
+      "https://github.com/atlassian/changesets",
+      "https://github.com/enterprise/premium-support",
+      "https://github.com/enterprise/startups",
+      "https://github.com/features/actions",
+      "https://github.com/features/ai",
+      "https://github.com/features/code-quality",
+      "https://github.com/features/codespaces",
+      "https://github.com/features/copilot",
+      "https://github.com/open-source/sponsors",
+      "https://github.com/orgs/community",
+      "https://github.com/resources/articles",
+      "https://github.com/resources/events"
+    ]
+  },
+  {
+    "id": "wise",
+    "status": 200,
+    "url": "https://wise.design/",
+    "title": [
+      "Wise Design | Building a System for a Borderless World"
+    ],
+    "repos": []
+  },
+  {
+    "id": "semi",
+    "status": 200,
+    "url": "https://semi.design/",
+    "title": [
+      "Semi Design"
+    ],
+    "repos": []
+  },
+  {
+    "id": "arco",
+    "status": 200,
+    "url": "https://arco.design/",
+    "title": [
+      "Arco Design - 企业级产品的完整设计和开发解决方案"
+    ],
+    "repos": []
+  }
+]
