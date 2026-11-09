@@ -1,0 +1,2 @@
+import React from'react';import{Button,TextField}from'@serendie/ui';import'@serendie/ui/styles.css';import kit from'../react-kit';
+export default kit({Button:({variant,size,...p})=><Button styleType={{primary:'filled',secondary:'outlined',text:'ghost'}[variant]} size={size==='small'?'small':'medium'} {...p}/>,Input:({onValueChange,...p})=><TextField {...p} onChange={e=>onValueChange(e.target.value)}/>});

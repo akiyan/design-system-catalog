@@ -1,0 +1,816 @@
+{
+  "dads": {
+    "status": "ready",
+    "adapter": "dads",
+    "package": "digital-go-jp/design-system-example-components-react",
+    "version": "2.7.0",
+    "sourceUrl": "https://github.com/digital-go-jp/design-system-example-components-react",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ]
+  },
+  "govuk": {
+    "status": "ready",
+    "adapter": "govuk",
+    "package": "govuk-frontend",
+    "version": "6.6.0",
+    "sourceUrl": "https://www.npmjs.com/package/govuk-frontend",
+    "views": [
+      "overview",
+      "buttons",
+      "form",
+      "typography"
+    ],
+    "unstyled": false
+  },
+  "uswds": {
+    "status": "ready",
+    "adapter": "uswds",
+    "package": "@uswds/uswds",
+    "version": "3.14.0",
+    "sourceUrl": "https://www.npmjs.com/package/@uswds/uswds",
+    "views": [
+      "overview",
+      "buttons",
+      "form",
+      "typography"
+    ],
+    "unstyled": false
+  },
+  "cloudscape": {
+    "status": "ready",
+    "adapter": "cloudscape",
+    "package": "@cloudscape-design/components",
+    "version": "3.0.1411",
+    "sourceUrl": "https://www.npmjs.com/package/@cloudscape-design/components",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false
+  },
+  "gestalt": {
+    "status": "ready",
+    "adapter": "gestalt",
+    "package": "gestalt",
+    "version": "177.0.12",
+    "sourceUrl": "https://www.npmjs.com/package/gestalt",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false
+  },
+  "sgds": {
+    "status": "ready",
+    "adapter": "sgds",
+    "package": "@govtechsg/sgds",
+    "version": "2.3.6",
+    "sourceUrl": "https://www.npmjs.com/package/@govtechsg/sgds",
+    "views": [
+      "overview",
+      "buttons",
+      "form",
+      "typography"
+    ],
+    "unstyled": false
+  },
+  "astryx": {
+    "status": "ready",
+    "adapter": "astryx",
+    "package": "@astryxdesign/core",
+    "version": "0.7.11",
+    "sourceUrl": "https://www.npmjs.com/package/@astryxdesign/core",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false
+  },
+  "agds": {
+    "status": "ready",
+    "adapter": "agds",
+    "package": "@ag.ds-next/react",
+    "version": "1.36.0",
+    "sourceUrl": "https://www.npmjs.com/package/@ag.ds-next/react",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false
+  },
+  "czech": {
+    "status": "ready",
+    "adapter": "czech",
+    "package": "@gov-design-system-ce/components",
+    "version": "4.7.3",
+    "sourceUrl": "https://www.npmjs.com/package/@gov-design-system-ce/components",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false
+  },
+  "italia": {
+    "status": "ready",
+    "adapter": "italia",
+    "package": "bootstrap-italia",
+    "version": "2.18.3",
+    "sourceUrl": "https://www.npmjs.com/package/bootstrap-italia",
+    "views": [
+      "overview",
+      "buttons",
+      "form",
+      "typography"
+    ],
+    "unstyled": false
+  },
+  "europa": {
+    "status": "ready",
+    "adapter": "europa",
+    "package": "@ecl/preset-ec",
+    "version": "5.4.0",
+    "sourceUrl": "https://www.npmjs.com/package/@ecl/preset-ec",
+    "views": [
+      "overview",
+      "buttons",
+      "form",
+      "typography"
+    ],
+    "unstyled": false
+  },
+  "canada": {
+    "status": "ready",
+    "adapter": "canada",
+    "package": "@gcds-core/components",
+    "version": "1.7.0",
+    "sourceUrl": "https://www.npmjs.com/package/@gcds-core/components",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false
+  },
+  "cfpb": {
+    "status": "ready",
+    "adapter": "cfpb",
+    "package": "Official stylesheet + documented HTML",
+    "version": "2026-11-10",
+    "sourceUrl": "https://cfpb.github.io/design-system/dist/index.css",
+    "views": [
+      "overview",
+      "buttons",
+      "form",
+      "typography"
+    ]
+  },
+  "bristol": {
+    "status": "ready",
+    "adapter": "bristol",
+    "package": "Official stylesheet + documented HTML",
+    "version": "2026-11-10",
+    "sourceUrl": "https://style.bristol.gov.uk/css/common.css",
+    "views": [
+      "overview",
+      "buttons",
+      "form",
+      "typography"
+    ]
+  },
+  "bc": {
+    "status": "ready",
+    "adapter": "bc",
+    "package": "@bcgov/design-system-react-components",
+    "version": "0.9.1",
+    "sourceUrl": "https://www.npmjs.com/package/@bcgov/design-system-react-components",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false
+  },
+  "sansan": {
+    "status": "design-only",
+    "sourceUrl": "https://ui.one-design-system.sansan.com/",
+    "views": []
+  },
+  "charcoal": {
+    "status": "ready",
+    "adapter": "charcoal",
+    "package": "@charcoal-ui/react",
+    "version": "6.3.0",
+    "sourceUrl": "https://www.npmjs.com/package/@charcoal-ui/react",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false
+  },
+  "serendie": {
+    "status": "ready",
+    "adapter": "serendie",
+    "package": "@serendie/ui",
+    "version": "3.7.3",
+    "sourceUrl": "https://www.npmjs.com/package/@serendie/ui",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false
+  },
+  "sugao": {
+    "status": "design-only",
+    "sourceUrl": "https://brand.kaonavi.jp/sugao",
+    "views": []
+  },
+  "vibes": {
+    "status": "ready",
+    "adapter": "vibes",
+    "package": "@freee_jp/vibes",
+    "version": "100.1.0",
+    "sourceUrl": "https://www.npmjs.com/package/@freee_jp/vibes",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false
+  },
+  "vitals": {
+    "status": "ready",
+    "adapter": "vitals",
+    "package": "@ubie/ubie-ui",
+    "version": "0.0.48",
+    "sourceUrl": "https://www.npmjs.com/package/@ubie/ubie-ui",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false
+  },
+  "pajamas": {
+    "status": "ready",
+    "adapter": "pajamas",
+    "package": "@gitlab/ui",
+    "version": "140.0.0",
+    "sourceUrl": "https://www.npmjs.com/package/@gitlab/ui",
+    "views": [
+      "buttons",
+      "form"
+    ],
+    "unstyled": false
+  },
+  "paste": {
+    "status": "ready",
+    "adapter": "paste",
+    "package": "@twilio-paste/core",
+    "version": "21.5.0",
+    "sourceUrl": "https://www.npmjs.com/package/@twilio-paste/core",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false
+  },
+  "wise": {
+    "status": "ready",
+    "adapter": "wise",
+    "package": "@transferwise/components",
+    "version": "46.168.1",
+    "sourceUrl": "https://www.npmjs.com/package/@transferwise/components",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false
+  },
+  "semi": {
+    "status": "ready",
+    "adapter": "semi",
+    "package": "@douyinfe/semi-ui",
+    "version": "2.104.0",
+    "sourceUrl": "https://www.npmjs.com/package/@douyinfe/semi-ui",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false
+  },
+  "arco": {
+    "status": "ready",
+    "adapter": "arco",
+    "package": "@arco-design/web-react",
+    "version": "2.66.18",
+    "sourceUrl": "https://www.npmjs.com/package/@arco-design/web-react",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false
+  },
+  "spectrum": {
+    "status": "ready",
+    "adapter": "spectrum",
+    "package": "@react-spectrum/s2",
+    "version": "1.8.2",
+    "sourceUrl": "https://www.npmjs.com/package/@react-spectrum/s2",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false
+  },
+  "carbon": {
+    "status": "ready",
+    "adapter": "carbon",
+    "package": "@carbon/react",
+    "version": "1.120.0",
+    "sourceUrl": "https://www.npmjs.com/package/@carbon/react",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false
+  },
+  "fluent": {
+    "status": "ready",
+    "adapter": "fluent",
+    "package": "@fluentui/react-components",
+    "version": "9.75.1",
+    "sourceUrl": "https://www.npmjs.com/package/@fluentui/react-components",
+    "views": [
+      "overview",
+      "buttons",
+      "form",
+      "typography"
+    ],
+    "unstyled": false
+  },
+  "baseweb": {
+    "status": "ready",
+    "adapter": "baseweb",
+    "package": "baseui",
+    "version": "18.2.0",
+    "sourceUrl": "https://www.npmjs.com/package/baseui",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false
+  },
+  "polaris": {
+    "status": "ready",
+    "adapter": "polaris",
+    "package": "@shopify/polaris",
+    "version": "13.9.5",
+    "sourceUrl": "https://www.npmjs.com/package/@shopify/polaris",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false,
+    "notice": {
+      "ja": "公開されているPolaris React版の見本です。現行Web Components版とは異なります。",
+      "en": "This uses the published Polaris React implementation, which differs from current Web Components."
+    }
+  },
+  "spindle": {
+    "status": "ready",
+    "adapter": "spindle",
+    "package": "@openameba/spindle-ui",
+    "version": "3.4.0",
+    "sourceUrl": "https://www.npmjs.com/package/@openameba/spindle-ui",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false
+  },
+  "smarthr": {
+    "status": "ready",
+    "adapter": "smarthr",
+    "package": "smarthr-ui",
+    "version": "102.1.0",
+    "sourceUrl": "https://www.npmjs.com/package/smarthr-ui",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false
+  },
+  "ikyu": {
+    "status": "design-only",
+    "sourceUrl": "https://www.ikyu.co.jp/design_guideline/",
+    "views": []
+  },
+  "francfranc": {
+    "status": "design-only",
+    "sourceUrl": "https://francfranc.io/design-system-guidelines/design-system/",
+    "views": []
+  },
+  "porsche": {
+    "status": "ready",
+    "adapter": "porsche",
+    "package": "@porsche-design-system/components-react",
+    "version": "4.10.1",
+    "sourceUrl": "https://www.npmjs.com/package/@porsche-design-system/components-react",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false,
+    "notice": {
+      "ja": "ブランド専用フォントは含まれていません。公開コードの利用条件とブランド素材の条件は異なります。",
+      "en": "Proprietary brand fonts are not included. Code and brand assets have separate usage terms."
+    }
+  },
+  "audi": {
+    "status": "design-only",
+    "sourceUrl": "https://styleguide.audi.com/",
+    "views": []
+  },
+  "coinbase": {
+    "status": "ready",
+    "adapter": "coinbase",
+    "package": "@coinbase/cds-web",
+    "version": "9.30.0",
+    "sourceUrl": "https://www.npmjs.com/package/@coinbase/cds-web",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false
+  },
+  "tdesign": {
+    "status": "ready",
+    "adapter": "tdesign",
+    "package": "tdesign-react",
+    "version": "1.18.6",
+    "sourceUrl": "https://www.npmjs.com/package/tdesign-react",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false
+  },
+  "ant": {
+    "status": "ready",
+    "adapter": "ant",
+    "package": "antd",
+    "version": "6.7.0",
+    "sourceUrl": "https://www.npmjs.com/package/antd",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false
+  },
+  "kumo": {
+    "status": "ready",
+    "adapter": "kumo",
+    "package": "@cloudflare/kumo",
+    "version": "2.17.0",
+    "sourceUrl": "https://www.npmjs.com/package/@cloudflare/kumo",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false
+  },
+  "patternfly": {
+    "status": "ready",
+    "adapter": "patternfly",
+    "package": "@patternfly/react-core",
+    "version": "6.7.0",
+    "sourceUrl": "https://www.npmjs.com/package/@patternfly/react-core",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false
+  },
+  "primer": {
+    "status": "ready",
+    "adapter": "primer",
+    "package": "@primer/react",
+    "version": "38.45.0",
+    "sourceUrl": "https://www.npmjs.com/package/@primer/react",
+    "views": [
+      "overview",
+      "buttons",
+      "form",
+      "typography"
+    ],
+    "unstyled": false
+  },
+  "atlassian": {
+    "status": "ready",
+    "adapter": "atlassian",
+    "package": "@atlaskit/button",
+    "version": "25.7.1",
+    "sourceUrl": "https://www.npmjs.com/package/@atlaskit/button",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false
+  },
+  "lightning": {
+    "status": "ready",
+    "adapter": "lightning",
+    "package": "@salesforce-ux/design-system",
+    "version": "2.264.3",
+    "sourceUrl": "https://www.npmjs.com/package/@salesforce-ux/design-system",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false,
+    "notice": {
+      "ja": "公開CSSパッケージの見本です。SLDS 2のCosmosテーマではありません。",
+      "en": "This specimen uses the public CSS package, not the SLDS 2 Cosmos theme."
+    }
+  },
+  "forma36": {
+    "status": "ready",
+    "adapter": "forma36",
+    "package": "@contentful/f36-components",
+    "version": "6.30.0",
+    "sourceUrl": "https://www.npmjs.com/package/@contentful/f36-components",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false
+  },
+  "evergreen": {
+    "status": "ready",
+    "adapter": "evergreen",
+    "package": "evergreen-ui",
+    "version": "7.1.9",
+    "sourceUrl": "https://www.npmjs.com/package/evergreen-ui",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false
+  },
+  "airtable": {
+    "status": "integration-limited",
+    "sourceUrl": "https://airtable.com/developers/extensions/api/UI/Style%20System/All%20styles",
+    "views": []
+  },
+  "monday": {
+    "status": "ready",
+    "adapter": "monday",
+    "package": "@vibe/core",
+    "version": "4.5.39",
+    "sourceUrl": "https://www.npmjs.com/package/@vibe/core",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false
+  },
+  "vitamin": {
+    "status": "ready",
+    "adapter": "vitamin",
+    "package": "@vtmn/css",
+    "version": "3.0.2",
+    "sourceUrl": "https://www.npmjs.com/package/@vtmn/css",
+    "views": [
+      "overview",
+      "buttons",
+      "form",
+      "typography"
+    ],
+    "unstyled": false
+  },
+  "orbit": {
+    "status": "ready",
+    "adapter": "orbit",
+    "package": "@kiwicom/orbit-components",
+    "version": "27.7.1-alpha.0",
+    "sourceUrl": "https://www.npmjs.com/package/@kiwicom/orbit-components",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ]
+  },
+  "apron": {
+    "status": "design-only",
+    "sourceUrl": "https://www.figma.com/community/file/847372282968994272/apron",
+    "views": []
+  },
+  "dbs": {
+    "status": "design-only",
+    "sourceUrl": "https://www.figma.com/community/file/1273895245584027076/data-visualisation-dbs-bank",
+    "views": []
+  },
+  "finastra": {
+    "status": "ready",
+    "adapter": "finastra",
+    "package": "@finastra/button",
+    "version": "1.8.1",
+    "sourceUrl": "https://www.npmjs.com/package/@finastra/button",
+    "views": [
+      "buttons"
+    ],
+    "unstyled": false
+  },
+  "lion": {
+    "status": "ready",
+    "adapter": "lion",
+    "package": "@lion/ui",
+    "version": "0.27.0",
+    "sourceUrl": "https://www.npmjs.com/package/@lion/ui",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": true
+  },
+  "boosted": {
+    "status": "ready",
+    "adapter": "boosted",
+    "package": "boosted",
+    "version": "5.3.8",
+    "sourceUrl": "https://www.npmjs.com/package/boosted",
+    "views": [
+      "overview",
+      "buttons",
+      "form",
+      "typography"
+    ],
+    "unstyled": false
+  },
+  "calcite": {
+    "status": "ready",
+    "adapter": "calcite",
+    "package": "@esri/calcite-components",
+    "version": "5.2.1",
+    "sourceUrl": "https://www.npmjs.com/package/@esri/calcite-components",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false
+  },
+  "lexicon": {
+    "status": "ready",
+    "adapter": "lexicon",
+    "package": "@clayui/css",
+    "version": "3.167.0",
+    "sourceUrl": "https://www.npmjs.com/package/@clayui/css",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false
+  },
+  "vaadin": {
+    "status": "ready",
+    "adapter": "vaadin",
+    "package": "@vaadin/button",
+    "version": "25.3.5",
+    "sourceUrl": "https://www.npmjs.com/package/@vaadin/button",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false
+  },
+  "falcon": {
+    "status": "design-only",
+    "sourceUrl": "https://www.figma.com/community/file/1047401907024695662/speeda-designsystem-falcon",
+    "views": []
+  },
+  "wfp": {
+    "status": "ready",
+    "adapter": "wfp",
+    "package": "@wfp/react",
+    "version": "1.22.6",
+    "sourceUrl": "https://www.npmjs.com/package/@wfp/react",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false
+  },
+  "kolibri": {
+    "status": "ready",
+    "adapter": "kolibri",
+    "package": "@public-ui/components",
+    "version": "4.5.0",
+    "sourceUrl": "https://www.npmjs.com/package/@public-ui/components",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": false
+  },
+  "dsfr": {
+    "status": "ready",
+    "adapter": "dsfr",
+    "package": "@gouvfr/dsfr",
+    "version": "1.15.4",
+    "sourceUrl": "https://www.npmjs.com/package/@gouvfr/dsfr",
+    "views": [
+      "overview",
+      "buttons",
+      "form",
+      "typography"
+    ],
+    "unstyled": false
+  },
+  "reactaria": {
+    "status": "ready",
+    "adapter": "reactaria",
+    "package": "react-aria-components",
+    "version": "1.22.1",
+    "sourceUrl": "https://www.npmjs.com/package/react-aria-components",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": true
+  },
+  "ariakit": {
+    "status": "ready",
+    "adapter": "ariakit",
+    "package": "@ariakit/react",
+    "version": "0.4.43",
+    "sourceUrl": "https://www.npmjs.com/package/@ariakit/react",
+    "views": [
+      "overview",
+      "buttons",
+      "form"
+    ],
+    "unstyled": true
+  },
+  "kobalte": {
+    "status": "ready",
+    "adapter": "kobalte",
+    "package": "@kobalte/core",
+    "version": "0.13.14",
+    "sourceUrl": "https://www.npmjs.com/package/@kobalte/core",
+    "views": [
+      "buttons",
+      "form"
+    ],
+    "unstyled": true
+  },
+  "bitsui": {
+    "status": "ready",
+    "adapter": "bitsui",
+    "package": "bits-ui",
+    "version": "2.20.6",
+    "sourceUrl": "https://www.npmjs.com/package/bits-ui",
+    "views": [
+      "buttons",
+      "form"
+    ],
+    "unstyled": true
+  }
+}

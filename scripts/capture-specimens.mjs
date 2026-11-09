@@ -1,0 +1,10 @@
+import { chromium } from '@playwright/test';
+import fs from 'node:fs/promises';
+import sharp from 'sharp';
+const registry=JSON.parse(await fs.readFile('src/data/specimens.json','utf8'));
+const base=process.env.TEST_BASE_URL||'http://127.0.0.1:4176';
+const browser=await chromium.launch({headless:true});
+await fs.mkdir('public/specimens/thumbnails',{recursive:true});
+const jobs=Object.entries(registry).filter(([id,s])=>s.status==='ready'&&(!process.env.ONLY||process.env.ONLY.split(',').includes(id))).flatMap(([id,s])=>s.views.map(view=>({id,view})));
+let next=0;const results=[];
+await Promise.all(Array.from({length:4},async()=>{const page=await browser.newPage({viewport:{width:1000,height:720},deviceScaleFactor:1});while(next<jobs.length){const {id,view}=jobs[next++];const errors=[];const listener=e=>errors.push(e.message);page.on('pageerror',listener);try{await page.goto(`${base}/specimens/${id}/${view}/`,{waitUntil:'networkidle',timeout:45000});await page.locator('#specimen-root[data-ready="true"]').waitFor({timeout:15000});await page.waitForTimeout(500);if(await page.locator('#specimen-root[data-error]').count())throw Error(await page.locator('#specimen-root').innerText());if(errors.length)throw Error(errors.join('; '));const buttons=await page.getByRole('button').count();if(!buttons&&view!=='typography')throw Error('No accessible buttons rendered');await sharp(await page.screenshot()).webp({quality:84}).toFile(`public/specimens/thumbnails/${id}-${view}.webp`);results.push({id,view,ok:true,buttons});console.log('OK',id,view,buttons)}catch(e){results.push({id,view,ok:false,error:e.message.slice(0,1200)});console.log('FAIL',id,view,e.message.slice(0,250))}page.off('pageerror',listener)}await page.close()}));await browser.close();await fs.writeFile('docs/specimen-validation.json',JSON.stringify(results,null,2)+'\n');console.log(JSON.stringify({total:results.length,failed:results.filter(x=>!x.ok)},null,2));

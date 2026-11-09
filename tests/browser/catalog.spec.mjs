@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { readFileSync } from 'node:fs';
 const systems=JSON.parse(readFileSync(new URL('../../src/data/systems.json',import.meta.url)));
+const specimens=JSON.parse(readFileSync(new URL('../../src/data/specimens.json',import.meta.url)));
 const publicCount=systems.filter(s=>s.category==='public').length;
 const ossCount=systems.length-publicCount;
 const oldest=[...systems].sort((a,b)=>a.published.date.localeCompare(b.published.date))[0];
@@ -114,9 +115,9 @@ test('keyboard selection, boundaries, screenshot switching, zoom and help focus'
   await page.keyboard.press('Home'); await expect(active(page)).toContainText('Ant Design');
   await page.goto('/astryx/'); await ready(page);
   await page.keyboard.press('ArrowRight');
-  await expect(page.locator('.main-preview img')).toHaveAttribute('src','/previews/astryx-1.webp');
+  await expect(page.locator('.main-preview iframe')).toHaveAttribute('src','/specimens/astryx/buttons/?lang=ja');
   await page.keyboard.press('v'); await expect(page.locator('.zoom-dialog')).toBeVisible();
-  await page.keyboard.press('ArrowRight'); await expect(page.locator('.zoom-navigation')).toContainText(`3 / ${systems.find(s=>s.id==='astryx').views.length}`);
+  await page.keyboard.press('ArrowRight'); await expect(page.locator('.zoom-navigation')).toContainText(`3 / ${specimens.astryx.views.length}`);
   await page.keyboard.press('Escape'); await expect(page.locator('.zoom-dialog')).not.toBeVisible();
   const help=page.getByRole('button',{name:'キーボード操作',exact:true}); await help.focus();
   await page.keyboard.press('?'); await expect(page.locator('.help-dialog')).toBeVisible();
@@ -141,7 +142,8 @@ test('all images load and desktop has no horizontal overflow', async ({page}) =>
   await expect(page.locator('.system-row')).toHaveCount(systems.length);
   for (const row of await page.locator('.system-row').all()) {
     await row.scrollIntoViewIfNeeded();
-    await expect.poll(()=>row.locator('img').evaluate(e=>e.complete&&e.naturalWidth>0)).toBe(true);
+    if(await row.locator('img').count())await expect.poll(()=>row.locator('img').evaluate(e=>e.complete&&e.naturalWidth>0)).toBe(true);
+    else await expect(row.locator('.implementation-unavailable')).toBeVisible();
   }
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
 });
@@ -218,8 +220,10 @@ test('touch swipes browse systems without opening zoom, vertical gestures and ta
   await page.goto(`${test.info().project.use.baseURL}/ant/`); await ready(page);
   const client=await context.newCDPSession(page);
   async function swipe(dx,dy=0) {
-    const box=await page.locator('.main-preview').boundingBox();
-    const x=box.x+box.width/2,y=box.y+box.height/2;
+    await expect(page.frameLocator('.main-preview iframe').locator('#specimen-root')).toHaveAttribute('data-ready','true');
+    await page.locator('.main-preview').scrollIntoViewIfNeeded();
+    const box=await page.locator('.main-preview iframe').boundingBox();
+    const x=box.x+box.width/2,y=box.y+30;
     await client.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x,y}]});
     for(let i=1;i<=5;i++) await client.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:x+dx*i/5,y:y+dy*i/5}]});
     await client.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
@@ -234,7 +238,7 @@ test('touch swipes browse systems without opening zoom, vertical gestures and ta
   await swipe(10,-90);
   await expect(page).toHaveURL(/\/ant\/$/);
   await page.waitForTimeout(550);
-  await page.locator('.main-preview').tap();
+  await page.getByRole('button',{name:'拡大表示',exact:true}).click();
   await expect(page.locator('.zoom-dialog')).toBeVisible();
   await page.keyboard.press('Escape');
   await page.goto(`${test.info().project.use.baseURL}/${oldest.id}/`); await ready(page);

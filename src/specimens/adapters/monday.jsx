@@ -1,0 +1,2 @@
+import React from'react';import{Button,TextField,Checkbox}from'@vibe/core';import'@vibe/core/tokens';import kit from'../react-kit';
+export default kit({Button:({variant,size,...p})=><Button kind={{primary:'primary',secondary:'secondary',text:'tertiary'}[variant]} size={size||'medium'} {...p}/>,Input:({onValueChange,...p})=><TextField {...p} onChange={onValueChange}/>,Checkbox:({onValueChange,children,...p})=><Checkbox {...p} label={children} onChange={e=>onValueChange?.(e.target.checked)}/>});

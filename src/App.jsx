@@ -1,10 +1,11 @@
 import { Fragment, useEffect, useRef, useState } from 'react';
-import { ArrowSquareOut, ArrowLeft, CaretLeft, CaretRight, GithubLogo, Keyboard, X, ImageBroken } from '@phosphor-icons/react';
+import { ArrowSquareOut, ArrowLeft, CaretLeft, CaretRight, GithubLogo, Keyboard, X, ImageBroken, Cube } from '@phosphor-icons/react';
 import { systems, featuredIds, systemPath, systemFromPath, systemName } from './catalog';
 import { messages, detectLanguage } from './i18n';
+import SpecimenFrame from './SpecimenFrame';
 
 const categories = ['all', 'public', 'oss'];
-const imagePath = (system, index = 0) => `/previews/${system.id}-${index}.webp`;
+const imagePath = (system, index = 0) => `/specimens/thumbnails/${system.id}-${system.views[index]?.key || 'overview'}.webp`;
 const viewLabel = (system, index, language) => language === 'en' ? system.views[index].labelEn : system.views[index].label;
 
 function PreviewImage({ system, index = 0, language, ...props }) {
@@ -12,13 +13,14 @@ function PreviewImage({ system, index = 0, language, ...props }) {
   const src = imagePath(system, index);
   const t = messages[language];
   useEffect(() => setFailed(false), [src]);
+  if(system.specimen.status!=='ready')return <span className="image-unavailable implementation-unavailable"><Cube size={28} weight="light"/><span>{system.specimen.status==='design-only'?t.designResources:t.integrationLimited}</span></span>;
   return failed ? <span className="image-unavailable"><ImageBroken size={32} weight="light" /><span>{t.unavailable}</span></span> :
     <img {...props} src={src} alt={`${systemName(system, language)} — ${viewLabel(system, index, language)} — ${t.imageAlt}`} onError={() => setFailed(true)} />;
 }
 
 function trapDialogFocus(event) {
   if (event.key !== 'Tab') return;
-  const elements = [...event.currentTarget.querySelectorAll('button:not(:disabled), a[href], input:not(:disabled), select:not(:disabled), [tabindex]:not([tabindex="-1"])')].filter(element => element.getClientRects().length > 0);
+  const elements = [...event.currentTarget.querySelectorAll('button:not(:disabled), a[href], input:not(:disabled), select:not(:disabled), iframe, [tabindex]:not([tabindex="-1"])')].filter(element => element.getClientRects().length > 0);
   const first = elements[0];
   const last = elements.at(-1);
   if (!first) return;
@@ -128,8 +130,9 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
       if (!mobilePreview) listScrollTop.current = workspace.current?.scrollTop || 0;
       requestAnimationFrame(() => workspace.current?.scrollTo({ top: 0, behavior: 'instant' }));
     }
+    const key=selected.views[activeView]?.key;
     setSelectedId(system.id);
-    setViewIndex(0);
+    setViewIndex(Math.max(0,system.views.findIndex(view=>view.key===key)));
     setMobilePreview(showDetail);
     const path = systemPath(system);
     if (location.pathname !== path) history.pushState({ system: system.id }, '', path);
@@ -221,7 +224,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
       } else if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
         event.preventDefault();
         movePreview(event.key === 'ArrowRight' ? 1 : -1);
-      } else if (event.key === 'v') {
+      } else if (event.key === 'v' && selected.specimen.status === 'ready') {
         event.preventDefault();
         setZoomOpen(true);
       } else if (event.key === 'o') {
@@ -234,7 +237,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
     };
     window.addEventListener('keydown', onKeyDown);
     return () => window.removeEventListener('keydown', onKeyDown);
-  }, [ready, selected, category, mobilePreview, helpOpen, zoomOpen]);
+  }, [ready, selected, activeView, category, mobilePreview, helpOpen, zoomOpen]);
 
   const keyboardRows = [
     [['↓', '↑', 'J', 'K'], t.move], [['Home', 'End'], t.firstLast], [['←', '→'], t.changeView],
@@ -270,7 +273,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
             event.preventDefault();
             selectSystem(s);
           }}>
-          <span className="row-image"><PreviewImage system={s} language={language} loading={s.id === selected.id ? 'eager' : 'lazy'} width="1440" height="1000" /></span>
+          <span className="row-image"><PreviewImage system={s} index={Math.max(0,s.views.findIndex(view=>view.key===selected.views[activeView]?.key))} language={language} loading={s.id === selected.id ? 'eager' : 'lazy'} width="1440" height="1000" /></span>
           <span className="row-copy"><span className="system-name">{systemName(s, language)}</span>
             <span className="system-meta"><span>{language === 'en' ? s.countryEn : s.country}</span><span className="meta-divider" aria-hidden="true" /><span>{t[s.category]}</span></span>
             <span className="release-line"><time dateTime={s.published.date}>{s.published.date}</time>{s.published.estimated && <span className="date-reference">{t.reference}</span>}</span>
@@ -288,20 +291,31 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
         </div>
         <div className="preview-heading"><h1>{systemName(selected, language)}</h1><a ref={officialLink} className="official-link" href={selected.url} target="_blank" rel="noopener noreferrer"><ArrowSquareOut size={21} />{t.official}<span className="sr-only"> ({t.newTab})</span></a></div>
         <p className="system-description">{selected.description[language]}</p>
-        <button type="button" disabled={!ready} className="main-preview" aria-label={`${systemName(selected, language)} — ${t.enlarge}`} onTouchStart={startSwipe} onTouchMove={event => { if (event.touches.length !== 1) swipeStart.current = null; }} onTouchEnd={endSwipe} onTouchCancel={() => { swipeStart.current = null; }} onClick={() => { if (Date.now() >= ignorePreviewClickUntil.current) setZoomOpen(true); }}><PreviewImage system={selected} index={activeView} language={language} width="1440" height="1000" /><span className="enlarge-label">{t.enlarge}<ArrowSquareOut size={15} /></span></button>
-        <div className="preview-thumbnails" aria-label={t.views}>
-          {selected.views.map((view, index) => <button type="button" disabled={!ready} key={view.url} className={`view-thumbnail ${activeView === index ? 'active' : ''}`} aria-pressed={activeView === index} onClick={() => setViewIndex(index)}><PreviewImage system={selected} index={index} language={language} width="1440" height="1000" loading="lazy" /><span>{viewLabel(selected, index, language)}</span></button>)}
-        </div>
+        {selected.specimen.status==='ready' ? <>
+          <div className="implementation-toolbar"><span>{t.liveComponents}</span><button type="button" className="specimen-enlarge text-button" onClick={()=>setZoomOpen(true)}>{t.enlarge}<ArrowSquareOut size={15}/></button></div>
+          <div className="main-preview specimen-canvas" onTouchStart={startSwipe} onTouchEnd={endSwipe} onTouchCancel={()=>{swipeStart.current=null;}}>
+            <SpecimenFrame system={selected} index={activeView} language={language} onSwipe={direction=>{if(isMobile)navigateAdjacent(direction>0?nextSystem:previousSystem)}} onKey={key=>{if(key==='Escape'&&isMobile)returnToList();else window.dispatchEvent(new KeyboardEvent('keydown',{key}))}}/>
+          </div>
+          <div className="implementation-meta"><a href={selected.specimen.sourceUrl} target="_blank" rel="noopener noreferrer">{selected.specimen.package} <span>{selected.specimen.version}</span><ArrowSquareOut size={12}/></a>{selected.specimen.unstyled&&<span>{t.unstyled}</span>}</div>
+          {selected.specimen.notice&&<p className="implementation-note">{selected.specimen.notice[language]}</p>}
+          <div className="preview-thumbnails" aria-label={t.views}>
+            {selected.views.map((view,index)=><button type="button" disabled={!ready} key={view.key} className={`view-thumbnail ${activeView===index?'active':''}`} aria-pressed={activeView===index} onClick={()=>setViewIndex(index)}><PreviewImage system={selected} index={index} language={language} width="1000" height="720" loading="lazy"/><span>{viewLabel(selected,index,language)}</span></button>)}
+          </div>
+        </> : <div className="implementation-resource">
+          <Cube size={42} weight="light"/><h2>{selected.specimen.status==='design-only'?t.designResources:t.integrationLimited}</h2>
+          <p>{selected.specimen.status==='design-only'?t.designResourcesNote:t.integrationLimitedNote}</p>
+          <a className="official-link" href={selected.url} target="_blank" rel="noopener noreferrer">{t.openResources}<ArrowSquareOut size={17}/></a>
+        </div>}
         <div className="source-meta"><span>{language === 'en' ? selected.organizationEn : selected.organization}</span><span>{language === 'en' ? selected.countryEn : selected.country}</span><span>{selected.stack.join(' / ')}</span></div>
         <div className="release-info"><span>{t.released}</span><time dateTime={selected.published.date}>{selected.published.date}</time>{selected.published.estimated && <span className="date-reference">{t.reference}</span>}</div>
         <details className="release-details"><summary>{t.releaseNote}</summary><p>{selected.published.note[language]}</p><a href={selected.published.sourceUrl} target="_blank" rel="noopener noreferrer">{t.dateSource}<ArrowSquareOut size={14} /></a></details>
-        <details className="license-details"><summary>{t.conditions}</summary><p>{t.license}: {language === 'en' ? selected.licenseEn : selected.license}</p><p>{t.imageNote}</p><a href={selected.views[activeView].url} target="_blank" rel="noopener noreferrer">{t.imageSource}<ArrowSquareOut size={14} /></a>{selected.repository && <a className="source-repository" href={selected.repository} target="_blank" rel="noopener noreferrer"><GithubLogo size={14} />{t.code}</a>}</details>
+        <details className="license-details"><summary>{t.conditions}</summary><p>{t.license}: {language === 'en' ? selected.licenseEn : selected.license}</p><p>{t.imageNote}</p><a href={selected.specimen.sourceUrl} target="_blank" rel="noopener noreferrer">{t.imageSource}<ArrowSquareOut size={14} /></a>{selected.repository && <a className="source-repository" href={selected.repository} target="_blank" rel="noopener noreferrer"><GithubLogo size={14} />{t.code}</a>}</details>
       </section>
     </main>
     <footer className="site-footer"><span>Copyright © 2026 <a href="https://github.com/akiyan" target="_blank" rel="noopener noreferrer">@akiyan</a></span><a className="github-link" href={githubUrl} target="_blank" rel="noopener noreferrer"><GithubLogo size={19} weight="fill" aria-hidden="true" />GitHub<ArrowSquareOut size={14} aria-hidden="true" /></a></footer>
     <dialog ref={zoomDialog} className="zoom-dialog" onKeyDown={trapDialogFocus} aria-labelledby="zoom-title" onCancel={() => setZoomOpen(false)} onClick={e => { if (e.target === zoomDialog.current) setZoomOpen(false); }}>
       <div className="zoom-toolbar"><h2 id="zoom-title">{systemName(selected, language)}<span>{viewLabel(selected, activeView, language)}</span></h2><button aria-label={t.closeZoom} onClick={() => setZoomOpen(false)}><X size={24} /></button></div>
-      <div className="zoom-content"><PreviewImage system={selected} index={activeView} language={language} width="1440" height="1000" /></div>
+      <div className="zoom-content">{zoomOpen&&selected.specimen.status==='ready'&&<SpecimenFrame system={selected} index={activeView} language={language} expanded onKey={key=>{if(key==='Escape')setZoomOpen(false);else window.dispatchEvent(new KeyboardEvent('keydown',{key}))}}/>}</div>
       {selected.views.length > 1 && <div className="zoom-navigation"><button aria-label={t.previous} onClick={() => movePreview(-1)}><CaretLeft size={20} /></button><span>{activeView + 1} / {selected.views.length}</span><button aria-label={t.next} onClick={() => movePreview(1)}><CaretRight size={20} /></button></div>}
     </dialog>
     <dialog ref={helpDialog} className="help-dialog" onKeyDown={trapDialogFocus} aria-labelledby="help-title" onCancel={() => setHelpOpen(false)} onClick={e => { if (e.target === helpDialog.current) setHelpOpen(false); }}>

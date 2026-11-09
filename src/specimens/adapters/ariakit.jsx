@@ -1,0 +1,2 @@
+import React from'react';import{Button,Checkbox,FormInput,useFormStore}from'@ariakit/react';import kit from'../react-kit';
+export default kit({Button:({variant,size,...p})=><Button {...p}/>,Input:({onValueChange,...p})=>{const store=useFormStore({values:{project:p.value}});return <FormInput store={store} name="project" {...p} onChange={e=>onValueChange(e.target.value)}/>} ,Checkbox:({onValueChange,children,...p})=><label><Checkbox checked={p.checked} disabled={p.disabled} onChange={e=>onValueChange?.(e.target.checked)}/> {children}</label>});

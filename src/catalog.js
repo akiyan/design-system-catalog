@@ -1,4 +1,7 @@
-import entries from './data/systems.json';
+import originalEntries from './data/systems.json';
+import specimens from './data/specimens.json';
+const labels={overview:['基本要素','Overview'],buttons:['ボタン','Buttons'],form:['フォーム','Forms'],typography:['タイポグラフィ','Typography'],table:['テーブル','Tables']};
+const entries=originalEntries.map(entry=>{const specimen=specimens[entry.id];return {...entry,referenceViews:entry.views,specimen,views:specimen.status==='ready'?specimen.views.map(key=>({key,label:labels[key][0],labelEn:labels[key][1],url:`/specimens/${entry.id}/${key}/`})):[{key:'resource',label:'公開資料',labelEn:'Design resources',url:entry.url}]}});
 import featured from './data/featured.json';
 export const featuredIds = featured.ids;
 export const dateSortKey = entry => (entry.published?.date || '').padEnd(10, '-00');

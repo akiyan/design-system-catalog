@@ -1,0 +1,30 @@
+[
+  {
+    "id": "cfpb",
+    "url": "https://cfpb.github.io/design-system/components/buttons",
+    "status": 200,
+    "styles": [
+      "/design-system/dist/index.css"
+    ],
+    "snippets": [
+      "&lt;button class=\"a-btn\" title=\"Primary\"&gt;Primary&lt;/button&gt;",
+      "&lt;button class=\"a-btn a-btn--secondary\" title=\"Secondary\"&gt;Secondary&lt;/button&gt;",
+      "&lt;button class=\"a-btn a-btn--disabled\" title=\"Disabled\" disabled&gt;Disabled&lt;/button&gt;",
+      "&lt;button class=\"a-btn a-btn--warning\" title=\"Destructive\"&gt;Destructive&lt;/button&gt;"
+    ]
+  },
+  {
+    "id": "bristol",
+    "url": "https://style.bristol.gov.uk/patterns/buttons",
+    "status": 200,
+    "styles": [
+      "/css/common.css"
+    ],
+    "snippets": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  }
+]

@@ -1,0 +1,2 @@
+import React from'react';import{Button,Input,Checkbox,ThemeProvider}from'smarthr-ui';import '../../../node_modules/smarthr-ui/smarthr-ui.css';import kit from'../react-kit';
+export default kit({Provider:ThemeProvider,Button:({size,...p})=><Button size={size==='small'?'S':'M'} {...p}/>,Input:({onValueChange,...p})=><Input {...p} onChange={e=>onValueChange(e.target.value)}/>,Checkbox:({onValueChange,...p})=><Checkbox {...p} onChange={e=>onValueChange?.(e.target.checked)}/>});

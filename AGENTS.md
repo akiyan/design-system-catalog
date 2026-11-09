@@ -11,7 +11,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 ## Project decisions
 
 - The selected visual is `docs/selected-design.png` (option 3): thumbnail list on the left and large selected preview on the right.
-- Thumbnails must show actual official website captures. Do not substitute invented component screenshots.
+- Primary thumbnails must capture locally rendered real design-system components in a shared specimen layout. Do not use reduced documentation pages or imitate components with invented CSS. Keep official documentation captures only as clearly labeled reference material.
 - Avoid Japanese comma-separated catchphrases such as 「見て、選ぶ」. Use direct descriptive labels.
 - Footer must contain a GitHub icon/link and Copyright with @akiyan.
 - User selected Cloudflare Pages deployment under the author’s account. Build a completely static site with Astro. No server-side adapter or Pages Functions.
@@ -47,13 +47,22 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - On mobile, category filters are visible only on the list screen. Hide them while viewing system details.
 
 - Language controls use a two-option 日本語 / English toggle on all screen sizes. Do not offer an Auto option. Detect browser language on first visit; persist explicit choices. Keep the toggle on the same mobile header row as the title.
-- Provide multiple official captures per system beyond overview and buttons. Prefer practical component examples such as forms, tables, dialogs and navigation; keep screenshots tied to their original source pages.
+- Provide multiple actual component specimens per system beyond overview and buttons. Prefer practical forms and typography where the implementation supports them.
 - Opening mobile details starts at the top. Returning to the list restores its previous scroll position. Do not carry list scroll offsets into the detail screen.
 
-- Every catalog system includes a short factual Japanese/English description of its purpose and distinctive features. Show it below the detail heading while keeping official captures prominent. Avoid unverified superlatives and claims copied from supplied lists.
+- Every catalog system includes a short factual Japanese/English description of its purpose and distinctive features. Show it below the detail heading while keeping actual component specimens prominent. Avoid unverified superlatives and claims copied from supplied lists.
 - Add Adobe React Aria as the headless interaction library; keep it separate from the existing Spectrum 2 visual design system.
 
 ## Featured systems
 
 - Feature five systems at the top of the catalog. The current curated selection is stored in `src/data/featured.json`, informed by public GitHub stars and deduplicated by implementation repository.
 - Display the featured group separately from the remaining systems, which retain descending public-release order. Do not duplicate entries. Category filters and sequential/keyboard navigation follow the displayed order.
+
+## Component comparison (corrected intent)
+
+- The primary experience compares actual integrated components using the same content and arrangement for every system. Keep the selected option 3 list/detail layout.
+- Use each system’s genuine published package or official implementation with its own styles, isolated from other systems. Show its package/version provenance.
+- Render live interactive specimens in details; generate thumbnails from those same local specimens. Provide consistent component categories such as buttons, forms and typography.
+- Headless libraries retain their actual unstyled appearance; do not invent a branded theme. Systems with no public implementation must say so clearly and link to their public design resources rather than show a fabricated equivalent.
+
+- Preserve the active specimen category when switching systems where supported. List thumbnails follow the same specimen category to support visual comparison.

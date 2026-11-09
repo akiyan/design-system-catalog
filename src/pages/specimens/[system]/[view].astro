@@ -1,0 +1,8 @@
+---
+import registry from '../../../data/specimens.json';
+import entries from '../../../data/systems.json';
+import layoutStyles from '../../../specimens/layout.css?inline';
+export function getStaticPaths(){return Object.entries(registry).filter(([,value])=>value.status==='ready').flatMap(([id,value])=>value.views.map(view=>({params:{system:id,view},props:{id,view,config:value,name:entries.find(s=>s.id===id).shortNameEn}})))}
+const {id,view,config,name}=Astro.props;
+---
+<!doctype html><html lang="ja"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="robots" content="noindex"/><title>{name} — Component specimen</title><style is:inline set:html={layoutStyles}></style></head><body><div id="specimen-root" data-system={id} data-adapter={config.adapter} data-view={view} data-name={name}></div><script is:inline type="module" src="/specimen-assets/runtime.js"></script></body></html>

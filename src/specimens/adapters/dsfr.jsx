@@ -1,0 +1,2 @@
+import '../../../node_modules/@gouvfr/dsfr/dist/dsfr.min.css';import nativeKit from '../native-kit';
+export default nativeKit({"button": {"primary": "fr-btn", "secondary": "fr-btn fr-btn--secondary", "text": "fr-btn fr-btn--tertiary-no-outline"}, "input": "fr-input", "checkbox": "", "checkWrap": "fr-checkbox-group", "checkLabel": "fr-label", "select": "fr-select", "h1": "fr-h1", "h2": "fr-h2", "body": "fr-text--md"});

@@ -66,3 +66,17 @@ The remaining 62 systems retain descending release-date order. All 67 entries ap
 Reviewed `featured-desktop.png` at 1440×1024 and `featured-mobile.png` at 390×844. Existing thumbnail density, preview proportions, bilingual descriptions and mobile header behavior are preserved. No mobile horizontal overflow was observed. All 17 browser tests passed locally, including featured ordering/deduplication and category behavior.
 
 Production deployment: https://23450f90.design-system-catalog-925.pages.dev. All 17 production checks passed across the main run and a focused rerun: the sequential all-path check initially hit the 30-second network deadline at `/dsfr/`, then all 67 paths passed in 3.2 seconds with a larger test deadline. No application failure was found.
+
+## Actual component comparison
+
+Status: PASS for the local static build. The user's corrected intent supersedes documentation-page captures as the primary visual source. Option 3 remains the list/detail composition. `specimen-comparison.jpg` places the selected mock beside the current desktop UI.
+
+- Layout: retained the thumbnail-first 40/60 split. The selected preview now renders genuine interactive components with shared project settings content. Thumbnails are captures of the same local implementations.
+- Component anatomy: 58 adapters use official packages or vendored official source. Buttons, form fields and supported typography retain their published structure and styles. Eight design-resource entries and the host-dependent Airtable SDK have explicit resource panels. No invented styled equivalents are shown.
+- Spacing and density: common specimen wrappers align sections and field groups; controls preserve their native sizes. Mobile fields stack and buttons wrap. The active specimen type is retained across systems and reflected by list thumbnails.
+- Typography and color: library styles are loaded only inside the corresponding iframe. A separate Vite build prevents Astro from preloading every adapter's CSS. Headless primitives remain unstyled. Charcoal theme tokens, Czech tokens and Porsche CSS variables are explicitly loaded. Porsche brand fonts are excluded. Lightning and Polaris version limitations are displayed.
+- Content and hierarchy: the large preview is dominant, with bilingual feature descriptions above and package/version provenance below. Existing categories, dates, featured groups and footer remain available. Desktop, mobile list/detail, English and enlarged previews were visually reviewed.
+
+Validation: all 181 specimen routes rendered successfully, recorded in `specimen-validation.json`. The 77 browser tests cover real save events, editable text, checkbox keyboard changes, disabled states, isolation, static permalinks, shared specimen categories, language persistence, mobile navigation/swipes and the existing catalog behavior. Enlarged iframe inputs forward Escape and close the overlay. Static build contains 249 HTML pages and uses no server or Pages Functions.
+
+Evidence: `specimen-desktop.png`, `specimen-dads.png`, `specimen-mobile-list.png`, `specimen-mobile-detail.png`, `specimen-english.png`, `specimen-zoom.png`. Package provenance is recorded in `specimen-provenance.json`; vendored sources keep license/source metadata.

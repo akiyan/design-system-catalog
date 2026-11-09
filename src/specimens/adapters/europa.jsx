@@ -1,0 +1,2 @@
+import '../../../node_modules/@ecl/preset-ec/dist/styles/ecl-ec.css';import nativeKit from '../native-kit';
+export default nativeKit({"button": {"primary": "ecl-button ecl-button--primary", "secondary": "ecl-button ecl-button--secondary", "text": "ecl-button ecl-button--tertiary"}, "input": "ecl-text-input", "checkbox": "ecl-checkbox__input", "checkWrap": "ecl-checkbox", "checkLabel": "ecl-checkbox__label", "select": "ecl-select", "h1": "ecl-u-type-heading-1", "h2": "ecl-u-type-heading-2", "body": "ecl-u-type-paragraph"});

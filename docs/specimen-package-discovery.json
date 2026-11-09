@@ -1,0 +1,1157 @@
+[
+  {
+    "package": "antd",
+    "status": 200,
+    "version": "6.7.0",
+    "license": "MIT",
+    "peer": {
+      "react": ">=18.0.0",
+      "react-dom": ">=18.0.0"
+    },
+    "description": "An enterprise-class UI design language and React components implementation",
+    "repository": {
+      "url": "git+https://github.com/ant-design/ant-design.git",
+      "type": "git"
+    },
+    "size": 49453858
+  },
+  {
+    "package": "@fluentui/react-components",
+    "status": 200,
+    "version": "9.75.1",
+    "license": "MIT",
+    "peer": {
+      "react": ">=16.14.0 <20.0.0",
+      "@types/react": ">=16.14.0 <20.0.0"
+    },
+    "description": "Suite package for converged React components",
+    "repository": {
+      "url": "git+https://github.com/microsoft/fluentui.git",
+      "type": "git"
+    },
+    "size": 2236876
+  },
+  {
+    "package": "@astryx/react",
+    "status": 404,
+    "version": null,
+    "license": null,
+    "peer": null,
+    "description": null,
+    "repository": null,
+    "size": null
+  },
+  {
+    "package": "astryx",
+    "status": 200,
+    "version": "0.0.0",
+    "license": "ISC",
+    "peer": null,
+    "description": "",
+    "repository": null,
+    "size": 424
+  },
+  {
+    "package": "react-aria-components",
+    "status": 200,
+    "version": "1.22.1",
+    "license": "Apache-2.0",
+    "peer": {
+      "react": "^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1",
+      "react-dom": "^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1"
+    },
+    "description": "A library of styleable components built using React Aria",
+    "repository": {
+      "url": "git+https://github.com/adobe/react-spectrum.git",
+      "type": "git"
+    },
+    "size": 6935582
+  },
+  {
+    "package": "@primer/react",
+    "status": 200,
+    "version": "38.45.0",
+    "license": "MIT",
+    "peer": {
+      "react": "18.x || 19.x",
+      "react-is": "18.x || 19.x",
+      "react-dom": "18.x || 19.x",
+      "@types/react": "18.x || 19.x",
+      "@types/react-is": "18.x || 19.x",
+      "@types/react-dom": "18.x || 19.x"
+    },
+    "description": "An implementation of GitHub's Primer Design System using React",
+    "repository": {
+      "url": "git+https://github.com/primer/react.git",
+      "type": "git"
+    },
+    "size": 4077035
+  },
+  {
+    "package": "@cloudflare/kumo",
+    "status": 200,
+    "version": "2.17.0",
+    "license": "MIT",
+    "peer": {
+      "zod": "^4.0.0",
+      "react": "^18.0.0 || ^19.0.0",
+      "echarts": "^6.0.0",
+      "react-dom": "^18.0.0 || ^19.0.0",
+      "@phosphor-icons/react": "^2.1.10"
+    },
+    "description": "Kumo - Cloudflare's component library for building modern web applications",
+    "repository": {
+      "url": "git+https://github.com/cloudflare/kumo.git",
+      "type": "git",
+      "directory": "packages/kumo"
+    },
+    "size": 7663036
+  },
+  {
+    "package": "@carbon/react",
+    "status": 200,
+    "version": "1.120.0",
+    "license": "Apache-2.0",
+    "peer": {
+      "sass": "^1.33.0",
+      "react": "^16.8.6 || ^17.0.1 || ^18.2.0 || ^19.0.0",
+      "react-is": "^16.13.1 || ^17.0.2 || ^18.3.1 || ^19.0.0",
+      "react-dom": "^16.8.6 || ^17.0.1 || ^18.2.0 || ^19.0.0"
+    },
+    "description": "React components for the Carbon Design System",
+    "repository": {
+      "url": "git+https://github.com/carbon-design-system/carbon.git",
+      "type": "git",
+      "directory": "packages/react"
+    },
+    "size": 5341564
+  },
+  {
+    "package": "@carbon/styles",
+    "status": 200,
+    "version": "1.119.0",
+    "license": "Apache-2.0",
+    "peer": {
+      "sass": "^1.33.0"
+    },
+    "description": "Styles for the Carbon Design System",
+    "repository": {
+      "url": "git+https://github.com/carbon-design-system/carbon.git",
+      "type": "git",
+      "directory": "packages/styles"
+    },
+    "size": 4328458
+  },
+  {
+    "package": "@cloudscape-design/components",
+    "status": 200,
+    "version": "3.0.1411",
+    "license": "Apache-2.0",
+    "peer": {
+      "react": ">=16.8.0"
+    },
+    "description": "This package contains the source code of the React components for the [Cloudscape Design System](https://cloudscape.design/).",
+    "repository": {
+      "url": "git+https://github.com/cloudscape-design/components.git",
+      "type": "git"
+    },
+    "size": 21850890
+  },
+  {
+    "package": "gestalt",
+    "status": 200,
+    "version": "177.0.12",
+    "license": "Apache-2.0",
+    "peer": {
+      "react": "^19.0.0",
+      "react-dom": "^19.0.0"
+    },
+    "description": "A set of React UI components which enforce Pinterest's design language",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/pinterest/gestalt"
+    },
+    "size": 11132382
+  },
+  {
+    "package": "@govtechsg/sgds",
+    "status": 200,
+    "version": "2.3.6",
+    "license": "MIT",
+    "peer": null,
+    "description": "Design System unites Singapore Government digital services around a common visual language and user experience",
+    "repository": {
+      "url": "git+https://github.com/govtechsg/sgds.git",
+      "type": "git"
+    },
+    "size": 695451
+  },
+  {
+    "package": "@ag.ds-next/react",
+    "status": 200,
+    "version": "1.36.0",
+    "license": "MIT",
+    "peer": {
+      "react": "^16.14.0 || ^17.0.0 || ^18.0.0 || ^19.0.0",
+      "react-dom": "^16.14.0 || ^17.0.0 || ^18.0.0 || ^19.0.0",
+      "@emotion/react": "^11.7.0"
+    },
+    "description": "AgDS provides a framework and a set of tools to help designers and developers build the steel threads of the Export Service quickly, efficiently and consistently.",
+    "repository": null,
+    "size": 10689651
+  },
+  {
+    "package": "@charcoal-ui/react",
+    "status": 200,
+    "version": "6.3.0",
+    "license": "Apache-2.0",
+    "peer": {
+      "react": ">=17.0.0",
+      "react-aria": ">=3.48.0",
+      "react-stately": ">=3.46.0"
+    },
+    "description": null,
+    "repository": {
+      "url": "https://github.com/pixiv/charcoal.git",
+      "type": "git",
+      "directory": "packages/react"
+    },
+    "size": 1971310
+  },
+  {
+    "package": "@serendie/ui",
+    "status": 200,
+    "version": "3.7.3",
+    "license": "MIT",
+    "peer": {
+      "react": ">=18.3.1",
+      "react-dom": ">=18.3.1",
+      "@ark-ui/react": "^5.18.0"
+    },
+    "description": "Adaptive UI component library as part of Serendie Design System by Mitsubishi Electric",
+    "repository": {
+      "url": "git+https://github.com/serendie/serendie.git",
+      "type": "git"
+    },
+    "size": 3594236
+  },
+  {
+    "package": "@freee-jp/vibes",
+    "status": 404,
+    "version": null,
+    "license": null,
+    "peer": null,
+    "description": null,
+    "repository": null,
+    "size": null
+  },
+  {
+    "package": "@ubie/ubie-ui",
+    "status": 200,
+    "version": "0.0.48",
+    "license": "Apache-2.0",
+    "peer": {
+      "react": "^17 || ^18 || ^19",
+      "react-dom": "^18 || ^19",
+      "@ubie/ubie-icons": ">=0.5.0 <0.6.2 || >=0.8.0",
+      "@headlessui/react": "^2.0.0",
+      "@ubie/design-tokens": ">=0.3.5"
+    },
+    "description": "React components for creating Ubie applications.",
+    "repository": {
+      "url": "git+https://github.com/ubie-oss/ubie-ui.git",
+      "type": "git"
+    },
+    "size": 542637
+  },
+  {
+    "package": "@ubie-ui/react",
+    "status": 404,
+    "version": null,
+    "license": null,
+    "peer": null,
+    "description": null,
+    "repository": null,
+    "size": null
+  },
+  {
+    "package": "@gitlab/ui",
+    "status": 200,
+    "version": "140.0.0",
+    "license": "MIT",
+    "peer": {
+      "vue": "^2.7.16",
+      "pikaday": "^1.8.0",
+      "dompurify": ">=2.5.2 <3.0.0 || >=3.1.2",
+      "emoji-regex": ">=10.0.0",
+      "tailwindcss": "^3",
+      "@gitlab/svgs": "^1.116.0 || ^2.0.0 || ^3.0.0"
+    },
+    "description": "GitLab UI Components",
+    "repository": {
+      "url": "git+https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com.git",
+      "type": "git",
+      "directory": "packages/gitlab-ui"
+    },
+    "size": 10948984
+  },
+  {
+    "package": "@twilio-paste/core",
+    "status": 200,
+    "version": "21.5.0",
+    "license": "MIT",
+    "peer": {
+      "react": "^17.0.2 || ^18.0.0 || ^19.0.0",
+      "react-dom": "^17.0.2 || ^18.0.0 || ^19.0.0",
+      "@types/react": "^17.0.2 || ^18.0.27 || ^19.0.0",
+      "@types/react-dom": "^17.0.2 || ^18.0.10 || ^19.0.0",
+      "@twilio-paste/icons": "^13.0.0"
+    },
+    "description": "Core contains all the packages from the Paste design system.",
+    "repository": null,
+    "size": 683922
+  },
+  {
+    "package": "@transferwise/components",
+    "status": 200,
+    "version": "46.168.1",
+    "license": "Apache-2.0",
+    "peer": {
+      "react": ">=18",
+      "motion": "^12.23.26",
+      "@wise/art": "^2.31.1",
+      "react-dom": ">=18",
+      "react-intl": ">=5.10.0 <11.0.0",
+      "@transferwise/icons": "^4.5.0",
+      "@wise/components-theming": "^1.10.1"
+    },
+    "description": "Neptune React components",
+    "repository": {
+      "url": "git+https://github.com/transferwise/neptune-web.git",
+      "type": "git",
+      "fullname": "transferwise/neptune"
+    },
+    "size": 51517237
+  },
+  {
+    "package": "@douyinfe/semi-ui",
+    "status": 200,
+    "version": "2.104.0",
+    "license": "MIT",
+    "peer": {
+      "react": ">=16.0.0",
+      "react-dom": ">=16.0.0"
+    },
+    "description": "A modern, comprehensive, flexible design system and UI library. Connect DesignOps & DevOps. Quickly build beautiful React apps. Maintained by Douyin-fe team.",
+    "repository": {
+      "url": "git+https://github.com/DouyinFE/semi-design.git",
+      "type": "git"
+    },
+    "size": 61029861
+  },
+  {
+    "package": "@arco-design/web-react",
+    "status": 200,
+    "version": "2.66.18",
+    "license": "MIT",
+    "peer": {
+      "react": ">=16",
+      "react-dom": ">=16"
+    },
+    "description": "Arco Design React UI Library.",
+    "repository": {
+      "url": "git+https://github.com/arco-design/arco-design.git",
+      "type": "git"
+    },
+    "size": 17213816
+  },
+  {
+    "package": "@react-spectrum/s2",
+    "status": 200,
+    "version": "1.8.2",
+    "license": "Apache-2.0",
+    "peer": {
+      "react": "^19.0.0-rc.1",
+      "react-dom": "^19.0.0-rc.1"
+    },
+    "description": "Spectrum 2 UI components in React",
+    "repository": {
+      "url": "git+https://github.com/adobe/react-spectrum.git",
+      "type": "git"
+    },
+    "size": 54326228
+  },
+  {
+    "package": "@adobe/react-spectrum",
+    "status": 200,
+    "version": "3.47.7",
+    "license": "Apache-2.0",
+    "peer": {
+      "react": "^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1",
+      "react-dom": "^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1"
+    },
+    "description": "Spectrum UI components in React",
+    "repository": {
+      "url": "git+https://github.com/adobe/react-spectrum.git",
+      "type": "git"
+    },
+    "size": 13322745
+  },
+  {
+    "package": "baseui",
+    "status": 200,
+    "version": "18.2.0",
+    "license": "MIT",
+    "peer": {
+      "react": ">=18",
+      "react-dom": ">=18",
+      "styletron-react": ">=6"
+    },
+    "description": "A React Component library implementing the Base design language",
+    "repository": {
+      "url": "git+https://github.com/uber/baseweb.git",
+      "type": "git"
+    },
+    "size": 3657521
+  },
+  {
+    "package": "@shopify/polaris",
+    "status": 200,
+    "version": "13.9.5",
+    "license": "SEE LICENSE IN LICENSE.md",
+    "peer": {
+      "react": "^18.0.0",
+      "react-dom": "^18.0.0"
+    },
+    "description": "Shopify’s admin product component library",
+    "repository": {
+      "url": "git+https://github.com/Shopify/polaris.git",
+      "type": "git"
+    },
+    "size": 4880644
+  },
+  {
+    "package": "@openameba/spindle-ui",
+    "status": 200,
+    "version": "3.4.0",
+    "license": "MIT",
+    "peer": {
+      "react": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0",
+      "@types/react": "^16.8.6 || ^17.0.0 || ^18.0.0 || ^19.0.0"
+    },
+    "description": null,
+    "repository": {
+      "url": "https://github.com/openameba/spindle",
+      "type": "git",
+      "directory": "packages/spindle-ui"
+    },
+    "size": 2432846
+  },
+  {
+    "package": "smarthr-ui",
+    "status": 200,
+    "version": "102.1.0",
+    "license": "MIT",
+    "peer": {
+      "react": "^19.0.0",
+      "react-dom": "^19.0.0",
+      "react-intl": "^7.0.4 || ^8.0.0 || ^10.0.0"
+    },
+    "description": "SmartHR ui components built with React.",
+    "repository": {
+      "url": "git+https://github.com/kufu/smarthr-ui.git",
+      "type": "git"
+    },
+    "size": 12824260
+  },
+  {
+    "package": "@porsche-design-system/components-react",
+    "status": 200,
+    "version": "4.10.1",
+    "license": "SEE LICENSE IN LICENSE",
+    "peer": {
+      "jsdom": ">=30.0.0",
+      "react": ">=19.0.0 <20.0.0",
+      "react-dom": ">=19.0.0 <20.0.0",
+      "tailwindcss": ">= 4.0.0 <5.0.0",
+      "ag-grid-react": ">= 36.0.0 <37.0.0",
+      "ag-grid-community": ">= 36.0.0 <37.0.0",
+      "ag-grid-enterprise": ">= 36.0.0 <37.0.0"
+    },
+    "description": "Porsche Design System is a component library designed to help developers create the best experience for software or services distributed by Dr. Ing. h.c. F. Porsche AG.",
+    "repository": {
+      "url": "git+https://github.com/porsche-design-system/porsche-design-system.git",
+      "type": "git"
+    },
+    "size": 4772534
+  },
+  {
+    "package": "@coinbase/cds-web",
+    "status": 200,
+    "version": "9.30.0",
+    "license": null,
+    "peer": {
+      "react": "^18.0.0 || ~19.1.2",
+      "react-dom": "^18.0.0 || ~19.1.2",
+      "framer-motion": "^10.18.0"
+    },
+    "description": "Coinbase Design System - Web",
+    "repository": {
+      "url": "git+ssh://git@github.com/coinbase/cds.git",
+      "type": "git",
+      "directory": "packages/web"
+    },
+    "size": 5152358
+  },
+  {
+    "package": "tdesign-react",
+    "status": 200,
+    "version": "1.18.6",
+    "license": "MIT",
+    "peer": {
+      "react": ">=16.13.1",
+      "react-dom": ">=16.13.1"
+    },
+    "description": "TDesign Component for React",
+    "repository": {
+      "url": "git+https://github.com/Tencent/tdesign-react.git",
+      "type": "git",
+      "directory": "packages/tdesign-react"
+    },
+    "size": 54100728
+  },
+  {
+    "package": "@patternfly/react-core",
+    "status": 200,
+    "version": "6.7.0",
+    "license": "MIT",
+    "peer": {
+      "react": "^17 || ^18 || ^19",
+      "react-dom": "^17 || ^18 || ^19"
+    },
+    "description": "This library provides a set of common React components for use with the PatternFly reference implementation.",
+    "repository": {
+      "url": "https://github.com/patternfly/patternfly-react.git",
+      "type": "git"
+    },
+    "size": 25686340
+  },
+  {
+    "package": "@atlaskit/button",
+    "status": 200,
+    "version": "25.7.1",
+    "license": "Apache-2.0",
+    "peer": {
+      "react": "^18.2.0 || ^19.0.0"
+    },
+    "description": "A button triggers an event or action. They let users know what will happen next.",
+    "repository": {
+      "url": "git+https://bitbucket.org/atlassian/atlassian-frontend-mirror.git",
+      "type": "git"
+    },
+    "size": 627682
+  },
+  {
+    "package": "@atlaskit/textfield",
+    "status": 200,
+    "version": "10.3.0",
+    "license": "Apache-2.0",
+    "peer": {
+      "react": "^18.2.0 || ^19.0.0"
+    },
+    "description": "A text field is an input that allows a user to write or edit text.",
+    "repository": {
+      "url": "git+https://bitbucket.org/atlassian/atlassian-frontend-mirror.git",
+      "type": "git"
+    },
+    "size": 108117
+  },
+  {
+    "package": "@atlaskit/checkbox",
+    "status": 200,
+    "version": "19.3.1",
+    "license": "Apache-2.0",
+    "peer": {
+      "react": "^18.2.0 || ^19.0.0"
+    },
+    "description": "A checkbox is an input control that allows a user to select one or more options from a number of choices.",
+    "repository": {
+      "url": "git+https://bitbucket.org/atlassian/atlassian-frontend-mirror.git",
+      "type": "git"
+    },
+    "size": 161737
+  },
+  {
+    "package": "@atlaskit/tokens",
+    "status": 200,
+    "version": "20.11.0",
+    "license": "Apache-2.0",
+    "peer": {
+      "react": "^18.2.0 || ^19.0.0"
+    },
+    "description": "Design tokens are the single source of truth to name and store design decisions.",
+    "repository": {
+      "url": "git+https://bitbucket.org/atlassian/atlassian-frontend-mirror.git",
+      "type": "git"
+    },
+    "size": 20451778
+  },
+  {
+    "package": "@salesforce-ux/design-system",
+    "status": 200,
+    "version": "2.264.3",
+    "license": "BSD-3-Clause",
+    "peer": {
+      "postcss": "^8.3.5"
+    },
+    "description": "Salesforce Lightning Design System",
+    "repository": null,
+    "size": 42987222
+  },
+  {
+    "package": "@contentful/f36-components",
+    "status": 200,
+    "version": "6.30.0",
+    "license": "MIT",
+    "peer": {
+      "react": "^18.3.0 || >=19.1.0",
+      "react-dom": "^18.3.0 || >=19.1.0",
+      "@types/react": "^18.3.0 || >=19.1.0",
+      "@types/react-dom": "^18.3.0 || >=19.1.0"
+    },
+    "description": "Contentful UI Component Library",
+    "repository": {
+      "url": "git+https://github.com/contentful/forma-36.git",
+      "type": "git"
+    },
+    "size": 31620
+  },
+  {
+    "package": "evergreen-ui",
+    "status": 200,
+    "version": "7.1.9",
+    "license": "MIT",
+    "peer": {
+      "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+      "react-is": "^16.8.0 || ^17.0.0 || ^18.0.0",
+      "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
+    },
+    "description": "🌲 React UI Kit by Segment 🌲",
+    "repository": {
+      "url": "https://github.com/segmentio/evergreen.git",
+      "type": "git"
+    },
+    "size": 6745783
+  },
+  {
+    "package": "@vibe/core",
+    "status": 200,
+    "version": "4.5.39",
+    "license": "MIT",
+    "peer": {
+      "react": ">=16.9.0",
+      "react-dom": ">=16.9.0"
+    },
+    "description": "Official monday.com UI resources for application development in React.js",
+    "repository": {
+      "url": "git+https://github.com/mondaycom/vibe.git",
+      "type": "git",
+      "directory": "packages/core"
+    },
+    "size": 3659428
+  },
+  {
+    "package": "@vtmn/css",
+    "status": 200,
+    "version": "3.0.2",
+    "license": "Apache-2.0",
+    "peer": null,
+    "description": "Decathlon Design System - Vitamin global CSS styles library",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Decathlon/vitamin-web.git"
+    },
+    "size": 38030820
+  },
+  {
+    "package": "@kiwicom/orbit-components",
+    "status": 200,
+    "version": "27.7.1-alpha.0",
+    "license": "MIT",
+    "peer": {
+      "react": ">=19.0.0",
+      "react-dom": ">=19.0.0",
+      "@babel/runtime": "^7.21.0"
+    },
+    "description": "Orbit-components is a React component library which provides developers with the easiest possible way of building Kiwi.com's products.",
+    "repository": {
+      "url": "https://github.com/kiwicom/orbit.git",
+      "type": "git",
+      "directory": "packages/orbit-components"
+    },
+    "size": 12132509
+  },
+  {
+    "package": "@finastra/button",
+    "status": 200,
+    "version": "1.8.1",
+    "license": "MIT",
+    "peer": null,
+    "description": "Button Web Component",
+    "repository": null,
+    "size": 46656
+  },
+  {
+    "package": "@lion/ui",
+    "status": 200,
+    "version": "0.27.0",
+    "license": "MIT",
+    "peer": null,
+    "description": "A package of extendable web components",
+    "repository": {
+      "url": "git+https://github.com/ing-bank/lion.git",
+      "type": "git",
+      "directory": "packages/ui"
+    },
+    "size": 7375790
+  },
+  {
+    "package": "boosted",
+    "status": 200,
+    "version": "5.3.8",
+    "license": "MIT",
+    "peer": {
+      "@popperjs/core": "^2.11.8"
+    },
+    "description": "Orange Boosted with Bootstrap is a Bootstrap based, Orange branded accessible and ergonomic components library.",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Orange-OpenSource/Orange-Boosted-Bootstrap.git"
+    },
+    "size": 12626309
+  },
+  {
+    "package": "@esri/calcite-components",
+    "status": 200,
+    "version": "5.2.1",
+    "license": "SEE LICENSE.md",
+    "peer": null,
+    "description": "Web Components for Esri's Calcite Design System.",
+    "repository": {
+      "url": "git+https://github.com/Esri/calcite-design-system.git",
+      "type": "git",
+      "directory": "packages/components"
+    },
+    "size": 11901648
+  },
+  {
+    "package": "@clayui/button",
+    "status": 200,
+    "version": "3.167.0",
+    "license": "BSD-3-Clause",
+    "peer": {
+      "react": "^16.0.0 || ^17.0.0 || ^18.0.0",
+      "react-dom": "^16.0.0 || ^17.0.0 || ^18.0.0",
+      "@clayui/css": "^3.167.0"
+    },
+    "description": "ClayButton component",
+    "repository": {
+      "url": "git+https://github.com/liferay/clay.git",
+      "type": "git"
+    },
+    "size": 24888
+  },
+  {
+    "package": "@clayui/form",
+    "status": 200,
+    "version": "3.167.0",
+    "license": "BSD-3-Clause",
+    "peer": {
+      "react": "^16.0.0 || ^17.0.0 || ^18.0.0",
+      "react-dom": "^16.0.0 || ^17.0.0 || ^18.0.0",
+      "@clayui/css": "^3.167.0"
+    },
+    "description": "ClayForm component",
+    "repository": {
+      "url": "git+https://github.com/liferay/clay.git",
+      "type": "git"
+    },
+    "size": 101053
+  },
+  {
+    "package": "@clayui/css",
+    "status": 200,
+    "version": "3.167.0",
+    "license": "MIT",
+    "peer": null,
+    "description": "Liferay's web implementation of the Lexicon Design Language",
+    "repository": {
+      "url": "git+https://github.com/liferay/clay.git#master",
+      "type": "git"
+    },
+    "size": 13709270
+  },
+  {
+    "package": "@vaadin/button",
+    "status": 200,
+    "version": "25.3.5",
+    "license": "Apache-2.0",
+    "peer": null,
+    "description": "vaadin-button",
+    "repository": {
+      "url": "git+https://github.com/vaadin/web-components.git",
+      "type": "git",
+      "directory": "packages/button"
+    },
+    "size": 43372
+  },
+  {
+    "package": "@vaadin/text-field",
+    "status": 200,
+    "version": "25.3.5",
+    "license": "Apache-2.0",
+    "peer": null,
+    "description": "vaadin-text-field",
+    "repository": {
+      "url": "git+https://github.com/vaadin/web-components.git",
+      "type": "git",
+      "directory": "packages/text-field"
+    },
+    "size": 137458
+  },
+  {
+    "package": "@vaadin/checkbox",
+    "status": 200,
+    "version": "25.3.5",
+    "license": "Apache-2.0",
+    "peer": null,
+    "description": "vaadin-checkbox",
+    "repository": {
+      "url": "git+https://github.com/vaadin/web-components.git",
+      "type": "git",
+      "directory": "packages/checkbox"
+    },
+    "size": 102468
+  },
+  {
+    "package": "@vaadin/select",
+    "status": 200,
+    "version": "25.3.5",
+    "license": "Apache-2.0",
+    "peer": null,
+    "description": "vaadin-select",
+    "repository": {
+      "url": "git+https://github.com/vaadin/web-components.git",
+      "type": "git",
+      "directory": "packages/select"
+    },
+    "size": 222222
+  },
+  {
+    "package": "@vaadin/grid",
+    "status": 200,
+    "version": "25.3.5",
+    "license": "Apache-2.0",
+    "peer": null,
+    "description": "A free, flexible and high-quality Web Component for showing large amounts of tabular data",
+    "repository": {
+      "url": "git+https://github.com/vaadin/web-components.git",
+      "type": "git",
+      "directory": "packages/grid"
+    },
+    "size": 1045848
+  },
+  {
+    "package": "@wfp/ui",
+    "status": 200,
+    "version": "1.22.5",
+    "license": "Apache-2",
+    "peer": {
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "@wfp/icons": "0.2.2"
+    },
+    "description": "WFP UI Kit",
+    "repository": {
+      "url": "git+https://github.com/wfp/ui.git",
+      "type": "git"
+    },
+    "size": 11055118
+  },
+  {
+    "package": "@wfp/react",
+    "status": 200,
+    "version": "1.22.6",
+    "license": "Apache-2",
+    "peer": {
+      "react": ">=18.2.0 <20.0.0 || ^19.0.0-rc",
+      "react-dom": ">=18.2.0 <20.0.0 || ^19.0.0-rc"
+    },
+    "description": "WFP Bridge Design System",
+    "repository": null,
+    "size": 5844787
+  },
+  {
+    "package": "@public-ui/components",
+    "status": 200,
+    "version": "4.5.0",
+    "license": "EUPL-1.2",
+    "peer": {
+      "adopted-style-sheets": "1.1.9-rc.25"
+    },
+    "description": "Contains all web components that belong to KoliBri - The accessible HTML-Standard.",
+    "repository": {
+      "url": "git+https://github.com/public-ui/kolibri.git",
+      "type": "git"
+    },
+    "size": 29864318
+  },
+  {
+    "package": "@public-ui/theme-default",
+    "status": 200,
+    "version": "4.5.0",
+    "license": "EUPL-1.2",
+    "peer": {
+      "@public-ui/components": "4.5.0"
+    },
+    "description": "Contains the default theme for KoliBri - The accessible HTML-Standard.",
+    "repository": {
+      "url": "git+https://github.com/public-ui/kolibri.git",
+      "type": "git"
+    },
+    "size": 31333273
+  },
+  {
+    "package": "@gouvfr/dsfr",
+    "status": 200,
+    "version": "1.15.4",
+    "license": "etalab-2.0",
+    "peer": null,
+    "description": "Système de Design de l'Etat - DSFR",
+    "repository": {
+      "url": "git+ssh://git@github.com/GouvernementFR/dsfr.git",
+      "type": "git"
+    },
+    "size": 111246426
+  },
+  {
+    "package": "ariakit",
+    "status": 200,
+    "version": "2.0.0-next.44",
+    "license": "MIT",
+    "peer": {
+      "react": "^17.0.0 || ^18.0.0",
+      "react-dom": "^17.0.0 || ^18.0.0"
+    },
+    "description": "Toolkit for building accessible web apps with React",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/ariakit/ariakit.git",
+      "directory": "packages/ariakit"
+    },
+    "size": 1528485
+  },
+  {
+    "package": "@ariakit/react",
+    "status": 200,
+    "version": "0.4.43",
+    "license": "MIT",
+    "peer": {
+      "react": "^17.0.0 || ^18.0.0 || ^19.0.0",
+      "react-dom": "^17.0.0 || ^18.0.0 || ^19.0.0"
+    },
+    "description": "Toolkit for building accessible web apps with React",
+    "repository": {
+      "url": "https://github.com/ariakit/ariakit.git",
+      "type": "git",
+      "directory": "packages/ariakit-react"
+    },
+    "size": 1113195
+  },
+  {
+    "package": "@kobalte/core",
+    "status": 200,
+    "version": "0.13.14",
+    "license": "MIT",
+    "peer": {
+      "solid-js": "^1.9.8"
+    },
+    "description": "Unstyled components and primitives for building accessible web apps and design systems with SolidJS.",
+    "repository": {
+      "url": "git+https://github.com/kobaltedev/kobalte.git",
+      "type": "git"
+    },
+    "size": 3687818
+  },
+  {
+    "package": "bits-ui",
+    "status": 200,
+    "version": "2.20.6",
+    "license": "MIT",
+    "peer": {
+      "svelte": "^5.33.0",
+      "@internationalized/date": "^3.8.1"
+    },
+    "description": "The headless components for Svelte.",
+    "repository": {
+      "url": "git+https://github.com/huntabyte/bits-ui.git",
+      "type": "git"
+    },
+    "size": 1985676
+  },
+  {
+    "package": "govuk-frontend",
+    "status": 200,
+    "version": "6.6.0",
+    "license": "MIT",
+    "peer": null,
+    "description": "GOV.UK Frontend contains the code you need to start building a user interface for government platforms and services.",
+    "repository": {
+      "url": "git+https://github.com/alphagov/govuk-frontend.git",
+      "type": "git",
+      "directory": "packages/govuk-frontend"
+    },
+    "size": 6002841
+  },
+  {
+    "package": "@uswds/uswds",
+    "status": 200,
+    "version": "3.14.0",
+    "license": "SEE LICENSE IN LICENSE.md",
+    "peer": null,
+    "description": "Open source UI components and visual style guide for U.S. government websites",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/uswds/uswds.git"
+    },
+    "size": 18463910
+  },
+  {
+    "package": "@digital-go-jp/design-system-example-components",
+    "status": 404,
+    "version": null,
+    "license": null,
+    "peer": null,
+    "description": null,
+    "repository": null,
+    "size": null
+  },
+  {
+    "package": "@digital-go-jp/design-system-tokens",
+    "status": 404,
+    "version": null,
+    "license": null,
+    "peer": null,
+    "description": null,
+    "repository": null,
+    "size": null
+  },
+  {
+    "package": "@digital-go-jp/design-system",
+    "status": 404,
+    "version": null,
+    "license": null,
+    "peer": null,
+    "description": null,
+    "repository": null,
+    "size": null
+  },
+  {
+    "package": "@gcds-core/components",
+    "status": 200,
+    "version": "1.7.0",
+    "license": "MIT",
+    "peer": null,
+    "description": "Web components for the GCDS",
+    "repository": {
+      "url": "git+https://github.com/cds-snc/gcds-components.git",
+      "type": "git"
+    },
+    "size": 8424688
+  },
+  {
+    "package": "@bcgov/design-tokens",
+    "status": 200,
+    "version": "5.1.0",
+    "license": "Apache-2.0",
+    "peer": null,
+    "description": "Design tokens for B.C. Design System",
+    "repository": {
+      "url": "git+https://github.com/bcgov/design-system.git",
+      "type": "git",
+      "directory": "packages/design-tokens/dist"
+    },
+    "size": 206808
+  },
+  {
+    "package": "@bcgov/design-system-react-components",
+    "status": 200,
+    "version": "0.9.1",
+    "license": "Apache-2.0",
+    "peer": {
+      "react": "^16.14.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0",
+      "react-dom": "^16.14.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0",
+      "@bcgov/bc-sans": "^2.1.0"
+    },
+    "description": "This package contains a library of React components, built using React Aria, as part of the B.C. Design System.",
+    "repository": {
+      "url": "git+https://github.com/bcgov/design-system.git",
+      "type": "git",
+      "directory": "packages/react-components"
+    },
+    "size": 9769699
+  },
+  {
+    "package": "@gov-design-system-ce/components",
+    "status": 200,
+    "version": "4.7.3",
+    "license": "EUPL-1.2",
+    "peer": null,
+    "description": "This package includes Gov Design System Web Components and related utilities.",
+    "repository": null,
+    "size": 15408830
+  },
+  {
+    "package": "@gov-design-system-ce/styles",
+    "status": 200,
+    "version": "4.7.3",
+    "license": "EUPL-1.2",
+    "peer": null,
+    "description": "This package includes Gov Design System CE Styles.",
+    "repository": null,
+    "size": 2804057
+  },
+  {
+    "package": "bootstrap-italia",
+    "status": 200,
+    "version": "2.18.3",
+    "license": "BSD-3-Clause",
+    "peer": null,
+    "description": "Bootstrap Italia è un tema Bootstrap 5 per la creazione di applicazioni web nel pieno rispetto delle linee guida di design per i siti internet e i servizi digitali della PA",
+    "repository": {
+      "url": "git+https://github.com/italia/bootstrap-italia.git",
+      "type": "git"
+    },
+    "size": 10364268
+  },
+  {
+    "package": "@ecl/preset-ec",
+    "status": 200,
+    "version": "5.4.0",
+    "license": "EUPL-1.2",
+    "peer": null,
+    "description": "ECL EC preset",
+    "repository": null,
+    "size": 7543459
+  },
+  {
+    "package": "cfpb-design-system",
+    "status": 404,
+    "version": null,
+    "license": null,
+    "peer": null,
+    "description": null,
+    "repository": null,
+    "size": null
+  }
+]

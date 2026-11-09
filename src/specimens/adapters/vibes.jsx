@@ -1,0 +1,2 @@
+import React from'react';import{Button,TextField,CheckBox}from'@freee_jp/vibes';import'@freee_jp/vibes/css';import kit from'../react-kit';
+export default kit({Button:({variant,size,...p})=><Button appearance={variant==='text'?'tertiary':variant} small={size==='small'} {...p}/>,Input:({onValueChange,...p})=><TextField {...p} onChange={e=>onValueChange(e.target.value)}/>,Checkbox:({onValueChange,...p})=><CheckBox {...p} onChange={e=>onValueChange?.(e.target.checked)}/>});

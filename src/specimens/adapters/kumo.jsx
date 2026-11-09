@@ -1,0 +1,2 @@
+import React from'react';import{Button,Input,Checkbox}from'@cloudflare/kumo';import'@cloudflare/kumo/styles/standalone';import kit from'../react-kit';
+export default kit({Button:({variant,size,...p})=><Button variant={variant==='text'?'ghost':variant} size={{small:'sm',medium:'base',large:'lg'}[size]||'base'} {...p}/>,Input:({onValueChange,...p})=><Input {...p} onChange={e=>onValueChange(e.target.value)}/>,Checkbox:({onValueChange,children,...p})=><Checkbox label={children} controlFirst checked={p.checked} disabled={p.disabled} onCheckedChange={onValueChange}/>});

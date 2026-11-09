@@ -1,0 +1,2 @@
+import React from'react';import{Button,TextField,Input,Checkbox}from'react-aria-components';import kit from'../react-kit';
+export default kit({Button:({variant,size,disabled,onClick,...p})=><Button {...p} isDisabled={disabled} onPress={onClick}/>,Input:({onValueChange,...p})=><TextField aria-label={p['aria-label']} value={p.value} onChange={onValueChange} isDisabled={p.disabled}><Input id={p.id} placeholder={p.placeholder}/></TextField>});

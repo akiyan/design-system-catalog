@@ -1,0 +1,2 @@
+import '../../../node_modules/govuk-frontend/dist/govuk/govuk-frontend.min.css';import nativeKit from '../native-kit';
+export default nativeKit({"button": {"primary": "govuk-button", "secondary": "govuk-button govuk-button--secondary", "text": "govuk-button govuk-button--secondary"}, "input": "govuk-input", "checkbox": "govuk-checkboxes__input", "checkWrap": "govuk-checkboxes__item", "checkLabel": "govuk-label govuk-checkboxes__label", "select": "govuk-select", "h1": "govuk-heading-l", "h2": "govuk-heading-m", "body": "govuk-body"});

@@ -1,0 +1,2 @@
+import '../../../node_modules/@vtmn/css/dist/index.css';import nativeKit from '../native-kit';
+export default nativeKit({"button": {"primary": "vtmn-btn vtmn-btn_variant--primary", "secondary": "vtmn-btn vtmn-btn_variant--secondary", "text": "vtmn-btn vtmn-btn_variant--tertiary"}, "input": "vtmn-text-input", "checkbox": "vtmn-checkbox", "checkWrap": "", "checkLabel": "", "select": "vtmn-select", "h1": "vtmn-typo_title-1", "h2": "vtmn-typo_title-2", "body": "vtmn-typo_text-1"});

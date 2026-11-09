@@ -1,0 +1,586 @@
+[
+  {
+    "id": "dads",
+    "status": "ready",
+    "source": "https://github.com/digital-go-jp/design-system-example-components-react",
+    "implementation": "digital-go-jp/design-system-example-components-react",
+    "version": "2.7.0",
+    "installedVersion": null,
+    "license": null
+  },
+  {
+    "id": "govuk",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/govuk-frontend",
+    "implementation": "govuk-frontend",
+    "version": "6.6.0",
+    "installedVersion": "6.6.0",
+    "license": "MIT"
+  },
+  {
+    "id": "uswds",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@uswds/uswds",
+    "implementation": "@uswds/uswds",
+    "version": "3.14.0",
+    "installedVersion": "3.14.0",
+    "license": "SEE LICENSE IN LICENSE.md"
+  },
+  {
+    "id": "cloudscape",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@cloudscape-design/components",
+    "implementation": "@cloudscape-design/components",
+    "version": "3.0.1411",
+    "installedVersion": "3.0.1411",
+    "license": "Apache-2.0"
+  },
+  {
+    "id": "gestalt",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/gestalt",
+    "implementation": "gestalt",
+    "version": "177.0.12",
+    "installedVersion": "177.0.12",
+    "license": "Apache-2.0"
+  },
+  {
+    "id": "sgds",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@govtechsg/sgds",
+    "implementation": "@govtechsg/sgds",
+    "version": "2.3.6",
+    "installedVersion": "2.3.6",
+    "license": "MIT"
+  },
+  {
+    "id": "astryx",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@astryxdesign/core",
+    "implementation": "@astryxdesign/core",
+    "version": "0.7.11",
+    "installedVersion": "0.7.11",
+    "license": "MIT"
+  },
+  {
+    "id": "agds",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@ag.ds-next/react",
+    "implementation": "@ag.ds-next/react",
+    "version": "1.36.0",
+    "installedVersion": "1.36.0",
+    "license": "MIT"
+  },
+  {
+    "id": "czech",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@gov-design-system-ce/components",
+    "implementation": "@gov-design-system-ce/components",
+    "version": "4.7.3",
+    "installedVersion": "4.7.3",
+    "license": "EUPL-1.2"
+  },
+  {
+    "id": "italia",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/bootstrap-italia",
+    "implementation": "bootstrap-italia",
+    "version": "2.18.3",
+    "installedVersion": "2.18.3",
+    "license": "BSD-3-Clause"
+  },
+  {
+    "id": "europa",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@ecl/preset-ec",
+    "implementation": "@ecl/preset-ec",
+    "version": "5.4.0",
+    "installedVersion": "5.4.0",
+    "license": "EUPL-1.2"
+  },
+  {
+    "id": "canada",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@gcds-core/components",
+    "implementation": "@gcds-core/components",
+    "version": "1.7.0",
+    "installedVersion": "1.7.0",
+    "license": "MIT"
+  },
+  {
+    "id": "cfpb",
+    "status": "ready",
+    "source": "https://cfpb.github.io/design-system/dist/index.css",
+    "implementation": "Official stylesheet + documented HTML",
+    "version": "2026-11-10",
+    "installedVersion": null,
+    "license": null
+  },
+  {
+    "id": "bristol",
+    "status": "ready",
+    "source": "https://style.bristol.gov.uk/css/common.css",
+    "implementation": "Official stylesheet + documented HTML",
+    "version": "2026-11-10",
+    "installedVersion": null,
+    "license": null
+  },
+  {
+    "id": "bc",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@bcgov/design-system-react-components",
+    "implementation": "@bcgov/design-system-react-components",
+    "version": "0.9.1",
+    "installedVersion": "0.9.1",
+    "license": "Apache-2.0"
+  },
+  {
+    "id": "sansan",
+    "status": "design-only",
+    "source": "https://ui.one-design-system.sansan.com/",
+    "installedVersion": null,
+    "license": null
+  },
+  {
+    "id": "charcoal",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@charcoal-ui/react",
+    "implementation": "@charcoal-ui/react",
+    "version": "6.3.0",
+    "installedVersion": "6.3.0",
+    "license": "Apache-2.0"
+  },
+  {
+    "id": "serendie",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@serendie/ui",
+    "implementation": "@serendie/ui",
+    "version": "3.7.3",
+    "installedVersion": "3.7.3",
+    "license": "MIT"
+  },
+  {
+    "id": "sugao",
+    "status": "design-only",
+    "source": "https://brand.kaonavi.jp/sugao",
+    "installedVersion": null,
+    "license": null
+  },
+  {
+    "id": "vibes",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@freee_jp/vibes",
+    "implementation": "@freee_jp/vibes",
+    "version": "100.1.0",
+    "installedVersion": "100.1.0",
+    "license": "Apache-2.0"
+  },
+  {
+    "id": "vitals",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@ubie/ubie-ui",
+    "implementation": "@ubie/ubie-ui",
+    "version": "0.0.48",
+    "installedVersion": "0.0.48",
+    "license": "Apache-2.0"
+  },
+  {
+    "id": "pajamas",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@gitlab/ui",
+    "implementation": "@gitlab/ui",
+    "version": "140.0.0",
+    "installedVersion": "140.0.0",
+    "license": "MIT"
+  },
+  {
+    "id": "paste",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@twilio-paste/core",
+    "implementation": "@twilio-paste/core",
+    "version": "21.5.0",
+    "installedVersion": "21.5.0",
+    "license": "MIT"
+  },
+  {
+    "id": "wise",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@transferwise/components",
+    "implementation": "@transferwise/components",
+    "version": "46.168.1",
+    "installedVersion": "46.168.1",
+    "license": "Apache-2.0"
+  },
+  {
+    "id": "semi",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@douyinfe/semi-ui",
+    "implementation": "@douyinfe/semi-ui",
+    "version": "2.104.0",
+    "installedVersion": "2.104.0",
+    "license": "MIT"
+  },
+  {
+    "id": "arco",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@arco-design/web-react",
+    "implementation": "@arco-design/web-react",
+    "version": "2.66.18",
+    "installedVersion": "2.66.18",
+    "license": "MIT"
+  },
+  {
+    "id": "spectrum",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@react-spectrum/s2",
+    "implementation": "@react-spectrum/s2",
+    "version": "1.8.2",
+    "installedVersion": "1.8.2",
+    "license": "Apache-2.0"
+  },
+  {
+    "id": "carbon",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@carbon/react",
+    "implementation": "@carbon/react",
+    "version": "1.120.0",
+    "installedVersion": "1.120.0",
+    "license": "Apache-2.0"
+  },
+  {
+    "id": "fluent",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@fluentui/react-components",
+    "implementation": "@fluentui/react-components",
+    "version": "9.75.1",
+    "installedVersion": "9.75.1",
+    "license": "MIT"
+  },
+  {
+    "id": "baseweb",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/baseui",
+    "implementation": "baseui",
+    "version": "18.2.0",
+    "installedVersion": "18.2.0",
+    "license": "MIT"
+  },
+  {
+    "id": "polaris",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@shopify/polaris",
+    "implementation": "@shopify/polaris",
+    "version": "13.9.5",
+    "installedVersion": "13.9.5",
+    "license": "SEE LICENSE IN LICENSE.md"
+  },
+  {
+    "id": "spindle",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@openameba/spindle-ui",
+    "implementation": "@openameba/spindle-ui",
+    "version": "3.4.0",
+    "installedVersion": "3.4.0",
+    "license": "MIT"
+  },
+  {
+    "id": "smarthr",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/smarthr-ui",
+    "implementation": "smarthr-ui",
+    "version": "102.1.0",
+    "installedVersion": "102.1.0",
+    "license": "MIT"
+  },
+  {
+    "id": "ikyu",
+    "status": "design-only",
+    "source": "https://www.ikyu.co.jp/design_guideline/",
+    "installedVersion": null,
+    "license": null
+  },
+  {
+    "id": "francfranc",
+    "status": "design-only",
+    "source": "https://francfranc.io/design-system-guidelines/design-system/",
+    "installedVersion": null,
+    "license": null
+  },
+  {
+    "id": "porsche",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@porsche-design-system/components-react",
+    "implementation": "@porsche-design-system/components-react",
+    "version": "4.10.1",
+    "installedVersion": "4.10.1",
+    "license": "SEE LICENSE IN LICENSE"
+  },
+  {
+    "id": "audi",
+    "status": "design-only",
+    "source": "https://styleguide.audi.com/",
+    "installedVersion": null,
+    "license": null
+  },
+  {
+    "id": "coinbase",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@coinbase/cds-web",
+    "implementation": "@coinbase/cds-web",
+    "version": "9.30.0",
+    "installedVersion": "9.30.0"
+  },
+  {
+    "id": "tdesign",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/tdesign-react",
+    "implementation": "tdesign-react",
+    "version": "1.18.6",
+    "installedVersion": "1.18.6",
+    "license": "MIT"
+  },
+  {
+    "id": "ant",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/antd",
+    "implementation": "antd",
+    "version": "6.7.0",
+    "installedVersion": "6.7.0",
+    "license": "MIT"
+  },
+  {
+    "id": "kumo",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@cloudflare/kumo",
+    "implementation": "@cloudflare/kumo",
+    "version": "2.17.0",
+    "installedVersion": "2.17.0",
+    "license": "MIT"
+  },
+  {
+    "id": "patternfly",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@patternfly/react-core",
+    "implementation": "@patternfly/react-core",
+    "version": "6.7.0",
+    "installedVersion": "6.7.0",
+    "license": "MIT"
+  },
+  {
+    "id": "primer",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@primer/react",
+    "implementation": "@primer/react",
+    "version": "38.45.0",
+    "installedVersion": "38.45.0",
+    "license": "MIT"
+  },
+  {
+    "id": "atlassian",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@atlaskit/button",
+    "implementation": "@atlaskit/button",
+    "version": "25.7.1",
+    "installedVersion": "25.7.1",
+    "license": "Apache-2.0"
+  },
+  {
+    "id": "lightning",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@salesforce-ux/design-system",
+    "implementation": "@salesforce-ux/design-system",
+    "version": "2.264.3",
+    "installedVersion": "2.264.3",
+    "license": "BSD-3-Clause"
+  },
+  {
+    "id": "forma36",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@contentful/f36-components",
+    "implementation": "@contentful/f36-components",
+    "version": "6.30.0",
+    "installedVersion": "6.30.0",
+    "license": "MIT"
+  },
+  {
+    "id": "evergreen",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/evergreen-ui",
+    "implementation": "evergreen-ui",
+    "version": "7.1.9",
+    "installedVersion": "7.1.9",
+    "license": "MIT"
+  },
+  {
+    "id": "airtable",
+    "status": "integration-limited",
+    "source": "https://airtable.com/developers/extensions/api/UI/Style%20System/All%20styles",
+    "installedVersion": null,
+    "license": null
+  },
+  {
+    "id": "monday",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@vibe/core",
+    "implementation": "@vibe/core",
+    "version": "4.5.39",
+    "installedVersion": "4.5.39",
+    "license": "MIT"
+  },
+  {
+    "id": "vitamin",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@vtmn/css",
+    "implementation": "@vtmn/css",
+    "version": "3.0.2",
+    "installedVersion": "3.0.2",
+    "license": "Apache-2.0"
+  },
+  {
+    "id": "orbit",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@kiwicom/orbit-components",
+    "implementation": "@kiwicom/orbit-components",
+    "version": "27.7.1-alpha.0",
+    "installedVersion": "27.7.1-alpha.0",
+    "license": "MIT"
+  },
+  {
+    "id": "apron",
+    "status": "design-only",
+    "source": "https://www.figma.com/community/file/847372282968994272/apron",
+    "installedVersion": null,
+    "license": null
+  },
+  {
+    "id": "dbs",
+    "status": "design-only",
+    "source": "https://www.figma.com/community/file/1273895245584027076/data-visualisation-dbs-bank",
+    "installedVersion": null,
+    "license": null
+  },
+  {
+    "id": "finastra",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@finastra/button",
+    "implementation": "@finastra/button",
+    "version": "1.8.1",
+    "installedVersion": "1.8.1",
+    "license": "MIT"
+  },
+  {
+    "id": "lion",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@lion/ui",
+    "implementation": "@lion/ui",
+    "version": "0.27.0",
+    "installedVersion": "0.27.0",
+    "license": "MIT"
+  },
+  {
+    "id": "boosted",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/boosted",
+    "implementation": "boosted",
+    "version": "5.3.8",
+    "installedVersion": "5.3.8",
+    "license": "MIT"
+  },
+  {
+    "id": "calcite",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@esri/calcite-components",
+    "implementation": "@esri/calcite-components",
+    "version": "5.2.1",
+    "installedVersion": "5.2.1",
+    "license": "SEE LICENSE.md"
+  },
+  {
+    "id": "lexicon",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@clayui/css",
+    "implementation": "@clayui/css",
+    "version": "3.167.0",
+    "installedVersion": "3.167.0",
+    "license": "MIT"
+  },
+  {
+    "id": "vaadin",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@vaadin/button",
+    "implementation": "@vaadin/button",
+    "version": "25.3.5",
+    "installedVersion": "25.3.5",
+    "license": "Apache-2.0"
+  },
+  {
+    "id": "falcon",
+    "status": "design-only",
+    "source": "https://www.figma.com/community/file/1047401907024695662/speeda-designsystem-falcon",
+    "installedVersion": null,
+    "license": null
+  },
+  {
+    "id": "wfp",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@wfp/react",
+    "implementation": "@wfp/react",
+    "version": "1.22.6",
+    "installedVersion": "1.22.6",
+    "license": "Apache-2"
+  },
+  {
+    "id": "kolibri",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@public-ui/components",
+    "implementation": "@public-ui/components",
+    "version": "4.5.0",
+    "installedVersion": "4.5.0",
+    "license": "EUPL-1.2"
+  },
+  {
+    "id": "dsfr",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@gouvfr/dsfr",
+    "implementation": "@gouvfr/dsfr",
+    "version": "1.15.4",
+    "installedVersion": "1.15.4",
+    "license": "etalab-2.0"
+  },
+  {
+    "id": "reactaria",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/react-aria-components",
+    "implementation": "react-aria-components",
+    "version": "1.22.1",
+    "installedVersion": "1.22.1",
+    "license": "Apache-2.0"
+  },
+  {
+    "id": "ariakit",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@ariakit/react",
+    "implementation": "@ariakit/react",
+    "version": "0.4.43",
+    "installedVersion": "0.4.43",
+    "license": "MIT"
+  },
+  {
+    "id": "kobalte",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/@kobalte/core",
+    "implementation": "@kobalte/core",
+    "version": "0.13.14",
+    "installedVersion": "0.13.14",
+    "license": "MIT"
+  },
+  {
+    "id": "bitsui",
+    "status": "ready",
+    "source": "https://www.npmjs.com/package/bits-ui",
+    "implementation": "bits-ui",
+    "version": "2.20.6",
+    "installedVersion": "2.20.6",
+    "license": "MIT"
+  }
+]

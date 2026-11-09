@@ -1,0 +1,2 @@
+import'../../../node_modules/@salesforce-ux/design-system/assets/styles/salesforce-lightning-design-system.min.css';import nativeKit from'../native-kit';
+export default nativeKit({button:{primary:'slds-button slds-button_brand',secondary:'slds-button slds-button_neutral',text:'slds-button slds-button_reset'},input:'slds-input',checkbox:'slds-checkbox',checkWrap:'slds-form-element',checkLabel:'slds-form-element__label',select:'slds-select',h1:'slds-text-heading_large',h2:'slds-text-heading_medium',body:'slds-text-body_regular'});

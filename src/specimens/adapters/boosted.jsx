@@ -1,0 +1,2 @@
+import '../../../node_modules/boosted/dist/css/boosted.min.css';import nativeKit from '../native-kit';
+export default nativeKit({"button": {"primary": "btn btn-primary", "secondary": "btn btn-outline-secondary", "text": "btn btn-link"}, "input": "form-control", "checkbox": "form-check-input", "checkWrap": "form-check", "checkLabel": "form-check-label", "select": "form-select", "h1": "h1", "h2": "h2", "body": ""});

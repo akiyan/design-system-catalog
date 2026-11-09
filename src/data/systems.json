@@ -2022,8 +2022,8 @@
       "Angular",
       "Vue"
     ],
-    "license": "個別の利用条件を確認",
-    "licenseEn": "Check individual terms",
+    "license": "Apache 2.0（コード）。ブランド素材は独自ライセンス",
+    "licenseEn": "Apache 2.0 (code); proprietary terms for brand assets",
     "url": "https://designsystem.porsche.com/v4/",
     "views": [
       {

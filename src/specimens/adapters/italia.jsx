@@ -1,0 +1,2 @@
+import '../../../node_modules/bootstrap-italia/dist/css/bootstrap-italia.min.css';import nativeKit from '../native-kit';
+export default nativeKit({"button": {"primary": "btn btn-primary", "secondary": "btn btn-outline-primary", "text": "btn btn-link"}, "input": "form-control", "checkbox": "form-check-input", "checkWrap": "form-check", "checkLabel": "form-check-label", "select": "form-control", "h1": "h1", "h2": "h2", "body": ""});

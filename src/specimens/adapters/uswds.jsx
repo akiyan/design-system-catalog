@@ -1,0 +1,2 @@
+import '../../../node_modules/@uswds/uswds/dist/css/uswds.min.css';import nativeKit from '../native-kit';
+export default nativeKit({"button": {"primary": "usa-button", "secondary": "usa-button usa-button--outline", "text": "usa-button usa-button--unstyled"}, "input": "usa-input", "checkbox": "usa-checkbox__input", "checkWrap": "usa-checkbox", "checkLabel": "usa-checkbox__label", "select": "usa-select", "h1": "font-heading-xl", "h2": "font-heading-lg", "body": "font-body-md"});

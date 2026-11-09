@@ -1,0 +1,2 @@
+import React from'react';import{Button,Input,Checkbox}from'@ubie/ubie-ui';import kit from'../react-kit';
+export default kit({Button:({variant,size,...p})=><Button variant={variant} size={size||'medium'} {...p}/>,Input:({onValueChange,...p})=><Input {...p} onChange={e=>onValueChange(e.target.value)}/>,Checkbox:({onValueChange,children,...p})=><label className="specimen-check-label"><Checkbox {...p} onChange={e=>onValueChange?.(e.target.checked)}/> {children}</label>});
