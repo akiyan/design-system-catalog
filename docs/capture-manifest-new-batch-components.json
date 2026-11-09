@@ -1,0 +1,328 @@
+{
+  "capturedAt": "2026-11-09T14:59:38.946Z",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "results": [
+    {
+      "label": "フォーム",
+      "labelEn": "Forms",
+      "url": "https://www.salesforce.com/form/other/privacy-request/?_gl=1*1octhpn*_ga*Mjc2NzgwODEuMTcxOTM0MjYyNg..*_ga_HPRCE01J19*MTczNzczOTc1MS40NjEuMC4xNzM3NzM5NzYyLjAuMC4w",
+      "id": "lightning",
+      "index": 2,
+      "status": "failed",
+      "error": "HTTP 403"
+    },
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://f36.contentful.com/components/table",
+      "id": "forma36",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://f36.contentful.com/components/table",
+      "title": "Forma 36 - Table"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://f36.contentful.com/components/modal",
+      "id": "forma36",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://f36.contentful.com/components/modal",
+      "title": "Forma 36 - Modal"
+    },
+    {
+      "label": "入力フォーム",
+      "labelEn": "Text fields",
+      "url": "https://f36.contentful.com/components/text-input",
+      "id": "forma36",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://f36.contentful.com/components/text-input",
+      "title": "Forma 36 - TextInput"
+    },
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://www.lightningdesignsystem.com/2e1ef8501/p/86f13a-data-table",
+      "id": "lightning",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://www.lightningdesignsystem.com/2e1ef8501/p/86f13a-data-table",
+      "title": "Data Table · Lightning Design System 2"
+    },
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://evergreen.segment.com/components/table",
+      "id": "evergreen",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://evergreen.segment.com/components/table",
+      "title": "Evergreen Table Documentation"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://evergreen.segment.com/components/dialog",
+      "id": "evergreen",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://evergreen.segment.com/components/dialog",
+      "title": "Evergreen Dialog Documentation"
+    },
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://vibe.monday.com/?path=/docs/components-table--docs",
+      "id": "monday",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://vibe.monday.com/?path=/docs/components-table--docs",
+      "title": "Components / Table - Docs ⋅ Storybook"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://vibe.monday.com/?path=/docs/components-dialog--docs",
+      "id": "monday",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://vibe.monday.com/?path=/docs/components-dialog--docs",
+      "title": "Components / Dialog - Docs ⋅ Storybook"
+    },
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://boosted.orange.com/docs/5.3/content/tables",
+      "id": "boosted",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://boosted.orange.com/docs/5.3/content/tables/",
+      "title": "Tables · Boosted v5.3"
+    },
+    {
+      "label": "入力フォーム",
+      "labelEn": "Text fields",
+      "url": "https://evergreen.segment.com/components/text-input",
+      "id": "evergreen",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://evergreen.segment.com/components/text-input",
+      "title": "Evergreen Text Input Documentation"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://boosted.orange.com/docs/5.3/components/modal",
+      "id": "boosted",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://boosted.orange.com/docs/5.3/components/modal/",
+      "title": "Modal · Boosted v5.3"
+    },
+    {
+      "label": "選択メニュー",
+      "labelEn": "Select menus",
+      "url": "https://boosted.orange.com/docs/5.3/forms/select",
+      "id": "boosted",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://boosted.orange.com/docs/5.3/forms/select/",
+      "title": "Select · Boosted v5.3"
+    },
+    {
+      "label": "入力フォーム",
+      "labelEn": "Text fields",
+      "url": "https://vibe.monday.com/?path=/docs/components-textfield--docs",
+      "id": "monday",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://vibe.monday.com/?path=/docs/components-textfield--docs",
+      "title": "Components / TextField - Docs ⋅ Storybook"
+    },
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://developers.arcgis.com/calcite-design-system/components/table/",
+      "id": "calcite",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://developers.arcgis.com/calcite-design-system/components/table/",
+      "title": "Table | Calcite Design System | Esri Developer"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://developers.arcgis.com/calcite-design-system/components/dialog/",
+      "id": "calcite",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://developers.arcgis.com/calcite-design-system/components/dialog/",
+      "title": "Dialog | Calcite Design System | Esri Developer"
+    },
+    {
+      "label": "選択メニュー",
+      "labelEn": "Select menus",
+      "url": "https://developers.arcgis.com/calcite-design-system/components/select/",
+      "id": "calcite",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://developers.arcgis.com/calcite-design-system/components/select/",
+      "title": "Select | Calcite Design System | Esri Developer"
+    },
+    {
+      "label": "入力フォーム",
+      "labelEn": "Text fields",
+      "url": "https://vaadin.com/docs/latest/components/text-field",
+      "id": "vaadin",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://vaadin.com/docs/latest/components/text-field",
+      "title": "Text Field component | Vaadin components"
+    },
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://vaadin.com/docs/latest/components/html-elements/table",
+      "id": "vaadin",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://vaadin.com/docs/latest/components/html-elements/table",
+      "title": "Table component for semantic HTML tables | Vaadin components"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://vaadin.com/docs/latest/components/dialog",
+      "id": "vaadin",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://vaadin.com/docs/latest/components/dialog",
+      "title": "Dialog component | Vaadin components"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://react-aria.adobe.com/Modal",
+      "id": "reactaria",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://react-aria.adobe.com/Modal",
+      "title": "Modal | React Aria"
+    },
+    {
+      "label": "フォーム",
+      "labelEn": "Forms",
+      "url": "https://uikit.wfp.org/docs/index.html?path=/story/templates-complex-form--page",
+      "id": "wfp",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://uikit.wfp.org/docs/index.html?path=/story/templates-complex-form--page",
+      "title": "Templates / Complex Form - Page ⋅ Storybook"
+    },
+    {
+      "label": "入力フォーム",
+      "labelEn": "Text fields",
+      "url": "https://react-aria.adobe.com/TextField",
+      "id": "reactaria",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://react-aria.adobe.com/TextField",
+      "title": "TextField | React Aria"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://ariakit.com/components/dialog",
+      "id": "ariakit",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://ariakit.com/components/dialog",
+      "title": "Dialog - Ariakit"
+    },
+    {
+      "label": "選択メニュー",
+      "labelEn": "Select menus",
+      "url": "https://ariakit.com/components/select",
+      "id": "ariakit",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://ariakit.com/components/select",
+      "title": "Select - Ariakit"
+    },
+    {
+      "label": "フォーム",
+      "labelEn": "Forms",
+      "url": "https://ariakit.com/components/form",
+      "id": "ariakit",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://ariakit.com/components/form",
+      "title": "Form - Ariakit"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://kobalte.dev/docs/core/components/dialog",
+      "id": "kobalte",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://kobalte.dev/docs/core/components/dialog",
+      "title": "Kobalte"
+    },
+    {
+      "label": "選択メニュー",
+      "labelEn": "Select menus",
+      "url": "https://react-aria.adobe.com/Select",
+      "id": "reactaria",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://react-aria.adobe.com/Select",
+      "title": "Select | React Aria"
+    },
+    {
+      "label": "入力フォーム",
+      "labelEn": "Text fields",
+      "url": "https://kobalte.dev/docs/core/components/text-field",
+      "id": "kobalte",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://kobalte.dev/docs/core/components/text-field",
+      "title": "Kobalte"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://bits-ui.com/docs/components/dialog",
+      "id": "bitsui",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://bits-ui.com/docs/components/dialog",
+      "title": "Dialog - Bits UI"
+    },
+    {
+      "label": "選択メニュー",
+      "labelEn": "Select menus",
+      "url": "https://bits-ui.com/docs/components/select",
+      "id": "bitsui",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://bits-ui.com/docs/components/select",
+      "title": "Select - Bits UI"
+    },
+    {
+      "label": "選択メニュー",
+      "labelEn": "Select menus",
+      "url": "https://kobalte.dev/docs/core/components/select",
+      "id": "kobalte",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://kobalte.dev/docs/core/components/select",
+      "title": "Kobalte"
+    }
+  ]
+}

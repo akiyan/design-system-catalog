@@ -1,0 +1,254 @@
+[
+  {
+    "id": "atlassian",
+    "url": "https://atlassian.design",
+    "status": 200,
+    "finalUrl": "https://atlassian.design/",
+    "title": [
+      "Atlassian Design"
+    ],
+    "repos": []
+  },
+  {
+    "id": "lightning",
+    "url": "https://www.lightningdesignsystem.com",
+    "status": 200,
+    "finalUrl": "https://www.lightningdesignsystem.com/2e1ef8501",
+    "title": [
+      "Lightning Design System 2"
+    ],
+    "repos": []
+  },
+  {
+    "id": "forma36",
+    "url": "https://f36.contentful.com",
+    "status": 200,
+    "finalUrl": "https://f36.contentful.com/",
+    "title": [
+      "Forma 36 - The Contentful Design System"
+    ],
+    "repos": [
+      "https://github.com/contentful/forma-36"
+    ]
+  },
+  {
+    "id": "evergreen",
+    "url": "https://evergreen.segment.com",
+    "status": 200,
+    "finalUrl": "https://evergreen.segment.com/",
+    "title": [
+      "Evergreen "
+    ],
+    "repos": []
+  },
+  {
+    "id": "airtable",
+    "url": "https://airtable.design",
+    "error": "HTTPSConnectionPool(host='airtable.design', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='airtable.design', port=443) at 0x74721ebb91d0>, 'Connection to airtable.design timed out. (connect timeout=20)'))"
+  },
+  {
+    "id": "monday",
+    "url": "https://style.monday.com",
+    "status": 200,
+    "finalUrl": "https://vibe.monday.com/",
+    "title": [
+      "Vibe Design System"
+    ],
+    "repos": [
+      "https://github.com/storybookjs/storybook"
+    ]
+  },
+  {
+    "id": "vitamin",
+    "url": "https://decathlon.design",
+    "status": 200,
+    "finalUrl": "https://www.decathlon.design/login",
+    "title": [
+      "Vitamin Play | Welcome to Vitamin Play"
+    ],
+    "repos": []
+  },
+  {
+    "id": "orbit",
+    "url": "https://orbit.kiwi",
+    "error": "HTTPSConnectionPool(host='orbit.kiwi', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='orbit.kiwi', port=443): Failed to resolve 'orbit.kiwi' ([Errno -5] No address associated with hostname)\"))"
+  },
+  {
+    "id": "pipedrive",
+    "url": "https://pipedrive.readme.io",
+    "status": 200,
+    "finalUrl": "https://pipedrive.readme.io/docs/getting-started",
+    "title": [
+      "Getting started"
+    ],
+    "repos": [
+      "https://github.com/pipedrive/client-nodejs",
+      "https://github.com/pipedrive/create-pipedrive-app",
+      "https://github.com/pipedrive/client-php"
+    ]
+  },
+  {
+    "id": "apron",
+    "url": "https://apron.cookpad.com",
+    "error": "HTTPSConnectionPool(host='apron.cookpad.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='apron.cookpad.com', port=443): Failed to resolve 'apron.cookpad.com' ([Errno -2] Name or service not known)\"))"
+  },
+  {
+    "id": "goldman",
+    "url": "https://design.gs.com",
+    "status": 200,
+    "finalUrl": "https://www.goldmansachs.com/",
+    "title": [
+      "Home | Goldman Sachs"
+    ],
+    "repos": []
+  },
+  {
+    "id": "dbs",
+    "url": "https://www.dbs.com/design",
+    "status": 200,
+    "finalUrl": "https://www.dbs.com/design/",
+    "title": [
+      "Design at DBS Bank"
+    ],
+    "repos": []
+  },
+  {
+    "id": "finastra",
+    "url": "https://finastra.design",
+    "error": "HTTPSConnectionPool(host='finastra.design', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='finastra.design', port=443) at 0x74721ebba990>, 'Connection to finastra.design timed out. (connect timeout=20)'))"
+  },
+  {
+    "id": "lion",
+    "url": "https://lion-web.netlify.app",
+    "status": 200,
+    "finalUrl": "https://lion-web.netlify.app/",
+    "title": [
+      "Lion"
+    ],
+    "repos": [
+      "https://github.com/ing-bank/lion"
+    ]
+  },
+  {
+    "id": "boosted",
+    "url": "https://boosted.orange.com",
+    "status": 200,
+    "finalUrl": "https://boosted.orange.com/",
+    "title": [
+      "Boosted · Orange Boosted with Bootstrap is a Bootstrap based, Orange branded accessible and ergonomic components library…"
+    ],
+    "repos": [
+      "https://github.com/orgs/twbs",
+      "https://github.com/twbs/bootstrap",
+      "https://github.com/Orange-OpenSource/Orange-Boosted-Bootstrap"
+    ]
+  },
+  {
+    "id": "telus",
+    "url": "https://www.telus.com/design",
+    "status": 403,
+    "finalUrl": "https://www.telus.com/design",
+    "title": [
+      "Attention Required! | Cloudflare"
+    ],
+    "repos": []
+  },
+  {
+    "id": "calcite",
+    "url": "https://developers.arcgis.com/calcite-design-system",
+    "status": 200,
+    "finalUrl": "https://developers.arcgis.com/calcite-design-system/",
+    "title": [
+      "Calcite Design System | Esri Developer"
+    ],
+    "repos": []
+  },
+  {
+    "id": "lexicon",
+    "url": "https://lexicondesign.io",
+    "status": 404,
+    "finalUrl": "https://liferay.design/lexicon/",
+    "title": [
+      "404 — Page Not Found"
+    ],
+    "repos": []
+  },
+  {
+    "id": "vaadin",
+    "url": "https://vaadin.com/design-system",
+    "status": 200,
+    "finalUrl": "https://vaadin.com/design-system",
+    "title": [
+      "Design System | Vaadin"
+    ],
+    "repos": []
+  },
+  {
+    "id": "wfp",
+    "url": "https://design.wfp.org",
+    "error": "HTTPSConnectionPool(host='design.wfp.org', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='design.wfp.org', port=443): Failed to resolve 'design.wfp.org' ([Errno -2] Name or service not known)\"))"
+  },
+  {
+    "id": "kolibri",
+    "url": "https://kolibri.itzbund.de",
+    "error": "HTTPSConnectionPool(host='kolibri.itzbund.de', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='kolibri.itzbund.de', port=443): Failed to resolve 'kolibri.itzbund.de' ([Errno -2] Name or service not known)\"))"
+  },
+  {
+    "id": "dsfr",
+    "url": "https://www.systeme-de-design.gouv.fr",
+    "status": 403,
+    "finalUrl": "https://www.systeme-de-design.gouv.fr/",
+    "title": [
+      "Just a moment..."
+    ],
+    "repos": []
+  },
+  {
+    "id": "reactaria",
+    "url": "https://react-spectrum.adobe.com/react-aria/",
+    "status": 200,
+    "finalUrl": "https://react-aria.adobe.com/",
+    "title": [
+      "React Aria"
+    ],
+    "repos": [
+      "https://github.com/adobe/react-spectrum"
+    ]
+  },
+  {
+    "id": "ariakit",
+    "url": "https://ariakit.org",
+    "status": 200,
+    "finalUrl": "https://ariakit.com/",
+    "title": [
+      "Ariakit - Toolkit for building accessible UIs"
+    ],
+    "repos": [
+      "https://github.com/ariakit/ariakit"
+    ]
+  },
+  {
+    "id": "kobalte",
+    "url": "https://kobalte.dev",
+    "status": 200,
+    "finalUrl": "https://kobalte.dev/docs/core/overview/introduction",
+    "title": [
+      "Kobalte"
+    ],
+    "repos": [
+      "https://github.com/kobaltedev/kobalte"
+    ]
+  },
+  {
+    "id": "bitsui",
+    "url": "https://bits-ui.com",
+    "status": 200,
+    "finalUrl": "https://bits-ui.com/",
+    "title": [
+      "Bits UI – Headless components for Svelte"
+    ],
+    "repos": [
+      "https://github.com/huntabyte/bits-ui"
+    ]
+  }
+]

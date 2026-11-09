@@ -1,0 +1,324 @@
+[
+  {
+    "repo": "atlassian/atlassian-frontend-mirror",
+    "status": 404,
+    "url": null,
+    "created": null,
+    "license": {},
+    "homepage": null,
+    "description": null
+  },
+  {
+    "repo": "salesforce-ux/design-system",
+    "status": 200,
+    "url": "https://github.com/salesforce-ux/design-system",
+    "created": "2015-09-01T19:35:26Z",
+    "license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "url": null,
+      "node_id": "MDc6TGljZW5zZTA="
+    },
+    "homepage": "https://www.lightningdesignsystem.com",
+    "description": "Salesforce Lightning Design System"
+  },
+  {
+    "repo": "contentful/forma-36",
+    "status": 200,
+    "url": "https://github.com/contentful/forma-36",
+    "created": "2018-10-19T13:00:05Z",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "homepage": "https://f36.contentful.com",
+    "description": "A design system by Contentful "
+  },
+  {
+    "repo": "segmentio/evergreen",
+    "status": 200,
+    "url": "https://github.com/segmentio/evergreen",
+    "created": "2017-07-30T10:03:14Z",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "homepage": "https://evergreen.segment.com",
+    "description": "\ud83c\udf32 Evergreen React UI Framework by Segment"
+  },
+  {
+    "repo": "Airtable/blocks",
+    "status": 200,
+    "url": "https://github.com/Airtable/blocks",
+    "created": "2019-06-04T02:36:09Z",
+    "license": null,
+    "homepage": "https://airtable.com/developers/blocks",
+    "description": null
+  },
+  {
+    "repo": "mondaycom/vibe",
+    "status": 200,
+    "url": "https://github.com/mondaycom/vibe",
+    "created": "2020-10-06T10:27:13Z",
+    "license": null,
+    "homepage": "https://vibe.monday.com/",
+    "description": "\ud83c\udfa8 Vibe Design System - Official monday.com UI resources for application development in React.js"
+  },
+  {
+    "repo": "Decathlon/vitamin-web",
+    "status": 200,
+    "url": "https://github.com/Decathlon/vitamin-web",
+    "created": "2020-12-16T17:36:03Z",
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "homepage": "https://decathlon.github.io/vitamin-web",
+    "description": "Decathlon Design System UI components for web applications"
+  },
+  {
+    "repo": "kiwicom/orbit",
+    "status": 200,
+    "url": "https://github.com/kiwicom/orbit",
+    "created": "2018-02-14T14:51:56Z",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "homepage": "https://orbit.kiwi",
+    "description": "React components of open-source Orbit design system by Kiwi.com"
+  },
+  {
+    "repo": "pipedrive/convention-ui",
+    "status": 404,
+    "url": null,
+    "created": null,
+    "license": {},
+    "homepage": null,
+    "description": null
+  },
+  {
+    "repo": "cookpad/apron",
+    "status": 404,
+    "url": null,
+    "created": null,
+    "license": {},
+    "homepage": null,
+    "description": null
+  },
+  {
+    "repo": "goldmansachs/gs-design-system",
+    "status": 404,
+    "url": null,
+    "created": null,
+    "license": {},
+    "homepage": null,
+    "description": null
+  },
+  {
+    "repo": "finastra/finastra-design-system",
+    "status": 404,
+    "url": null,
+    "created": null,
+    "license": {},
+    "homepage": null,
+    "description": null
+  },
+  {
+    "repo": "ing-bank/lion",
+    "status": 200,
+    "url": "https://github.com/ing-bank/lion",
+    "created": "2019-04-11T18:19:58Z",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "homepage": "https://lion.js.org",
+    "description": "Fundamental white label web component features for your design system."
+  },
+  {
+    "repo": "Orange-OpenSource/Orange-Boosted-Bootstrap",
+    "status": 200,
+    "url": "https://github.com/Orange-OpenSource/Orange-Boosted-Bootstrap",
+    "created": "2015-11-23T08:31:53Z",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "homepage": "https://web.unified-design-system.orange.com/",
+    "description": "OUDS Web is an accessible, ergonomic and Orange branded framework based on Orange Unified Design System and Bootstrap"
+  },
+  {
+    "repo": "telus/tds-core",
+    "status": 200,
+    "url": "https://github.com/telus-labs/tds-core",
+    "created": "2016-08-23T22:07:13Z",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "homepage": "https://tds.telus.com/",
+    "description": "TELUS Design System Core Components"
+  },
+  {
+    "repo": "Esri/calcite-design-system",
+    "status": 200,
+    "url": "https://github.com/Esri/calcite-design-system",
+    "created": "2019-05-09T02:11:17Z",
+    "license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "url": null,
+      "node_id": "MDc6TGljZW5zZTA="
+    },
+    "homepage": "https://developers.arcgis.com/calcite-design-system/",
+    "description": "A monorepo containing the packages for Esri's Calcite Design System"
+  },
+  {
+    "repo": "liferay/clay",
+    "status": 200,
+    "url": "https://github.com/liferay/clay",
+    "created": "2014-07-29T11:07:36Z",
+    "license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "url": null,
+      "node_id": "MDc6TGljZW5zZTA="
+    },
+    "homepage": "http://clayui.com",
+    "description": "This repo is has moved. ClayUI is still actively developed, but it has been moved into the liferay-portal monorepo. All future commits here are auto-synced from liferay-portal for read-only purposes:     A web implementation of the Lexicon Experience Language"
+  },
+  {
+    "repo": "vaadin/web-components",
+    "status": 200,
+    "url": "https://github.com/vaadin/web-components",
+    "created": "2020-12-26T16:28:50Z",
+    "license": null,
+    "homepage": "https://vaadin.com/docs/latest/components",
+    "description": "A set of high-quality standards based web components for enterprise web applications. Part of Vaadin 20+"
+  },
+  {
+    "repo": "wfp/ui",
+    "status": 200,
+    "url": "https://github.com/wfp/designsystem",
+    "created": "2015-05-27T09:32:03Z",
+    "license": {
+      "key": "apache-2.0",
+      "name": "Apache License 2.0",
+      "spdx_id": "Apache-2.0",
+      "url": "https://api.github.com/licenses/apache-2.0",
+      "node_id": "MDc6TGljZW5zZTI="
+    },
+    "homepage": "http://www.wfp.org/UIGuide",
+    "description": "World Food Programme User Interface Kit. Developer kit for implementing WFP web style guideline."
+  },
+  {
+    "repo": "public-ui/kolibri",
+    "status": 200,
+    "url": "https://github.com/public-ui/kolibri",
+    "created": "2022-10-12T06:16:11Z",
+    "license": {
+      "key": "eupl-1.2",
+      "name": "European Union Public License 1.2",
+      "spdx_id": "EUPL-1.2",
+      "url": "https://api.github.com/licenses/eupl-1.2",
+      "node_id": "MDc6TGljZW5zZTM0"
+    },
+    "homepage": "https://public-ui.github.io",
+    "description": "The accessible HTML-Standard"
+  },
+  {
+    "repo": "GouvernementFR/dsfr",
+    "status": 200,
+    "url": "https://github.com/GouvernementFR/dsfr",
+    "created": "2020-06-12T10:27:44Z",
+    "license": {
+      "key": "other",
+      "name": "Other",
+      "spdx_id": "NOASSERTION",
+      "url": null,
+      "node_id": "MDc6TGljZW5zZTA="
+    },
+    "homepage": "https://www.systeme-de-design.gouv.fr/",
+    "description": "\ud83c\uddeb\ud83c\uddf7 Official french government's design system (Syst\u00e8me de Design de l'\u00c9tat)"
+  },
+  {
+    "repo": "ariakit/ariakit",
+    "status": 200,
+    "url": "https://github.com/ariakit/ariakit",
+    "created": "2017-09-19T22:00:42Z",
+    "license": null,
+    "homepage": "https://ariakit.com",
+    "description": "Toolkit with accessible components, styles, and examples for your next web app"
+  },
+  {
+    "repo": "kobaltedev/kobalte",
+    "status": 200,
+    "url": "https://github.com/kobaltedev/kobalte",
+    "created": "2022-10-28T07:51:33Z",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "homepage": "https://kobalte.dev/",
+    "description": "A UI toolkit for building accessible web apps and design systems with SolidJS."
+  },
+  {
+    "repo": "huntabyte/bits-ui",
+    "status": 200,
+    "url": "https://github.com/huntabyte/bits-ui",
+    "created": "2023-08-06T20:55:28Z",
+    "license": {
+      "key": "mit",
+      "name": "MIT License",
+      "spdx_id": "MIT",
+      "url": "https://api.github.com/licenses/mit",
+      "node_id": "MDc6TGljZW5zZTEz"
+    },
+    "homepage": "https://bits-ui.com",
+    "description": "The headless components for Svelte."
+  },
+  {
+    "repo": "Finastra/finastra.design",
+    "status": 404,
+    "url": null,
+    "created": null,
+    "license": null,
+    "homepage": null
+  },
+  {
+    "repo": "telus/allium-design-system",
+    "status": 404,
+    "url": null,
+    "created": null,
+    "license": null,
+    "homepage": null
+  }
+]

@@ -2,15 +2,16 @@
 
 [Live site / 公開サイト](https://design-system-catalog-925.pages.dev/) · [Example permalink / 個別ページ](https://design-system-catalog-925.pages.dev/astryx/)
 
-A visual catalog of 43 public design systems with screenshots from their official sites. The code is MIT licensed. Third-party captures and trademarks retain their original terms.
+A visual catalog of 67 public design systems with screenshots from their official sites. The code is MIT licensed. Third-party captures and trademarks retain their original terms.
 
-公式サイトのサムネイルを主役にした国内外43件のデザインシステムカタログです。
+公式サイトのサムネイルを主役にした国内外67件のデザインシステムカタログです。
 
 - Japanese/English browser detection and a persistent manual language selection
 - Category filters; no keyword search
 - Newest public release first with date evidence and explicit reference markers
 - Static paths such as `/astryx/` with client navigation and Back/Forward support
 - Keyboard shortcuts and a `?` help overlay
+- Bilingual descriptions of each system’s purpose and distinctive features
 - Screenshot switching and enlarged previews
 - Mobile previous/next browsing and horizontal swipes on the main preview
 
@@ -25,7 +26,7 @@ npm run dev -- --host 0.0.0.0 --port 4173
 
 ## Static build and Cloudflare Pages / 静的生成
 
-Astro prerenders the catalog homepage and all 43 system paths. React handles category filters, language selection, screenshot previews and keyboard input in the browser. No server adapter or Pages Functions are used.
+Astro prerenders the catalog homepage and all 67 system paths. React handles category filters, language selection, screenshot previews and keyboard input in the browser. No server adapter or Pages Functions are used.
 
 ```sh
 npm run build
@@ -82,7 +83,7 @@ npm test
 TEST_BASE_URL=http://127.0.0.1:4174 npm test
 ```
 
-The 15 browser tests cover publication order/evidence, all static paths, navigation without JavaScript, history, automatic/manual languages, keyboard shortcuts, modal focus, image loading and mobile layout. Use `node scripts/capture-qa.mjs` for visual evidence.
+The 16 browser tests cover publication order/evidence, all static paths, navigation without JavaScript, history, automatic/manual languages, keyboard shortcuts, modal focus, image loading and mobile layout. Use `node scripts/capture-qa.mjs` for visual evidence.
 
 ## License and sources / ライセンスと出典
 

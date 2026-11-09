@@ -1,0 +1,119 @@
+{
+  "capturedAt": "2026-11-09T15:00:23.938Z",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "results": [
+    {
+      "label": "選択メニュー",
+      "labelEn": "Select menus",
+      "url": "https://atlassian.design/components/select",
+      "id": "atlassian",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://atlassian.design/components/select/examples",
+      "title": "Select - Examples - Components - Atlassian Design"
+    },
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://atlassian.design/components/table",
+      "id": "atlassian",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://atlassian.design/components/table/examples",
+      "title": "Table - Examples - Components - Atlassian Design"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://lion.js.org/components/dialog/overview",
+      "id": "lion",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://lion.js.org/components/dialog/overview/",
+      "title": "Overview - Lion UI"
+    },
+    {
+      "label": "入力フォーム",
+      "labelEn": "Text fields",
+      "url": "https://lion.js.org/components/input/overview",
+      "id": "lion",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://lion.js.org/components/input/overview/",
+      "title": "Overview - Lion UI"
+    },
+    {
+      "label": "選択メニュー",
+      "labelEn": "Select menus",
+      "url": "https://lion.js.org/components/select/overview",
+      "id": "lion",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://lion.js.org/components/select/overview/",
+      "title": "Overview - Lion UI"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://www.lightningdesignsystem.com/2e1ef8501/p/01c12a-modals",
+      "id": "lightning",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://www.lightningdesignsystem.com/2e1ef8501/p/01c12a-modals",
+      "title": "Modals · Lightning Design System 2"
+    },
+    {
+      "label": "テーブル",
+      "labelEn": "Tables",
+      "url": "https://design.liferay.com/lexicon/core-components/table/",
+      "id": "lexicon",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://design.liferay.com/lexicon/core-components/table/",
+      "title": "Table on Lexicon by Design.Liferay"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://design.liferay.com/lexicon/core-components/modal/",
+      "id": "lexicon",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://design.liferay.com/lexicon/core-components/modal/",
+      "title": "Modal on Lexicon by Design.Liferay"
+    },
+    {
+      "label": "ダイアログ",
+      "labelEn": "Dialogs",
+      "url": "https://public-ui.github.io/docs/components/dialog",
+      "id": "kolibri",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://public-ui.github.io/docs/components/dialog",
+      "title": "Dialog | KoliBri - Public UI"
+    },
+    {
+      "label": "選択メニュー",
+      "labelEn": "Select menus",
+      "url": "https://public-ui.github.io/docs/components/select",
+      "id": "kolibri",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://public-ui.github.io/docs/components/select",
+      "title": "Select | KoliBri - Public UI"
+    },
+    {
+      "label": "入力フォーム",
+      "labelEn": "Text fields",
+      "url": "https://design.liferay.com/lexicon/core-components/forms/input/",
+      "id": "lexicon",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://design.liferay.com/lexicon/core-components/forms/input/",
+      "title": "Input on Lexicon by Design.Liferay"
+    }
+  ]
+}

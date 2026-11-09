@@ -1,0 +1,50 @@
+{
+  "added": [
+    "atlassian",
+    "lightning",
+    "forma36",
+    "evergreen",
+    "airtable",
+    "monday",
+    "vitamin",
+    "orbit",
+    "apron",
+    "dbs",
+    "finastra",
+    "lion",
+    "boosted",
+    "calcite",
+    "lexicon",
+    "vaadin",
+    "falcon",
+    "wfp",
+    "kolibri",
+    "dsfr",
+    "reactaria",
+    "ariakit",
+    "kobalte",
+    "bitsui"
+  ],
+  "deferred": [
+    {
+      "name": "Goldman Sachs Design System",
+      "reason": "Official design.gs.com now redirects to the corporate site; current public system documentation was not verified."
+    },
+    {
+      "name": "Pipedrive Convention UI",
+      "reason": "Supplied readme.io address is API documentation; the linked Figma kit could not be inspected to verify current public availability."
+    },
+    {
+      "name": "TELUS Allium",
+      "reason": "Former official component documentation now leads to a GitHub sign-in page."
+    },
+    {
+      "name": "コドモン",
+      "reason": "Official case study describes internal codmon-ui; public reusable documentation was not verified. The provider is Codmon, not Recruit."
+    },
+    {
+      "name": "LINEヤフー",
+      "reason": "The supplied description does not identify one public system; verified materials describe internal LDS and RIFF rather than a public reusable library."
+    }
+  ]
+}

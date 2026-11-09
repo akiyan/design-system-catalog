@@ -49,3 +49,6 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Language controls use a two-option 日本語 / English toggle on all screen sizes. Do not offer an Auto option. Detect browser language on first visit; persist explicit choices. Keep the toggle on the same mobile header row as the title.
 - Provide multiple official captures per system beyond overview and buttons. Prefer practical component examples such as forms, tables, dialogs and navigation; keep screenshots tied to their original source pages.
 - Opening mobile details starts at the top. Returning to the list restores its previous scroll position. Do not carry list scroll offsets into the detail screen.
+
+- Every catalog system includes a short factual Japanese/English description of its purpose and distinctive features. Show it below the detail heading while keeping official captures prominent. Avoid unverified superlatives and claims copied from supplied lists.
+- Add Adobe React Aria as the headless interaction library; keep it separate from the existing Spectrum 2 visual design system.

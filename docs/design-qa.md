@@ -44,3 +44,13 @@ Mobile selection resets the shared workspace scroll after the detail layout is c
 All 15 browser tests passed against the local static preview. Desktop/mobile screenshots were updated with no console errors.
 
 All 15 tests also passed against the production domain after deployment to https://d53ee797.design-system-catalog-925.pages.dev, including the mobile scroll regression.
+
+## Latest systems and feature descriptions
+
+Status: PASS. Added 24 verified public systems for a total of 67 (15 public-sector, 52 company/OSS). Added 66 official-source captures for a total of 236. Reviewed the primary and component contact sheets and desktop/mobile detail screenshots. The existing thumbnail-first split layout is retained; concise bilingual descriptions now appear below every detail heading.
+
+Descriptions state practical uses without unsupported rankings or claims. Every entry records its description source URL. Adobe React Aria is distinct from Spectrum 2. SLDS 2 uses its documented 2025-02-25 website publication date; contextual dates remain marked as references. Apron and FALCON use author publication stories as captures, DBS uses its official design-practice site, and Orbit/DSFR use official repositories because the supplied documentation was unavailable. Those preview labels identify the actual source type.
+
+Five ambiguous or inaccessible candidates are recorded in `new-batch-scope.json` with reasons: Goldman Sachs, Pipedrive Convention UI, TELUS Allium, Codmon and the unspecified LINE/Yahoo system. No unrelated API documentation or older replacement system was added under those names.
+
+All 16 browser tests passed locally, including all 67 static paths, bilingual description rendering, mobile scroll restoration, language persistence and touch navigation. Screenshot capture reported no console errors.

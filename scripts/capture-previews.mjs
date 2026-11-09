@@ -32,9 +32,12 @@ async function work() {
     if(/No Preview|Failed to fetch dynamically imported module/.test(previewText)) throw new Error('Source Storybook preview unavailable');
    }
    await page.evaluate(()=>document.fonts.ready);
-   for(const label of ['Reject additional cookies','Reject all cookies','Accept all cookies']) {
+   for(const label of ['Reject additional cookies','Reject all cookies','Reject All','Accept all cookies','Accept All Cookies']) {
     const button=page.getByRole('button',{name:label,exact:true});
-    if(await button.count() && await button.first().isVisible()) await button.first().click().catch(()=>{});
+    if(await button.count() && await button.first().isVisible()) {
+     await button.first().click().catch(()=>{});
+     await page.waitForTimeout(600);
+    }
    }
    const title=await page.title();
    if(/404|page not found|not found|sign in|log in|login/i.test(title)) throw new Error('Unavailable or authentication-required source; excluded from previews');

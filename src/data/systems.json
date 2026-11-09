@@ -59,7 +59,12 @@
     "countryEn": "Japan",
     "shortNameEn": "Digital Agency Design System (DADS)",
     "organizationEn": "Digital Agency, Japan",
-    "licenseEn": "MIT (sample code)"
+    "licenseEn": "MIT (sample code)",
+    "description": {
+      "ja": "行政サービスの手続きを支える日本のデザインシステム。フォームの実装例とアクセシビリティの指針を確認できます。",
+      "en": "Japan’s design system for public services, with form implementation examples and accessibility guidance."
+    },
+    "descriptionSourceUrl": "https://design.digital.go.jp/dads/"
   },
   {
     "id": "govuk",
@@ -121,7 +126,12 @@
     "countryEn": "United Kingdom",
     "shortNameEn": "GOV.UK",
     "organizationEn": "Government Digital Service",
-    "licenseEn": "MIT (code)"
+    "licenseEn": "MIT (code)",
+    "description": {
+      "ja": "英国の行政サービス向けに検証された設計指針。申請フォームや手続きの流れを組み立てるパターンが充実しています。",
+      "en": "Tested guidance for UK public services, with patterns for application forms and end-to-end service journeys."
+    },
+    "descriptionSourceUrl": "https://design-system.service.gov.uk/"
   },
   {
     "id": "uswds",
@@ -184,7 +194,12 @@
     "countryEn": "United States",
     "shortNameEn": "U.S. Web Design System (USWDS)",
     "organizationEn": "U.S. General Services Administration",
-    "licenseEn": "CC0 (US government-authored work)"
+    "licenseEn": "CC0 (US government-authored work)",
+    "description": {
+      "ja": "米国連邦政府向けの共通UI基盤。デザイントークンからページのテンプレートまでを公開しています。",
+      "en": "A shared UI foundation for US federal websites, covering design tokens, reusable components and page templates."
+    },
+    "descriptionSourceUrl": "https://designsystem.digital.gov/"
   },
   {
     "id": "cloudscape",
@@ -245,7 +260,12 @@
     "countryEn": "United States",
     "shortNameEn": "Cloudscape",
     "organizationEn": "Amazon Web Services",
-    "licenseEn": "Apache 2.0"
+    "licenseEn": "Apache 2.0",
+    "description": {
+      "ja": "クラウド管理画面を構築するためのAWS製システム。データテーブルや複雑な設定フォームの設計を参照できます。",
+      "en": "AWS’s system for cloud management interfaces, with data tables, complex configuration forms and application patterns."
+    },
+    "descriptionSourceUrl": "https://cloudscape.design/"
   },
   {
     "id": "gestalt",
@@ -296,7 +316,12 @@
     "countryEn": "United States",
     "shortNameEn": "Gestalt",
     "organizationEn": "Pinterest",
-    "licenseEn": "Apache 2.0 (supplied research)"
+    "licenseEn": "Apache 2.0 (supplied research)",
+    "description": {
+      "ja": "Pinterestのプロダクト体験を支えるUIライブラリ。コンテンツの表示や操作を一貫させるReactコンポーネントを提供します。",
+      "en": "Pinterest’s UI library provides React components and guidance for consistent content presentation and interaction."
+    },
+    "descriptionSourceUrl": "https://gestalt.pinterest.systems/"
   },
   {
     "id": "sgds",
@@ -348,7 +373,12 @@
     "countryEn": "Singapore",
     "shortNameEn": "SGDS",
     "organizationEn": "GovTech Singapore",
-    "licenseEn": "MIT (supplied research)"
+    "licenseEn": "MIT (supplied research)",
+    "description": {
+      "ja": "シンガポールの行政サービス向けに作られた共通基盤。政府サイトで使うコンポーネントとページ構成を公開しています。",
+      "en": "A shared foundation for Singapore government services, with reusable components and website layouts."
+    },
+    "descriptionSourceUrl": "https://www.designsystem.tech.gov.sg/"
   },
   {
     "id": "astryx",
@@ -412,7 +442,12 @@
     "countryEn": "United States",
     "shortNameEn": "Astryx",
     "organizationEn": "Meta",
-    "licenseEn": "MIT"
+    "licenseEn": "MIT",
+    "description": {
+      "ja": "Metaが公開するカスタマイズ可能なデザインシステム。テーマの切り替えとReactコンポーネントの実例を確認できます。",
+      "en": "Meta’s customizable design system, with theme variations and working React component examples."
+    },
+    "descriptionSourceUrl": "https://astryx.atmeta.com/"
   },
   {
     "id": "agds",
@@ -468,7 +503,12 @@
     "countryEn": "Australia",
     "shortNameEn": "Agriculture Design System (AgDS)",
     "organizationEn": "Department of Agriculture, Fisheries and Forestry",
-    "licenseEn": "MIT (supplied research)"
+    "licenseEn": "MIT (supplied research)",
+    "description": {
+      "ja": "オーストラリア農業省の業務サービス向けUI基盤。入力フォームやデータ表示を組み立てるReactコンポーネントを提供します。",
+      "en": "A React UI foundation for Australian agriculture services, with components for forms and structured data displays."
+    },
+    "descriptionSourceUrl": "https://design-system.agriculture.gov.au/"
   },
   {
     "id": "czech",
@@ -520,7 +560,12 @@
     "countryEn": "Czechia",
     "shortNameEn": "Czech Design System",
     "organizationEn": "Digital and Information Agency",
-    "licenseEn": "Not verified"
+    "licenseEn": "Not verified",
+    "description": {
+      "ja": "チェコの公共サイト向けに整備されたデザインシステム。共通コンポーネントと画面の構成例を参照できます。",
+      "en": "A design system for Czech public websites, with shared components and examples of page structures."
+    },
+    "descriptionSourceUrl": "https://designsystem.gov.cz/"
   },
   {
     "id": "italia",
@@ -572,7 +617,12 @@
     "countryEn": "Italy",
     "shortNameEn": "Designers Italia",
     "organizationEn": "Dipartimento per la trasformazione digitale",
-    "licenseEn": "Not verified"
+    "licenseEn": "Not verified",
+    "description": {
+      "ja": "イタリア公共部門のサイト制作を支える設計指針。Bootstrap Italiaと連携するコンポーネントやサイトモデルを公開しています。",
+      "en": "Guidance for Italian public-sector websites, with Bootstrap Italia components and reusable website models."
+    },
+    "descriptionSourceUrl": "https://designers.italia.it/"
   },
   {
     "id": "europa",
@@ -609,7 +659,12 @@
     "countryEn": "European Union",
     "shortNameEn": "Europa Component Library",
     "organizationEn": "European Commission",
-    "licenseEn": "Not verified"
+    "licenseEn": "Not verified",
+    "description": {
+      "ja": "欧州委員会のWebサイト向けコンポーネントライブラリ。EU機関の共通した見た目と操作を実装するための基盤です。",
+      "en": "The European Commission’s component library supports consistent visual design and interaction across institutional websites."
+    },
+    "descriptionSourceUrl": "https://ec.europa.eu/component-library/"
   },
   {
     "id": "canada",
@@ -661,7 +716,12 @@
     "countryEn": "Canada",
     "shortNameEn": "GC Design System",
     "organizationEn": "Government of Canada",
-    "licenseEn": "MIT (supplied research)"
+    "licenseEn": "MIT (supplied research)",
+    "description": {
+      "ja": "カナダ政府のサービス向けWeb Components。Reactなどからも利用できる実装と使用例を公開しています。",
+      "en": "Web Components for Canadian government services, with implementation examples and integrations including React."
+    },
+    "descriptionSourceUrl": "https://design-system.canada.ca/"
   },
   {
     "id": "cfpb",
@@ -713,7 +773,12 @@
     "countryEn": "United States",
     "shortNameEn": "CFPB Design System",
     "organizationEn": "Consumer Financial Protection Bureau",
-    "licenseEn": "Not verified"
+    "licenseEn": "Not verified",
+    "description": {
+      "ja": "米国消費者金融保護局のサービスを支えるUI基盤。金融情報を伝えるためのコンポーネントと文章の指針をまとめています。",
+      "en": "The CFPB’s UI foundation combines interface components with guidance for presenting financial information clearly."
+    },
+    "descriptionSourceUrl": "https://cfpb.github.io/design-system/"
   },
   {
     "id": "bristol",
@@ -754,7 +819,12 @@
     "countryEn": "United Kingdom",
     "shortNameEn": "Bristol Design System",
     "organizationEn": "Bristol City Council",
-    "licenseEn": "Not verified"
+    "licenseEn": "Not verified",
+    "description": {
+      "ja": "英国ブリストル市の公共サイト向けパターン集。自治体のページで使うフォームやナビゲーションを確認できます。",
+      "en": "Bristol City Council’s patterns for public websites, including forms and navigation for local services."
+    },
+    "descriptionSourceUrl": "https://style.bristol.gov.uk/"
   },
   {
     "id": "bc",
@@ -791,7 +861,12 @@
     "countryEn": "Canada",
     "shortNameEn": "BC Design System",
     "organizationEn": "Government of British Columbia",
-    "licenseEn": "Not verified"
+    "licenseEn": "Not verified",
+    "description": {
+      "ja": "カナダBC州のデジタルサービス向け設計リソース。アクセシビリティを考慮した共通UIの使い方を案内しています。",
+      "en": "Design resources for British Columbia’s digital services, with guidance for accessible shared interfaces."
+    },
+    "descriptionSourceUrl": "https://www2.gov.bc.ca/gov/content/digital/design-system"
   },
   {
     "id": "sansan",
@@ -848,7 +923,12 @@
         "en": "The official engineering blog links the December 3, 2024 public announcement. It describes implementation packages as internally distributed."
       }
     },
-    "shortNameEn": "Sansan One Design System"
+    "shortNameEn": "Sansan One Design System",
+    "description": {
+      "ja": "SansanのBtoBプロダクト向けUIガイド。業務画面の入力操作や情報の並べ替えに関する設計仕様を確認できます。",
+      "en": "Sansan’s UI guidance for B2B products documents interaction specifications for business forms and information ordering."
+    },
+    "descriptionSourceUrl": "https://ui.one-design-system.sansan.com/"
   },
   {
     "id": "charcoal",
@@ -902,7 +982,12 @@
       }
     },
     "shortNameEn": "pixiv Charcoal",
-    "repository": "https://github.com/pixiv/charcoal"
+    "repository": "https://github.com/pixiv/charcoal",
+    "description": {
+      "ja": "pixivのコンテンツ体験を支えるデザインシステム。Web向けのReact実装と共通スタイルを公開しています。",
+      "en": "pixiv’s design system supports content-focused experiences with public React components and shared web styles."
+    },
+    "descriptionSourceUrl": "https://charcoal-web.pixiv.design/"
   },
   {
     "id": "serendie",
@@ -961,7 +1046,12 @@
       }
     },
     "shortNameEn": "Serendie Design System",
-    "repository": "https://github.com/serendie/serendie"
+    "repository": "https://github.com/serendie/serendie",
+    "description": {
+      "ja": "三菱電機が公開するデザインシステム。デザイントークンとReactコンポーネントからサービスのUIを組み立てられます。",
+      "en": "Mitsubishi Electric’s public design system provides design tokens and React components for building service interfaces."
+    },
+    "descriptionSourceUrl": "https://serendie.design/"
   },
   {
     "id": "sugao",
@@ -998,7 +1088,12 @@
         "en": "A June 2024 case study by the responsible designers reports public sugao and Figma resources. Exact public launch is unconfirmed; 2019 refers to internal design work."
       }
     },
-    "shortNameEn": "kaonavi sugao"
+    "shortNameEn": "kaonavi sugao",
+    "description": {
+      "ja": "カオナビのプロダクト向けデザインシステム。人事サービスのUIに使うFigmaアセットと設計の考え方を公開しています。",
+      "en": "Kaonavi’s product design system publishes Figma assets and design guidance for HR service interfaces."
+    },
+    "descriptionSourceUrl": "https://brand.kaonavi.jp/sugao"
   },
   {
     "id": "vibes",
@@ -1057,7 +1152,12 @@
       }
     },
     "shortNameEn": "freee vibes",
-    "repository": "https://github.com/freee/vibes"
+    "repository": "https://github.com/freee/vibes",
+    "description": {
+      "ja": "freeeの業務サービスで使われるReact UI基盤。入力項目の状態やエラー表示を含むフォームの実例が豊富です。",
+      "en": "freee’s React UI foundation includes detailed form examples, input states and error presentation for business services."
+    },
+    "descriptionSourceUrl": "https://vibes.freee.co.jp/"
   },
   {
     "id": "vitals",
@@ -1115,7 +1215,12 @@
       }
     },
     "shortNameEn": "Ubie Vitals",
-    "repository": "https://github.com/ubie-oss/ubie-ui"
+    "repository": "https://github.com/ubie-oss/ubie-ui",
+    "description": {
+      "ja": "Ubieのサービス向けUIライブラリ。入力部品の実例と意味に基づくカラーなどの基礎スタイルを確認できます。",
+      "en": "Ubie’s UI library offers input component examples and foundations such as semantic colors and typography."
+    },
+    "descriptionSourceUrl": "https://vitals.ubie.life/"
   },
   {
     "id": "pajamas",
@@ -1173,7 +1278,12 @@
       }
     },
     "shortNameEn": "GitLab Pajamas",
-    "repository": "https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com"
+    "repository": "https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com",
+    "description": {
+      "ja": "GitLabの開発者向けプロダクトを支える設計指針。UIコンポーネントの使い分けや文章表現のルールを公開しています。",
+      "en": "GitLab’s design guidance covers component usage and interface writing for developer-facing products."
+    },
+    "descriptionSourceUrl": "https://design.gitlab.com/"
   },
   {
     "id": "paste",
@@ -1212,7 +1322,12 @@
       }
     },
     "shortNameEn": "Twilio Paste",
-    "repository": "https://github.com/twilio-labs/paste"
+    "repository": "https://github.com/twilio-labs/paste",
+    "description": {
+      "ja": "Twilioのプロダクト向けデザインシステム。Reactコンポーネントとトークンの実装を公式リポジトリで確認できます。",
+      "en": "Twilio’s product design system publishes React components and design token implementations in its official repository."
+    },
+    "descriptionSourceUrl": "https://github.com/twilio-labs/paste"
   },
   {
     "id": "wise",
@@ -1249,7 +1364,12 @@
         "en": "Launch announcement of the current design system in the official story index. This does not date earlier predecessor systems."
       }
     },
-    "shortNameEn": "Wise Design"
+    "shortNameEn": "Wise Design",
+    "description": {
+      "ja": "Wiseのグローバルなブランド体験を支える設計指針。タイポグラフィやイラストを含むビジュアル表現の方向性を確認できます。",
+      "en": "Wise’s guidance supports its global brand experience through typography, illustration and other visual foundations."
+    },
+    "descriptionSourceUrl": "https://wise.design/"
   },
   {
     "id": "semi",
@@ -1303,7 +1423,12 @@
       }
     },
     "shortNameEn": "Semi Design",
-    "repository": "https://github.com/DouyinFE/semi-design"
+    "repository": "https://github.com/DouyinFE/semi-design",
+    "description": {
+      "ja": "ByteDance発の業務画面向けReactライブラリ。高機能なテーブルやフォームとテーマのカスタマイズ機能を提供します。",
+      "en": "A ByteDance React library for business applications, with advanced tables, forms and theme customization."
+    },
+    "descriptionSourceUrl": "https://semi.design/"
   },
   {
     "id": "arco",
@@ -1362,7 +1487,12 @@
       }
     },
     "shortNameEn": "Arco Design",
-    "repository": "https://github.com/arco-design/arco-design"
+    "repository": "https://github.com/arco-design/arco-design",
+    "description": {
+      "ja": "ByteDanceが公開するデザインシステム。ReactとVue向けに業務画面を構築するコンポーネントを提供します。",
+      "en": "ByteDance’s design system provides React and Vue components for building business application interfaces."
+    },
+    "descriptionSourceUrl": "https://arco.design/"
   },
   {
     "id": "spectrum",
@@ -1416,7 +1546,12 @@
         "en": "Public release date reported by the official announcement."
       }
     },
-    "repository": "https://github.com/adobe/react-spectrum"
+    "repository": "https://github.com/adobe/react-spectrum",
+    "description": {
+      "ja": "Adobeの制作ツールを支えるSpectrumの第2世代。複雑な操作画面の階層や入力部品を設計する指針を公開しています。",
+      "en": "The second generation of Adobe Spectrum guides interface hierarchy and controls for complex creative applications."
+    },
+    "descriptionSourceUrl": "https://spectrum.adobe.com/"
   },
   {
     "id": "carbon",
@@ -1470,7 +1605,12 @@
         "en": "Official repository creation date used as a reference; public launch may differ."
       }
     },
-    "repository": "https://github.com/carbon-design-system/carbon"
+    "repository": "https://github.com/carbon-design-system/carbon",
+    "description": {
+      "ja": "IBMのエンタープライズ製品向けデザインシステム。データを扱う業務画面のコンポーネントとパターンを参照できます。",
+      "en": "IBM’s design system provides components and patterns for data-intensive enterprise applications."
+    },
+    "descriptionSourceUrl": "https://www.carbondesignsystem.com/"
   },
   {
     "id": "fluent",
@@ -1524,7 +1664,12 @@
         "en": "Contextual reference date; this does not establish the exact initial public launch."
       }
     },
-    "repository": "https://github.com/microsoft/fluentui"
+    "repository": "https://github.com/microsoft/fluentui",
+    "description": {
+      "ja": "Microsoft製品を横断するFluentの第2世代。Webとネイティブアプリで共通した体験を作る設計指針を提供します。",
+      "en": "Microsoft’s second-generation Fluent system offers guidance for consistent experiences across web and native applications."
+    },
+    "descriptionSourceUrl": "https://fluent2.microsoft.design/"
   },
   {
     "id": "baseweb",
@@ -1577,7 +1722,12 @@
         "en": "Official repository creation date used as a reference; public launch may differ."
       }
     },
-    "repository": "https://github.com/uber/baseweb"
+    "repository": "https://github.com/uber/baseweb",
+    "description": {
+      "ja": "Uberが公開するReactコンポーネントライブラリ。データテーブルや選択メニューを柔軟にカスタマイズできます。",
+      "en": "Uber’s React component library includes customizable data tables, selection controls and other application building blocks."
+    },
+    "descriptionSourceUrl": "https://baseweb.design/"
   },
   {
     "id": "polaris",
@@ -1615,7 +1765,12 @@
         "en": "Official repository creation date used as a reference; public launch may differ."
       }
     },
-    "repository": "https://github.com/Shopify/polaris-react-archive"
+    "repository": "https://github.com/Shopify/polaris-react-archive",
+    "description": {
+      "ja": "Shopifyの管理画面に組み込むアプリ向けUI基盤。現行のWeb Componentsとアプリ画面の構築方法を案内しています。",
+      "en": "Shopify’s UI foundation for embedded admin applications documents current Web Components and application layouts."
+    },
+    "descriptionSourceUrl": "https://shopify.dev/docs/api/polaris"
   },
   {
     "id": "spindle",
@@ -1668,7 +1823,12 @@
         "en": "Public release date reported by the official announcement."
       }
     },
-    "repository": "https://github.com/openameba/spindle"
+    "repository": "https://github.com/openameba/spindle",
+    "description": {
+      "ja": "Amebaのブランドとアクセシビリティを支える設計基盤。コンポーネントの利用方針と基本スタイルを公開しています。",
+      "en": "Ameba’s design foundation publishes component usage guidance and core styles with a focus on accessibility and brand consistency."
+    },
+    "descriptionSourceUrl": "https://spindle.ameba.design/"
   },
   {
     "id": "smarthr",
@@ -1726,7 +1886,12 @@
         "en": "Public release date reported by the official announcement."
       }
     },
-    "repository": "https://github.com/kufu/smarthr-ui"
+    "repository": "https://github.com/kufu/smarthr-ui",
+    "description": {
+      "ja": "SmartHRのプロダクトとコミュニケーションを支える共通ガイド。UIの実装からアクセシビリティや文章表現までを扱います。",
+      "en": "SmartHR’s shared guidance spans product interfaces, accessibility, brand communication and writing."
+    },
+    "descriptionSourceUrl": "https://smarthr.design/"
   },
   {
     "id": "ikyu",
@@ -1777,7 +1942,12 @@
         "ja": "公式発表に記載された公開日。",
         "en": "Public release date reported by the official announcement."
       }
-    }
+    },
+    "description": {
+      "ja": "一休のサービスに共通するデザインガイド。写真や文字の扱いからUIの余白までを具体例で確認できます。",
+      "en": "Ikyu’s design guide documents photography, typography and interface spacing with practical examples."
+    },
+    "descriptionSourceUrl": "https://www.ikyu.co.jp/design_guideline/"
   },
   {
     "id": "francfranc",
@@ -1829,7 +1999,12 @@
         "ja": "公式発表に記載された公開日。",
         "en": "Public release date reported by the official announcement."
       }
-    }
+    },
+    "description": {
+      "ja": "Francfrancのブランド表現を横断するデザインガイド。Webだけでなく販促物や店舗での展開例も参照できます。",
+      "en": "Francfranc’s design guide covers brand applications across websites, promotional materials and retail environments."
+    },
+    "descriptionSourceUrl": "https://francfranc.io/design-system-guidelines/design-system/"
   },
   {
     "id": "porsche",
@@ -1884,7 +2059,12 @@
         "en": "Official repository creation date used as a reference; public launch may differ."
       }
     },
-    "repository": "https://github.com/porsche-design-system/porsche-design-system"
+    "repository": "https://github.com/porsche-design-system/porsche-design-system",
+    "description": {
+      "ja": "Porscheのデジタル体験向けコンポーネント群。設定を変更しながらWeb Componentsの動作と見た目を確認できます。",
+      "en": "Porsche’s digital component system includes configurators for exploring Web Component behavior and appearance."
+    },
+    "descriptionSourceUrl": "https://designsystem.porsche.com/v4/"
   },
   {
     "id": "audi",
@@ -1931,7 +2111,12 @@
         "ja": "前身となるブランド刷新の受賞年を参考表示。現行ガイドの初回公開年は未確認。",
         "en": "Award year of the predecessor brand identity used as context. The current guide’s first public release is unconfirmed."
       }
-    }
+    },
+    "description": {
+      "ja": "AudiのブランドとデジタルUIをつなぐガイド。タイポグラフィなどの基本要素とインターフェースの設計方針を確認できます。",
+      "en": "Audi’s guidance connects its brand foundations, including typography, with digital interface design."
+    },
+    "descriptionSourceUrl": "https://styleguide.audi.com/"
   },
   {
     "id": "coinbase",
@@ -1984,7 +2169,12 @@
         "en": "Official repository creation date used as a reference; public launch may differ."
       }
     },
-    "repository": "https://github.com/coinbase/cds"
+    "repository": "https://github.com/coinbase/cds",
+    "description": {
+      "ja": "CoinbaseのWebとモバイル向けデザインシステム。ReactとReact Nativeのコンポーネントを公開しています。",
+      "en": "Coinbase’s design system publishes React and React Native components for web and mobile product interfaces."
+    },
+    "descriptionSourceUrl": "https://cds.coinbase.com/"
   },
   {
     "id": "tdesign",
@@ -2039,7 +2229,12 @@
         "en": "Official repository creation date used as a reference; public launch may differ."
       }
     },
-    "repository": "https://github.com/Tencent/tdesign"
+    "repository": "https://github.com/Tencent/tdesign",
+    "description": {
+      "ja": "Tencentが公開するマルチフレームワーク対応のUI基盤。ReactやVueを含む複数の実装で業務画面を構築できます。",
+      "en": "Tencent’s UI foundation supports business applications across multiple implementations, including React and Vue."
+    },
+    "descriptionSourceUrl": "https://tdesign.tencent.com/"
   },
   {
     "id": "ant",
@@ -2097,7 +2292,12 @@
         "en": "Official repository creation date used as a reference; public launch may differ."
       }
     },
-    "repository": "https://github.com/ant-design/ant-design"
+    "repository": "https://github.com/ant-design/ant-design",
+    "description": {
+      "ja": "業務アプリケーション向けのReact UIライブラリ。複雑なデータ表示やフォームを構築するコンポーネントが充実しています。",
+      "en": "A React UI library for enterprise applications, with extensive components for complex data displays and forms."
+    },
+    "descriptionSourceUrl": "https://ant.design/"
   },
   {
     "id": "kumo",
@@ -2151,7 +2351,12 @@
         "en": "npm version 1.0.0 publication date used as context; documentation and predecessor implementations may have appeared earlier."
       }
     },
-    "repository": "https://github.com/cloudflare/kumo"
+    "repository": "https://github.com/cloudflare/kumo",
+    "description": {
+      "ja": "CloudflareのWebアプリ向けReactライブラリ。Base UIを土台にしたコンポーネントとテーマのスタイルを提供します。",
+      "en": "Cloudflare’s React library builds on Base UI and provides components and theme styles for web applications."
+    },
+    "descriptionSourceUrl": "https://kumo-ui.com/"
   },
   {
     "id": "patternfly",
@@ -2205,7 +2410,12 @@
         "en": "Official repository creation date used as a reference; public launch may differ."
       }
     },
-    "repository": "https://github.com/patternfly/patternfly"
+    "repository": "https://github.com/patternfly/patternfly",
+    "description": {
+      "ja": "Red Hatが公開するエンタープライズUI基盤。管理コンソール向けのテーブルや操作フローのパターンを参照できます。",
+      "en": "Red Hat’s enterprise UI foundation provides tables and interaction patterns for administration consoles."
+    },
+    "descriptionSourceUrl": "https://www.patternfly.org/"
   },
   {
     "id": "primer",
@@ -2258,6 +2468,1252 @@
         "en": "Official repository creation date used as a reference; public launch may differ."
       }
     },
-    "repository": "https://github.com/primer/css"
+    "repository": "https://github.com/primer/css",
+    "description": {
+      "ja": "GitHubのプロダクトを支えるデザインシステム。開発者向け画面の情報設計とReactコンポーネントを公開しています。",
+      "en": "GitHub’s design system publishes information design guidance and React components for developer-facing interfaces."
+    },
+    "descriptionSourceUrl": "https://primer.style/"
+  },
+  {
+    "id": "atlassian",
+    "name": "Atlassian Design System",
+    "shortName": "Atlassian Design System",
+    "shortNameEn": "Atlassian Design System",
+    "organization": "Atlassian",
+    "organizationEn": "Atlassian",
+    "country": "オーストラリア",
+    "countryEn": "Australia",
+    "category": "oss",
+    "stack": [
+      "React",
+      "Design tokens"
+    ],
+    "license": "Apache 2.0（Atlaskitコード） / 素材は個別条件",
+    "licenseEn": "Apache 2.0 for Atlaskit code; assets have separate terms",
+    "url": "https://atlassian.design/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://atlassian.design/"
+      },
+      {
+        "label": "テーブル",
+        "labelEn": "Tables",
+        "url": "https://atlassian.design/components/table"
+      },
+      {
+        "label": "選択メニュー",
+        "labelEn": "Select menus",
+        "url": "https://atlassian.design/components/select"
+      }
+    ],
+    "published": {
+      "date": "2013-03-27",
+      "precision": "day",
+      "estimated": true,
+      "basis": "historical-reference",
+      "sourceUrl": "https://atlassianblog.wpengine.com/2013/03/making-atlassian-design-guidelines",
+      "sourceTitle": "Atlassian Design System — public release evidence",
+      "note": {
+        "ja": "関連する公式資料の日付を参考表示。初回一般公開日を確定するものではない。",
+        "en": "Date from related official material used as a reference, not confirmation of the exact first public launch."
+      }
+    },
+    "description": {
+      "ja": "JiraやConfluenceを支えるデザインシステム。業務画面の情報整理と状態表示を共通コンポーネントやトークンで支援します。",
+      "en": "The system behind Jira and Confluence supports business interfaces through shared components, status presentation and design tokens."
+    },
+    "descriptionSourceUrl": "https://atlassian.design/"
+  },
+  {
+    "id": "lightning",
+    "name": "Salesforce Lightning Design System 2",
+    "shortName": "Salesforce Lightning Design System 2",
+    "shortNameEn": "Salesforce Lightning Design System 2",
+    "organization": "Salesforce",
+    "organizationEn": "Salesforce",
+    "country": "米国",
+    "countryEn": "United States",
+    "category": "oss",
+    "stack": [
+      "CSS",
+      "Lightning Web Components"
+    ],
+    "license": "利用条件を確認",
+    "licenseEn": "Check usage terms",
+    "url": "https://www.lightningdesignsystem.com/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://www.lightningdesignsystem.com/"
+      },
+      {
+        "label": "テーブル",
+        "labelEn": "Tables",
+        "url": "https://www.lightningdesignsystem.com/2e1ef8501/p/86f13a-data-table"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://www.lightningdesignsystem.com/2e1ef8501/p/01c12a-modals"
+      }
+    ],
+    "published": {
+      "date": "2025-02-25",
+      "precision": "day",
+      "estimated": false,
+      "basis": "announcement",
+      "sourceUrl": "https://help.salesforce.com/s/articleView?id=release-notes.rn_slds_slds2.htm&language=en_US&release=254&type=5",
+      "sourceTitle": "Salesforce Lightning Design System 2 — public release evidence",
+      "note": {
+        "ja": "SLDS 2のベータ版コンテンツが公式サイトで公開された日。前身SLDS 1の開始日ではない。",
+        "en": "Date SLDS 2 beta documentation became available on the official site; this does not date its predecessor SLDS 1."
+      }
+    },
+    "repository": "https://github.com/salesforce-ux/design-system",
+    "description": {
+      "ja": "SalesforceのLightning Platform向けUI基盤の第2世代。スタイリングフックを使ったテーマ変更と業務画面の共通化を支援します。",
+      "en": "The second generation of Salesforce’s Lightning UI foundation uses styling hooks for adaptable themes and consistent business interfaces."
+    },
+    "descriptionSourceUrl": "https://www.lightningdesignsystem.com/"
+  },
+  {
+    "id": "forma36",
+    "name": "Contentful Forma 36",
+    "shortName": "Contentful Forma 36",
+    "shortNameEn": "Contentful Forma 36",
+    "organization": "Contentful",
+    "organizationEn": "Contentful",
+    "country": "ドイツ",
+    "countryEn": "Germany",
+    "category": "oss",
+    "stack": [
+      "React",
+      "TypeScript"
+    ],
+    "license": "MIT",
+    "licenseEn": "MIT",
+    "url": "https://f36.contentful.com/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://f36.contentful.com/"
+      },
+      {
+        "label": "テーブル",
+        "labelEn": "Tables",
+        "url": "https://f36.contentful.com/components/table"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://f36.contentful.com/components/modal"
+      },
+      {
+        "label": "入力フォーム",
+        "labelEn": "Text fields",
+        "url": "https://f36.contentful.com/components/text-input"
+      }
+    ],
+    "published": {
+      "date": "2018-10-19",
+      "precision": "day",
+      "estimated": true,
+      "basis": "repository-created",
+      "sourceUrl": "https://api.github.com/repos/contentful/forma-36",
+      "sourceTitle": "Contentful Forma 36 — public release evidence",
+      "note": {
+        "ja": "公式リポジトリの作成日を参考表示。一般公開日とは一致しない可能性がある。",
+        "en": "Official repository creation date used as a reference; public launch may differ."
+      }
+    },
+    "repository": "https://github.com/contentful/forma-36",
+    "description": {
+      "ja": "Contentfulのコンテンツ編集画面を支えるReact UI基盤。編集用の入力欄やフィールドの状態表示を組み立てられます。",
+      "en": "Contentful’s React UI foundation supports content editors with form controls and field-state presentation."
+    },
+    "descriptionSourceUrl": "https://f36.contentful.com/"
+  },
+  {
+    "id": "evergreen",
+    "name": "Segment Evergreen",
+    "shortName": "Segment Evergreen",
+    "shortNameEn": "Segment Evergreen",
+    "organization": "Segment",
+    "organizationEn": "Segment",
+    "country": "米国",
+    "countryEn": "United States",
+    "category": "oss",
+    "stack": [
+      "React"
+    ],
+    "license": "MIT",
+    "licenseEn": "MIT",
+    "url": "https://evergreen.segment.com/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://evergreen.segment.com/"
+      },
+      {
+        "label": "テーブル",
+        "labelEn": "Tables",
+        "url": "https://evergreen.segment.com/components/table"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://evergreen.segment.com/components/dialog"
+      },
+      {
+        "label": "入力フォーム",
+        "labelEn": "Text fields",
+        "url": "https://evergreen.segment.com/components/text-input"
+      }
+    ],
+    "published": {
+      "date": "2017-07-30",
+      "precision": "day",
+      "estimated": true,
+      "basis": "repository-created",
+      "sourceUrl": "https://api.github.com/repos/segmentio/evergreen",
+      "sourceTitle": "Segment Evergreen — public release evidence",
+      "note": {
+        "ja": "公式リポジトリの作成日を参考表示。一般公開日とは一致しない可能性がある。",
+        "en": "Official repository creation date used as a reference; public launch may differ."
+      }
+    },
+    "repository": "https://github.com/segmentio/evergreen",
+    "description": {
+      "ja": "Segmentが公開するReact UIライブラリ。データを扱うアプリ向けのテーブルや選択操作の部品を提供します。",
+      "en": "Segment’s React UI library provides tables, selection controls and other building blocks for data-oriented applications."
+    },
+    "descriptionSourceUrl": "https://evergreen.segment.com/"
+  },
+  {
+    "id": "airtable",
+    "name": "Airtable Blocks SDK UI",
+    "shortName": "Airtable Blocks SDK UI",
+    "shortNameEn": "Airtable Blocks SDK UI",
+    "organization": "Airtable",
+    "organizationEn": "Airtable",
+    "country": "米国",
+    "countryEn": "United States",
+    "category": "oss",
+    "stack": [
+      "React",
+      "SDK style props"
+    ],
+    "license": "利用条件を確認",
+    "licenseEn": "Check usage terms",
+    "url": "https://airtable.com/developers/extensions/api/UI/Style%20System/All%20styles",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://airtable.com/developers/extensions/api/UI/Style%20System/All%20styles"
+      }
+    ],
+    "published": {
+      "date": "2019-06-04",
+      "precision": "day",
+      "estimated": true,
+      "basis": "repository-created",
+      "sourceUrl": "https://api.github.com/repos/Airtable/blocks",
+      "sourceTitle": "Airtable Blocks SDK UI — public release evidence",
+      "note": {
+        "ja": "公式リポジトリの作成日を参考表示。一般公開日とは一致しない可能性がある。",
+        "en": "Official repository creation date used as a reference; public launch may differ."
+      }
+    },
+    "repository": "https://github.com/Airtable/blocks",
+    "description": {
+      "ja": "Airtableの拡張機能向けUIコンポーネントとスタイルAPI。共通の色や余白を使ってベースに組み込む画面を構築できます。",
+      "en": "Airtable’s extension UI components and style API expose shared colors and spacing for interfaces embedded in bases."
+    },
+    "descriptionSourceUrl": "https://airtable.com/developers/extensions/api/UI/Style%20System/All%20styles"
+  },
+  {
+    "id": "monday",
+    "name": "monday.com Vibe",
+    "shortName": "monday.com Vibe",
+    "shortNameEn": "monday.com Vibe",
+    "organization": "monday.com",
+    "organizationEn": "monday.com",
+    "country": "イスラエル",
+    "countryEn": "Israel",
+    "category": "oss",
+    "stack": [
+      "React",
+      "TypeScript"
+    ],
+    "license": "利用条件を確認",
+    "licenseEn": "Check usage terms",
+    "url": "https://vibe.monday.com/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://vibe.monday.com/"
+      },
+      {
+        "label": "テーブル",
+        "labelEn": "Tables",
+        "url": "https://vibe.monday.com/?path=/docs/components-table--docs"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://vibe.monday.com/?path=/docs/components-dialog--docs"
+      },
+      {
+        "label": "入力フォーム",
+        "labelEn": "Text fields",
+        "url": "https://vibe.monday.com/?path=/docs/components-textfield--docs"
+      }
+    ],
+    "published": {
+      "date": "2020-10-06",
+      "precision": "day",
+      "estimated": true,
+      "basis": "repository-created",
+      "sourceUrl": "https://api.github.com/repos/mondaycom/vibe",
+      "sourceTitle": "monday.com Vibe — public release evidence",
+      "note": {
+        "ja": "公式リポジトリの作成日を参考表示。一般公開日とは一致しない可能性がある。",
+        "en": "Official repository creation date used as a reference; public launch may differ."
+      }
+    },
+    "repository": "https://github.com/mondaycom/vibe",
+    "description": {
+      "ja": "monday.comのプロダクト向けReactライブラリ。状態を伝える表示部品と業務画面向けの操作部品を提供します。",
+      "en": "monday.com’s React library provides status indicators and interaction components for business application interfaces."
+    },
+    "descriptionSourceUrl": "https://vibe.monday.com/"
+  },
+  {
+    "id": "vitamin",
+    "name": "Decathlon Vitamin",
+    "shortName": "Decathlon Vitamin",
+    "shortNameEn": "Decathlon Vitamin",
+    "organization": "Decathlon",
+    "organizationEn": "Decathlon",
+    "country": "フランス",
+    "countryEn": "France",
+    "category": "oss",
+    "stack": [
+      "CSS",
+      "React",
+      "Vue"
+    ],
+    "license": "Apache-2.0",
+    "licenseEn": "Apache-2.0",
+    "url": "https://decathlon.github.io/vitamin-web/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://decathlon.github.io/vitamin-web/"
+      }
+    ],
+    "published": {
+      "date": "2020-12-16",
+      "precision": "day",
+      "estimated": true,
+      "basis": "repository-created",
+      "sourceUrl": "https://api.github.com/repos/Decathlon/vitamin-web",
+      "sourceTitle": "Decathlon Vitamin — public release evidence",
+      "note": {
+        "ja": "公式リポジトリの作成日を参考表示。一般公開日とは一致しない可能性がある。",
+        "en": "Official repository creation date used as a reference; public launch may differ."
+      }
+    },
+    "repository": "https://github.com/Decathlon/vitamin-web",
+    "description": {
+      "ja": "Decathlonが公開するVitaminのWeb実装。CSSと複数のフレームワーク向けコンポーネントで共通UIを構築できます。",
+      "en": "Decathlon’s Vitamin web implementation offers shared UI through CSS and framework-specific component packages."
+    },
+    "descriptionSourceUrl": "https://decathlon.github.io/vitamin-web/"
+  },
+  {
+    "id": "orbit",
+    "name": "Kiwi.com Orbit",
+    "shortName": "Kiwi.com Orbit",
+    "shortNameEn": "Kiwi.com Orbit",
+    "organization": "Kiwi.com",
+    "organizationEn": "Kiwi.com",
+    "country": "チェコ",
+    "countryEn": "Czechia",
+    "category": "oss",
+    "stack": [
+      "React",
+      "TypeScript"
+    ],
+    "license": "MIT",
+    "licenseEn": "MIT",
+    "url": "https://github.com/kiwicom/orbit",
+    "views": [
+      {
+        "label": "公式リポジトリ",
+        "labelEn": "Official repository",
+        "url": "https://github.com/kiwicom/orbit"
+      }
+    ],
+    "published": {
+      "date": "2018-02-14",
+      "precision": "day",
+      "estimated": true,
+      "basis": "repository-created",
+      "sourceUrl": "https://api.github.com/repos/kiwicom/orbit",
+      "sourceTitle": "Kiwi.com Orbit — public release evidence",
+      "note": {
+        "ja": "公式リポジトリの作成日を参考表示。一般公開日とは一致しない可能性がある。",
+        "en": "Official repository creation date used as a reference; public launch may differ."
+      }
+    },
+    "repository": "https://github.com/kiwicom/orbit",
+    "description": {
+      "ja": "Kiwi.comが公開する旅行サービス向けReactライブラリ。旅程の表示や予約操作に使う部品を公式リポジトリで確認できます。",
+      "en": "Kiwi.com’s React library includes building blocks for travel itineraries and booking interactions in its official repository."
+    },
+    "descriptionSourceUrl": "https://github.com/kiwicom/orbit"
+  },
+  {
+    "id": "apron",
+    "name": "Cookpad Apron",
+    "shortName": "Cookpad Apron",
+    "shortNameEn": "Cookpad Apron",
+    "organization": "Cookpad",
+    "organizationEn": "Cookpad",
+    "country": "日本",
+    "countryEn": "Japan",
+    "category": "oss",
+    "stack": [
+      "Figma"
+    ],
+    "license": "利用条件を確認",
+    "licenseEn": "Check usage terms",
+    "url": "https://www.figma.com/community/file/847372282968994272/apron",
+    "views": [
+      {
+        "label": "公開紹介",
+        "labelEn": "Publication story",
+        "url": "https://note.com/i_chi_/n/ncca0c857f21a"
+      }
+    ],
+    "published": {
+      "date": "2022-02-10",
+      "precision": "day",
+      "estimated": true,
+      "basis": "historical-reference",
+      "sourceUrl": "https://note.com/i_chi_/n/ncca0c857f21a",
+      "sourceTitle": "Cookpad Apron — public release evidence",
+      "note": {
+        "ja": "Cookpadの担当者がFigma公開を紹介した記事の日付。Figmaファイルの初回公開日は未確認。",
+        "en": "Date of the Cookpad team member’s article about its Figma publication. The file’s exact first publication date is unconfirmed."
+      }
+    },
+    "description": {
+      "ja": "CookpadがFigmaで公開するデザインシステム。料理に関わるプロダクトのデザインに使う共通アセットを提供しています。",
+      "en": "Cookpad’s Figma design system provides shared assets for designing products related to cooking."
+    },
+    "descriptionSourceUrl": "https://www.figma.com/community/file/847372282968994272/apron"
+  },
+  {
+    "id": "dbs",
+    "name": "DBS Data Visualisation",
+    "shortName": "DBS Data Visualisation",
+    "shortNameEn": "DBS Data Visualisation",
+    "organization": "DBS Bank",
+    "organizationEn": "DBS Bank",
+    "country": "シンガポール",
+    "countryEn": "Singapore",
+    "category": "oss",
+    "stack": [
+      "Figma",
+      "Data visualization"
+    ],
+    "license": "利用条件を確認",
+    "licenseEn": "Check usage terms",
+    "url": "https://www.figma.com/community/file/1273895245584027076/data-visualisation-dbs-bank",
+    "views": [
+      {
+        "label": "デザイン活動",
+        "labelEn": "Design practice",
+        "url": "https://www.dbs.com/design/work"
+      }
+    ],
+    "published": {
+      "date": "2023-08-18",
+      "precision": "day",
+      "estimated": false,
+      "basis": "announcement",
+      "sourceUrl": "https://www.figma.com/community/file/1273895245584027076/data-visualisation-dbs-bank",
+      "sourceTitle": "DBS Data Visualisation — public release evidence",
+      "note": {
+        "ja": "公式資料で確認できる公開日。",
+        "en": "Public release date stated by official material."
+      }
+    },
+    "description": {
+      "ja": "DBS Bankが公開するデータ可視化用Figmaキット。グラフの使い分けや色の選択を含むガイドを提供しています。",
+      "en": "DBS Bank’s Figma toolkit provides chart components and guidance on chart selection, color and data visualization."
+    },
+    "descriptionSourceUrl": "https://www.figma.com/community/file/1273895245584027076/data-visualisation-dbs-bank"
+  },
+  {
+    "id": "finastra",
+    "name": "Finastra Design System",
+    "shortName": "Finastra Design System",
+    "shortNameEn": "Finastra Design System",
+    "organization": "Finastra",
+    "organizationEn": "Finastra",
+    "country": "英国",
+    "countryEn": "United Kingdom",
+    "category": "oss",
+    "stack": [
+      "Angular",
+      "Web Components",
+      "CSS"
+    ],
+    "license": "MIT（公開npmパッケージ）",
+    "licenseEn": "MIT for public npm packages",
+    "url": "https://finastra.github.io/finastra-design-system/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://finastra.github.io/finastra-design-system/"
+      }
+    ],
+    "published": {
+      "date": "2021-07-28",
+      "precision": "day",
+      "estimated": true,
+      "basis": "historical-reference",
+      "sourceUrl": "https://registry.npmjs.org/@finastra/fds-theme",
+      "sourceTitle": "Finastra Design System — public release evidence",
+      "note": {
+        "ja": "関連する公式npmパッケージの初期公開日を参考表示。システム全体の初回公開日とは異なる可能性がある。",
+        "en": "Early publication date of a related official npm package used as context; the complete system may have launched at a different time."
+      }
+    },
+    "description": {
+      "ja": "金融サービス向けのFinastraのUI基盤。公開Storybookでコンポーネントの実例とスタイル設定を確認できます。",
+      "en": "Finastra’s UI foundation for financial services provides component examples and style configuration in its public Storybook."
+    },
+    "descriptionSourceUrl": "https://finastra.github.io/finastra-design-system/"
+  },
+  {
+    "id": "lion",
+    "name": "ING Lion",
+    "shortName": "ING Lion",
+    "shortNameEn": "ING Lion",
+    "organization": "ING",
+    "organizationEn": "ING",
+    "country": "オランダ",
+    "countryEn": "Netherlands",
+    "category": "oss",
+    "stack": [
+      "Web Components",
+      "Lit"
+    ],
+    "license": "MIT",
+    "licenseEn": "MIT",
+    "url": "https://lion.js.org/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://lion.js.org/"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://lion.js.org/components/dialog/overview"
+      },
+      {
+        "label": "入力フォーム",
+        "labelEn": "Text fields",
+        "url": "https://lion.js.org/components/input/overview"
+      },
+      {
+        "label": "選択メニュー",
+        "labelEn": "Select menus",
+        "url": "https://lion.js.org/components/select/overview"
+      }
+    ],
+    "published": {
+      "date": "2019-04-11",
+      "precision": "day",
+      "estimated": true,
+      "basis": "repository-created",
+      "sourceUrl": "https://api.github.com/repos/ing-bank/lion",
+      "sourceTitle": "ING Lion — public release evidence",
+      "note": {
+        "ja": "公式リポジトリの作成日を参考表示。一般公開日とは一致しない可能性がある。",
+        "en": "Official repository creation date used as a reference; public launch may differ."
+      }
+    },
+    "repository": "https://github.com/ing-bank/lion",
+    "description": {
+      "ja": "ING発の外観に依存しないWeb Components基盤。入力操作の振る舞いとアクセシビリティを独自の見た目に組み込めます。",
+      "en": "ING’s white-label Web Components provide input behavior and accessibility foundations for custom visual designs."
+    },
+    "descriptionSourceUrl": "https://lion.js.org/"
+  },
+  {
+    "id": "boosted",
+    "name": "Orange Boosted",
+    "shortName": "Orange Boosted",
+    "shortNameEn": "Orange Boosted",
+    "organization": "Orange",
+    "organizationEn": "Orange",
+    "country": "フランス",
+    "countryEn": "France",
+    "category": "oss",
+    "stack": [
+      "Bootstrap",
+      "CSS",
+      "JavaScript"
+    ],
+    "license": "MIT",
+    "licenseEn": "MIT",
+    "url": "https://boosted.orange.com/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://boosted.orange.com/"
+      },
+      {
+        "label": "テーブル",
+        "labelEn": "Tables",
+        "url": "https://boosted.orange.com/docs/5.3/content/tables"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://boosted.orange.com/docs/5.3/components/modal"
+      },
+      {
+        "label": "選択メニュー",
+        "labelEn": "Select menus",
+        "url": "https://boosted.orange.com/docs/5.3/forms/select"
+      }
+    ],
+    "published": {
+      "date": "2015-11-23",
+      "precision": "day",
+      "estimated": true,
+      "basis": "repository-created",
+      "sourceUrl": "https://api.github.com/repos/Orange-OpenSource/Orange-Boosted-Bootstrap",
+      "sourceTitle": "Orange Boosted — public release evidence",
+      "note": {
+        "ja": "公式リポジトリの作成日を参考表示。一般公開日とは一致しない可能性がある。",
+        "en": "Official repository creation date used as a reference; public launch may differ."
+      }
+    },
+    "repository": "https://github.com/Orange-OpenSource/Orange-Boosted-Bootstrap",
+    "description": {
+      "ja": "Orangeのブランド向けに拡張されたBootstrap。アクセシビリティを考慮したWebコンポーネントとページの実例を公開しています。",
+      "en": "Orange’s Bootstrap-based framework publishes accessible web components and page examples using its brand styles."
+    },
+    "descriptionSourceUrl": "https://boosted.orange.com/"
+  },
+  {
+    "id": "calcite",
+    "name": "Esri Calcite Design System",
+    "shortName": "Esri Calcite Design System",
+    "shortNameEn": "Esri Calcite Design System",
+    "organization": "Esri",
+    "organizationEn": "Esri",
+    "country": "米国",
+    "countryEn": "United States",
+    "category": "oss",
+    "stack": [
+      "Web Components",
+      "TypeScript"
+    ],
+    "license": "利用条件を確認",
+    "licenseEn": "Check usage terms",
+    "url": "https://developers.arcgis.com/calcite-design-system/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://developers.arcgis.com/calcite-design-system/"
+      },
+      {
+        "label": "テーブル",
+        "labelEn": "Tables",
+        "url": "https://developers.arcgis.com/calcite-design-system/components/table/"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://developers.arcgis.com/calcite-design-system/components/dialog/"
+      },
+      {
+        "label": "選択メニュー",
+        "labelEn": "Select menus",
+        "url": "https://developers.arcgis.com/calcite-design-system/components/select/"
+      }
+    ],
+    "published": {
+      "date": "2019-05-09",
+      "precision": "day",
+      "estimated": true,
+      "basis": "repository-created",
+      "sourceUrl": "https://api.github.com/repos/Esri/calcite-design-system",
+      "sourceTitle": "Esri Calcite Design System — public release evidence",
+      "note": {
+        "ja": "公式リポジトリの作成日を参考表示。一般公開日とは一致しない可能性がある。",
+        "en": "Official repository creation date used as a reference; public launch may differ."
+      }
+    },
+    "repository": "https://github.com/Esri/calcite-design-system",
+    "description": {
+      "ja": "Esriの地図サービスやアプリを支えるUI基盤。GISアプリの操作画面に使うWeb Componentsと設計指針を提供します。",
+      "en": "Esri’s UI foundation provides Web Components and guidance for interfaces around GIS and mapping applications."
+    },
+    "descriptionSourceUrl": "https://developers.arcgis.com/calcite-design-system/"
+  },
+  {
+    "id": "lexicon",
+    "name": "Liferay Lexicon",
+    "shortName": "Liferay Lexicon",
+    "shortNameEn": "Liferay Lexicon",
+    "organization": "Liferay",
+    "organizationEn": "Liferay",
+    "country": "米国",
+    "countryEn": "United States",
+    "category": "oss",
+    "stack": [
+      "React (Clay)",
+      "CSS"
+    ],
+    "license": "利用条件を確認",
+    "licenseEn": "Check usage terms",
+    "url": "https://design.liferay.com/lexicon/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://design.liferay.com/lexicon/"
+      },
+      {
+        "label": "テーブル",
+        "labelEn": "Tables",
+        "url": "https://design.liferay.com/lexicon/core-components/table/"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://design.liferay.com/lexicon/core-components/modal/"
+      },
+      {
+        "label": "入力フォーム",
+        "labelEn": "Text fields",
+        "url": "https://design.liferay.com/lexicon/core-components/forms/input/"
+      }
+    ],
+    "published": {
+      "date": "2014-07-29",
+      "precision": "day",
+      "estimated": true,
+      "basis": "repository-created",
+      "sourceUrl": "https://api.github.com/repos/liferay/clay",
+      "sourceTitle": "Liferay Lexicon — public release evidence",
+      "note": {
+        "ja": "Lexiconの実装であるClayリポジトリの作成日を参考表示。Lexiconガイド自体の初回公開日は未確認。",
+        "en": "Creation date of its Clay implementation repository used as context. The original Lexicon guide publication date is unconfirmed."
+      }
+    },
+    "repository": "https://github.com/liferay/clay",
+    "description": {
+      "ja": "Liferayのポータル製品向けデザイン言語。共通した画面を構築するための基礎要素とコンポーネントの使い方をまとめています。",
+      "en": "Liferay’s design language documents foundations and component usage for consistent portal product interfaces."
+    },
+    "descriptionSourceUrl": "https://design.liferay.com/lexicon/"
+  },
+  {
+    "id": "vaadin",
+    "name": "Vaadin Design System",
+    "shortName": "Vaadin Design System",
+    "shortNameEn": "Vaadin Design System",
+    "organization": "Vaadin",
+    "organizationEn": "Vaadin",
+    "country": "フィンランド",
+    "countryEn": "Finland",
+    "category": "oss",
+    "stack": [
+      "Web Components",
+      "Java",
+      "React"
+    ],
+    "license": "コンポーネントごとの利用条件を確認",
+    "licenseEn": "Check the terms for each component",
+    "url": "https://vaadin.com/design-system",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://vaadin.com/design-system"
+      },
+      {
+        "label": "テーブル",
+        "labelEn": "Tables",
+        "url": "https://vaadin.com/docs/latest/components/html-elements/table"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://vaadin.com/docs/latest/components/dialog"
+      },
+      {
+        "label": "入力フォーム",
+        "labelEn": "Text fields",
+        "url": "https://vaadin.com/docs/latest/components/text-field"
+      }
+    ],
+    "published": {
+      "date": "2018-04-06",
+      "precision": "day",
+      "estimated": true,
+      "basis": "historical-reference",
+      "sourceUrl": "https://registry.npmjs.org/@vaadin/vaadin-grid",
+      "sourceTitle": "Vaadin Design System — public release evidence",
+      "note": {
+        "ja": "関連する公式npmパッケージの初期公開日を参考表示。システム全体の初回公開日とは異なる可能性がある。",
+        "en": "Early publication date of a related official npm package used as context; the complete system may have launched at a different time."
+      }
+    },
+    "repository": "https://github.com/vaadin/web-components",
+    "description": {
+      "ja": "業務アプリケーション向けのUIコンポーネント群。JavaやReactから使うデータグリッドなどの実装例を確認できます。",
+      "en": "Vaadin’s UI components include data grids and examples for building business applications with Java or React."
+    },
+    "descriptionSourceUrl": "https://vaadin.com/design-system"
+  },
+  {
+    "id": "falcon",
+    "name": "SPEEDA FALCON",
+    "shortName": "SPEEDA FALCON",
+    "shortNameEn": "SPEEDA FALCON",
+    "organization": "Uzabase",
+    "organizationEn": "Uzabase",
+    "country": "日本",
+    "countryEn": "Japan",
+    "category": "oss",
+    "stack": [
+      "Figma",
+      "Design tokens"
+    ],
+    "license": "利用条件を確認",
+    "licenseEn": "Check usage terms",
+    "url": "https://www.figma.com/community/file/1047401907024695662/speeda-designsystem-falcon",
+    "views": [
+      {
+        "label": "公開紹介",
+        "labelEn": "Publication story",
+        "url": "https://note.com/kasane_s21/n/n17b9e522506c"
+      }
+    ],
+    "published": {
+      "date": "2021-12",
+      "precision": "month",
+      "estimated": false,
+      "basis": "announcement",
+      "sourceUrl": "https://note.com/kasane_s21/n/n17b9e522506c",
+      "sourceTitle": "SPEEDA FALCON — public release evidence",
+      "note": {
+        "ja": "公式資料で確認できる公開日。",
+        "en": "Public release date stated by official material."
+      }
+    },
+    "description": {
+      "ja": "SPEEDAがFigmaで公開したデザインアセット。企業分析サービスの共通UIを構築するためのコンポーネントとテンプレートを提供します。",
+      "en": "SPEEDA’s public Figma assets include components and templates for consistent interfaces in its business intelligence service."
+    },
+    "descriptionSourceUrl": "https://www.figma.com/community/file/1047401907024695662/speeda-designsystem-falcon"
+  },
+  {
+    "id": "wfp",
+    "name": "WFP UI Kit",
+    "shortName": "WFP UI Kit",
+    "shortNameEn": "WFP UI Kit",
+    "organization": "United Nations World Food Programme",
+    "organizationEn": "United Nations World Food Programme",
+    "country": "国際機関",
+    "countryEn": "International",
+    "category": "public",
+    "stack": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "license": "Apache-2.0",
+    "licenseEn": "Apache-2.0",
+    "url": "https://uikit.wfp.org/docs/index.html",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://uikit.wfp.org/docs/index.html"
+      },
+      {
+        "label": "フォーム",
+        "labelEn": "Forms",
+        "url": "https://uikit.wfp.org/docs/index.html?path=/story/templates-complex-form--page"
+      }
+    ],
+    "published": {
+      "date": "2015-05-27",
+      "precision": "day",
+      "estimated": true,
+      "basis": "repository-created",
+      "sourceUrl": "https://api.github.com/repos/wfp/ui",
+      "sourceTitle": "WFP UI Kit — public release evidence",
+      "note": {
+        "ja": "公式リポジトリの作成日を参考表示。一般公開日とは一致しない可能性がある。",
+        "en": "Official repository creation date used as a reference; public launch may differ."
+      }
+    },
+    "repository": "https://github.com/wfp/designsystem",
+    "description": {
+      "ja": "国連世界食糧計画のWeb向けUIキット。組織共通のスタイルを適用するコンポーネントと実装ガイドを公開しています。",
+      "en": "The World Food Programme’s web UI kit publishes components and implementation guidance for its shared visual styles."
+    },
+    "descriptionSourceUrl": "https://uikit.wfp.org/docs/index.html"
+  },
+  {
+    "id": "kolibri",
+    "name": "KoliBri",
+    "shortName": "KoliBri",
+    "shortNameEn": "KoliBri",
+    "organization": "ITZBund / Public UI",
+    "organizationEn": "ITZBund / Public UI",
+    "country": "ドイツ",
+    "countryEn": "Germany",
+    "category": "public",
+    "stack": [
+      "Web Components",
+      "TypeScript"
+    ],
+    "license": "EUPL-1.2",
+    "licenseEn": "EUPL-1.2",
+    "url": "https://public-ui.github.io/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://public-ui.github.io/"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://public-ui.github.io/docs/components/dialog"
+      },
+      {
+        "label": "選択メニュー",
+        "labelEn": "Select menus",
+        "url": "https://public-ui.github.io/docs/components/select"
+      }
+    ],
+    "published": {
+      "date": "2022-10-12",
+      "precision": "day",
+      "estimated": true,
+      "basis": "repository-created",
+      "sourceUrl": "https://api.github.com/repos/public-ui/kolibri",
+      "sourceTitle": "KoliBri — public release evidence",
+      "note": {
+        "ja": "公式リポジトリの作成日を参考表示。一般公開日とは一致しない可能性がある。",
+        "en": "Official repository creation date used as a reference; public launch may differ."
+      }
+    },
+    "repository": "https://github.com/public-ui/kolibri",
+    "description": {
+      "ja": "ドイツ連邦政府のITZBundが開発するWeb Components基盤。フレームワークを問わずアクセシブルなUIを組み込めます。",
+      "en": "Developed by Germany’s ITZBund, KoliBri provides accessible Web Components for use across frontend frameworks."
+    },
+    "descriptionSourceUrl": "https://public-ui.github.io/"
+  },
+  {
+    "id": "dsfr",
+    "name": "Système de Design de l’État (DSFR)",
+    "shortName": "Système de Design de l’État (DSFR)",
+    "shortNameEn": "Système de Design de l’État (DSFR)",
+    "organization": "Gouvernement français",
+    "organizationEn": "Gouvernement français",
+    "country": "フランス",
+    "countryEn": "France",
+    "category": "public",
+    "stack": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "license": "コードとブランド利用に個別条件あり",
+    "licenseEn": "Separate terms for code and government branding",
+    "url": "https://www.systeme-de-design.gouv.fr/",
+    "views": [
+      {
+        "label": "公式リポジトリ",
+        "labelEn": "Official repository",
+        "url": "https://github.com/GouvernementFR/dsfr"
+      }
+    ],
+    "published": {
+      "date": "2020-06-12",
+      "precision": "day",
+      "estimated": true,
+      "basis": "repository-created",
+      "sourceUrl": "https://api.github.com/repos/GouvernementFR/dsfr",
+      "sourceTitle": "Système de Design de l’État (DSFR) — public release evidence",
+      "note": {
+        "ja": "公式リポジトリの作成日を参考表示。一般公開日とは一致しない可能性がある。",
+        "en": "Official repository creation date used as a reference; public launch may differ."
+      }
+    },
+    "repository": "https://github.com/GouvernementFR/dsfr",
+    "description": {
+      "ja": "フランス政府の公共サービス向けデザインシステム。共通UIの実装を公開しつつ国家ブランドの利用には条件を設けています。",
+      "en": "France’s government design system publishes shared UI implementations with specific conditions for use of state branding."
+    },
+    "descriptionSourceUrl": "https://www.systeme-de-design.gouv.fr/"
+  },
+  {
+    "id": "reactaria",
+    "name": "Adobe React Aria",
+    "shortName": "Adobe React Aria",
+    "shortNameEn": "Adobe React Aria",
+    "organization": "Adobe",
+    "organizationEn": "Adobe",
+    "country": "米国",
+    "countryEn": "United States",
+    "category": "oss",
+    "stack": [
+      "React",
+      "Headless UI"
+    ],
+    "license": "Apache 2.0",
+    "licenseEn": "Apache 2.0",
+    "url": "https://react-aria.adobe.com/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://react-aria.adobe.com/"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://react-aria.adobe.com/Modal"
+      },
+      {
+        "label": "入力フォーム",
+        "labelEn": "Text fields",
+        "url": "https://react-aria.adobe.com/TextField"
+      },
+      {
+        "label": "選択メニュー",
+        "labelEn": "Select menus",
+        "url": "https://react-aria.adobe.com/Select"
+      }
+    ],
+    "published": {
+      "date": "2020-07-15",
+      "precision": "day",
+      "estimated": false,
+      "basis": "announcement",
+      "sourceUrl": "https://react-aria.adobe.com/blog/introducing-react-spectrum",
+      "sourceTitle": "Adobe React Aria — public release evidence",
+      "note": {
+        "ja": "公式資料で確認できる公開日。",
+        "en": "Public release date stated by official material."
+      }
+    },
+    "repository": "https://github.com/adobe/react-spectrum",
+    "description": {
+      "ja": "AdobeのアクセシブルなReact UIプリミティブ。操作やフォーカス管理を独自のスタイルと組み合わせて実装できます。",
+      "en": "Adobe’s accessible React primitives combine interaction and focus management with your own visual styling."
+    },
+    "descriptionSourceUrl": "https://react-aria.adobe.com/"
+  },
+  {
+    "id": "ariakit",
+    "name": "Ariakit",
+    "shortName": "Ariakit",
+    "shortNameEn": "Ariakit",
+    "organization": "Ariakit community",
+    "organizationEn": "Ariakit community",
+    "country": "国際OSS",
+    "countryEn": "International OSS",
+    "category": "oss",
+    "stack": [
+      "React",
+      "Headless UI"
+    ],
+    "license": "利用条件を確認",
+    "licenseEn": "Check usage terms",
+    "url": "https://ariakit.com/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://ariakit.com/"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://ariakit.com/components/dialog"
+      },
+      {
+        "label": "選択メニュー",
+        "labelEn": "Select menus",
+        "url": "https://ariakit.com/components/select"
+      },
+      {
+        "label": "フォーム",
+        "labelEn": "Forms",
+        "url": "https://ariakit.com/components/form"
+      }
+    ],
+    "published": {
+      "date": "2017-09-19",
+      "precision": "day",
+      "estimated": true,
+      "basis": "repository-created",
+      "sourceUrl": "https://api.github.com/repos/ariakit/ariakit",
+      "sourceTitle": "Ariakit — public release evidence",
+      "note": {
+        "ja": "公式リポジトリの作成日を参考表示。一般公開日とは一致しない可能性がある。",
+        "en": "Official repository creation date used as a reference; public launch may differ."
+      }
+    },
+    "repository": "https://github.com/ariakit/ariakit",
+    "description": {
+      "ja": "アクセシブルなReact UIを構築するための基盤。ComboboxやDialogなどの操作を独自のデザインに組み込めます。",
+      "en": "A foundation for accessible React interfaces, with primitives such as Combobox and Dialog for custom designs."
+    },
+    "descriptionSourceUrl": "https://ariakit.com/"
+  },
+  {
+    "id": "kobalte",
+    "name": "Kobalte",
+    "shortName": "Kobalte",
+    "shortNameEn": "Kobalte",
+    "organization": "Kobalte community",
+    "organizationEn": "Kobalte community",
+    "country": "国際OSS",
+    "countryEn": "International OSS",
+    "category": "oss",
+    "stack": [
+      "SolidJS",
+      "Headless UI"
+    ],
+    "license": "MIT",
+    "licenseEn": "MIT",
+    "url": "https://kobalte.dev/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://kobalte.dev/"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://kobalte.dev/docs/core/components/dialog"
+      },
+      {
+        "label": "入力フォーム",
+        "labelEn": "Text fields",
+        "url": "https://kobalte.dev/docs/core/components/text-field"
+      },
+      {
+        "label": "選択メニュー",
+        "labelEn": "Select menus",
+        "url": "https://kobalte.dev/docs/core/components/select"
+      }
+    ],
+    "published": {
+      "date": "2022-10-28",
+      "precision": "day",
+      "estimated": true,
+      "basis": "repository-created",
+      "sourceUrl": "https://api.github.com/repos/kobaltedev/kobalte",
+      "sourceTitle": "Kobalte — public release evidence",
+      "note": {
+        "ja": "公式リポジトリの作成日を参考表示。一般公開日とは一致しない可能性がある。",
+        "en": "Official repository creation date used as a reference; public launch may differ."
+      }
+    },
+    "repository": "https://github.com/kobaltedev/kobalte",
+    "description": {
+      "ja": "SolidJS向けのアクセシブルなヘッドレスUI基盤。既定の見た目に縛られずコンポーネントの振る舞いを利用できます。",
+      "en": "Accessible headless UI primitives for SolidJS let you reuse component behavior without adopting a fixed visual style."
+    },
+    "descriptionSourceUrl": "https://kobalte.dev/"
+  },
+  {
+    "id": "bitsui",
+    "name": "Bits UI",
+    "shortName": "Bits UI",
+    "shortNameEn": "Bits UI",
+    "organization": "Bits UI community",
+    "organizationEn": "Bits UI community",
+    "country": "国際OSS",
+    "countryEn": "International OSS",
+    "category": "oss",
+    "stack": [
+      "Svelte",
+      "Headless UI"
+    ],
+    "license": "MIT",
+    "licenseEn": "MIT",
+    "url": "https://bits-ui.com/",
+    "views": [
+      {
+        "label": "概要",
+        "labelEn": "Overview",
+        "url": "https://bits-ui.com/"
+      },
+      {
+        "label": "ダイアログ",
+        "labelEn": "Dialogs",
+        "url": "https://bits-ui.com/docs/components/dialog"
+      },
+      {
+        "label": "選択メニュー",
+        "labelEn": "Select menus",
+        "url": "https://bits-ui.com/docs/components/select"
+      }
+    ],
+    "published": {
+      "date": "2023-08-06",
+      "precision": "day",
+      "estimated": true,
+      "basis": "repository-created",
+      "sourceUrl": "https://api.github.com/repos/huntabyte/bits-ui",
+      "sourceTitle": "Bits UI — public release evidence",
+      "note": {
+        "ja": "公式リポジトリの作成日を参考表示。一般公開日とは一致しない可能性がある。",
+        "en": "Official repository creation date used as a reference; public launch may differ."
+      }
+    },
+    "repository": "https://github.com/huntabyte/bits-ui",
+    "description": {
+      "ja": "Svelte向けのヘッドレスUIコンポーネント群。Dialogなどの振る舞いを保ちながら独自のスタイルを適用できます。",
+      "en": "Headless UI components for Svelte provide behavior for controls such as Dialog while leaving visual styling to you."
+    },
+    "descriptionSourceUrl": "https://bits-ui.com/"
   }
 ]

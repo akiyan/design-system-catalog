@@ -1,0 +1,2246 @@
+[
+  {
+    "id": "atlassian",
+    "links": [
+      {
+        "text": "Top Bar",
+        "url": "https://atlassian.design/components#top-navigation"
+      },
+      {
+        "text": "Sidebar",
+        "url": "https://atlassian.design/components#side-navigation"
+      },
+      {
+        "text": "Main Content",
+        "url": "https://atlassian.design/components#main-content"
+      },
+      {
+        "text": "",
+        "url": "https://atlassian.design/"
+      },
+      {
+        "text": "Design system",
+        "url": "https://atlassian.design/design-system"
+      },
+      {
+        "text": "News",
+        "url": "https://atlassian.design/news"
+      },
+      {
+        "text": "Get started",
+        "url": "https://atlassian.design/get-started"
+      },
+      {
+        "text": "Foundations",
+        "url": "https://atlassian.design/foundations"
+      },
+      {
+        "text": "Components",
+        "url": "https://atlassian.design/components"
+      },
+      {
+        "text": "Button",
+        "url": "https://atlassian.design/components/button"
+      },
+      {
+        "text": "Calendar",
+        "url": "https://atlassian.design/components/calendar"
+      },
+      {
+        "text": "Checkbox",
+        "url": "https://atlassian.design/components/checkbox"
+      },
+      {
+        "text": "Comment",
+        "url": "https://atlassian.design/components/comment"
+      },
+      {
+        "text": "Date time picker",
+        "url": "https://atlassian.design/components/datetime-picker"
+      },
+      {
+        "text": "Dropdown menu",
+        "url": "https://atlassian.design/components/dropdown-menu"
+      },
+      {
+        "text": "Focus ring",
+        "url": "https://atlassian.design/components/focus-ring"
+      },
+      {
+        "text": "Form",
+        "url": "https://atlassian.design/components/form"
+      },
+      {
+        "text": "Radio",
+        "url": "https://atlassian.design/components/radio"
+      },
+      {
+        "text": "Range",
+        "url": "https://atlassian.design/components/range"
+      },
+      {
+        "text": "Select",
+        "url": "https://atlassian.design/components/select"
+      },
+      {
+        "text": "Text area",
+        "url": "https://atlassian.design/components/textarea"
+      },
+      {
+        "text": "Text field",
+        "url": "https://atlassian.design/components/textfield"
+      },
+      {
+        "text": "Toggle",
+        "url": "https://atlassian.design/components/toggle"
+      },
+      {
+        "text": "Avatar",
+        "url": "https://atlassian.design/components/avatar"
+      },
+      {
+        "text": "Avatar group",
+        "url": "https://atlassian.design/components/avatar-group"
+      },
+      {
+        "text": "Icon",
+        "url": "https://atlassian.design/components/icon"
+      },
+      {
+        "text": "Image",
+        "url": "https://atlassian.design/components/image"
+      },
+      {
+        "text": "Object",
+        "url": "https://atlassian.design/components/object"
+      },
+      {
+        "text": "Logo",
+        "url": "https://atlassian.design/components/logo"
+      },
+      {
+        "text": "Tile",
+        "url": "https://atlassian.design/components/tile"
+      },
+      {
+        "text": "Badge",
+        "url": "https://atlassian.design/components/badge"
+      },
+      {
+        "text": "Date label",
+        "url": "https://atlassian.design/components/date-label"
+      },
+      {
+        "text": "Lozenge",
+        "url": "https://atlassian.design/components/lozenge"
+      },
+      {
+        "text": "Tag",
+        "url": "https://atlassian.design/components/tag"
+      },
+      {
+        "text": "Tag group",
+        "url": "https://atlassian.design/components/tag-group"
+      },
+      {
+        "text": "Page",
+        "url": "https://atlassian.design/components/page"
+      },
+      {
+        "text": "Page header",
+        "url": "https://atlassian.design/components/page-header"
+      },
+      {
+        "text": "Panel",
+        "url": "https://atlassian.design/components/panel"
+      },
+      {
+        "text": "Progress bar",
+        "url": "https://atlassian.design/components/progress-bar"
+      },
+      {
+        "text": "Skeleton",
+        "url": "https://atlassian.design/components/skeleton"
+      },
+      {
+        "text": "Spinner",
+        "url": "https://atlassian.design/components/spinner"
+      },
+      {
+        "text": "Banner",
+        "url": "https://atlassian.design/components/banner"
+      },
+      {
+        "text": "Empty state",
+        "url": "https://atlassian.design/components/empty-state"
+      },
+      {
+        "text": "Flag",
+        "url": "https://atlassian.design/components/flag"
+      },
+      {
+        "text": "Inline message",
+        "url": "https://atlassian.design/components/inline-message"
+      },
+      {
+        "text": "Modal dialog",
+        "url": "https://atlassian.design/components/modal-dialog"
+      },
+      {
+        "text": "Spotlight",
+        "url": "https://atlassian.design/components/spotlight"
+      },
+      {
+        "text": "Section message",
+        "url": "https://atlassian.design/components/section-message"
+      },
+      {
+        "text": "Breadcrumbs",
+        "url": "https://atlassian.design/components/breadcrumbs"
+      },
+      {
+        "text": "Link",
+        "url": "https://atlassian.design/components/link"
+      },
+      {
+        "text": "Menu",
+        "url": "https://atlassian.design/components/menu"
+      },
+      {
+        "text": "Navigation system",
+        "url": "https://atlassian.design/components/navigation-system"
+      },
+      {
+        "text": "Pagination",
+        "url": "https://atlassian.design/components/pagination"
+      },
+      {
+        "text": "Tabs",
+        "url": "https://atlassian.design/components/tabs"
+      },
+      {
+        "text": "Blanket",
+        "url": "https://atlassian.design/components/blanket"
+      },
+      {
+        "text": "Drawer",
+        "url": "https://atlassian.design/components/drawer"
+      },
+      {
+        "text": "Inline dialog",
+        "url": "https://atlassian.design/components/inline-dialog"
+      },
+      {
+        "text": "Popup",
+        "url": "https://atlassian.design/components/popup"
+      },
+      {
+        "text": "Tooltip",
+        "url": "https://atlassian.design/components/tooltip"
+      },
+      {
+        "text": "Overview",
+        "url": "https://atlassian.design/components/primitives/overview"
+      },
+      {
+        "text": "Box",
+        "url": "https://atlassian.design/components/primitives/box"
+      },
+      {
+        "text": "Inline",
+        "url": "https://atlassian.design/components/primitives/inline"
+      },
+      {
+        "text": "Stack",
+        "url": "https://atlassian.design/components/primitives/stack"
+      },
+      {
+        "text": "Flex",
+        "url": "https://atlassian.design/components/primitives/flex"
+      },
+      {
+        "text": "Grid",
+        "url": "https://atlassian.design/components/primitives/grid"
+      },
+      {
+        "text": "Bleed",
+        "url": "https://atlassian.design/components/primitives/bleed"
+      },
+      {
+        "text": "XCSS",
+        "url": "https://atlassian.design/components/primitives/xcss"
+      },
+      {
+        "text": "Responsive",
+        "url": "https://atlassian.design/components/primitives/responsive"
+      },
+      {
+        "text": "Text",
+        "url": "https://atlassian.design/components/primitives/text"
+      },
+      {
+        "text": "MetricText",
+        "url": "https://atlassian.design/components/primitives/metric-text"
+      },
+      {
+        "text": "Pressable",
+        "url": "https://atlassian.design/components/primitives/pressable"
+      },
+      {
+        "text": "Anchor",
+        "url": "https://atlassian.design/components/primitives/anchor"
+      },
+      {
+        "text": "Focusable",
+        "url": "https://atlassian.design/components/primitives/focusable"
+      },
+      {
+        "text": "Progress indicator",
+        "url": "https://atlassian.design/components/progress-indicator"
+      },
+      {
+        "text": "Progress tracker",
+        "url": "https://atlassian.design/components/progress-tracker"
+      },
+      {
+        "text": "Code",
+        "url": "https://atlassian.design/components/code"
+      },
+      {
+        "text": "Dynamic table",
+        "url": "https://atlassian.design/components/dynamic-table"
+      },
+      {
+        "text": "Heading",
+        "url": "https://atlassian.design/components/heading"
+      },
+      {
+        "text": "Inline edit",
+        "url": "https://atlassian.design/components/inline-edit"
+      },
+      {
+        "text": "Table",
+        "url": "https://atlassian.design/components/table"
+      },
+      {
+        "text": "Table tree",
+        "url": "https://atlassian.design/components/table-tree"
+      },
+      {
+        "text": "Visually hidden",
+        "url": "https://atlassian.design/components/visually-hidden"
+      },
+      {
+        "text": "CSS",
+        "url": "https://atlassian.design/components/css"
+      },
+      {
+        "text": "CSS reset",
+        "url": "https://atlassian.design/components/css-reset"
+      },
+      {
+        "text": "Design tokens",
+        "url": "https://atlassian.design/components/tokens"
+      },
+      {
+        "text": "Entry Points",
+        "url": "https://atlassian.design/components/entry-points"
+      },
+      {
+        "text": "Motion",
+        "url": "https://atlassian.design/components/motion"
+      },
+      {
+        "text": "Popper",
+        "url": "https://atlassian.design/components/popper"
+      },
+      {
+        "text": "Portal",
+        "url": "https://atlassian.design/components/portal"
+      },
+      {
+        "text": "Pragmatic drag and drop",
+        "url": "https://atlassian.design/components/pragmatic-drag-and-drop"
+      },
+      {
+        "text": "App provider",
+        "url": "https://atlassian.design/components/app-provider"
+      },
+      {
+        "text": "ESLint plugin",
+        "url": "https://atlassian.design/components/eslint-plugin-design-system"
+      },
+      {
+        "text": "Storybook addon",
+        "url": "https://atlassian.design/components/storybook-addon-design-system"
+      },
+      {
+        "text": "Stylelint plugin",
+        "url": "https://atlassian.design/components/stylelint-design-system"
+      },
+      {
+        "text": "UI Styling Standard",
+        "url": "https://atlassian.design/components/eslint-plugin-ui-styling-standard"
+      },
+      {
+        "text": "Atlassian navigation",
+        "url": "https://atlassian.design/components/atlassian-navigation"
+      },
+      {
+        "text": "Layout grid",
+        "url": "https://atlassian.design/components/grid"
+      },
+      {
+        "text": "Onboarding (spotlight)",
+        "url": "https://atlassian.design/components/onboarding"
+      },
+      {
+        "text": "Page layout",
+        "url": "https://atlassian.design/components/page-layout"
+      },
+      {
+        "text": "Side navigation",
+        "url": "https://atlassian.design/components/side-navigation"
+      },
+      {
+        "text": "Rovo UI",
+        "url": "https://atlassian.design/rovo-ui"
+      },
+      {
+        "text": "Tools",
+        "url": "https://atlassian.design/tools"
+      },
+      {
+        "text": "AMP Patterns",
+        "url": "https://atlassian.design/amp"
+      },
+      {
+        "text": "Release phases",
+        "url": "https://atlassian.design/release-phases"
+      },
+      {
+        "text": "Contact us",
+        "url": "https://atlassian.design/contact-us"
+      },
+      {
+        "text": "ButtonA button triggers an event or action. They let users know what will happen",
+        "url": "https://atlassian.design/components/button"
+      },
+      {
+        "text": "CalendarA calendar showing dates across the span of a month. They can be interac",
+        "url": "https://atlassian.design/components/calendar"
+      },
+      {
+        "text": "CheckboxA checkbox is an input control that allows a user to select one or more ",
+        "url": "https://atlassian.design/components/checkbox"
+      },
+      {
+        "text": "CommentA comment displays discussions and user feedback.",
+        "url": "https://atlassian.design/components/comment"
+      },
+      {
+        "text": "Date time pickerA date time picker allows the user to select an associated date ",
+        "url": "https://atlassian.design/components/datetime-picker"
+      },
+      {
+        "text": "Dropdown menuA dropdown menu displays a list of actions or options to a user.",
+        "url": "https://atlassian.design/components/dropdown-menu"
+      },
+      {
+        "text": "Focus ringA focus ring clearly indicates which item has keyboard focus.",
+        "url": "https://atlassian.design/components/focus-ring"
+      },
+      {
+        "text": "FormA form allows people to input information.",
+        "url": "https://atlassian.design/components/form"
+      },
+      {
+        "text": "RadioA radio input allows users to select only one option from a number of choic",
+        "url": "https://atlassian.design/components/radio"
+      },
+      {
+        "text": "RangeA range lets users choose an approximate value on a slider.",
+        "url": "https://atlassian.design/components/range"
+      },
+      {
+        "text": "SelectSelect allows users to make a single selection or multiple selections from",
+        "url": "https://atlassian.design/components/select"
+      },
+      {
+        "text": "Text areaA text area lets users enter long form text which spans over multiple l",
+        "url": "https://atlassian.design/components/textarea"
+      },
+      {
+        "text": "Text fieldA text field is an input that allows a user to write or edit text.",
+        "url": "https://atlassian.design/components/textfield"
+      },
+      {
+        "text": "ToggleA toggle is used to view or switch between enabled or disabled states.",
+        "url": "https://atlassian.design/components/toggle"
+      },
+      {
+        "text": "AvatarAn avatar is a visual representation of a user or entity.",
+        "url": "https://atlassian.design/components/avatar"
+      },
+      {
+        "text": "Avatar groupAn avatar group displays a number of avatars grouped together in a s",
+        "url": "https://atlassian.design/components/avatar-group"
+      },
+      {
+        "text": "IconBetaAn icon is a symbol representing a command, device, directory, or common",
+        "url": "https://atlassian.design/components/icon"
+      },
+      {
+        "text": "ImageBetaAn image component that can switch between light and dark themes.",
+        "url": "https://atlassian.design/components/image"
+      },
+      {
+        "text": "LogoA logo is a visual representation of a brand or app. It can be a word or an ",
+        "url": "https://atlassian.design/components/logo"
+      },
+      {
+        "text": "ObjectAn object is an icon that represents an Atlassian-specific content type.",
+        "url": "https://atlassian.design/components/object"
+      },
+      {
+        "text": "TileA tile is a rounded square that takes an asset and represents a noun.",
+        "url": "https://atlassian.design/components/tile"
+      },
+      {
+        "text": "BadgeA badge is a visual indicator for numeric values such as tallies and scores",
+        "url": "https://atlassian.design/components/badge"
+      },
+      {
+        "text": "Date labelDate label is a non-interactive label that displays a date and optiona",
+        "url": "https://atlassian.design/components/date-label"
+      },
+      {
+        "text": "LozengeA lozenge is a visual indicator used to highlight an item's status for qu",
+        "url": "https://atlassian.design/components/lozenge"
+      },
+      {
+        "text": "TagA tag labels UI objects for quick recognition and navigation.",
+        "url": "https://atlassian.design/components/tag"
+      },
+      {
+        "text": "Tag groupA tag group controls the layout and alignment for a collection of tags.",
+        "url": "https://atlassian.design/components/tag-group"
+      },
+      {
+        "text": "PageCautionA page layout organizes sections on a page using a grid and grid colu",
+        "url": "https://atlassian.design/components/page"
+      },
+      {
+        "text": "Page headerA page header defines the top of a page. It contains a title and can ",
+        "url": "https://atlassian.design/components/page-header"
+      },
+      {
+        "text": "PanelBetaA panel is a container that displays contextual content alongside the m",
+        "url": "https://atlassian.design/components/panel"
+      },
+      {
+        "text": "Progress barA progress bar communicates the status of a system process.",
+        "url": "https://atlassian.design/components/progress-bar"
+      },
+      {
+        "text": "SkeletonEarly accessA skeleton acts as a placeholder for content, usually while ",
+        "url": "https://atlassian.design/components/skeleton"
+      },
+      {
+        "text": "SpinnerA spinner is an animated spinning icon that lets users know content is be",
+        "url": "https://atlassian.design/components/spinner"
+      },
+      {
+        "text": "BannerA banner displays a prominent message at the top of the screen.",
+        "url": "https://atlassian.design/components/banner"
+      },
+      {
+        "text": "Empty stateAn empty state appears when there is no data to display and describes",
+        "url": "https://atlassian.design/components/empty-state"
+      },
+      {
+        "text": "FlagA flag is used for confirmations, alerts, and acknowledgments that require m",
+        "url": "https://atlassian.design/components/flag"
+      },
+      {
+        "text": "Inline messageAn inline message lets users know when important information is av",
+        "url": "https://atlassian.design/components/inline-message"
+      },
+      {
+        "text": "Modal dialogA modal dialog displays content that requires user interaction in a ",
+        "url": "https://atlassian.design/components/modal-dialog"
+      },
+      {
+        "text": "SpotlightA spotlight focuses attention on a specific part of the UI, such as a b",
+        "url": "https://atlassian.design/components/spotlight"
+      },
+      {
+        "text": "Section messageA section message is used to alert users to a particular section ",
+        "url": "https://atlassian.design/components/section-message"
+      },
+      {
+        "text": "BreadcrumbsBreadcrumbs are a navigation system used to show a user's location in",
+        "url": "https://atlassian.design/components/breadcrumbs"
+      },
+      {
+        "text": "LinkA link takes people to a new location in the app or another website.",
+        "url": "https://atlassian.design/components/link"
+      },
+      {
+        "text": "MenuA list of options to help users navigate or perform actions.",
+        "url": "https://atlassian.design/components/menu"
+      },
+      {
+        "text": "Navigation systemThe latest navigation system for Atlassian apps.",
+        "url": "https://atlassian.design/components/navigation-system"
+      },
+      {
+        "text": "PaginationPagination allows you to divide large amounts of content into smaller ",
+        "url": "https://atlassian.design/components/pagination"
+      },
+      {
+        "text": "TabsTabs are used to organize content by grouping similar information on the sam",
+        "url": "https://atlassian.design/components/tabs"
+      },
+      {
+        "text": "BlanketA blanket covers the underlying UI for a layered component, such as a mod",
+        "url": "https://atlassian.design/components/blanket"
+      },
+      {
+        "text": "DrawerA drawer is a panel that slides in from the left side of the screen.",
+        "url": "https://atlassian.design/components/drawer"
+      },
+      {
+        "text": "Inline dialogCautionAn inline dialog is a pop-up container for small amounts of ",
+        "url": "https://atlassian.design/components/inline-dialog"
+      },
+      {
+        "text": "PopupA popup displays brief content in an overlay.",
+        "url": "https://atlassian.design/components/popup"
+      },
+      {
+        "text": "TooltipA tooltip is a floating, non-actionable label used to explain a user inte",
+        "url": "https://atlassian.design/components/tooltip"
+      },
+      {
+        "text": "Progress indicatorA progress indicator shows the user where they are along the s",
+        "url": "https://atlassian.design/components/progress-indicator"
+      },
+      {
+        "text": "Progress trackerA progress tracker displays the steps and progress through a jou",
+        "url": "https://atlassian.design/components/progress-tracker"
+      },
+      {
+        "text": "CodeCode highlights short strings of code snippets inline with body text.",
+        "url": "https://atlassian.design/components/code"
+      },
+      {
+        "text": "Dynamic tableA dynamic table displays rows of data with built-in pagination, sor",
+        "url": "https://atlassian.design/components/dynamic-table"
+      },
+      {
+        "text": "HeadingBetaA heading is a typography component used to display text in different",
+        "url": "https://atlassian.design/components/heading"
+      },
+      {
+        "text": "Inline editAn inline edit displays a custom input component that switches betwee",
+        "url": "https://atlassian.design/components/inline-edit"
+      },
+      {
+        "text": "TableCautionA table is used to display data.",
+        "url": "https://atlassian.design/components/table"
+      },
+      {
+        "text": "Table treeA table tree is an expandable table for showing nested hierarchies of ",
+        "url": "https://atlassian.design/components/table-tree"
+      },
+      {
+        "text": "Visually hiddenA utility that hides content from the screen while retaining read",
+        "url": "https://atlassian.design/components/visually-hidden"
+      },
+      {
+        "text": "BoxA box is a primitive component that acts as a generic container and provides ",
+        "url": "https://atlassian.design/components/primitives/box"
+      },
+      {
+        "text": "PressableA pressable is a primitive component for building custom buttons and pr",
+        "url": "https://atlassian.design/components/primitives/pressable"
+      },
+      {
+        "text": "AnchorAn anchor is a primitive component for building custom links and provides ",
+        "url": "https://atlassian.design/components/primitives/anchor"
+      },
+      {
+        "text": "InlineInline is a primitive component based on flexbox that manages the horizont",
+        "url": "https://atlassian.design/components/primitives/inline"
+      },
+      {
+        "text": "StackStack is a primitive component based on flexbox that manages the vertical l",
+        "url": "https://atlassian.design/components/primitives/stack"
+      },
+      {
+        "text": "FlexBetaFlex is a primitive layout component that implements the CSS Flexbox API",
+        "url": "https://atlassian.design/components/primitives/flex"
+      },
+      {
+        "text": "GridBetaGrid is a primitive layout component that implements the CSS Grid API.",
+        "url": "https://atlassian.design/components/primitives/grid"
+      },
+      {
+        "text": "BleedBleed is a primitive layout component that controls negative whitespace.",
+        "url": "https://atlassian.design/components/primitives/bleed"
+      },
+      {
+        "text": "XCSSCautionXCSS is a safer, tokens-first approach to CSS-in-JS.",
+        "url": "https://atlassian.design/components/primitives/xcss"
+      },
+      {
+        "text": "ResponsiveResponsive helpers and primitives to build responsive UIs with.",
+        "url": "https://atlassian.design/components/primitives/responsive"
+      },
+      {
+        "text": "TextBetaText is a token-backed typography component to display body text.",
+        "url": "https://atlassian.design/components/primitives/text"
+      },
+      {
+        "text": "MetricTextBetaMetricText is a token-backed typography component to display metri",
+        "url": "https://atlassian.design/components/primitives/metric-text"
+      },
+      {
+        "text": "FocusableFocusable is a primitive component that provides a focus ring.",
+        "url": "https://atlassian.design/components/primitives/focusable"
+      },
+      {
+        "text": "CSSBetaStyle components backed by Atlassian Design System design tokens powered ",
+        "url": "https://atlassian.design/components/css"
+      },
+      {
+        "text": "CSS resetA base stylesheet for the Atlassian Design System.",
+        "url": "https://atlassian.design/components/css-reset"
+      },
+      {
+        "text": "Design tokensDesign tokens are the single source of truth to name and store desi",
+        "url": "https://atlassian.design/components/tokens"
+      },
+      {
+        "text": "MotionA set of utilities to apply motion in your application.",
+        "url": "https://atlassian.design/components/motion"
+      },
+      {
+        "text": "PopperA wrapper for React Popper for situations which require a bespoke popup wh",
+        "url": "https://atlassian.design/components/popper"
+      },
+      {
+        "text": "PortalA wrapper for rendering components in React portals.",
+        "url": "https://atlassian.design/components/portal"
+      },
+      {
+        "text": "Pragmatic drag and dropFlexible and fast drag and drop for any experience on any",
+        "url": "https://atlassian.design/components/pragmatic-drag-and-drop"
+      },
+      {
+        "text": "App providerBetaA top level provider for the Design System.",
+        "url": "https://atlassian.design/components/app-provider"
+      },
+      {
+        "text": "ESLint pluginThe essential plugin for use with the Atlassian Design System.",
+        "url": "https://atlassian.design/components/eslint-plugin-design-system"
+      },
+      {
+        "text": "Storybook addonDesign token storybook addon.",
+        "url": "https://atlassian.design/components/storybook-addon-design-system"
+      },
+      {
+        "text": "Stylelint pluginStylelint plugin for use with the Atlassian Design System.",
+        "url": "https://atlassian.design/components/stylelint-design-system"
+      },
+      {
+        "text": "UI Styling StandardThe eslint plugin to enforce and educate on Atlassian's UI St",
+        "url": "https://atlassian.design/components/eslint-plugin-ui-styling-standard"
+      },
+      {
+        "text": "Atlassian navigationDeprecatedA horizontal navigation component for Atlassian ap",
+        "url": "https://atlassian.design/components/atlassian-navigation"
+      },
+      {
+        "text": "Layout gridDeprecatedA responsive layout grid is a component designed to manage ",
+        "url": "https://atlassian.design/components/grid"
+      },
+      {
+        "text": "Onboarding (spotlight)DeprecatedAn onboarding spotlight introduces new features ",
+        "url": "https://atlassian.design/components/onboarding"
+      },
+      {
+        "text": "Page layoutDeprecatedA collection of components which let you compose an applica",
+        "url": "https://atlassian.design/components/page-layout"
+      },
+      {
+        "text": "Side navigationDeprecatedA highly composable side navigation component that supp",
+        "url": "https://atlassian.design/components/side-navigation"
+      },
+      {
+        "text": "Get started",
+        "url": "https://atlassian.design/get-started"
+      },
+      {
+        "text": "Foundations",
+        "url": "https://atlassian.design/foundations"
+      },
+      {
+        "text": "Components",
+        "url": "https://atlassian.design/components"
+      },
+      {
+        "text": "Rovo UI",
+        "url": "https://atlassian.design/rovo-ui"
+      },
+      {
+        "text": "Tools",
+        "url": "https://atlassian.design/tools"
+      },
+      {
+        "text": "Release phases",
+        "url": "https://atlassian.design/release-phases"
+      },
+      {
+        "text": "Contact us",
+        "url": "https://atlassian.design/contact-us"
+      },
+      {
+        "text": "Featured",
+        "url": "https://atlassian.design/news#featured"
+      },
+      {
+        "text": "Design blogs",
+        "url": "https://atlassian.design/news#design-blogs"
+      },
+      {
+        "text": "Leadership talks",
+        "url": "https://atlassian.design/news#leadership-talks"
+      },
+      {
+        "text": "Team stories",
+        "url": "https://atlassian.design/news#team-stories"
+      },
+      {
+        "text": "Atlaskit﻿, (opens new window)",
+        "url": "https://atlaskit.atlassian.com/"
+      },
+      {
+        "text": "Forge UI Kit﻿, (opens new window)",
+        "url": "https://developer.atlassian.com/platform/forge/user-interface/"
+      },
+      {
+        "text": "Brand kit﻿, (opens new window)",
+        "url": "https://orangedam.atlassian.com/"
+      },
+      {
+        "text": "Life at Atlassian﻿, (opens new window)",
+        "url": "https://www.atlassian.com/company/careers"
+      },
+      {
+        "text": "Design and content roles﻿, (opens new window)",
+        "url": "https://www.atlassian.com/company/careers/all-jobs?team=Design"
+      },
+      {
+        "text": "Developer roles﻿, (opens new window)",
+        "url": "https://www.atlassian.com/company/careers/all-jobs?team=Engineering"
+      },
+      {
+        "text": "Product roles﻿, (opens new window)",
+        "url": "https://www.atlassian.com/company/careers/all-jobs?team=Product%20Management%2CProgram%20Management"
+      },
+      {
+        "text": "Trademark﻿, (opens new window)",
+        "url": "https://www.atlassian.com/legal/trademark"
+      },
+      {
+        "text": "Privacy﻿, (opens new window)",
+        "url": "https://www.atlassian.com/legal/privacy-policy"
+      },
+      {
+        "text": "License",
+        "url": "https://atlassian.design/license"
+      }
+    ],
+    "stories": []
+  },
+  {
+    "id": "lion",
+    "links": [
+      {
+        "text": "lıon uı",
+        "url": "https://lion.js.org/components/"
+      },
+      {
+        "text": "Accordion Accordion component with accessible design and flexible styling.",
+        "url": "https://lion.js.org/components/accordion/overview"
+      },
+      {
+        "text": "Button Button component with accessible design and flexible styling.",
+        "url": "https://lion.js.org/components/button/overview"
+      },
+      {
+        "text": "Calendar Calendar component with accessible design and flexible styling.",
+        "url": "https://lion.js.org/components/calendar/overview"
+      },
+      {
+        "text": "Checkbox Group Checkbox Group component with accessible design and flexible styl",
+        "url": "https://lion.js.org/components/checkbox-group/overview"
+      },
+      {
+        "text": "Collapsible Collapsible component with accessible design and flexible styling.",
+        "url": "https://lion.js.org/components/collapsible/overview"
+      },
+      {
+        "text": "Combobox Combobox component with accessible design and flexible styling.",
+        "url": "https://lion.js.org/components/combobox/overview"
+      },
+      {
+        "text": "Dialog Dialog component with accessible design and flexible styling.",
+        "url": "https://lion.js.org/components/dialog/overview"
+      },
+      {
+        "text": "Drawer Drawer component with accessible design and flexible styling.",
+        "url": "https://lion.js.org/components/drawer/overview"
+      },
+      {
+        "text": "Fieldset Fieldset component with accessible design and flexible styling.",
+        "url": "https://lion.js.org/components/fieldset/overview"
+      },
+      {
+        "text": "Form Form component with accessible design and flexible styling.",
+        "url": "https://lion.js.org/components/form/overview"
+      },
+      {
+        "text": "Icon Icon component with accessible design and flexible styling.",
+        "url": "https://lion.js.org/components/icon/overview"
+      },
+      {
+        "text": "Input Input component with accessible design and flexible styling.",
+        "url": "https://lion.js.org/components/input/overview"
+      },
+      {
+        "text": "Input Amount Input Amount component with accessible design and flexible styling.",
+        "url": "https://lion.js.org/components/input-amount/overview"
+      },
+      {
+        "text": "Input Date Input Date component with accessible design and flexible styling.",
+        "url": "https://lion.js.org/components/input-date/overview"
+      },
+      {
+        "text": "Input Datepicker Input Datepicker component with accessible design and flexible ",
+        "url": "https://lion.js.org/components/input-datepicker/overview"
+      },
+      {
+        "text": "Input Email Input Email component with accessible design and flexible styling.",
+        "url": "https://lion.js.org/components/input-email/overview"
+      },
+      {
+        "text": "Input File Input File component with accessible design and flexible styling.",
+        "url": "https://lion.js.org/components/input-file/overview"
+      },
+      {
+        "text": "Input Iban Input Iban component with accessible design and flexible styling.",
+        "url": "https://lion.js.org/components/input-iban/overview"
+      },
+      {
+        "text": "Input Range Input Range component with accessible design and flexible styling.",
+        "url": "https://lion.js.org/components/input-range/overview"
+      },
+      {
+        "text": "Input Stepper Input Stepper component with accessible design and flexible stylin",
+        "url": "https://lion.js.org/components/input-stepper/overview"
+      },
+      {
+        "text": "Input Tel Input Tel component with accessible design and flexible styling.",
+        "url": "https://lion.js.org/components/input-tel/overview"
+      },
+      {
+        "text": "Input Tel Dropdown Input Tel Dropdown component with accessible design and flexi",
+        "url": "https://lion.js.org/components/input-tel-dropdown/overview"
+      },
+      {
+        "text": "Listbox Listbox component with accessible design and flexible styling.",
+        "url": "https://lion.js.org/components/listbox/overview"
+      },
+      {
+        "text": "Menu Menu component with accessible design and flexible styling.",
+        "url": "https://lion.js.org/components/menu/overview"
+      },
+      {
+        "text": "Pagination Pagination component with accessible design and flexible styling.",
+        "url": "https://lion.js.org/components/pagination/overview"
+      },
+      {
+        "text": "Progress Indicator Progress Indicator component with accessible design and flexi",
+        "url": "https://lion.js.org/components/progress-indicator/overview"
+      },
+      {
+        "text": "Radio Group Radio Group component with accessible design and flexible styling.",
+        "url": "https://lion.js.org/components/radio-group/overview"
+      },
+      {
+        "text": "Select Select component with accessible design and flexible styling.",
+        "url": "https://lion.js.org/components/select/overview"
+      },
+      {
+        "text": "Select Rich Select Rich component with accessible design and flexible styling.",
+        "url": "https://lion.js.org/components/select-rich/overview"
+      },
+      {
+        "text": "Steps Steps component with accessible design and flexible styling.",
+        "url": "https://lion.js.org/components/steps/overview"
+      },
+      {
+        "text": "Switch Switch component with accessible design and flexible styling.",
+        "url": "https://lion.js.org/components/switch/overview"
+      },
+      {
+        "text": "Tabs Tabs component with accessible design and flexible styling.",
+        "url": "https://lion.js.org/components/tabs/overview"
+      },
+      {
+        "text": "Textarea Textarea component with accessible design and flexible styling.",
+        "url": "https://lion.js.org/components/textarea/overview"
+      },
+      {
+        "text": "Tooltip Tooltip component with accessible design and flexible styling.",
+        "url": "https://lion.js.org/components/tooltip/overview"
+      },
+      {
+        "text": "Blog",
+        "url": "https://lion.js.org/blog/"
+      },
+      {
+        "text": "Help",
+        "url": "https://github.com/ing-bank/lion/issues"
+      },
+      {
+        "text": "GitHub",
+        "url": "https://github.com/ing-bank/lion"
+      },
+      {
+        "text": "Slack",
+        "url": "https://lion.js.org/prev/about/slack/"
+      },
+      {
+        "text": "Contribute",
+        "url": "https://github.com/ing-bank/lion/blob/master/CONTRIBUTING.md"
+      },
+      {
+        "text": "fundamentals",
+        "url": "https://lion.js.org/fundamentals"
+      },
+      {
+        "text": "guides",
+        "url": "https://lion.js.org/guides"
+      },
+      {
+        "text": "components",
+        "url": "https://lion.js.org/components"
+      },
+      {
+        "text": "blog",
+        "url": "https://lion.js.org/blog"
+      },
+      {
+        "text": "GitHub",
+        "url": "https://github.com/ing-bank/lion"
+      }
+    ],
+    "stories": []
+  },
+  {
+    "id": "lexicon",
+    "links": [
+      {
+        "text": "Skip to content",
+        "url": "https://design.liferay.com/lexicon/core-components/alerts/#main-content"
+      },
+      {
+        "text": "Design.Liferay",
+        "url": "https://design.liferay.com/"
+      },
+      {
+        "text": "/ Lexicon",
+        "url": "https://design.liferay.com/lexicon"
+      },
+      {
+        "text": "Get Started",
+        "url": "https://design.liferay.com/lexicon/get-started/"
+      },
+      {
+        "text": "Foundations",
+        "url": "https://design.liferay.com/lexicon/foundations/"
+      },
+      {
+        "text": "Animations",
+        "url": "https://design.liferay.com/lexicon/foundations/animations/"
+      },
+      {
+        "text": "Color",
+        "url": "https://design.liferay.com/lexicon/foundations/color/"
+      },
+      {
+        "text": "Grid",
+        "url": "https://design.liferay.com/lexicon/foundations/grid/"
+      },
+      {
+        "text": "Layout",
+        "url": "https://design.liferay.com/lexicon/foundations/layout/"
+      },
+      {
+        "text": "Cards Layout",
+        "url": "https://design.liferay.com/lexicon/foundations/layout/layout-cards/"
+      },
+      {
+        "text": "Form Box",
+        "url": "https://design.liferay.com/lexicon/foundations/layout/layout-form/"
+      },
+      {
+        "text": "Full Box",
+        "url": "https://design.liferay.com/lexicon/foundations/layout/layout-full/"
+      },
+      {
+        "text": "Sidebar + Box",
+        "url": "https://design.liferay.com/lexicon/foundations/layout/layout-sidebar/"
+      },
+      {
+        "text": "Typography",
+        "url": "https://design.liferay.com/lexicon/foundations/typography/"
+      },
+      {
+        "text": "Writing",
+        "url": "https://design.liferay.com/lexicon/writing/"
+      },
+      {
+        "text": "Principles",
+        "url": "https://design.liferay.com/lexicon/writing/principles/"
+      },
+      {
+        "text": "Style",
+        "url": "https://design.liferay.com/lexicon/writing/style/"
+      },
+      {
+        "text": "Writing Framework",
+        "url": "https://design.liferay.com/lexicon/writing/writing-framework/"
+      },
+      {
+        "text": "Patterns",
+        "url": "https://design.liferay.com/lexicon/patterns/"
+      },
+      {
+        "text": "Common Actions",
+        "url": "https://design.liferay.com/lexicon/patterns/common-actions/"
+      },
+      {
+        "text": "Common Content Patterns",
+        "url": "https://design.liferay.com/lexicon/patterns/common-content-patterns/"
+      },
+      {
+        "text": "Drag and Drop",
+        "url": "https://design.liferay.com/lexicon/patterns/drag-and-drop/"
+      },
+      {
+        "text": "Ellipsis",
+        "url": "https://design.liferay.com/lexicon/patterns/ellipsis/"
+      },
+      {
+        "text": "Components",
+        "url": "https://design.liferay.com/lexicon/core-components/"
+      },
+      {
+        "text": "Alerts",
+        "url": "https://design.liferay.com/lexicon/core-components/alerts/"
+      },
+      {
+        "text": "Badges",
+        "url": "https://design.liferay.com/lexicon/core-components/badges/"
+      },
+      {
+        "text": "Buttons",
+        "url": "https://design.liferay.com/lexicon/core-components/buttons/"
+      },
+      {
+        "text": "Action Buttons",
+        "url": "https://design.liferay.com/lexicon/core-components/buttons/action-buttons/"
+      },
+      {
+        "text": "Cards",
+        "url": "https://design.liferay.com/lexicon/core-components/cards/"
+      },
+      {
+        "text": "Cards Variations",
+        "url": "https://design.liferay.com/lexicon/core-components/cards/cards-variation/"
+      },
+      {
+        "text": "Navigation Card",
+        "url": "https://design.liferay.com/lexicon/core-components/cards/cards-navigation/"
+      },
+      {
+        "text": "Charts",
+        "url": "https://design.liferay.com/lexicon/core-components/charts/"
+      },
+      {
+        "text": "Colors",
+        "url": "https://design.liferay.com/lexicon/core-components/charts/chart-color-palette/"
+      },
+      {
+        "text": "Interaction",
+        "url": "https://design.liferay.com/lexicon/core-components/charts/chart-interaction/"
+      },
+      {
+        "text": "Bar Chart",
+        "url": "https://design.liferay.com/lexicon/core-components/charts/chart-bar/"
+      },
+      {
+        "text": "Donut Chart",
+        "url": "https://design.liferay.com/lexicon/core-components/charts/chart-doughnut/"
+      },
+      {
+        "text": "Predictive Forecast Chart",
+        "url": "https://design.liferay.com/lexicon/core-components/charts/chart-forecast/"
+      },
+      {
+        "text": "Heatmap Chart",
+        "url": "https://design.liferay.com/lexicon/core-components/charts/chart-heatmap/"
+      },
+      {
+        "text": "Line Chart",
+        "url": "https://design.liferay.com/lexicon/core-components/charts/chart-line/"
+      },
+      {
+        "text": "Pie Chart",
+        "url": "https://design.liferay.com/lexicon/core-components/charts/chart-pie/"
+      },
+      {
+        "text": "Stacked Bar Chart",
+        "url": "https://design.liferay.com/lexicon/core-components/charts/chart-stacked-bar/"
+      },
+      {
+        "text": "Confirmation Message",
+        "url": "https://design.liferay.com/lexicon/core-components/confirmation-message/"
+      },
+      {
+        "text": "Dataset Display",
+        "url": "https://design.liferay.com/lexicon/core-components/dataset-display/"
+      },
+      {
+        "text": "Dropdown Menu",
+        "url": "https://design.liferay.com/lexicon/core-components/dropdowns/"
+      },
+      {
+        "text": "Dual Listbox",
+        "url": "https://design.liferay.com/lexicon/core-components/dual-listbox/"
+      },
+      {
+        "text": "Empty State",
+        "url": "https://design.liferay.com/lexicon/core-components/empty-state/"
+      },
+      {
+        "text": "Forms",
+        "url": "https://design.liferay.com/lexicon/core-components/forms/"
+      },
+      {
+        "text": "Form Sheet",
+        "url": "https://design.liferay.com/lexicon/core-components/forms/forms-sheet/"
+      },
+      {
+        "text": "Forms Hierarchy",
+        "url": "https://design.liferay.com/lexicon/core-components/forms/forms-hierarchy/"
+      },
+      {
+        "text": "Forms Navigation",
+        "url": "https://design.liferay.com/lexicon/core-components/forms/forms-navigation/"
+      },
+      {
+        "text": "Forms Rules",
+        "url": "https://design.liferay.com/lexicon/core-components/forms/forms-rules/"
+      },
+      {
+        "text": "Forms Validation",
+        "url": "https://design.liferay.com/lexicon/core-components/forms/forms-validation/"
+      },
+      {
+        "text": "Checkbox, Radio, Toggle",
+        "url": "https://design.liferay.com/lexicon/core-components/forms/radio-check-toggle/"
+      },
+      {
+        "text": "Color Picker",
+        "url": "https://design.liferay.com/lexicon/core-components/forms/picker-color/"
+      },
+      {
+        "text": "Date & Time Pickers",
+        "url": "https://design.liferay.com/lexicon/core-components/forms/picker-date-time/"
+      },
+      {
+        "text": "Multi Select",
+        "url": "https://design.liferay.com/lexicon/core-components/forms/multi-select/"
+      },
+      {
+        "text": "Multi Step Form",
+        "url": "https://design.liferay.com/lexicon/core-components/forms/multi-step-form/"
+      },
+      {
+        "text": "Multi Step Form Simplified",
+        "url": "https://design.liferay.com/lexicon/core-components/forms/multi-step-form-simplified/"
+      },
+      {
+        "text": "Select",
+        "url": "https://design.liferay.com/lexicon/core-components/forms/selector/"
+      },
+      {
+        "text": "Input",
+        "url": "https://design.liferay.com/lexicon/core-components/forms/input/"
+      },
+      {
+        "text": "Input Group",
+        "url": "https://design.liferay.com/lexicon/core-components/forms/input-group/"
+      },
+      {
+        "text": "Input Localizable",
+        "url": "https://design.liferay.com/lexicon/core-components/forms/input-localizable/"
+      },
+      {
+        "text": "Input Variations",
+        "url": "https://design.liferay.com/lexicon/core-components/forms/input-variations/"
+      },
+      {
+        "text": "Icons",
+        "url": "https://design.liferay.com/lexicon/core-components/icons/"
+      },
+      {
+        "text": "Keys",
+        "url": "https://design.liferay.com/lexicon/core-components/keys/"
+      },
+      {
+        "text": "Labels",
+        "url": "https://design.liferay.com/lexicon/core-components/labels/"
+      },
+      {
+        "text": "Link",
+        "url": "https://design.liferay.com/lexicon/core-components/link/"
+      },
+      {
+        "text": "List",
+        "url": "https://design.liferay.com/lexicon/core-components/List/"
+      },
+      {
+        "text": "List Variations",
+        "url": "https://design.liferay.com/lexicon/core-components/List/list-variations/"
+      },
+      {
+        "text": "Loading Indicator",
+        "url": "https://design.liferay.com/lexicon/core-components/loading-indicator/"
+      },
+      {
+        "text": "Modal",
+        "url": "https://design.liferay.com/lexicon/core-components/modal/"
+      },
+      {
+        "text": "Navigation",
+        "url": "https://design.liferay.com/lexicon/core-components/navigation/"
+      },
+      {
+        "text": "Breadcrumb",
+        "url": "https://design.liferay.com/lexicon/core-components/navigation/breadcrumb/"
+      },
+      {
+        "text": "Navbar",
+        "url": "https://design.liferay.com/lexicon/core-components/navigation/horizontal-nav/"
+      },
+      {
+        "text": "Vertical Navigation",
+        "url": "https://design.liferay.com/lexicon/core-components/navigation/vertical-nav/"
+      },
+      {
+        "text": "Pagination",
+        "url": "https://design.liferay.com/lexicon/core-components/pagination/"
+      },
+      {
+        "text": "Progress Bar",
+        "url": "https://design.liferay.com/lexicon/core-components/progress-bars/"
+      },
+      {
+        "text": "Popovers and Tooltips",
+        "url": "https://design.liferay.com/lexicon/core-components/popovers-tooltips/"
+      },
+      {
+        "text": "Section",
+        "url": "https://design.liferay.com/lexicon/core-components/section/"
+      },
+      {
+        "text": "Sidebar",
+        "url": "https://design.liferay.com/lexicon/core-components/sidebar/"
+      },
+      {
+        "text": "Slider",
+        "url": "https://design.liferay.com/lexicon/core-components/slider/"
+      },
+      {
+        "text": "Stickers",
+        "url": "https://design.liferay.com/lexicon/core-components/stickers/"
+      },
+      {
+        "text": "Table",
+        "url": "https://design.liferay.com/lexicon/core-components/table/"
+      },
+      {
+        "text": "Inline Edit Table",
+        "url": "https://design.liferay.com/lexicon/core-components/table/inline-edit-table/"
+      },
+      {
+        "text": "Tabs",
+        "url": "https://design.liferay.com/lexicon/core-components/tabs/"
+      },
+      {
+        "text": "Timelines",
+        "url": "https://design.liferay.com/lexicon/core-components/timelines/"
+      },
+      {
+        "text": "Toolbar",
+        "url": "https://design.liferay.com/lexicon/core-components/toolbars/"
+      },
+      {
+        "text": "Upper Toolbar",
+        "url": "https://design.liferay.com/lexicon/core-components/toolbars/toolbar-upper/"
+      },
+      {
+        "text": "Tree View",
+        "url": "https://design.liferay.com/lexicon/core-components/tree-view/"
+      },
+      {
+        "text": "Vertical Bar",
+        "url": "https://design.liferay.com/lexicon/core-components/vertical-bar/"
+      },
+      {
+        "text": "Templates",
+        "url": "https://design.liferay.com/lexicon/Templates/"
+      },
+      {
+        "text": "Builder Template",
+        "url": "https://design.liferay.com/lexicon/Templates/builder-template/"
+      },
+      {
+        "text": "Dataset Template",
+        "url": "https://design.liferay.com/lexicon/Templates/dataset-template/"
+      },
+      {
+        "text": "Form Template",
+        "url": "https://design.liferay.com/lexicon/Templates/forms-template/"
+      },
+      {
+        "text": "Settings Template",
+        "url": "https://design.liferay.com/lexicon/Templates/settings-template/"
+      },
+      {
+        "text": "Satellites",
+        "url": "https://design.liferay.com/lexicon/satellites/"
+      },
+      {
+        "text": "File Upload",
+        "url": "https://design.liferay.com/lexicon/satellites/file-upload/"
+      },
+      {
+        "text": "Image Selector",
+        "url": "https://design.liferay.com/lexicon/satellites/image-selector/"
+      },
+      {
+        "text": "Management Toolbar",
+        "url": "https://design.liferay.com/lexicon/satellites/management-bar/"
+      },
+      {
+        "text": "Miller Columns",
+        "url": "https://design.liferay.com/lexicon/satellites/miller-columns/"
+      },
+      {
+        "text": "Navigation",
+        "url": "https://design.liferay.com/lexicon/satellites/navigation/"
+      },
+      {
+        "text": "Control Menu Bar",
+        "url": "https://design.liferay.com/lexicon/satellites/navigation/control-menu/"
+      },
+      {
+        "text": "Global Menu",
+        "url": "https://design.liferay.com/lexicon/satellites/navigation/global-menu/"
+      },
+      {
+        "text": "Sidebar",
+        "url": "https://design.liferay.com/lexicon/satellites/sidebar/"
+      },
+      {
+        "text": "Info Panel",
+        "url": "https://design.liferay.com/lexicon/satellites/sidebar/infopanel/"
+      },
+      {
+        "text": "Product Menu",
+        "url": "https://design.liferay.com/lexicon/satellites/sidebar/product-menu/"
+      },
+      {
+        "text": "Sites",
+        "url": "https://design.liferay.com/lexicon/satellites/sites/"
+      },
+      {
+        "text": "Asset Title Bar",
+        "url": "https://design.liferay.com/lexicon/satellites/sites/asset-title-bar/"
+      },
+      {
+        "text": "Asset Toolbar",
+        "url": "https://design.liferay.com/lexicon/satellites/sites/asset-toolbar/"
+      },
+      {
+        "text": "Buttons",
+        "url": "https://design.liferay.com/lexicon/satellites/sites/buttons/"
+      },
+      {
+        "text": "Profile Info",
+        "url": "https://design.liferay.com/lexicon/satellites/sites/profile-info/"
+      },
+      {
+        "text": "Widget Title Bar",
+        "url": "https://design.liferay.com/lexicon/satellites/sites/widget-title-bar/"
+      },
+      {
+        "text": "Examples",
+        "url": "https://design.liferay.com/lexicon/examples/"
+      },
+      {
+        "text": "Asset Metrics Dashboard",
+        "url": "https://design.liferay.com/lexicon/examples/asset-metrics-dashboard/"
+      },
+      {
+        "text": "Document Preview",
+        "url": "https://design.liferay.com/lexicon/examples/document-preview/"
+      },
+      {
+        "text": "Page Distribution",
+        "url": "https://design.liferay.com/lexicon/examples/page-distribution/"
+      },
+      {
+        "text": "Partner Portal",
+        "url": "https://design.liferay.com/lexicon/examples/partner-portal/"
+      },
+      {
+        "text": "Site Builder",
+        "url": "https://design.liferay.com/lexicon/examples/site-builder/"
+      },
+      {
+        "text": "Resources",
+        "url": "https://design.liferay.com/lexicon/resources/"
+      },
+      {
+        "text": "Liferay, Inc",
+        "url": "https://liferay.com/"
+      },
+      {
+        "text": "Code",
+        "url": "https://github.com/liferay-design/design.liferay.com/blob/master/LICENSE"
+      },
+      {
+        "text": "Content",
+        "url": "https://design.liferay.com/resources/license"
+      },
+      {
+        "text": "View in Figma",
+        "url": "https://www.figma.com/file/02DVhuHVTDbzaMjNM7IUKWp0/lexicon?node-id=6076%3A101"
+      },
+      {
+        "text": "View in Clay",
+        "url": "https://clayui.com/docs/components/alert"
+      },
+      {
+        "text": "",
+        "url": "https://design.liferay.com/lexicon/core-components/alerts/#usage"
+      },
+      {
+        "text": "",
+        "url": "https://design.liferay.com/lexicon/core-components/alerts/#types"
+      },
+      {
+        "text": "colors page",
+        "url": "https://design.liferay.com/lexicon/foundations/color"
+      },
+      {
+        "text": "",
+        "url": "https://design.liferay.com/lexicon/core-components/alerts/#attributes"
+      },
+      {
+        "text": "",
+        "url": "https://design.liferay.com/lexicon/core-components/alerts/#variations"
+      },
+      {
+        "text": "",
+        "url": "https://design.liferay.com/lexicon/core-components/alerts/#feedback-indicator"
+      },
+      {
+        "text": "",
+        "url": "https://design.liferay.com/lexicon/core-components/alerts/#toast"
+      },
+      {
+        "text": "",
+        "url": "https://design.liferay.com/lexicon/core-components/alerts/#toast-stacking-behavior"
+      },
+      {
+        "text": "",
+        "url": "https://design.liferay.com/lexicon/core-components/alerts/#showing"
+      },
+      {
+        "text": "",
+        "url": "https://design.liferay.com/lexicon/core-components/alerts/#hiding--closing"
+      },
+      {
+        "text": "",
+        "url": "https://design.liferay.com/lexicon/core-components/alerts/#embedded"
+      },
+      {
+        "text": "",
+        "url": "https://design.liferay.com/lexicon/core-components/alerts/#stripe"
+      },
+      {
+        "text": "",
+        "url": "https://design.liferay.com/lexicon/core-components/alerts/#inline"
+      },
+      {
+        "text": "",
+        "url": "https://design.liferay.com/static/ffa5351c09428afd3d8418df857aa811/6a58c/alert-20.png"
+      },
+      {
+        "text": "",
+        "url": "https://design.liferay.com/static/cc265987c8859d1d0d44fafd7b813aee/6a58c/alert-21.png"
+      },
+      {
+        "text": "",
+        "url": "https://design.liferay.com/static/b6b0336a2df337117f638d91da5632d7/6a58c/alert-22.png"
+      },
+      {
+        "text": "",
+        "url": "https://www.dribbble.com/liferay"
+      },
+      {
+        "text": "",
+        "url": "https://figma.com/@liferay"
+      },
+      {
+        "text": "",
+        "url": "https://github.com/liferay-design/"
+      },
+      {
+        "text": "",
+        "url": "https://www.instagram.com/liferaydesign/"
+      },
+      {
+        "text": "",
+        "url": "https://www.medium.com/liferaydesign"
+      },
+      {
+        "text": "",
+        "url": "https://twitter.com/liferaydesign"
+      },
+      {
+        "text": "",
+        "url": "https://www.youtube.com/playlist?list=PLFNUy_HrVhPsBRvotF2sj2sBaTXlIlNgm"
+      }
+    ],
+    "stories": []
+  },
+  {
+    "id": "kolibri",
+    "links": [
+      {
+        "text": "Zum Hauptinhalt springen",
+        "url": "https://public-ui.github.io/docs/components#__docusaurus_skipToContent_fallback"
+      },
+      {
+        "text": "KoliBri",
+        "url": "https://public-ui.github.io/"
+      },
+      {
+        "text": "Dokumentation",
+        "url": "https://public-ui.github.io/docs"
+      },
+      {
+        "text": "Blog",
+        "url": "https://public-ui.github.io/blog"
+      },
+      {
+        "text": "Version 4",
+        "url": "https://public-ui.github.io/docs/components#"
+      },
+      {
+        "text": "Version 3",
+        "url": "https://public-ui.github.io/v3/"
+      },
+      {
+        "text": "Version 2",
+        "url": "https://public-ui.github.io/v2/"
+      },
+      {
+        "text": "Willkommen",
+        "url": "https://public-ui.github.io/docs"
+      },
+      {
+        "text": "Manifest",
+        "url": "https://public-ui.github.io/docs/manifest"
+      },
+      {
+        "text": "Servicestandard",
+        "url": "https://public-ui.github.io/docs/servicestandard"
+      },
+      {
+        "text": "FAQ",
+        "url": "https://public-ui.github.io/docs/faq"
+      },
+      {
+        "text": "Get Started",
+        "url": "https://public-ui.github.io/docs/components#"
+      },
+      {
+        "text": "Konzepte",
+        "url": "https://public-ui.github.io/docs/components#"
+      },
+      {
+        "text": "Komponenten",
+        "url": "https://public-ui.github.io/docs/components"
+      },
+      {
+        "text": "Abbr",
+        "url": "https://public-ui.github.io/docs/components/abbr"
+      },
+      {
+        "text": "Accordion",
+        "url": "https://public-ui.github.io/docs/components/accordion"
+      },
+      {
+        "text": "Alert",
+        "url": "https://public-ui.github.io/docs/components/alert"
+      },
+      {
+        "text": "Avatar",
+        "url": "https://public-ui.github.io/docs/components/avatar"
+      },
+      {
+        "text": "Badge",
+        "url": "https://public-ui.github.io/docs/components/badge"
+      },
+      {
+        "text": "Breadcrumb",
+        "url": "https://public-ui.github.io/docs/components/breadcrumb"
+      },
+      {
+        "text": "ButtonLink",
+        "url": "https://public-ui.github.io/docs/components/button-link"
+      },
+      {
+        "text": "Button",
+        "url": "https://public-ui.github.io/docs/components/button"
+      },
+      {
+        "text": "Card",
+        "url": "https://public-ui.github.io/docs/components/card"
+      },
+      {
+        "text": "Combobox",
+        "url": "https://public-ui.github.io/docs/components/combobox"
+      },
+      {
+        "text": "Details",
+        "url": "https://public-ui.github.io/docs/components/details"
+      },
+      {
+        "text": "Dialog",
+        "url": "https://public-ui.github.io/docs/components/dialog"
+      },
+      {
+        "text": "Drawer",
+        "url": "https://public-ui.github.io/docs/components/drawer"
+      },
+      {
+        "text": "Form",
+        "url": "https://public-ui.github.io/docs/components/form"
+      },
+      {
+        "text": "Heading",
+        "url": "https://public-ui.github.io/docs/components/heading"
+      },
+      {
+        "text": "Icon",
+        "url": "https://public-ui.github.io/docs/components/icon"
+      },
+      {
+        "text": "Image",
+        "url": "https://public-ui.github.io/docs/components/image"
+      },
+      {
+        "text": "InputCheckbox",
+        "url": "https://public-ui.github.io/docs/components/input-checkbox"
+      },
+      {
+        "text": "InputColor",
+        "url": "https://public-ui.github.io/docs/components/input-color"
+      },
+      {
+        "text": "InputDate",
+        "url": "https://public-ui.github.io/docs/components/input-date"
+      },
+      {
+        "text": "InputEmail",
+        "url": "https://public-ui.github.io/docs/components/input-email"
+      },
+      {
+        "text": "InputFile",
+        "url": "https://public-ui.github.io/docs/components/input-file"
+      },
+      {
+        "text": "InputNumber",
+        "url": "https://public-ui.github.io/docs/components/input-number"
+      },
+      {
+        "text": "InputPassword",
+        "url": "https://public-ui.github.io/docs/components/input-password"
+      },
+      {
+        "text": "InputRadio",
+        "url": "https://public-ui.github.io/docs/components/input-radio"
+      },
+      {
+        "text": "InputRange",
+        "url": "https://public-ui.github.io/docs/components/input-range"
+      },
+      {
+        "text": "InputText",
+        "url": "https://public-ui.github.io/docs/components/input-text"
+      },
+      {
+        "text": "KoliBri",
+        "url": "https://public-ui.github.io/docs/components/kolibri"
+      },
+      {
+        "text": "LinkButton",
+        "url": "https://public-ui.github.io/docs/components/link-button"
+      },
+      {
+        "text": "Link",
+        "url": "https://public-ui.github.io/docs/components/link"
+      },
+      {
+        "text": "Meter",
+        "url": "https://public-ui.github.io/docs/components/meter"
+      },
+      {
+        "text": "Modal",
+        "url": "https://public-ui.github.io/docs/components/modal"
+      },
+      {
+        "text": "Nav",
+        "url": "https://public-ui.github.io/docs/components/nav"
+      },
+      {
+        "text": "Pagination",
+        "url": "https://public-ui.github.io/docs/components/pagination"
+      },
+      {
+        "text": "PopoverButton",
+        "url": "https://public-ui.github.io/docs/components/popover-button"
+      },
+      {
+        "text": "Popover",
+        "url": "https://public-ui.github.io/docs/components/popover"
+      },
+      {
+        "text": "Progress",
+        "url": "https://public-ui.github.io/docs/components/progress"
+      },
+      {
+        "text": "Quote",
+        "url": "https://public-ui.github.io/docs/components/quote"
+      },
+      {
+        "text": "Select",
+        "url": "https://public-ui.github.io/docs/components/select"
+      },
+      {
+        "text": "SingleSelect",
+        "url": "https://public-ui.github.io/docs/components/single-select"
+      },
+      {
+        "text": "SkipNav",
+        "url": "https://public-ui.github.io/docs/components/skip-nav"
+      },
+      {
+        "text": "Spin",
+        "url": "https://public-ui.github.io/docs/components/spin"
+      },
+      {
+        "text": "Split-Button",
+        "url": "https://public-ui.github.io/docs/components/split-button"
+      },
+      {
+        "text": "TableStateful",
+        "url": "https://public-ui.github.io/docs/components/table-stateful"
+      },
+      {
+        "text": "Table (Stateless)",
+        "url": "https://public-ui.github.io/docs/components/table-stateless"
+      },
+      {
+        "text": "Tabs",
+        "url": "https://public-ui.github.io/docs/components/tabs"
+      },
+      {
+        "text": "Textarea",
+        "url": "https://public-ui.github.io/docs/components/textarea"
+      },
+      {
+        "text": "Toaster",
+        "url": "https://public-ui.github.io/docs/components/toaster"
+      },
+      {
+        "text": "Toolbar",
+        "url": "https://public-ui.github.io/docs/components/toolbar"
+      },
+      {
+        "text": "Tooltip",
+        "url": "https://public-ui.github.io/docs/components/tooltip"
+      },
+      {
+        "text": "Tree-Item",
+        "url": "https://public-ui.github.io/docs/components/tree-item"
+      },
+      {
+        "text": "Tree",
+        "url": "https://public-ui.github.io/docs/components/tree"
+      },
+      {
+        "text": "Version",
+        "url": "https://public-ui.github.io/docs/components/version"
+      },
+      {
+        "text": "Projekt",
+        "url": "https://public-ui.github.io/docs/components#"
+      },
+      {
+        "text": "Migration",
+        "url": "https://public-ui.github.io/docs/migration"
+      },
+      {
+        "text": "Testergebnisse",
+        "url": "https://public-ui.github.io/docs/test-results"
+      },
+      {
+        "text": "Gesundheitszustand",
+        "url": "https://public-ui.github.io/docs/health-state"
+      },
+      {
+        "text": "Bekannte Probleme",
+        "url": "https://public-ui.github.io/docs/known-issues"
+      },
+      {
+        "text": "Impressum",
+        "url": "https://public-ui.github.io/docs/legal-notice"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Abbr"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Accordion"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Alert"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Avatar"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Badge"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Breadcrumb"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Button"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Button-link"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Card"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Combobox"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Details"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Dialog"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Drawer"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Form"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Heading"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Icon"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Image"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Input-checkbox"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Input-color"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Input-date"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Input-email"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Input-file"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Input-number"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Input-password"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Input-radio"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Input-range"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Input-text"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Link"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Link-button"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Meter"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Modal"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Nav"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Pagination"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Popover"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Progress"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Quote"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Select"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Single-select"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Skip-nav"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Spin"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Split-button"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Table-stateful"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Tabs"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Textarea"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Toaster"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Toolbar"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Tooltip"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/docs/components/Tree"
+      },
+      {
+        "text": "ZurückSicherheit",
+        "url": "https://public-ui.github.io/docs/concepts/security"
+      },
+      {
+        "text": "WeiterAbbr",
+        "url": "https://public-ui.github.io/docs/components/abbr"
+      },
+      {
+        "text": "Dokumentation",
+        "url": "https://public-ui.github.io/docs"
+      },
+      {
+        "text": "Blog",
+        "url": "https://public-ui.github.io/blog"
+      },
+      {
+        "text": "Impressum",
+        "url": "https://public-ui.github.io/docs/legal-notice"
+      },
+      {
+        "text": "Community of Practices",
+        "url": "https://github.com/public-ui/kolibri/discussions/516"
+      },
+      {
+        "text": "FAQ",
+        "url": "https://github.com/public-ui/kolibri/discussions"
+      },
+      {
+        "text": "Mastodon",
+        "url": "https://social.bund.de/@kolibri"
+      },
+      {
+        "text": "GitHub",
+        "url": "https://github.com/public-ui"
+      },
+      {
+        "text": "ITZBund",
+        "url": "https://itzbund.de/"
+      },
+      {
+        "text": "Portal Barrierefreiheit",
+        "url": "https://www.barrierefreiheit-dienstekonsolidierung.bund.de/"
+      },
+      {
+        "text": "",
+        "url": "https://public-ui.github.io/en/docs/components"
+      },
+      {
+        "text": "",
+        "url": "https://github.com/public-ui/kolibri"
+      },
+      {
+        "text": "",
+        "url": "https://develop--kolibri-public-ui.netlify.app/"
+      },
+      {
+        "text": "E-Mail senden",
+        "url": "mailto:kolibri@itzbund.de?subject=Feedback%20zu%20KoliBri-Webcomponents&body=Hallo%20KoliBri-Team,%0A%0Ahier%20ist%20mein%20Feedback%20zur%20Dokumentation%20oder%20den%20Webcomponents:%0A%0A%5BEinfach%20hier%20Ihr%20Feedback%20einf%C3%BCgen%5D%0A%0AVielen%20Dank!"
+      },
+      {
+        "text": "Home",
+        "url": "https://public-ui.github.io/docs/components#/back-page"
+      },
+      {
+        "text": "Page",
+        "url": "https://public-ui.github.io/docs/components#/back-page"
+      },
+      {
+        "text": "Link",
+        "url": "https://public-ui.github.io/docs/components#"
+      },
+      {
+        "text": "LinkButton",
+        "url": "https://public-ui.github.io/docs/components#"
+      },
+      {
+        "text": "1 Nav",
+        "url": "https://public-ui.github.io/docs/components#"
+      },
+      {
+        "text": "Link",
+        "url": "https://public-ui.github.io/docs/components#"
+      },
+      {
+        "text": "Link",
+        "url": "https://public-ui.github.io/docs/components#"
+      },
+      {
+        "text": "Home",
+        "url": "https://public-ui.github.io/docs/components#"
+      },
+      {
+        "text": "Page",
+        "url": "https://public-ui.github.io/docs/components#"
+      },
+      {
+        "text": "Sub-Page",
+        "url": "https://public-ui.github.io/docs/components#"
+      },
+      {
+        "text": "2.1.1. Values",
+        "url": "https://public-ui.github.io/docs/components#"
+      }
+    ],
+    "stories": []
+  }
+]

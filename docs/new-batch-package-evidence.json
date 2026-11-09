@@ -1,0 +1,107 @@
+[
+  {
+    "package": "@atlaskit/button",
+    "status": 200,
+    "created": "2017-01-29T23:41:10.044Z",
+    "firstRelease": [
+      "1.0.0",
+      "2017-01-29T23:41:10.044Z"
+    ],
+    "repository": {
+      "url": "git+https://bitbucket.org/atlassian/atlassian-frontend-mirror.git",
+      "type": "git"
+    },
+    "license": "Apache-2.0"
+  },
+  {
+    "package": "@telus-uds/components-web",
+    "status": 200,
+    "created": "2023-03-23T20:51:23.999Z",
+    "firstRelease": [
+      "1.0.0",
+      "2023-03-23T20:51:24.325Z"
+    ],
+    "repository": {
+      "url": "git+https://github.com/telus/universal-design-system.git",
+      "type": "git"
+    },
+    "license": "MIT"
+  },
+  {
+    "package": "@finastra/button",
+    "status": 200,
+    "created": "2021-11-19T16:51:38.049Z",
+    "firstRelease": [
+      "0.0.5",
+      "2021-11-19T16:51:38.295Z"
+    ],
+    "repository": null,
+    "license": "MIT"
+  },
+  {
+    "package": "@finastra/fds-theme",
+    "status": 200,
+    "created": "2021-07-28T13:13:21.203Z",
+    "firstRelease": [
+      "0.0.1-alpha.4",
+      "2021-07-28T13:13:21.409Z"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/finastra/finastra-design-system.git",
+      "directory": "themes/fds-theme"
+    },
+    "license": "MIT"
+  },
+  {
+    "package": "react-aria",
+    "status": 200,
+    "created": "2016-07-04T10:18:56.598Z",
+    "firstRelease": [
+      "0.1.0",
+      "2016-07-04T10:18:56.598Z"
+    ],
+    "repository": {
+      "url": "git+https://github.com/adobe/react-spectrum.git",
+      "type": "git"
+    },
+    "license": "Apache-2.0"
+  },
+  {
+    "package": "@vaadin/vaadin-grid",
+    "status": 200,
+    "created": "2018-04-06T06:21:59.408Z",
+    "firstRelease": [
+      "5.0.0-pre.1",
+      "2018-04-06T06:21:59.656Z"
+    ],
+    "repository": {
+      "url": "git+https://github.com/vaadin/web-components.git",
+      "type": "git",
+      "directory": "packages/vaadin-grid"
+    },
+    "license": "https://vaadin.com/commercial-license-and-service-terms"
+  },
+  {
+    "package": "@decathlon/vitamin-css",
+    "status": 404,
+    "created": null,
+    "firstRelease": null,
+    "repository": null,
+    "license": null
+  },
+  {
+    "package": "@vtmn/css",
+    "status": 200,
+    "created": "2021-01-21T18:07:01.682Z",
+    "firstRelease": [
+      "0.0.1",
+      "2021-01-21T18:07:02.134Z"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Decathlon/vitamin-web.git"
+    },
+    "license": "Apache-2.0"
+  }
+]

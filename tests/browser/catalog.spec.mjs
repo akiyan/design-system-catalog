@@ -1,6 +1,9 @@
 import { test, expect } from '@playwright/test';
 import { readFileSync } from 'node:fs';
 const systems=JSON.parse(readFileSync(new URL('../../src/data/systems.json',import.meta.url)));
+const publicCount=systems.filter(s=>s.category==='public').length;
+const ossCount=systems.length-publicCount;
+const oldest=[...systems].sort((a,b)=>a.published.date.localeCompare(b.published.date))[0];
 
 test.use({ locale: 'ja-JP' });
 const ready = async page => expect(page.locator('.catalog-app')).toHaveAttribute('data-ready', 'true');
@@ -19,11 +22,11 @@ test('newest-first catalog, categories, date evidence, and repository link', asy
   await expect(page.locator('.release-info')).toContainText('2026-06-18');
   await page.locator('.release-details summary').click();
   await expect(page.getByRole('link', {name:'公開日の根拠',exact:true})).toHaveAttribute('href', 'https://astryx.atmeta.com/blog/introducing-astryx');
-  await page.getByRole('button', {name:'政府・公共 12',exact:true}).click();
-  await expect(page.locator('.system-row')).toHaveCount(12);
+  await page.getByRole('button', {name:`政府・公共 ${publicCount}`,exact:true}).click();
+  await expect(page.locator('.system-row')).toHaveCount(publicCount);
   await expect(active(page)).toContainText('GC Design System');
-  await page.getByRole('button', {name:'企業・OSS 31',exact:true}).click();
-  await expect(page.locator('.system-row')).toHaveCount(31);
+  await page.getByRole('button', {name:`企業・OSS ${ossCount}`,exact:true}).click();
+  await expect(page.locator('.system-row')).toHaveCount(ossCount);
   await expect(active(page)).toContainText('Astryx');
   await page.locator('.system-row').filter({hasText:'Gestalt'}).click();
   await expect(page.locator('.release-info .date-reference')).toHaveText('参考');
@@ -105,7 +108,7 @@ test('keyboard selection, boundaries, screenshot switching, zoom and help focus'
   await expect(active(page)).toBeFocused();
   await page.keyboard.press('ArrowUp');
   await expect(active(page)).toContainText('Astryx');
-  await page.keyboard.press('End'); await expect(active(page)).toContainText('PatternFly');
+  await page.keyboard.press('End'); await expect(active(page)).toContainText(oldest.shortName);
   await page.keyboard.press('Home'); await expect(active(page)).toContainText('Astryx');
   await page.keyboard.press('ArrowRight');
   await expect(page.locator('.main-preview img')).toHaveAttribute('src','/previews/astryx-1.webp');
@@ -168,7 +171,7 @@ test('release metadata states precision and identifies every evidence source', a
 
 test('requested additions have source previews, dates, and separate Semi/Arco entries', async ({page,request}) => {
   const ids=['sansan','charcoal','serendie','sugao','vibes','vitals','pajamas','paste','wise','semi','arco','spectrum','carbon','fluent','baseweb','polaris','spindle','smarthr','ikyu','francfranc','porsche','audi','coinbase','tdesign','ant','kumo','patternfly','primer'];
-  expect(new Set(systems.map(s=>s.id)).size).toBe(43);
+  expect(new Set(systems.map(s=>s.id)).size).toBe(67);
   for(const id of ids) {
     const entry=systems.find(s=>s.id===id);
     expect(entry,id).toBeTruthy();
@@ -189,13 +192,13 @@ test('mobile list has no selected state and detail buttons browse the active cat
   await page.setViewportSize({width:390,height:844});
   await page.goto('/'); await ready(page);
   await expect(page.locator('.system-row.selected, .system-row[aria-current]')).toHaveCount(0);
-  await page.getByRole('button',{name:'政府・公共 12',exact:true}).click();
+  await page.getByRole('button',{name:`政府・公共 ${publicCount}`,exact:true}).click();
   await page.locator('.system-row').first().click();
   await expect(page.getByRole('button',{name:'前のデザインシステム',exact:true})).toBeDisabled();
-  await expect(page.locator('.system-position')).toHaveText('1 / 12');
+  await expect(page.locator('.system-position')).toHaveText(`1 / ${publicCount}`);
   await page.getByRole('link',{name:'次のデザインシステム',exact:true}).click();
   await expect(page).toHaveURL(/\/dads\/$/);
-  await expect(page.locator('.system-position')).toHaveText('2 / 12');
+  await expect(page.locator('.system-position')).toHaveText(`2 / ${publicCount}`);
   await page.getByRole('link',{name:'前のデザインシステム',exact:true}).click();
   await expect(page).toHaveURL(/\/canada\/$/);
   await page.getByRole('button',{name:'English',exact:true}).click();
@@ -231,10 +234,10 @@ test('touch swipes browse systems without opening zoom, vertical gestures and ta
   await page.locator('.main-preview').tap();
   await expect(page.locator('.zoom-dialog')).toBeVisible();
   await page.keyboard.press('Escape');
-  await page.goto(`${test.info().project.use.baseURL}/patternfly/`); await ready(page);
+  await page.goto(`${test.info().project.use.baseURL}/${oldest.id}/`); await ready(page);
   await expect(page.getByRole('button',{name:'次のデザインシステム',exact:true})).toBeDisabled();
   await swipe(-100);
-  await expect(page).toHaveURL(/\/patternfly\/$/);
+  await expect(page).toHaveURL(new RegExp(`/${oldest.id}/$`));
   await context.close();
 });
 
@@ -253,4 +256,20 @@ test('mobile details start at top and returning restores the list scroll offset'
   await expect.poll(()=>page.locator('.workspace').evaluate(e=>e.scrollTop)).toBe(before);
   await row.click();
   await expect.poll(()=>page.locator('.workspace').evaluate(e=>e.scrollTop)).toBe(0);
+});
+
+
+test('every system has a bilingual feature description and official source', async ({page}) => {
+  for(const system of systems) {
+    expect(system.description.ja,system.id).toMatch(/\S/);
+    expect(system.description.en,system.id).toMatch(/\S/);
+    expect(system.descriptionSourceUrl,system.id).toMatch(/^https:\/\//);
+  }
+  await page.goto('/cloudscape/'); await ready(page);
+  const description=page.locator('.system-description');
+  await expect(description).toHaveText(systems.find(s=>s.id==='cloudscape').description.ja);
+  await page.getByRole('button',{name:'English',exact:true}).click();
+  await expect(description).toHaveText(systems.find(s=>s.id==='cloudscape').description.en);
+  await page.goto('/reactaria/'); await ready(page);
+  await expect(description).toHaveText(systems.find(s=>s.id==='reactaria').description.en);
 });

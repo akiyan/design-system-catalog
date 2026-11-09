@@ -70,3 +70,6 @@ a.system-row{cursor:pointer}
 .language-control button[aria-pressed="true"]{background:var(--blue);color:#fff;font-weight:650}
 .language-control button:hover:not([aria-pressed="true"]){background:#edf1f7}
 @media(max-width:700px){.language-control{width:auto;margin:0;gap:0}.language-control button{font-size:10px;min-height:30px;padding:4px 6px}}
+
+.system-description{font-size:14px;line-height:1.8;color:#495568;margin:-4px 0 18px;max-width:70ch}
+@media(max-width:700px){.system-description{font-size:12px;line-height:1.8;margin:-3px 0 15px}}

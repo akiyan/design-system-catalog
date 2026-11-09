@@ -283,6 +283,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
           </nav>
         </div>
         <div className="preview-heading"><h1>{systemName(selected, language)}</h1><a ref={officialLink} className="official-link" href={selected.url} target="_blank" rel="noopener noreferrer"><ArrowSquareOut size={21} />{t.official}<span className="sr-only"> ({t.newTab})</span></a></div>
+        <p className="system-description">{selected.description[language]}</p>
         <button type="button" disabled={!ready} className="main-preview" aria-label={`${systemName(selected, language)} — ${t.enlarge}`} onTouchStart={startSwipe} onTouchMove={event => { if (event.touches.length !== 1) swipeStart.current = null; }} onTouchEnd={endSwipe} onTouchCancel={() => { swipeStart.current = null; }} onClick={() => { if (Date.now() >= ignorePreviewClickUntil.current) setZoomOpen(true); }}><PreviewImage system={selected} index={activeView} language={language} width="1440" height="1000" /><span className="enlarge-label">{t.enlarge}<ArrowSquareOut size={15} /></span></button>
         <div className="preview-thumbnails" aria-label={t.views}>
           {selected.views.map((view, index) => <button type="button" disabled={!ready} key={view.url} className={`view-thumbnail ${activeView === index ? 'active' : ''}`} aria-pressed={activeView === index} onClick={() => setViewIndex(index)}><PreviewImage system={selected} index={index} language={language} width="1440" height="1000" loading="lazy" /><span>{viewLabel(selected, index, language)}</span></button>)}

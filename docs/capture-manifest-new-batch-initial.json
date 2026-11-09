@@ -1,0 +1,249 @@
+{
+  "capturedAt": "2026-11-09T14:55:15.310Z",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "results": [
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://f36.contentful.com/",
+      "id": "forma36",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://f36.contentful.com/",
+      "title": "Forma 36 - The Contentful Design System"
+    },
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://atlassian.design/",
+      "id": "atlassian",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://atlassian.design/",
+      "title": "Atlassian Design"
+    },
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://airtable.com/developers/extensions/api/UI/Style%20System/All%20styles",
+      "id": "airtable",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://airtable.com/developers/extensions/api/UI/Style%20System/All%20styles",
+      "title": "AllStylesProps - Airtable Blocks SDK"
+    },
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://evergreen.segment.com/",
+      "id": "evergreen",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://evergreen.segment.com/",
+      "title": "Evergreen"
+    },
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://www.lightningdesignsystem.com/",
+      "id": "lightning",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://www.lightningdesignsystem.com/2e1ef8501/p/85bd85-lightning-design-system-2",
+      "title": "Lightning Design System 2"
+    },
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://decathlon.github.io/vitamin-web/",
+      "id": "vitamin",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://decathlon.github.io/vitamin-web/",
+      "title": "Decathlon Design System - Vitamin web libraries showcases"
+    },
+    {
+      "label": "公式リポジトリ",
+      "labelEn": "Official repository",
+      "url": "https://github.com/kiwicom/orbit",
+      "id": "orbit",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://github.com/kiwicom/orbit",
+      "title": "GitHub - kiwicom/orbit: React components of open-source Orbit design system by Kiwi.com · GitHub"
+    },
+    {
+      "label": "公開紹介",
+      "labelEn": "Publication story",
+      "url": "https://note.com/i_chi_/n/ncca0c857f21a",
+      "id": "apron",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://note.com/i_chi_/n/ncca0c857f21a",
+      "title": "デザインシステムは、作ってからが本番。｜いちはら"
+    },
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://vibe.monday.com/",
+      "id": "monday",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://vibe.monday.com/?path=/docs/welcome--docs",
+      "title": "Welcome - Docs ⋅ Storybook"
+    },
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://finastra.github.io/finastra-design-system/",
+      "id": "finastra",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://finastra.github.io/finastra-design-system/?path=/story/welcome--page",
+      "title": "Welcome - Page ⋅ Storybook"
+    },
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://lion.js.org/",
+      "id": "lion",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://lion.js.org/",
+      "title": "Lion - Fundamental White Label Web Components"
+    },
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://boosted.orange.com/",
+      "id": "boosted",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://boosted.orange.com/",
+      "title": "Boosted · Orange Boosted with Bootstrap is a Bootstrap based, Orange branded accessible and ergonomic components library…"
+    },
+    {
+      "label": "デザイン活動",
+      "labelEn": "Design practice",
+      "url": "https://www.dbs.com/design/work",
+      "id": "dbs",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://www.dbs.com/design/work",
+      "title": "Our work - digibank, iWealth, digiportfolio, Peek Balance & more"
+    },
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://developers.arcgis.com/calcite-design-system/",
+      "id": "calcite",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://developers.arcgis.com/calcite-design-system/",
+      "title": "Calcite Design System | Esri Developer"
+    },
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://design.liferay.com/lexicon/",
+      "id": "lexicon",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://design.liferay.com/lexicon",
+      "title": "Liferay Lexicon | An Experience Language for Crafting Beautiful UI"
+    },
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://vaadin.com/design-system",
+      "id": "vaadin",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://vaadin.com/design-system",
+      "title": "Design System | Vaadin"
+    },
+    {
+      "label": "公開紹介",
+      "labelEn": "Publication story",
+      "url": "https://note.com/kasane_s21/n/n17b9e522506c",
+      "id": "falcon",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://note.com/kasane_s21/n/n17b9e522506c",
+      "title": "プロダクトと共に成長するデザインシステム｜kasane.shindo"
+    },
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://public-ui.github.io/",
+      "id": "kolibri",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://public-ui.github.io/",
+      "title": "Die barrierefreie Web Component Bibliothek | KoliBri - Public UI"
+    },
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://uikit.wfp.org/docs/index.html",
+      "id": "wfp",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://uikit.wfp.org/docs/index.html?path=/story/getting-started-intro--page",
+      "title": "Getting started / Intro - Page ⋅ Storybook"
+    },
+    {
+      "label": "公式リポジトリ",
+      "labelEn": "Official repository",
+      "url": "https://github.com/GouvernementFR/dsfr",
+      "id": "dsfr",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://github.com/GouvernementFR/dsfr",
+      "title": "GitHub - GouvernementFR/dsfr: 🇫🇷 Official french government's design system (Système de Design de l'État) · GitHub"
+    },
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://react-aria.adobe.com/",
+      "id": "reactaria",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://react-aria.adobe.com/",
+      "title": "React Aria"
+    },
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://ariakit.com/",
+      "id": "ariakit",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://ariakit.com/",
+      "title": "Ariakit - Toolkit for building accessible UIs"
+    },
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://bits-ui.com/",
+      "id": "bitsui",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://bits-ui.com/",
+      "title": "Bits UI – Headless components for Svelte"
+    },
+    {
+      "label": "概要",
+      "labelEn": "Overview",
+      "url": "https://kobalte.dev/",
+      "id": "kobalte",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://kobalte.dev/docs/core/overview/introduction",
+      "title": "Kobalte"
+    }
+  ]
+}
