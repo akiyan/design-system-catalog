@@ -14,3 +14,9 @@ Production deployment: https://984a8fd2.design-system-catalog-925.pages.dev
 
 Cloudflare reports a successful deployment with no Functions.
 All 12 browser tests also passed against the production URL, including every catalog permalink and added source capture.
+
+## Mobile sequential browsing
+
+Status: PASS. Reviewed `mobile-system-navigation.png` and `mobile-unselected-list.png` at 390×844. The mobile list has no selected border or current-page marker. Details show back-to-list, previous/next controls and a category-relative position. Verified English at 320px without horizontal overflow. Desktop layout is unchanged.
+
+All 14 tests passed locally. Real Chromium touch events verify left/right swipe navigation, list boundaries, vertical-scroll gestures and tap-to-zoom without accidental zoom after swiping. Category-aware buttons and native path links are covered.

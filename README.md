@@ -12,6 +12,7 @@ A visual catalog of 43 public design systems with screenshots from their officia
 - Static paths such as `/astryx/` with client navigation and Back/Forward support
 - Keyboard shortcuts and a `?` help overlay
 - Screenshot switching and enlarged previews
+- Mobile previous/next browsing and horizontal swipes on the main preview
 
 ## Development / 開発
 
@@ -81,7 +82,7 @@ npm test
 TEST_BASE_URL=http://127.0.0.1:4174 npm test
 ```
 
-The 12 browser tests cover publication order/evidence, all static paths, navigation without JavaScript, history, automatic/manual languages, keyboard shortcuts, modal focus, image loading and mobile layout. Use `node scripts/capture-qa.mjs` for visual evidence.
+The 14 browser tests cover publication order/evidence, all static paths, navigation without JavaScript, history, automatic/manual languages, keyboard shortcuts, modal focus, image loading and mobile layout. Use `node scripts/capture-qa.mjs` for visual evidence.
 
 ## License and sources / ライセンスと出典
 

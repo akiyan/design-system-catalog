@@ -37,3 +37,9 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - For public documentation whose code or assets are restricted, state the actual reuse conditions rather than describing it as freely reusable OSS.
 
 - Deduplicate Digital Agency Design System when adding the second supplied list.
+
+## Mobile browsing
+
+- Do not show a selected/current-page state on mobile list rows. Each row opens the detail view.
+- Mobile details provide previous/next system navigation and position within the active category. Stop at list boundaries.
+- Horizontal swipes on the main preview navigate systems (left advances, right goes back). Preserve vertical scrolling and pinch zoom. Screenshot thumbnails continue to switch captures within a system.

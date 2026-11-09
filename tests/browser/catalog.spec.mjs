@@ -183,3 +183,56 @@ test('requested additions have source previews, dates, and separate Semi/Arco en
   await expect(page.locator('.release-info')).toContainText('2023-12-19');
   await expect(page.locator('.github-link')).toHaveAttribute('href','https://github.com/akiyan/design-system-catalog');
 });
+
+test('mobile list has no selected state and detail buttons browse the active category', async ({page}) => {
+  await page.setViewportSize({width:390,height:844});
+  await page.goto('/'); await ready(page);
+  await expect(page.locator('.system-row.selected, .system-row[aria-current]')).toHaveCount(0);
+  await page.getByRole('button',{name:'政府・公共 12',exact:true}).click();
+  await page.locator('.system-row').first().click();
+  await expect(page.getByRole('button',{name:'前のデザインシステム',exact:true})).toBeDisabled();
+  await expect(page.locator('.system-position')).toHaveText('1 / 12');
+  await page.getByRole('link',{name:'次のデザインシステム',exact:true}).click();
+  await expect(page).toHaveURL(/\/dads\/$/);
+  await expect(page.locator('.system-position')).toHaveText('2 / 12');
+  await page.getByRole('link',{name:'前のデザインシステム',exact:true}).click();
+  await expect(page).toHaveURL(/\/canada\/$/);
+  await page.getByRole('combobox').selectOption('en');
+  await page.setViewportSize({width:320,height:740});
+  await expect(page.getByRole('link',{name:'Next design system',exact:true})).toBeVisible();
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+  await page.getByRole('button',{name:'Back to list',exact:true}).click();
+  await expect(page.locator('.system-row.selected, .system-row[aria-current]')).toHaveCount(0);
+});
+
+test('touch swipes browse systems without opening zoom, vertical gestures and taps stay distinct', async ({browser}) => {
+  const context=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true,locale:'ja-JP'});
+  const page=await context.newPage();
+  await page.goto(`${test.info().project.use.baseURL}/astryx/`); await ready(page);
+  const client=await context.newCDPSession(page);
+  async function swipe(dx,dy=0) {
+    const box=await page.locator('.main-preview').boundingBox();
+    const x=box.x+box.width/2,y=box.y+box.height/2;
+    await client.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x,y}]});
+    for(let i=1;i<=5;i++) await client.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:x+dx*i/5,y:y+dy*i/5}]});
+    await client.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
+  }
+  await swipe(-100);
+  await expect(page).toHaveURL(/\/kumo\/$/);
+  await expect(page.locator('.zoom-dialog')).not.toBeVisible();
+  await swipe(100);
+  await expect(page).toHaveURL(/\/astryx\/$/);
+  await swipe(100); // First item remains at the boundary.
+  await expect(page).toHaveURL(/\/astryx\/$/);
+  await swipe(10,-90);
+  await expect(page).toHaveURL(/\/astryx\/$/);
+  await page.waitForTimeout(550);
+  await page.locator('.main-preview').tap();
+  await expect(page.locator('.zoom-dialog')).toBeVisible();
+  await page.keyboard.press('Escape');
+  await page.goto(`${test.info().project.use.baseURL}/patternfly/`); await ready(page);
+  await expect(page.getByRole('button',{name:'次のデザインシステム',exact:true})).toBeDisabled();
+  await swipe(-100);
+  await expect(page).toHaveURL(/\/patternfly\/$/);
+  await context.close();
+});

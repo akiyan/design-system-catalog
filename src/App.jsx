@@ -33,6 +33,9 @@ function trapDialogFocus(event) {
 
 export function App({ githubUrl = 'https://github.com/akiyan/design-system-catalog', initialId = null }) {
   const [ready, setReady] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const swipeStart = useRef(null);
+  const ignorePreviewClickUntil = useRef(0);
   const [language, setLanguage] = useState('ja');
   const [languagePreference, setLanguagePreference] = useState('auto');
   const [category, setCategory] = useState('all');
@@ -49,6 +52,14 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
   const filtered = systems.filter(s => category === 'all' || s.category === category);
   const selected = systems.find(s => s.id === selectedId) || systems[0];
   const activeView = selected.views[viewIndex] ? viewIndex : 0;
+
+  useEffect(() => {
+    const media = window.matchMedia('(max-width: 700px)');
+    const update = () => setIsMobile(media.matches);
+    update();
+    media.addEventListener('change', update);
+    return () => media.removeEventListener('change', update);
+  }, []);
 
   useEffect(() => {
     let preference = 'auto';
@@ -127,6 +138,32 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
     if (id !== 'all' && selected.category !== id) {
       selectSystem(systems.find(s => s.category === id), { showDetail: false });
     }
+  }
+
+  const selectedIndex = filtered.findIndex(system => system.id === selected.id);
+  const previousSystem = filtered[selectedIndex - 1];
+  const nextSystem = filtered[selectedIndex + 1];
+
+  function navigateAdjacent(system) {
+    if (!system) return;
+    selectSystem(system);
+    document.querySelector('.workspace')?.scrollTo({ top: 0, behavior: 'instant' });
+  }
+
+  function startSwipe(event) {
+    swipeStart.current = isMobile && event.touches.length === 1
+      ? { x: event.touches[0].clientX, y: event.touches[0].clientY } : null;
+  }
+
+  function endSwipe(event) {
+    const start = swipeStart.current;
+    swipeStart.current = null;
+    if (!start || event.touches.length || event.changedTouches.length !== 1) return;
+    const dx = event.changedTouches[0].clientX - start.x;
+    const dy = event.changedTouches[0].clientY - start.y;
+    if (Math.abs(dx) < 60 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
+    ignorePreviewClickUntil.current = Date.now() + 500;
+    navigateAdjacent(dx < 0 ? nextSystem : previousSystem);
   }
 
   function movePreview(direction) {
@@ -208,7 +245,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
       <section id="catalog-list" className="catalog-list" aria-label={t.list} tabIndex={-1}>
         <div className="list-toolbar"><span>{t.newest}</span><span>{filtered.length}</span></div>
         <p className="sr-only" role="status">{filtered.length} {t.count} — {systemName(selected, language)}</p>
-        {filtered.map(s => <a key={s.id} href={systemPath(s)} ref={element => { rowRefs.current[s.id] = element; }} tabIndex={selected.id === s.id ? 0 : -1} className={`system-row ${selected.id === s.id ? 'selected' : ''}`} aria-current={selected.id === s.id ? 'page' : undefined}
+        {filtered.map(s => <a key={s.id} href={systemPath(s)} ref={element => { rowRefs.current[s.id] = element; }} tabIndex={isMobile || selected.id === s.id ? 0 : -1} className={`system-row ${!isMobile && selected.id === s.id ? 'selected' : ''}`} aria-current={!isMobile && selected.id === s.id ? 'page' : undefined}
           onClick={event => {
             if (!ready || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return;
             event.preventDefault();
@@ -222,9 +259,16 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
         </a>)}
       </section>
       <section className="preview-panel" aria-label={t.preview}>
-        <button className="back-to-list text-button" onClick={() => { setMobilePreview(false); requestAnimationFrame(() => rowRefs.current[selected.id]?.focus()); }}><ArrowLeft size={18} />{t.back}</button>
+        <div className="mobile-detail-toolbar">
+          <button className="back-to-list text-button" onClick={() => { setMobilePreview(false); requestAnimationFrame(() => rowRefs.current[selected.id]?.focus()); }}><ArrowLeft size={18} />{t.back}</button>
+          <nav className="system-navigation" aria-label={t.browseSystems}>
+            {previousSystem ? <a href={systemPath(previousSystem)} aria-label={t.previousSystem} onClick={event => { if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0 || !ready) return; event.preventDefault(); navigateAdjacent(previousSystem); }}><CaretLeft size={18} />{t.previousShort}</a> : <button disabled aria-label={t.previousSystem}><CaretLeft size={18} />{t.previousShort}</button>}
+            <span className="system-position" role="status">{selectedIndex + 1} / {filtered.length}</span>
+            {nextSystem ? <a href={systemPath(nextSystem)} aria-label={t.nextSystem} onClick={event => { if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0 || !ready) return; event.preventDefault(); navigateAdjacent(nextSystem); }} >{t.nextShort}<CaretRight size={18} /></a> : <button disabled aria-label={t.nextSystem}>{t.nextShort}<CaretRight size={18} /></button>}
+          </nav>
+        </div>
         <div className="preview-heading"><h1>{systemName(selected, language)}</h1><a ref={officialLink} className="official-link" href={selected.url} target="_blank" rel="noopener noreferrer"><ArrowSquareOut size={21} />{t.official}<span className="sr-only"> ({t.newTab})</span></a></div>
-        <button type="button" disabled={!ready} className="main-preview" aria-label={`${systemName(selected, language)} — ${t.enlarge}`} onClick={() => setZoomOpen(true)}><PreviewImage system={selected} index={activeView} language={language} width="1440" height="1000" /><span className="enlarge-label">{t.enlarge}<ArrowSquareOut size={15} /></span></button>
+        <button type="button" disabled={!ready} className="main-preview" aria-label={`${systemName(selected, language)} — ${t.enlarge}`} onTouchStart={startSwipe} onTouchMove={event => { if (event.touches.length !== 1) swipeStart.current = null; }} onTouchEnd={endSwipe} onTouchCancel={() => { swipeStart.current = null; }} onClick={() => { if (Date.now() >= ignorePreviewClickUntil.current) setZoomOpen(true); }}><PreviewImage system={selected} index={activeView} language={language} width="1440" height="1000" /><span className="enlarge-label">{t.enlarge}<ArrowSquareOut size={15} /></span></button>
         <div className="preview-thumbnails" aria-label={t.views}>
           {selected.views.map((view, index) => <button type="button" disabled={!ready} key={view.url} className={`view-thumbnail ${activeView === index ? 'active' : ''}`} aria-pressed={activeView === index} onClick={() => setViewIndex(index)}><PreviewImage system={selected} index={index} language={language} width="1440" height="1000" loading="lazy" /><span>{viewLabel(selected, index, language)}</span></button>)}
         </div>
