@@ -98,3 +98,13 @@ All 11 tests pass against built static output on port 4174. They cover all 15 di
 No actionable P0/P1/P2 visual differences remain. Existing expected source-site screenshot differences remain applicable. Full publication evidence is stored with each entry in `src/data/systems.json`; reference dates remain visibly marked.
 
 final result: passed
+
+## Public verification of the feature update
+
+Updated production deployment: https://c5a94304.design-system-catalog-925.pages.dev/
+Canonical URL: https://design-system-catalog-925.pages.dev/
+Repository: https://github.com/akiyan/design-system-catalog (public, main).
+Cloudflare reports successful deployment with `uses_functions: false`.
+The homepage and direct paths `/astryx/` and `/dads/` return HTTP 200 with the new controls and no keyword search field. All 11 tests pass against the canonical public URL, including the 15 static routes and navigation without JavaScript.
+
+final result: passed
