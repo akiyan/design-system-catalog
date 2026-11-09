@@ -80,3 +80,5 @@ Status: PASS for the local static build. The user's corrected intent supersedes 
 Validation: all 181 specimen routes rendered successfully, recorded in `specimen-validation.json`. The 77 browser tests cover real save events, editable text, checkbox keyboard changes, disabled states, isolation, static permalinks, shared specimen categories, language persistence, mobile navigation/swipes and the existing catalog behavior. Enlarged iframe inputs forward Escape and close the overlay. Static build contains 249 HTML pages and uses no server or Pages Functions.
 
 Evidence: `specimen-desktop.png`, `specimen-dads.png`, `specimen-mobile-list.png`, `specimen-mobile-detail.png`, `specimen-english.png`, `specimen-zoom.png`. Package provenance is recorded in `specimen-provenance.json`; vendored sources keep license/source metadata.
+
+Production verification: all 77 tests passed against https://design-system-catalog-925.pages.dev in 27.7 seconds after deployment to https://cb8a67c6.design-system-catalog-925.pages.dev. This includes all genuine adapters and the catalog/mobile regression checks.
