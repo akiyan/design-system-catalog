@@ -5,12 +5,12 @@ import { messages, detectLanguage } from './i18n';
 import SpecimenFrame from './SpecimenFrame';
 
 const categories = ['all', 'public', 'oss'];
-const imagePath = (system, index = 0) => `/specimens/thumbnails/${system.id}-${system.views[index]?.key || 'overview'}.webp`;
+const imagePath = (system, index = 0, compact = false) => `/specimens/${compact ? 'list-thumbnails' : 'thumbnails'}/${system.id}-${system.views[index]?.key || 'overview'}.webp`;
 const viewLabel = (system, index, language) => language === 'en' ? system.views[index].labelEn : system.views[index].label;
 
-function PreviewImage({ system, index = 0, language, ...props }) {
+function PreviewImage({ system, index = 0, language, compact = false, ...props }) {
   const [failed, setFailed] = useState(false);
-  const src = imagePath(system, index);
+  const src = imagePath(system, index, compact);
   const t = messages[language];
   useEffect(() => setFailed(false), [src]);
   if(system.specimen.status!=='ready')return <span className="image-unavailable implementation-unavailable"><Cube size={28} weight="light"/><span>{system.specimen.status==='design-only'?t.designResources:t.integrationLimited}</span></span>;
@@ -125,14 +125,14 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
     } catch { /* Language switching also works without persistent storage. */ }
   }
 
-  function selectSystem(system, { showDetail = true, focus = false } = {}) {
+  function selectSystem(system, { showDetail = true, focus = false, resetView = false } = {}) {
     if (isMobile && showDetail) {
       if (!mobilePreview) listScrollTop.current = workspace.current?.scrollTop || 0;
       requestAnimationFrame(() => workspace.current?.scrollTo({ top: 0, behavior: 'instant' }));
     }
     const key=selected.views[activeView]?.key;
     setSelectedId(system.id);
-    setViewIndex(Math.max(0,system.views.findIndex(view=>view.key===key)));
+    setViewIndex(resetView ? 0 : Math.max(0,system.views.findIndex(view=>view.key===key)));
     setMobilePreview(showDetail);
     const path = systemPath(system);
     if (location.pathname !== path) history.pushState({ system: system.id }, '', path);
@@ -167,7 +167,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
 
   function navigateAdjacent(system) {
     if (!system) return;
-    selectSystem(system);
+    selectSystem(system, { resetView: true });
     document.querySelector('.workspace')?.scrollTo({ top: 0, behavior: 'instant' });
   }
 
@@ -220,7 +220,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
       if (nextIndex !== undefined) {
         event.preventDefault();
         const isMobileDetail = mobilePreview && window.matchMedia('(max-width: 700px)').matches;
-        selectSystem(filtered[nextIndex], { showDetail: mobilePreview, focus: !isMobileDetail });
+        selectSystem(filtered[nextIndex], { showDetail: mobilePreview, focus: !isMobileDetail, resetView: true });
       } else if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
         event.preventDefault();
         movePreview(event.key === 'ArrowRight' ? 1 : -1);
@@ -273,7 +273,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
             event.preventDefault();
             selectSystem(s);
           }}>
-          <span className="row-image"><PreviewImage system={s} index={Math.max(0,s.views.findIndex(view=>view.key===selected.views[activeView]?.key))} language={language} loading={s.id === selected.id ? 'eager' : 'lazy'} width="1440" height="1000" /></span>
+          <span className="row-image"><PreviewImage compact system={s} index={Math.max(0,s.views.findIndex(view=>view.key===selected.views[activeView]?.key))} language={language} loading={s.id === selected.id ? 'eager' : 'lazy'} width="1440" height="1000" /></span>
           <span className="row-copy"><span className="system-name">{systemName(s, language)}</span>
             <span className="system-meta"><span>{language === 'en' ? s.countryEn : s.country}</span><span className="meta-divider" aria-hidden="true" /><span>{t[s.category]}</span></span>
             <span className="release-line"><time dateTime={s.published.date}>{s.published.date}</time>{s.published.estimated && <span className="date-reference">{t.reference}</span>}</span>

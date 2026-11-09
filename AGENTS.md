@@ -65,4 +65,10 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Render live interactive specimens in details; generate thumbnails from those same local specimens. Provide consistent component categories such as buttons, forms and typography.
 - Headless libraries retain their actual unstyled appearance; do not invent a branded theme. Systems with no public implementation must say so clearly and link to their public design resources rather than show a fabricated equivalent.
 
-- Preserve the active specimen category when switching systems where supported. List thumbnails follow the same specimen category to support visual comparison.
+- Keep an overview specimen first for every integrated system. Combine genuine typography, buttons and form controls using shared content.
+- Previous/next navigation, swipes and keyboard system navigation reset the specimen selection to the first overview. Direct list selection may preserve the active specimen category where supported. List thumbnails follow the selected specimen category.
+
+- List thumbnails use compact captures of the same genuine specimens fitted to 480×224. Adapt the capture viewport to the natural specimen height so controls are not cropped. Remove repeated specimen chrome and arrange sample sections tightly so components remain legible at list size. Keep full specimen captures for the detail view selectors.
+
+- Add dedicated table and alert specimen categories using each library’s genuine implementation where supported. Use shared table rows and informational/success/warning messages.
+- Publish static robots.txt and llms.txt. List public catalog paths in a sitemap; exclude specimen-only HTML from crawler indexing while allowing thumbnail images.

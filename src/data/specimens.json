@@ -8,7 +8,8 @@
     "views": [
       "overview",
       "buttons",
-      "form"
+      "form",
+      "alerts"
     ]
   },
   "govuk": {
@@ -21,7 +22,8 @@
       "overview",
       "buttons",
       "form",
-      "typography"
+      "typography",
+      "table"
     ],
     "unstyled": false
   },
@@ -35,7 +37,9 @@
       "overview",
       "buttons",
       "form",
-      "typography"
+      "typography",
+      "table",
+      "alerts"
     ],
     "unstyled": false
   },
@@ -48,7 +52,9 @@
     "views": [
       "overview",
       "buttons",
-      "form"
+      "form",
+      "table",
+      "alerts"
     ],
     "unstyled": false
   },
@@ -75,7 +81,9 @@
       "overview",
       "buttons",
       "form",
-      "typography"
+      "typography",
+      "table",
+      "alerts"
     ],
     "unstyled": false
   },
@@ -101,7 +109,9 @@
     "views": [
       "overview",
       "buttons",
-      "form"
+      "form",
+      "table",
+      "alerts"
     ],
     "unstyled": false
   },
@@ -128,7 +138,9 @@
       "overview",
       "buttons",
       "form",
-      "typography"
+      "typography",
+      "table",
+      "alerts"
     ],
     "unstyled": false
   },
@@ -142,7 +154,9 @@
       "overview",
       "buttons",
       "form",
-      "typography"
+      "typography",
+      "table",
+      "alerts"
     ],
     "unstyled": false
   },
@@ -267,6 +281,7 @@
     "version": "140.0.0",
     "sourceUrl": "https://www.npmjs.com/package/@gitlab/ui",
     "views": [
+      "overview",
       "buttons",
       "form"
     ],
@@ -281,9 +296,15 @@
     "views": [
       "overview",
       "buttons",
-      "form"
+      "form",
+      "table",
+      "alerts"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "alertTones": [
+      "info",
+      "warning"
+    ]
   },
   "wise": {
     "status": "ready",
@@ -307,7 +328,9 @@
     "views": [
       "overview",
       "buttons",
-      "form"
+      "form",
+      "table",
+      "alerts"
     ],
     "unstyled": false
   },
@@ -320,7 +343,9 @@
     "views": [
       "overview",
       "buttons",
-      "form"
+      "form",
+      "table",
+      "alerts"
     ],
     "unstyled": false
   },
@@ -333,7 +358,9 @@
     "views": [
       "overview",
       "buttons",
-      "form"
+      "form",
+      "table",
+      "alerts"
     ],
     "unstyled": false
   },
@@ -346,7 +373,9 @@
     "views": [
       "overview",
       "buttons",
-      "form"
+      "form",
+      "table",
+      "alerts"
     ],
     "unstyled": false
   },
@@ -360,7 +389,9 @@
       "overview",
       "buttons",
       "form",
-      "typography"
+      "typography",
+      "table",
+      "alerts"
     ],
     "unstyled": false
   },
@@ -373,7 +404,9 @@
     "views": [
       "overview",
       "buttons",
-      "form"
+      "form",
+      "table",
+      "alerts"
     ],
     "unstyled": false
   },
@@ -386,7 +419,9 @@
     "views": [
       "overview",
       "buttons",
-      "form"
+      "form",
+      "table",
+      "alerts"
     ],
     "unstyled": false,
     "notice": {
@@ -416,7 +451,9 @@
     "views": [
       "overview",
       "buttons",
-      "form"
+      "form",
+      "table",
+      "alerts"
     ],
     "unstyled": false
   },
@@ -474,7 +511,9 @@
     "views": [
       "overview",
       "buttons",
-      "form"
+      "form",
+      "table",
+      "alerts"
     ],
     "unstyled": false
   },
@@ -487,7 +526,9 @@
     "views": [
       "overview",
       "buttons",
-      "form"
+      "form",
+      "table",
+      "alerts"
     ],
     "unstyled": false
   },
@@ -513,7 +554,8 @@
     "views": [
       "overview",
       "buttons",
-      "form"
+      "form",
+      "alerts"
     ],
     "unstyled": false
   },
@@ -527,7 +569,9 @@
       "overview",
       "buttons",
       "form",
-      "typography"
+      "typography",
+      "table",
+      "alerts"
     ],
     "unstyled": false
   },
@@ -553,7 +597,8 @@
     "views": [
       "overview",
       "buttons",
-      "form"
+      "form",
+      "table"
     ],
     "unstyled": false,
     "notice": {
@@ -570,7 +615,9 @@
     "views": [
       "overview",
       "buttons",
-      "form"
+      "form",
+      "table",
+      "alerts"
     ],
     "unstyled": false
   },
@@ -583,7 +630,8 @@
     "views": [
       "overview",
       "buttons",
-      "form"
+      "form",
+      "alerts"
     ],
     "unstyled": false
   },
@@ -628,7 +676,8 @@
     "views": [
       "overview",
       "buttons",
-      "form"
+      "form",
+      "alerts"
     ]
   },
   "apron": {
@@ -648,7 +697,9 @@
     "version": "1.8.1",
     "sourceUrl": "https://www.npmjs.com/package/@finastra/button",
     "views": [
-      "buttons"
+      "overview",
+      "buttons",
+      "form"
     ],
     "unstyled": false
   },
@@ -675,7 +726,9 @@
       "overview",
       "buttons",
       "form",
-      "typography"
+      "typography",
+      "table",
+      "alerts"
     ],
     "unstyled": false
   },
@@ -759,7 +812,9 @@
       "overview",
       "buttons",
       "form",
-      "typography"
+      "typography",
+      "table",
+      "alerts"
     ],
     "unstyled": false
   },
@@ -796,6 +851,7 @@
     "version": "0.13.14",
     "sourceUrl": "https://www.npmjs.com/package/@kobalte/core",
     "views": [
+      "overview",
       "buttons",
       "form"
     ],
@@ -808,6 +864,7 @@
     "version": "2.20.6",
     "sourceUrl": "https://www.npmjs.com/package/bits-ui",
     "views": [
+      "overview",
       "buttons",
       "form"
     ],

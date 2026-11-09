@@ -1,2 +1,2 @@
-import React from'react';import'@finastra/button';import kit from'../react-kit';
-export default kit({sizes:false,Button:({variant,children,...p})=>React.createElement(variant==='secondary'?'fds-outlined-button':variant==='text'?'fds-text-button':'fds-button',{...p,label:children})});
+import React from'react';import'@finastra/button';import'@finastra/textfield';import kit from'../react-kit';import Control from'../web-control';
+export default kit({sizes:false,Button:({variant,children,...p})=>React.createElement(variant==='secondary'?'fds-outlined-button':variant==='text'?'fds-text-button':'fds-button',{...p,label:children}),Input:({onValueChange,...p})=><Control tag="fds-textfield" label={p['aria-label']} value={p.value} disabled={p.disabled} onValueChange={onValueChange}/>});

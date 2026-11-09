@@ -106,3 +106,13 @@ Run `npm run build` and a local preview, then `TEST_BASE_URL=http://127.0.0.1:41
 Published implementations may lag the latest design guidelines. For example the public Lightning CSS package implements SLDS 1 and the published Polaris React package is archived. Their specimen notices state this.
 
 Third-party packages retain their respective licenses. Vendored Digital Agency source preserves its MIT license. Vendored public CFPB/Bristol styles and their fonts retain their original terms and source metadata in `src/specimens/vendor/`. Generated specimen thumbnails depict those third-party components and are excluded from the catalog code's MIT license.
+
+## Overview, tables and alerts
+
+Every integrated system starts with an overview combining typography, buttons and form controls. Previous/next controls, horizontal swipes and keyboard system navigation reset to this overview. Direct list selection preserves the current component category where supported. Dedicated table examples are available for 23 implementations and alert examples for 25. Only supported official variants are rendered.
+
+List images are compact 480×224 captures with an adaptive viewport under `public/specimens/list-thumbnails/`, with shared sample sections arranged for legibility at thumbnail size. Detail selectors retain full specimen captures under `public/specimens/thumbnails/`. Both use the same official components.
+
+`/robots.txt`, `/llms.txt` and `/sitemap.xml` are static Astro endpoints. The sitemap includes the homepage and all catalog paths. Robots rules exclude specimen HTML while allowing thumbnail images. The LLM guide includes descriptions and source links generated from catalog data.
+
+The LLM guide follows the [llms.txt proposal](https://llmstxt.org/). `LIST_ONLY=1` regenerates compact images without replacing full captures; `VIEWS=overview` restricts a capture run to overview specimens.

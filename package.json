@@ -46,6 +46,7 @@
     "@emotion/styled": "^11.14.1",
     "@esri/calcite-components": "^5.2.1",
     "@finastra/button": "^1.8.1",
+    "@finastra/textfield": "^1.8.1",
     "@fluentui/react-components": "^9.75.1",
     "@freee_jp/vibes": "^100.1.0",
     "@gcds-core/components": "^1.7.0",

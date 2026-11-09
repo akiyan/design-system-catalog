@@ -82,3 +82,17 @@ Validation: all 181 specimen routes rendered successfully, recorded in `specimen
 Evidence: `specimen-desktop.png`, `specimen-dads.png`, `specimen-mobile-list.png`, `specimen-mobile-detail.png`, `specimen-english.png`, `specimen-zoom.png`. Package provenance is recorded in `specimen-provenance.json`; vendored sources keep license/source metadata.
 
 Production verification: all 77 tests passed against https://design-system-catalog-925.pages.dev in 27.7 seconds after deployment to https://cb8a67c6.design-system-catalog-925.pages.dev. This includes all genuine adapters and the catalog/mobile regression checks.
+
+## Mixed overview, dense list images and more components
+
+Every integrated system now starts with an overview combining typography, buttons and form fields. The four implementations that previously started with a single component category also have overview routes. Finastra now includes its official text-field package. Shared previous/next controls, swipes and keyboard system selection reset the view to overview; direct list selection retains supported component categories.
+
+The list uses a separate compact capture of the genuine specimen. Repeated header/status chrome is hidden, section layout is compact, and the capture viewport adapts to the specimen's natural height. Each image fits 480×224 without cutting off controls. Full captures remain in the detail selectors. List image proportions are consistent on desktop and mobile.
+
+Dedicated table examples are available for 23 implementations; alert examples for 25. All use official components or documented framework markup. Shared table rows and message text make comparisons meaningful. Unsupported alert variants are omitted (for example Paste has neutral and warning examples). Evergreen's legacy table imports require the removed ReactDOM.render API and are excluded; its existing components and alerts remain available.
+
+Crawler resources are prerendered static files. The sitemap includes 68 catalog paths. Robots rules disallow specimen-only HTML while allowing thumbnail folders. The llms.txt guide is generated from catalog data and links to every public catalog entry and source metadata.
+
+Source capture reports contain 234 successful full specimens and 234 successful compact specimens. Regression coverage includes mixed overview content, previous/next reset after typography selection, table/alert content, crawler files and keyboard input through shadow DOM.
+
+Final local verification: PASS. All 128 browser tests passed in 10.6 seconds. Reviewed the 58-entry compact overview contact sheet and refreshed desktop/mobile/English/zoom screenshots. Representative table and alert captures retain official styles and show the shared content. The build emits 302 static HTML pages plus robots.txt, llms.txt and sitemap.xml. No server runtime or Pages Functions are introduced.
