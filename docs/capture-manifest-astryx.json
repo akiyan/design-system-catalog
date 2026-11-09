@@ -1,0 +1,36 @@
+{
+  "capturedAt": "2026-11-09T11:11:42.245Z",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "results": [
+    {
+      "label": "概要",
+      "url": "https://astryx.atmeta.com/",
+      "id": "astryx",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://astryx.atmeta.com/",
+      "title": "Astryx Design System"
+    },
+    {
+      "label": "コンポーネント",
+      "url": "https://astryx.atmeta.com/components",
+      "id": "astryx",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://astryx.atmeta.com/components",
+      "title": "Components · Astryx"
+    },
+    {
+      "label": "テーマ",
+      "url": "https://astryx.atmeta.com/themes",
+      "id": "astryx",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://astryx.atmeta.com/themes",
+      "title": "Themes · Astryx"
+    }
+  ]
+}

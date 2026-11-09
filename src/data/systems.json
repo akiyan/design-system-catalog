@@ -1,0 +1,611 @@
+[
+  {
+    "id": "dads",
+    "name": "デジタル庁デザインシステム",
+    "shortName": "デジタル庁デザインシステム (DADS)",
+    "organization": "デジタル庁",
+    "country": "日本",
+    "category": "public",
+    "stack": [
+      "HTML/CSS",
+      "React"
+    ],
+    "license": "MIT（サンプルコード）",
+    "url": "https://design.digital.go.jp/dads/",
+    "views": [
+      {
+        "label": "ボタン",
+        "url": "https://design.digital.go.jp/dads/components/button/",
+        "labelEn": "Buttons"
+      },
+      {
+        "label": "入力フォーム",
+        "url": "https://design.digital.go.jp/dads/components/input-text/",
+        "labelEn": "Text inputs"
+      },
+      {
+        "label": "タイポグラフィ",
+        "url": "https://design.digital.go.jp/dads/foundations/typography/",
+        "labelEn": "Typography"
+      }
+    ],
+    "published": {
+      "date": "2022-11-11",
+      "precision": "day",
+      "estimated": false,
+      "basis": "announcement",
+      "sourceUrl": "https://www.digital.go.jp/news?page=611",
+      "sourceTitle": "デジタル庁 新着・更新：デザインシステムを掲載しました",
+      "note": {
+        "ja": "公式の新着一覧に掲載された初回公開日。専用サイトへの移行日は2024年5月30日。",
+        "en": "Initial publication in the official news archive. The dedicated site followed on May 30, 2024."
+      }
+    },
+    "countryEn": "Japan",
+    "shortNameEn": "Digital Agency Design System (DADS)",
+    "organizationEn": "Digital Agency, Japan",
+    "licenseEn": "MIT (sample code)"
+  },
+  {
+    "id": "govuk",
+    "name": "GOV.UK Design System",
+    "shortName": "GOV.UK",
+    "organization": "Government Digital Service",
+    "country": "イギリス",
+    "category": "public",
+    "stack": [
+      "HTML/CSS",
+      "Nunjucks"
+    ],
+    "license": "MIT（コード）",
+    "url": "https://design-system.service.gov.uk/",
+    "views": [
+      {
+        "label": "概要",
+        "url": "https://design-system.service.gov.uk/",
+        "labelEn": "Overview"
+      },
+      {
+        "label": "ボタン",
+        "url": "https://design-system.service.gov.uk/components/button/",
+        "labelEn": "Buttons"
+      },
+      {
+        "label": "入力フォーム",
+        "url": "https://design-system.service.gov.uk/components/text-input/",
+        "labelEn": "Text inputs"
+      }
+    ],
+    "published": {
+      "date": "2018-06-22",
+      "precision": "day",
+      "estimated": false,
+      "basis": "announcement",
+      "sourceUrl": "https://gds.blog.gov.uk/2018/06/22/introducing-the-gov-uk-design-system/",
+      "sourceTitle": "Introducing the GOV.UK Design System",
+      "note": {
+        "ja": "GDSによる公開発表日。",
+        "en": "Launch announcement by the Government Digital Service."
+      }
+    },
+    "countryEn": "United Kingdom",
+    "shortNameEn": "GOV.UK",
+    "organizationEn": "Government Digital Service",
+    "licenseEn": "MIT (code)"
+  },
+  {
+    "id": "uswds",
+    "name": "U.S. Web Design System",
+    "shortName": "U.S. Web Design System (USWDS)",
+    "organization": "U.S. General Services Administration",
+    "country": "アメリカ",
+    "category": "public",
+    "stack": [
+      "HTML/CSS",
+      "Sass",
+      "JavaScript"
+    ],
+    "license": "CC0（米政府作成部分）",
+    "url": "https://designsystem.digital.gov/",
+    "views": [
+      {
+        "label": "概要",
+        "url": "https://designsystem.digital.gov/",
+        "labelEn": "Overview"
+      },
+      {
+        "label": "ボタン",
+        "url": "https://designsystem.digital.gov/components/button/",
+        "labelEn": "Buttons"
+      },
+      {
+        "label": "入力フォーム",
+        "url": "https://designsystem.digital.gov/components/text-input/",
+        "labelEn": "Text inputs"
+      }
+    ],
+    "published": {
+      "date": "2015-09-28",
+      "precision": "day",
+      "estimated": false,
+      "basis": "announcement",
+      "sourceUrl": "https://digital.gov/event/2023/09/21/uswds-monthly-call-september-2023",
+      "sourceTitle": "USWDS Monthly Call — September 2023",
+      "note": {
+        "ja": "公式の沿革説明が最初の公開発表を2015年9月28日と明記。",
+        "en": "The official history identifies September 28, 2015 as its first public announcement."
+      }
+    },
+    "countryEn": "United States",
+    "shortNameEn": "U.S. Web Design System (USWDS)",
+    "organizationEn": "U.S. General Services Administration",
+    "licenseEn": "CC0 (US government-authored work)"
+  },
+  {
+    "id": "cloudscape",
+    "name": "Cloudscape",
+    "shortName": "Cloudscape",
+    "organization": "Amazon Web Services",
+    "country": "アメリカ",
+    "category": "oss",
+    "stack": [
+      "React"
+    ],
+    "license": "Apache 2.0",
+    "url": "https://cloudscape.design/",
+    "views": [
+      {
+        "label": "テーブル",
+        "url": "https://cloudscape.design/components/table/",
+        "labelEn": "Tables"
+      },
+      {
+        "label": "概要",
+        "url": "https://cloudscape.design/",
+        "labelEn": "Overview"
+      },
+      {
+        "label": "ボタン",
+        "url": "https://cloudscape.design/components/button/",
+        "labelEn": "Buttons"
+      }
+    ],
+    "published": {
+      "date": "2022-07-19",
+      "precision": "day",
+      "estimated": false,
+      "basis": "announcement",
+      "sourceUrl": "https://aws.amazon.com/about-aws/whats-new/2022/07/cloudscape-design-system-open-source-solution-building-intuitive-web-applications/",
+      "sourceTitle": "Announcing Cloudscape Design System",
+      "note": {
+        "ja": "AWSによるオープンソース公開発表日。社内での利用開始は2016年。",
+        "en": "AWS open-source launch announcement. Internal use began in 2016."
+      }
+    },
+    "countryEn": "United States",
+    "shortNameEn": "Cloudscape",
+    "organizationEn": "Amazon Web Services",
+    "licenseEn": "Apache 2.0"
+  },
+  {
+    "id": "gestalt",
+    "name": "Gestalt",
+    "shortName": "Gestalt",
+    "organization": "Pinterest",
+    "country": "アメリカ",
+    "category": "oss",
+    "stack": [
+      "React"
+    ],
+    "license": "Apache 2.0（調査リスト）",
+    "url": "https://gestalt.pinterest.systems/",
+    "views": [
+      {
+        "label": "概要",
+        "url": "https://gestalt.pinterest.systems/",
+        "labelEn": "Overview"
+      }
+    ],
+    "published": {
+      "date": "2018-02-16",
+      "precision": "day",
+      "estimated": true,
+      "basis": "repository-created",
+      "sourceUrl": "https://api.github.com/repos/pinterest/gestalt",
+      "sourceTitle": "Official repository metadata — pinterest/gestalt",
+      "note": {
+        "ja": "初回公開日は未確認。公式リポジトリの作成日を参考情報として採用。リポジトリ作成日と一般公開日は一致しない場合がある。",
+        "en": "Public launch is unconfirmed. The official repository creation date is used as a reference; it may differ from the date the project became public."
+      }
+    },
+    "countryEn": "United States",
+    "shortNameEn": "Gestalt",
+    "organizationEn": "Pinterest",
+    "licenseEn": "Apache 2.0 (supplied research)"
+  },
+  {
+    "id": "sgds",
+    "name": "Singapore Government Design System",
+    "shortName": "SGDS",
+    "organization": "GovTech Singapore",
+    "country": "シンガポール",
+    "category": "public",
+    "stack": [
+      "Web Components",
+      "CSS"
+    ],
+    "license": "MIT（調査リスト）",
+    "url": "https://www.designsystem.tech.gov.sg/",
+    "views": [
+      {
+        "label": "概要",
+        "url": "https://www.designsystem.tech.gov.sg/",
+        "labelEn": "Overview"
+      }
+    ],
+    "published": {
+      "date": "2019-06-24",
+      "precision": "day",
+      "estimated": true,
+      "basis": "repository-created",
+      "sourceUrl": "https://api.github.com/repos/govtechsg/sgds",
+      "sourceTitle": "Official repository metadata — govtechsg/sgds",
+      "note": {
+        "ja": "初回公開日は未確認。公式リポジトリの作成日を参考情報として採用。リポジトリ作成日と一般公開日は一致しない場合がある。",
+        "en": "Public launch is unconfirmed. The official repository creation date is used as a reference; it may differ from the date the project became public."
+      }
+    },
+    "countryEn": "Singapore",
+    "shortNameEn": "SGDS",
+    "organizationEn": "GovTech Singapore",
+    "licenseEn": "MIT (supplied research)"
+  },
+  {
+    "id": "astryx",
+    "name": "Astryx",
+    "shortName": "Astryx",
+    "organization": "Meta",
+    "country": "アメリカ",
+    "category": "oss",
+    "stack": [
+      "React 19+",
+      "TypeScript",
+      "StyleX"
+    ],
+    "license": "MIT",
+    "url": "https://astryx.atmeta.com/",
+    "repository": "https://github.com/meta/astryx",
+    "views": [
+      {
+        "label": "概要",
+        "url": "https://astryx.atmeta.com/",
+        "labelEn": "Overview"
+      },
+      {
+        "label": "コンポーネント",
+        "url": "https://astryx.atmeta.com/components",
+        "labelEn": "Components"
+      },
+      {
+        "label": "テーマ",
+        "url": "https://astryx.atmeta.com/themes",
+        "labelEn": "Themes"
+      }
+    ],
+    "published": {
+      "date": "2026-06-18",
+      "precision": "day",
+      "estimated": false,
+      "basis": "announcement",
+      "sourceUrl": "https://astryx.atmeta.com/blog/introducing-astryx",
+      "sourceTitle": "Introducing Astryx by Meta",
+      "note": {
+        "ja": "公式の公開発表日。",
+        "en": "Date of the official open-source announcement."
+      }
+    },
+    "countryEn": "United States",
+    "shortNameEn": "Astryx",
+    "organizationEn": "Meta",
+    "licenseEn": "MIT"
+  },
+  {
+    "id": "agds",
+    "name": "Agriculture Design System",
+    "shortName": "Agriculture Design System (AgDS)",
+    "organization": "Department of Agriculture, Fisheries and Forestry",
+    "country": "オーストラリア",
+    "category": "public",
+    "stack": [
+      "React"
+    ],
+    "license": "MIT（調査リスト）",
+    "url": "https://design-system.agriculture.gov.au/",
+    "views": [
+      {
+        "label": "概要",
+        "url": "https://design-system.agriculture.gov.au/",
+        "labelEn": "Overview"
+      },
+      {
+        "label": "コンポーネント",
+        "url": "https://design-system.agriculture.gov.au/components",
+        "labelEn": "Components"
+      }
+    ],
+    "published": {
+      "date": "2022-01-05",
+      "precision": "day",
+      "estimated": false,
+      "basis": "initial-release",
+      "sourceUrl": "https://design-system.agriculture.gov.au/updates",
+      "sourceTitle": "AgDS updates — Initial release",
+      "note": {
+        "ja": "公式更新履歴の最初のリリース日。",
+        "en": "Initial release date recorded in the official update history."
+      }
+    },
+    "countryEn": "Australia",
+    "shortNameEn": "Agriculture Design System (AgDS)",
+    "organizationEn": "Department of Agriculture, Fisheries and Forestry",
+    "licenseEn": "MIT (supplied research)"
+  },
+  {
+    "id": "czech",
+    "name": "Czech Design System",
+    "shortName": "Czech Design System",
+    "organization": "Digital and Information Agency",
+    "country": "チェコ",
+    "category": "public",
+    "stack": [
+      "HTML/CSS",
+      "Web Components"
+    ],
+    "license": "要確認",
+    "url": "https://designsystem.gov.cz/",
+    "views": [
+      {
+        "label": "概要",
+        "url": "https://designsystem.gov.cz/",
+        "labelEn": "Overview"
+      }
+    ],
+    "published": {
+      "date": "2020-01-27",
+      "precision": "day",
+      "estimated": true,
+      "basis": "official-mandate",
+      "sourceUrl": "https://designsystem.gov.cz/pravidla/pro-koho-je-design-system-povinny",
+      "sourceTitle": "Pro koho je design systém povinný",
+      "note": {
+        "ja": "初回公開日は未確認。公式サイトが参照する政府決議第86号の日付を参考情報として採用。公開日を示すものではない。",
+        "en": "Public launch is unconfirmed. The date of Government Resolution No. 86 cited by the official site is used as a reference, not as a launch claim."
+      }
+    },
+    "countryEn": "Czechia",
+    "shortNameEn": "Czech Design System",
+    "organizationEn": "Digital and Information Agency",
+    "licenseEn": "Not verified"
+  },
+  {
+    "id": "italia",
+    "name": "Designers Italia",
+    "shortName": "Designers Italia",
+    "organization": "Dipartimento per la trasformazione digitale",
+    "country": "イタリア",
+    "category": "public",
+    "stack": [
+      "Bootstrap",
+      "React"
+    ],
+    "license": "要確認",
+    "url": "https://designers.italia.it/",
+    "views": [
+      {
+        "label": "概要",
+        "url": "https://designers.italia.it/",
+        "labelEn": "Overview"
+      }
+    ],
+    "published": {
+      "date": "2017",
+      "precision": "year",
+      "estimated": true,
+      "basis": "historical-reference",
+      "sourceUrl": "https://designers.italia.it/progetto/piano-attivita/",
+      "sourceTitle": "Piano attività — Designers Italia",
+      "note": {
+        "ja": "公式の活動履歴の2017–2021年の活動期を参考にした開始年。初回公開日は未確認。新しい文書のalpha版は2022年第4四半期。",
+        "en": "Reference year from the official 2017–2021 project history. Exact launch is unconfirmed. New documentation entered alpha in Q4 2022."
+      }
+    },
+    "countryEn": "Italy",
+    "shortNameEn": "Designers Italia",
+    "organizationEn": "Dipartimento per la trasformazione digitale",
+    "licenseEn": "Not verified"
+  },
+  {
+    "id": "europa",
+    "name": "Europa Component Library",
+    "shortName": "Europa Component Library",
+    "organization": "European Commission",
+    "country": "EU",
+    "category": "public",
+    "stack": [
+      "HTML/CSS",
+      "JavaScript"
+    ],
+    "license": "要確認",
+    "url": "https://ec.europa.eu/component-library/",
+    "views": [
+      {
+        "label": "概要",
+        "url": "https://ec.europa.eu/component-library/",
+        "labelEn": "Overview"
+      }
+    ],
+    "published": {
+      "date": "2017-01-30",
+      "precision": "day",
+      "estimated": true,
+      "basis": "repository-created",
+      "sourceUrl": "https://api.github.com/repos/ec-europa/europa-component-library",
+      "sourceTitle": "Official repository metadata — ec-europa/europa-component-library",
+      "note": {
+        "ja": "初回公開日は未確認。公式リポジトリの作成日を参考情報として採用。リポジトリ作成日と一般公開日は一致しない場合がある。",
+        "en": "Public launch is unconfirmed. The official repository creation date is used as a reference; it may differ from the date the project became public."
+      }
+    },
+    "countryEn": "European Union",
+    "shortNameEn": "Europa Component Library",
+    "organizationEn": "European Commission",
+    "licenseEn": "Not verified"
+  },
+  {
+    "id": "canada",
+    "name": "GC Design System",
+    "shortName": "GC Design System",
+    "organization": "Government of Canada",
+    "country": "カナダ",
+    "category": "public",
+    "stack": [
+      "Web Components",
+      "React"
+    ],
+    "license": "MIT（調査リスト）",
+    "url": "https://design-system.canada.ca/",
+    "views": [
+      {
+        "label": "概要",
+        "url": "https://design-system.canada.ca/",
+        "labelEn": "Overview"
+      }
+    ],
+    "published": {
+      "date": "2023-04",
+      "precision": "month",
+      "estimated": false,
+      "basis": "announcement",
+      "sourceUrl": "https://www.canada.ca/en/employment-social-development/corporate/reports/committe-binders/2024-may-6-huma-beech.html",
+      "sourceTitle": "Minister of Citizens’ Services briefing — May 6, 2024",
+      "note": {
+        "ja": "カナダ政府の公式資料が試作版の公開を2023年4月と明記。日付は不明。",
+        "en": "An official government briefing dates the prototype launch to April 2023. The day is not specified."
+      }
+    },
+    "countryEn": "Canada",
+    "shortNameEn": "GC Design System",
+    "organizationEn": "Government of Canada",
+    "licenseEn": "MIT (supplied research)"
+  },
+  {
+    "id": "cfpb",
+    "name": "CFPB Design System",
+    "shortName": "CFPB Design System",
+    "organization": "Consumer Financial Protection Bureau",
+    "country": "アメリカ",
+    "category": "public",
+    "stack": [
+      "React",
+      "CSS"
+    ],
+    "license": "要確認",
+    "url": "https://cfpb.github.io/design-system/",
+    "views": [
+      {
+        "label": "概要",
+        "url": "https://cfpb.github.io/design-system/",
+        "labelEn": "Overview"
+      }
+    ],
+    "published": {
+      "date": "2019-05-23",
+      "precision": "day",
+      "estimated": true,
+      "basis": "repository-created",
+      "sourceUrl": "https://api.github.com/repos/cfpb/design-system",
+      "sourceTitle": "Official repository metadata — cfpb/design-system",
+      "note": {
+        "ja": "初回公開日は未確認。公式リポジトリの作成日を参考情報として採用。リポジトリ作成日と一般公開日は一致しない場合がある。",
+        "en": "Public launch is unconfirmed. The official repository creation date is used as a reference; it may differ from the date the project became public."
+      }
+    },
+    "countryEn": "United States",
+    "shortNameEn": "CFPB Design System",
+    "organizationEn": "Consumer Financial Protection Bureau",
+    "licenseEn": "Not verified"
+  },
+  {
+    "id": "bristol",
+    "name": "Bristol Design System",
+    "shortName": "Bristol Design System",
+    "organization": "Bristol City Council",
+    "country": "イギリス",
+    "category": "public",
+    "stack": [
+      "HTML/CSS"
+    ],
+    "license": "要確認",
+    "url": "https://style.bristol.gov.uk/",
+    "views": [
+      {
+        "label": "概要",
+        "url": "https://style.bristol.gov.uk/",
+        "labelEn": "Overview"
+      }
+    ],
+    "published": {
+      "date": "2014-02-10",
+      "precision": "day",
+      "estimated": true,
+      "basis": "repository-created",
+      "sourceUrl": "https://api.github.com/repos/BristolCityCouncil/web_styles",
+      "sourceTitle": "Official repository metadata — BristolCityCouncil/web_styles",
+      "note": {
+        "ja": "初回公開日は未確認。公式リポジトリの作成日を参考情報として採用。リポジトリ作成日と一般公開日は一致しない場合がある。",
+        "en": "Public launch is unconfirmed. The official repository creation date is used as a reference; it may differ from the date the project became public."
+      }
+    },
+    "countryEn": "United Kingdom",
+    "shortNameEn": "Bristol Design System",
+    "organizationEn": "Bristol City Council",
+    "licenseEn": "Not verified"
+  },
+  {
+    "id": "bc",
+    "name": "BC Design System",
+    "shortName": "BC Design System",
+    "organization": "Government of British Columbia",
+    "country": "カナダ",
+    "category": "public",
+    "stack": [
+      "React",
+      "CSS"
+    ],
+    "license": "要確認",
+    "url": "https://www2.gov.bc.ca/gov/content/digital/design-system",
+    "views": [
+      {
+        "label": "概要",
+        "url": "https://www2.gov.bc.ca/gov/content/digital/design-system",
+        "labelEn": "Overview"
+      }
+    ],
+    "published": {
+      "date": "2019",
+      "precision": "year",
+      "estimated": true,
+      "basis": "historical-reference",
+      "sourceUrl": "https://digital.gov.bc.ca/2024/05/10/design-system-foundations/",
+      "sourceTitle": "Laying a foundation for the new B.C. Design System",
+      "note": {
+        "ja": "公式記事が旧デザインシステムの起点を2019年初めと説明。初回公開日は未確認。現在の再構築版は2024年に公開。",
+        "en": "An official history dates the legacy system to early 2019. Exact public launch is unconfirmed; the rebuilt system followed in 2024."
+      }
+    },
+    "countryEn": "Canada",
+    "shortNameEn": "BC Design System",
+    "organizationEn": "Government of British Columbia",
+    "licenseEn": "Not verified"
+  }
+]

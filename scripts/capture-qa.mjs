@@ -1,0 +1,33 @@
+import { chromium } from '@playwright/test';
+const browser = await chromium.launch();
+const page = await browser.newPage({ viewport: { width: 1440, height: 1024 }, deviceScaleFactor: 1, locale: 'ja-JP' });
+const errors = [];
+page.on('pageerror', error => errors.push(error.message));
+page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
+const origin = process.env.TEST_BASE_URL || 'http://127.0.0.1:4173';
+const waitForContent = async () => {
+  await page.waitForFunction(() => document.querySelector('.catalog-app')?.dataset.ready === 'true');
+  await page.locator('.preview-panel img').evaluateAll(images => Promise.all(images.map(image => {
+    image.loading = 'eager';
+    return image.decode().catch(() => {});
+  })));
+};
+await page.goto(`${origin}/dads/`);
+await waitForContent();
+await page.screenshot({ path: 'docs/update-desktop.png' });
+await page.keyboard.press('?');
+await page.screenshot({ path: 'docs/update-keyboard-help.png' });
+await page.keyboard.press('Escape');
+await page.getByRole('combobox').selectOption('en');
+await page.screenshot({ path: 'docs/update-english.png' });
+await page.setViewportSize({ width: 390, height: 844 });
+await page.screenshot({ path: 'docs/update-mobile-detail.png' });
+await page.getByRole('button', { name: 'Back to list' }).click();
+await page.screenshot({ path: 'docs/update-mobile-list.png' });
+await page.goto(`${origin}/astryx/`);
+await page.setViewportSize({ width: 1440, height: 1024 });
+await waitForContent();
+await page.screenshot({ path: 'docs/update-astryx.png' });
+console.log(JSON.stringify({ consoleErrors: errors }));
+await browser.close();
+if (errors.length) process.exitCode = 1;

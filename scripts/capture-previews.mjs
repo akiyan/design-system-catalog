@@ -1,0 +1,36 @@
+import { chromium } from '@playwright/test';
+import { readFile, writeFile, mkdir } from 'node:fs/promises';
+const systems = JSON.parse(await readFile(new URL('../src/data/systems.json', import.meta.url)));
+await mkdir('public/previews', {recursive:true});
+const browser = await chromium.launch({headless:true});
+const selectedSystems = process.argv[2] ? systems.filter(s=>s.id===process.argv[2]) : systems;
+const jobs = selectedSystems.flatMap(s=>s.views.map((v,i)=>({...v,id:s.id,index:i})));
+const results=[];
+async function work() {
+ const context=await browser.newContext({viewport:{width:1440,height:1000},deviceScaleFactor:1,locale:'en-US',reducedMotion:'reduce'});
+ while(jobs.length) {
+  const job=jobs.shift(); const page=await context.newPage();
+  try {
+   const response=await page.goto(job.url,{waitUntil:'domcontentloaded',timeout:35000});
+   if(!response || response.status()>=400) throw new Error(`HTTP ${response?.status()}`);
+   await page.waitForTimeout(1300);
+   await page.evaluate(()=>document.fonts.ready);
+   for(const label of ['Reject additional cookies','Reject all cookies','Accept all cookies']) {
+    const button=page.getByRole('button',{name:label,exact:true});
+    if(await button.count() && await button.first().isVisible()) await button.first().click().catch(()=>{});
+   }
+   const title=await page.title();
+   if(/sign in|log in|login/i.test(title)) throw new Error('Authentication required; excluded from previews');
+   const text=await page.locator('body').innerText();
+   if(text.length<100 || /Access denied|Just a moment|Checking your browser/i.test(text.slice(0,300))) throw new Error('Blocked or empty source');
+   await page.screenshot({path:`public/previews/${job.id}-${job.index}.webp`,type:'webp',quality:88});
+   results.push({...job,status:'captured',finalUrl:page.url(),title:await page.title()});
+   console.log(`Captured ${job.id}-${job.index}: ${await page.title()}`);
+  } catch(e) { results.push({...job,status:'failed',error:e.message});console.log(`Failed ${job.id}-${job.index}: ${e.message}`); }
+  await page.close();
+ }
+ await context.close();
+}
+await Promise.all([work(),work(),work()]);
+await browser.close();
+await writeFile(process.argv[2] ? `docs/capture-manifest-${process.argv[2]}.json` : 'docs/capture-manifest.json',JSON.stringify({capturedAt:new Date().toISOString(),viewport:{width:1440,height:1000},results},null,2));

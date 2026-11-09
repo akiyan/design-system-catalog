@@ -1,0 +1,9 @@
+---
+import CatalogPage from '../layouts/CatalogPage.astro';
+import { systems } from '../catalog';
+export function getStaticPaths() {
+ return systems.map(system => ({params:{system:system.id},props:{system}}));
+}
+const { system } = Astro.props;
+---
+<CatalogPage system={system} />

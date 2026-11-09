@@ -1,0 +1,226 @@
+{
+  "capturedAt": "2026-11-09T11:07:22.798Z",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "results": [
+    {
+      "label": "入力フォーム",
+      "url": "https://design.digital.go.jp/dads/components/input-text/",
+      "id": "dads",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://design.digital.go.jp/dads/components/input-text/",
+      "title": "インプットテキスト（概要）｜デジタル庁デザインシステムβ版"
+    },
+    {
+      "label": "ボタン",
+      "url": "https://design.digital.go.jp/dads/components/button/",
+      "id": "dads",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://design.digital.go.jp/dads/components/button/",
+      "title": "ボタン（概要）｜デジタル庁デザインシステムβ版"
+    },
+    {
+      "label": "タイポグラフィ",
+      "url": "https://design.digital.go.jp/dads/foundations/typography/",
+      "id": "dads",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://design.digital.go.jp/dads/foundations/typography/",
+      "title": "タイポグラフィ（概要）｜デジタル庁デザインシステムβ版"
+    },
+    {
+      "label": "入力フォーム",
+      "url": "https://design-system.service.gov.uk/components/text-input/",
+      "id": "govuk",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://design-system.service.gov.uk/components/text-input/",
+      "title": "Text input – GOV.UK Design System"
+    },
+    {
+      "label": "ボタン",
+      "url": "https://design-system.service.gov.uk/components/button/",
+      "id": "govuk",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://design-system.service.gov.uk/components/button/",
+      "title": "Button – GOV.UK Design System"
+    },
+    {
+      "label": "概要",
+      "url": "https://design-system.service.gov.uk/",
+      "id": "govuk",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://design-system.service.gov.uk/",
+      "title": "Home – GOV.UK Design System"
+    },
+    {
+      "label": "概要",
+      "url": "https://designsystem.digital.gov/",
+      "id": "uswds",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://designsystem.digital.gov/",
+      "title": "USWDS: The United States Web Design System | U.S. Web Design System (USWDS)"
+    },
+    {
+      "label": "ボタン",
+      "url": "https://designsystem.digital.gov/components/button/",
+      "id": "uswds",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://designsystem.digital.gov/components/button/",
+      "title": "Button | U.S. Web Design System (USWDS)"
+    },
+    {
+      "label": "テーブル",
+      "url": "https://cloudscape.design/components/table/",
+      "id": "cloudscape",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://cloudscape.design/components/table/",
+      "title": "Table - Cloudscape Design System"
+    },
+    {
+      "label": "入力フォーム",
+      "url": "https://designsystem.digital.gov/components/text-input/",
+      "id": "uswds",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://designsystem.digital.gov/components/text-input/",
+      "title": "Text input | U.S. Web Design System (USWDS)"
+    },
+    {
+      "label": "概要",
+      "url": "https://cloudscape.design/",
+      "id": "cloudscape",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://cloudscape.design/",
+      "title": "Cloudscape Design System"
+    },
+    {
+      "label": "ボタン",
+      "url": "https://cloudscape.design/components/button/",
+      "id": "cloudscape",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://cloudscape.design/components/button/",
+      "title": "Button - Cloudscape Design System"
+    },
+    {
+      "label": "概要",
+      "url": "https://www.designsystem.tech.gov.sg/",
+      "id": "sgds",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://www.designsystem.tech.gov.sg/",
+      "title": "Home – Singapore Government Design System"
+    },
+    {
+      "label": "概要",
+      "url": "https://gestalt.pinterest.systems/",
+      "id": "gestalt",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://gestalt.pinterest.systems/",
+      "title": "Welcome to Gestalt - Pinterest's Design System"
+    },
+    {
+      "label": "コンポーネント",
+      "url": "https://gestalt.pinterest.systems/components",
+      "id": "gestalt",
+      "index": 1,
+      "status": "excluded",
+      "finalUrl": "https://gestalt.pinterest.systems/auth/signin?callbackUrl=%2Fcomponents",
+      "title": "Okta Sign In | Gestalt - Pinterest's Design System",
+      "reason": "Authentication required. Not included in catalog or deployment."
+    },
+    {
+      "label": "概要",
+      "url": "https://design-system.agriculture.gov.au/",
+      "id": "agds",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://design-system.agriculture.gov.au/",
+      "title": "Agriculture Design System"
+    },
+    {
+      "label": "コンポーネント",
+      "url": "https://design-system.agriculture.gov.au/components",
+      "id": "agds",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://design-system.agriculture.gov.au/components",
+      "title": "Components | Agriculture Design System"
+    },
+    {
+      "label": "概要",
+      "url": "https://designers.italia.it/",
+      "id": "italia",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://designers.italia.it/",
+      "title": "Designers Italia"
+    },
+    {
+      "label": "概要",
+      "url": "https://designsystem.gov.cz/",
+      "id": "czech",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://designsystem.gov.cz/",
+      "title": "Rozcestník pro designové manuály | Design systém gov.cz"
+    },
+    {
+      "label": "概要",
+      "url": "https://design-system.canada.ca/",
+      "id": "canada",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://design-system.canada.ca/en/",
+      "title": "Home | GC Design System"
+    },
+    {
+      "label": "概要",
+      "url": "https://ec.europa.eu/component-library/",
+      "id": "europa",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://ec.europa.eu/component-library/",
+      "title": "Europa Component Library"
+    },
+    {
+      "label": "概要",
+      "url": "https://style.bristol.gov.uk/",
+      "id": "bristol",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://style.bristol.gov.uk/",
+      "title": "Pattern Library | Bristol City Council"
+    },
+    {
+      "label": "概要",
+      "url": "https://cfpb.github.io/design-system/",
+      "id": "cfpb",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://cfpb.github.io/design-system/",
+      "title": "Welcome to the CFPB Design System - CFPB Design System"
+    },
+    {
+      "label": "概要",
+      "url": "https://www2.gov.bc.ca/gov/content/digital/design-system",
+      "id": "bc",
+      "index": 0,
+      "status": "captured",
+      "finalUrl": "https://www2.gov.bc.ca/gov/content/digital/design-system",
+      "title": "B.C. Design System - Province of British Columbia"
+    }
+  ]
+}

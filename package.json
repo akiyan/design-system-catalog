@@ -1,0 +1,36 @@
+{
+  "name": "design-system-catalog",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "capture:previews": "node scripts/capture-previews.mjs",
+    "test": "playwright test",
+    "deploy": "wrangler pages deploy dist/client --project-name=design-system-catalog --branch=main"
+  },
+  "dependencies": {
+    "@astrojs/react": "^5.0.7",
+    "@phosphor-icons/react": "^2.1.10",
+    "astro": "^6.4.8",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "wrangler": "^4.158.0"
+  },
+  "license": "MIT",
+  "author": "akiyan",
+  "description": "A bilingual visual catalog of public design systems",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akiyan/design-system-catalog.git"
+  },
+  "homepage": "https://design-system-catalog-925.pages.dev/",
+  "bugs": {
+    "url": "https://github.com/akiyan/design-system-catalog/issues"
+  }
+}

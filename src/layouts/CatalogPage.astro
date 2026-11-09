@@ -1,0 +1,28 @@
+---
+import { App } from '../App.jsx';
+import { systems } from '../catalog';
+import '../styles.css';
+const { system } = Astro.props;
+const selected = system || systems[0];
+const githubUrl = import.meta.env.PUBLIC_GITHUB_URL || 'https://github.com/akiyan/design-system-catalog';
+const title = system ? `${system.shortName} | デザインシステムカタログ` : 'デザインシステムカタログ';
+---
+<!doctype html>
+<html lang="ja">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="国内外15件の公開デザインシステムを公式画面で比較できるカタログ。公開日が新しい順に掲載。日本語と英語に対応。" />
+  <meta name="theme-color" content="#003cff" />
+  <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content="A visual catalog of public design systems. 日英対応のデザインシステムカタログ。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content={new URL(`/previews/${selected.id}-0.webp`, Astro.site)} />
+  <title>{title}</title>
+ </head>
+ <body>
+  <App client:load githubUrl={githubUrl} initialId={system?.id || null} />
+  <noscript><p style="padding:16px">プレビューの切り替えにはJavaScriptを有効にしてください。Enable JavaScript to switch previews.</p></noscript>
+ </body>
+</html>
