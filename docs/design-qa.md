@@ -42,3 +42,5 @@ Status: PASS. Added 109 official source captures, bringing the total to 170 acro
 Mobile selection resets the shared workspace scroll after the detail layout is committed. Returning to the list restores its saved offset without focus scrolling. A regression test opens GOV.UK from a deeply scrolled list, verifies detail scrollTop=0, returns to the original offset, and opens it again.
 
 All 15 browser tests passed against the local static preview. Desktop/mobile screenshots were updated with no console errors.
+
+All 15 tests also passed against the production domain after deployment to https://d53ee797.design-system-catalog-925.pages.dev, including the mobile scroll regression.
