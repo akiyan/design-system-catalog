@@ -54,3 +54,5 @@ Descriptions state practical uses without unsupported rankings or claims. Every 
 Five ambiguous or inaccessible candidates are recorded in `new-batch-scope.json` with reasons: Goldman Sachs, Pipedrive Convention UI, TELUS Allium, Codmon and the unspecified LINE/Yahoo system. No unrelated API documentation or older replacement system was added under those names.
 
 All 16 browser tests passed locally, including all 67 static paths, bilingual description rendering, mobile scroll restoration, language persistence and touch navigation. Screenshot capture reported no console errors.
+
+All 16 tests also passed against the production domain after deployment to https://a835ccf8.design-system-catalog-925.pages.dev. Final contact sheets include the refreshed Calcite captures after dismissing cookie notices.
