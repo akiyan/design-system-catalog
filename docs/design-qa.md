@@ -96,3 +96,5 @@ Crawler resources are prerendered static files. The sitemap includes 68 catalog 
 Source capture reports contain 234 successful full specimens and 234 successful compact specimens. Regression coverage includes mixed overview content, previous/next reset after typography selection, table/alert content, crawler files and keyboard input through shadow DOM.
 
 Final local verification: PASS. All 128 browser tests passed in 10.6 seconds. Reviewed the 58-entry compact overview contact sheet and refreshed desktop/mobile/English/zoom screenshots. Representative table and alert captures retain official styles and show the shared content. The build emits 302 static HTML pages plus robots.txt, llms.txt and sitemap.xml. No server runtime or Pages Functions are introduced.
+
+Production verification: all 128 tests passed in 31.6 seconds against https://design-system-catalog-925.pages.dev after deployment to https://a78c6cf5.design-system-catalog-925.pages.dev. The public robots.txt, llms.txt and sitemap.xml responses passed the static crawler-resource checks.
