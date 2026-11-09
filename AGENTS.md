@@ -52,3 +52,8 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 
 - Every catalog system includes a short factual Japanese/English description of its purpose and distinctive features. Show it below the detail heading while keeping official captures prominent. Avoid unverified superlatives and claims copied from supplied lists.
 - Add Adobe React Aria as the headless interaction library; keep it separate from the existing Spectrum 2 visual design system.
+
+## Featured systems
+
+- Feature five systems at the top of the catalog. The current curated selection is stored in `src/data/featured.json`, informed by public GitHub stars and deduplicated by implementation repository.
+- Display the featured group separately from the remaining systems, which retain descending public-release order. Do not duplicate entries. Category filters and sequential/keyboard navigation follow the displayed order.

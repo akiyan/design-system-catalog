@@ -8,7 +8,7 @@ A visual catalog of 67 public design systems with screenshots from their officia
 
 - Japanese/English browser detection and a persistent manual language selection
 - Category filters; no keyword search
-- Newest public release first with date evidence and explicit reference markers
+- Five featured systems followed by newest public releases, with date evidence and explicit reference markers
 - Static paths such as `/astryx/` with client navigation and Back/Forward support
 - Keyboard shortcuts and a `?` help overlay
 - Bilingual descriptions of each system’s purpose and distinctive features
@@ -83,7 +83,7 @@ npm test
 TEST_BASE_URL=http://127.0.0.1:4174 npm test
 ```
 
-The 16 browser tests cover publication order/evidence, all static paths, navigation without JavaScript, history, automatic/manual languages, keyboard shortcuts, modal focus, image loading and mobile layout. Use `node scripts/capture-qa.mjs` for visual evidence.
+The 17 browser tests cover publication order/evidence, all static paths, navigation without JavaScript, history, automatic/manual languages, keyboard shortcuts, modal focus, image loading and mobile layout. Use `node scripts/capture-qa.mjs` for visual evidence.
 
 ## License and sources / ライセンスと出典
 

@@ -1,0 +1,5 @@
+{
+  "ids": ["ant", "fluent", "astryx", "reactaria", "primer"],
+  "reviewedAt": "2026-11-10",
+  "basis": "Public GitHub repository stars among catalog entries, excluding archived repositories and duplicate implementation repositories. Adobe React Aria represents adobe/react-spectrum."
+}

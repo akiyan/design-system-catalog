@@ -1,0 +1,325 @@
+{
+  "checkedAt": "2026-11-09T15:21:09.631874+00:00",
+  "repositories": [
+    {
+      "repo": "Airtable/blocks",
+      "status": 200,
+      "url": "https://github.com/Airtable/blocks",
+      "stars": 273,
+      "archived": false,
+      "pushedAt": "2026-10-30T11:07:25Z"
+    },
+    {
+      "repo": "Decathlon/vitamin-web",
+      "status": 200,
+      "url": "https://github.com/Decathlon/vitamin-web",
+      "stars": 289,
+      "archived": false,
+      "pushedAt": "2025-06-06T14:13:53Z"
+    },
+    {
+      "repo": "DouyinFE/semi-design",
+      "status": 200,
+      "url": "https://github.com/DouyinFE/semi-design",
+      "stars": 10476,
+      "archived": false,
+      "pushedAt": "2026-11-05T08:38:14Z"
+    },
+    {
+      "repo": "Esri/calcite-design-system",
+      "status": 200,
+      "url": "https://github.com/Esri/calcite-design-system",
+      "stars": 385,
+      "archived": false,
+      "pushedAt": "2026-11-09T15:20:27Z"
+    },
+    {
+      "repo": "GouvernementFR/dsfr",
+      "status": 200,
+      "url": "https://github.com/GouvernementFR/dsfr",
+      "stars": 399,
+      "archived": false,
+      "pushedAt": "2026-11-05T07:16:43Z"
+    },
+    {
+      "repo": "Orange-OpenSource/Orange-Boosted-Bootstrap",
+      "status": 200,
+      "url": "https://github.com/Orange-OpenSource/Orange-Boosted-Bootstrap",
+      "stars": 224,
+      "archived": false,
+      "pushedAt": "2026-11-09T15:14:03Z"
+    },
+    {
+      "repo": "Shopify/polaris-react-archive",
+      "status": 200,
+      "url": "https://github.com/Shopify/polaris-react-archive",
+      "stars": 6148,
+      "archived": true,
+      "pushedAt": "2026-09-11T19:54:08Z"
+    },
+    {
+      "repo": "Tencent/tdesign",
+      "status": 200,
+      "url": "https://github.com/Tencent/tdesign",
+      "stars": 4127,
+      "archived": false,
+      "pushedAt": "2026-11-08T02:15:35Z"
+    },
+    {
+      "repo": "adobe/react-spectrum",
+      "status": 200,
+      "url": "https://github.com/adobe/react-spectrum",
+      "stars": 16020,
+      "archived": false,
+      "pushedAt": "2026-11-07T01:04:58Z"
+    },
+    {
+      "repo": "ant-design/ant-design",
+      "status": 200,
+      "url": "https://github.com/ant-design/ant-design",
+      "stars": 100124,
+      "archived": false,
+      "pushedAt": "2026-11-09T02:31:58Z"
+    },
+    {
+      "repo": "arco-design/arco-design",
+      "status": 200,
+      "url": "https://github.com/arco-design/arco-design",
+      "stars": 5759,
+      "archived": false,
+      "pushedAt": "2026-11-06T08:53:59Z"
+    },
+    {
+      "repo": "ariakit/ariakit",
+      "status": 200,
+      "url": "https://github.com/ariakit/ariakit",
+      "stars": 8631,
+      "archived": false,
+      "pushedAt": "2026-11-09T15:19:20Z"
+    },
+    {
+      "repo": "carbon-design-system/carbon",
+      "status": 200,
+      "url": "https://github.com/carbon-design-system/carbon",
+      "stars": 9612,
+      "archived": false,
+      "pushedAt": "2026-11-09T15:21:00Z"
+    },
+    {
+      "repo": "cloudflare/kumo",
+      "status": 200,
+      "url": "https://github.com/cloudflare/kumo",
+      "stars": 4190,
+      "archived": false,
+      "pushedAt": "2026-11-09T15:04:34Z"
+    },
+    {
+      "repo": "coinbase/cds",
+      "status": 200,
+      "url": "https://github.com/coinbase/cds",
+      "stars": 509,
+      "archived": false,
+      "pushedAt": "2026-11-05T19:53:47Z"
+    },
+    {
+      "repo": "contentful/forma-36",
+      "status": 200,
+      "url": "https://github.com/contentful/forma-36",
+      "stars": 361,
+      "archived": false,
+      "pushedAt": "2026-11-09T09:54:34Z"
+    },
+    {
+      "repo": "freee/vibes",
+      "status": 200,
+      "url": "https://github.com/freee/vibes",
+      "stars": 148,
+      "archived": false,
+      "pushedAt": "2024-08-01T09:48:36Z"
+    },
+    {
+      "repo": "huntabyte/bits-ui",
+      "status": 200,
+      "url": "https://github.com/huntabyte/bits-ui",
+      "stars": 3655,
+      "archived": false,
+      "pushedAt": "2026-11-08T18:13:11Z"
+    },
+    {
+      "repo": "ing-bank/lion",
+      "status": 200,
+      "url": "https://github.com/ing-bank/lion",
+      "stars": 1973,
+      "archived": false,
+      "pushedAt": "2026-11-07T17:20:24Z"
+    },
+    {
+      "repo": "kiwicom/orbit",
+      "status": 200,
+      "url": "https://github.com/kiwicom/orbit",
+      "stars": 1438,
+      "archived": false,
+      "pushedAt": "2026-07-06T12:56:45Z"
+    },
+    {
+      "repo": "kobaltedev/kobalte",
+      "status": 200,
+      "url": "https://github.com/kobaltedev/kobalte",
+      "stars": 1887,
+      "archived": false,
+      "pushedAt": "2026-10-29T10:15:19Z"
+    },
+    {
+      "repo": "kufu/smarthr-ui",
+      "status": 200,
+      "url": "https://github.com/kufu/smarthr-ui",
+      "stars": 977,
+      "archived": false,
+      "pushedAt": "2026-11-09T08:22:27Z"
+    },
+    {
+      "repo": "liferay/clay",
+      "status": 200,
+      "url": "https://github.com/liferay/clay",
+      "stars": 246,
+      "archived": false,
+      "pushedAt": "2026-11-08T03:07:51Z"
+    },
+    {
+      "repo": "meta/astryx",
+      "status": 200,
+      "url": "https://github.com/meta/astryx",
+      "stars": 18870,
+      "archived": false,
+      "pushedAt": "2026-11-09T15:15:07Z"
+    },
+    {
+      "repo": "microsoft/fluentui",
+      "status": 200,
+      "url": "https://github.com/microsoft/fluentui",
+      "stars": 20393,
+      "archived": false,
+      "pushedAt": "2026-11-09T13:09:24Z"
+    },
+    {
+      "repo": "mondaycom/vibe",
+      "status": 200,
+      "url": "https://github.com/mondaycom/vibe",
+      "stars": 694,
+      "archived": false,
+      "pushedAt": "2026-11-08T14:45:51Z"
+    },
+    {
+      "repo": "openameba/spindle",
+      "status": 200,
+      "url": "https://github.com/openameba/spindle",
+      "stars": 200,
+      "archived": false,
+      "pushedAt": "2026-11-02T08:04:17Z"
+    },
+    {
+      "repo": "patternfly/patternfly",
+      "status": 200,
+      "url": "https://github.com/patternfly/patternfly",
+      "stars": 822,
+      "archived": false,
+      "pushedAt": "2026-11-07T00:52:07Z"
+    },
+    {
+      "repo": "pixiv/charcoal",
+      "status": 200,
+      "url": "https://github.com/pixiv/charcoal",
+      "stars": 378,
+      "archived": false,
+      "pushedAt": "2026-11-09T11:32:42Z"
+    },
+    {
+      "repo": "porsche-design-system/porsche-design-system",
+      "status": 200,
+      "url": "https://github.com/porsche-design-system/porsche-design-system",
+      "stars": 677,
+      "archived": false,
+      "pushedAt": "2026-11-09T14:54:00Z"
+    },
+    {
+      "repo": "primer/css",
+      "status": 200,
+      "url": "https://github.com/primer/css",
+      "stars": 13051,
+      "archived": false,
+      "pushedAt": "2026-11-09T05:53:17Z"
+    },
+    {
+      "repo": "public-ui/kolibri",
+      "status": 200,
+      "url": "https://github.com/public-ui/kolibri",
+      "stars": 290,
+      "archived": false,
+      "pushedAt": "2026-11-09T15:14:52Z"
+    },
+    {
+      "repo": "salesforce-ux/design-system",
+      "status": 200,
+      "url": "https://github.com/salesforce-ux/design-system",
+      "stars": 3702,
+      "archived": true,
+      "pushedAt": "2026-06-02T19:25:48Z"
+    },
+    {
+      "repo": "segmentio/evergreen",
+      "status": 200,
+      "url": "https://github.com/segmentio/evergreen",
+      "stars": 12429,
+      "archived": false,
+      "pushedAt": "2026-06-25T23:25:22Z"
+    },
+    {
+      "repo": "serendie/serendie",
+      "status": 200,
+      "url": "https://github.com/serendie/serendie",
+      "stars": 56,
+      "archived": false,
+      "pushedAt": "2026-11-05T03:01:51Z"
+    },
+    {
+      "repo": "twilio-labs/paste",
+      "status": 200,
+      "url": "https://github.com/twilio-labs/paste",
+      "stars": 481,
+      "archived": false,
+      "pushedAt": "2026-11-01T00:52:00Z"
+    },
+    {
+      "repo": "uber/baseweb",
+      "status": 200,
+      "url": "https://github.com/uber/baseweb",
+      "stars": 9027,
+      "archived": false,
+      "pushedAt": "2026-09-25T20:47:48Z"
+    },
+    {
+      "repo": "ubie-oss/ubie-ui",
+      "status": 200,
+      "url": "https://github.com/ubie-oss/ubie-ui",
+      "stars": 36,
+      "archived": false,
+      "pushedAt": "2026-05-27T07:21:44Z"
+    },
+    {
+      "repo": "vaadin/web-components",
+      "status": 200,
+      "url": "https://github.com/vaadin/web-components",
+      "stars": 585,
+      "archived": false,
+      "pushedAt": "2026-11-09T14:30:40Z"
+    },
+    {
+      "repo": "wfp/designsystem",
+      "status": 200,
+      "url": "https://github.com/wfp/designsystem",
+      "stars": 233,
+      "archived": false,
+      "pushedAt": "2024-04-12T08:32:44Z"
+    }
+  ]
+}

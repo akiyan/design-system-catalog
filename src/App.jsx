@@ -1,6 +1,6 @@
-import { useEffect, useRef, useState } from 'react';
+import { Fragment, useEffect, useRef, useState } from 'react';
 import { ArrowSquareOut, ArrowLeft, CaretLeft, CaretRight, GithubLogo, Keyboard, X, ImageBroken } from '@phosphor-icons/react';
-import { systems, systemPath, systemFromPath, systemName } from './catalog';
+import { systems, featuredIds, systemPath, systemFromPath, systemName } from './catalog';
 import { messages, detectLanguage } from './i18n';
 
 const categories = ['all', 'public', 'oss'];
@@ -52,6 +52,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
   const listScrollTop = useRef(0);
   const t = messages[language];
   const filtered = systems.filter(s => category === 'all' || s.category === category);
+  const featuredCount = filtered.filter(s => featuredIds.includes(s.id)).length;
   const selected = systems.find(s => s.id === selectedId) || systems[0];
   const activeView = selected.views[viewIndex] ? viewIndex : 0;
 
@@ -258,9 +259,12 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
     </header>
     <main ref={workspace} className={`workspace ${mobilePreview ? 'mobile-preview' : ''}`}>
       <section id="catalog-list" className="catalog-list" aria-label={t.list} tabIndex={-1}>
-        <div className="list-toolbar"><span>{t.newest}</span><span>{filtered.length}</span></div>
+        <div className="list-toolbar"><h2>{featuredCount ? t.featured : t.newest}</h2><span>{featuredCount || filtered.length}</span></div>
+        {featuredCount > 0 && <p className="featured-note">{t.featuredBasis}</p>}
         <p className="sr-only" role="status">{filtered.length} {t.count} — {systemName(selected, language)}</p>
-        {filtered.map(s => <a key={s.id} href={systemPath(s)} ref={element => { rowRefs.current[s.id] = element; }} tabIndex={isMobile || selected.id === s.id ? 0 : -1} className={`system-row ${!isMobile && selected.id === s.id ? 'selected' : ''}`} aria-current={!isMobile && selected.id === s.id ? 'page' : undefined}
+        {filtered.map((s, index) => <Fragment key={s.id}>
+          {featuredCount > 0 && index === featuredCount && <div className="list-toolbar list-section-heading"><h2>{t.newest}</h2><span>{filtered.length - featuredCount}</span></div>}
+          <a data-featured={featuredIds.includes(s.id)} href={systemPath(s)} ref={element => { rowRefs.current[s.id] = element; }} tabIndex={isMobile || selected.id === s.id ? 0 : -1} className={`system-row ${!isMobile && selected.id === s.id ? 'selected' : ''}`} aria-current={!isMobile && selected.id === s.id ? 'page' : undefined}
           onClick={event => {
             if (!ready || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return;
             event.preventDefault();
@@ -271,7 +275,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
             <span className="system-meta"><span>{language === 'en' ? s.countryEn : s.country}</span><span className="meta-divider" aria-hidden="true" /><span>{t[s.category]}</span></span>
             <span className="release-line"><time dateTime={s.published.date}>{s.published.date}</time>{s.published.estimated && <span className="date-reference">{t.reference}</span>}</span>
           </span>
-        </a>)}
+        </a></Fragment>)}
       </section>
       <section className="preview-panel" aria-label={t.preview}>
         <div className="mobile-detail-toolbar">

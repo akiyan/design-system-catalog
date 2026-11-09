@@ -1,6 +1,6 @@
 export const messages = {
  ja: {
- title:'デザインシステムカタログ', all:'すべて', public:'政府・公共', oss:'企業・OSS', newest:'公開日が新しい順',
+ title:'デザインシステムカタログ', all:'すべて', public:'政府・公共', oss:'企業・OSS', newest:'公開日が新しい順', featured:'注目の5件', featuredBasis:'GitHubスター数を参考に選定',
  language:'表示言語', help:'キーボード操作', skip:'カタログへ移動', list:'デザインシステム一覧',
  browseSystems:'デザインシステムを切り替え', previousSystem:'前のデザインシステム', nextSystem:'次のデザインシステム', previousShort:'前へ', nextShort:'次へ',
  preview:'選択中のデザインシステム', back:'一覧に戻る', official:'公式サイト', newTab:'新しいタブで開く',
@@ -14,7 +14,7 @@ export const messages = {
  imageAlt:'公式サイト画面', releaseNote:'公開日の根拠と補足', category:'カテゴリ', selected:'選択中',
  },
  en: {
- title:'Design System Catalog', all:'All', public:'Government', oss:'Companies & OSS', newest:'Newest first',
+ title:'Design System Catalog', all:'All', public:'Government', oss:'Companies & OSS', newest:'Newest first', featured:'Featured systems', featuredBasis:'Selected with reference to GitHub stars',
  language:'Display language', help:'Keyboard shortcuts', skip:'Skip to catalog', list:'Design systems',
  browseSystems:'Browse design systems', previousSystem:'Previous design system', nextSystem:'Next design system', previousShort:'Previous', nextShort:'Next',
  preview:'Selected design system', back:'Back to list', official:'Official site', newTab:'Opens in a new tab',

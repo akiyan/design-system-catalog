@@ -73,3 +73,9 @@ a.system-row{cursor:pointer}
 
 .system-description{font-size:14px;line-height:1.8;color:#495568;margin:-4px 0 18px;max-width:70ch}
 @media(max-width:700px){.system-description{font-size:12px;line-height:1.8;margin:-3px 0 15px}}
+
+.list-toolbar h2{font:inherit;margin:0}
+.list-toolbar:has(+.featured-note){padding-bottom:4px;color:var(--blue);font-weight:650}
+.featured-note{font-size:11px;line-height:1.6;color:var(--muted);margin:0 13px 10px}
+.list-section-heading{padding-top:18px;padding-bottom:10px;margin-top:8px;border-top:1px solid var(--line)}
+@media(max-width:700px){.featured-note{font-size:10px}.list-section-heading{padding-top:16px}}

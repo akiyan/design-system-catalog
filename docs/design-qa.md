@@ -56,3 +56,11 @@ Five ambiguous or inaccessible candidates are recorded in `new-batch-scope.json`
 All 16 browser tests passed locally, including all 67 static paths, bilingual description rendering, mobile scroll restoration, language persistence and touch navigation. Screenshot capture reported no console errors.
 
 All 16 tests also passed against the production domain after deployment to https://a835ccf8.design-system-catalog-925.pages.dev. Final contact sheets include the refreshed Calcite captures after dismissing cookie notices.
+
+## Featured five
+
+Status: PASS. Ant Design, Microsoft Fluent 2, Astryx, Adobe React Aria and GitHub Primer lead the catalog in a separate featured group. Selection references current public GitHub stars; repository evidence, archive status and check time are recorded in `featured-repository-evidence.json`. Shared implementations are represented once. This is a curated selection, not a claim of measured recent growth.
+
+The remaining 62 systems retain descending release-date order. All 67 entries appear exactly once. Matching category filters retain the featured group; the public-sector category shows its usual date-sorted list. Sequential mobile controls, touch gestures, Home/End and J/K follow the displayed order. Default selection and homepage OG image use the first featured entry.
+
+Reviewed `featured-desktop.png` at 1440×1024 and `featured-mobile.png` at 390×844. Existing thumbnail density, preview proportions, bilingual descriptions and mobile header behavior are preserved. No mobile horizontal overflow was observed. All 17 browser tests passed locally, including featured ordering/deduplication and category behavior.
