@@ -9,3 +9,8 @@ Compared the previous and updated DADS selection at 1440×1024. The left thumbna
 Desktop, English, keyboard-help and 390×844 mobile screenshots are in `docs/update-*.png`. No console errors or horizontal overflow were found. All 12 Playwright tests passed against the static preview, including every individual path, source image loading, browser history, keyboard selection and localization. Astro generated 44 static HTML pages.
 
 Reference dates remain visibly marked. Repository creation dates and contextual dates are not presented as confirmed launches. Public documentation does not imply unrestricted brand asset reuse.
+
+Production deployment: https://984a8fd2.design-system-catalog-925.pages.dev
+
+Cloudflare reports a successful deployment with no Functions.
+All 12 browser tests also passed against the production URL, including every catalog permalink and added source capture.

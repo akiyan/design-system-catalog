@@ -2,10 +2,10 @@
   "project": "design-system-catalog",
   "subdomain": "design-system-catalog-925.pages.dev",
   "productionBranch": "main",
-  "deploymentURL": "https://c5a94304.design-system-catalog-925.pages.dev",
+  "deploymentURL": "https://984a8fd2.design-system-catalog-925.pages.dev",
   "deploymentStatus": "success",
   "usesFunctions": false,
   "url": "https://design-system-catalog-925.pages.dev/",
   "repository": "https://github.com/akiyan/design-system-catalog",
-  "staticPages": 16
+  "staticPages": 44
 }
