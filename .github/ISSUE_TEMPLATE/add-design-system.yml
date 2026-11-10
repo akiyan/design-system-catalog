@@ -1,0 +1,32 @@
+name: デザインシステムの追加 / Suggest a design system
+description: 公開されているデザインシステムの追加をリクエストできます。
+title: "[追加リクエスト] "
+body:
+  - type: input
+    id: name
+    attributes:
+      label: 名称 / Name
+      placeholder: Design system name
+    validations:
+      required: true
+  - type: input
+    id: official-url
+    attributes:
+      label: 公式URL / Official URL
+      placeholder: https://
+    validations:
+      required: true
+  - type: input
+    id: organization
+    attributes:
+      label: 提供元 / Organization
+  - type: input
+    id: repository
+    attributes:
+      label: 公開リポジトリ / Public repository
+      placeholder: https://github.com/
+  - type: textarea
+    id: details
+    attributes:
+      label: 特徴と補足 / Features and notes
+      description: 用途や公開実装の有無を記入してください。 / Describe its purpose and available implementation.

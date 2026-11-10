@@ -8,7 +8,7 @@ A visual catalog of 67 public design systems with live specimens of their offici
 
 - Japanese/English browser detection and a persistent manual language selection
 - Category filters; no keyword search
-- Five featured systems followed by newest public releases, with date evidence and explicit reference markers
+- Five curated systems in newest-release order followed by the remaining newest public releases, with date evidence and explicit reference markers
 - Static paths such as `/astryx/` with client navigation and Back/Forward support
 - Keyboard shortcuts and a `?` help overlay
 - Bilingual descriptions of each system’s purpose and distinctive features
@@ -17,11 +17,11 @@ A visual catalog of 67 public design systems with live specimens of their offici
 
 ## Development / 開発
 
-Use Node.js 22.12+. The specimen build loads many independent UI libraries and allows an 8 GB Node heap.
+Use Node.js 22.12+ and pnpm 12.18.0 (pinned in `packageManager`). The specimen build loads many independent UI libraries and allows an 8 GB Node heap.
 
 ```sh
-npm ci
-npm run dev -- --host 0.0.0.0 --port 4173
+pnpm install --frozen-lockfile
+pnpm dev --host 0.0.0.0 --port 4173
 ```
 
 ## Static build and Cloudflare Pages / 静的生成
@@ -29,11 +29,11 @@ npm run dev -- --host 0.0.0.0 --port 4173
 Astro prerenders the catalog homepage and all 67 system paths. React handles category filters, language selection, component specimens and keyboard input in the browser. No server adapter or Pages Functions are used.
 
 ```sh
-npm run build
-npm run deploy
+pnpm build
+pnpm run deploy
 ```
 
-- Build command: `npm run build`
+- Build command: `pnpm build`
 - Output directory: `dist/client`
 - Production branch: `main`
 - Authenticate Wrangler to the intended Cloudflare account before deployment.
@@ -47,8 +47,8 @@ Edit `src/data/systems.json` to update names, categories, source URLs, technolog
 公開日は公式発表と初回リリース履歴を優先します。日や月が不明な場合は精度を補わずに表示します。周辺情報を使った項目には「参考」を表示します。採用した根拠は画面内で確認できます。
 
 ```sh
-npx playwright install chromium
-npm run capture:previews
+pnpm exec playwright install chromium
+pnpm capture:previews
 # Capture a single entry:
 node scripts/capture-previews.mjs astryx
 ```
@@ -78,9 +78,9 @@ Shortcuts do not intercept editable controls or the language selector. Modal dia
 Run the server on port 4173 before tests:
 
 ```sh
-npm test
+pnpm test
 # Test a built preview or the published site:
-TEST_BASE_URL=http://127.0.0.1:4174 npm test
+TEST_BASE_URL=http://127.0.0.1:4174 pnpm test
 ```
 
 The browser suite covers publication order/evidence, all static paths, navigation without JavaScript, history, automatic/manual languages, keyboard shortcuts, modal focus, image loading and mobile layout. Use `node scripts/capture-qa.mjs` for visual evidence.
@@ -99,9 +99,9 @@ The catalog includes design systems rather than aggregator or comparison sites. 
 
 ## Live component specimens
 
-`src/data/specimens.json` records each real implementation, its version and provenance. Each adapter renders the same project settings content with the official package and its own styles. Styles are isolated in same-origin iframes under `/specimens/<system>/<view>/`. These are browser-only interactive examples served as static HTML; no server runtime is used. Headless libraries remain unstyled. Design-only resources and integrations requiring their original host are explicitly identified.
+`src/data/specimens.json` records each real implementation, its version and provenance. Each adapter renders shared form content with the official package and its own styles. Headings and introductory descriptions identify the current system in both live previews and thumbnails. Styles are isolated in same-origin iframes under `/specimens/<system>/<view>/`. These are browser-only interactive examples served as static HTML; no server runtime is used. Headless libraries remain unstyled. Design-only resources and integrations requiring their original host are explicitly identified.
 
-Run `npm run build` and a local preview, then `TEST_BASE_URL=http://127.0.0.1:4176 node scripts/capture-specimens.mjs` to generate actual specimen thumbnails. `ONLY=ant,fluent` limits capture to specific entries. The capture report is `docs/specimen-validation.json`. Rebuild after capturing to include thumbnails.
+Run `pnpm build` and a local preview, then `TEST_BASE_URL=http://127.0.0.1:4176 node scripts/capture-specimens.mjs` to generate actual specimen thumbnails. `ONLY=ant,fluent` limits capture to specific entries. The capture report is `docs/specimen-validation.json`. Rebuild after capturing to include thumbnails.
 
 Published implementations may lag the latest design guidelines. For example the public Lightning CSS package implements SLDS 1 and the published Polaris React package is archived. Their specimen notices state this.
 
@@ -118,3 +118,7 @@ List images are compact 480×224 captures with an adaptive viewport under `publi
 The LLM guide follows the [llms.txt proposal](https://llmstxt.org/). `LIST_ONLY=1` regenerates compact images without replacing full captures; `VIEWS=overview` restricts a capture run to overview specimens.
 
 List controls switch the shared specimen category across every supported thumbnail. The forms category includes button variants, sizes and disabled states. Typography examples contain long paragraphs and explicit line breaks. Reference-only entries show labeled official-site or public design-resource captures with multiple previews and per-capture source links. Desktop system selection resets the detail pane to the top; release evidence and usage/source sections start expanded.
+
+The homepage starts without a selected system and explains the catalog in the desktop right pane. Individual system URLs open directly to the selected system. Typography specimens include original quotation samples with citations, unordered/ordered lists, heading levels, inline emphasis, links, code, keyboard notation and definition lists. Official components and published classes provide the styling; unsupported rich-text elements retain native semantic HTML.
+
+Use [Suggest a system](https://github.com/akiyan/design-system-catalog/issues/new?template=add-design-system.yml) to request an addition through GitHub Issues.

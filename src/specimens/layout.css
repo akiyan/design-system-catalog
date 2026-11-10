@@ -25,3 +25,14 @@ html{background:#fff}body{margin:0;background:#fff}*{box-sizing:border-box}.spec
 .specimen-thumbnail .specimen-row{gap:10px;min-height:0}
 
 .specimen-thumbnail .specimen-heading-group :is(h1,h2){text-wrap:balance}
+
+.specimen-prose,.specimen-rich-text{display:grid;gap:20px}.specimen-rich-text>section{min-width:0}.specimen-rich-text :is(code,dd,a){overflow-wrap:anywhere}
+
+/* A thumbnail shows a compact article excerpt; the live page retains all paragraphs. */
+.specimen-thumbnail #specimen-root[data-view="typography"] .specimen-heading-group{display:block;columns:2;column-gap:24px}
+.specimen-thumbnail #specimen-root[data-view="typography"] .specimen-heading-group>h1{column-span:all}
+.specimen-thumbnail #specimen-root[data-view="typography"] :is(.specimen-prose,.specimen-rich-text){display:contents}
+.specimen-thumbnail #specimen-root[data-view="typography"] .specimen-prose p:nth-child(n+2){display:none}
+.specimen-thumbnail #specimen-root[data-view="typography"] :is(section,blockquote,figure,dl){break-inside:avoid}
+
+.specimen-thumbnail #specimen-root[data-view="typography"] .specimen{max-width:1600px}

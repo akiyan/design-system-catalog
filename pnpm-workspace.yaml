@@ -1,0 +1,46 @@
+nodeLinker: isolated
+autoInstallPeers: false
+strictPeerDependencies: false
+allowBuilds:
+  "@astryxdesign/core": true
+  "@carbon/colors": false
+  "@carbon/feature-flags": false
+  "@carbon/grid": false
+  "@carbon/icon-helpers": false
+  "@carbon/icons-react": false
+  "@carbon/layout": false
+  "@carbon/motion": false
+  "@carbon/react": false
+  "@carbon/styles": false
+  "@carbon/themes": false
+  "@carbon/type": false
+  "@carbon/utilities": false
+  "@gouvfr/dsfr": false
+  "@ibm/plex": false
+  "@ibm/plex-mono": false
+  "@ibm/plex-sans": false
+  "@ibm/plex-sans-arabic": false
+  "@ibm/plex-sans-devanagari": false
+  "@ibm/plex-sans-hebrew": false
+  "@ibm/plex-sans-thai": false
+  "@ibm/plex-sans-thai-looped": false
+  "@ibm/plex-serif": false
+  "@parcel/watcher": true
+  "@vaadin/vaadin-usage-statistics": false
+  "core-js": false
+  "esbuild": true
+  "fsevents": false
+  "iframe-resizer": false
+  "sharp": true
+  "workerd": true
+# Preserve the exact versions already used by the deployed catalog while
+# migrating its lockfile. Future releases retain pnpm's default age policy.
+minimumReleaseAgeExclude:
+  - '@atlaskit/tokens@20.11.0'
+  - '@cloudscape-design/components@3.0.1411'
+  - '@gitlab/ui@140.0.0'
+  - '@transferwise/components@46.168.1'
+  - 'framer-motion@14.11.1'
+  - 'motion-dom@14.11.1'
+  - 'motion@14.11.1'
+  - 'vite@7.3.8'

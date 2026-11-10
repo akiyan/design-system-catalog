@@ -6,7 +6,7 @@ Before making substantial visual changes, use the Product Design plugin's `get-c
 
 When implementing from a selected generated mock, treat that image as the source of truth for layout, component anatomy, density, spacing, color, typography, visible content, and hierarchy.
 
-Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts/prepare-sites-build.mjs`, and `tests/sites-worker.test.mjs` intact so the same local prototype can be handed to Sites. Before a Sites handoff, run `npm run build` and `npm run test:sites`; the build must leave `dist/client/index.html`, `dist/server/index.js`, and `dist/.openai/hosting.json`.
+Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts/prepare-sites-build.mjs`, and `tests/sites-worker.test.mjs` intact so the same local prototype can be handed to Sites. Before a Sites handoff, run `pnpm build` and `pnpm test:sites`; the build must leave `dist/client/index.html`, `dist/server/index.js`, and `dist/.openai/hosting.json`.
 
 ## Project decisions
 
@@ -55,8 +55,8 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 
 ## Featured systems
 
-- Feature five systems at the top of the catalog. The current curated selection is stored in `src/data/featured.json`, informed by public GitHub stars and deduplicated by implementation repository.
-- Display the featured group separately from the remaining systems, which retain descending public-release order. Do not duplicate entries. Category filters and sequential/keyboard navigation follow the displayed order.
+- Feature five systems at the top of the catalog. The current curated selection is stored in `src/data/featured.json`, curated explicitly and deduplicated by implementation repository.
+- Display the featured group separately from the remaining systems. Both groups use descending public-release order. Do not duplicate entries. Category filters and sequential/keyboard navigation follow the displayed order.
 
 ## Component comparison (corrected intent)
 
@@ -90,3 +90,16 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Switching systems on desktop resets the right detail pane to the top, including list selection and sequential/keyboard navigation.
 
 - The canonical production domain is https://design-system-catalog.akiyan.tokyo, served by the existing Cloudflare Pages project. Use it for canonical URLs, sitemap and crawler metadata.
+
+- Use pnpm exclusively for package installation, scripts and package execution. Do not run npm or npx. Pin pnpm 12.18.0 and commit pnpm-lock.yaml; use frozen installs for reproducibility.
+- Live preview headings and subtitles match each system’s list thumbnail name and provider-specific description in both languages.
+- Typography includes quotation samples with citations, list styles, heading hierarchy, definitions and inline formatting using genuine library styling or native semantic HTML. Clearly identify original sample quotations.
+
+- The footer includes a bilingual addition-request link to the catalog repository’s GitHub issue form. The form collects the system name and official URL with optional provider, repository and notes.
+
+- Opening / starts with no selected system. On desktop the right pane explains the catalog with actual specimen examples, counts and keyboard guidance. Individual paths remain selected; Back to / restores the introduction. Category changes on / must not automatically select a system.
+- Desktop branding is デザインシステムカタログ.akiyan.tokyo (English equivalent when switched). Use the full brand in title/OG title; individual titles also include the system name. Keep the short mobile header name.
+
+- Rich typography list captures may use a compact two-column article excerpt with the first long paragraph and rich-text samples. Live typography keeps every paragraph and expands the iframe height to avoid clipping long mobile specimens.
+
+- Featured systems are Astryx, Fluent 2, Digital Agency (DADS), Ant Design and Primer, sorted newest public release first. Exclude React Aria from this group. Remove the GitHub-star selection note. Clearly identify unstyled/headless libraries in list rows and before live previews; retain their genuine unstyled appearance.

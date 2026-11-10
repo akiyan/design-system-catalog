@@ -17,7 +17,7 @@ test('featured catalog, chronological remainder, categories and date evidence', 
   await page.goto('/'); await ready(page);
   await expect(page.getByRole('searchbox')).toHaveCount(0);
   await expect(page.locator('.system-row')).toHaveCount(systems.length);
-  await expect(page.locator('.system-row').first()).toContainText('Ant Design');
+  await expect(page.locator('.system-row').first()).toContainText('Astryx');
   await expect(page.locator('.system-row[data-featured="true"]')).toHaveCount(5);
   const dates = await page.locator('.system-row[data-featured="false"] .release-line time').allTextContents();
   expect(dates).toEqual([...dates].sort((a,b) => b.localeCompare(a)));
@@ -26,10 +26,10 @@ test('featured catalog, chronological remainder, categories and date evidence', 
   await expect(page.getByRole('link', {name:'公開日の根拠',exact:true})).toHaveAttribute('href', 'https://astryx.atmeta.com/blog/introducing-astryx');
   await page.getByRole('button', {name:`政府・公共 ${publicCount}`,exact:true}).click();
   await expect(page.locator('.system-row')).toHaveCount(publicCount);
-  await expect(active(page)).toContainText('GC Design System');
+  await expect(active(page)).toContainText('デジタル庁');
   await page.getByRole('button', {name:`企業・OSS ${ossCount}`,exact:true}).click();
   await expect(page.locator('.system-row')).toHaveCount(ossCount);
-  await expect(active(page)).toContainText('Ant Design');
+  await expect(active(page)).toContainText('Astryx');
   await page.locator('.system-row').filter({hasText:'Gestalt'}).click();
   await expect(page.locator('.release-info .date-reference')).toHaveText('参考');
   await expect(page.locator('.release-details')).toContainText('リポジトリ作成日と一般公開日は一致しない');
@@ -79,7 +79,7 @@ test('automatic language detection follows browser preference', async ({browser}
     const context=await browser.newContext({locale}); const page=await context.newPage();
     await page.goto(test.info().project.use.baseURL); await ready(page);
     await expect(page.locator('html')).toHaveAttribute('lang',expected);
-    await expect(page.locator('.site-title')).toHaveText(label);
+    await expect(page.locator('.desktop-site-title')).toHaveText(label+'.akiyan.tokyo');
     await context.close();
   }
 });
@@ -103,14 +103,16 @@ test('manual language selection persists, translates metadata/help, and switches
 
 test('keyboard selection, boundaries, screenshot switching, zoom and help focus', async ({page}) => {
   await page.goto('/'); await ready(page);
+  await expect(active(page)).toHaveCount(0);
+  await page.keyboard.press('j');await expect(active(page)).toContainText('Astryx');
   await page.keyboard.press('j');
   await expect(active(page)).toContainText('Microsoft Fluent 2');
   await expect(page).toHaveURL(/\/fluent\/$/);
   await expect(active(page)).toBeFocused();
   await page.keyboard.press('ArrowUp');
-  await expect(active(page)).toContainText('Ant Design');
+  await expect(active(page)).toContainText('Astryx');
   await page.keyboard.press('End'); await expect(active(page)).toContainText(oldest.shortName);
-  await page.keyboard.press('Home'); await expect(active(page)).toContainText('Ant Design');
+  await page.keyboard.press('Home'); await expect(active(page)).toContainText('Astryx');
   await page.goto('/astryx/'); await ready(page);
   await page.keyboard.press('ArrowRight');
   await expect(page.locator('.main-preview iframe')).toHaveAttribute('src','/specimens/astryx/form/?lang=ja');
@@ -200,10 +202,10 @@ test('mobile list has no selected state and detail buttons browse the active cat
   await expect(page.getByRole('button',{name:'前のデザインシステム',exact:true})).toBeDisabled();
   await expect(page.locator('.system-position')).toHaveText(`1 / ${publicCount}`);
   await page.getByRole('link',{name:'次のデザインシステム',exact:true}).click();
-  await expect(page).toHaveURL(/\/dads\/$/);
+  await expect(page).toHaveURL(/\/canada\/$/);
   await expect(page.locator('.system-position')).toHaveText(`2 / ${publicCount}`);
   await page.getByRole('link',{name:'前のデザインシステム',exact:true}).click();
-  await expect(page).toHaveURL(/\/canada\/$/);
+  await expect(page).toHaveURL(/\/dads\/$/);
   await page.getByRole('button',{name:'English',exact:true}).click();
   await page.setViewportSize({width:320,height:740});
   await expect(page.getByRole('link',{name:'Next design system',exact:true})).toBeVisible();
@@ -215,7 +217,7 @@ test('mobile list has no selected state and detail buttons browse the active cat
 test('touch swipes browse systems without opening zoom, vertical gestures and taps stay distinct', async ({browser}) => {
   const context=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true,locale:'ja-JP'});
   const page=await context.newPage();
-  await page.goto(`${test.info().project.use.baseURL}/ant/`); await ready(page);
+  await page.goto(`${test.info().project.use.baseURL}/astryx/`); await ready(page);
   const client=await context.newCDPSession(page);
   async function swipe(dx,dy=0) {
     await expect(page.frameLocator('.main-preview iframe').locator('#specimen-root')).toHaveAttribute('data-ready','true');
@@ -230,11 +232,11 @@ test('touch swipes browse systems without opening zoom, vertical gestures and ta
   await expect(page).toHaveURL(/\/fluent\/$/);
   await expect(page.locator('.zoom-dialog')).not.toBeVisible();
   await swipe(100);
-  await expect(page).toHaveURL(/\/ant\/$/);
+  await expect(page).toHaveURL(/\/astryx\/$/);
   await swipe(100); // First item remains at the boundary.
-  await expect(page).toHaveURL(/\/ant\/$/);
+  await expect(page).toHaveURL(/\/astryx\/$/);
   await swipe(10,-90);
-  await expect(page).toHaveURL(/\/ant\/$/);
+  await expect(page).toHaveURL(/\/astryx\/$/);
   await page.waitForTimeout(550);
   await page.getByRole('button',{name:'拡大表示',exact:true}).click();
   await expect(page.locator('.zoom-dialog')).toBeVisible();
@@ -283,15 +285,19 @@ test('every system has a bilingual feature description and official source', asy
 test('five featured entries lead each matching category without duplicates', async ({page}) => {
   await page.goto('/'); await ready(page);
   const links=await page.locator('.system-row').evaluateAll(rows=>rows.map(row=>row.getAttribute('href')));
-  expect(links.slice(0,5)).toEqual(['/ant/','/fluent/','/astryx/','/reactaria/','/primer/']);
+  expect(links.slice(0,5)).toEqual(['/astryx/','/fluent/','/dads/','/ant/','/primer/']);
   expect(new Set(links).size).toBe(systems.length);
+  const featuredDates=await page.locator('.system-row[data-featured="true"] time').allTextContents();expect(featuredDates).toEqual([...featuredDates].sort((a,b)=>b.localeCompare(a)));
+  await expect(page.getByText('GitHubスター数を参考に選定',{exact:true})).toHaveCount(0);
+  await expect(page.locator('.system-row[href="/reactaria/"]')).toHaveAttribute('data-featured','false');
   await expect(page.getByRole('heading',{name:'注目の5件',exact:true})).toBeVisible();
   await expect(page.getByRole('heading',{name:'公開日が新しい順',exact:true})).toHaveCount(1);
   await page.getByRole('button',{name:`政府・公共 ${publicCount}`,exact:true}).click();
-  await expect(page.getByRole('heading',{name:'注目の5件',exact:true})).toHaveCount(0);
-  await expect(page.locator('.system-row[data-featured="true"]')).toHaveCount(0);
+  await expect(page.getByRole('heading',{name:'注目のシステム',exact:true})).toBeVisible();
+  await expect(page.locator('.system-row[data-featured="true"]')).toHaveCount(1);
+  await expect(page.locator('.system-row[data-featured="true"]')).toContainText('デジタル庁');
   await page.getByRole('button',{name:`企業・OSS ${ossCount}`,exact:true}).click();
-  await expect(page.locator('.system-row').first()).toContainText('Ant Design');
+  await expect(page.locator('.system-row').first()).toContainText('Astryx');
   await page.getByRole('button',{name:'English',exact:true}).click();
   await expect(page.getByRole('heading',{name:'Featured systems',exact:true})).toBeVisible();
 });

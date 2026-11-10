@@ -1,11 +1,12 @@
 import React, {useState} from 'react';
 import {createRoot} from 'react-dom/client';
+import {typographyWords} from './typography-extras';
 const defaultWords = language => language === 'en' ? {
  save:'Save changes',cancel:'Cancel',more:'Details',disabled:'Disabled',basic:'Buttons',sizes:'Sizes',states:'Disabled state',form:'Form fields',name:'Project name',placeholder:'Design system catalog',notify:'Notify the team',visibility:'Visibility',team:'Team only',public:'Public',heading:'Project settings',body:'Manage the project and share updates with your team.',status:'Changes saved',small:'Small',medium:'Medium',large:'Large',specimen:'Component specimen',check:'Selected',library:'Official implementation',type:'Typography',sample:'A clear interface starts with shared components.',tableTitle:'Projects',tableHeaders:['Project','Owner','Status'],tableRows:[['Catalog','Aki','Published'],['Components','Mika','In review'],['Guidelines','Jun','Draft']],alerts:'Alerts',alertMessages:[{tone:'info',title:'An update is available',body:'Review the latest project settings.'},{tone:'success',title:'Changes saved',body:'Your team can now view the updated settings.'},{tone:'warning',title:'Review your settings',body:'Check the visibility before publishing.'}]
 } : {
  save:'変更を保存',cancel:'キャンセル',more:'詳細を見る',disabled:'無効',basic:'基本のボタン',sizes:'サイズ',states:'無効な状態',form:'入力フォーム',name:'プロジェクト名',placeholder:'デザインシステムカタログ',notify:'チームに通知する',visibility:'公開範囲',team:'チーム内',public:'一般公開',heading:'プロジェクト設定',body:'プロジェクトを管理してチームに更新を共有します。',status:'変更を保存しました',small:'小',medium:'中',large:'大',specimen:'コンポーネント見本',check:'選択済み',library:'公式の公開実装',type:'タイポグラフィ',sample:'共通のコンポーネントから使いやすい画面を組み立てます。',tableTitle:'プロジェクト一覧',tableHeaders:['プロジェクト','担当者','状態'],tableRows:[['カタログ','Aki','公開'],['コンポーネント','Mika','確認中'],['ガイドライン','Jun','下書き']],alerts:'アラート',alertMessages:[{tone:'info',title:'更新のお知らせ',body:'最新のプロジェクト設定を確認してください。'},{tone:'success',title:'保存しました',body:'更新した設定をチームが確認できます。'},{tone:'warning',title:'設定を確認してください',body:'公開する前に公開範囲を確認してください。'}]
 };
-export const words = (language,copy) => ({...defaultWords(language),...copy,paragraphs:language==='en'?[
+export const words = (language,copy) => ({...defaultWords(language),...copy,rich:typographyWords(language),paragraphs:language==='en'?[
  'A design system connects a product’s visual language with the way people use it. Shared typography helps readers find the information they need and follow the next step with confidence.',
  'This paragraph is long enough to wrap across several lines. Compare the reading rhythm, spacing and balance as the available width changes.\nThis sentence starts on a new line within the same paragraph, so you can distinguish an explicit line break from automatic wrapping.',
  'A new paragraph marks a change of topic. Headings, body text and the space between paragraphs work together to give longer content a clear structure. Check how comfortably the text reads on both desktop and mobile screens.'
@@ -16,7 +17,7 @@ export const words = (language,copy) => ({...defaultWords(language),...copy,para
  ]});
 export const lineBreaks = text => text.split('\n').map((line,index)=><React.Fragment key={index}>{index>0&&<br/>}{line}</React.Fragment>);
 function Example({kit,view,language,name,copy}) {
- const t=words(language,copy);if(copy&&view==='typography')t.paragraphs=[t.body,...t.paragraphs];const [value,setValue]=useState(t.placeholder);const [checked,setChecked]=useState(true);const [selection,setSelection]=useState('team');const [status,setStatus]=useState('');
+ const t=words(language,copy);const [value,setValue]=useState(t.placeholder);const [checked,setChecked]=useState(true);const [selection,setSelection]=useState('team');const [status,setStatus]=useState('');
  const B=kit.Button, I=kit.Input, C=kit.Checkbox, S=kit.Select;
  const button=(label,variant='primary',extra={})=><B variant={variant} onClick={()=>setStatus(t.status)} {...extra}>{label}</B>;
  const section=(title,content)=><section className="specimen-section"><h2>{title}</h2>{content}</section>;

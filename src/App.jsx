@@ -1,8 +1,9 @@
 import { Fragment, useEffect, useRef, useState } from 'react';
-import { ArrowSquareOut, ArrowLeft, CaretLeft, CaretRight, GithubLogo, Keyboard, X, ImageBroken, Cube } from '@phosphor-icons/react';
+import { ArrowSquareOut, PlusCircle, ArrowLeft, CaretLeft, CaretRight, GithubLogo, Keyboard, X, ImageBroken, Cube } from '@phosphor-icons/react';
 import { systems, specimenCategories, featuredIds, systemPath, systemFromPath, systemName } from './catalog';
 import { messages, detectLanguage } from './i18n';
 import SpecimenFrame from './SpecimenFrame';
+import CatalogIntroduction from './CatalogIntroduction';
 
 const categories = ['all', 'public', 'oss'];
 const imagePath = (system, index = 0, compact = false) => system.specimen.status!=='ready'?`/previews/${system.id}-${system.views[index]?.referenceIndex ?? 0}.webp`:`/specimens/${compact ? 'list-thumbnails' : 'thumbnails'}/${system.id}-${system.views[index]?.key || 'overview'}.webp`;
@@ -40,7 +41,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
   const [language, setLanguage] = useState('ja');
   const [languagePreference, setLanguagePreference] = useState('auto');
   const [category, setCategory] = useState('all');
-  const [selectedId, setSelectedId] = useState(initialId || systems[0].id);
+  const [selectedId, setSelectedId] = useState(initialId);
   const [viewIndex, setViewIndex] = useState(0);
   const [comparisonView,setComparisonView]=useState('overview');
   const [mobilePreview, setMobilePreview] = useState(Boolean(initialId));
@@ -59,7 +60,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
   const selected = systems.find(s => s.id === selectedId) || systems[0];
   const activeView = selected.views[viewIndex] ? viewIndex : 0;
 
-  useEffect(()=>{previewPanel.current?.scrollTo({top:0,behavior:'instant'});},[selected.id]);
+  useEffect(()=>{previewPanel.current?.scrollTo({top:0,behavior:'instant'});},[selectedId]);
 
   useEffect(() => {
     const media = window.matchMedia('(max-width: 700px)');
@@ -76,13 +77,13 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
     setLanguagePreference(preference);
     setLanguage(preference === 'auto' ? detectLanguage() : preference);
     const entry = systemFromPath(location.pathname);
-    setSelectedId(entry?.id || systems[0].id);
+    setSelectedId(entry?.id || null);
     setMobilePreview(Boolean(entry));
     setReady(true);
     const onPopState = () => {
       const restored = systemFromPath(location.pathname);
       setCategory('all');
-      setSelectedId(restored?.id || systems[0].id);
+      setSelectedId(restored?.id || null);
       setViewIndex(0);setComparisonView('overview');
       setMobilePreview(Boolean(restored));
       setZoomOpen(false);
@@ -98,10 +99,10 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
   useEffect(() => {
     if (!ready) return;
     document.documentElement.lang = language;
-    document.title = `${systemName(selected, language)} | ${t.title}`;
+    document.title = selectedId ? `${systemName(selected, language)} | ${t.siteTitle}` : t.siteTitle;
     const canonical = document.querySelector('link[rel=canonical]');
     if (canonical) canonical.href = new URL(location.pathname, location.origin).href;
-  }, [ready, language, selected, t.title, mobilePreview]);
+  }, [ready, language, selectedId, selected, t.siteTitle, mobilePreview]);
 
   useEffect(() => {
     if (languagePreference !== 'auto') return;
@@ -160,12 +161,12 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
   function chooseCategory(id) {
     setCategory(id);
     setMobilePreview(false);
-    if (id !== 'all' && selected.category !== id) {
+    if (selectedId && id !== 'all' && selected.category !== id) {
       selectSystem(systems.find(s => s.category === id), { showDetail: false });
     }
   }
 
-  const selectedIndex = filtered.findIndex(system => system.id === selected.id);
+  const selectedIndex = filtered.findIndex(system => system.id === selectedId);
   const previousSystem = filtered[selectedIndex - 1];
   const nextSystem = filtered[selectedIndex + 1];
 
@@ -224,16 +225,18 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
         }
         return;
       }
-      const index = filtered.findIndex(s => s.id === selected.id);
+      const index = filtered.findIndex(s => s.id === selectedId);
       let nextIndex;
       if (event.key === 'ArrowDown' || event.key === 'j') nextIndex = Math.min(index + 1, filtered.length - 1);
-      if (event.key === 'ArrowUp' || event.key === 'k') nextIndex = Math.max(index - 1, 0);
+      if (event.key === 'ArrowUp' || event.key === 'k') nextIndex = index<0?filtered.length-1:Math.max(index-1,0);
       if (event.key === 'Home') nextIndex = 0;
       if (event.key === 'End') nextIndex = filtered.length - 1;
       if (nextIndex !== undefined) {
         event.preventDefault();
         const isMobileDetail = mobilePreview && window.matchMedia('(max-width: 700px)').matches;
         selectSystem(filtered[nextIndex], { showDetail: mobilePreview, focus: !isMobileDetail, resetView: true });
+      } else if (!selectedId) {
+        return;
       } else if (['ArrowLeft', 'ArrowRight', 'h', 'l'].includes(event.key)) {
         event.preventDefault();
         movePreview(['ArrowRight', 'l'].includes(event.key) ? 1 : -1);
@@ -250,7 +253,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
     };
     window.addEventListener('keydown', onKeyDown);
     return () => window.removeEventListener('keydown', onKeyDown);
-  }, [ready, selected, activeView, comparisonView, category, mobilePreview, helpOpen, zoomOpen]);
+  }, [ready, selectedId, selected, activeView, comparisonView, category, mobilePreview, helpOpen, zoomOpen]);
 
   const keyboardRows = [
     [['↓', '↑', 'J', 'K'], t.move], [['Home', 'End'], t.firstLast], [['←', '→', 'H', 'L'], t.changeView],
@@ -261,7 +264,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
   return <div className={`catalog-app ${mobilePreview ? 'mobile-detail' : ''}`} data-ready={ready}>
     <a className="skip-link" href="#catalog-list">{t.skip}</a>
     <header className="site-header">
-      <a className="site-title" href="/">{t.title}</a>
+      <a className="site-title" href="/"><span className="desktop-site-title">{t.siteTitle}</span><span className="mobile-site-title">{t.title}</span></a>
       <div className="header-controls">
         <nav className="filters" aria-label={t.category}>
           {categories.map(id => <button key={id} type="button" disabled={!ready} aria-pressed={category === id} className={category === id ? 'filter active' : 'filter'} onClick={() => chooseCategory(id)}>{t[id]}<span>{id === 'all' ? systems.length : systems.filter(s => s.category === id).length}</span></button>)}
@@ -278,25 +281,25 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
         <nav className="list-preview-categories" aria-label={t.comparisonCategory}>
           {Object.entries(specimenCategories).map(([key,labels])=><button type="button" key={key} disabled={!ready} aria-pressed={comparisonView===key} onClick={()=>chooseComparisonView(key)}>{labels[language==='en'?1:0]}</button>)}
         </nav>
-        <div className="list-toolbar"><h2>{featuredCount ? t.featured : t.newest}</h2><span>{featuredCount || filtered.length}</span></div>
-        {featuredCount > 0 && <p className="featured-note">{t.featuredBasis}</p>}
-        <p className="sr-only" role="status">{filtered.length} {t.count} — {systemName(selected, language)}</p>
+        <div className="list-toolbar"><h2>{featuredCount ? (category==='all'?t.featured:t.featuredGroup) : t.newest}</h2><span>{featuredCount || filtered.length}</span></div>
+        <p className="sr-only" role="status">{filtered.length} {t.count}{selectedId?` — ${systemName(selected, language)}`:''}</p>
         {filtered.map((s, index) => <Fragment key={s.id}>
           {featuredCount > 0 && index === featuredCount && <div className="list-toolbar list-section-heading"><h2>{t.newest}</h2><span>{filtered.length - featuredCount}</span></div>}
-          <a data-featured={featuredIds.includes(s.id)} href={systemPath(s)} ref={element => { rowRefs.current[s.id] = element; }} tabIndex={isMobile || selected.id === s.id ? 0 : -1} className={`system-row ${!isMobile && selected.id === s.id ? 'selected' : ''}`} aria-current={!isMobile && selected.id === s.id ? 'page' : undefined}
+          <a data-featured={featuredIds.includes(s.id)} href={systemPath(s)} ref={element => { rowRefs.current[s.id] = element; }} tabIndex={isMobile || selectedId === s.id || (!selectedId && index===0) ? 0 : -1} className={`system-row ${!isMobile && selectedId === s.id ? 'selected' : ''}`} aria-current={!isMobile && selectedId === s.id ? 'page' : undefined}
           onClick={event => {
             if (!ready || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return;
             event.preventDefault();
             selectSystem(s);
           }}>
           <span className="row-image"><PreviewImage compact system={s} index={Math.max(0,s.views.findIndex(view=>view.key===comparisonView))} language={language} loading={s.id === selected.id ? 'eager' : 'lazy'} width="1440" height="1000" />{s.specimen.status!=='ready'?<span className="reference-badge">{t.siteCapture}</span>:!s.views.some(view=>view.key===comparisonView)&&<span className="reference-badge">{t.overviewFallback}</span>}</span>
-          <span className="row-copy"><span className="system-name">{systemName(s, language)}</span>
+          <span className="row-copy"><span className="system-name">{systemName(s, language)}</span>{s.specimen.unstyled&&<span className="system-kind">{t.unstyled}</span>}
             <span className="system-meta"><span>{language === 'en' ? s.countryEn : s.country}</span><span className="meta-divider" aria-hidden="true" /><span>{t[s.category]}</span></span>
             <span className="release-line"><time dateTime={s.published.date}>{s.published.date}</time>{s.published.estimated && <span className="date-reference">{t.reference}</span>}</span>
           </span>
         </a></Fragment>)}
       </section>
-      <section ref={previewPanel} className="preview-panel" aria-label={t.preview}>
+      <section ref={previewPanel} className="preview-panel" aria-label={selectedId?t.preview:t.aboutSite}>
+        {selectedId?<>
         <div className="mobile-detail-toolbar">
           <button className="back-to-list text-button" onClick={returnToList}><ArrowLeft size={18} />{t.back}</button>
           <nav className="system-navigation" aria-label={t.browseSystems}>
@@ -308,7 +311,8 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
         <div className="preview-heading"><h1>{systemName(selected, language)}</h1><div className="system-links"><a ref={officialLink} className="official-link" href={selected.url} target="_blank" rel="noopener noreferrer"><ArrowSquareOut size={21} />{t.official}<span className="sr-only"> ({t.newTab})</span></a>{selected.repository&&<a className="official-link system-repository" href={selected.repository} target="_blank" rel="noopener noreferrer"><GithubLogo size={21}/>{selected.repository.startsWith('https://github.com/')?'GitHub':'GitLab'}<span className="sr-only"> ({t.newTab})</span></a>}</div></div>
         <p className="system-description">{selected.description[language]}</p>
         {selected.specimen.status==='ready' ? <>
-          <div className="implementation-toolbar"><span>{t.liveComponents}</span><button type="button" className="specimen-enlarge text-button" onClick={()=>setZoomOpen(true)}>{t.enlarge}<ArrowSquareOut size={15}/></button></div>
+          <div className="implementation-toolbar"><span>{selected.specimen.unstyled?t.unstyledComponents:t.liveComponents}</span><button type="button" className="specimen-enlarge text-button" onClick={()=>setZoomOpen(true)}>{t.enlarge}<ArrowSquareOut size={15}/></button></div>
+          {selected.specimen.unstyled&&<p className="implementation-note unstyled-note">{t.unstyledExplanation}</p>}
           <div className="main-preview specimen-canvas" onTouchStart={startSwipe} onTouchEnd={endSwipe} onTouchCancel={()=>{swipeStart.current=null;}}>
             <SpecimenFrame system={selected} index={activeView} language={language} onSwipe={direction=>{if(isMobile)navigateAdjacent(direction>0?nextSystem:previousSystem)}} onKey={key=>{if(key==='Escape'&&isMobile)returnToList();else window.dispatchEvent(new KeyboardEvent('keydown',{key}))}}/>
           </div>
@@ -331,9 +335,10 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
         <div className="release-info"><span>{t.released}</span><time dateTime={selected.published.date}>{selected.published.date}</time>{selected.published.estimated && <span className="date-reference">{t.reference}</span>}</div>
         <details className="release-details" open={!isMobile}><summary>{t.releaseNote}</summary><p>{selected.published.note[language]}</p><a href={selected.published.sourceUrl} target="_blank" rel="noopener noreferrer">{t.dateSource}<ArrowSquareOut size={14} /></a></details>
         <details className="license-details" open={!isMobile}><summary>{t.conditions}</summary><p>{t.license}: {language === 'en' ? selected.licenseEn : selected.license}</p><p>{selected.specimen.status==='ready'?t.imageNote:t.captureNote}</p><a href={selected.specimen.sourceUrl} target="_blank" rel="noopener noreferrer">{selected.specimen.status==='ready'?t.imageSource:t.captureSource}<ArrowSquareOut size={14} /></a>{selected.repository && <a className="source-repository" href={selected.repository} target="_blank" rel="noopener noreferrer"><GithubLogo size={14} />{t.code}</a>}</details>
+        </>:<CatalogIntroduction systems={systems} language={language} ready={ready} onSelect={selectSystem} onHelp={()=>setHelpOpen(true)}/>}
       </section>
     </main>
-    <footer className="site-footer"><span>Copyright © 2026 <a href="https://github.com/akiyan" target="_blank" rel="noopener noreferrer">@akiyan</a></span><a className="github-link" href={githubUrl} target="_blank" rel="noopener noreferrer"><GithubLogo size={19} weight="fill" aria-hidden="true" />GitHub<ArrowSquareOut size={14} aria-hidden="true" /></a></footer>
+    <footer className="site-footer"><span>Copyright © 2026 <a href="https://github.com/akiyan" target="_blank" rel="noopener noreferrer">@akiyan</a></span><nav className="footer-links" aria-label={t.footerLinks}><a className="addition-request" href="https://github.com/akiyan/design-system-catalog/issues/new?template=add-design-system.yml" target="_blank" rel="noopener noreferrer"><PlusCircle size={17}/>{t.requestAddition}<ArrowSquareOut size={14}/></a><a className="github-link" href={githubUrl} target="_blank" rel="noopener noreferrer"><GithubLogo size={19} weight="fill" aria-hidden="true" />GitHub<ArrowSquareOut size={14} aria-hidden="true" /></a></nav></footer>
     <dialog ref={zoomDialog} className="zoom-dialog" onKeyDown={trapDialogFocus} aria-labelledby="zoom-title" onCancel={() => setZoomOpen(false)} onClick={e => { if (e.target === zoomDialog.current) setZoomOpen(false); }}>
       <div className="zoom-toolbar"><h2 id="zoom-title">{systemName(selected, language)}<span>{viewLabel(selected, activeView, language)}</span></h2><button aria-label={t.closeZoom} onClick={() => setZoomOpen(false)}><X size={24} /></button></div>
       <div className="zoom-content">{zoomOpen&&(selected.specimen.status==='ready'?<SpecimenFrame system={selected} index={activeView} language={language} expanded onKey={key=>{if(key==='Escape')setZoomOpen(false);else window.dispatchEvent(new KeyboardEvent('keydown',{key}))}}/>:<PreviewImage system={selected} index={activeView} language={language}/>)}</div>

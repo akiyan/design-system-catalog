@@ -21,7 +21,7 @@ async function compactCapture(page,id,view){
  // Fit real content to the thumbnail proportions without cropping controls.
  for(let i=0;i<4;i++){
   const box=await specimen.boundingBox();
-  const width=Math.round(Math.max(420,Math.min(1000,box.width*Math.sqrt(2.15/(box.width/box.height)))));
+  const width=Math.round(Math.max(420,Math.min(view==='typography'?1600:1000,box.width*Math.sqrt(2.15/(box.width/box.height)))));
   if(Math.abs(width-box.width)<12)break;
   await page.setViewportSize({width,height:700});await page.waitForTimeout(40);
  }

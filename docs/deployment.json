@@ -26,5 +26,14 @@
   "sourceCommit": "059360799e68bfe15e20a9ebd4ec01afb5a96923",
   "productionBrowserChecks": 136,
   "productionBrowserCheckSeconds": 30.4,
-  "verifiedAt": "2026-11-10T00:07:44.918306+00:00"
+  "verifiedAt": "2026-11-10T00:07:44.918306+00:00",
+  "packageManager": "pnpm@12.18.0",
+  "richTypographyImplementations": 12,
+  "featuredIds": [
+    "astryx",
+    "fluent",
+    "dads",
+    "ant",
+    "primer"
+  ]
 }

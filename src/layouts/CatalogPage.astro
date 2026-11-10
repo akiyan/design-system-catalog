@@ -5,7 +5,8 @@ import '../styles.css';
 const { system } = Astro.props;
 const selected = system || systems[0];
 const githubUrl = import.meta.env.PUBLIC_GITHUB_URL || 'https://github.com/akiyan/design-system-catalog';
-const title = system ? `${system.shortName} | デザインシステムカタログ` : 'デザインシステムカタログ';
+const siteTitle='デザインシステムカタログ.akiyan.tokyo';
+const title=system?`${system.shortName} | ${siteTitle}`:siteTitle;
 ---
 <!doctype html>
 <html lang="ja">

@@ -1,5 +1,6 @@
 import {test,expect} from '@playwright/test';
 import {readFileSync}from'node:fs';
+const systems=JSON.parse(readFileSync(new URL('../../src/data/systems.json',import.meta.url)));
 const registry=JSON.parse(readFileSync(new URL('../../src/data/specimens.json',import.meta.url)));
 test.use({locale:'ja-JP'});
 test.describe.configure({mode:'parallel'});
@@ -10,12 +11,12 @@ for(const [id,entry] of Object.entries(registry).filter(([,s])=>s.status==='read
  await expect(page.locator('#specimen-root')).toHaveAttribute('data-ready','true');
  await expect(page.locator('#specimen-root')).not.toHaveAttribute('data-error','true');
  expect(entry.views[0]).toBe('overview');
- await expect(page.getByText('プロジェクト設定',{exact:true})).toBeVisible();
- await expect(page.getByText('プロジェクトを管理してチームに更新を共有します。',{exact:true})).toBeVisible();
+ const system=systems.find(s=>s.id===id);
+ await expect(page.getByRole('heading',{name:system.shortName,exact:true})).toBeVisible();
+ await expect(page.getByText(system.thumbnailDescription.ja,{exact:true})).toBeVisible();
  const save=page.getByRole('button',{name:'変更を保存',exact:true}).first();await expect(save).toBeVisible();await save.click();
  await expect(page.locator('.specimen-status')).toContainText('変更を保存しました');
  if(view!=='form'){const disabled=page.getByRole('button',{name:/^無\s*効$/}).first();if(await disabled.count())await expect(disabled).toBeDisabled();else{const control=page.locator('.specimen-row [disabled]').first();await expect(control).toHaveText(/無\s*効/);await control.click({force:true});await expect(page.locator('.specimen-status')).toHaveText('変更を保存しました');}}
- if(view==='buttons'&&entry.views.includes('form')){await page.goto(`/specimens/${id}/form/`);await expect(page.locator('#specimen-root')).toHaveAttribute('data-ready','true');}
  const input=page.getByRole('textbox').filter({visible:true}).first();
  if(entry.views.includes('form'))await expect(input).toBeVisible();
  if(await input.count()){await input.fill('Test project');await expect(input).toHaveValue('Test project');}
@@ -47,11 +48,11 @@ test('next and previous system navigation reset typography to the overview',asyn
  await page.locator('.view-thumbnail').filter({hasText:'タイポグラフィ'}).click();
  await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/fluent\/typography\//);
  await page.getByRole('link',{name:'次のデザインシステム',exact:true}).click();
- await expect(page).toHaveURL(/\/astryx\/$/);await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/astryx\/overview\//);
+ await expect(page).toHaveURL(/\/dads\/$/);await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/dads\/overview\//);
  await page.getByRole('link',{name:'前のデザインシステム',exact:true}).click();
  await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/fluent\/overview\//);
  await page.locator('.view-thumbnail').filter({hasText:'タイポグラフィ'}).click();await page.keyboard.press('j');
- await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/astryx\/overview\//);
+ await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/dads\/overview\//);
 });
 
 for(const [id,entry] of Object.entries(registry).filter(([,s])=>s.status==='ready'))for(const view of entry.views.filter(v=>['table','alerts'].includes(v)))test(`${id}: ${view} uses shared content`,async({page})=>{
@@ -127,9 +128,9 @@ test('list categories switch comparison thumbnails and keep resource references 
 test('typography includes genuine paragraph blocks and explicit line breaks in both languages',async({page})=>{
  for(const id of ['govuk','fluent','primer'])for(const language of ['ja','en']){
   await page.goto(`/specimens/${id}/typography/?lang=${language}`);await expect(page.locator('#specimen-root')).toHaveAttribute('data-ready','true');
-  await expect(page.locator('.specimen-heading-group p')).toHaveCount(3);
-  await expect(page.locator('.specimen-heading-group p br')).toHaveCount(1);
-  expect((await page.locator('.specimen-heading-group p').first().innerText()).length).toBeGreaterThan(100);
+  await expect(page.locator('.specimen-prose p')).toHaveCount(3);
+  await expect(page.locator('.specimen-prose p br')).toHaveCount(1);
+  expect((await page.locator('.specimen-prose p').first().innerText()).length).toBeGreaterThan(100);
  }
 });
 
@@ -164,6 +165,48 @@ test('switching systems resets the desktop detail scroll position',async({page})
  await page.locator('.system-row[href="/fluent/"]').click();
  await expect.poll(()=>pane.evaluate(el=>el.scrollTop)).toBe(0);
  await pane.evaluate(el=>{el.scrollTop=400});await page.keyboard.press('j');
- await expect(page).toHaveURL(/\/astryx\/$/);
+ await expect(page).toHaveURL(/\/dads\/$/);
  await expect.poll(()=>pane.evaluate(el=>el.scrollTop)).toBe(0);
+});
+
+test('rich typography provides semantic quotations, lists, definitions and an accessible note link',async({page})=>{
+ for(const id of ['govuk','europa','dsfr','fluent','primer'])for(const language of ['ja','en']){
+  await page.goto(`/specimens/${id}/typography/?lang=${language}`);await expect(page.locator('#specimen-root')).toHaveAttribute('data-ready','true');
+  if(id==='europa')expect((await page.locator('.specimen-heading-group>h1').evaluate(el=>getComputedStyle(el).fontFamily)).toLowerCase()).toContain('arial');
+  const rich=page.locator('.specimen-rich-text');
+  await expect(rich.locator('blockquote')).toHaveCount(1);await expect(rich.locator('cite')).toContainText(language==='ja'?'サンプル':'Original');
+  await expect(rich.locator('ul>li')).toHaveCount(3);await expect(rich.locator('ol>li')).toHaveCount(3);await expect(rich.locator('dl>dt')).toHaveCount(2);
+  await expect(rich.locator('strong')).toBeVisible();await expect(rich.locator('em')).toBeVisible();await expect(rich.locator('code')).toHaveText('font-size');
+  await rich.getByRole('link').click();await expect(page).toHaveURL(/#specimen-reading-note$/);await expect(rich.locator('#specimen-reading-note')).toBeInViewport();
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+ }
+});
+
+test('home starts unselected, shows the introduction and restores it through history',async({page})=>{
+ await page.goto('/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
+ await expect(page.locator('.system-row.selected')).toHaveCount(0);await expect(page.locator('.system-row[aria-current]')).toHaveCount(0);
+ await expect(page.locator('.catalog-introduction')).toBeVisible();await expect(page.locator('.main-preview iframe')).toHaveCount(0);
+ await expect(page).toHaveTitle('デザインシステムカタログ.akiyan.tokyo');await expect(page.locator('.desktop-site-title')).toHaveText('デザインシステムカタログ.akiyan.tokyo');
+ await page.getByRole('navigation',{name:'一覧のプレビューカテゴリ'}).getByRole('button',{name:'フォーム',exact:true}).click();await expect(page.locator('.catalog-introduction')).toBeVisible();
+ await page.getByRole('button',{name:'政府・公共 15',exact:true}).click();await expect(page.locator('.catalog-introduction')).toBeVisible();
+ await page.locator('.system-row[href="/dads/"]').click();await expect(page.locator('.preview-heading h1')).toBeVisible();
+ await expect(page).toHaveTitle(/デジタル庁.*デザインシステムカタログ\.akiyan\.tokyo/);
+ await page.goBack();await expect(page.locator('.catalog-introduction')).toBeVisible();await expect(page.locator('.system-row[aria-current]')).toHaveCount(0);
+});
+
+test('addition requests link to the issue form in both languages without mobile overflow',async({page})=>{
+ await page.goto('/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
+ const link=page.locator('.site-footer .addition-request');await expect(link).toHaveText('追加リクエスト');await expect(link).toHaveAttribute('href','https://github.com/akiyan/design-system-catalog/issues/new?template=add-design-system.yml');
+ await page.getByRole('button',{name:'English',exact:true}).click();await expect(link).toHaveText('Suggest a system');
+ for(const width of [320,390,900,1440]){await page.setViewportSize({width,height:844});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await expect(link).toBeVisible();}
+});
+
+test('headless libraries clearly identify their native unstyled appearance',async({page})=>{
+ await page.goto('/reactaria/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
+ await expect(page.locator('.system-row[href="/reactaria/"] .system-kind')).toHaveText('スタイルなし');
+ await expect(page.locator('.implementation-toolbar')).toContainText('スタイルなしの実装プレビュー');
+ await expect(page.locator('.unstyled-note')).toContainText('配色や装飾のCSSを含まない');
+ await expect(page.locator('.system-row[href="/reactaria/"]')).toHaveAttribute('data-featured','false');
+ await page.frameLocator('.main-preview iframe').getByRole('textbox').first().fill('Accessible input');
+ await expect(page.frameLocator('.main-preview iframe').getByRole('textbox').first()).toHaveValue('Accessible input');
 });

@@ -7,7 +7,7 @@ export default function SpecimenFrame({system,index,language,onSwipe,onKey,expan
  useEffect(()=>{
   const receive=event=>{
    if(event.origin!==location.origin||event.source!==ref.current?.contentWindow)return;
-   if(event.data?.type==='catalog-specimen-size')setHeight(Math.min(1800,Math.max(420,Number(event.data.height)||520)));
+   if(event.data?.type==='catalog-specimen-size')setHeight(Math.min(8000,Math.max(420,Number(event.data.height)||520)));
    if(event.data?.type==='catalog-specimen-swipe')onSwipe?.(event.data.direction);
    if(event.data?.type==='catalog-specimen-key')onKey?.(event.data.key);
   };

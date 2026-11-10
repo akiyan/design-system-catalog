@@ -9,7 +9,7 @@ try {
  const module=await modules[`./adapters/${root.dataset.adapter}.jsx`]?.() || await modules[`./adapters/${root.dataset.adapter}.js`]?.();
  if(!module)throw new Error('Implementation adapter unavailable');
  const shellStyles=document.createElement('style');shellStyles.textContent=layoutStyles;document.head.append(shellStyles);
- await module.default(root,{view:root.dataset.view,language,name:root.dataset.name,copy:new URLSearchParams(location.search).has('thumbnail')?JSON.parse(root.dataset.thumbnailCopy)[language]:undefined});
+ await module.default(root,{view:root.dataset.view,language,name:root.dataset.name,copy:JSON.parse(root.dataset.thumbnailCopy)[language]});
  await document.fonts.ready;
  await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
  root.dataset.ready='true';notify();new ResizeObserver(notify).observe(document.body);

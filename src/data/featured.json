@@ -1,5 +1,11 @@
 {
-  "ids": ["ant", "fluent", "astryx", "reactaria", "primer"],
+  "ids": [
+    "astryx",
+    "fluent",
+    "dads",
+    "ant",
+    "primer"
+  ],
   "reviewedAt": "2026-11-10",
-  "basis": "Public GitHub repository stars among catalog entries, excluding archived repositories and duplicate implementation repositories. Adobe React Aria represents adobe/react-spectrum."
+  "basis": "Curated selection of five public design systems, ordered by descending initial public release date."
 }
