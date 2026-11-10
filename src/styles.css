@@ -135,3 +135,18 @@ a.system-row{cursor:pointer}
 .system-title-link:hover{text-decoration:underline;text-underline-offset:4px}
 
 .system-meta .release-line{margin-top:0;font-size:inherit;gap:9px;white-space:nowrap}
+
+/* Browse the complete implementation by scrolling; thumbnails remain overview-only. */
+.specimen-gallery{display:grid;gap:32px}
+.component-section{min-width:0;scroll-margin-top:20px}
+.component-section-title{font-size:17px;line-height:1.5;margin:0 0 12px;font-weight:650}
+.component-preview{border:1px solid #cbd1dd;border-radius:6px;overflow:hidden}
+.preview-heading>.official-link{width:auto;padding:0 9px;gap:6px;font-size:12px;white-space:nowrap;flex-shrink:0}
+.reference-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 16px}
+.reference-item{margin:0;min-width:0;scroll-margin-top:20px}
+.reference-thumbnail{display:block;width:100%;padding:0;border:1px solid #dce0e7;border-radius:5px;overflow:hidden;aspect-ratio:1.44;background:#f7f8fa;cursor:zoom-in}
+.reference-thumbnail img{width:100%;height:100%;object-fit:contain;object-position:top}
+.reference-item figcaption{display:flex;align-items:baseline;justify-content:space-between;gap:8px;margin-top:8px;font-size:12px;line-height:1.6}
+.reference-item figcaption a{display:inline-flex;align-items:center;gap:4px;font-size:10px;color:var(--muted)}
+.reference-item figcaption a:hover{text-decoration:underline}
+@media(max-width:700px){.preview-heading>.official-link{width:auto;height:32px;padding:0 6px;font-size:11px}.reference-gallery{gap:16px 10px}.reference-item figcaption{flex-wrap:wrap;font-size:11px;gap:2px}.specimen-gallery{gap:28px}}

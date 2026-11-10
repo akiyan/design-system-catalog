@@ -30,36 +30,28 @@ for(const [id,entry] of Object.entries(registry).filter(([,s])=>s.status==='read
  const styles=await page.evaluate(()=>[...document.styleSheets].map(s=>s.href||''));
  expect(styles.some(s=>s.includes('/_astro/arco.'))).toBe(false);
 });
-test('catalog renders live specimens, switches shared categories and keeps editable keys',async({page})=>{
+test('catalog renders every live specimen in a scrolling gallery and keeps editable keys',async({page})=>{
  await page.goto('/ant/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
  const frame=page.frameLocator('.main-preview iframe');
  await frame.getByRole('button',{name:'変更を保存',exact:true}).click();await expect(frame.getByRole('status')).toHaveText('変更を保存しました');
  await frame.getByRole('textbox').first().pressSequentially('jk?');await expect(page).toHaveURL(/\/ant\/$/);
- await page.locator('.view-thumbnail').filter({hasText:'フォーム'}).click();
- await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/\/ant\/form\//);
- await page.locator('.system-row[href="/fluent/"]').click();
- await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/\/fluent\/form\//);
- await page.getByRole('button',{name:'English',exact:true}).click();
- await expect(page.frameLocator('.main-preview iframe').getByRole('button',{name:'Save changes',exact:true}).first()).toBeVisible();
+ await expect(page.locator('.component-section')).toHaveCount(registry.ant.views.length);
+ await page.locator('.component-section[data-view="form"]').scrollIntoViewIfNeeded();
+ await expect(page.locator('.component-section[data-view="form"] iframe')).toHaveAttribute('src',/\/ant\/form\//);
+ await page.locator('.system-row[href="/fluent/"]').click();await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/\/fluent\/overview\//);
+ await page.getByRole('button',{name:'English',exact:true}).click();await expect(page.frameLocator('.main-preview iframe').getByRole('button',{name:'Save changes',exact:true}).first()).toBeVisible();
 });
 test('nonimplemented systems explicitly show resources without fabricated specimens',async({page})=>{
  await page.goto('/sansan/');await expect(page.locator('.implementation-resource')).toBeVisible();await expect(page.locator('.main-preview iframe')).toHaveCount(0);
  await page.goto('/airtable/');await expect(page.locator('.implementation-resource')).toBeVisible();
 });
 
-test('next and previous system navigation reset typography to the overview',async({page})=>{
+test('next and previous navigation reset the scrolling gallery to its overview',async({page})=>{
  await page.setViewportSize({width:390,height:844});await page.goto('/fluent/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
- const waitForLayout=async()=>{const root=page.frameLocator('.main-preview iframe').locator('#specimen-root');await expect(root).toHaveAttribute('data-ready','true');const height=await root.evaluate(el=>Math.ceil(Math.max(el.scrollHeight,el.getBoundingClientRect().height))+2);await expect(page.locator('.main-preview iframe')).toHaveJSProperty('clientHeight',height);};
- await waitForLayout();
- await page.locator('.view-thumbnail').filter({hasText:'タイポグラフィ'}).click();
- await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/fluent\/typography\//);
- await page.getByRole('link',{name:'次のデザインシステム',exact:true}).click();
- await expect(page).toHaveURL(/\/dads\/$/);await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/dads\/overview\//);
- await page.getByRole('link',{name:'前のデザインシステム',exact:true}).click();
- await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/fluent\/overview\//);
- await waitForLayout();
- await page.locator('.view-thumbnail').filter({hasText:'タイポグラフィ'}).click();await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/fluent\/typography\//);await page.keyboard.press('j');
- await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/dads\/overview\//);
+ await page.locator('.component-section[data-view="typography"]').scrollIntoViewIfNeeded();await expect.poll(()=>page.locator('.workspace').evaluate(e=>e.scrollTop)).toBeGreaterThan(0);
+ await page.getByRole('link',{name:'次のデザインシステム',exact:true}).click();await expect(page).toHaveURL(/\/dads\/$/);await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/dads\/overview\//);
+ await expect.poll(()=>page.locator('.workspace').evaluate(e=>e.scrollTop)).toBe(0);
+ await page.getByRole('link',{name:'前のデザインシステム',exact:true}).click();await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/fluent\/overview\//);
 });
 
 for(const [id,entry] of Object.entries(registry).filter(([,s])=>s.status==='ready'))for(const view of entry.views.filter(v=>['table','alerts'].includes(v)))test(`${id}: ${view} uses shared content`,async({page})=>{
@@ -91,45 +83,20 @@ test('thumbnail headings and descriptions identify each system across rendering 
  }
 });
 
-test('H and L switch previews in the page, iframe and zoom while preserving text input',async({page})=>{
+test('H and L scroll between specimens without replacing overview thumbnails',async({page})=>{
  await page.goto('/ant/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
- const preview=page.locator('.main-preview iframe');
- await page.keyboard.press('l');await expect(preview).toHaveAttribute('src',/\/form\//);
- await page.keyboard.press('h');await expect(preview).toHaveAttribute('src',/\/overview\//);
- const frame=page.frameLocator('.main-preview iframe');
- await frame.getByRole('textbox').first().fill('hl');
- await frame.getByRole('textbox').first().press('h');await frame.getByRole('textbox').first().press('l');
- await expect(preview).toHaveAttribute('src',/\/overview\//);
- await frame.getByRole('button',{name:'変更を保存',exact:true}).press('l');await expect(preview).toHaveAttribute('src',/\/form\//);
- await frame.getByRole('button',{name:'変更を保存',exact:true}).first().press('h');await expect(preview).toHaveAttribute('src',/\/overview\//);
- await page.locator('.preview-heading h1').click();await page.keyboard.press('v');
- await expect(page.locator('.zoom-dialog')).toBeVisible();
- await page.keyboard.press('l');await expect(page.locator('.zoom-navigation')).toContainText('2 /');
- await page.keyboard.press('h');await expect(page.locator('.zoom-navigation')).toContainText('1 /');
- await page.keyboard.press('Escape');
- await page.getByRole('button',{name:'日本語',exact:true}).focus();await page.keyboard.press('l');
- await expect(preview).toHaveAttribute('src',/\/overview\//);
- await page.locator('.preview-heading h1').click();await page.keyboard.press('?');
- await expect(page.locator('.keyboard-shortcuts')).toContainText('H');await expect(page.locator('.keyboard-shortcuts')).toContainText('L');
+ const preview=page.locator('.main-preview iframe');await page.keyboard.press('l');await expect.poll(()=>page.locator('.preview-panel').evaluate(e=>e.scrollTop)).toBeGreaterThan(0);
+ await expect(preview).toHaveAttribute('src',/\/overview\//);await expect(page.locator('.system-row[href="/ant/"] img')).toHaveAttribute('src',/ant-overview.webp/);
+ await page.keyboard.press('h');await page.keyboard.press('v');await expect(page.locator('.zoom-dialog')).toBeVisible();
+ await page.keyboard.press('l');await expect(page.locator('.zoom-navigation')).toContainText('2 /');await page.keyboard.press('h');await expect(page.locator('.zoom-navigation')).toContainText('1 /');await page.keyboard.press('Escape');
+ const input=page.frameLocator('.main-preview iframe').getByRole('textbox').first();await input.fill('hl');await input.press('h');await input.press('l');await expect(preview).toHaveAttribute('src',/\/overview\//);
 });
 
-test('list categories switch comparison thumbnails and keep resource references distinct',async({page})=>{
- await page.goto('/ant/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
- const categories=page.getByRole('navigation',{name:'一覧のプレビューカテゴリ'});
- await expect(categories.getByRole('button',{name:'ボタン',exact:true})).toHaveCount(0);
- await categories.getByRole('button',{name:'フォーム',exact:true}).click();
- await expect(page.locator('.system-row[href="/ant/"] img')).toHaveAttribute('src',/ant-form.webp/);
- await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/\/form\//);
- await categories.getByRole('button',{name:'テーブル',exact:true}).click();
- await expect(page.locator('.system-row[href="/ant/"] img')).toHaveAttribute('src',/ant-table.webp/);
- await expect(page.locator('.system-row[href="/astryx/"] .reference-badge')).toHaveText('全体像を表示');
- await expect(page.locator('.system-row[href="/sansan/"] img')).toHaveAttribute('src',/\/previews\//);
- await page.locator('.system-row[href="/sansan/"]').click();
- await expect(page.locator('.implementation-toolbar')).toContainText('公式サイトのキャプチャ');
- await expect(page.locator('.main-preview img')).toBeVisible();
- await page.keyboard.press('l');await expect(page.locator('.main-preview img')).toHaveAttribute('src',/sansan-0.webp/);
- await page.keyboard.press('v');await expect(page.locator('.zoom-dialog img')).toBeVisible();
- await page.keyboard.press('Escape');
+test('preview category selectors are absent and reference images open directly in zoom',async({page})=>{
+ await page.goto('/ant/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');await expect(page.locator('.list-preview-categories,.preview-thumbnails')).toHaveCount(0);
+ await expect(page.locator('.system-row[href="/ant/"] img')).toHaveAttribute('src',/ant-overview.webp/);
+ await page.locator('.system-row[href="/sansan/"]').click();await expect(page.locator('.reference-gallery')).toBeVisible();await expect(page.locator('.main-preview')).toHaveCount(0);
+ const images=page.locator('.reference-thumbnail');await images.nth(1).click();await expect(page.locator('.zoom-dialog')).toBeVisible();await expect(page.locator('.zoom-dialog img')).toHaveAttribute('src',/sansan-0.webp/);await page.keyboard.press('Escape');await expect(page.locator('.reference-gallery')).toBeVisible();
 });
 
 test('typography includes genuine paragraph blocks and explicit line breaks in both languages',async({page})=>{
@@ -159,7 +126,7 @@ test('compact system heading keeps the official icon and repository under source
  await expect(heading.locator('h1 a')).toHaveAttribute('href','https://design.digital.go.jp/dads/');
  await expect(heading.locator('h1 a')).toHaveAttribute('target','_blank');
  await expect(heading.getByRole('link',{name:/公式サイト/})).toHaveAttribute('href','https://design.digital.go.jp/dads/');
- await expect(heading.locator('.official-link')).toHaveText('');
+ await expect(heading.locator('.official-link')).toHaveText('公式サイト');
  await expect(page.locator('.source-repository')).toHaveAttribute('href','https://github.com/digital-go-jp/design-system-example-components-react');
  const title=await heading.locator('h1').boundingBox(),description=await heading.locator('.system-description').boundingBox();
  expect(description.x).toBeGreaterThan(title.x+title.width);expect(Math.abs(description.y+description.height/2-title.y-title.height/2)).toBeLessThan(3);
@@ -201,7 +168,7 @@ test('home starts as a full-width grid and restores it through history',async({p
  await expect(page.locator('.system-row.selected')).toHaveCount(0);await expect(page.locator('.system-row[aria-current]')).toHaveCount(0);
  await expect(page.locator('.catalog-app')).toHaveClass(/catalog-home/);await expect(page.locator('.preview-panel')).toBeHidden();await expect(page.locator('.main-preview iframe')).toHaveCount(0);
  await expect(page).toHaveTitle('デザインシステムカタログ');await expect(page.locator('.desktop-site-title')).toHaveText('デザインシステムカタログ');
- await page.getByRole('navigation',{name:'一覧のプレビューカテゴリ'}).getByRole('button',{name:'フォーム',exact:true}).click();await expect(page.locator('.catalog-app')).toHaveClass(/catalog-home/);await expect(page.locator('.preview-panel')).toBeHidden();
+ await expect(page.locator('.list-preview-categories')).toHaveCount(0);
  await page.getByRole('button',{name:'政府・公共 15',exact:true}).click();await expect(page.locator('.catalog-app')).toHaveClass(/catalog-home/);await expect(page.locator('.preview-panel')).toBeHidden();
  await page.locator('.system-row[href="/dads/"]').click();await expect(page.locator('.preview-heading h1')).toBeVisible();
  await expect(page).toHaveTitle(/デジタル庁.*デザインシステムカタログ/);
@@ -215,18 +182,17 @@ test('addition requests link to the issue form in both languages without mobile 
  for(const width of [320,390,900,1440]){await page.setViewportSize({width,height:844});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await expect(link).toBeVisible();}
 });
 
-test('headless libraries use multiple official-site screenshots with source links',async({page})=>{
+test('headless libraries display two-column screenshot galleries with direct enlargement',async({page})=>{
  for(const id of ['reactaria','ariakit','lion','kobalte','bitsui']){
-  await page.goto(`/${id}/`);await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
-  await expect(page.locator('.main-preview iframe')).toHaveCount(0);await expect(page.locator('.main-preview img')).toHaveAttribute('src',`/previews/${id}-0.webp`);
-  await expect(page.locator('.implementation-toolbar')).toContainText('公式サイトのキャプチャ');await expect(page.locator('.reference-notice')).toHaveCount(0);
-  await page.locator('.view-thumbnail').nth(1).click();await expect(page.locator('.main-preview img')).toHaveAttribute('src',`/previews/${id}-1.webp`);
-  await expect(page.locator('.implementation-meta a')).toHaveAttribute('href',systems.find(s=>s.id===id).views[1].url);
+  await page.goto(`/${id}/`);await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');await expect(page.locator('.main-preview')).toHaveCount(0);
+  await expect(page.locator('.reference-thumbnail img').first()).toHaveAttribute('src',`/previews/${id}-0.webp`);await expect(page.locator('.reference-notice')).toHaveCount(0);
+  expect(await page.locator('.reference-gallery').evaluate(e=>getComputedStyle(e).gridTemplateColumns.split(' ').length)).toBe(2);
+  await page.locator('.reference-thumbnail').nth(1).click();await expect(page.locator('.zoom-dialog img')).toHaveAttribute('src',`/previews/${id}-1.webp`);await page.keyboard.press('Escape');
  }
 });
 
 
-test('desktop grid shows every system and opens the shared comparison category in list/detail layout',async({page})=>{
+test('desktop grid shows every system and opens its overview with a scrolling detail gallery',async({page})=>{
  await page.setViewportSize({width:1920,height:1080});
  await page.goto('/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
  await expect(page.locator('.catalog-introduction,.welcome-comparison')).toHaveCount(0);
@@ -236,14 +202,14 @@ test('desktop grid shows every system and opens the shared comparison category i
  expect(new Set(cards.map(rect=>rect.y)).size).toBe(1);expect(cards[3].right).toBeGreaterThan(1800);
  for(const card of cards)expect(card.height).toBeGreaterThan(220);
  const nextRow=await page.locator('.system-row').nth(4).boundingBox();expect(nextRow.y).toBeGreaterThan(cards[0].bottom);
- await page.getByRole('navigation',{name:'一覧のプレビューカテゴリ'}).getByRole('button',{name:'テーブル',exact:true}).click();
+ await expect(page.locator('.list-preview-categories')).toHaveCount(0);
  const card=page.locator('.system-row[href="/carbon/"]');await card.scrollIntoViewIfNeeded();
- await expect(card.locator('img')).toHaveAttribute('src','/specimens/list-thumbnails/carbon-table.webp');
+ await expect(card.locator('img')).toHaveAttribute('src','/specimens/list-thumbnails/carbon-overview.webp');
  const scroll=await page.locator('.catalog-list').evaluate(el=>el.scrollTop);expect(scroll).toBeGreaterThan(0);
  await card.click();await expect(page).toHaveURL(/\/carbon\/$/);
  await expect(page.locator('.catalog-app')).not.toHaveClass(/catalog-home/);
  await expect(page.locator('.preview-panel')).toBeVisible();
- await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/carbon\/table\//);
+ await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/carbon\/overview\//);
  await expect(page.locator('.system-row[href="/carbon/"]')).toBeInViewport();
  await page.goBack();await expect(page.locator('.catalog-app')).toHaveClass(/catalog-home/);
  await expect.poll(()=>page.locator('.catalog-list').evaluate(el=>el.scrollTop)).toBe(scroll);
@@ -268,13 +234,12 @@ test('embedded previews fit their whole contents and keep wheel browsing in the 
   const measured=await frame.locator('#specimen-root').evaluate(e=>Math.ceil(Math.max(e.scrollHeight,e.getBoundingClientRect().height)));
   await expect.poll(()=>page.locator('.main-preview iframe').evaluate(e=>e.clientHeight)).toBeGreaterThanOrEqual(measured);
   await expect.poll(()=>frame.locator('html').evaluate(()=>document.scrollingElement.scrollHeight<=innerHeight)).toBe(true);
-  const canvas=await page.locator('.main-preview').boundingBox();const enlarge=await page.locator('.implementation-meta .specimen-enlarge').boundingBox();expect(enlarge.y).toBeGreaterThan(canvas.y+canvas.height);
+  const canvas=await page.locator('.main-preview').boundingBox();const enlarge=await page.locator('.implementation-meta .specimen-enlarge').first().boundingBox();expect(enlarge.y).toBeGreaterThan(canvas.y+canvas.height);
   await page.locator('.main-preview iframe').hover();await page.mouse.wheel(0,240);
   await expect.poll(()=>page.locator('.preview-panel').evaluate(e=>e.scrollTop)).toBeGreaterThan(0);
   expect(await frame.locator('html').evaluate(()=>document.scrollingElement.scrollTop)).toBe(0);
  }
- await page.goto('/fluent/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');await page.getByRole('button',{name:'タイポグラフィ',exact:true}).first().click();
- await page.locator('.implementation-meta .specimen-enlarge').click();
+ await page.goto('/fluent/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');await page.locator('.component-section[data-view="typography"] .specimen-enlarge').click();
  const zoom=page.frameLocator('.zoom-content iframe');await expect(zoom.locator('#specimen-root')).toHaveAttribute('data-ready','true');
  await expect(zoom.locator('.specimen-rich-text blockquote')).toBeVisible();
  await page.locator('.zoom-content iframe').hover();await page.mouse.wheel(0,300);

@@ -20,14 +20,14 @@ for(const id of ['astryx','ant','carbon','fluent','cloudscape','dads','boosted',
  await dialog.getByRole('button',{name:'公開する',exact:true}).click();await expect(dialog).toBeHidden();
  await page.getByRole('button',{name:'ダイアログを開く',exact:true}).click();await expect(dialog).toBeVisible();
 });
-test('all new categories drive both list thumbnails and the matching selected specimen',async({page})=>{
+test('all specimen groups coexist while list thumbnails stay on the overview',async({page})=>{
  await page.goto('/astryx/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
- for(const [key,label] of [['card','カード'],['dialog','ダイアログ'],['code','コードブロック'],['chat','チャット']]){
-  await page.getByRole('navigation',{name:'一覧のプレビューカテゴリ'}).getByRole('button',{name:label,exact:true}).click();
-  await expect(page.locator('.system-row[href="/astryx/"] img')).toHaveAttribute('src',`/specimens/list-thumbnails/astryx-${key}.webp`);
-  await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',new RegExp(`/astryx/${key}/`));
-  await expect(page.frameLocator('.main-preview iframe').locator('#specimen-root')).toHaveAttribute('data-ready','true');
+ for(const key of ['card','dialog','code','chat','components']){
+  const section=page.locator(`.component-section[data-view="${key}"]`);await section.scrollIntoViewIfNeeded();
+  await expect(section.locator('iframe')).toHaveAttribute('src',new RegExp(`/astryx/${key}/`));
+  await expect(page.frameLocator(`.component-section[data-view="${key}"] iframe`).locator('#specimen-root')).toHaveAttribute('data-ready','true');
  }
+ await expect(page.locator('.system-row[href="/astryx/"] img')).toHaveAttribute('src','/specimens/list-thumbnails/astryx-overview.webp');
 });
 
 for(const id of ['coinbase','cloudscape'])test(`${id}: genuine dark theme and canvas remain in sync`,async({page})=>{
@@ -53,8 +53,8 @@ test('Coinbase uses the published font defaults for its genuine typography',asyn
 
 test('Digital Agency modal stays the same height after opening and Escape closes it',async({page})=>{
  await page.goto('/dads/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
- await page.locator('.view-thumbnail').filter({hasText:'ダイアログ'}).click();
- const iframe=page.locator('.main-preview iframe'),frame=page.frameLocator('.main-preview iframe');
+ const iframe=page.locator('.component-section[data-view="dialog"] iframe'),frame=page.frameLocator('.component-section[data-view="dialog"] iframe');
+ await iframe.scrollIntoViewIfNeeded();
  await expect(frame.getByRole('dialog')).toBeVisible();await page.waitForTimeout(650);
  const height=await iframe.evaluate(el=>el.clientHeight);await page.waitForTimeout(400);
  expect(await iframe.evaluate(el=>el.clientHeight)).toBe(height);

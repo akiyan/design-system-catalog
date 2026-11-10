@@ -57,7 +57,7 @@ test('all catalog direct paths serve the selected system as static HTML', async 
     const response = await request.get(`/${system.id}/`);
     expect(response.ok(),system.id).toBe(true);
     const html = await response.text();
-    expect(html,system.id).toContain(`<h1>${system.shortName}</h1>`);
+    expect(html,system.id).toContain(`${system.shortName.replaceAll('&','&amp;')}</a></h1>`);
     expect(html).toContain(`href="/${system.id}/"`);
     expect(html).not.toContain('server:defer');
   }
@@ -115,7 +115,7 @@ test('keyboard selection, boundaries, screenshot switching, zoom and help focus'
   await page.keyboard.press('Home'); await expect(active(page)).toContainText('Astryx');
   await page.goto('/astryx/'); await ready(page);
   await page.keyboard.press('ArrowRight');
-  await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/\/specimens\/astryx\/form\/\?lang=ja(?:&|$)/);
+  await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/\/specimens\/astryx\/overview\/\?lang=ja(?:&|$)/);
   await page.keyboard.press('v'); await expect(page.locator('.zoom-dialog')).toBeVisible();
   await page.keyboard.press('ArrowRight'); await expect(page.locator('.zoom-navigation')).toContainText(`3 / ${specimens.astryx.views.length}`);
   await page.keyboard.press('Escape'); await expect(page.locator('.zoom-dialog')).not.toBeVisible();
@@ -238,7 +238,7 @@ test('touch swipes browse systems without opening zoom, vertical gestures and ta
   await swipe(10,-90);
   await expect(page).toHaveURL(/\/astryx\/$/);
   await page.waitForTimeout(550);
-  await page.getByRole('button',{name:'拡大表示',exact:true}).click();
+  await page.getByRole('button',{name:'全体像 — 拡大表示',exact:true}).click();
   await expect(page.locator('.zoom-dialog')).toBeVisible();
   await page.keyboard.press('Escape');
   await page.goto(`${test.info().project.use.baseURL}/${oldest.id}/`); await ready(page);

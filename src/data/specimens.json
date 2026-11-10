@@ -9,10 +9,12 @@
       "overview",
       "form",
       "alerts",
-      "dialog"
+      "dialog",
+      "components"
     ],
     "components": {
-      "dialog": "ModalDialog / ModalDialogContent"
+      "dialog": "ModalDialog / ModalDialogContent",
+      "components": "Accordion / ProgressIndicator"
     },
     "appearance": {
       "scheme": "light",
@@ -91,14 +93,16 @@
       "card",
       "dialog",
       "code",
-      "chat"
+      "chat",
+      "components"
     ],
     "unstyled": false,
     "components": {
       "card": "Container",
       "dialog": "Modal",
       "code": "Code view · CodeView",
-      "chat": "Chat components · ChatBubble / Avatar"
+      "chat": "Chat components · ChatBubble / Avatar",
+      "components": "Tabs / ExpandableSection / ProgressBar / Pagination"
     },
     "extraPackages": [
       {
@@ -193,14 +197,16 @@
       "dialog",
       "code",
       "chat",
-      "alerts"
+      "alerts",
+      "components"
     ],
     "unstyled": false,
     "components": {
       "card": "Card",
       "dialog": "Dialog",
       "code": "CodeBlock",
-      "chat": "ChatMessage / ChatMessageBubble"
+      "chat": "ChatMessage / ChatMessageBubble",
+      "components": "Collapsible / ProgressBar"
     },
     "appearance": {
       "scheme": "light",
@@ -566,14 +572,16 @@
       "card",
       "dialog",
       "code",
-      "chat"
+      "chat",
+      "components"
     ],
     "unstyled": false,
     "components": {
       "card": "Card",
       "dialog": "Modal",
       "code": "Typography.Text code",
-      "chat": "Chat"
+      "chat": "Chat",
+      "components": "Tabs / Collapse / Progress"
     },
     "appearance": {
       "scheme": "light",
@@ -598,14 +606,16 @@
       "card",
       "dialog",
       "code",
-      "chat"
+      "chat",
+      "components"
     ],
     "unstyled": false,
     "components": {
       "card": "Card",
       "dialog": "Modal",
       "code": "Typography.Text code",
-      "chat": "Comment / Avatar"
+      "chat": "Comment / Avatar",
+      "components": "Tabs / Collapse / Progress"
     },
     "appearance": {
       "scheme": "light",
@@ -652,14 +662,16 @@
       "card",
       "dialog",
       "code",
-      "chat"
+      "chat",
+      "components"
     ],
     "unstyled": false,
     "components": {
       "card": "Tile",
       "dialog": "Modal",
       "code": "CodeSnippet",
-      "chat": "Tile · message composition"
+      "chat": "Tile · message composition",
+      "components": "Accordion / ProgressBar"
     },
     "appearance": {
       "scheme": "light",
@@ -684,13 +696,15 @@
       "alerts",
       "card",
       "dialog",
-      "chat"
+      "chat",
+      "components"
     ],
     "unstyled": false,
     "components": {
       "card": "Card / CardHeader",
       "dialog": "Dialog / DialogSurface",
-      "chat": "Card / CardHeader / Body1"
+      "chat": "Card / CardHeader / Body1",
+      "components": "Accordion / ProgressBar"
     },
     "appearance": {
       "scheme": "light",
@@ -741,7 +755,8 @@
       "table",
       "alerts",
       "card",
-      "dialog"
+      "dialog",
+      "components"
     ],
     "unstyled": false,
     "notice": {
@@ -750,7 +765,8 @@
     },
     "components": {
       "card": "Card",
-      "dialog": "Modal"
+      "dialog": "Modal",
+      "components": "Tabs / ProgressBar"
     },
     "appearance": {
       "scheme": "light",
@@ -910,14 +926,16 @@
       "card",
       "dialog",
       "code",
-      "chat"
+      "chat",
+      "components"
     ],
     "unstyled": false,
     "components": {
       "card": "Card",
       "dialog": "Modal",
       "code": "Ant Design X · CodeHighlighter",
-      "chat": "Ant Design X · Bubble"
+      "chat": "Ant Design X · Bubble",
+      "components": "Tabs / Collapse / Progress / Pagination"
     },
     "extraPackages": [
       {
@@ -979,13 +997,15 @@
       "alerts",
       "card",
       "dialog",
-      "code"
+      "code",
+      "components"
     ],
     "unstyled": false,
     "components": {
       "card": "Card / CardHeader / CardBody",
       "dialog": "Modal",
-      "code": "CodeBlock / CodeBlockCode"
+      "code": "CodeBlock / CodeBlockCode",
+      "components": "Accordion / Progress"
     },
     "appearance": {
       "scheme": "light",
@@ -1009,12 +1029,14 @@
       "table",
       "alerts",
       "dialog",
-      "code"
+      "code",
+      "components"
     ],
     "unstyled": false,
     "components": {
       "dialog": "Dialog",
-      "code": "Text as pre / code"
+      "code": "Text as pre / code",
+      "components": "Breadcrumbs / ProgressBar / CounterLabel"
     },
     "appearance": {
       "scheme": "light",
@@ -1117,13 +1139,15 @@
       "alerts",
       "card",
       "dialog",
-      "code"
+      "code",
+      "components"
     ],
     "unstyled": false,
     "components": {
       "card": "Card",
       "dialog": "Dialog",
-      "code": "Code as pre"
+      "code": "Code as pre",
+      "components": "Tablist / Tab / Spinner"
     },
     "appearance": {
       "scheme": "light",

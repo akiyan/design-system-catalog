@@ -74,3 +74,10 @@ html[data-color-scheme="dark"] :is(.specimen-section>h2,.specimen-field>label,.s
 
 /* Single comparison surfaces use the whole thumbnail canvas. */
 .specimen-thumbnail #specimen-root:is([data-view="card"],[data-view="dialog"],[data-view="code"],[data-view="chat"]) .specimen{display:block}
+
+/* Only arrange caller-authored content; component geometry stays library-owned. */
+.specimen-card-copy{display:grid;gap:12px}
+.specimen-rich-text>section{display:grid;gap:12px}
+.specimen-dialog-stage .specimen-native-modal{display:block;position:static;height:auto;overflow:visible}
+
+.specimen-extra-grid{display:grid;gap:28px}.specimen-extra-grid p{margin-block:0 10px}.specimen-extra-panel{padding-block:16px}

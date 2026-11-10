@@ -12,7 +12,7 @@ A visual catalog of 67 public design systems with live specimens of their offici
 - Static paths such as `/astryx/` with client navigation and Back/Forward support
 - Keyboard shortcuts and a `?` help overlay
 - Bilingual descriptions of each system’s purpose and distinctive features
-- Common component specimens and interactive enlarged previews
+- Scrolling galleries of genuine components and interactive enlarged previews
 - Mobile previous/next browsing and horizontal swipes on the main preview
 
 ## Development / 開発
@@ -63,7 +63,7 @@ Capture manifests are saved under `docs/`. Authentication-required source pages 
 | --- | --- |
 | Down / Up or J / K | Select the next / previous system |
 | Home / End | Select the first / last system |
-| Left / Right or H / L | Switch component specimens |
+| Left / Right or H / L | Scroll between specimens; switch inside enlarged view |
 | V | Enlarge the preview |
 | O | Open the official site |
 | ? | Show or hide shortcut help |
@@ -99,7 +99,7 @@ The catalog includes design systems rather than aggregator or comparison sites. 
 
 ## Live component specimens
 
-`src/data/specimens.json` records each real implementation, its version and provenance. Each adapter renders shared form content with the official package and its own styles. Headings and introductory descriptions identify the current system in both live previews and thumbnails. Styles are isolated in same-origin iframes under `/specimens/<system>/<view>/`. These are browser-only interactive examples served as static HTML; no server runtime is used. Headless libraries use official-site screenshot references rather than unstyled live specimens. Design-only resources and integrations requiring their original host are explicitly identified.
+`src/data/specimens.json` records each real implementation, its version and provenance. Each adapter renders shared form content with the official package and its own styles. Headings and introductory descriptions identify the current system in both live previews and thumbnails. Styles are isolated in same-origin iframes under `/specimens/<system>/<view>/`. These are browser-only interactive examples served as static HTML; no server runtime is used. Details show the overview first and all supported specimens below it, including curated additional controls in 12 integrations. Catalog thumbnails always show the overview. Screenshot-only systems use a two-column gallery that opens images directly in enlargement. Headless libraries use official-site screenshot references rather than unstyled live specimens. Design-only resources and integrations requiring their original host are explicitly identified.
 
 Live iframe heights follow their complete content without clipping or fixed limits. Overview specimens combine a bulleted list with primary/secondary actions, one input and a working checkbox; additional states remain in forms.
 

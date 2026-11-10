@@ -10,15 +10,17 @@ await Promise.all(Array.from({length:4},async()=>{
   const {id,view,index}=jobs[next++];
   try{
    await page.goto(`${base}/${id}/`);await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
-   if(index)await page.locator('.view-thumbnail').nth(index).click();
-   const iframe=page.locator('.main-preview iframe');const frame=page.frameLocator('.main-preview iframe');
+   const selector=`.component-section[data-view="${view}"]`;
+   await page.locator(selector).evaluate(el=>el.scrollIntoView({block:'start'}));
+   const iframe=page.locator(`${selector} iframe`);const frame=page.frameLocator(`${selector} iframe`);
    await expect(frame.locator('#specimen-root')).toHaveAttribute('data-ready','true');
    await expect.poll(async()=>{const natural=await frame.locator('#specimen-root').evaluate(el=>Math.ceil(Math.max(el.scrollHeight,el.getBoundingClientRect().height))+2);return await iframe.evaluate(el=>el.clientHeight)-natural;}).toBe(0);
    const naturalHeight=await frame.locator('#specimen-root').evaluate(el=>el.scrollHeight);
    const height=await iframe.evaluate(el=>el.clientHeight);
-   const maxScroll=await page.locator('.preview-panel').evaluate(el=>{el.scrollTop=0;return el.scrollHeight-el.clientHeight});
-   const box=await iframe.boundingBox();await page.mouse.move(box.x+box.width*.6,box.y+60);await page.mouse.wheel(0,250);
-   if(maxScroll>0)await expect.poll(()=>page.locator('.preview-panel').evaluate(el=>el.scrollTop)).toBeGreaterThan(0);
+   await page.locator(selector).evaluate(el=>el.scrollIntoView({block:'start'}));
+   const pane=page.locator('.preview-panel');const maxScroll=await pane.evaluate(el=>el.scrollHeight-el.clientHeight);const before=await pane.evaluate(el=>el.scrollTop);
+   const box=await iframe.boundingBox();await page.mouse.move(box.x+box.width*.6,Math.max(90,box.y+Math.min(60,box.height/2)));await page.mouse.wheel(0,before>10?-250:250);
+   if(maxScroll>0)await expect.poll(()=>pane.evaluate(el=>el.scrollTop)).not.toBe(before);
    const innerOverflow=await frame.locator('html').evaluate(()=>Math.max(0,document.scrollingElement.scrollHeight-innerHeight));
    expect(innerOverflow).toBe(0);
    if(view==='overview')await expect(frame.locator('.specimen-overview-list>li')).toHaveCount(3);

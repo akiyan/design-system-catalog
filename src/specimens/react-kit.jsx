@@ -40,7 +40,7 @@ function ChatSpecimen({kit,t}) {
  return <div className="specimen-chat"><div className="specimen-messages" role="log" aria-label={t.chat}>{messages.map((message,index)=><kit.Message key={index} {...message}/>)}</div><form className="specimen-chat-composer" onSubmit={event=>{event.preventDefault();send()}}><kit.Input aria-label={t.message} value={draft} onValueChange={setDraft}/><kit.Button variant="primary" aria-label={t.send} disabled={!draft.trim()} onClick={send}>{t.send}</kit.Button></form></div>;
 }
 function Example({kit,view,language,name,copy}) {
- const t=words(language,copy);const [value,setValue]=useState(t.placeholder);const [checked,setChecked]=useState(true);const [selection,setSelection]=useState('team');const [status,setStatus]=useState('');
+ const t={...words(language,copy),extraTabs:language==='en'?['Overview','Access']:['概要','アクセス権'],extraDisclosure:language==='en'?'Publishing options':'公開時の設定',extraProgress:language==='en'?'Preparing the release':'公開の準備',extraAccessBody:language==='en'?'Only invited team members can update this project.':'招待されたチームメンバーのみがこのプロジェクトを更新できます。'};const [value,setValue]=useState(t.placeholder);const [checked,setChecked]=useState(true);const [selection,setSelection]=useState('team');const [status,setStatus]=useState('');
  const B=kit.Button, I=kit.Input, C=kit.Checkbox, S=kit.Select;
  const button=(label,variant='primary',extra={})=><B variant={variant} onClick={()=>setStatus(t.status)} {...extra}>{label}</B>;
  const section=(title,content)=><section className="specimen-section">{view!=='overview'&&<h2>{title}</h2>}{content}</section>;
@@ -50,6 +50,7 @@ function Example({kit,view,language,name,copy}) {
  if(view==='typography'&&kit.Typography)content=<kit.Typography t={t} longForm/>;
  if(view==='table'&&kit.Table)content=section(t.tableTitle,<kit.Table t={t}/>);
  if(view==='alerts'&&(kit.Alert||kit.Banner))content=section(t.alerts,<div className="specimen-alerts">{t.alertMessages.filter(message=>!kit.alertTones||kit.alertTones.includes(message.tone)).map(message=>React.createElement(kit.Alert||kit.Banner,{key:message.tone,...message},message.body))}</div>);
+ if(view==='components'&&kit.Extras)content=<kit.Extras t={t}/>;
  if(view==='card'&&kit.Card)content=<div className="specimen-card-grid">{t.cardTitles.map((title,index)=><kit.Card key={title} title={title} description={t.cardBodies[index]} index={index} t={t}/>)}</div>;
  if(view==='dialog'&&kit.Dialog)content=<DialogSpecimen kit={kit} t={t}/>;
  if(view==='code'&&kit.Code)content=<kit.Code t={t}/>;

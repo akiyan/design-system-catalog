@@ -1,6 +1,6 @@
 import { Fragment, useEffect, useRef, useState } from 'react';
 import { Globe, ArrowSquareOut, PlusCircle, ArrowLeft, CaretLeft, CaretRight, GithubLogo, Keyboard, X, ImageBroken, Cube } from '@phosphor-icons/react';
-import { systems, specimenCategories, featuredIds, systemPath, systemFromPath, systemName } from './catalog';
+import { systems, featuredIds, systemPath, systemFromPath, systemName } from './catalog';
 import { messages, detectLanguage } from './i18n';
 import SpecimenFrame from './SpecimenFrame';
 
@@ -42,7 +42,6 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
   const [category, setCategory] = useState('all');
   const [selectedId, setSelectedId] = useState(initialId);
   const [viewIndex, setViewIndex] = useState(0);
-  const [comparisonView,setComparisonView]=useState('overview');
   const [mobilePreview, setMobilePreview] = useState(Boolean(initialId));
   const [zoomOpen, setZoomOpen] = useState(false);
   const [helpOpen, setHelpOpen] = useState(false);
@@ -90,7 +89,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
       const restored = systemFromPath(location.pathname);
       setCategory('all');
       setSelectedId(restored?.id || null);
-      setViewIndex(0);setComparisonView('overview');
+      setViewIndex(0);
       setMobilePreview(Boolean(restored));
       setZoomOpen(false);
       setHelpOpen(false);
@@ -135,17 +134,14 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
     } catch { /* Language switching also works without persistent storage. */ }
   }
 
-  function selectSystem(system, { showDetail = true, focus = false, resetView = false, viewKey } = {}) {
+  function selectSystem(system, { showDetail = true, focus = false } = {}) {
     if(!isMobile&&!selectedId)gridScrollTop.current=document.getElementById('catalog-list')?.scrollTop||0;
     if (isMobile && showDetail) {
       if (!mobilePreview) listScrollTop.current = workspace.current?.scrollTop || 0;
       requestAnimationFrame(() => workspace.current?.scrollTo({ top: 0, behavior: 'instant' }));
     }
-    const key=viewKey||comparisonView;
-    if(resetView)setComparisonView('overview');
-    else if(viewKey)setComparisonView(viewKey);
     setSelectedId(system.id);
-    setViewIndex(resetView ? 0 : Math.max(0,system.views.findIndex(view=>view.key===key)));
+    setViewIndex(0);
     setMobilePreview(showDetail);
     const path = systemPath(system);
     if (location.pathname !== path) history.pushState({ system: system.id }, '', path);
@@ -181,7 +177,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
 
   function navigateAdjacent(system) {
     if (!system) return;
-    selectSystem(system, { resetView: true });
+    selectSystem(system);
     document.querySelector('.workspace')?.scrollTo({ top: 0, behavior: 'instant' });
   }
 
@@ -201,17 +197,14 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
     navigateAdjacent(dx < 0 ? nextSystem : previousSystem);
   }
 
-  function chooseView(index) {
+  function openPreview(index) {
     setViewIndex(index);
-    if(selected.specimen.status==='ready')setComparisonView(selected.views[index].key);
-  }
-  function chooseComparisonView(key) {
-    setComparisonView(key);
-    const index=selected.views.findIndex(view=>view.key===key);
-    if(index>=0)setViewIndex(index);
+    setZoomOpen(true);
   }
   function movePreview(direction) {
-    chooseView((activeView + direction + selected.views.length) % selected.views.length);
+    const index=(activeView+direction+selected.views.length)%selected.views.length;
+    setViewIndex(index);
+    if(!zoomOpen)document.getElementById(`preview-${selected.id}-${index}`)?.scrollIntoView({block:'start',behavior:'smooth'});
   }
 
   useEffect(() => {
@@ -243,7 +236,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
       if (nextIndex !== undefined) {
         event.preventDefault();
         const isMobileDetail = mobilePreview && window.matchMedia('(max-width: 700px)').matches;
-        selectSystem(filtered[nextIndex], { showDetail: mobilePreview, focus: !isMobileDetail, resetView: true });
+        selectSystem(filtered[nextIndex], { showDetail: mobilePreview, focus: !isMobileDetail });
       } else if (!selectedId) {
         return;
       } else if (['ArrowLeft', 'ArrowRight', 'h', 'l'].includes(event.key)) {
@@ -262,7 +255,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
     };
     window.addEventListener('keydown', onKeyDown);
     return () => window.removeEventListener('keydown', onKeyDown);
-  }, [ready, selectedId, selected, activeView, comparisonView, category, mobilePreview, helpOpen, zoomOpen]);
+  }, [ready, selectedId, selected, activeView, category, mobilePreview, helpOpen, zoomOpen]);
 
   const keyboardRows = [
     [['↓', '↑', 'J', 'K'], t.move], [['Home', 'End'], t.firstLast], [['←', '→', 'H', 'L'], t.changeView],
@@ -287,9 +280,6 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
     </header>
     <main ref={workspace} className={`workspace ${mobilePreview ? 'mobile-preview' : ''}`}>
       <section id="catalog-list" className="catalog-list" aria-label={t.list} tabIndex={-1}>
-        <nav className="list-preview-categories" aria-label={t.comparisonCategory}>
-          {Object.entries(specimenCategories).map(([key,labels])=><button type="button" key={key} disabled={!ready} aria-pressed={comparisonView===key} onClick={()=>chooseComparisonView(key)}>{labels[language==='en'?1:0]}</button>)}
-        </nav>
         <div className="list-toolbar"><h2>{featuredCount ? (category==='all'?t.featured:t.featuredGroup) : t.newest}</h2><span>{featuredCount || filtered.length}</span></div>
         <p className="sr-only" role="status">{filtered.length} {t.count}{selectedId?` — ${systemName(selected, language)}`:''}</p>
         {filtered.map((s, index) => <Fragment key={s.id}>
@@ -300,7 +290,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
             event.preventDefault();
             selectSystem(s);
           }}>
-          <span className="row-image"><PreviewImage compact system={s} index={Math.max(0,s.views.findIndex(view=>view.key===comparisonView))} language={language} loading={s.id === selected.id ? 'eager' : 'lazy'} width="1440" height="1000" />{s.specimen.status!=='ready'?<span className="reference-badge">{t.siteCapture}</span>:!s.views.some(view=>view.key===comparisonView)&&<span className="reference-badge">{t.overviewFallback}</span>}</span>
+          <span className="row-image"><PreviewImage compact system={s} index={0} language={language} loading={s.id === selected.id ? 'eager' : 'lazy'} width="1440" height="1000" />{s.specimen.status!=='ready'?<span className="reference-badge">{t.siteCapture}</span>:null}</span>
           <span className="row-copy"><span className="system-name">{systemName(s, language)}</span>{s.specimen.unstyled&&<span className="system-kind">{t.unstyled}</span>}
             <span className="system-meta"><span>{language === 'en' ? s.countryEn : s.country}</span><span className="meta-divider" aria-hidden="true" /><span>{t[s.category]}</span>
               <span className="release-line"><span className="meta-divider" aria-hidden="true" /><time dateTime={s.published.date}>{s.published.date}</time></span>
@@ -318,27 +308,32 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
             {nextSystem ? <a href={systemPath(nextSystem)} aria-label={t.nextSystem} onClick={event => { if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0 || !ready) return; event.preventDefault(); navigateAdjacent(nextSystem); }} >{t.nextShort}<CaretRight size={18} /></a> : <button disabled aria-label={t.nextSystem}>{t.nextShort}<CaretRight size={18} /></button>}
           </nav>
         </div>
-        <div className="preview-heading"><h1><a className="system-title-link" href={selected.url} target="_blank" rel="noopener noreferrer" title={`${t.official} (${t.newTab})`}>{systemName(selected, language)}</a></h1><p className="system-description">{selected.description[language]}</p><a ref={officialLink} className="official-link" href={selected.url} target="_blank" rel="noopener noreferrer" aria-label={`${t.official} (${t.newTab})`} title={t.official}><Globe size={23} aria-hidden="true"/></a></div>
+        <div className="preview-heading"><h1><a className="system-title-link" href={selected.url} target="_blank" rel="noopener noreferrer" title={`${t.official} (${t.newTab})`}>{systemName(selected, language)}</a></h1><p className="system-description">{selected.description[language]}</p><a ref={officialLink} className="official-link" href={selected.url} target="_blank" rel="noopener noreferrer" aria-label={`${t.official} (${t.newTab})`} title={t.official}><Globe size={20} aria-hidden="true"/>{t.official}</a></div>
         {selected.specimen.status==='ready' ? <>
-          {selected.specimen.unstyled&&<p className="implementation-note unstyled-note">{t.unstyledExplanation}</p>}
-          <div className="main-preview specimen-canvas" onTouchStart={startSwipe} onTouchEnd={endSwipe} onTouchCancel={()=>{swipeStart.current=null;}}>
-            <SpecimenFrame compact={!isMobile} system={selected} index={activeView} language={language} onSwipe={direction=>{if(isMobile)navigateAdjacent(direction>0?nextSystem:previousSystem)}} onKey={key=>{if(key==='Escape'&&isMobile)returnToList();else window.dispatchEvent(new KeyboardEvent('keydown',{key}))}}/>
+          <div className="specimen-gallery" key={selected.id}>
+            {selected.views.map((view,index)=><section id={`preview-${selected.id}-${index}`} className={`component-section ${index===0?'overview-section':''}`} data-view={view.key} key={view.key}>
+              {index>0&&<h2 className="component-section-title">{viewLabel(selected,index,language)}</h2>}
+              <div className={`${index===0?'main-preview':'component-preview'} specimen-canvas`} onTouchStart={index===0?startSwipe:undefined} onTouchEnd={index===0?endSwipe:undefined} onTouchCancel={()=>{swipeStart.current=null;}}>
+                <SpecimenFrame compact={!isMobile} system={selected} index={index} language={language} lazy={index>0} onSwipe={direction=>{if(isMobile&&index===0)navigateAdjacent(direction>0?nextSystem:previousSystem)}} onKey={key=>{if(key==='Escape'&&isMobile)returnToList();else window.dispatchEvent(new KeyboardEvent('keydown',{key}))}}/>
+              </div>
+              <div className="implementation-meta"><a href={selected.specimen.sourceUrl} target="_blank" rel="noopener noreferrer">{selected.specimen.package} <span>{selected.specimen.version}</span><ArrowSquareOut size={12}/></a>{selected.specimen.components?.[view.key]&&<span>{selected.specimen.components[view.key]}</span>}{selected.specimen.extraPackages?.filter(pkg=>pkg.views.includes(view.key)).map(pkg=><a key={pkg.package} href={pkg.sourceUrl} target="_blank" rel="noopener noreferrer">{pkg.package} <span>{pkg.version}</span><ArrowSquareOut size={12}/></a>)}<button type="button" className="specimen-enlarge text-button" aria-label={`${viewLabel(selected,index,language)} — ${t.enlarge}`} onClick={()=>openPreview(index)}>{t.enlarge}<ArrowSquareOut size={15}/></button></div>
+            </section>)}
           </div>
-          <div className="implementation-meta"><a href={selected.specimen.sourceUrl} target="_blank" rel="noopener noreferrer">{selected.specimen.package} <span>{selected.specimen.version}</span><ArrowSquareOut size={12}/></a>{selected.specimen.components?.[selected.views[activeView]?.key]&&<span>{selected.specimen.components[selected.views[activeView].key]}</span>}{selected.specimen.extraPackages?.filter(pkg=>pkg.views.includes(selected.views[activeView]?.key)).map(pkg=><a key={pkg.package} href={pkg.sourceUrl} target="_blank" rel="noopener noreferrer">{pkg.package} <span>{pkg.version}</span><ArrowSquareOut size={12}/></a>)}{selected.specimen.unstyled&&<span>{t.unstyled}</span>}<button type="button" className="specimen-enlarge text-button" onClick={()=>setZoomOpen(true)}>{t.enlarge}<ArrowSquareOut size={15}/></button></div>
           {selected.specimen.notice&&<p className="implementation-note">{selected.specimen.notice[language]}</p>}
-          <div className="preview-thumbnails" aria-label={t.views}>
-            {selected.views.map((view,index)=><button type="button" disabled={!ready} key={view.key} className={`view-thumbnail ${activeView===index?'active':''}`} aria-pressed={activeView===index} onClick={()=>chooseView(index)}><PreviewImage system={selected} index={index} language={language} width="1000" height="720" loading="lazy"/><span>{viewLabel(selected,index,language)}</span></button>)}
-          </div>
         </> : <>
-          <div className="implementation-toolbar"><span>{t.siteCapture}</span><button type="button" className="specimen-enlarge text-button" onClick={()=>setZoomOpen(true)}>{t.enlarge}<ArrowSquareOut size={15}/></button></div>
-          <button type="button" className="main-preview reference-canvas" aria-label={t.enlarge} onClick={()=>{if(Date.now()>ignorePreviewClickUntil.current)setZoomOpen(true)}} onTouchStart={startSwipe} onTouchEnd={endSwipe} onTouchCancel={()=>{swipeStart.current=null;}}><PreviewImage system={selected} index={activeView} language={language}/></button>
-          <div className="implementation-meta"><a href={selected.views[activeView].url} target="_blank" rel="noopener noreferrer">{t.captureSource}<ArrowSquareOut size={12}/></a></div>
-          <div className="preview-thumbnails" aria-label={t.views}>{selected.views.map((view,index)=><button type="button" disabled={!ready} key={view.key} className={`view-thumbnail ${activeView===index?'active':''}`} aria-pressed={activeView===index} onClick={()=>chooseView(index)}><PreviewImage system={selected} index={index} language={language} width="1440" height="1000" loading="lazy"/><span>{viewLabel(selected,index,language)}</span></button>)}</div>
+          <div className="implementation-toolbar"><span>{t.siteCapture}</span></div>
+          <div className="reference-gallery" key={selected.id} aria-label={t.views}>
+            {selected.views.map((view,index)=><figure id={`preview-${selected.id}-${index}`} className="reference-item" key={view.key}>
+              <button type="button" className="reference-thumbnail" disabled={!ready} aria-label={`${viewLabel(selected,index,language)} — ${t.enlarge}`} onClick={()=>{if(Date.now()>ignorePreviewClickUntil.current)openPreview(index)}}><PreviewImage system={selected} index={index} language={language} width="1440" height="1000" loading={index===0?'eager':'lazy'}/></button>
+              <figcaption><span>{viewLabel(selected,index,language)}</span><a href={view.url} target="_blank" rel="noopener noreferrer">{t.captureSource}<ArrowSquareOut size={12}/></a></figcaption>
+            </figure>)}
+          </div>
           {selected.specimen.status!=='reference-only'&&<div className="implementation-resource reference-notice">
-          <Cube size={42} weight="light"/><h2>{selected.specimen.status==='design-only'?t.designResources:t.integrationLimited}</h2>
-          <p>{selected.specimen.status==='design-only'?t.designResourcesNote:t.integrationLimitedNote}</p>
-          <a className="official-link" href={selected.url} target="_blank" rel="noopener noreferrer">{t.openResources}<ArrowSquareOut size={17}/></a>
-        </div>}</>}
+            <Cube size={42} weight="light"/><h2>{selected.specimen.status==='design-only'?t.designResources:t.integrationLimited}</h2>
+            <p>{selected.specimen.status==='design-only'?t.designResourcesNote:t.integrationLimitedNote}</p>
+            <a className="official-link" href={selected.url} target="_blank" rel="noopener noreferrer">{t.openResources}<ArrowSquareOut size={17}/></a>
+          </div>}
+        </>}
         <div className="source-meta"><span>{language === 'en' ? selected.organizationEn : selected.organization}</span><span>{language === 'en' ? selected.countryEn : selected.country}</span><span>{selected.stack.join(' / ')}</span></div>
         <div className="release-info"><span>{t.released}</span><time dateTime={selected.published.date}>{selected.published.date}</time>{selected.published.estimated && <span className="date-reference">{t.reference}</span>}</div>
         <details className="release-details" open={!isMobile}><summary>{t.releaseNote}</summary><p>{selected.published.note[language]}</p><a href={selected.published.sourceUrl} target="_blank" rel="noopener noreferrer">{t.dateSource}<ArrowSquareOut size={14} /></a></details>

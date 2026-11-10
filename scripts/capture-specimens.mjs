@@ -37,7 +37,7 @@ await Promise.all(Array.from({length:4},async()=>{
    if(!listOnly){
     await page.setViewportSize({width:1000,height:720});await open(page,id,view);
     const buttons=await page.getByRole('button').count();
-    if(!buttons&&!['typography','table','alerts','card','code'].includes(view))throw Error('No accessible buttons rendered');
+    if(!buttons&&!['typography','table','alerts','card','code','components'].includes(view))throw Error('No accessible buttons rendered');
     if(view==='alerts'&&!await page.locator('.specimen-alerts>*').count())throw Error('No alert specimens rendered');
     if(view==='card'&&await page.locator('.specimen-card-grid>*').count()<2)throw Error('Missing card specimens');
     if(view==='chat'&&await page.getByRole('log').innerText()==='')throw Error('No chat messages rendered');

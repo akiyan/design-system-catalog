@@ -1,6 +1,6 @@
 import {useEffect,useRef,useState} from 'react';
 export const specimenUrl=(system,index=0,language='ja')=>`${system.views[index]?.url || system.views[0].url}?lang=${language}`;
-export default function SpecimenFrame({system,index,language,onSwipe,onKey,expanded=false,compact=false}) {
+export default function SpecimenFrame({system,index,language,onSwipe,onKey,expanded=false,compact=false,lazy=false}) {
  const ref=useRef(null);const [height,setHeight]=useState(360);
  const url=specimenUrl(system,index,language)+'&embedded=1'+(compact?'&compact=1':'');
  useEffect(()=>{setHeight(360)},[url]);
@@ -20,5 +20,5 @@ export default function SpecimenFrame({system,index,language,onSwipe,onKey,expan
   window.addEventListener('message',receive);frame?.addEventListener('load',requestSize);requestSize();
   return()=>{window.removeEventListener('message',receive);frame?.removeEventListener('load',requestSize)};
  },[onSwipe,onKey,expanded]);
- return <iframe ref={ref} key={url} className={`specimen-frame ${expanded?'expanded':''}`} src={url} title={`${system.shortName} — ${language==='en'?system.views[index].labelEn:system.views[index].label}`} style={{height}} sandbox="allow-scripts allow-same-origin allow-forms"/>;
+ return <iframe ref={ref} key={url} className={`specimen-frame ${expanded?'expanded':''}`} src={url} loading={lazy?'lazy':'eager'} title={`${system.shortName} — ${language==='en'?system.views[index].labelEn:system.views[index].label}`} style={{height}} sandbox="allow-scripts allow-same-origin allow-forms"/>;
 }

@@ -26,7 +26,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - List systems by descending initial public release date. Add visible reference markers and evidence links when only contextual dates are available; never present repository creation as a confirmed public launch.
 - Use static path permalinks such as `/astryx/`. Generate HTML for every system with Astro. Do not use query-string selection.
 - Selecting a system updates browser history; direct access, reload, and Back/Forward restore the selection.
-- Arrow Up/Down or J/K select systems; Home/End select boundaries; Left/Right switch screenshots; V enlarges; O opens the official site; ? opens the shortcut dialog; Escape closes overlays or returns to the mobile list.
+- Arrow Up/Down or J/K select systems; Home/End select boundaries; Left/Right or H/L scroll between specimens (switch only inside enlargement); V enlarges; O opens the official site; ? opens the shortcut dialog; Escape closes overlays or returns to the mobile list.
 - Do not intercept shortcuts in editable fields or the language selector. Dialogs must trap and restore focus.
 
 ## Additional entry scope
@@ -117,7 +117,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 
 - Use additional vertical space for meaningful overview content, up to the available 1080p browser area. Prefer genuine badges, notification banners and card surfaces that reveal differences between systems. Keep complete content visible with natural iframe sizing; do not impose a fixed viewport or introduce inner document scrolling.
 - Add Cards, Dialogs, Code blocks and Chat specimen categories. Use the closest genuine published building blocks when no exact category exists (for example Tile/Container for cards or Comment/Avatar for conversation). Record the component mapping and extra package/version provenance. Do not invent a branded equivalent or add a remote chat service.
-- Remove the repository action from the top-right system heading. Keep the repository link under the source-code details. Represent the official-site action with a globe icon and an accessible label.
+- Remove the repository action from the top-right system heading. Keep the repository link under the source-code details. Represent the official-site action with a globe icon followed by the visible 公式サイト / Official site label.
 - On desktop place the short system description to the right of its name in a single heading row. Allow natural wrapping on mobile.
 - Site branding and document titles omit `.akiyan.tokyo`: use デザインシステムカタログ / Design System Catalog. The canonical production URL stays https://design-system-catalog.akiyan.tokyo/.
 
@@ -133,7 +133,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 
 ## Desktop home grid
 
-- On desktop, the unselected root page shows all catalog systems in a full-width thumbnail grid. Remove the introductory sample/comparison pairs and selection prompt. Keep the category/specimen filters and existing featured/release ordering.
+- On desktop, the unselected root page shows all catalog systems in a full-width thumbnail grid. Remove the introductory sample/comparison pairs and selection prompt. Keep the government/company category filters and existing featured/release ordering.
 - Selecting a grid card opens its path and switches to the existing left list/right detail layout. Direct system paths use that detail layout. Browser Back to the root restores the grid and its scroll position. Grid cards are reachable with Tab; keep existing J/K and arrow shortcuts.
 - Mobile retains the current list/detail flow.
 
@@ -144,3 +144,10 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - The system name in the detail heading links to its official website in a new tab. Keep the same heading appearance and keyboard focus visibility.
 - Catalog items place country, category and publication date in one metadata row, wrapping naturally only when space is limited. Omit the reference-date badge from this compact catalog view; retain date precision and evidence in the detail pane.
 - Cap the desktop home grid at four columns, including 1920px and wider browsers, so thumbnails remain large. Keep two/three-column responsive layouts below the four-column breakpoint.
+
+## Scrolling specimens and spacing correctness
+
+- Styled systems show their overview first, followed by all supported major component specimens in a vertical flow. Add a curated set of further genuine components (tabs, disclosure/accordion, progress, pagination, breadcrumbs) where supported; do not attempt to list every component.
+- Reference-only and other non-integrated systems show a two-column screenshot gallery. Clicking an image opens enlargement directly; there is no selected large reference image above it.
+- Preserve official component geometry. Pass required size/variant props; use published Stack/Layout components and spacing tokens for authored card/dialog content. Native Bootstrap-based modal specimens must include their .modal ancestor so inherited spacing tokens resolve. Keep these demonstration wrappers in normal flow so iframe content fits naturally.
+- Audit overview, form, typography, table, alert, card, dialog, code and chat surfaces for missing padding, touching text and overflow. Source captures must match corrected live components.
