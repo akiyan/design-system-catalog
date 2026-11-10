@@ -302,8 +302,9 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
           }}>
           <span className="row-image"><PreviewImage compact system={s} index={Math.max(0,s.views.findIndex(view=>view.key===comparisonView))} language={language} loading={s.id === selected.id ? 'eager' : 'lazy'} width="1440" height="1000" />{s.specimen.status!=='ready'?<span className="reference-badge">{t.siteCapture}</span>:!s.views.some(view=>view.key===comparisonView)&&<span className="reference-badge">{t.overviewFallback}</span>}</span>
           <span className="row-copy"><span className="system-name">{systemName(s, language)}</span>{s.specimen.unstyled&&<span className="system-kind">{t.unstyled}</span>}
-            <span className="system-meta"><span>{language === 'en' ? s.countryEn : s.country}</span><span className="meta-divider" aria-hidden="true" /><span>{t[s.category]}</span></span>
-            <span className="release-line"><time dateTime={s.published.date}>{s.published.date}</time>{s.published.estimated && <span className="date-reference">{t.reference}</span>}</span>
+            <span className="system-meta"><span>{language === 'en' ? s.countryEn : s.country}</span><span className="meta-divider" aria-hidden="true" /><span>{t[s.category]}</span>
+              <span className="release-line"><span className="meta-divider" aria-hidden="true" /><time dateTime={s.published.date}>{s.published.date}</time></span>
+            </span>
           </span>
         </a></Fragment>)}
       </section>

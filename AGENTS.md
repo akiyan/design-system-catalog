@@ -142,3 +142,4 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 
 - Capture list thumbnails from a smaller 640×300 screen excerpt so native text and controls remain legible. Do not auto-widen the capture or shrink the whole document to fit. Dialog thumbnails capture their actual surface at a 800×600 viewport; full detail previews keep all content.
 - The system name in the detail heading links to its official website in a new tab. Keep the same heading appearance and keyboard focus visibility.
+- Catalog items place country, category and publication date in one metadata row, wrapping naturally only when space is limited. Omit the reference-date badge from this compact catalog view; retain date precision and evidence in the detail pane.

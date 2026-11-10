@@ -218,3 +218,7 @@ Published source 1e7f7b4 at https://3e5af44a.design-system-catalog-925.pages.dev
 ## Subtle whole-card background — 2026-11-10
 
 User rejected the three generated alternatives and specified a very subtle background across each complete card. Desktop home cards now use #f7f8fa with 6px corners and existing 12px padding, including their thumbnails and metadata. No border, shadow or featured-group separator. Verified at 1920×1080, with selection opening the existing detail layout; two focused browser checks passed. Evidence: docs/home-grid-subtle-cards.png.
+
+## Inline catalog dates — 2026-11-10
+
+Country, category and publication date share a compact metadata row. The compact list/grid omits reference badges; the detail pane retains release precision and evidence. Verified desktop alignment and absence of mobile horizontal overflow. Three focused browser checks passed. Evidence: docs/home-grid-inline-dates.png.

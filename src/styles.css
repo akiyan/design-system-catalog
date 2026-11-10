@@ -134,3 +134,5 @@ a.system-row{cursor:pointer}
 @media(min-width:1250px){.catalog-home .catalog-list{grid-template-columns:repeat(5,minmax(0,1fr))}}
 
 .system-title-link:hover{text-decoration:underline;text-underline-offset:4px}
+
+.system-meta .release-line{margin-top:0;font-size:inherit;gap:9px;white-space:nowrap}
