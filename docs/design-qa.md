@@ -130,3 +130,5 @@ Production verification: all 140 browser checks passed in 19.7 seconds against h
 The introduction keeps only the catalog-system count, positioned beside the heading. Removed the three obvious choose/switch/visit steps and the redundant selection instruction in both languages. Real specimen comparison examples follow the heading directly; keyboard hints share a compact footer row. Retained the established list/detail split and genuine specimen captures. Desktop branding renders the .akiyan.tokyo suffix exactly one typographic point smaller than the site name without changing document titles. Compared before/after captures at 1440px and checked the English layout at 900px; no horizontal overflow at 701, 900 or 1440px.
 
 Static pnpm build passed; all 140 browser checks passed against the local production build in 12.9 seconds.
+
+Deployed source 2caefd0 to https://15e30acf.design-system-catalog-925.pages.dev. Production smoke checks passed at the custom domain in Japanese and English: one system count, no operation steps, the new heading/count layout and a 1pt font-size difference. No horizontal overflow at 390, 900 or 1440 pixels.
