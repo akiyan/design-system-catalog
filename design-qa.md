@@ -108,3 +108,11 @@ Cloudflare reports successful deployment with `uses_functions: false`.
 The homepage and direct paths `/astryx/` and `/dads/` return HTTP 200 with the new controls and no keyword search field. All 11 tests pass against the canonical public URL, including the 15 static routes and navigation without JavaScript.
 
 final result: passed
+
+## Compact preview and selected favicon update — 2026-11-10
+
+Visual targets: the established list/detail layout plus the user's compact-preview instructions; favicon target is the second valid generated icon in docs/favicon-selected.png. Evidence: docs/preview-layout-comparison.jpg compares the same Fluent 2 overview at 1920×1080 before/after; docs/fluent-compact-desktop.png, docs/fluent-mobile-detail.png and docs/typography-expanded-desktop.png cover normal/mobile/expanded states. docs/favicon-comparison.png compares the selected source and 32px exported icon at a common display size.
+
+The change intentionally removes redundant chrome, shortens the description and reduces normal preview height while retaining genuine component styling. The enlarged viewer retains the complete typography specimen. The favicon export preserves the selected three-square/one-circle composition and blue/white palette; expected raster sampling at 32px retains a recognizable silhouette. No actionable P0/P1/P2 differences remain. All 176 wheel-scroll audit cases and all 143 browser checks pass.
+
+final result: passed

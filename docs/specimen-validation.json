@@ -25,13 +25,18 @@
     "ok": true
   },
   {
+    "id": "uswds",
+    "view": "overview",
+    "ok": true
+  },
+  {
     "id": "govuk",
     "view": "form",
     "ok": true
   },
   {
-    "id": "uswds",
-    "view": "overview",
+    "id": "govuk",
+    "view": "typography",
     "ok": true
   },
   {
@@ -46,6 +51,11 @@
   },
   {
     "id": "uswds",
+    "view": "typography",
+    "ok": true
+  },
+  {
+    "id": "uswds",
     "view": "alerts",
     "ok": true
   },
@@ -56,17 +66,17 @@
   },
   {
     "id": "cloudscape",
-    "view": "table",
-    "ok": true
-  },
-  {
-    "id": "cloudscape",
     "view": "overview",
     "ok": true
   },
   {
     "id": "cloudscape",
     "view": "alerts",
+    "ok": true
+  },
+  {
+    "id": "cloudscape",
+    "view": "table",
     "ok": true
   },
   {
@@ -80,18 +90,23 @@
     "ok": true
   },
   {
-    "id": "sgds",
-    "view": "form",
-    "ok": true
-  },
-  {
     "id": "gestalt",
     "view": "form",
     "ok": true
   },
   {
     "id": "sgds",
+    "view": "form",
+    "ok": true
+  },
+  {
+    "id": "sgds",
     "view": "table",
+    "ok": true
+  },
+  {
+    "id": "astryx",
+    "view": "overview",
     "ok": true
   },
   {
@@ -100,8 +115,8 @@
     "ok": true
   },
   {
-    "id": "astryx",
-    "view": "overview",
+    "id": "sgds",
+    "view": "typography",
     "ok": true
   },
   {
@@ -111,12 +126,12 @@
   },
   {
     "id": "agds",
-    "view": "overview",
+    "view": "table",
     "ok": true
   },
   {
     "id": "agds",
-    "view": "table",
+    "view": "overview",
     "ok": true
   },
   {
@@ -126,7 +141,7 @@
   },
   {
     "id": "czech",
-    "view": "overview",
+    "view": "form",
     "ok": true
   },
   {
@@ -135,12 +150,12 @@
     "ok": true
   },
   {
-    "id": "czech",
-    "view": "form",
+    "id": "italia",
+    "view": "overview",
     "ok": true
   },
   {
-    "id": "italia",
+    "id": "czech",
     "view": "overview",
     "ok": true
   },
@@ -157,6 +172,41 @@
   {
     "id": "italia",
     "view": "alerts",
+    "ok": true
+  },
+  {
+    "id": "italia",
+    "view": "typography",
+    "ok": true
+  },
+  {
+    "id": "europa",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "europa",
+    "view": "table",
+    "ok": true
+  },
+  {
+    "id": "europa",
+    "view": "typography",
+    "ok": true
+  },
+  {
+    "id": "europa",
+    "view": "form",
+    "ok": true
+  },
+  {
+    "id": "europa",
+    "view": "alerts",
+    "ok": true
+  },
+  {
+    "id": "cfpb",
+    "view": "overview",
     "ok": true
   },
   {
@@ -170,6 +220,16 @@
     "ok": true
   },
   {
+    "id": "cfpb",
+    "view": "form",
+    "ok": true
+  },
+  {
+    "id": "cfpb",
+    "view": "typography",
+    "ok": true
+  },
+  {
     "id": "bristol",
     "view": "overview",
     "ok": true
@@ -180,18 +240,23 @@
     "ok": true
   },
   {
-    "id": "bc",
-    "view": "overview",
+    "id": "bristol",
+    "view": "typography",
     "ok": true
   },
   {
     "id": "bc",
-    "view": "form",
+    "view": "overview",
     "ok": true
   },
   {
     "id": "charcoal",
     "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "bc",
+    "view": "form",
     "ok": true
   },
   {
@@ -281,12 +346,12 @@
   },
   {
     "id": "semi",
-    "view": "form",
+    "view": "table",
     "ok": true
   },
   {
     "id": "semi",
-    "view": "table",
+    "view": "form",
     "ok": true
   },
   {
@@ -316,12 +381,12 @@
   },
   {
     "id": "spectrum",
-    "view": "table",
+    "view": "alerts",
     "ok": true
   },
   {
     "id": "spectrum",
-    "view": "alerts",
+    "view": "table",
     "ok": true
   },
   {
@@ -345,13 +410,18 @@
     "ok": true
   },
   {
+    "id": "carbon",
+    "view": "alerts",
+    "ok": true
+  },
+  {
     "id": "fluent",
     "view": "overview",
     "ok": true
   },
   {
-    "id": "carbon",
-    "view": "alerts",
+    "id": "fluent",
+    "view": "table",
     "ok": true
   },
   {
@@ -361,7 +431,7 @@
   },
   {
     "id": "fluent",
-    "view": "table",
+    "view": "typography",
     "ok": true
   },
   {
@@ -376,12 +446,12 @@
   },
   {
     "id": "baseweb",
-    "view": "form",
+    "view": "table",
     "ok": true
   },
   {
     "id": "baseweb",
-    "view": "table",
+    "view": "form",
     "ok": true
   },
   {
@@ -431,12 +501,12 @@
   },
   {
     "id": "smarthr",
-    "view": "table",
+    "view": "alerts",
     "ok": true
   },
   {
     "id": "smarthr",
-    "view": "alerts",
+    "view": "table",
     "ok": true
   },
   {
@@ -515,11 +585,6 @@
     "ok": true
   },
   {
-    "id": "primer",
-    "view": "overview",
-    "ok": true
-  },
-  {
     "id": "patternfly",
     "view": "form",
     "ok": true
@@ -531,7 +596,17 @@
   },
   {
     "id": "primer",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "primer",
     "view": "form",
+    "ok": true
+  },
+  {
+    "id": "primer",
+    "view": "typography",
     "ok": true
   },
   {
@@ -550,22 +625,22 @@
     "ok": true
   },
   {
-    "id": "lightning",
-    "view": "form",
-    "ok": true
-  },
-  {
-    "id": "lightning",
-    "view": "overview",
-    "ok": true
-  },
-  {
     "id": "atlassian",
     "view": "form",
     "ok": true
   },
   {
     "id": "lightning",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "lightning",
+    "view": "form",
+    "ok": true
+  },
+  {
+    "id": "lightning",
     "view": "table",
     "ok": true
   },
@@ -576,21 +651,16 @@
   },
   {
     "id": "forma36",
-    "view": "table",
-    "ok": true
-  },
-  {
-    "id": "forma36",
     "view": "form",
     "ok": true
   },
   {
     "id": "forma36",
-    "view": "alerts",
+    "view": "table",
     "ok": true
   },
   {
-    "id": "evergreen",
+    "id": "forma36",
     "view": "alerts",
     "ok": true
   },
@@ -602,6 +672,11 @@
   {
     "id": "evergreen",
     "view": "form",
+    "ok": true
+  },
+  {
+    "id": "evergreen",
+    "view": "alerts",
     "ok": true
   },
   {
@@ -630,16 +705,21 @@
     "ok": true
   },
   {
+    "id": "vitamin",
+    "view": "typography",
+    "ok": true
+  },
+  {
+    "id": "orbit",
+    "view": "form",
+    "ok": true
+  },
+  {
     "id": "orbit",
     "view": "alerts",
     "ok": true
   },
   {
-    "id": "orbit",
-    "view": "form",
-    "ok": true
-  },
-  {
     "id": "finastra",
     "view": "overview",
     "ok": true
@@ -661,12 +741,17 @@
   },
   {
     "id": "boosted",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "boosted",
     "view": "form",
     "ok": true
   },
   {
     "id": "boosted",
-    "view": "overview",
+    "view": "typography",
     "ok": true
   },
   {
@@ -685,16 +770,16 @@
     "ok": true
   },
   {
+    "id": "lexicon",
+    "view": "overview",
+    "ok": true
+  },
+  {
     "id": "calcite",
     "view": "form",
     "ok": true
   },
   {
-    "id": "lexicon",
-    "view": "overview",
-    "ok": true
-  },
-  {
     "id": "vaadin",
     "view": "overview",
     "ok": true
@@ -720,6 +805,11 @@
     "ok": true
   },
   {
+    "id": "kolibri",
+    "view": "overview",
+    "ok": true
+  },
+  {
     "id": "dsfr",
     "view": "overview",
     "ok": true
@@ -730,13 +820,13 @@
     "ok": true
   },
   {
-    "id": "kolibri",
-    "view": "overview",
+    "id": "dsfr",
+    "view": "form",
     "ok": true
   },
   {
     "id": "dsfr",
-    "view": "form",
+    "view": "typography",
     "ok": true
   },
   {
@@ -781,102 +871,12 @@
   },
   {
     "id": "bitsui",
-    "view": "overview",
+    "view": "form",
     "ok": true
   },
   {
     "id": "bitsui",
-    "view": "form",
-    "ok": true
-  },
-  {
-    "id": "italia",
-    "view": "typography",
-    "ok": true
-  },
-  {
-    "id": "uswds",
-    "view": "typography",
-    "ok": true
-  },
-  {
-    "id": "sgds",
-    "view": "typography",
-    "ok": true
-  },
-  {
-    "id": "govuk",
-    "view": "typography",
-    "ok": true
-  },
-  {
-    "id": "fluent",
-    "view": "typography",
-    "ok": true
-  },
-  {
-    "id": "bristol",
-    "view": "typography",
-    "ok": true
-  },
-  {
-    "id": "primer",
-    "view": "typography",
-    "ok": true
-  },
-  {
-    "id": "boosted",
-    "view": "typography",
-    "ok": true
-  },
-  {
-    "id": "vitamin",
-    "view": "typography",
-    "ok": true
-  },
-  {
-    "id": "dsfr",
-    "view": "typography",
-    "ok": true
-  },
-  {
-    "id": "europa",
     "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "europa",
-    "view": "table",
-    "ok": true
-  },
-  {
-    "id": "europa",
-    "view": "typography",
-    "ok": true
-  },
-  {
-    "id": "europa",
-    "view": "form",
-    "ok": true
-  },
-  {
-    "id": "cfpb",
-    "view": "form",
-    "ok": true
-  },
-  {
-    "id": "europa",
-    "view": "alerts",
-    "ok": true
-  },
-  {
-    "id": "cfpb",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "cfpb",
-    "view": "typography",
     "ok": true
   }
 ]

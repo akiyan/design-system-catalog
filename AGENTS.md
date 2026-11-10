@@ -112,3 +112,9 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Keep the home selection prompt small and subdued: 13px, normal weight and muted gray. Retain its spacious prompt area.
 - On desktop the home selection prompt includes a light left-arrow icon pointing toward the catalog list.
 - Omit visible headings above the home overview/table/alert comparison pairs. Keep the specimen cards and system labels.
+
+- Desktop implementation previews use compact shared spacing with a height limit of 440px or 48dvh. The enlarge view retains the full content; mobile retains natural full height.
+- Vertical wheel browsing over embedded specimens scrolls the catalog detail pane (or enlarged viewer). Preserve horizontal scrolling, pinch zoom and genuinely scrollable controls. Do not let fractional document overflow trap scrolling inside the iframe.
+- Remove the repeated system-name / component-specimen header inside every implementation. Remove the redundant implementation-preview label. Place the enlarge action below the preview at its right edge beside package provenance.
+- Keep all Japanese and English system descriptions concise enough for one line at desktop 1080p widths. Allow natural wrapping on narrower screens.
+- Favicon selection is the second valid generated option: three blue rounded squares and one blue circle in a 2×2 grid. Source artwork is docs/favicon-selected.png. Export real PNG/ICO assets from this image.

@@ -36,3 +36,20 @@ html{background:#fff}body{margin:0;background:#fff}*{box-sizing:border-box}.spec
 .specimen-thumbnail #specimen-root[data-view="typography"] :is(section,blockquote,figure,dl){break-inside:avoid}
 
 .specimen-thumbnail #specimen-root[data-view="typography"] .specimen{max-width:1600px}
+
+/* Catalog framing changes spacing, not the libraries' component styling. */
+.specimen-embedded,.specimen-embedded body{overflow-y:hidden}
+.specimen-status:empty{display:none}
+.specimen-compact .specimen{padding:20px}
+.specimen-compact .specimen-section{margin-bottom:16px}
+.specimen-compact .specimen-heading-group{gap:10px}
+.specimen-compact .specimen-fields{gap:16px}
+@media(min-width:480px){
+ .specimen-compact #specimen-root:is([data-view="overview"],[data-view="form"]) .specimen{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 24px}
+ .specimen-compact #specimen-root:is([data-view="overview"],[data-view="form"]) .specimen-section{margin:0;min-width:0}
+ .specimen-compact #specimen-root[data-view="overview"] .specimen-section:first-of-type{grid-column:1;grid-row:1 / span 3}
+ .specimen-compact #specimen-root[data-view="overview"] .specimen-section:nth-of-type(n+2){grid-column:2}
+ .specimen-compact #specimen-root[data-view="overview"] .specimen-fields{grid-template-columns:1fr;gap:12px}
+ .specimen-compact #specimen-root[data-view="form"] .specimen-section:first-of-type{grid-column:1/-1}
+ .specimen-compact .specimen-status{grid-column:1/-1;margin-top:0}
+}

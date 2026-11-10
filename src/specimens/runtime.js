@@ -1,7 +1,11 @@
 import layoutStyles from './layout.css?inline';
 const modules=import.meta.glob('./adapters/*.{jsx,js}');
 const root=document.getElementById('specimen-root');
-const language=new URLSearchParams(location.search).get('lang')==='en'?'en':'ja';
+const params=new URLSearchParams(location.search);
+const embedded=parent!==window&&params.has('embedded');
+const language=params.get('lang')==='en'?'en':'ja';
+if(embedded)document.documentElement.classList.add('specimen-embedded');
+if(params.has('compact'))document.documentElement.classList.add('specimen-compact');
 document.documentElement.lang=language;
 if(new URLSearchParams(location.search).has('thumbnail'))document.documentElement.classList.add('specimen-thumbnail');
 function notify(){parent.postMessage({type:'catalog-specimen-size',height:Math.ceil(root.scrollHeight)},location.origin)}
@@ -21,3 +25,18 @@ document.addEventListener('touchend',event=>{if(!touch||event.touches.length||ev
 document.addEventListener('touchcancel',()=>{touch=null},{passive:true});
 
 document.addEventListener('keydown',event=>{if(event.defaultPrevented||event.ctrlKey||event.metaKey||event.altKey||event.isComposing)return;if(event.key!=='Escape'&&eventTouchesControl(event,'input,textarea,select,[contenteditable],[role="combobox"],[role="listbox"]'))return;if(['j','k','h','l','ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Home','End','v','o','?','Escape'].includes(event.key)){event.preventDefault();parent.postMessage({type:'catalog-specimen-key',key:event.key},location.origin)}});
+
+// The surrounding catalog owns vertical browsing; keep genuine nested controls usable.
+if(embedded)document.addEventListener('wheel',event=>{
+ if(event.defaultPrevented||event.ctrlKey||event.metaKey||event.shiftKey||Math.abs(event.deltaX)>Math.abs(event.deltaY)||!event.deltaY)return;
+ for(const node of event.composedPath()){
+  if(!(node instanceof Element)||node===document.body||node===document.documentElement)continue;
+  const style=getComputedStyle(node);
+  if(/auto|scroll/.test(style.overflowY)&&node.scrollHeight>node.clientHeight+1){
+   if(event.deltaY>0?node.scrollTop+node.clientHeight<node.scrollHeight-1:node.scrollTop>0)return;
+  }
+ }
+ event.preventDefault();
+ const multiplier=event.deltaMode===1?16:event.deltaMode===2?innerHeight:1;
+ parent.postMessage({type:'catalog-specimen-scroll',deltaY:event.deltaY*multiplier},location.origin);
+},{passive:false});

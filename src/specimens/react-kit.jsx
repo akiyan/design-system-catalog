@@ -27,7 +27,7 @@ function Example({kit,view,language,name,copy}) {
  if(view==='typography'&&kit.Typography)content=<kit.Typography t={t} longForm/>;
  if(view==='table'&&kit.Table)content=section(t.tableTitle,<kit.Table t={t}/>);
  if(view==='alerts'&&kit.Alert)content=section(t.alerts,<div className="specimen-alerts">{t.alertMessages.filter(message=>!kit.alertTones||kit.alertTones.includes(message.tone)).map(message=><kit.Alert key={message.tone} {...message}>{message.body}</kit.Alert>)}</div>);
- const page=<div className="specimen"><header className="specimen-header"><span>{name}</span><span>{t.specimen}</span></header>{content}<div className="specimen-status" role="status">{status}</div></div>;
+ const page=<div className="specimen">{content}<div className="specimen-status" role="status">{status}</div></div>;
  return kit.Provider?<kit.Provider>{page}</kit.Provider>:page;
 }
 export default function reactKit(kit) {

@@ -207,7 +207,7 @@ test('addition requests link to the issue form in both languages without mobile 
 test('headless libraries clearly identify their native unstyled appearance',async({page})=>{
  await page.goto('/reactaria/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
  await expect(page.locator('.system-row[href="/reactaria/"] .system-kind')).toHaveText('スタイルなし');
- await expect(page.locator('.implementation-toolbar')).toContainText('スタイルなしの実装プレビュー');
+ await expect(page.locator('.implementation-toolbar')).toHaveCount(0);
  await expect(page.locator('.unstyled-note')).toContainText('配色や装飾のCSSを含まない');
  await expect(page.locator('.system-row[href="/reactaria/"]')).toHaveAttribute('data-featured','false');
  await page.frameLocator('.main-preview iframe').getByRole('textbox').first().fill('Accessible input');
@@ -233,4 +233,34 @@ test('home comparison examples open the matching specimen and respect the active
  await page.getByRole('button',{name:'English',exact:true}).click();
  await expect(page.locator('.catalog-introduction h1')).toHaveText('Please select a design system');
  await expect(page.locator('.welcome-comparison h2')).toHaveCount(0);
+});
+
+
+test('embedded previews keep wheel browsing in the outer pane and remain compact',async({page})=>{
+ await page.setViewportSize({width:1920,height:1080});
+ for(const id of ['fluent','smarthr','ant']){
+  await page.goto(`/${id}/`);await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
+  const frame=page.frameLocator('.main-preview iframe');await expect(frame.locator('#specimen-root')).toHaveAttribute('data-ready','true');
+  await expect(frame.locator('.specimen-header')).toHaveCount(0);await expect(page.locator('.implementation-toolbar')).toHaveCount(0);
+  expect(await page.locator('.main-preview').evaluate(e=>e.clientHeight)).toBeLessThanOrEqual(440);
+  const canvas=await page.locator('.main-preview').boundingBox();const enlarge=await page.locator('.implementation-meta .specimen-enlarge').boundingBox();expect(enlarge.y).toBeGreaterThan(canvas.y+canvas.height);
+  await page.locator('.main-preview iframe').hover();await page.mouse.wheel(0,240);
+  await expect.poll(()=>page.locator('.preview-panel').evaluate(e=>e.scrollTop)).toBeGreaterThan(0);
+  expect(await frame.locator('html').evaluate(()=>document.scrollingElement.scrollTop)).toBe(0);
+ }
+ await page.goto('/fluent/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');await page.getByRole('button',{name:'タイポグラフィ',exact:true}).first().click();
+ await page.locator('.implementation-meta .specimen-enlarge').click();
+ const zoom=page.frameLocator('.zoom-content iframe');await expect(zoom.locator('#specimen-root')).toHaveAttribute('data-ready','true');
+ await expect(zoom.locator('.specimen-rich-text blockquote')).toBeVisible();
+ await page.locator('.zoom-content iframe').hover();await page.mouse.wheel(0,300);
+ await expect.poll(()=>page.locator('.zoom-content').evaluate(e=>e.scrollTop)).toBeGreaterThan(0);
+ expect(await zoom.locator('html').evaluate(()=>document.scrollingElement.scrollTop)).toBe(0);
+});
+
+test('short bilingual descriptions fit one line at 1080p without truncation',async({page})=>{
+ await page.setViewportSize({width:1920,height:1080});await page.goto('/fluent/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
+ for(const system of systems)for(const language of ['ja','en']){
+  const fits=await page.locator('.system-description').evaluate((el,text)=>{el.textContent=text;return el.getBoundingClientRect().height<=parseFloat(getComputedStyle(el).lineHeight)+1;},system.description[language]);
+  expect(fits,`${system.id} ${language}`).toBe(true);
+ }
 });

@@ -158,3 +158,13 @@ The two focused home/history and comparison-navigation checks passed in 1.0 seco
 Removed the overview/table/alert example headings in both languages. Retained all six genuine specimen cards and their system labels, with the existing spacing between pairs. Reviewed the updated desktop capture and refreshed the 900px English capture.
 
 Static pnpm build and the two focused home checks passed (1.1s). Deployed source 58b9384 to https://1751cc0d.design-system-catalog-925.pages.dev. The production comparison-navigation check, including absence of comparison headings, passed in 1.6 seconds.
+
+## Compact implementation previews and favicon — 2026-11-10
+
+All 176 live specimens were audited with actual wheel input. The initial audit identified fractional document overflow trapping wheel input in SmartHR. Embedded specimens now delegate ordinary vertical wheel input to their outer detail pane or enlarged viewer; native scrollable controls, horizontal gestures, Shift-wheel and pinch zoom retain their behavior. Same-origin/source checks protect message handling. All 176 final checks pass with zero inner-document scroll offsets.
+
+Desktop overview/form specimens use compact shared layout without changing genuine component styling. Normal previews are bounded by 440px or 48dvh; enlarged previews retain full content and mobile keeps natural height. Fluent 2 overview measures 408px instead of 693px at 1920×1080. Long typography remains available in the enlarged scrollable viewer. Removed the redundant specimen header across React, Vue, Solid and Svelte implementations, including the Bits UI header found by the audit. Removed the implementation-preview label; the enlarge action sits below the preview at the right edge beside package provenance.
+
+All 67 Japanese/English descriptions are short enough to fit one line at 1920×1080 without truncation. Narrow screens can wrap naturally. Re-captured all 176 full/compact specimen views successfully. Final static pnpm build passes; all 143 browser checks pass in 13.1 seconds, including wheel browsing, enlarged article scrolling and bilingual line-height checks. Captures compare the production baseline and local implementation at the same viewport/selection/state.
+
+Favicon uses the selected second valid generated design: three rounded blue squares and a blue circle. The exact supplied raster is retained in docs/favicon-selected.png and exported as 16px/32px PNG, multi-size ICO and 180px Apple touch icon. No replacement icon geometry was invented. Source-versus-32px comparison preserves its grid/circle silhouette.

@@ -115,7 +115,7 @@ test('keyboard selection, boundaries, screenshot switching, zoom and help focus'
   await page.keyboard.press('Home'); await expect(active(page)).toContainText('Astryx');
   await page.goto('/astryx/'); await ready(page);
   await page.keyboard.press('ArrowRight');
-  await expect(page.locator('.main-preview iframe')).toHaveAttribute('src','/specimens/astryx/form/?lang=ja');
+  await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/\/specimens\/astryx\/form\/\?lang=ja(?:&|$)/);
   await page.keyboard.press('v'); await expect(page.locator('.zoom-dialog')).toBeVisible();
   await page.keyboard.press('ArrowRight'); await expect(page.locator('.zoom-navigation')).toContainText(`1 / ${specimens.astryx.views.length}`);
   await page.keyboard.press('Escape'); await expect(page.locator('.zoom-dialog')).not.toBeVisible();

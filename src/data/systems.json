@@ -61,8 +61,8 @@
     "organizationEn": "Digital Agency, Japan",
     "licenseEn": "MIT (sample code)",
     "description": {
-      "ja": "行政サービスの手続きを支える日本のデザインシステム。フォームの実装例とアクセシビリティの指針を確認できます。",
-      "en": "Japan’s design system for public services, with form implementation examples and accessibility guidance."
+      "ja": "デジタル庁の行政手続き向け共通UI。",
+      "en": "Japan’s Digital Agency UI for public services."
     },
     "descriptionSourceUrl": "https://design.digital.go.jp/dads/",
     "thumbnailDescription": {
@@ -133,8 +133,8 @@
     "organizationEn": "Government Digital Service",
     "licenseEn": "MIT (code)",
     "description": {
-      "ja": "英国の行政サービス向けに検証された設計指針。申請フォームや手続きの流れを組み立てるパターンが充実しています。",
-      "en": "Tested guidance for UK public services, with patterns for application forms and end-to-end service journeys."
+      "ja": "英国GDSの申請フォームと行政サービス向けUI。",
+      "en": "UK government UI for forms and public service journeys."
     },
     "descriptionSourceUrl": "https://design-system.service.gov.uk/",
     "thumbnailDescription": {
@@ -206,8 +206,8 @@
     "organizationEn": "U.S. General Services Administration",
     "licenseEn": "CC0 (US government-authored work)",
     "description": {
-      "ja": "米国連邦政府向けの共通UI基盤。デザイントークンからページのテンプレートまでを公開しています。",
-      "en": "A shared UI foundation for US federal websites, covering design tokens, reusable components and page templates."
+      "ja": "米国連邦政府のWebサイト向け共通UI。",
+      "en": "Shared components and tokens for US federal websites."
     },
     "descriptionSourceUrl": "https://designsystem.digital.gov/",
     "thumbnailDescription": {
@@ -277,8 +277,8 @@
     "organizationEn": "Amazon Web Services",
     "licenseEn": "Apache 2.0",
     "description": {
-      "ja": "クラウド管理画面を構築するためのAWS製システム。データテーブルや複雑な設定フォームの設計を参照できます。",
-      "en": "AWS’s system for cloud management interfaces, with data tables, complex configuration forms and application patterns."
+      "ja": "AWSのクラウド管理画面向けReact UI。",
+      "en": "AWS React components for cloud management interfaces."
     },
     "descriptionSourceUrl": "https://cloudscape.design/",
     "thumbnailDescription": {
@@ -338,8 +338,8 @@
     "organizationEn": "Pinterest",
     "licenseEn": "Apache 2.0 (supplied research)",
     "description": {
-      "ja": "Pinterestのプロダクト体験を支えるUIライブラリ。コンテンツの表示や操作を一貫させるReactコンポーネントを提供します。",
-      "en": "Pinterest’s UI library provides React components and guidance for consistent content presentation and interaction."
+      "ja": "Pinterestのコンテンツ表示を支えるReact UI。",
+      "en": "Pinterest’s React UI for content-focused experiences."
     },
     "descriptionSourceUrl": "https://gestalt.pinterest.systems/",
     "thumbnailDescription": {
@@ -400,8 +400,8 @@
     "organizationEn": "GovTech Singapore",
     "licenseEn": "MIT (supplied research)",
     "description": {
-      "ja": "シンガポールの行政サービス向けに作られた共通基盤。政府サイトで使うコンポーネントとページ構成を公開しています。",
-      "en": "A shared foundation for Singapore government services, with reusable components and website layouts."
+      "ja": "シンガポール政府の公共サービス向け共通UI。",
+      "en": "Shared components for Singapore government services."
     },
     "descriptionSourceUrl": "https://www.designsystem.tech.gov.sg/",
     "thumbnailDescription": {
@@ -474,8 +474,8 @@
     "organizationEn": "Meta",
     "licenseEn": "MIT",
     "description": {
-      "ja": "Metaが公開するカスタマイズ可能なデザインシステム。テーマの切り替えとReactコンポーネントの実例を確認できます。",
-      "en": "Meta’s customizable design system, with theme variations and working React component examples."
+      "ja": "MetaのテーマをカスタマイズできるReact UI。",
+      "en": "Meta’s customizable React components and themes."
     },
     "descriptionSourceUrl": "https://astryx.atmeta.com/",
     "thumbnailDescription": {
@@ -539,8 +539,8 @@
     "organizationEn": "Department of Agriculture, Fisheries and Forestry",
     "licenseEn": "MIT (supplied research)",
     "description": {
-      "ja": "オーストラリア農業省の業務サービス向けUI基盤。入力フォームやデータ表示を組み立てるReactコンポーネントを提供します。",
-      "en": "A React UI foundation for Australian agriculture services, with components for forms and structured data displays."
+      "ja": "オーストラリア農業省の業務サービス向けReact UI。",
+      "en": "React components for Australian agriculture services."
     },
     "descriptionSourceUrl": "https://design-system.agriculture.gov.au/",
     "thumbnailDescription": {
@@ -601,8 +601,8 @@
     "organizationEn": "Digital and Information Agency",
     "licenseEn": "Not verified",
     "description": {
-      "ja": "チェコの公共サイト向けに整備されたデザインシステム。共通コンポーネントと画面の構成例を参照できます。",
-      "en": "A design system for Czech public websites, with shared components and examples of page structures."
+      "ja": "チェコ政府の公共サイト向け共通UI。",
+      "en": "Shared components for Czech public websites."
     },
     "descriptionSourceUrl": "https://designsystem.gov.cz/",
     "thumbnailDescription": {
@@ -662,8 +662,8 @@
     "organizationEn": "Dipartimento per la trasformazione digitale",
     "licenseEn": "Not verified",
     "description": {
-      "ja": "イタリア公共部門のサイト制作を支える設計指針。Bootstrap Italiaと連携するコンポーネントやサイトモデルを公開しています。",
-      "en": "Guidance for Italian public-sector websites, with Bootstrap Italia components and reusable website models."
+      "ja": "イタリア公共部門のBootstrapベースのUI。",
+      "en": "Bootstrap-based components for Italian public websites."
     },
     "descriptionSourceUrl": "https://designers.italia.it/",
     "thumbnailDescription": {
@@ -709,8 +709,8 @@
     "organizationEn": "European Commission",
     "licenseEn": "Not verified",
     "description": {
-      "ja": "欧州委員会のWebサイト向けコンポーネントライブラリ。EU機関の共通した見た目と操作を実装するための基盤です。",
-      "en": "The European Commission’s component library supports consistent visual design and interaction across institutional websites."
+      "ja": "欧州委員会のWebサイト向け共通コンポーネント。",
+      "en": "Shared web components for the European Commission."
     },
     "descriptionSourceUrl": "https://ec.europa.eu/component-library/",
     "thumbnailDescription": {
@@ -771,8 +771,8 @@
     "organizationEn": "Government of Canada",
     "licenseEn": "MIT (supplied research)",
     "description": {
-      "ja": "カナダ政府のサービス向けWeb Components。Reactなどからも利用できる実装と使用例を公開しています。",
-      "en": "Web Components for Canadian government services, with implementation examples and integrations including React."
+      "ja": "カナダ政府のサービス向けWeb Components。",
+      "en": "Web Components for Canadian government services."
     },
     "descriptionSourceUrl": "https://design-system.canada.ca/",
     "thumbnailDescription": {
@@ -833,8 +833,8 @@
     "organizationEn": "Consumer Financial Protection Bureau",
     "licenseEn": "Not verified",
     "description": {
-      "ja": "米国消費者金融保護局のサービスを支えるUI基盤。金融情報を伝えるためのコンポーネントと文章の指針をまとめています。",
-      "en": "The CFPB’s UI foundation combines interface components with guidance for presenting financial information clearly."
+      "ja": "米国CFPBの金融情報と公共サービス向けUI。",
+      "en": "CFPB components and writing guidance for financial services."
     },
     "descriptionSourceUrl": "https://cfpb.github.io/design-system/",
     "thumbnailDescription": {
@@ -884,8 +884,8 @@
     "organizationEn": "Bristol City Council",
     "licenseEn": "Not verified",
     "description": {
-      "ja": "英国ブリストル市の公共サイト向けパターン集。自治体のページで使うフォームやナビゲーションを確認できます。",
-      "en": "Bristol City Council’s patterns for public websites, including forms and navigation for local services."
+      "ja": "英国ブリストル市の公共サイト向けUIパターン。",
+      "en": "Bristol City Council’s UI patterns for public websites."
     },
     "descriptionSourceUrl": "https://style.bristol.gov.uk/",
     "thumbnailDescription": {
@@ -931,8 +931,8 @@
     "organizationEn": "Government of British Columbia",
     "licenseEn": "Not verified",
     "description": {
-      "ja": "カナダBC州のデジタルサービス向け設計リソース。アクセシビリティを考慮した共通UIの使い方を案内しています。",
-      "en": "Design resources for British Columbia’s digital services, with guidance for accessible shared interfaces."
+      "ja": "カナダBC州のデジタルサービス向け共通UI。",
+      "en": "Shared UI resources for British Columbia’s digital services."
     },
     "descriptionSourceUrl": "https://www2.gov.bc.ca/gov/content/digital/design-system",
     "thumbnailDescription": {
@@ -998,8 +998,8 @@
     },
     "shortNameEn": "Sansan One Design System",
     "description": {
-      "ja": "SansanのBtoBプロダクト向けUIガイド。業務画面の入力操作や情報の並べ替えに関する設計仕様を確認できます。",
-      "en": "Sansan’s UI guidance for B2B products documents interaction specifications for business forms and information ordering."
+      "ja": "SansanのBtoB業務画面向けUIガイド。",
+      "en": "Sansan’s UI guidance for B2B business applications."
     },
     "descriptionSourceUrl": "https://ui.one-design-system.sansan.com/",
     "thumbnailDescription": {
@@ -1061,8 +1061,8 @@
     "shortNameEn": "pixiv Charcoal",
     "repository": "https://github.com/pixiv/charcoal",
     "description": {
-      "ja": "pixivのコンテンツ体験を支えるデザインシステム。Web向けのReact実装と共通スタイルを公開しています。",
-      "en": "pixiv’s design system supports content-focused experiences with public React components and shared web styles."
+      "ja": "pixivのコンテンツ体験を支えるReact UI。",
+      "en": "pixiv’s React components for content-focused experiences."
     },
     "descriptionSourceUrl": "https://charcoal-web.pixiv.design/",
     "thumbnailDescription": {
@@ -1129,8 +1129,8 @@
     "shortNameEn": "Serendie Design System",
     "repository": "https://github.com/serendie/serendie",
     "description": {
-      "ja": "三菱電機が公開するデザインシステム。デザイントークンとReactコンポーネントからサービスのUIを組み立てられます。",
-      "en": "Mitsubishi Electric’s public design system provides design tokens and React components for building service interfaces."
+      "ja": "三菱電機のトークンとReactコンポーネント。",
+      "en": "Mitsubishi Electric’s design tokens and React components."
     },
     "descriptionSourceUrl": "https://serendie.design/",
     "thumbnailDescription": {
@@ -1187,8 +1187,8 @@
     },
     "shortNameEn": "kaonavi sugao",
     "description": {
-      "ja": "カオナビのプロダクト向けデザインシステム。人事サービスのUIに使うFigmaアセットと設計の考え方を公開しています。",
-      "en": "Kaonavi’s product design system publishes Figma assets and design guidance for HR service interfaces."
+      "ja": "カオナビの人事サービス向けFigmaアセット。",
+      "en": "Kaonavi’s Figma assets and guidance for HR products."
     },
     "descriptionSourceUrl": "https://brand.kaonavi.jp/sugao",
     "thumbnailDescription": {
@@ -1255,8 +1255,8 @@
     "shortNameEn": "freee vibes",
     "repository": "https://github.com/freee/vibes",
     "description": {
-      "ja": "freeeの業務サービスで使われるReact UI基盤。入力項目の状態やエラー表示を含むフォームの実例が豊富です。",
-      "en": "freee’s React UI foundation includes detailed form examples, input states and error presentation for business services."
+      "ja": "freeeの業務フォームと状態表示を支えるReact UI。",
+      "en": "freee’s React components for business forms and input states."
     },
     "descriptionSourceUrl": "https://vibes.freee.co.jp/",
     "thumbnailDescription": {
@@ -1322,8 +1322,8 @@
     "shortNameEn": "Ubie Vitals",
     "repository": "https://github.com/ubie-oss/ubie-ui",
     "description": {
-      "ja": "Ubieのサービス向けUIライブラリ。入力部品の実例と意味に基づくカラーなどの基礎スタイルを確認できます。",
-      "en": "Ubie’s UI library offers input component examples and foundations such as semantic colors and typography."
+      "ja": "Ubieのヘルスケアサービス向けUIライブラリ。",
+      "en": "Ubie’s UI components and foundations for healthcare services."
     },
     "descriptionSourceUrl": "https://vitals.ubie.life/",
     "thumbnailDescription": {
@@ -1389,8 +1389,8 @@
     "shortNameEn": "GitLab Pajamas",
     "repository": "https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com",
     "description": {
-      "ja": "GitLabの開発者向けプロダクトを支える設計指針。UIコンポーネントの使い分けや文章表現のルールを公開しています。",
-      "en": "GitLab’s design guidance covers component usage and interface writing for developer-facing products."
+      "ja": "GitLabの開発者向けUIと文章表現の共通指針。",
+      "en": "GitLab’s components and UI writing for developer products."
     },
     "descriptionSourceUrl": "https://design.gitlab.com/",
     "thumbnailDescription": {
@@ -1437,8 +1437,8 @@
     "shortNameEn": "Twilio Paste",
     "repository": "https://github.com/twilio-labs/paste",
     "description": {
-      "ja": "Twilioのプロダクト向けデザインシステム。Reactコンポーネントとトークンの実装を公式リポジトリで確認できます。",
-      "en": "Twilio’s product design system publishes React components and design token implementations in its official repository."
+      "ja": "TwilioのReactコンポーネントとデザイントークン。",
+      "en": "Twilio’s React components and design tokens."
     },
     "descriptionSourceUrl": "https://github.com/twilio-labs/paste",
     "thumbnailDescription": {
@@ -1483,8 +1483,8 @@
     },
     "shortNameEn": "Wise Design",
     "description": {
-      "ja": "Wiseのグローバルなブランド体験を支える設計指針。タイポグラフィやイラストを含むビジュアル表現の方向性を確認できます。",
-      "en": "Wise’s guidance supports its global brand experience through typography, illustration and other visual foundations."
+      "ja": "Wiseのタイポグラフィとブランド表現の設計指針。",
+      "en": "Wise’s guidance for typography and brand expression."
     },
     "descriptionSourceUrl": "https://wise.design/",
     "thumbnailDescription": {
@@ -1547,8 +1547,8 @@
     "shortNameEn": "Semi Design",
     "repository": "https://github.com/DouyinFE/semi-design",
     "description": {
-      "ja": "ByteDance発の業務画面向けReactライブラリ。高機能なテーブルやフォームとテーマのカスタマイズ機能を提供します。",
-      "en": "A ByteDance React library for business applications, with advanced tables, forms and theme customization."
+      "ja": "ByteDanceの業務画面向けReact UI。",
+      "en": "ByteDance’s React UI for business applications."
     },
     "descriptionSourceUrl": "https://semi.design/",
     "thumbnailDescription": {
@@ -1615,8 +1615,8 @@
     "shortNameEn": "Arco Design",
     "repository": "https://github.com/arco-design/arco-design",
     "description": {
-      "ja": "ByteDanceが公開するデザインシステム。ReactとVue向けに業務画面を構築するコンポーネントを提供します。",
-      "en": "ByteDance’s design system provides React and Vue components for building business application interfaces."
+      "ja": "ByteDanceのReact・Vue対応UIコンポーネント。",
+      "en": "ByteDance’s components for React and Vue applications."
     },
     "descriptionSourceUrl": "https://arco.design/",
     "thumbnailDescription": {
@@ -1678,8 +1678,8 @@
     },
     "repository": "https://github.com/adobe/react-spectrum",
     "description": {
-      "ja": "Adobeの制作ツールを支えるSpectrumの第2世代。複雑な操作画面の階層や入力部品を設計する指針を公開しています。",
-      "en": "The second generation of Adobe Spectrum guides interface hierarchy and controls for complex creative applications."
+      "ja": "Adobeの制作ツール向けデザインシステム第2世代。",
+      "en": "Adobe’s second-generation system for creative tools."
     },
     "descriptionSourceUrl": "https://spectrum.adobe.com/",
     "thumbnailDescription": {
@@ -1741,8 +1741,8 @@
     },
     "repository": "https://github.com/carbon-design-system/carbon",
     "description": {
-      "ja": "IBMのエンタープライズ製品向けデザインシステム。データを扱う業務画面のコンポーネントとパターンを参照できます。",
-      "en": "IBM’s design system provides components and patterns for data-intensive enterprise applications."
+      "ja": "IBMの業務画面とデータ表示向けUI。",
+      "en": "IBM’s enterprise UI for business tools and data displays."
     },
     "descriptionSourceUrl": "https://www.carbondesignsystem.com/",
     "thumbnailDescription": {
@@ -1804,8 +1804,8 @@
     },
     "repository": "https://github.com/microsoft/fluentui",
     "description": {
-      "ja": "Microsoft製品を横断するFluentの第2世代。Webとネイティブアプリで共通した体験を作る設計指針を提供します。",
-      "en": "Microsoft’s second-generation Fluent system offers guidance for consistent experiences across web and native applications."
+      "ja": "MicrosoftのWeb・アプリ向け共通UI。",
+      "en": "Microsoft’s shared UI for web and native apps."
     },
     "descriptionSourceUrl": "https://fluent2.microsoft.design/",
     "thumbnailDescription": {
@@ -1866,8 +1866,8 @@
     },
     "repository": "https://github.com/uber/baseweb",
     "description": {
-      "ja": "Uberが公開するReactコンポーネントライブラリ。データテーブルや選択メニューを柔軟にカスタマイズできます。",
-      "en": "Uber’s React component library includes customizable data tables, selection controls and other application building blocks."
+      "ja": "Uberのカスタマイズ可能なReactコンポーネント。",
+      "en": "Uber’s customizable React components."
     },
     "descriptionSourceUrl": "https://baseweb.design/",
     "thumbnailDescription": {
@@ -1913,8 +1913,8 @@
     },
     "repository": "https://github.com/Shopify/polaris-react-archive",
     "description": {
-      "ja": "Shopifyの管理画面に組み込むアプリ向けUI基盤。現行のWeb Componentsとアプリ画面の構築方法を案内しています。",
-      "en": "Shopify’s UI foundation for embedded admin applications documents current Web Components and application layouts."
+      "ja": "Shopifyの管理画面アプリ向けWeb Components。",
+      "en": "Web Components for Shopify admin applications."
     },
     "descriptionSourceUrl": "https://shopify.dev/docs/api/polaris",
     "thumbnailDescription": {
@@ -1975,8 +1975,8 @@
     },
     "repository": "https://github.com/openameba/spindle",
     "description": {
-      "ja": "Amebaのブランドとアクセシビリティを支える設計基盤。コンポーネントの利用方針と基本スタイルを公開しています。",
-      "en": "Ameba’s design foundation publishes component usage guidance and core styles with a focus on accessibility and brand consistency."
+      "ja": "Amebaのブランドとアクセシビリティを支えるUI。",
+      "en": "Ameba’s shared UI for brand consistency and accessibility."
     },
     "descriptionSourceUrl": "https://spindle.ameba.design/",
     "thumbnailDescription": {
@@ -2042,8 +2042,8 @@
     },
     "repository": "https://github.com/kufu/smarthr-ui",
     "description": {
-      "ja": "SmartHRのプロダクトとコミュニケーションを支える共通ガイド。UIの実装からアクセシビリティや文章表現までを扱います。",
-      "en": "SmartHR’s shared guidance spans product interfaces, accessibility, brand communication and writing."
+      "ja": "SmartHRのUIとアクセシビリティの共通指針。",
+      "en": "SmartHR’s shared guidance for UI and accessibility."
     },
     "descriptionSourceUrl": "https://smarthr.design/",
     "thumbnailDescription": {
@@ -2102,8 +2102,8 @@
       }
     },
     "description": {
-      "ja": "一休のサービスに共通するデザインガイド。写真や文字の扱いからUIの余白までを具体例で確認できます。",
-      "en": "Ikyu’s design guide documents photography, typography and interface spacing with practical examples."
+      "ja": "一休の写真・文字・余白を扱うデザインガイド。",
+      "en": "Ikyu’s design guidance for imagery, type and spacing."
     },
     "descriptionSourceUrl": "https://www.ikyu.co.jp/design_guideline/",
     "thumbnailDescription": {
@@ -2163,8 +2163,8 @@
       }
     },
     "description": {
-      "ja": "Francfrancのブランド表現を横断するデザインガイド。Webだけでなく販促物や店舗での展開例も参照できます。",
-      "en": "Francfranc’s design guide covers brand applications across websites, promotional materials and retail environments."
+      "ja": "FrancfrancのWebと店舗をつなぐブランドガイド。",
+      "en": "Francfranc’s brand guidance across web and retail."
     },
     "descriptionSourceUrl": "https://francfranc.io/design-system-guidelines/design-system/",
     "thumbnailDescription": {
@@ -2227,8 +2227,8 @@
     },
     "repository": "https://github.com/porsche-design-system/porsche-design-system",
     "description": {
-      "ja": "Porscheのデジタル体験向けコンポーネント群。設定を変更しながらWeb Componentsの動作と見た目を確認できます。",
-      "en": "Porsche’s digital component system includes configurators for exploring Web Component behavior and appearance."
+      "ja": "Porscheのデジタル体験向けWeb Components。",
+      "en": "Web Components for Porsche’s digital experiences."
     },
     "descriptionSourceUrl": "https://designsystem.porsche.com/v4/",
     "thumbnailDescription": {
@@ -2283,8 +2283,8 @@
       }
     },
     "description": {
-      "ja": "AudiのブランドとデジタルUIをつなぐガイド。タイポグラフィなどの基本要素とインターフェースの設計方針を確認できます。",
-      "en": "Audi’s guidance connects its brand foundations, including typography, with digital interface design."
+      "ja": "AudiのブランドとデジタルUIの設計指針。",
+      "en": "Audi’s guidance connecting brand and digital UI."
     },
     "descriptionSourceUrl": "https://styleguide.audi.com/",
     "thumbnailDescription": {
@@ -2345,8 +2345,8 @@
     },
     "repository": "https://github.com/coinbase/cds",
     "description": {
-      "ja": "CoinbaseのWebとモバイル向けデザインシステム。ReactとReact Nativeのコンポーネントを公開しています。",
-      "en": "Coinbase’s design system publishes React and React Native components for web and mobile product interfaces."
+      "ja": "CoinbaseのWeb・モバイル向け共通UI。",
+      "en": "Coinbase’s shared UI for web and mobile apps."
     },
     "descriptionSourceUrl": "https://cds.coinbase.com/",
     "thumbnailDescription": {
@@ -2409,8 +2409,8 @@
     },
     "repository": "https://github.com/Tencent/tdesign",
     "description": {
-      "ja": "Tencentが公開するマルチフレームワーク対応のUI基盤。ReactやVueを含む複数の実装で業務画面を構築できます。",
-      "en": "Tencent’s UI foundation supports business applications across multiple implementations, including React and Vue."
+      "ja": "TencentのReact・Vue対応UIコンポーネント。",
+      "en": "Tencent’s UI components for React, Vue and other frameworks."
     },
     "descriptionSourceUrl": "https://tdesign.tencent.com/",
     "thumbnailDescription": {
@@ -2476,8 +2476,8 @@
     },
     "repository": "https://github.com/ant-design/ant-design",
     "description": {
-      "ja": "業務アプリケーション向けのReact UIライブラリ。複雑なデータ表示やフォームを構築するコンポーネントが充実しています。",
-      "en": "A React UI library for enterprise applications, with extensive components for complex data displays and forms."
+      "ja": "業務フォームとデータ表示向けReact UI。",
+      "en": "React components for business forms and data displays."
     },
     "descriptionSourceUrl": "https://ant.design/",
     "thumbnailDescription": {
@@ -2539,8 +2539,8 @@
     },
     "repository": "https://github.com/cloudflare/kumo",
     "description": {
-      "ja": "CloudflareのWebアプリ向けReactライブラリ。Base UIを土台にしたコンポーネントとテーマのスタイルを提供します。",
-      "en": "Cloudflare’s React library builds on Base UI and provides components and theme styles for web applications."
+      "ja": "CloudflareのBase UIベースのReact UI。",
+      "en": "Cloudflare’s React components built on Base UI."
     },
     "descriptionSourceUrl": "https://kumo-ui.com/",
     "thumbnailDescription": {
@@ -2602,8 +2602,8 @@
     },
     "repository": "https://github.com/patternfly/patternfly",
     "description": {
-      "ja": "Red Hatが公開するエンタープライズUI基盤。管理コンソール向けのテーブルや操作フローのパターンを参照できます。",
-      "en": "Red Hat’s enterprise UI foundation provides tables and interaction patterns for administration consoles."
+      "ja": "Red Hatの管理コンソール向け共通UI。",
+      "en": "Red Hat’s enterprise UI for management consoles."
     },
     "descriptionSourceUrl": "https://www.patternfly.org/",
     "thumbnailDescription": {
@@ -2664,8 +2664,8 @@
     },
     "repository": "https://github.com/primer/css",
     "description": {
-      "ja": "GitHubのプロダクトを支えるデザインシステム。開発者向け画面の情報設計とReactコンポーネントを公開しています。",
-      "en": "GitHub’s design system publishes information design guidance and React components for developer-facing interfaces."
+      "ja": "GitHubの開発者向け画面を支えるReact UI。",
+      "en": "GitHub’s React components for developer-facing interfaces."
     },
     "descriptionSourceUrl": "https://primer.style/",
     "thumbnailDescription": {
@@ -2720,8 +2720,8 @@
       }
     },
     "description": {
-      "ja": "JiraやConfluenceを支えるデザインシステム。業務画面の情報整理と状態表示を共通コンポーネントやトークンで支援します。",
-      "en": "The system behind Jira and Confluence supports business interfaces through shared components, status presentation and design tokens."
+      "ja": "JiraとConfluenceを支える共通UI。",
+      "en": "Shared components and tokens for Jira and Confluence."
     },
     "descriptionSourceUrl": "https://atlassian.design/",
     "thumbnailDescription": {
@@ -2777,8 +2777,8 @@
     },
     "repository": "https://github.com/salesforce-ux/design-system",
     "description": {
-      "ja": "SalesforceのLightning Platform向けUI基盤の第2世代。スタイリングフックを使ったテーマ変更と業務画面の共通化を支援します。",
-      "en": "The second generation of Salesforce’s Lightning UI foundation uses styling hooks for adaptable themes and consistent business interfaces."
+      "ja": "Salesforceの業務画面向け共通UI第2世代。",
+      "en": "Salesforce’s second-generation UI for business applications."
     },
     "descriptionSourceUrl": "https://www.lightningdesignsystem.com/",
     "thumbnailDescription": {
@@ -2839,8 +2839,8 @@
     },
     "repository": "https://github.com/contentful/forma-36",
     "description": {
-      "ja": "Contentfulのコンテンツ編集画面を支えるReact UI基盤。編集用の入力欄やフィールドの状態表示を組み立てられます。",
-      "en": "Contentful’s React UI foundation supports content editors with form controls and field-state presentation."
+      "ja": "Contentfulの編集画面向けReact UI。",
+      "en": "Contentful’s React UI for content editing interfaces."
     },
     "descriptionSourceUrl": "https://f36.contentful.com/",
     "thumbnailDescription": {
@@ -2900,8 +2900,8 @@
     },
     "repository": "https://github.com/segmentio/evergreen",
     "description": {
-      "ja": "Segmentが公開するReact UIライブラリ。データを扱うアプリ向けのテーブルや選択操作の部品を提供します。",
-      "en": "Segment’s React UI library provides tables, selection controls and other building blocks for data-oriented applications."
+      "ja": "Segmentのデータ活用アプリ向けReact UI。",
+      "en": "Segment’s React components for data-oriented applications."
     },
     "descriptionSourceUrl": "https://evergreen.segment.com/",
     "thumbnailDescription": {
@@ -2962,8 +2962,8 @@
     },
     "repository": "https://github.com/Airtable/blocks",
     "description": {
-      "ja": "Airtableの拡張機能向けUIコンポーネントとスタイルAPI。共通の色や余白を使ってベースに組み込む画面を構築できます。",
-      "en": "Airtable’s extension UI components and style API expose shared colors and spacing for interfaces embedded in bases."
+      "ja": "Airtableの拡張機能向けUIとスタイルAPI。",
+      "en": "Airtable’s UI components and style API for extensions."
     },
     "descriptionSourceUrl": "https://airtable.com/developers/extensions/api/UI/Style%20System/All%20styles",
     "thumbnailDescription": {
@@ -3024,8 +3024,8 @@
     },
     "repository": "https://github.com/mondaycom/vibe",
     "description": {
-      "ja": "monday.comのプロダクト向けReactライブラリ。状態を伝える表示部品と業務画面向けの操作部品を提供します。",
-      "en": "monday.com’s React library provides status indicators and interaction components for business application interfaces."
+      "ja": "monday.comの業務画面向けReact UI。",
+      "en": "monday.com’s React UI for business workflows."
     },
     "descriptionSourceUrl": "https://vibe.monday.com/",
     "thumbnailDescription": {
@@ -3072,8 +3072,8 @@
     },
     "repository": "https://github.com/Decathlon/vitamin-web",
     "description": {
-      "ja": "Decathlonが公開するVitaminのWeb実装。CSSと複数のフレームワーク向けコンポーネントで共通UIを構築できます。",
-      "en": "Decathlon’s Vitamin web implementation offers shared UI through CSS and framework-specific component packages."
+      "ja": "DecathlonのWeb向けCSSとUIコンポーネント。",
+      "en": "Decathlon’s shared CSS and web UI components."
     },
     "descriptionSourceUrl": "https://decathlon.github.io/vitamin-web/",
     "thumbnailDescription": {
@@ -3119,8 +3119,8 @@
     },
     "repository": "https://github.com/kiwicom/orbit",
     "description": {
-      "ja": "Kiwi.comが公開する旅行サービス向けReactライブラリ。旅程の表示や予約操作に使う部品を公式リポジトリで確認できます。",
-      "en": "Kiwi.com’s React library includes building blocks for travel itineraries and booking interactions in its official repository."
+      "ja": "Kiwi.comの旅程表示と予約向けReact UI。",
+      "en": "Kiwi.com’s React UI for itineraries and travel bookings."
     },
     "descriptionSourceUrl": "https://github.com/kiwicom/orbit",
     "thumbnailDescription": {
@@ -3176,8 +3176,8 @@
       }
     },
     "description": {
-      "ja": "CookpadがFigmaで公開するデザインシステム。料理に関わるプロダクトのデザインに使う共通アセットを提供しています。",
-      "en": "Cookpad’s Figma design system provides shared assets for designing products related to cooking."
+      "ja": "Cookpadの料理サービス向けFigmaアセット。",
+      "en": "Cookpad’s Figma assets for cooking-related products."
     },
     "descriptionSourceUrl": "https://www.figma.com/community/file/847372282968994272/apron",
     "thumbnailDescription": {
@@ -3234,8 +3234,8 @@
       }
     },
     "description": {
-      "ja": "DBS Bankが公開するデータ可視化用Figmaキット。グラフの使い分けや色の選択を含むガイドを提供しています。",
-      "en": "DBS Bank’s Figma toolkit provides chart components and guidance on chart selection, color and data visualization."
+      "ja": "DBS Bankの金融データ可視化向けFigmaキット。",
+      "en": "DBS Bank’s Figma toolkit for financial data visualization."
     },
     "descriptionSourceUrl": "https://www.figma.com/community/file/1273895245584027076/data-visualisation-dbs-bank",
     "thumbnailDescription": {
@@ -3281,8 +3281,8 @@
       }
     },
     "description": {
-      "ja": "金融サービス向けのFinastraのUI基盤。公開Storybookでコンポーネントの実例とスタイル設定を確認できます。",
-      "en": "Finastra’s UI foundation for financial services provides component examples and style configuration in its public Storybook."
+      "ja": "Finastraの金融サービス向けUI基盤。",
+      "en": "Finastra’s shared UI for financial services."
     },
     "descriptionSourceUrl": "https://finastra.github.io/finastra-design-system/",
     "thumbnailDescription": {
@@ -3343,8 +3343,8 @@
     },
     "repository": "https://github.com/ing-bank/lion",
     "description": {
-      "ja": "ING発の外観に依存しないWeb Components基盤。入力操作の振る舞いとアクセシビリティを独自の見た目に組み込めます。",
-      "en": "ING’s white-label Web Components provide input behavior and accessibility foundations for custom visual designs."
+      "ja": "ING発のアクセシブルなWeb Components。",
+      "en": "ING’s accessible white-label Web Components."
     },
     "descriptionSourceUrl": "https://lion.js.org/",
     "thumbnailDescription": {
@@ -3406,8 +3406,8 @@
     },
     "repository": "https://github.com/Orange-OpenSource/Orange-Boosted-Bootstrap",
     "description": {
-      "ja": "Orangeのブランド向けに拡張されたBootstrap。アクセシビリティを考慮したWebコンポーネントとページの実例を公開しています。",
-      "en": "Orange’s Bootstrap-based framework publishes accessible web components and page examples using its brand styles."
+      "ja": "Orangeのブランドに対応したBootstrap拡張。",
+      "en": "Orange’s accessible Bootstrap-based web components."
     },
     "descriptionSourceUrl": "https://boosted.orange.com/",
     "thumbnailDescription": {
@@ -3468,8 +3468,8 @@
     },
     "repository": "https://github.com/Esri/calcite-design-system",
     "description": {
-      "ja": "Esriの地図サービスやアプリを支えるUI基盤。GISアプリの操作画面に使うWeb Componentsと設計指針を提供します。",
-      "en": "Esri’s UI foundation provides Web Components and guidance for interfaces around GIS and mapping applications."
+      "ja": "Esriの地図・GISアプリ向けWeb Components。",
+      "en": "Esri’s Web Components for maps and GIS applications."
     },
     "descriptionSourceUrl": "https://developers.arcgis.com/calcite-design-system/",
     "thumbnailDescription": {
@@ -3530,8 +3530,8 @@
     },
     "repository": "https://github.com/liferay/clay",
     "description": {
-      "ja": "Liferayのポータル製品向けデザイン言語。共通した画面を構築するための基礎要素とコンポーネントの使い方をまとめています。",
-      "en": "Liferay’s design language documents foundations and component usage for consistent portal product interfaces."
+      "ja": "Liferayの企業ポータル向け共通UI。",
+      "en": "Liferay’s shared UI guidance for enterprise portals."
     },
     "descriptionSourceUrl": "https://design.liferay.com/lexicon/",
     "thumbnailDescription": {
@@ -3593,8 +3593,8 @@
     },
     "repository": "https://github.com/vaadin/web-components",
     "description": {
-      "ja": "業務アプリケーション向けのUIコンポーネント群。JavaやReactから使うデータグリッドなどの実装例を確認できます。",
-      "en": "Vaadin’s UI components include data grids and examples for building business applications with Java or React."
+      "ja": "業務アプリのフォームとデータグリッド向けUI。",
+      "en": "Components for business forms and data grids."
     },
     "descriptionSourceUrl": "https://vaadin.com/design-system",
     "thumbnailDescription": {
@@ -3651,8 +3651,8 @@
       }
     },
     "description": {
-      "ja": "SPEEDAがFigmaで公開したデザインアセット。企業分析サービスの共通UIを構築するためのコンポーネントとテンプレートを提供します。",
-      "en": "SPEEDA’s public Figma assets include components and templates for consistent interfaces in its business intelligence service."
+      "ja": "SPEEDAの企業分析サービス向けFigmaアセット。",
+      "en": "SPEEDA’s Figma assets for business intelligence interfaces."
     },
     "descriptionSourceUrl": "https://www.figma.com/community/file/1047401907024695662/speeda-designsystem-falcon",
     "thumbnailDescription": {
@@ -3704,8 +3704,8 @@
     },
     "repository": "https://github.com/wfp/designsystem",
     "description": {
-      "ja": "国連世界食糧計画のWeb向けUIキット。組織共通のスタイルを適用するコンポーネントと実装ガイドを公開しています。",
-      "en": "The World Food Programme’s web UI kit publishes components and implementation guidance for its shared visual styles."
+      "ja": "国連WFPのWebサイト向けUIキット。",
+      "en": "The World Food Programme’s shared web UI kit."
     },
     "descriptionSourceUrl": "https://uikit.wfp.org/docs/index.html",
     "thumbnailDescription": {
@@ -3761,8 +3761,8 @@
     },
     "repository": "https://github.com/public-ui/kolibri",
     "description": {
-      "ja": "ドイツ連邦政府のITZBundが開発するWeb Components基盤。フレームワークを問わずアクセシブルなUIを組み込めます。",
-      "en": "Developed by Germany’s ITZBund, KoliBri provides accessible Web Components for use across frontend frameworks."
+      "ja": "ドイツITZBundのアクセシブルなWeb Components。",
+      "en": "Germany’s ITZBund Web Components for accessible interfaces."
     },
     "descriptionSourceUrl": "https://public-ui.github.io/",
     "thumbnailDescription": {
@@ -3809,8 +3809,8 @@
     },
     "repository": "https://github.com/GouvernementFR/dsfr",
     "description": {
-      "ja": "フランス政府の公共サービス向けデザインシステム。共通UIの実装を公開しつつ国家ブランドの利用には条件を設けています。",
-      "en": "France’s government design system publishes shared UI implementations with specific conditions for use of state branding."
+      "ja": "フランス政府の公共サービス向け共通UI。",
+      "en": "France’s shared UI for government services."
     },
     "descriptionSourceUrl": "https://www.systeme-de-design.gouv.fr/",
     "thumbnailDescription": {
@@ -3871,8 +3871,8 @@
     },
     "repository": "https://github.com/adobe/react-spectrum",
     "description": {
-      "ja": "AdobeのアクセシブルなReact UIプリミティブ。操作やフォーカス管理を独自のスタイルと組み合わせて実装できます。",
-      "en": "Adobe’s accessible React primitives combine interaction and focus management with your own visual styling."
+      "ja": "Adobeの操作とフォーカス管理を担うReact基盤。",
+      "en": "Adobe’s React primitives for interaction and focus management."
     },
     "descriptionSourceUrl": "https://react-aria.adobe.com/",
     "thumbnailDescription": {
@@ -3933,8 +3933,8 @@
     },
     "repository": "https://github.com/ariakit/ariakit",
     "description": {
-      "ja": "アクセシブルなReact UIを構築するための基盤。ComboboxやDialogなどの操作を独自のデザインに組み込めます。",
-      "en": "A foundation for accessible React interfaces, with primitives such as Combobox and Dialog for custom designs."
+      "ja": "アクセシブルなReact UIを作るヘッドレス基盤。",
+      "en": "Headless primitives for accessible React interfaces."
     },
     "descriptionSourceUrl": "https://ariakit.com/",
     "thumbnailDescription": {
@@ -3995,8 +3995,8 @@
     },
     "repository": "https://github.com/kobaltedev/kobalte",
     "description": {
-      "ja": "SolidJS向けのアクセシブルなヘッドレスUI基盤。既定の見た目に縛られずコンポーネントの振る舞いを利用できます。",
-      "en": "Accessible headless UI primitives for SolidJS let you reuse component behavior without adopting a fixed visual style."
+      "ja": "SolidJS向けのアクセシブルなヘッドレスUI。",
+      "en": "Accessible headless UI primitives for SolidJS."
     },
     "descriptionSourceUrl": "https://kobalte.dev/",
     "thumbnailDescription": {
@@ -4052,8 +4052,8 @@
     },
     "repository": "https://github.com/huntabyte/bits-ui",
     "description": {
-      "ja": "Svelte向けのヘッドレスUIコンポーネント群。Dialogなどの振る舞いを保ちながら独自のスタイルを適用できます。",
-      "en": "Headless UI components for Svelte provide behavior for controls such as Dialog while leaving visual styling to you."
+      "ja": "Svelte向けのヘッドレスUIコンポーネント。",
+      "en": "Headless UI components for Svelte."
     },
     "descriptionSourceUrl": "https://bits-ui.com/",
     "thumbnailDescription": {
