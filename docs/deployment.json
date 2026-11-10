@@ -2,7 +2,7 @@
   "project": "design-system-catalog",
   "subdomain": "design-system-catalog-925.pages.dev",
   "productionBranch": "main",
-  "deploymentURL": "https://f9e7bb1b.design-system-catalog-925.pages.dev",
+  "deploymentURL": "https://b97d73c7.design-system-catalog-925.pages.dev",
   "deploymentStatus": "success",
   "usesFunctions": false,
   "url": "https://design-system-catalog.akiyan.tokyo/",
@@ -23,8 +23,8 @@
   "referencePreviews": 51,
   "customDomainStatus": "active",
   "https": true,
-  "sourceCommit": "9f4c6ea498cd33a54b40c8249836197bc661596a",
-  "verifiedAt": "2026-11-10T10:34:37.629466+00:00",
+  "sourceCommit": "732e2ab5cf4f621ef94c9ccec0772cd3e5ff618c",
+  "verifiedAt": "2026-11-10T10:49:29.608644+00:00",
   "packageManager": "pnpm@12.18.0",
   "richTypographyImplementations": 12,
   "featuredIds": [
@@ -34,11 +34,11 @@
     "ant",
     "primer"
   ],
-  "productionVerification": "Richer genuine overviews and four comparison categories; official-site canvas palettes with genuine Coinbase/Cloudscape dark themes; compact headings and aligned source links; complete iframe sizing through a hydration-safe handshake; 33 production browser checks and 466 valid WebP assets",
+  "productionVerification": "Desktop home displays all 67 systems in a responsive thumbnail grid; selecting a card opens list/detail; Back restores grid scroll. Eight production checks passed for grid density, filters, paths, history, keyboard, mobile and complete iframe sizing.",
   "localBrowserChecks": 172,
-  "localBrowserCheckSeconds": 19.9,
-  "productionBrowserChecks": 33,
-  "productionBrowserCheckSeconds": 16.6,
+  "localBrowserCheckSeconds": 18.1,
+  "productionBrowserChecks": 8,
+  "productionBrowserCheckSeconds": 5.0,
   "previewScrollAudit": 233,
   "favicon": true,
   "referenceOnlyEntries": 5,
@@ -49,5 +49,6 @@
   "nonwhiteCanvases": 13,
   "productionImageChecks": 466,
   "officialPaletteURLsChecked": 67,
-  "officialPaletteURLsInspectable": 66
+  "officialPaletteURLsInspectable": 66,
+  "homeLayout": "desktop-thumbnail-grid"
 }
