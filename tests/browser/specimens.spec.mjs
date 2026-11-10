@@ -194,16 +194,16 @@ test('rich typography provides semantic quotations, lists, definitions and an ac
  }
 });
 
-test('home starts unselected, shows the introduction and restores it through history',async({page})=>{
+test('home starts as a full-width grid and restores it through history',async({page})=>{
  await page.goto('/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
  await expect(page.locator('.system-row.selected')).toHaveCount(0);await expect(page.locator('.system-row[aria-current]')).toHaveCount(0);
- await expect(page.locator('.catalog-introduction')).toBeVisible();await expect(page.locator('.main-preview iframe')).toHaveCount(0);
+ await expect(page.locator('.catalog-app')).toHaveClass(/catalog-home/);await expect(page.locator('.preview-panel')).toBeHidden();await expect(page.locator('.main-preview iframe')).toHaveCount(0);
  await expect(page).toHaveTitle('デザインシステムカタログ');await expect(page.locator('.desktop-site-title')).toHaveText('デザインシステムカタログ');
- await page.getByRole('navigation',{name:'一覧のプレビューカテゴリ'}).getByRole('button',{name:'フォーム',exact:true}).click();await expect(page.locator('.catalog-introduction')).toBeVisible();
- await page.getByRole('button',{name:'政府・公共 15',exact:true}).click();await expect(page.locator('.catalog-introduction')).toBeVisible();
+ await page.getByRole('navigation',{name:'一覧のプレビューカテゴリ'}).getByRole('button',{name:'フォーム',exact:true}).click();await expect(page.locator('.catalog-app')).toHaveClass(/catalog-home/);await expect(page.locator('.preview-panel')).toBeHidden();
+ await page.getByRole('button',{name:'政府・公共 15',exact:true}).click();await expect(page.locator('.catalog-app')).toHaveClass(/catalog-home/);await expect(page.locator('.preview-panel')).toBeHidden();
  await page.locator('.system-row[href="/dads/"]').click();await expect(page.locator('.preview-heading h1')).toBeVisible();
  await expect(page).toHaveTitle(/デジタル庁.*デザインシステムカタログ/);
- await page.goBack();await expect(page.locator('.catalog-introduction')).toBeVisible();await expect(page.locator('.system-row[aria-current]')).toHaveCount(0);
+ await page.goBack();await expect(page.locator('.catalog-app')).toHaveClass(/catalog-home/);await expect(page.locator('.preview-panel')).toBeHidden();await expect(page.locator('.system-row[aria-current]')).toHaveCount(0);
 });
 
 test('addition requests link to the issue form in both languages without mobile overflow',async({page})=>{
@@ -224,24 +224,34 @@ test('headless libraries use multiple official-site screenshots with source link
 });
 
 
-test('home comparison examples open the matching specimen and respect the active category',async({page})=>{
+test('desktop grid shows every system and opens the shared comparison category in list/detail layout',async({page})=>{
+ await page.setViewportSize({width:1920,height:1080});
  await page.goto('/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
- await expect(page.locator('.catalog-introduction h1')).toHaveText('デザインシステムを選んで下さい');
- await expect(page.locator('.welcome-stats,.welcome-intro')).toHaveCount(0);
- const links=page.locator('.welcome-comparison a');await expect(links).toHaveCount(6);
- expect(new Set(await links.evaluateAll(elements=>elements.map(el=>el.getAttribute('href')))).size).toBe(6);
- await page.locator('.welcome-comparison[data-view=table] a[href="/carbon/"]').click();
- await expect(page).toHaveURL(/\/carbon\/$/);await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/carbon\/table\//);
- await expect(page.locator('.list-preview-categories button[aria-pressed=true]')).toHaveText('テーブル');
- await page.goBack();await expect(page.locator('.catalog-introduction')).toBeVisible();
- await page.locator('.welcome-comparison[data-view=alerts] a[href="/primer/"]').click();
- await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/primer\/alerts\//);
- await page.goBack();await page.getByRole('button',{name:'政府・公共 15',exact:true}).click();
- const hrefs=await links.evaluateAll(elements=>elements.map(el=>el.getAttribute('href')));
- for(const href of hrefs)await expect(page.locator(`.system-row[href="${href}"]`)).toBeVisible();
+ await expect(page.locator('.catalog-introduction,.welcome-comparison')).toHaveCount(0);
+ await expect(page.locator('.system-row')).toHaveCount(systems.length);
+ expect(await page.locator('.catalog-list').evaluate(el=>getComputedStyle(el).gridTemplateColumns.split(' ').length)).toBe(5);
+ const cards=await page.locator('.system-row').evaluateAll(els=>els.slice(0,5).map(el=>el.getBoundingClientRect().toJSON()));
+ expect(new Set(cards.map(rect=>rect.y)).size).toBe(1);expect(cards[4].right).toBeGreaterThan(1800);
+ for(const card of cards)expect(card.height).toBeGreaterThan(220);
+ const nextRow=await page.locator('.system-row').nth(5).boundingBox();expect(nextRow.y).toBeGreaterThan(cards[0].bottom);
+ await page.getByRole('navigation',{name:'一覧のプレビューカテゴリ'}).getByRole('button',{name:'テーブル',exact:true}).click();
+ const card=page.locator('.system-row[href="/carbon/"]');await card.scrollIntoViewIfNeeded();
+ await expect(card.locator('img')).toHaveAttribute('src','/specimens/list-thumbnails/carbon-table.webp');
+ const scroll=await page.locator('.catalog-list').evaluate(el=>el.scrollTop);expect(scroll).toBeGreaterThan(0);
+ await card.click();await expect(page).toHaveURL(/\/carbon\/$/);
+ await expect(page.locator('.catalog-app')).not.toHaveClass(/catalog-home/);
+ await expect(page.locator('.preview-panel')).toBeVisible();
+ await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/carbon\/table\//);
+ await expect(page.locator('.system-row[href="/carbon/"]')).toBeInViewport();
+ await page.goBack();await expect(page.locator('.catalog-app')).toHaveClass(/catalog-home/);
+ await expect.poll(()=>page.locator('.catalog-list').evaluate(el=>el.scrollTop)).toBe(scroll);
+ await page.getByRole('button',{name:'政府・公共 15',exact:true}).click();await expect(page.locator('.system-row')).toHaveCount(15);
  await page.getByRole('button',{name:'English',exact:true}).click();
- await expect(page.locator('.catalog-introduction h1')).toHaveText('Please select a design system');
- await expect(page.locator('.welcome-comparison h2')).toHaveCount(0);
+ await expect(page.locator('.desktop-site-title')).toHaveText('Design System Catalog');
+ await expect(page.locator('.preview-panel')).toBeHidden();
+ await page.setViewportSize({width:1440,height:1024});
+ expect(await page.locator('.catalog-list').evaluate(el=>getComputedStyle(el).gridTemplateColumns.split(' ').length)).toBe(5);
+ expect(await page.locator('html').evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
 });
 
 

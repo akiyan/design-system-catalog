@@ -97,7 +97,6 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 
 - The footer includes a bilingual addition-request link to the catalog repository’s GitHub issue form. The form collects the system name and official URL with optional provider, repository and notes.
 
-- Opening / starts with no selected system. On desktop the right pane explains the catalog with actual specimen examples, counts and keyboard guidance. Individual paths remain selected; Back to / restores the introduction. Category changes on / must not automatically select a system.
 - Branding is デザインシステムカタログ (English equivalent when switched). Use this in title/OG title; individual titles also include the system name.
 
 - Rich typography list captures may use a compact two-column article excerpt with the first long paragraph and rich-text samples. Live typography keeps every paragraph and expands the iframe height to avoid clipping long mobile specimens.
@@ -106,11 +105,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 
 - Omit instructions that are already apparent from the layout. Do not show introductory choose/switch/visit steps or tell visitors to select an item from the visible list.
 - Do not show counts in the home introduction.
-- The home introduction starts with 「デザインシステムを選んで下さい」 (English equivalent) in a spacious prompt area. Remove the prior heading, descriptive sentence and system count. Show genuine overview, table and alert comparison pairs using different systems across groups. Clicking an example opens its matching specimen category. Respect the active catalog filter. Keep keyboard hints compact below the examples.
 
-- Keep the home selection prompt small and subdued: 13px, normal weight and muted gray. Retain its spacious prompt area.
-- On desktop the home selection prompt includes a light left-arrow icon pointing toward the catalog list.
-- Omit visible headings above the home overview/table/alert comparison pairs. Keep the specimen cards and system labels.
 
 - Never constrain a live preview with a fixed/max height or crop/overflow concealment. Size the iframe to its complete content. Reduce height through efficient arrangement and fewer repeated samples; keep clear padding and every displayed control visible. Overview shows primary/secondary actions, one input and one working checkbox; disabled/size variants remain in forms. Include a genuine semantic bulleted list in every integrated overview.
 - Vertical wheel browsing over embedded specimens scrolls the catalog detail pane (or enlarged viewer). Preserve horizontal scrolling, pinch zoom and genuinely scrollable controls. Do not let fractional document overflow trap scrolling inside the iframe.
@@ -134,3 +129,10 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Load each integration's published font/reset entry points where required. Coinbase CDS uses `defaultFontStyles` and `globalStyles` together with its genuine Text typography and dark ThemeProvider.
 
 - Specimen sizing uses a parent/request and iframe/response handshake on listener attachment and frame load. Static SSR frames can finish before React hydration; never rely only on the first size notification.
+
+
+## Desktop home grid
+
+- On desktop, the unselected root page shows all catalog systems in a full-width thumbnail grid. Remove the introductory sample/comparison pairs and selection prompt. Keep the category/specimen filters and existing featured/release ordering.
+- Selecting a grid card opens its path and switches to the existing left list/right detail layout. Direct system paths use that detail layout. Browser Back to the root restores the grid and its scroll position. Grid cards are reachable with Tab; keep existing J/K and arrow shortcuts.
+- Mobile retains the current list/detail flow.

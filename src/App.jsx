@@ -3,7 +3,6 @@ import { Globe, ArrowSquareOut, PlusCircle, ArrowLeft, CaretLeft, CaretRight, Gi
 import { systems, specimenCategories, featuredIds, systemPath, systemFromPath, systemName } from './catalog';
 import { messages, detectLanguage } from './i18n';
 import SpecimenFrame from './SpecimenFrame';
-import CatalogIntroduction from './CatalogIntroduction';
 
 const categories = ['all', 'public', 'oss'];
 const imagePath = (system, index = 0, compact = false) => system.specimen.status!=='ready'?`/previews/${system.id}-${system.views[index]?.referenceIndex ?? 0}.webp`:`/specimens/${compact ? 'list-thumbnails' : 'thumbnails'}/${system.id}-${system.views[index]?.key || 'overview'}.webp`;
@@ -54,13 +53,20 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
   const workspace = useRef(null);
   const previewPanel = useRef(null);
   const listScrollTop = useRef(0);
+  const gridScrollTop = useRef(0);
   const t = messages[language];
   const filtered = systems.filter(s => category === 'all' || s.category === category);
   const featuredCount = filtered.filter(s => featuredIds.includes(s.id)).length;
   const selected = systems.find(s => s.id === selectedId) || systems[0];
   const activeView = selected.views[viewIndex] ? viewIndex : 0;
 
-  useEffect(()=>{previewPanel.current?.scrollTo({top:0,behavior:'instant'});},[selectedId]);
+  useEffect(()=>{
+    previewPanel.current?.scrollTo({top:0,behavior:'instant'});
+    if(!isMobile)requestAnimationFrame(()=>{
+      if(selectedId)rowRefs.current[selectedId]?.scrollIntoView({block:'nearest',behavior:'instant'});
+      else if(workspace.current)workspace.current.querySelector('.catalog-list')?.scrollTo({top:gridScrollTop.current,behavior:'instant'});
+    });
+  },[selectedId,isMobile]);
 
   useEffect(() => {
     const media = window.matchMedia('(max-width: 700px)');
@@ -130,6 +136,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
   }
 
   function selectSystem(system, { showDetail = true, focus = false, resetView = false, viewKey } = {}) {
+    if(!isMobile&&!selectedId)gridScrollTop.current=document.getElementById('catalog-list')?.scrollTop||0;
     if (isMobile && showDetail) {
       if (!mobilePreview) listScrollTop.current = workspace.current?.scrollTop || 0;
       requestAnimationFrame(() => workspace.current?.scrollTo({ top: 0, behavior: 'instant' }));
@@ -160,6 +167,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
   }
 
   function chooseCategory(id) {
+    if(!selectedId){gridScrollTop.current=0;requestAnimationFrame(()=>document.getElementById('catalog-list')?.scrollTo({top:0,behavior:'instant'}));}
     setCategory(id);
     setMobilePreview(false);
     if (selectedId && id !== 'all' && selected.category !== id) {
@@ -262,7 +270,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
     [['Tab', 'Shift + Tab'], t.tab], [['Enter', 'Space'], t.activate],
   ];
 
-  return <div className={`catalog-app ${mobilePreview ? 'mobile-detail' : ''}`} data-ready={ready}>
+  return <div className={`catalog-app ${!selectedId?'catalog-home':''} ${mobilePreview ? 'mobile-detail' : ''}`} data-ready={ready}>
     <a className="skip-link" href="#catalog-list">{t.skip}</a>
     <header className="site-header">
       <a className="site-title" href="/"><span className="desktop-site-title">{t.title}</span><span className="mobile-site-title">{t.title}</span></a>
@@ -286,7 +294,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
         <p className="sr-only" role="status">{filtered.length} {t.count}{selectedId?` — ${systemName(selected, language)}`:''}</p>
         {filtered.map((s, index) => <Fragment key={s.id}>
           {featuredCount > 0 && index === featuredCount && <div className="list-toolbar list-section-heading"><h2>{t.newest}</h2><span>{filtered.length - featuredCount}</span></div>}
-          <a data-featured={featuredIds.includes(s.id)} href={systemPath(s)} ref={element => { rowRefs.current[s.id] = element; }} tabIndex={isMobile || selectedId === s.id || (!selectedId && index===0) ? 0 : -1} className={`system-row ${!isMobile && selectedId === s.id ? 'selected' : ''}`} aria-current={!isMobile && selectedId === s.id ? 'page' : undefined}
+          <a data-featured={featuredIds.includes(s.id)} href={systemPath(s)} ref={element => { rowRefs.current[s.id] = element; }} tabIndex={isMobile || selectedId === s.id || !selectedId ? 0 : -1} className={`system-row ${!isMobile && selectedId === s.id ? 'selected' : ''}`} aria-current={!isMobile && selectedId === s.id ? 'page' : undefined}
           onClick={event => {
             if (!ready || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return;
             event.preventDefault();
@@ -334,7 +342,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
         <div className="release-info"><span>{t.released}</span><time dateTime={selected.published.date}>{selected.published.date}</time>{selected.published.estimated && <span className="date-reference">{t.reference}</span>}</div>
         <details className="release-details" open={!isMobile}><summary>{t.releaseNote}</summary><p>{selected.published.note[language]}</p><a href={selected.published.sourceUrl} target="_blank" rel="noopener noreferrer">{t.dateSource}<ArrowSquareOut size={14} /></a></details>
         <details className="license-details" open={!isMobile}><summary>{t.conditions}</summary><p>{t.license}: {language === 'en' ? selected.licenseEn : selected.license}</p><p>{selected.specimen.status==='ready'?t.imageNote:t.captureNote}</p><div className="source-links"><a href={selected.specimen.sourceUrl} target="_blank" rel="noopener noreferrer">{selected.specimen.status==='ready'?t.imageSource:t.captureSource}<ArrowSquareOut size={14} /></a>{selected.repository && <a className="source-repository" href={selected.repository} target="_blank" rel="noopener noreferrer"><GithubLogo size={14} />{t.code}</a>}</div></details>
-        </>:<CatalogIntroduction systems={filtered} language={language} ready={ready} onSelect={selectSystem} onHelp={()=>setHelpOpen(true)}/>}
+        </>:null}
       </section>
     </main>
     <footer className="site-footer"><span>Copyright © 2026 <a href="https://github.com/akiyan" target="_blank" rel="noopener noreferrer">@akiyan</a></span><nav className="footer-links" aria-label={t.footerLinks}><a className="addition-request" href="https://github.com/akiyan/design-system-catalog/issues/new?template=add-design-system.yml" target="_blank" rel="noopener noreferrer"><PlusCircle size={17}/>{t.requestAddition}</a><a className="github-link" href={githubUrl} target="_blank" rel="noopener noreferrer"><GithubLogo size={19} weight="fill" aria-hidden="true" />GitHub</a></nav></footer>
