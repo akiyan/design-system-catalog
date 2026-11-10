@@ -2,8 +2,8 @@ import Vue from 'vue';import{GlButton,GlFormInput,GlFormCheckbox}from'@gitlab/ui
 export default function mount(container,{view,language,name,copy}){
  const t=words(language,copy);const node=document.createElement('div');container.append(node);
  const app=new Vue({data:()=>({value:t.placeholder,checked:true,status:''}),render(h){
- const row=children=>h('div',{class:'specimen-row'},children);const section=(title,content)=>h('section',{class:'specimen-section'},[h('h2',title),content]);
+ const row=children=>h('div',{class:'specimen-row'},children);const section=(title,content)=>h('section',{class:'specimen-section'},[...(view==='overview'?[]:[h('h2',title)]),content]);
  const b=(label,variant='confirm',disabled=false)=>h(GlButton,{props:{variant,disabled},on:{click:()=>{this.status=t.status}}},label);
  const content=[section(t.form,h('div',{class:'specimen-field'},[h('label',t.name),h(GlFormInput,{props:{value:this.value},attrs:{'aria-label':t.name},on:{input:v=>{this.value=v}}})])),section(t.notify,h(GlFormCheckbox,{props:{checked:this.checked},on:{input:v=>{this.checked=v}}},t.notify)),...(view==='form'?[section(t.basic,row([b(t.save),b(t.cancel,'default'),b(t.more,'link')])),section(t.states,row([b(t.disabled,'confirm',true),b(t.disabled,'default',true),b(t.disabled,'link',true)]))]:[])];
- return h('div',{class:'specimen'},[...(view==='overview'?[section(t.type,h('div',{class:'specimen-heading-group'},[h('h1',t.heading),h('p',t.body)])),section(t.basic,row([b(t.save),b(t.cancel,'default'),b(t.disabled,'confirm',true)]))]:[]),...content,h('div',{class:'specimen-status',attrs:{role:'status'}},this.status)])}});app.$mount(node);return()=>app.$destroy();
+ return h('div',{class:'specimen'},[...(view==='overview'?[section(t.type,h('div',{class:'specimen-heading-group'},[h('h1',t.heading),h('p',t.body),h('ul',{class:'specimen-overview-list'},t.overviewItems.map(item=>h('li',item)))])),section(t.basic,row([b(t.save),b(t.cancel,'default')]))]:[]),...content,h('div',{class:'specimen-status',attrs:{role:'status'}},this.status)])}});app.$mount(node);return()=>app.$destroy();
 }

@@ -38,7 +38,6 @@ html{background:#fff}body{margin:0;background:#fff}*{box-sizing:border-box}.spec
 .specimen-thumbnail #specimen-root[data-view="typography"] .specimen{max-width:1600px}
 
 /* Catalog framing changes spacing, not the libraries' component styling. */
-.specimen-embedded,.specimen-embedded body{overflow-y:hidden}
 .specimen-status:empty{display:none}
 .specimen-compact .specimen{padding:20px}
 .specimen-compact .specimen-section{margin-bottom:16px}
@@ -53,3 +52,5 @@ html{background:#fff}body{margin:0;background:#fff}*{box-sizing:border-box}.spec
  .specimen-compact #specimen-root[data-view="form"] .specimen-section:first-of-type{grid-column:1/-1}
  .specimen-compact .specimen-status{grid-column:1/-1;margin-top:0}
 }
+
+.specimen-overview-list{list-style-type:disc;margin-block:16px 0;padding-inline-start:1.5em}.specimen-overview-list li+li{margin-top:8px}.specimen-compact .specimen{padding:24px}.specimen-compact .specimen-section{margin-bottom:24px}

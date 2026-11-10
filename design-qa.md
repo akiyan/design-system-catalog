@@ -116,3 +116,11 @@ Visual targets: the established list/detail layout plus the user's compact-previ
 The change intentionally removes redundant chrome, shortens the description and reduces normal preview height while retaining genuine component styling. The enlarged viewer retains the complete typography specimen. The favicon export preserves the selected three-square/one-circle composition and blue/white palette; expected raster sampling at 32px retains a recognizable silhouette. No actionable P0/P1/P2 differences remain. All 176 wheel-scroll audit cases and all 143 browser checks pass.
 
 final result: passed
+
+## Unclipped overview correction — 2026-11-10
+
+Source: the user's Digital Agency attachment, retained as docs/dads-clipped-reference.png. Its viewport is unknown; docs/dads-overview-comparison.png normalizes the attached crop and the revised preview to a common image width. Updated evidence: docs/dads-overview-complete.png, docs/dads-natural-desktop.png, docs/dads-natural-900.png and docs/dads-natural-mobile.png. The prior P1 was visible: the height-capped frame cut off a real checkbox and its bottom padding. The cap and overflow concealment have been removed. The overview uses fewer repeated state samples, genuine bulleted text and an efficient two-column arrangement. The complete checkbox is visible and operable, with bottom padding. No component scaling or invented branded styling is used.
+
+Headless entries use 19 genuine official-site captures, reviewed in docs/headless-reference-contact.png, with a rendered catalog example in docs/bitsui-reference-desktop.png. They are labeled as reference captures, not unavailable code. All 166 live-frame audit cases have zero vertical overflow, and all 139 browser tests pass. No actionable P0/P1/P2 issues remain in the corrected flow.
+
+final result: passed

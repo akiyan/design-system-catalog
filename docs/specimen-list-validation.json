@@ -1,11 +1,6 @@
 [
   {
     "id": "dads",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "dads",
     "view": "form",
     "ok": true
   },
@@ -16,17 +11,7 @@
   },
   {
     "id": "govuk",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "govuk",
     "view": "table",
-    "ok": true
-  },
-  {
-    "id": "uswds",
-    "view": "overview",
     "ok": true
   },
   {
@@ -66,11 +51,6 @@
   },
   {
     "id": "cloudscape",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "cloudscape",
     "view": "alerts",
     "ok": true
   },
@@ -80,16 +60,6 @@
     "ok": true
   },
   {
-    "id": "sgds",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "gestalt",
-    "view": "overview",
-    "ok": true
-  },
-  {
     "id": "gestalt",
     "view": "form",
     "ok": true
@@ -102,11 +72,6 @@
   {
     "id": "sgds",
     "view": "table",
-    "ok": true
-  },
-  {
-    "id": "astryx",
-    "view": "overview",
     "ok": true
   },
   {
@@ -131,11 +96,6 @@
   },
   {
     "id": "agds",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "agds",
     "view": "form",
     "ok": true
   },
@@ -147,16 +107,6 @@
   {
     "id": "agds",
     "view": "alerts",
-    "ok": true
-  },
-  {
-    "id": "italia",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "czech",
-    "view": "overview",
     "ok": true
   },
   {
@@ -181,11 +131,6 @@
   },
   {
     "id": "europa",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "europa",
     "view": "table",
     "ok": true
   },
@@ -202,16 +147,6 @@
   {
     "id": "europa",
     "view": "alerts",
-    "ok": true
-  },
-  {
-    "id": "cfpb",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "canada",
-    "view": "overview",
     "ok": true
   },
   {
@@ -231,11 +166,6 @@
   },
   {
     "id": "bristol",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "bristol",
     "view": "form",
     "ok": true
   },
@@ -246,32 +176,12 @@
   },
   {
     "id": "bc",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "charcoal",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "bc",
     "view": "form",
     "ok": true
   },
   {
     "id": "charcoal",
     "view": "form",
-    "ok": true
-  },
-  {
-    "id": "vibes",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "serendie",
-    "view": "overview",
     "ok": true
   },
   {
@@ -286,27 +196,12 @@
   },
   {
     "id": "vitals",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "pajamas",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "vitals",
     "view": "form",
     "ok": true
   },
   {
     "id": "pajamas",
     "view": "form",
-    "ok": true
-  },
-  {
-    "id": "paste",
-    "view": "overview",
     "ok": true
   },
   {
@@ -322,16 +217,6 @@
   {
     "id": "paste",
     "view": "alerts",
-    "ok": true
-  },
-  {
-    "id": "wise",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "semi",
-    "view": "overview",
     "ok": true
   },
   {
@@ -356,11 +241,6 @@
   },
   {
     "id": "arco",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "arco",
     "view": "form",
     "ok": true
   },
@@ -372,11 +252,6 @@
   {
     "id": "arco",
     "view": "alerts",
-    "ok": true
-  },
-  {
-    "id": "spectrum",
-    "view": "overview",
     "ok": true
   },
   {
@@ -396,11 +271,6 @@
   },
   {
     "id": "carbon",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "carbon",
     "view": "table",
     "ok": true
   },
@@ -412,11 +282,6 @@
   {
     "id": "carbon",
     "view": "alerts",
-    "ok": true
-  },
-  {
-    "id": "fluent",
-    "view": "overview",
     "ok": true
   },
   {
@@ -441,11 +306,6 @@
   },
   {
     "id": "baseweb",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "baseweb",
     "view": "table",
     "ok": true
   },
@@ -457,11 +317,6 @@
   {
     "id": "baseweb",
     "view": "alerts",
-    "ok": true
-  },
-  {
-    "id": "polaris",
-    "view": "overview",
     "ok": true
   },
   {
@@ -481,17 +336,7 @@
   },
   {
     "id": "spindle",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "spindle",
     "view": "form",
-    "ok": true
-  },
-  {
-    "id": "smarthr",
-    "view": "overview",
     "ok": true
   },
   {
@@ -511,27 +356,12 @@
   },
   {
     "id": "porsche",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "porsche",
     "view": "form",
     "ok": true
   },
   {
     "id": "coinbase",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "coinbase",
     "view": "form",
-    "ok": true
-  },
-  {
-    "id": "tdesign",
-    "view": "overview",
     "ok": true
   },
   {
@@ -551,11 +381,6 @@
   },
   {
     "id": "ant",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "ant",
     "view": "form",
     "ok": true
   },
@@ -571,17 +396,7 @@
   },
   {
     "id": "kumo",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "kumo",
     "view": "form",
-    "ok": true
-  },
-  {
-    "id": "patternfly",
-    "view": "overview",
     "ok": true
   },
   {
@@ -592,11 +407,6 @@
   {
     "id": "patternfly",
     "view": "alerts",
-    "ok": true
-  },
-  {
-    "id": "primer",
-    "view": "overview",
     "ok": true
   },
   {
@@ -621,17 +431,7 @@
   },
   {
     "id": "atlassian",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "atlassian",
     "view": "form",
-    "ok": true
-  },
-  {
-    "id": "lightning",
-    "view": "overview",
     "ok": true
   },
   {
@@ -642,11 +442,6 @@
   {
     "id": "lightning",
     "view": "table",
-    "ok": true
-  },
-  {
-    "id": "forma36",
-    "view": "overview",
     "ok": true
   },
   {
@@ -666,11 +461,6 @@
   },
   {
     "id": "evergreen",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "evergreen",
     "view": "form",
     "ok": true
   },
@@ -681,27 +471,12 @@
   },
   {
     "id": "monday",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "monday",
     "view": "form",
     "ok": true
   },
   {
     "id": "vitamin",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "vitamin",
     "view": "form",
-    "ok": true
-  },
-  {
-    "id": "orbit",
-    "view": "overview",
     "ok": true
   },
   {
@@ -721,27 +496,7 @@
   },
   {
     "id": "finastra",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "finastra",
     "view": "form",
-    "ok": true
-  },
-  {
-    "id": "lion",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "lion",
-    "view": "form",
-    "ok": true
-  },
-  {
-    "id": "boosted",
-    "view": "overview",
     "ok": true
   },
   {
@@ -760,31 +515,16 @@
     "ok": true
   },
   {
-    "id": "calcite",
-    "view": "overview",
-    "ok": true
-  },
-  {
     "id": "boosted",
     "view": "alerts",
     "ok": true
   },
   {
-    "id": "lexicon",
-    "view": "overview",
-    "ok": true
-  },
-  {
     "id": "calcite",
     "view": "form",
     "ok": true
   },
   {
-    "id": "vaadin",
-    "view": "overview",
-    "ok": true
-  },
-  {
     "id": "lexicon",
     "view": "form",
     "ok": true
@@ -796,22 +536,7 @@
   },
   {
     "id": "wfp",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "wfp",
     "view": "form",
-    "ok": true
-  },
-  {
-    "id": "kolibri",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "dsfr",
-    "view": "overview",
     "ok": true
   },
   {
@@ -840,42 +565,267 @@
     "ok": true
   },
   {
-    "id": "reactaria",
+    "id": "cloudscape",
     "view": "overview",
     "ok": true
   },
   {
-    "id": "reactaria",
-    "view": "form",
-    "ok": true
-  },
-  {
-    "id": "ariakit",
+    "id": "dads",
     "view": "overview",
     "ok": true
   },
   {
-    "id": "ariakit",
-    "view": "form",
-    "ok": true
-  },
-  {
-    "id": "kobalte",
+    "id": "govuk",
     "view": "overview",
     "ok": true
   },
   {
-    "id": "kobalte",
-    "view": "form",
+    "id": "uswds",
+    "view": "overview",
     "ok": true
   },
   {
-    "id": "bitsui",
-    "view": "form",
+    "id": "gestalt",
+    "view": "overview",
     "ok": true
   },
   {
-    "id": "bitsui",
+    "id": "sgds",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "astryx",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "agds",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "czech",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "italia",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "canada",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "europa",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "cfpb",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "bristol",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "bc",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "charcoal",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "serendie",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "vibes",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "vitals",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "pajamas",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "paste",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "wise",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "semi",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "arco",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "spectrum",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "carbon",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "fluent",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "baseweb",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "polaris",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "spindle",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "smarthr",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "porsche",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "coinbase",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "tdesign",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "ant",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "kumo",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "patternfly",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "primer",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "atlassian",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "lightning",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "forma36",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "evergreen",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "monday",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "vitamin",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "finastra",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "orbit",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "boosted",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "calcite",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "lexicon",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "vaadin",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "wfp",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "kolibri",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "dsfr",
     "view": "overview",
     "ok": true
   }

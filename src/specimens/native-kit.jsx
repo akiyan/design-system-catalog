@@ -2,7 +2,7 @@ import React from 'react';import TypographyExtras from './typography-extras';imp
 // Markup classes below come from each published framework, not a recreated theme.
 export default function nativeKit(config) {
  const input=(props,onValueChange)=><input type="text" className={config.input} {...props} onChange={e=>onValueChange(e.target.value)}/>;
- return kit({sizes:false,
+ return kit({sizes:false,listClass:config.typography?.list,listItemClass:config.typography?.listItem,
   Table:config.table?({t})=>{const c=config.table;const content=<table className={c.root} aria-label={t.tableTitle}><thead className={c.head}><tr className={c.row}>{t.tableHeaders.map((h,i)=><th key={i} scope="col" className={c.header}>{h}</th>)}</tr></thead><tbody className={c.body}>{t.tableRows.map((row,i)=><tr key={i} className={c.row}>{row.map((v,j)=><td key={j} className={c.cell}>{v}</td>)}</tr>)}</tbody></table>;return c.wrap?<div className={c.wrap}>{content}</div>:content}:undefined,
   Alert:config.alert?({tone,title,children})=>{const c=config.alert;return <div role="alert" className={c.root[tone]}><div className={c.body}><h3 className={c.title}>{title}</h3><p className={c.text}>{children}</p></div></div>}:undefined,
   Button:({children,variant,disabled,onClick})=><button type="button" disabled={disabled} className={config.button[variant]} onClick={onClick}>{children}</button>,

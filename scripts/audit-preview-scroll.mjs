@@ -13,15 +13,18 @@ await Promise.all(Array.from({length:4},async()=>{
    if(index)await page.locator('.view-thumbnail').nth(index).click();
    const iframe=page.locator('.main-preview iframe');const frame=page.frameLocator('.main-preview iframe');
    await expect(frame.locator('#specimen-root')).toHaveAttribute('data-ready','true');
-   await expect.poll(async()=>{const natural=await frame.locator('#specimen-root').evaluate(el=>el.scrollHeight);return await iframe.evaluate(el=>el.clientHeight)-Math.min(440,Math.max(240,natural));}).toBe(0);
+   await expect.poll(async()=>{const natural=await frame.locator('#specimen-root').evaluate(el=>Math.ceil(Math.max(el.scrollHeight,el.getBoundingClientRect().height))+2);return await iframe.evaluate(el=>el.clientHeight)-natural;}).toBe(0);
    const naturalHeight=await frame.locator('#specimen-root').evaluate(el=>el.scrollHeight);
    const height=await iframe.evaluate(el=>el.clientHeight);
    const maxScroll=await page.locator('.preview-panel').evaluate(el=>{el.scrollTop=0;return el.scrollHeight-el.clientHeight});
    const box=await iframe.boundingBox();await page.mouse.move(box.x+box.width*.6,box.y+60);await page.mouse.wheel(0,250);
    if(maxScroll>0)await expect.poll(()=>page.locator('.preview-panel').evaluate(el=>el.scrollTop)).toBeGreaterThan(0);
+   const innerOverflow=await frame.locator('html').evaluate(()=>Math.max(0,document.scrollingElement.scrollHeight-innerHeight));
+   expect(innerOverflow).toBe(0);
+   if(view==='overview')await expect(frame.locator('.specimen-overview-list>li')).toHaveCount(3);
    const innerScroll=await frame.locator('html').evaluate(()=>document.scrollingElement.scrollTop);
    expect(innerScroll).toBe(0);await expect(frame.locator('.specimen-header')).toHaveCount(0);
-   results.push({id,view,ok:true,height,naturalHeight,outerScrollable:maxScroll>0,innerScroll});
+   results.push({id,view,ok:true,height,naturalHeight,outerScrollable:maxScroll>0,innerScroll,innerOverflow});
   }catch(error){results.push({id,view,ok:false,error:error.message.slice(0,600)})}
  }
  await page.close();

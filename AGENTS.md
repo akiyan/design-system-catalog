@@ -63,7 +63,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - The primary experience compares actual integrated components using the same content and arrangement for every system. Keep the selected option 3 list/detail layout.
 - Use each system’s genuine published package or official implementation with its own styles, isolated from other systems. Show its package/version provenance.
 - Render live interactive specimens in details; generate thumbnails from those same local specimens. Provide consistent component categories such as buttons, forms and typography.
-- Headless libraries retain their actual unstyled appearance; do not invent a branded theme. Systems with no public implementation must say so clearly and link to their public design resources rather than show a fabricated equivalent.
+- Headless libraries use official-site screenshots in the catalog; do not invent a branded theme. Systems with no public implementation must say so clearly and link to their public design resources rather than show a fabricated equivalent.
 
 - Keep an overview specimen first for every integrated system. Combine genuine typography, buttons and form controls using shared content.
 - Previous/next navigation, swipes and keyboard system navigation reset the specimen selection to the first overview. Direct list selection may preserve the active specimen category where supported. List thumbnails follow the selected specimen category.
@@ -102,7 +102,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 
 - Rich typography list captures may use a compact two-column article excerpt with the first long paragraph and rich-text samples. Live typography keeps every paragraph and expands the iframe height to avoid clipping long mobile specimens.
 
-- Featured systems are Astryx, Fluent 2, Digital Agency (DADS), Ant Design and Primer, sorted newest public release first. Exclude React Aria from this group. Remove the GitHub-star selection note. Clearly identify unstyled/headless libraries in list rows and before live previews; retain their genuine unstyled appearance.
+- Featured systems are Astryx, Fluent 2, Digital Agency (DADS), Ant Design and Primer, sorted newest public release first. Exclude React Aria from this group. Remove the GitHub-star selection note. Use official-site screenshot previews for unstyled/headless libraries, including React Aria, Ariakit, Lion, Kobalte and Bits UI.
 
 - Display the desktop header suffix `.akiyan.tokyo` three typographic points smaller than the main site name with normal (400) weight in both languages. Keep the full document title unchanged.
 - Omit instructions that are already apparent from the layout. Do not show introductory choose/switch/visit steps or tell visitors to select an item from the visible list.
@@ -113,7 +113,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - On desktop the home selection prompt includes a light left-arrow icon pointing toward the catalog list.
 - Omit visible headings above the home overview/table/alert comparison pairs. Keep the specimen cards and system labels.
 
-- Desktop implementation previews use compact shared spacing with a height limit of 440px or 48dvh. The enlarge view retains the full content; mobile retains natural full height.
+- Never constrain a live preview with a fixed/max height or crop/overflow concealment. Size the iframe to its complete content. Reduce height through efficient arrangement and fewer repeated samples; keep clear padding and every displayed control visible. Overview shows primary/secondary actions, one input and one working checkbox; disabled/size variants remain in forms. Include a genuine semantic bulleted list in every integrated overview.
 - Vertical wheel browsing over embedded specimens scrolls the catalog detail pane (or enlarged viewer). Preserve horizontal scrolling, pinch zoom and genuinely scrollable controls. Do not let fractional document overflow trap scrolling inside the iframe.
 - Remove the repeated system-name / component-specimen header inside every implementation. Remove the redundant implementation-preview label. Place the enlarge action below the preview at its right edge beside package provenance.
 - Keep all Japanese and English system descriptions concise enough for one line at desktop 1080p widths. Allow natural wrapping on narrower screens.

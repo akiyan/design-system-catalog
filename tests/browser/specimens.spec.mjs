@@ -16,13 +16,17 @@ for(const [id,entry] of Object.entries(registry).filter(([,s])=>s.status==='read
  await expect(page.getByText(system.thumbnailDescription.ja,{exact:true})).toBeVisible();
  const save=page.getByRole('button',{name:'変更を保存',exact:true}).first();await expect(save).toBeVisible();await save.click();
  await expect(page.locator('.specimen-status')).toContainText('変更を保存しました');
- if(view!=='form'){const disabled=page.getByRole('button',{name:/^無\s*効$/}).first();if(await disabled.count())await expect(disabled).toBeDisabled();else{const control=page.locator('.specimen-row [disabled]').first();await expect(control).toHaveText(/無\s*効/);await control.click({force:true});await expect(page.locator('.specimen-status')).toHaveText('変更を保存しました');}}
  const input=page.getByRole('textbox').filter({visible:true}).first();
  if(entry.views.includes('form'))await expect(input).toBeVisible();
  if(await input.count()){await input.fill('Test project');await expect(input).toHaveValue('Test project');}
  const checkbox=page.getByRole('checkbox').first();
  if(await checkbox.count()){const before=await checkbox.isChecked();await checkbox.press('Space');if(before)await expect(checkbox).not.toBeChecked();else await expect(checkbox).toBeChecked();}
  expect(errors).toEqual([]);
+ if(entry.views.includes('form')){
+  await page.goto(`/specimens/${id}/form/`);await expect(page.locator('#specimen-root')).toHaveAttribute('data-ready','true');
+  const disabled=page.getByRole('button',{name:/^無\s*効$/}).first();
+  if(await disabled.count())await expect(disabled).toBeDisabled();else await expect(page.locator('.specimen-row [disabled]').filter({hasText:/無\s*効/}).first()).toHaveText(/無\s*効/);
+ }
  const styles=await page.evaluate(()=>[...document.styleSheets].map(s=>s.href||''));
  expect(styles.some(s=>s.includes('/_astro/arco.'))).toBe(false);
 });
@@ -45,7 +49,7 @@ test('nonimplemented systems explicitly show resources without fabricated specim
 
 test('next and previous system navigation reset typography to the overview',async({page})=>{
  await page.setViewportSize({width:390,height:844});await page.goto('/fluent/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
- const waitForLayout=async()=>{const root=page.frameLocator('.main-preview iframe').locator('#specimen-root');await expect(root).toHaveAttribute('data-ready','true');const height=await root.evaluate(el=>Math.ceil(el.scrollHeight));await expect(page.locator('.main-preview iframe')).toHaveJSProperty('clientHeight',height);};
+ const waitForLayout=async()=>{const root=page.frameLocator('.main-preview iframe').locator('#specimen-root');await expect(root).toHaveAttribute('data-ready','true');const height=await root.evaluate(el=>Math.ceil(Math.max(el.scrollHeight,el.getBoundingClientRect().height))+2);await expect(page.locator('.main-preview iframe')).toHaveJSProperty('clientHeight',height);};
  await waitForLayout();
  await page.locator('.view-thumbnail').filter({hasText:'タイポグラフィ'}).click();
  await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/fluent\/typography\//);
@@ -77,7 +81,7 @@ test('typing in a shadow-DOM field never navigates the catalog',async({page})=>{
 
 test('thumbnail headings and descriptions identify each system across rendering frameworks',async({page})=>{
  const systems=JSON.parse(readFileSync(new URL('../../src/data/systems.json',import.meta.url)));
- for(const id of ['ant','pajamas','kobalte','bitsui'])for(const language of ['ja','en']){
+ for(const id of ['ant','pajamas','fluent'])for(const language of ['ja','en']){
   const system=systems.find(s=>s.id===id);
   await page.goto(`/specimens/${id}/overview/?thumbnail=1&lang=${language}`);
   await expect(page.locator('#specimen-root')).toHaveAttribute('data-ready','true');
@@ -138,7 +142,7 @@ test('typography includes genuine paragraph blocks and explicit line breaks in b
 });
 
 test('all integrated forms include action kinds and disabled states',async({page})=>{
- for(const id of ['ant','govuk','pajamas','kobalte','bitsui']){
+ for(const id of ['ant','govuk','pajamas','dads','fluent']){
   await page.goto(`/specimens/${id}/form/`);await expect(page.locator('#specimen-root')).toHaveAttribute('data-ready','true');
   await expect(page.getByRole('button',{name:'変更を保存',exact:true}).first()).toBeVisible();
   await expect(page.getByRole('button',{name:'キャンセル',exact:true}).first()).toBeVisible();
@@ -204,14 +208,14 @@ test('addition requests link to the issue form in both languages without mobile 
  for(const width of [320,390,900,1440]){await page.setViewportSize({width,height:844});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await expect(link).toBeVisible();}
 });
 
-test('headless libraries clearly identify their native unstyled appearance',async({page})=>{
- await page.goto('/reactaria/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
- await expect(page.locator('.system-row[href="/reactaria/"] .system-kind')).toHaveText('スタイルなし');
- await expect(page.locator('.implementation-toolbar')).toHaveCount(0);
- await expect(page.locator('.unstyled-note')).toContainText('配色や装飾のCSSを含まない');
- await expect(page.locator('.system-row[href="/reactaria/"]')).toHaveAttribute('data-featured','false');
- await page.frameLocator('.main-preview iframe').getByRole('textbox').first().fill('Accessible input');
- await expect(page.frameLocator('.main-preview iframe').getByRole('textbox').first()).toHaveValue('Accessible input');
+test('headless libraries use multiple official-site screenshots with source links',async({page})=>{
+ for(const id of ['reactaria','ariakit','lion','kobalte','bitsui']){
+  await page.goto(`/${id}/`);await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
+  await expect(page.locator('.main-preview iframe')).toHaveCount(0);await expect(page.locator('.main-preview img')).toHaveAttribute('src',`/previews/${id}-0.webp`);
+  await expect(page.locator('.implementation-toolbar')).toContainText('公式サイトのキャプチャ');await expect(page.locator('.reference-notice')).toHaveCount(0);
+  await page.locator('.view-thumbnail').nth(1).click();await expect(page.locator('.main-preview img')).toHaveAttribute('src',`/previews/${id}-1.webp`);
+  await expect(page.locator('.implementation-meta a')).toHaveAttribute('href',systems.find(s=>s.id===id).views[1].url);
+ }
 });
 
 
@@ -236,13 +240,15 @@ test('home comparison examples open the matching specimen and respect the active
 });
 
 
-test('embedded previews keep wheel browsing in the outer pane and remain compact',async({page})=>{
+test('embedded previews fit their whole contents and keep wheel browsing in the outer pane',async({page})=>{
  await page.setViewportSize({width:1920,height:1080});
  for(const id of ['fluent','smarthr','ant']){
   await page.goto(`/${id}/`);await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
   const frame=page.frameLocator('.main-preview iframe');await expect(frame.locator('#specimen-root')).toHaveAttribute('data-ready','true');
   await expect(frame.locator('.specimen-header')).toHaveCount(0);await expect(page.locator('.implementation-toolbar')).toHaveCount(0);
-  expect(await page.locator('.main-preview').evaluate(e=>e.clientHeight)).toBeLessThanOrEqual(440);
+  const measured=await frame.locator('#specimen-root').evaluate(e=>Math.ceil(Math.max(e.scrollHeight,e.getBoundingClientRect().height)));
+  await expect.poll(()=>page.locator('.main-preview iframe').evaluate(e=>e.clientHeight)).toBeGreaterThanOrEqual(measured);
+  expect(await frame.locator('html').evaluate(()=>document.scrollingElement.scrollHeight<=innerHeight)).toBe(true);
   const canvas=await page.locator('.main-preview').boundingBox();const enlarge=await page.locator('.implementation-meta .specimen-enlarge').boundingBox();expect(enlarge.y).toBeGreaterThan(canvas.y+canvas.height);
   await page.locator('.main-preview iframe').hover();await page.mouse.wheel(0,240);
   await expect.poll(()=>page.locator('.preview-panel').evaluate(e=>e.scrollTop)).toBeGreaterThan(0);
@@ -262,5 +268,17 @@ test('short bilingual descriptions fit one line at 1080p without truncation',asy
  for(const system of systems)for(const language of ['ja','en']){
   const fits=await page.locator('.system-description').evaluate((el,text)=>{el.textContent=text;return el.getBoundingClientRect().height<=parseFloat(getComputedStyle(el).lineHeight)+1;},system.description[language]);
   expect(fits,`${system.id} ${language}`).toBe(true);
+ }
+});
+
+
+test('Digital Agency overview shows the complete interactive checkbox and bulleted list',async({page})=>{
+ for(const width of [1920,1440,900]){
+  await page.setViewportSize({width,height:1080});await page.goto('/dads/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
+  const frame=page.frameLocator('.main-preview iframe');await expect(frame.locator('#specimen-root')).toHaveAttribute('data-ready','true');
+  const checkbox=frame.getByRole('checkbox',{name:'チームに通知する',exact:true});await expect(checkbox).toBeInViewport();await checkbox.uncheck();await expect(checkbox).not.toBeChecked();await checkbox.check();
+  await expect(frame.locator('.specimen-overview-list>li')).toHaveCount(3);await expect(frame.locator('.specimen-overview-list')).toHaveCSS('list-style-type','disc');
+  expect(await checkbox.evaluate(el=>{const rect=el.getBoundingClientRect();return innerHeight-rect.bottom;})).toBeGreaterThan(16);
+  expect(await frame.locator('html').evaluate(()=>document.scrollingElement.scrollHeight<=innerHeight)).toBe(true);
  }
 });

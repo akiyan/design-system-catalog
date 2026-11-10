@@ -8,7 +8,7 @@ if(embedded)document.documentElement.classList.add('specimen-embedded');
 if(params.has('compact'))document.documentElement.classList.add('specimen-compact');
 document.documentElement.lang=language;
 if(new URLSearchParams(location.search).has('thumbnail'))document.documentElement.classList.add('specimen-thumbnail');
-function notify(){parent.postMessage({type:'catalog-specimen-size',height:Math.ceil(root.scrollHeight)},location.origin)}
+function notify(){parent.postMessage({type:'catalog-specimen-size',height:Math.ceil(Math.max(root.scrollHeight,root.getBoundingClientRect().height))+2},location.origin)}
 try {
  const module=await modules[`./adapters/${root.dataset.adapter}.jsx`]?.() || await modules[`./adapters/${root.dataset.adapter}.js`]?.();
  if(!module)throw new Error('Implementation adapter unavailable');

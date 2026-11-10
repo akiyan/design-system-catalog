@@ -326,11 +326,11 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
           <button type="button" className="main-preview reference-canvas" aria-label={t.enlarge} onClick={()=>{if(Date.now()>ignorePreviewClickUntil.current)setZoomOpen(true)}} onTouchStart={startSwipe} onTouchEnd={endSwipe} onTouchCancel={()=>{swipeStart.current=null;}}><PreviewImage system={selected} index={activeView} language={language}/></button>
           <div className="implementation-meta"><a href={selected.views[activeView].url} target="_blank" rel="noopener noreferrer">{t.captureSource}<ArrowSquareOut size={12}/></a></div>
           <div className="preview-thumbnails" aria-label={t.views}>{selected.views.map((view,index)=><button type="button" disabled={!ready} key={view.key} className={`view-thumbnail ${activeView===index?'active':''}`} aria-pressed={activeView===index} onClick={()=>chooseView(index)}><PreviewImage system={selected} index={index} language={language} width="1440" height="1000" loading="lazy"/><span>{viewLabel(selected,index,language)}</span></button>)}</div>
-          <div className="implementation-resource reference-notice">
+          {selected.specimen.status!=='reference-only'&&<div className="implementation-resource reference-notice">
           <Cube size={42} weight="light"/><h2>{selected.specimen.status==='design-only'?t.designResources:t.integrationLimited}</h2>
           <p>{selected.specimen.status==='design-only'?t.designResourcesNote:t.integrationLimitedNote}</p>
           <a className="official-link" href={selected.url} target="_blank" rel="noopener noreferrer">{t.openResources}<ArrowSquareOut size={17}/></a>
-        </div></>}
+        </div>}</>}
         <div className="source-meta"><span>{language === 'en' ? selected.organizationEn : selected.organization}</span><span>{language === 'en' ? selected.countryEn : selected.country}</span><span>{selected.stack.join(' / ')}</span></div>
         <div className="release-info"><span>{t.released}</span><time dateTime={selected.published.date}>{selected.published.date}</time>{selected.published.estimated && <span className="date-reference">{t.reference}</span>}</div>
         <details className="release-details" open={!isMobile}><summary>{t.releaseNote}</summary><p>{selected.published.note[language]}</p><a href={selected.published.sourceUrl} target="_blank" rel="noopener noreferrer">{t.dateSource}<ArrowSquareOut size={14} /></a></details>

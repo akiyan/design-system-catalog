@@ -1,8 +1,8 @@
 import {ArrowLeft,ArrowSquareOut,Keyboard} from '@phosphor-icons/react';
 import {systemName,systemPath} from './catalog';
 const copy={
- ja:{heading:'デザインシステムを選んで下さい',sources:'公開実装がないシステムには公式資料のキャプチャを掲載しています。提供元と利用条件も各詳細で確認できます。',keyboard:'キーボード操作',select:'システムを選択',preview:'プレビューを切り替え',help:'操作ヘルプ'},
- en:{heading:'Please select a design system',sources:'Systems without a public implementation show reference captures. Provider information and usage terms are available in each detail view.',keyboard:'Keyboard navigation',select:'Select a system',preview:'Switch preview',help:'Shortcut help'}
+ ja:{heading:'デザインシステムを選んで下さい',sources:'スタイルを持たないライブラリや実装未対応のシステムは公式資料のキャプチャを掲載しています。提供元と利用条件も各詳細で確認できます。',keyboard:'キーボード操作',select:'システムを選択',preview:'プレビューを切り替え',help:'操作ヘルプ'},
+ en:{heading:'Please select a design system',sources:'Headless libraries and systems without an integrated implementation show reference captures. Provider information and usage terms are available in each detail view.',keyboard:'Keyboard navigation',select:'Select a system',preview:'Switch preview',help:'Shortcut help'}
 };
 export default function CatalogIntroduction({systems,language,ready,onSelect,onHelp}){
  const t=copy[language];const used=new Set();

@@ -7,7 +7,7 @@ export default function SpecimenFrame({system,index,language,onSwipe,onKey,expan
  useEffect(()=>{
   const receive=event=>{
    if(event.origin!==location.origin||event.source!==ref.current?.contentWindow)return;
-   if(event.data?.type==='catalog-specimen-size')setHeight(Math.min(8000,Math.max(240,Number(event.data.height)||360)));
+   if(event.data?.type==='catalog-specimen-size')setHeight(Math.max(1,Math.ceil(Number(event.data.height)||360)));
    if(event.data?.type==='catalog-specimen-scroll'){
     const container=ref.current?.closest(expanded?'.zoom-content':matchMedia('(max-width:700px)').matches?'.workspace':'.preview-panel');
     container?.scrollBy({top:Number(event.data.deltaY)||0,behavior:'instant'});

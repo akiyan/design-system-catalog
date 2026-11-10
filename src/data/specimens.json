@@ -658,15 +658,12 @@
     "unstyled": false
   },
   "lion": {
-    "status": "ready",
+    "status": "reference-only",
     "adapter": "lion",
     "package": "@lion/ui",
     "version": "0.27.0",
-    "sourceUrl": "https://www.npmjs.com/package/@lion/ui",
-    "views": [
-      "overview",
-      "form"
-    ],
+    "sourceUrl": "https://lion.js.org/",
+    "views": [],
     "unstyled": true
   },
   "boosted": {
@@ -765,51 +762,39 @@
     "unstyled": false
   },
   "reactaria": {
-    "status": "ready",
+    "status": "reference-only",
     "adapter": "reactaria",
     "package": "react-aria-components",
     "version": "1.22.1",
-    "sourceUrl": "https://www.npmjs.com/package/react-aria-components",
-    "views": [
-      "overview",
-      "form"
-    ],
+    "sourceUrl": "https://react-aria.adobe.com/",
+    "views": [],
     "unstyled": true
   },
   "ariakit": {
-    "status": "ready",
+    "status": "reference-only",
     "adapter": "ariakit",
     "package": "@ariakit/react",
     "version": "0.4.43",
-    "sourceUrl": "https://www.npmjs.com/package/@ariakit/react",
-    "views": [
-      "overview",
-      "form"
-    ],
+    "sourceUrl": "https://ariakit.com/",
+    "views": [],
     "unstyled": true
   },
   "kobalte": {
-    "status": "ready",
+    "status": "reference-only",
     "adapter": "kobalte",
     "package": "@kobalte/core",
     "version": "0.13.14",
-    "sourceUrl": "https://www.npmjs.com/package/@kobalte/core",
-    "views": [
-      "overview",
-      "form"
-    ],
+    "sourceUrl": "https://kobalte.dev/",
+    "views": [],
     "unstyled": true
   },
   "bitsui": {
-    "status": "ready",
+    "status": "reference-only",
     "adapter": "bitsui",
     "package": "bits-ui",
     "version": "2.20.6",
-    "sourceUrl": "https://www.npmjs.com/package/bits-ui",
-    "views": [
-      "overview",
-      "form"
-    ],
+    "sourceUrl": "https://bits-ui.com/",
+    "views": [],
     "unstyled": true
   }
 }

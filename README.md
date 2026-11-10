@@ -99,7 +99,9 @@ The catalog includes design systems rather than aggregator or comparison sites. 
 
 ## Live component specimens
 
-`src/data/specimens.json` records each real implementation, its version and provenance. Each adapter renders shared form content with the official package and its own styles. Headings and introductory descriptions identify the current system in both live previews and thumbnails. Styles are isolated in same-origin iframes under `/specimens/<system>/<view>/`. These are browser-only interactive examples served as static HTML; no server runtime is used. Headless libraries remain unstyled. Design-only resources and integrations requiring their original host are explicitly identified.
+`src/data/specimens.json` records each real implementation, its version and provenance. Each adapter renders shared form content with the official package and its own styles. Headings and introductory descriptions identify the current system in both live previews and thumbnails. Styles are isolated in same-origin iframes under `/specimens/<system>/<view>/`. These are browser-only interactive examples served as static HTML; no server runtime is used. Headless libraries use official-site screenshot references rather than unstyled live specimens. Design-only resources and integrations requiring their original host are explicitly identified.
+
+Live iframe heights follow their complete content without clipping or fixed limits. Overview specimens combine a bulleted list with primary/secondary actions, one input and a working checkbox; additional states remain in forms.
 
 Run `pnpm build` and a local preview, then `TEST_BASE_URL=http://127.0.0.1:4176 node scripts/capture-specimens.mjs` to generate actual specimen thumbnails. `ONLY=ant,fluent` limits capture to specific entries. The capture report is `docs/specimen-validation.json`. Rebuild after capturing to include thumbnails.
 
