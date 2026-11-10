@@ -136,3 +136,6 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - On desktop, the unselected root page shows all catalog systems in a full-width thumbnail grid. Remove the introductory sample/comparison pairs and selection prompt. Keep the category/specimen filters and existing featured/release ordering.
 - Selecting a grid card opens its path and switches to the existing left list/right detail layout. Direct system paths use that detail layout. Browser Back to the root restores the grid and its scroll position. Grid cards are reachable with Tab; keep existing J/K and arrow shortcuts.
 - Mobile retains the current list/detail flow.
+
+- Desktop home grid items have no enclosing card border. Remove decorative thumbnail frames as well; preserve specimen content and a visible keyboard focus outline.
+- Do not draw a separator line between the featured group and the remaining catalog systems.
