@@ -222,3 +222,7 @@ User rejected the three generated alternatives and specified a very subtle backg
 ## Inline catalog dates — 2026-11-10
 
 Country, category and publication date share a compact metadata row. The compact list/grid omits reference badges; the detail pane retains release precision and evidence. Verified desktop alignment and absence of mobile horizontal overflow. Three focused browser checks passed. Evidence: docs/home-grid-inline-dates.png.
+
+## Four-column maximum — 2026-11-10
+
+Capped the desktop home grid at four columns. At 1920×1080 each thumbnail is 432px wide instead of approximately 337px (about 28% larger). Existing two/three-column breakpoints and featured ordering remain. Two focused browser checks passed, including the four-column cap at 1440, 1920 and 2560px, selection and history restoration. Visual evidence: docs/home-grid-four-columns.png.

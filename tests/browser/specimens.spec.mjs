@@ -231,11 +231,11 @@ test('desktop grid shows every system and opens the shared comparison category i
  await page.goto('/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
  await expect(page.locator('.catalog-introduction,.welcome-comparison')).toHaveCount(0);
  await expect(page.locator('.system-row')).toHaveCount(systems.length);
- expect(await page.locator('.catalog-list').evaluate(el=>getComputedStyle(el).gridTemplateColumns.split(' ').length)).toBe(5);
- const cards=await page.locator('.system-row').evaluateAll(els=>els.slice(0,5).map(el=>el.getBoundingClientRect().toJSON()));
- expect(new Set(cards.map(rect=>rect.y)).size).toBe(1);expect(cards[4].right).toBeGreaterThan(1800);
+ expect(await page.locator('.catalog-list').evaluate(el=>getComputedStyle(el).gridTemplateColumns.split(' ').length)).toBe(4);
+ const cards=await page.locator('.system-row').evaluateAll(els=>els.slice(0,4).map(el=>el.getBoundingClientRect().toJSON()));
+ expect(new Set(cards.map(rect=>rect.y)).size).toBe(1);expect(cards[3].right).toBeGreaterThan(1800);
  for(const card of cards)expect(card.height).toBeGreaterThan(220);
- const nextRow=await page.locator('.system-row').nth(5).boundingBox();expect(nextRow.y).toBeGreaterThan(cards[0].bottom);
+ const nextRow=await page.locator('.system-row').nth(4).boundingBox();expect(nextRow.y).toBeGreaterThan(cards[0].bottom);
  await page.getByRole('navigation',{name:'一覧のプレビューカテゴリ'}).getByRole('button',{name:'テーブル',exact:true}).click();
  const card=page.locator('.system-row[href="/carbon/"]');await card.scrollIntoViewIfNeeded();
  await expect(card.locator('img')).toHaveAttribute('src','/specimens/list-thumbnails/carbon-table.webp');
@@ -251,9 +251,11 @@ test('desktop grid shows every system and opens the shared comparison category i
  await page.getByRole('button',{name:'English',exact:true}).click();
  await expect(page.locator('.desktop-site-title')).toHaveText('Design System Catalog');
  await expect(page.locator('.preview-panel')).toBeHidden();
- await page.setViewportSize({width:1440,height:1024});
- expect(await page.locator('.catalog-list').evaluate(el=>getComputedStyle(el).gridTemplateColumns.split(' ').length)).toBe(5);
+ for(const width of [1440,2560]){
+ await page.setViewportSize({width,height:1024});
+ expect(await page.locator('.catalog-list').evaluate(el=>getComputedStyle(el).gridTemplateColumns.split(' ').length)).toBe(4);
  expect(await page.locator('html').evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+ }
 });
 
 
