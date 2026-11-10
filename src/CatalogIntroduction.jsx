@@ -1,4 +1,4 @@
-import {ArrowSquareOut,Keyboard} from '@phosphor-icons/react';
+import {ArrowLeft,ArrowSquareOut,Keyboard} from '@phosphor-icons/react';
 import {systemName,systemPath} from './catalog';
 const copy={
  ja:{heading:'デザインシステムを選んで下さい',examples:{overview:'全体像の比較例',table:'テーブルの比較例',alerts:'アラートの比較例'},sources:'公開実装がないシステムには公式資料のキャプチャを掲載しています。提供元と利用条件も各詳細で確認できます。',keyboard:'キーボード操作',select:'システムを選択',preview:'プレビューを切り替え',help:'操作ヘルプ'},
@@ -13,7 +13,7 @@ export default function CatalogIntroduction({systems,language,ready,onSelect,onH
   return {view,examples};
  });
  return <div className="catalog-introduction">
-  <div className="welcome-header"><h1>{t.heading}</h1></div>
+  <div className="welcome-header"><h1><ArrowLeft size={16} weight="light" aria-hidden="true"/>{t.heading}</h1></div>
   {groups.filter(group=>group.examples.length).map(({view,examples})=><section className="welcome-comparison" key={view} data-view={view}><h2>{t.examples[view]}</h2><div className="welcome-examples">{examples.map(s=><a key={s.id} href={systemPath(s)} onClick={event=>{if(!ready||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey||event.button!==0)return;event.preventDefault();onSelect(s,{viewKey:view})}}><img src={`/specimens/list-thumbnails/${s.id}-${view}.webp`} alt={systemName(s,language)} width="480" height="224"/><span>{systemName(s,language)}<ArrowSquareOut size={16}/></span></a>)}</div></section>)}
   <p className="welcome-sources">{t.sources}</p>
   <section className="welcome-keyboard"><h2><Keyboard size={19}/>{t.keyboard}</h2><dl><div><dt><kbd>J</kbd><kbd>K</kbd></dt><dd>{t.select}</dd></div><div><dt><kbd>H</kbd><kbd>L</kbd></dt><dd>{t.preview}</dd></div></dl><button type="button" disabled={!ready} onClick={onHelp}>{t.help}<kbd>?</kbd></button></section>

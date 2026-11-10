@@ -146,3 +146,7 @@ Replaced the introductory headline, description and system count with the reques
 Reviewed desktop, 900px English and scrolled alert captures against the previous layout. Static pnpm build passed. All 141 browser checks passed in 13.5 seconds, including a new behavior check for matching-category example navigation and government-filter eligibility.
 
 Deployed source a1d0bec to https://fa9e4667.design-system-catalog-925.pages.dev. The production comparison-navigation test passed (1.9 seconds). All six genuine specimen images decoded successfully and the custom-domain layout has no horizontal overflow at 701/900/1440px.
+
+## Subdued directional prompt — 2026-11-10
+
+The home selection prompt now uses 13px normal-weight muted gray text, with a light left-arrow icon pointing toward the desktop list. Kept the spacious 160px prompt area and all comparison examples. Reviewed the desktop capture and computed typography. Rebuilt the unchanged specimen bundles, then refreshed the static Astro pages after adding the icon.

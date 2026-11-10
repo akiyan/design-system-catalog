@@ -108,3 +108,6 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Omit instructions that are already apparent from the layout. Do not show introductory choose/switch/visit steps or tell visitors to select an item from the visible list.
 - Do not show counts in the home introduction.
 - The home introduction starts with 「デザインシステムを選んで下さい」 (English equivalent) in a spacious prompt area. Remove the prior heading, descriptive sentence and system count. Show genuine overview, table and alert comparison pairs using different systems across groups. Clicking an example opens its matching specimen category. Respect the active catalog filter. Keep keyboard hints compact below the examples.
+
+- Keep the home selection prompt small and subdued: 13px, normal weight and muted gray. Retain its spacious prompt area.
+- On desktop the home selection prompt includes a light left-arrow icon pointing toward the catalog list.
