@@ -2,7 +2,7 @@
   "project": "design-system-catalog",
   "subdomain": "design-system-catalog-925.pages.dev",
   "productionBranch": "main",
-  "deploymentURL": "https://c83007e4.design-system-catalog-925.pages.dev",
+  "deploymentURL": "https://47d2c789.design-system-catalog-925.pages.dev",
   "deploymentStatus": "success",
   "usesFunctions": false,
   "url": "https://design-system-catalog.akiyan.tokyo/",
@@ -23,8 +23,8 @@
   "referencePreviews": 51,
   "customDomainStatus": "active",
   "https": true,
-  "sourceCommit": "16c4de06c775e369d072fde967c102fcb1d5c2d0",
-  "verifiedAt": "2026-11-10T14:01:03.785122+00:00",
+  "sourceCommit": "6c97356e3380435db0e4b4aa08b0acbaf6423857",
+  "verifiedAt": "2026-11-10T14:02:20.464199+00:00",
   "packageManager": "pnpm@12.18.0",
   "richTypographyImplementations": 12,
   "featuredIds": [
@@ -108,5 +108,7 @@
     "navigation": "GA4 automatic History API measurement",
     "productionPageViewsVerified": 3,
     "duplicatePageViews": 0
-  }
+  },
+  "faviconArtwork": "blue rounded tile with two stacked white left panes and one tall white right pane",
+  "faviconAssetVersion": "layout-2"
 }
