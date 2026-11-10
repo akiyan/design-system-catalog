@@ -2,7 +2,7 @@
   "project": "design-system-catalog",
   "subdomain": "design-system-catalog-925.pages.dev",
   "productionBranch": "main",
-  "deploymentURL": "https://41d042d3.design-system-catalog-925.pages.dev",
+  "deploymentURL": "https://fa9e4667.design-system-catalog-925.pages.dev",
   "deploymentStatus": "success",
   "usesFunctions": false,
   "url": "https://design-system-catalog.akiyan.tokyo/",
@@ -23,8 +23,8 @@
   "referencePreviews": 32,
   "customDomainStatus": "active",
   "https": true,
-  "sourceCommit": "0623d82c80edca55135b62136ec9a66f9614d81d",
-  "verifiedAt": "2026-11-10T02:03:11.676044+00:00",
+  "sourceCommit": "a1d0bec2e8018dff90786c090276470dc3a6a2eb",
+  "verifiedAt": "2026-11-10T02:07:01.593280+00:00",
   "packageManager": "pnpm@12.18.0",
   "richTypographyImplementations": 12,
   "featuredIds": [
@@ -34,5 +34,7 @@
     "ant",
     "primer"
   ],
-  "productionVerification": "Japanese and English header suffix is 3pt smaller than the main title with font-weight 400"
+  "productionVerification": "Home comparison example navigation and active-category eligibility passed; all six specimen images decoded; no overflow at 701/900/1440px",
+  "localBrowserChecks": 141,
+  "localBrowserCheckSeconds": 13.5
 }
