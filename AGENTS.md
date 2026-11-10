@@ -111,3 +111,4 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 
 - Keep the home selection prompt small and subdued: 13px, normal weight and muted gray. Retain its spacious prompt area.
 - On desktop the home selection prompt includes a light left-arrow icon pointing toward the catalog list.
+- Omit visible headings above the home overview/table/alert comparison pairs. Keep the specimen cards and system labels.

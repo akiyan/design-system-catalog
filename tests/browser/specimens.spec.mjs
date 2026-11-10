@@ -232,5 +232,5 @@ test('home comparison examples open the matching specimen and respect the active
  for(const href of hrefs)await expect(page.locator(`.system-row[href="${href}"]`)).toBeVisible();
  await page.getByRole('button',{name:'English',exact:true}).click();
  await expect(page.locator('.catalog-introduction h1')).toHaveText('Please select a design system');
- await expect(page.locator('.welcome-comparison[data-view=table] h2')).toHaveText('Table comparison');
+ await expect(page.locator('.welcome-comparison h2')).toHaveCount(0);
 });
