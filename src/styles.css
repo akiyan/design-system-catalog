@@ -132,3 +132,5 @@ a.system-row{cursor:pointer}
 @media(min-width:900px){.catalog-home .catalog-list{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(min-width:1150px){.catalog-home .catalog-list{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(min-width:1250px){.catalog-home .catalog-list{grid-template-columns:repeat(5,minmax(0,1fr))}}
+
+.system-title-link:hover{text-decoration:underline;text-underline-offset:4px}

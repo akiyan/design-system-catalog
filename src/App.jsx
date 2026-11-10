@@ -317,7 +317,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
             {nextSystem ? <a href={systemPath(nextSystem)} aria-label={t.nextSystem} onClick={event => { if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0 || !ready) return; event.preventDefault(); navigateAdjacent(nextSystem); }} >{t.nextShort}<CaretRight size={18} /></a> : <button disabled aria-label={t.nextSystem}>{t.nextShort}<CaretRight size={18} /></button>}
           </nav>
         </div>
-        <div className="preview-heading"><h1>{systemName(selected, language)}</h1><p className="system-description">{selected.description[language]}</p><a ref={officialLink} className="official-link" href={selected.url} target="_blank" rel="noopener noreferrer" aria-label={`${t.official} (${t.newTab})`} title={t.official}><Globe size={23} aria-hidden="true"/></a></div>
+        <div className="preview-heading"><h1><a className="system-title-link" href={selected.url} target="_blank" rel="noopener noreferrer" title={`${t.official} (${t.newTab})`}>{systemName(selected, language)}</a></h1><p className="system-description">{selected.description[language]}</p><a ref={officialLink} className="official-link" href={selected.url} target="_blank" rel="noopener noreferrer" aria-label={`${t.official} (${t.newTab})`} title={t.official}><Globe size={23} aria-hidden="true"/></a></div>
         {selected.specimen.status==='ready' ? <>
           {selected.specimen.unstyled&&<p className="implementation-note unstyled-note">{t.unstyledExplanation}</p>}
           <div className="main-preview specimen-canvas" onTouchStart={startSwipe} onTouchEnd={endSwipe} onTouchCancel={()=>{swipeStart.current=null;}}>

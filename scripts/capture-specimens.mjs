@@ -15,20 +15,12 @@ async function open(page,id,view,compact=false){
  if(await page.locator('#specimen-root[data-error]').count())throw Error(await page.locator('#specimen-root').innerText());
 }
 async function compactCapture(page,id,view){
- await page.setViewportSize({width:view==='dialog'?1000:600,height:view==='dialog'?720:500});
+ // Keep native component sizes legible: capture a smaller screen excerpt rather
+ // than widening the page until every specimen fits, then shrinking it all.
+ await page.setViewportSize({width:view==='dialog'?800:640,height:view==='dialog'?600:300});
  await open(page,id,view,true);
- const specimen=page.locator('.specimen');
- if(view!=='dialog'){
-  // Fit actual content to the thumbnail proportions without clipping controls.
-  for(let i=0;i<4;i++){
-   const box=await specimen.boundingBox();
-   const width=Math.round(Math.max(420,Math.min(view==='typography'?1600:1000,box.width*Math.sqrt(2.15/(box.width/box.height)))));
-   if(Math.abs(width-box.width)<12)break;
-   await page.setViewportSize({width,height:700});await page.waitForTimeout(40);
-  }
- }
  // A modal can live in a body portal. Capture its actual surface, not the launcher behind it.
- let target=specimen;
+ let target=page;
  if(view==='dialog'){
   const selector=await page.locator('#specimen-root').getAttribute('data-dialog-surface');
   target=selector?page.locator(selector):page.getByRole('dialog').or(page.getByRole('alertdialog'));
@@ -55,7 +47,7 @@ await Promise.all(Array.from({length:4},async()=>{
    }
    await compactCapture(page,id,view);
    if(errors.length)throw Error(errors.join('; '));
-   results.push({id,view,ok:true});console.log('OK',id,view);
+   results.push({id,view,ok:true,thumbnailViewport:{width:view==='dialog'?800:640,height:view==='dialog'?600:300},thumbnailFraming:view==='dialog'?'dialog-surface':'screen-excerpt'});console.log('OK',id,view);
   }catch(error){results.push({id,view,ok:false,error:error.message.slice(0,1200)});console.log('FAIL',id,view,error.message.slice(0,250))}
   page.off('pageerror',listener);
  }

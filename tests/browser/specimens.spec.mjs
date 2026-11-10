@@ -155,9 +155,11 @@ test('compact system heading keeps the official icon and repository under source
  await page.setViewportSize({width:1920,height:1080});
  await page.goto('/dads/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
  const heading=page.locator('.preview-heading');
- await expect(heading.locator('a')).toHaveCount(1);
+ await expect(heading.locator('a')).toHaveCount(2);
+ await expect(heading.locator('h1 a')).toHaveAttribute('href','https://design.digital.go.jp/dads/');
+ await expect(heading.locator('h1 a')).toHaveAttribute('target','_blank');
  await expect(heading.getByRole('link',{name:/公式サイト/})).toHaveAttribute('href','https://design.digital.go.jp/dads/');
- await expect(heading.locator('a')).toHaveText('');
+ await expect(heading.locator('.official-link')).toHaveText('');
  await expect(page.locator('.source-repository')).toHaveAttribute('href','https://github.com/digital-go-jp/design-system-example-components-react');
  const title=await heading.locator('h1').boundingBox(),description=await heading.locator('.system-description').boundingBox();
  expect(description.x).toBeGreaterThan(title.x+title.width);expect(Math.abs(description.y+description.height/2-title.y-title.height/2)).toBeLessThan(3);
