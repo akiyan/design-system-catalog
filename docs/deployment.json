@@ -2,18 +2,18 @@
   "project": "design-system-catalog",
   "subdomain": "design-system-catalog-925.pages.dev",
   "productionBranch": "main",
-  "deploymentURL": "https://12a839b9.design-system-catalog-925.pages.dev",
+  "deploymentURL": "https://39f2bee7.design-system-catalog-925.pages.dev",
   "deploymentStatus": "success",
   "usesFunctions": false,
   "url": "https://design-system-catalog.akiyan.tokyo/",
   "repository": "https://github.com/akiyan/design-system-catalog",
-  "staticPages": 301,
+  "staticPages": 313,
   "previewImages": 247,
   "specimenImplementations": 53,
-  "specimenThumbnails": 233,
+  "specimenThumbnails": 245,
   "designResourceEntries": 8,
   "hostDependentEntries": 1,
-  "listThumbnails": 233,
+  "listThumbnails": 245,
   "tableImplementations": 23,
   "alertImplementations": 28,
   "robots": true,
@@ -23,8 +23,8 @@
   "referencePreviews": 51,
   "customDomainStatus": "active",
   "https": true,
-  "sourceCommit": "96d89a2a2cb4c7b862cbf6696458c06b6865216a",
-  "verifiedAt": "2026-11-10T13:09:28.138153+00:00",
+  "sourceCommit": "b7a3c3d0ac352c440d7761f49cc705284d007a45",
+  "verifiedAt": "2026-11-10T13:35:25.451804+00:00",
   "packageManager": "pnpm@12.18.0",
   "richTypographyImplementations": 12,
   "featuredIds": [
@@ -33,12 +33,12 @@
     "dads",
     "ant"
   ],
-  "productionVerification": "Four curated featured entries occupy one desktop row; Primer remains in chronological catalog. Four production browser checks passed for featured order/deduplication, filtering, grid selection and history.",
-  "localBrowserChecks": 172,
-  "localBrowserCheckSeconds": 18.1,
-  "productionBrowserChecks": 4,
-  "productionBrowserCheckSeconds": 2.8,
-  "previewScrollAudit": 233,
+  "productionVerification": "Scrolling live galleries retain natural sizing with viewport-deferred subsequent specimens. Six focused production checks passed for keyboard enlargement, navigation boundaries, reference first-capture layout, desktop selection/history and deferred loading. Earlier complete gallery release passed 39 production checks and validated 490 WebP assets. System switching benchmark: 12 transitions before and after this deployment.",
+  "localBrowserChecks": 199,
+  "localBrowserCheckSeconds": 13.8,
+  "productionBrowserChecks": 6,
+  "productionBrowserCheckSeconds": 3.6,
+  "previewScrollAudit": 245,
   "favicon": true,
   "referenceOnlyEntries": 5,
   "cardImplementations": 25,
@@ -46,7 +46,7 @@
   "codeImplementations": 10,
   "chatImplementations": 9,
   "nonwhiteCanvases": 13,
-  "productionImageChecks": 466,
+  "productionImageChecks": 490,
   "officialPaletteURLsChecked": 67,
   "officialPaletteURLsInspectable": 66,
   "homeLayout": "desktop-thumbnail-grid",
@@ -58,6 +58,46 @@
     "width": 800,
     "height": 600
   },
-  "thumbnailCaptureChecks": 233,
-  "homeMaxColumns": 4
+  "thumbnailCaptureChecks": 245,
+  "homeMaxColumns": 4,
+  "additionalComponentImplementations": 12,
+  "localBrowserCheckNote": "198 suite checks passed in 13.8s; additional deferred-loading regression passed separately together with Enter (2 checks in 1.6s).",
+  "detailLayout": "scrolling-gallery",
+  "thumbnailSelection": "overview-only",
+  "referenceLayout": "full-width-first-two-column-rest",
+  "specimenLoading": "viewport-proximity-120px",
+  "enlargeShortcuts": [
+    "Enter",
+    "V"
+  ],
+  "systemSwitchPerformance": [
+    {
+      "id": "fluent",
+      "beforeMedianMs": 265,
+      "afterMedianMs": 194,
+      "beforeMedianRequests": 65,
+      "afterMedianRequests": 16
+    },
+    {
+      "id": "dads",
+      "beforeMedianMs": 241,
+      "afterMedianMs": 176,
+      "beforeMedianRequests": 25,
+      "afterMedianRequests": 12
+    },
+    {
+      "id": "ant",
+      "beforeMedianMs": 680,
+      "afterMedianMs": 237,
+      "beforeMedianRequests": 171,
+      "afterMedianRequests": 38
+    },
+    {
+      "id": "astryx",
+      "beforeMedianMs": 193,
+      "afterMedianMs": 140,
+      "beforeMedianRequests": 64,
+      "afterMedianRequests": 16
+    }
+  ]
 }

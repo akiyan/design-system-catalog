@@ -1,0 +1,977 @@
+{
+  "url": "https://design-system-catalog.akiyan.tokyo/",
+  "measuredAt": "2026-11-10T13:35:25.451804+00:00",
+  "method": "Three fresh Chromium pages at 1920\u00d71080; each starts at Astryx, switches Fluent/DADS/Ant/Astryx; measures click until overview data-ready=true. Same production domain before and after deployment; no CPU/network throttling. Small sample timings include network variability.",
+  "beforeSource": "fe12328",
+  "afterSource": "b7a3c3d",
+  "summary": [
+    {
+      "id": "fluent",
+      "beforeMedianMs": 265,
+      "afterMedianMs": 194,
+      "beforeMedianRequests": 65,
+      "afterMedianRequests": 16
+    },
+    {
+      "id": "dads",
+      "beforeMedianMs": 241,
+      "afterMedianMs": 176,
+      "beforeMedianRequests": 25,
+      "afterMedianRequests": 12
+    },
+    {
+      "id": "ant",
+      "beforeMedianMs": 680,
+      "afterMedianMs": 237,
+      "beforeMedianRequests": 171,
+      "afterMedianRequests": 38
+    },
+    {
+      "id": "astryx",
+      "beforeMedianMs": 193,
+      "afterMedianMs": 140,
+      "beforeMedianRequests": 64,
+      "afterMedianRequests": 16
+    }
+  ],
+  "before": [
+    {
+      "run": 0,
+      "id": "fluent",
+      "ms": 265,
+      "requests": 61,
+      "loaded": [
+        {
+          "src": "/specimens/fluent/overview/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/fluent/form/?lang=ja&embedded=1&compact=1",
+          "ready": false
+        },
+        {
+          "src": "/specimens/fluent/typography/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/fluent/table/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/fluent/alerts/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/fluent/card/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/fluent/dialog/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/fluent/chat/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/fluent/components/?lang=ja&embedded=1&compact=1",
+          "ready": false
+        }
+      ]
+    },
+    {
+      "run": 0,
+      "id": "dads",
+      "ms": 241,
+      "requests": 30,
+      "loaded": [
+        {
+          "src": "/specimens/dads/overview/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/dads/form/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/dads/alerts/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/dads/dialog/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/dads/components/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        }
+      ]
+    },
+    {
+      "run": 0,
+      "id": "ant",
+      "ms": 535,
+      "requests": 171,
+      "loaded": [
+        {
+          "src": "/specimens/ant/overview/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/ant/form/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/ant/table/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/ant/alerts/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/ant/card/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/ant/dialog/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/ant/code/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/ant/chat/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/ant/components/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        }
+      ]
+    },
+    {
+      "run": 0,
+      "id": "astryx",
+      "ms": 170,
+      "requests": 43,
+      "loaded": [
+        {
+          "src": "/specimens/astryx/overview/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/astryx/form/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/astryx/card/?lang=ja&embedded=1&compact=1",
+          "ready": false
+        },
+        {
+          "src": "/specimens/astryx/dialog/?lang=ja&embedded=1&compact=1",
+          "ready": false
+        },
+        {
+          "src": "/specimens/astryx/code/?lang=ja&embedded=1&compact=1",
+          "ready": false
+        },
+        {
+          "src": "/specimens/astryx/chat/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/astryx/alerts/?lang=ja&embedded=1&compact=1",
+          "ready": false
+        },
+        {
+          "src": "/specimens/astryx/components/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        }
+      ]
+    },
+    {
+      "run": 1,
+      "id": "fluent",
+      "ms": 298,
+      "requests": 65,
+      "loaded": [
+        {
+          "src": "/specimens/fluent/overview/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/fluent/form/?lang=ja&embedded=1&compact=1",
+          "ready": false
+        },
+        {
+          "src": "/specimens/fluent/typography/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/fluent/table/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/fluent/alerts/?lang=ja&embedded=1&compact=1",
+          "ready": false
+        },
+        {
+          "src": "/specimens/fluent/card/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/fluent/dialog/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/fluent/chat/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/fluent/components/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        }
+      ]
+    },
+    {
+      "run": 1,
+      "id": "dads",
+      "ms": 192,
+      "requests": 25,
+      "loaded": [
+        {
+          "src": "/specimens/dads/overview/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/dads/form/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/dads/alerts/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/dads/dialog/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/dads/components/?lang=ja&embedded=1&compact=1",
+          "ready": false
+        }
+      ]
+    },
+    {
+      "run": 1,
+      "id": "ant",
+      "ms": 702,
+      "requests": 171,
+      "loaded": [
+        {
+          "src": "/specimens/ant/overview/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/ant/form/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/ant/table/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/ant/alerts/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/ant/card/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/ant/dialog/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/ant/code/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/ant/chat/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/ant/components/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        }
+      ]
+    },
+    {
+      "run": 1,
+      "id": "astryx",
+      "ms": 251,
+      "requests": 64,
+      "loaded": [
+        {
+          "src": "/specimens/astryx/overview/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/astryx/form/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/astryx/card/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/astryx/dialog/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/astryx/code/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/astryx/chat/?lang=ja&embedded=1&compact=1",
+          "ready": false
+        },
+        {
+          "src": "/specimens/astryx/alerts/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/astryx/components/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        }
+      ]
+    },
+    {
+      "run": 2,
+      "id": "fluent",
+      "ms": 256,
+      "requests": 65,
+      "loaded": [
+        {
+          "src": "/specimens/fluent/overview/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/fluent/form/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/fluent/typography/?lang=ja&embedded=1&compact=1",
+          "ready": false
+        },
+        {
+          "src": "/specimens/fluent/table/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/fluent/alerts/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/fluent/card/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/fluent/dialog/?lang=ja&embedded=1&compact=1",
+          "ready": false
+        },
+        {
+          "src": "/specimens/fluent/chat/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/fluent/components/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        }
+      ]
+    },
+    {
+      "run": 2,
+      "id": "dads",
+      "ms": 261,
+      "requests": 25,
+      "loaded": [
+        {
+          "src": "/specimens/dads/overview/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/dads/form/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/dads/alerts/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/dads/dialog/?lang=ja&embedded=1&compact=1",
+          "ready": false
+        },
+        {
+          "src": "/specimens/dads/components/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        }
+      ]
+    },
+    {
+      "run": 2,
+      "id": "ant",
+      "ms": 680,
+      "requests": 176,
+      "loaded": [
+        {
+          "src": "/specimens/ant/overview/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/ant/form/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/ant/table/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/ant/alerts/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/ant/card/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/ant/dialog/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/ant/code/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/ant/chat/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/ant/components/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        }
+      ]
+    },
+    {
+      "run": 2,
+      "id": "astryx",
+      "ms": 193,
+      "requests": 64,
+      "loaded": [
+        {
+          "src": "/specimens/astryx/overview/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/astryx/form/?lang=ja&embedded=1&compact=1",
+          "ready": false
+        },
+        {
+          "src": "/specimens/astryx/card/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/astryx/dialog/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/astryx/code/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/astryx/chat/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/astryx/alerts/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/astryx/components/?lang=ja&embedded=1&compact=1",
+          "ready": false
+        }
+      ]
+    }
+  ],
+  "after": [
+    {
+      "run": 0,
+      "id": "fluent",
+      "ms": 194,
+      "requests": 16,
+      "loaded": [
+        {
+          "src": "/specimens/fluent/overview/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/fluent/form/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        }
+      ]
+    },
+    {
+      "run": 0,
+      "id": "dads",
+      "ms": 147,
+      "requests": 12,
+      "loaded": [
+        {
+          "src": "/specimens/dads/overview/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/dads/form/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        }
+      ]
+    },
+    {
+      "run": 0,
+      "id": "ant",
+      "ms": 268,
+      "requests": 38,
+      "loaded": [
+        {
+          "src": "/specimens/ant/overview/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/ant/form/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        }
+      ]
+    },
+    {
+      "run": 0,
+      "id": "astryx",
+      "ms": 91,
+      "requests": 16,
+      "loaded": [
+        {
+          "src": "/specimens/astryx/overview/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/astryx/form/?lang=ja&embedded=1&compact=1",
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        }
+      ]
+    },
+    {
+      "run": 1,
+      "id": "fluent",
+      "ms": 219,
+      "requests": 16,
+      "loaded": [
+        {
+          "src": "/specimens/fluent/overview/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/fluent/form/?lang=ja&embedded=1&compact=1",
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        }
+      ]
+    },
+    {
+      "run": 1,
+      "id": "dads",
+      "ms": 176,
+      "requests": 12,
+      "loaded": [
+        {
+          "src": "/specimens/dads/overview/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/dads/form/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        }
+      ]
+    },
+    {
+      "run": 1,
+      "id": "ant",
+      "ms": 236,
+      "requests": 38,
+      "loaded": [
+        {
+          "src": "/specimens/ant/overview/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/ant/form/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        }
+      ]
+    },
+    {
+      "run": 1,
+      "id": "astryx",
+      "ms": 161,
+      "requests": 16,
+      "loaded": [
+        {
+          "src": "/specimens/astryx/overview/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/astryx/form/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        }
+      ]
+    },
+    {
+      "run": 2,
+      "id": "fluent",
+      "ms": 166,
+      "requests": 16,
+      "loaded": [
+        {
+          "src": "/specimens/fluent/overview/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/fluent/form/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        }
+      ]
+    },
+    {
+      "run": 2,
+      "id": "dads",
+      "ms": 194,
+      "requests": 12,
+      "loaded": [
+        {
+          "src": "/specimens/dads/overview/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/dads/form/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        }
+      ]
+    },
+    {
+      "run": 2,
+      "id": "ant",
+      "ms": 237,
+      "requests": 38,
+      "loaded": [
+        {
+          "src": "/specimens/ant/overview/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/ant/form/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        }
+      ]
+    },
+    {
+      "run": 2,
+      "id": "astryx",
+      "ms": 140,
+      "requests": 16,
+      "loaded": [
+        {
+          "src": "/specimens/astryx/overview/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": "/specimens/astryx/form/?lang=ja&embedded=1&compact=1",
+          "ready": "true"
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        },
+        {
+          "src": null,
+          "ready": false
+        }
+      ]
+    }
+  ]
+}
