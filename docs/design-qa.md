@@ -132,3 +132,7 @@ The introduction keeps only the catalog-system count, positioned beside the head
 Static pnpm build passed; all 140 browser checks passed against the local production build in 12.9 seconds.
 
 Deployed source 2caefd0 to https://15e30acf.design-system-catalog-925.pages.dev. Production smoke checks passed at the custom domain in Japanese and English: one system count, no operation steps, the new heading/count layout and a 1pt font-size difference. No horizontal overflow at 390, 900 or 1440 pixels.
+
+## Domain suffix typography adjustment — 2026-11-10
+
+The desktop .akiyan.tokyo suffix is now 3pt smaller than the site name with font-weight 400. Japanese and English computed-style checks confirm a 4px (3pt) difference and normal weight; the header screenshot was reviewed. Document titles remain unchanged.

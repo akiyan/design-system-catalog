@@ -104,7 +104,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 
 - Featured systems are Astryx, Fluent 2, Digital Agency (DADS), Ant Design and Primer, sorted newest public release first. Exclude React Aria from this group. Remove the GitHub-star selection note. Clearly identify unstyled/headless libraries in list rows and before live previews; retain their genuine unstyled appearance.
 
-- Display the desktop header suffix `.akiyan.tokyo` one typographic point smaller than the main site name in both languages. Keep the full document title unchanged.
+- Display the desktop header suffix `.akiyan.tokyo` three typographic points smaller than the main site name with normal (400) weight in both languages. Keep the full document title unchanged.
 - Omit instructions that are already apparent from the layout. Do not show introductory choose/switch/visit steps or tell visitors to select an item from the visible list.
 - On the home introduction show only the catalog system count. Omit implementation and category counts.
 - The simplified home introduction places its sole system count beside the heading, followed by genuine comparison examples. Keep keyboard hints compact below the examples; avoid a separate full-width statistics band.
