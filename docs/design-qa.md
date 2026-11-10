@@ -124,3 +124,9 @@ The featured group is curated explicitly as Astryx, Fluent 2, Digital Agency (DA
 Final local verification: all 140 browser checks passed in 13.2 seconds. Updated publication order is reflected in category filters, system navigation, swipes and keyboard boundaries. Both full and compact capture manifests contain 176 successful views. A clean frozen pnpm install and pnpm build complete successfully. The Issue form YAML is valid and GitHub Issues are enabled.
 
 Production verification: all 140 browser checks passed in 19.7 seconds against https://design-system-catalog.akiyan.tokyo after deployment https://3b881e0b.design-system-catalog-925.pages.dev (source commit 7e96127). The mobile preview navigation check waits for the genuine specimen to finish loading and its measured iframe height to settle before clicking the category control; three repeated production runs also passed.
+
+## Simplified introduction layout — 2026-11-10
+
+The introduction keeps only the catalog-system count, positioned beside the heading. Removed the three obvious choose/switch/visit steps and the redundant selection instruction in both languages. Real specimen comparison examples follow the heading directly; keyboard hints share a compact footer row. Retained the established list/detail split and genuine specimen captures. Desktop branding renders the .akiyan.tokyo suffix exactly one typographic point smaller than the site name without changing document titles. Compared before/after captures at 1440px and checked the English layout at 900px; no horizontal overflow at 701, 900 or 1440px.
+
+Static pnpm build passed; all 140 browser checks passed against the local production build in 12.9 seconds.

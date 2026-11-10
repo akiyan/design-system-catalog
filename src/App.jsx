@@ -264,7 +264,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
   return <div className={`catalog-app ${mobilePreview ? 'mobile-detail' : ''}`} data-ready={ready}>
     <a className="skip-link" href="#catalog-list">{t.skip}</a>
     <header className="site-header">
-      <a className="site-title" href="/"><span className="desktop-site-title">{t.siteTitle}</span><span className="mobile-site-title">{t.title}</span></a>
+      <a className="site-title" href="/"><span className="desktop-site-title">{t.title}<span className="site-domain">.akiyan.tokyo</span></span><span className="mobile-site-title">{t.title}</span></a>
       <div className="header-controls">
         <nav className="filters" aria-label={t.category}>
           {categories.map(id => <button key={id} type="button" disabled={!ready} aria-pressed={category === id} className={category === id ? 'filter active' : 'filter'} onClick={() => chooseCategory(id)}>{t[id]}<span>{id === 'all' ? systems.length : systems.filter(s => s.category === id).length}</span></button>)}
