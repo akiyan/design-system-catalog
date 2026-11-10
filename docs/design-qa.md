@@ -226,3 +226,7 @@ Country, category and publication date share a compact metadata row. The compact
 ## Four-column maximum — 2026-11-10
 
 Capped the desktop home grid at four columns. At 1920×1080 each thumbnail is 432px wide instead of approximately 337px (about 28% larger). Existing two/three-column breakpoints and featured ordering remain. Two focused browser checks passed, including the four-column cap at 1440, 1920 and 2560px, selection and history restoration. Visual evidence: docs/home-grid-four-columns.png.
+
+## Four featured systems — 2026-11-10
+
+Reduced the curated group to Astryx, Fluent 2, Digital Agency and Ant Design in descending release order. Primer moves into the chronological remainder without losing its entry or permalink. Updated visible Japanese heading, static metadata and project decisions. Four focused browser checks passed for ordering, filtering, grid selection/history and featured deduplication. At 1920×1080 the four featured cards occupy a single row. Evidence: docs/home-grid-featured-four.png.

@@ -1,6 +1,6 @@
 export const messages = {
  ja: {
- siteTitle:'デザインシステムカタログ',aboutSite:'このサイトについて',footerLinks:'フッターリンク',requestAddition:'追加リクエスト',title:'デザインシステムカタログ', all:'すべて', public:'政府・公共', oss:'企業・OSS', newest:'公開日が新しい順', featured:'注目の5件',featuredGroup:'注目のシステム',
+ siteTitle:'デザインシステムカタログ',aboutSite:'このサイトについて',footerLinks:'フッターリンク',requestAddition:'追加リクエスト',title:'デザインシステムカタログ', all:'すべて', public:'政府・公共', oss:'企業・OSS', newest:'公開日が新しい順', featured:'注目の4件',featuredGroup:'注目のシステム',
  comparisonCategory:'一覧のプレビューカテゴリ',overviewFallback:'全体像を表示',siteCapture:'公式サイトのキャプチャ',captureSource:'キャプチャの出典',captureNote:'公式サイトや公開紹介記事の画面を参考資料として掲載しています。コード実装の見本ではありません。原著作物の利用条件は出典で確認してください。',liveComponents:'実装プレビュー',unstyled:'スタイルなし',unstyledComponents:'スタイルなしの実装プレビュー',unstyledExplanation:'配色や装飾のCSSを含まないUIライブラリです。この見本では標準のHTML表示で操作を確認できます。',designResources:'デザイン資料',designResourcesNote:'公開されたコード実装を確認できないため共通コンポーネントの見本は表示していません。公式のデザイン資料を参照できます。',integrationLimited:'実装見本は未対応',integrationLimitedNote:'実行環境に依存するため単体の実装見本を用意できていません。公式資料を参照できます。',openResources:'公式資料を見る',
  language:'表示言語', help:'キーボード操作', skip:'カタログへ移動', list:'デザインシステム一覧',
  browseSystems:'デザインシステムを切り替え', previousSystem:'前のデザインシステム', nextSystem:'次のデザインシステム', previousShort:'前へ', nextShort:'次へ',

@@ -18,7 +18,7 @@ test('featured catalog, chronological remainder, categories and date evidence', 
   await expect(page.getByRole('searchbox')).toHaveCount(0);
   await expect(page.locator('.system-row')).toHaveCount(systems.length);
   await expect(page.locator('.system-row').first()).toContainText('Astryx');
-  await expect(page.locator('.system-row[data-featured="true"]')).toHaveCount(5);
+  await expect(page.locator('.system-row[data-featured="true"]')).toHaveCount(4);
   const dates = await page.locator('.system-row[data-featured="false"] .release-line time').allTextContents();
   expect(dates).toEqual([...dates].sort((a,b) => b.localeCompare(a)));
   await page.locator('.system-row').filter({hasText:'Astryx'}).click();
@@ -282,15 +282,15 @@ test('every system has a bilingual feature description and official source', asy
 });
 
 
-test('five featured entries lead each matching category without duplicates', async ({page}) => {
+test('four featured entries lead each matching category without duplicates', async ({page}) => {
   await page.goto('/'); await ready(page);
   const links=await page.locator('.system-row').evaluateAll(rows=>rows.map(row=>row.getAttribute('href')));
-  expect(links.slice(0,5)).toEqual(['/astryx/','/fluent/','/dads/','/ant/','/primer/']);
+  expect(links.slice(0,4)).toEqual(['/astryx/','/fluent/','/dads/','/ant/']);
   expect(new Set(links).size).toBe(systems.length);
   const featuredDates=await page.locator('.system-row[data-featured="true"] time').allTextContents();expect(featuredDates).toEqual([...featuredDates].sort((a,b)=>b.localeCompare(a)));
   await expect(page.getByText('GitHubスター数を参考に選定',{exact:true})).toHaveCount(0);
   await expect(page.locator('.system-row[href="/reactaria/"]')).toHaveAttribute('data-featured','false');
-  await expect(page.getByRole('heading',{name:'注目の5件',exact:true})).toBeVisible();
+  await expect(page.getByRole('heading',{name:'注目の4件',exact:true})).toBeVisible();
   await expect(page.getByRole('heading',{name:'公開日が新しい順',exact:true})).toHaveCount(1);
   await page.getByRole('button',{name:`政府・公共 ${publicCount}`,exact:true}).click();
   await expect(page.getByRole('heading',{name:'注目のシステム',exact:true})).toBeVisible();

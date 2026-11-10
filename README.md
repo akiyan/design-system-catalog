@@ -8,7 +8,7 @@ A visual catalog of 67 public design systems with live specimens of their offici
 
 - Japanese/English browser detection and a persistent manual language selection
 - Category filters; no keyword search
-- Five curated systems in newest-release order followed by the remaining newest public releases, with date evidence and explicit reference markers
+- Four curated systems in newest-release order followed by the remaining newest public releases, with date evidence and explicit reference markers
 - Static paths such as `/astryx/` with client navigation and Back/Forward support
 - Keyboard shortcuts and a `?` help overlay
 - Bilingual descriptions of each system’s purpose and distinctive features

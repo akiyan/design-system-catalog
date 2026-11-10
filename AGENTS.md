@@ -55,7 +55,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 
 ## Featured systems
 
-- Feature five systems at the top of the catalog. The current curated selection is stored in `src/data/featured.json`, curated explicitly and deduplicated by implementation repository.
+- Feature four systems at the top of the catalog. The current curated selection is stored in `src/data/featured.json`, curated explicitly and deduplicated by implementation repository.
 - Display the featured group separately from the remaining systems. Both groups use descending public-release order. Do not duplicate entries. Category filters and sequential/keyboard navigation follow the displayed order.
 
 ## Component comparison (corrected intent)
@@ -101,7 +101,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 
 - Rich typography list captures may use a compact two-column article excerpt with the first long paragraph and rich-text samples. Live typography keeps every paragraph and expands the iframe height to avoid clipping long mobile specimens.
 
-- Featured systems are Astryx, Fluent 2, Digital Agency (DADS), Ant Design and Primer, sorted newest public release first. Exclude React Aria from this group. Remove the GitHub-star selection note. Use official-site screenshot previews for unstyled/headless libraries, including React Aria, Ariakit, Lion, Kobalte and Bits UI.
+- Featured systems are Astryx, Fluent 2, Digital Agency (DADS) and Ant Design, sorted newest public release first. Exclude React Aria from this group. Remove the GitHub-star selection note. Use official-site screenshot previews for unstyled/headless libraries, including React Aria, Ariakit, Lion, Kobalte and Bits UI.
 
 - Omit instructions that are already apparent from the layout. Do not show introductory choose/switch/visit steps or tell visitors to select an item from the visible list.
 - Do not show counts in the home introduction.
