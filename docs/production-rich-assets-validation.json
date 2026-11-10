@@ -1,4 +1,8 @@
 {
+  "url": "https://design-system-catalog.akiyan.tokyo/",
+  "deploymentURL": "https://f9e7bb1b.design-system-catalog-925.pages.dev",
+  "checkedAt": "2026-11-10T10:34:05.032Z",
   "total": 466,
+  "validation": "HTTP status, image/webp content type and RIFF/WEBP signature",
   "errors": []
 }
