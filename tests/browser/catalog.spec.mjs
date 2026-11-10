@@ -23,7 +23,6 @@ test('featured catalog, chronological remainder, categories and date evidence', 
   expect(dates).toEqual([...dates].sort((a,b) => b.localeCompare(a)));
   await page.locator('.system-row').filter({hasText:'Astryx'}).click();
   await expect(page.locator('.release-info')).toContainText('2026-06-18');
-  await page.locator('.release-details summary').click();
   await expect(page.getByRole('link', {name:'公開日の根拠',exact:true})).toHaveAttribute('href', 'https://astryx.atmeta.com/blog/introducing-astryx');
   await page.getByRole('button', {name:`政府・公共 ${publicCount}`,exact:true}).click();
   await expect(page.locator('.system-row')).toHaveCount(publicCount);
@@ -33,7 +32,6 @@ test('featured catalog, chronological remainder, categories and date evidence', 
   await expect(active(page)).toContainText('Ant Design');
   await page.locator('.system-row').filter({hasText:'Gestalt'}).click();
   await expect(page.locator('.release-info .date-reference')).toHaveText('参考');
-  await page.locator('.release-details summary').click();
   await expect(page.locator('.release-details')).toContainText('リポジトリ作成日と一般公開日は一致しない');
   await expect(page.locator('.github-link')).toHaveAttribute('href','https://github.com/akiyan/design-system-catalog');
   await expect(page.locator('footer')).toContainText('Copyright © 2026 @akiyan');
@@ -115,9 +113,9 @@ test('keyboard selection, boundaries, screenshot switching, zoom and help focus'
   await page.keyboard.press('Home'); await expect(active(page)).toContainText('Ant Design');
   await page.goto('/astryx/'); await ready(page);
   await page.keyboard.press('ArrowRight');
-  await expect(page.locator('.main-preview iframe')).toHaveAttribute('src','/specimens/astryx/buttons/?lang=ja');
+  await expect(page.locator('.main-preview iframe')).toHaveAttribute('src','/specimens/astryx/form/?lang=ja');
   await page.keyboard.press('v'); await expect(page.locator('.zoom-dialog')).toBeVisible();
-  await page.keyboard.press('ArrowRight'); await expect(page.locator('.zoom-navigation')).toContainText(`3 / ${specimens.astryx.views.length}`);
+  await page.keyboard.press('ArrowRight'); await expect(page.locator('.zoom-navigation')).toContainText(`1 / ${specimens.astryx.views.length}`);
   await page.keyboard.press('Escape'); await expect(page.locator('.zoom-dialog')).not.toBeVisible();
   const help=page.getByRole('button',{name:'キーボード操作',exact:true}); await help.focus();
   await page.keyboard.press('?'); await expect(page.locator('.help-dialog')).toBeVisible();

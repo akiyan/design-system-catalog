@@ -47,6 +47,11 @@ await Promise.all(Array.from({length:4},async()=>{
  await page.close();
 }));
 await browser.close();
-await fs.writeFile(`docs/specimen${listOnly?'-list':''}-validation.json`,JSON.stringify(results,null,2)+'\n');
+const reportPath=`docs/specimen${listOnly?'-list':''}-validation.json`;
+let report=results;
+if(process.env.ONLY||process.env.VIEWS){
+ try{const previous=JSON.parse(await fs.readFile(reportPath,'utf8'));report=[...previous.filter(item=>registry[item.id]?.views.includes(item.view)&&!results.some(result=>result.id===item.id&&result.view===item.view)),...results];}catch(error){if(error.code!=='ENOENT')throw error;}
+}
+await fs.writeFile(reportPath,JSON.stringify(report,null,2)+'\n');
 console.log(JSON.stringify({total:results.length,failed:results.filter(x=>!x.ok)},null,2));
 if(results.some(x=>!x.ok))process.exitCode=1;

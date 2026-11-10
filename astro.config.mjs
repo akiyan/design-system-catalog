@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 export default defineConfig({
- site: 'https://design-system-catalog-925.pages.dev',
+ site: 'https://design-system-catalog.akiyan.tokyo',
  output: 'static',
  devToolbar: {enabled:false},
  outDir: './dist/client',

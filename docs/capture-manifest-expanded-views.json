@@ -1,5 +1,5 @@
 {
-  "capturedAt": "2026-11-09T13:42:30.630Z",
+  "capturedAt": "2026-11-09T23:54:31.348Z",
   "viewport": {
     "width": 1440,
     "height": 1000
@@ -324,6 +324,124 @@
       "status": "captured",
       "finalUrl": "https://primer.style/product/ui-patterns/forms/",
       "title": "Forms | Primer"
+    },
+    {
+      "label": "設計の考え方",
+      "labelEn": "Design approach",
+      "url": "https://brand.kaonavi.jp/sugao",
+      "scrollText": "sugaoにこめられた想い",
+      "id": "sugao",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://brand.kaonavi.jp/sugao",
+      "title": "プロダクトデザインシステム sugao | kaonavi Brand Deck"
+    },
+    {
+      "label": "サービスへの価値",
+      "labelEn": "Value for services",
+      "url": "https://brand.kaonavi.jp/sugao",
+      "scrollText": "サービスへの価値",
+      "id": "sugao",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://brand.kaonavi.jp/sugao",
+      "title": "プロダクトデザインシステム sugao | kaonavi Brand Deck"
+    },
+    {
+      "label": "ボタン",
+      "labelEn": "Button",
+      "url": "https://airtable.com/developers/extensions/api/UI/components/Button",
+      "id": "airtable",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://airtable.com/developers/extensions/api/UI/components/Button",
+      "title": "Button - Airtable Blocks SDK"
+    },
+    {
+      "label": "レイアウト",
+      "labelEn": "Box",
+      "url": "https://airtable.com/developers/extensions/api/UI/components/Box",
+      "id": "airtable",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://airtable.com/developers/extensions/api/UI/components/Box",
+      "title": "Box - Airtable Blocks SDK"
+    },
+    {
+      "label": "タイポグラフィ",
+      "labelEn": "Text",
+      "url": "https://airtable.com/developers/extensions/api/UI/components/Text",
+      "id": "airtable",
+      "index": 3,
+      "status": "captured",
+      "finalUrl": "https://airtable.com/developers/extensions/api/UI/components/Text",
+      "title": "Text - Airtable Blocks SDK"
+    },
+    {
+      "label": "開発体制",
+      "labelEn": "Design system team",
+      "url": "https://note.com/i_chi_/n/ncca0c857f21a",
+      "scrollText": "２、具体的にどういう体制でどうすすめていったの？",
+      "id": "apron",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://note.com/i_chi_/n/ncca0c857f21a",
+      "title": "デザインシステムは、作ってからが本番。｜いちはら"
+    },
+    {
+      "label": "ガイドライン",
+      "labelEn": "Guidelines",
+      "url": "https://note.com/i_chi_/n/ncca0c857f21a",
+      "scrollText": "４、デザインシステムor ガイドラインの違いってなに？",
+      "id": "apron",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://note.com/i_chi_/n/ncca0c857f21a",
+      "title": "デザインシステムは、作ってからが本番。｜いちはら"
+    },
+    {
+      "label": "デザインシステム",
+      "labelEn": "Design system",
+      "url": "https://www.dbs.com/design/work",
+      "scrollText": "DBS Digital Design System",
+      "id": "dbs",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://www.dbs.com/design/work",
+      "title": "Our work - digibank, iWealth, digiportfolio, Peek Balance & more"
+    },
+    {
+      "label": "デザイン原則",
+      "labelEn": "Design principles",
+      "url": "https://www.dbs.com/design/work",
+      "scrollText": "Our design principles",
+      "id": "dbs",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://www.dbs.com/design/work",
+      "title": "Our work - digibank, iWealth, digiportfolio, Peek Balance & more"
+    },
+    {
+      "label": "FALCONの概要",
+      "labelEn": "About FALCON",
+      "url": "https://note.com/kasane_s21/n/n17b9e522506c",
+      "scrollText": "SPEEDA Design System ”FALCON”",
+      "id": "falcon",
+      "index": 1,
+      "status": "captured",
+      "finalUrl": "https://note.com/kasane_s21/n/n17b9e522506c",
+      "title": "プロダクトと共に成長するデザインシステム｜kasane.shindo"
+    },
+    {
+      "label": "設計と構築",
+      "labelEn": "Design and implementation",
+      "url": "https://note.com/kasane_s21/n/n17b9e522506c",
+      "scrollText": "どのように構築しているのか？",
+      "id": "falcon",
+      "index": 2,
+      "status": "captured",
+      "finalUrl": "https://note.com/kasane_s21/n/n17b9e522506c",
+      "title": "プロダクトと共に成長するデザインシステム｜kasane.shindo"
     }
   ]
 }

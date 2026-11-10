@@ -72,3 +72,21 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 
 - Add dedicated table and alert specimen categories using each library’s genuine implementation where supported. Use shared table rows and informational/success/warning messages.
 - Publish static robots.txt and llms.txt. List public catalog paths in a sitemap; exclude specimen-only HTML from crawler indexing while allowing thumbnail images.
+
+- List thumbnail typography uses the design system name and a short system-specific description naming its company, organization or community. Keep the shared interactive detail specimen content for comparison.
+- H / L switch specimen previews just like Left / Right, including from non-editable iframe content and enlarged previews. Keep editable controls and language toggles exempt; list these shortcuts in the help dialog.
+
+- Systems without a standalone public implementation use official-site or publicly released design-resource captures for list thumbnails and multiple detail previews. Label them as reference captures, link each source, and support preview switching and enlargement.
+
+- The list has its own shared specimen-category controls. Switching them updates every supported list thumbnail and the selected live preview when available. Systems lacking that category show a labeled overview fallback; design-resource entries retain reference captures.
+
+- Typography specimens include multiple substantial paragraphs plus explicit line breaks within a paragraph, using genuine library typography and unchanged fonts/line heights.
+- Merge the standalone buttons category into forms. Forms include primary/secondary/text actions, disabled buttons and supported size variants in addition to input fields. Remove the buttons category from the catalog controls.
+
+- Show a system-specific GitHub link beside the official-site action when an official repository is known. Preserve GitLab labeling for GitLab sources; footer GitHub remains the catalog repository.
+
+- Expand release-date evidence and usage/source details by default on desktop. Keep them collapsed by default on mobile.
+
+- Switching systems on desktop resets the right detail pane to the top, including list selection and sequential/keyboard navigation.
+
+- The canonical production domain is https://design-system-catalog.akiyan.tokyo, served by the existing Cloudflare Pages project. Use it for canonical URLs, sitemap and crawler metadata.

@@ -98,3 +98,13 @@ Source capture reports contain 234 successful full specimens and 234 successful 
 Final local verification: PASS. All 128 browser tests passed in 10.6 seconds. Reviewed the 58-entry compact overview contact sheet and refreshed desktop/mobile/English/zoom screenshots. Representative table and alert captures retain official styles and show the shared content. The build emits 302 static HTML pages plus robots.txt, llms.txt and sitemap.xml. No server runtime or Pages Functions are introduced.
 
 Production verification: all 128 tests passed in 31.6 seconds against https://design-system-catalog-925.pages.dev after deployment to https://a78c6cf5.design-system-catalog-925.pages.dev. The public robots.txt, llms.txt and sitemap.xml responses passed the static crawler-resource checks.
+
+## Thumbnail content and catalog navigation update — 2026-11-10
+
+PASS: 136 browser checks against the static local preview. Re-captured all 176 full specimens and compact thumbnails after merging button specimens into forms; no rendering or capture failures. All 58 integrated systems retain an overview. Typography examples use three real paragraph blocks and an explicit line break with each library’s own typography.
+
+Thumbnail headings identify each system; short descriptions name its provider. List controls switch the shared specimen category with an explicit overview fallback where unsupported. H/L switch previews in the page, iframe and zoom without intercepting inputs or the language toggle. Right-pane scroll resets on desktop system selection; publication evidence and usage/source details start expanded on desktop and collapsed on mobile. Official repository links appear beside the system’s official-site action.
+
+All nine reference/host-dependent entries show source captures with 32 previews in total. Eleven additional captures cover sugao, Airtable, Apron, DBS and FALCON. Reference captures remain labeled and link to their original pages; live specimens keep official package provenance.
+
+The canonical origin is https://design-system-catalog.akiyan.tokyo. Cloudflare Pages domain registration and a proxied CNAME target the existing Pages project. Canonical tags, sitemap, robots.txt and llms.txt use the custom domain.

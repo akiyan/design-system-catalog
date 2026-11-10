@@ -1,7 +1,7 @@
 import originalEntries from './data/systems.json';
 import specimens from './data/specimens.json';
-const labels={overview:['全体像','Overview'],buttons:['ボタン','Buttons'],form:['フォーム','Forms'],typography:['タイポグラフィ','Typography'],table:['テーブル','Tables'],alerts:['アラート','Alerts']};
-const entries=originalEntries.map(entry=>{const specimen=specimens[entry.id];return {...entry,referenceViews:entry.views,specimen,views:specimen.status==='ready'?specimen.views.map(key=>({key,label:labels[key][0],labelEn:labels[key][1],url:`/specimens/${entry.id}/${key}/`})):[{key:'resource',label:'公開資料',labelEn:'Design resources',url:entry.url}]}});
+export const specimenCategories={overview:['全体像','Overview'],form:['フォーム','Forms'],typography:['タイポグラフィ','Typography'],table:['テーブル','Tables'],alerts:['アラート','Alerts']};
+const entries=originalEntries.map(entry=>{const specimen=specimens[entry.id];return {...entry,referenceViews:entry.views,specimen,views:specimen.status==='ready'?specimen.views.map(key=>({key,label:specimenCategories[key][0],labelEn:specimenCategories[key][1],url:`/specimens/${entry.id}/${key}/`})):entry.views.map((view,index)=>({...view,key:`reference-${index}`,referenceIndex:index})).sort((a,b)=>(a.label==='概要'?-1:0)-(b.label==='概要'?-1:0))}});
 import featured from './data/featured.json';
 export const featuredIds = featured.ids;
 export const dateSortKey = entry => (entry.published?.date || '').padEnd(10, '-00');

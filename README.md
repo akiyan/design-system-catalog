@@ -1,6 +1,6 @@
 # Design System Catalog / デザインシステムカタログ
 
-[Live site / 公開サイト](https://design-system-catalog-925.pages.dev/) · [Example permalink / 個別ページ](https://design-system-catalog-925.pages.dev/astryx/)
+[Live site / 公開サイト](https://design-system-catalog.akiyan.tokyo/) · [Example permalink / 個別ページ](https://design-system-catalog.akiyan.tokyo/astryx/)
 
 A visual catalog of 67 public design systems with live specimens of their official component implementations. The code is MIT licensed. Third-party captures and trademarks retain their original terms.
 
@@ -63,7 +63,7 @@ Capture manifests are saved under `docs/`. Authentication-required source pages 
 | --- | --- |
 | Down / Up or J / K | Select the next / previous system |
 | Home / End | Select the first / last system |
-| Left / Right | Switch component specimens |
+| Left / Right or H / L | Switch component specimens |
 | V | Enlarge the preview |
 | O | Open the official site |
 | ? | Show or hide shortcut help |
@@ -116,3 +116,5 @@ List images are compact 480×224 captures with an adaptive viewport under `publi
 `/robots.txt`, `/llms.txt` and `/sitemap.xml` are static Astro endpoints. The sitemap includes the homepage and all catalog paths. Robots rules exclude specimen HTML while allowing thumbnail images. The LLM guide includes descriptions and source links generated from catalog data.
 
 The LLM guide follows the [llms.txt proposal](https://llmstxt.org/). `LIST_ONLY=1` regenerates compact images without replacing full captures; `VIEWS=overview` restricts a capture run to overview specimens.
+
+List controls switch the shared specimen category across every supported thumbnail. The forms category includes button variants, sizes and disabled states. Typography examples contain long paragraphs and explicit line breaks. Reference-only entries show labeled official-site or public design-resource captures with multiple previews and per-capture source links. Desktop system selection resets the detail pane to the top; release evidence and usage/source sections start expanded.

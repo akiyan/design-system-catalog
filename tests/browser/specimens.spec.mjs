@@ -30,10 +30,10 @@ test('catalog renders live specimens, switches shared categories and keeps edita
  const frame=page.frameLocator('.main-preview iframe');
  await frame.getByRole('button',{name:'変更を保存',exact:true}).click();await expect(frame.getByRole('status')).toHaveText('変更を保存しました');
  await frame.getByRole('textbox').first().pressSequentially('jk?');await expect(page).toHaveURL(/\/ant\/$/);
- await page.locator('.view-thumbnail').filter({hasText:'ボタン'}).click();
- await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/\/ant\/buttons\//);
+ await page.locator('.view-thumbnail').filter({hasText:'フォーム'}).click();
+ await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/\/ant\/form\//);
  await page.locator('.system-row[href="/fluent/"]').click();
- await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/\/fluent\/buttons\//);
+ await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/\/fluent\/form\//);
  await page.getByRole('button',{name:'English',exact:true}).click();
  await expect(page.frameLocator('.main-preview iframe').getByRole('button',{name:'Save changes',exact:true}).first()).toBeVisible();
 });
@@ -69,4 +69,101 @@ test('static crawler files identify the catalog and preserve image access',async
 test('typing in a shadow-DOM field never navigates the catalog',async({page})=>{
  await page.goto('/porsche/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
  const input=page.frameLocator('.main-preview iframe').getByRole('textbox').first();await input.pressSequentially('jk?');await expect(page).toHaveURL(/\/porsche\/$/);await expect(page.locator('.help-dialog')).not.toBeVisible();
+});
+
+test('thumbnail headings and descriptions identify each system across rendering frameworks',async({page})=>{
+ const systems=JSON.parse(readFileSync(new URL('../../src/data/systems.json',import.meta.url)));
+ for(const id of ['ant','pajamas','kobalte','bitsui'])for(const language of ['ja','en']){
+  const system=systems.find(s=>s.id===id);
+  await page.goto(`/specimens/${id}/overview/?thumbnail=1&lang=${language}`);
+  await expect(page.locator('#specimen-root')).toHaveAttribute('data-ready','true');
+  await expect(page.getByRole('heading',{name:language==='en'?system.shortNameEn:system.shortName,exact:true})).toBeVisible();
+  await expect(page.getByText(system.thumbnailDescription[language],{exact:true})).toBeVisible();
+  await expect(page.getByText('プロジェクト設定',{exact:true})).toHaveCount(0);
+ }
+});
+
+test('H and L switch previews in the page, iframe and zoom while preserving text input',async({page})=>{
+ await page.goto('/ant/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
+ const preview=page.locator('.main-preview iframe');
+ await page.keyboard.press('l');await expect(preview).toHaveAttribute('src',/\/form\//);
+ await page.keyboard.press('h');await expect(preview).toHaveAttribute('src',/\/overview\//);
+ const frame=page.frameLocator('.main-preview iframe');
+ await frame.getByRole('textbox').first().fill('hl');
+ await frame.getByRole('textbox').first().press('h');await frame.getByRole('textbox').first().press('l');
+ await expect(preview).toHaveAttribute('src',/\/overview\//);
+ await frame.getByRole('button',{name:'変更を保存',exact:true}).press('l');await expect(preview).toHaveAttribute('src',/\/form\//);
+ await frame.getByRole('button',{name:'変更を保存',exact:true}).first().press('h');await expect(preview).toHaveAttribute('src',/\/overview\//);
+ await page.locator('.preview-heading h1').click();await page.keyboard.press('v');
+ await expect(page.locator('.zoom-dialog')).toBeVisible();
+ await page.keyboard.press('l');await expect(page.locator('.zoom-navigation')).toContainText('2 /');
+ await page.keyboard.press('h');await expect(page.locator('.zoom-navigation')).toContainText('1 /');
+ await page.keyboard.press('Escape');
+ await page.getByRole('button',{name:'日本語',exact:true}).focus();await page.keyboard.press('l');
+ await expect(preview).toHaveAttribute('src',/\/overview\//);
+ await page.locator('.preview-heading h1').click();await page.keyboard.press('?');
+ await expect(page.locator('.keyboard-shortcuts')).toContainText('H');await expect(page.locator('.keyboard-shortcuts')).toContainText('L');
+});
+
+test('list categories switch comparison thumbnails and keep resource references distinct',async({page})=>{
+ await page.goto('/ant/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
+ const categories=page.getByRole('navigation',{name:'一覧のプレビューカテゴリ'});
+ await expect(categories.getByRole('button',{name:'ボタン',exact:true})).toHaveCount(0);
+ await categories.getByRole('button',{name:'フォーム',exact:true}).click();
+ await expect(page.locator('.system-row[href="/ant/"] img')).toHaveAttribute('src',/ant-form.webp/);
+ await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/\/form\//);
+ await categories.getByRole('button',{name:'テーブル',exact:true}).click();
+ await expect(page.locator('.system-row[href="/ant/"] img')).toHaveAttribute('src',/ant-table.webp/);
+ await expect(page.locator('.system-row[href="/astryx/"] .reference-badge')).toHaveText('全体像を表示');
+ await expect(page.locator('.system-row[href="/sansan/"] img')).toHaveAttribute('src',/\/previews\//);
+ await page.locator('.system-row[href="/sansan/"]').click();
+ await expect(page.locator('.implementation-toolbar')).toContainText('公式サイトのキャプチャ');
+ await expect(page.locator('.main-preview img')).toBeVisible();
+ await page.keyboard.press('l');await expect(page.locator('.main-preview img')).toHaveAttribute('src',/sansan-0.webp/);
+ await page.keyboard.press('v');await expect(page.locator('.zoom-dialog img')).toBeVisible();
+ await page.keyboard.press('Escape');
+});
+
+test('typography includes genuine paragraph blocks and explicit line breaks in both languages',async({page})=>{
+ for(const id of ['govuk','fluent','primer'])for(const language of ['ja','en']){
+  await page.goto(`/specimens/${id}/typography/?lang=${language}`);await expect(page.locator('#specimen-root')).toHaveAttribute('data-ready','true');
+  await expect(page.locator('.specimen-heading-group p')).toHaveCount(3);
+  await expect(page.locator('.specimen-heading-group p br')).toHaveCount(1);
+  expect((await page.locator('.specimen-heading-group p').first().innerText()).length).toBeGreaterThan(100);
+ }
+});
+
+test('all integrated forms include action kinds and disabled states',async({page})=>{
+ for(const id of ['ant','govuk','pajamas','kobalte','bitsui']){
+  await page.goto(`/specimens/${id}/form/`);await expect(page.locator('#specimen-root')).toHaveAttribute('data-ready','true');
+  await expect(page.getByRole('button',{name:'変更を保存',exact:true}).first()).toBeVisible();
+  await expect(page.getByRole('button',{name:'キャンセル',exact:true}).first()).toBeVisible();
+  await expect(page.getByRole('button',{name:'詳細を見る',exact:true}).first()).toBeVisible();
+  await expect(page.getByRole('button',{name:/^無\s*効$/}).first()).toBeDisabled();
+ }
+});
+
+test('system repository actions appear beside official sites',async({page})=>{
+ await page.goto('/dads/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
+ await expect(page.locator('.system-links a',{hasText:'GitHub'})).toHaveAttribute('href','https://github.com/digital-go-jp/design-system-example-components-react');
+ await page.goto('/sugao/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
+ await expect(page.locator('.system-links .system-repository')).toHaveCount(0);
+});
+
+test('evidence and usage details are expanded on desktop and collapsed on mobile',async({page})=>{
+ await page.goto('/ant/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
+ for(const selector of ['.release-details','.license-details'])await expect(page.locator(selector)).toHaveAttribute('open','');
+ await page.setViewportSize({width:390,height:844});
+ for(const selector of ['.release-details','.license-details'])await expect(page.locator(selector)).not.toHaveAttribute('open','');
+});
+
+test('switching systems resets the desktop detail scroll position',async({page})=>{
+ await page.goto('/ant/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
+ const pane=page.locator('.preview-panel');await pane.evaluate(el=>{el.scrollTop=500});
+ await expect.poll(()=>pane.evaluate(el=>el.scrollTop)).toBeGreaterThan(0);
+ await page.locator('.system-row[href="/fluent/"]').click();
+ await expect.poll(()=>pane.evaluate(el=>el.scrollTop)).toBe(0);
+ await pane.evaluate(el=>{el.scrollTop=400});await page.keyboard.press('j');
+ await expect(page).toHaveURL(/\/astryx\/$/);
+ await expect.poll(()=>pane.evaluate(el=>el.scrollTop)).toBe(0);
 });

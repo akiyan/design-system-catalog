@@ -39,6 +39,12 @@ async function work() {
      await page.waitForTimeout(600);
     }
    }
+   if(job.scrollText){
+    const heading=page.getByRole('heading',{name:job.scrollText,exact:true}).first();
+    await heading.scrollIntoViewIfNeeded();
+    await heading.evaluate(el=>el.scrollIntoView({block:'start'}));
+    await page.waitForTimeout(500);
+   }
    const title=await page.title();
    if(/404|page not found|not found|sign in|log in|login/i.test(title)) throw new Error('Unavailable or authentication-required source; excluded from previews');
    const text=await page.locator('body').first().innerText();
@@ -53,4 +59,10 @@ async function work() {
 }
 await Promise.all([work(),work(),work()]);
 await browser.close();
-await writeFile(process.argv.includes('--missing')?'docs/capture-manifest-expanded-views.json':requestedIds.length>1?'docs/capture-manifest-additions.json':requestedIds.length?`docs/capture-manifest-${requestedIds[0]}.json`:'docs/capture-manifest.json',JSON.stringify({capturedAt:new Date().toISOString(),viewport:{width:1440,height:1000},results},null,2));
+const manifestPath=process.argv.includes('--missing')?'docs/capture-manifest-expanded-views.json':requestedIds.length>1?'docs/capture-manifest-additions.json':requestedIds.length?`docs/capture-manifest-${requestedIds[0]}.json`:'docs/capture-manifest.json';
+let report=results;
+try{
+ const previous=JSON.parse(await readFile(manifestPath,'utf8'));
+ report=[...previous.results.filter(item=>!results.some(result=>result.id===item.id&&result.index===item.index)),...results];
+}catch(error){if(error.code!=='ENOENT')throw error;}
+await writeFile(manifestPath,JSON.stringify({capturedAt:new Date().toISOString(),viewport:{width:1440,height:1000},results:report},null,2));

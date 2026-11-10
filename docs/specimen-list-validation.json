@@ -6,7 +6,7 @@
   },
   {
     "id": "dads",
-    "view": "buttons",
+    "view": "form",
     "ok": true
   },
   {
@@ -15,7 +15,17 @@
     "ok": true
   },
   {
-    "id": "dads",
+    "id": "govuk",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "govuk",
+    "view": "table",
+    "ok": true
+  },
+  {
+    "id": "govuk",
     "view": "form",
     "ok": true
   },
@@ -25,48 +35,23 @@
     "ok": true
   },
   {
-    "id": "govuk",
+    "id": "uswds",
     "view": "overview",
     "ok": true
   },
   {
-    "id": "govuk",
-    "view": "buttons",
-    "ok": true
-  },
-  {
-    "id": "govuk",
+    "id": "uswds",
     "view": "form",
     "ok": true
   },
   {
-    "id": "govuk",
+    "id": "uswds",
     "view": "table",
-    "ok": true
-  },
-  {
-    "id": "uswds",
-    "view": "form",
-    "ok": true
-  },
-  {
-    "id": "uswds",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "uswds",
-    "view": "buttons",
     "ok": true
   },
   {
     "id": "uswds",
     "view": "typography",
-    "ok": true
-  },
-  {
-    "id": "uswds",
-    "view": "table",
     "ok": true
   },
   {
@@ -76,17 +61,12 @@
   },
   {
     "id": "cloudscape",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "cloudscape",
-    "view": "buttons",
-    "ok": true
-  },
-  {
-    "id": "cloudscape",
     "view": "form",
+    "ok": true
+  },
+  {
+    "id": "cloudscape",
+    "view": "overview",
     "ok": true
   },
   {
@@ -105,27 +85,17 @@
     "ok": true
   },
   {
-    "id": "gestalt",
-    "view": "buttons",
-    "ok": true
-  },
-  {
     "id": "sgds",
     "view": "overview",
     "ok": true
   },
   {
-    "id": "gestalt",
+    "id": "sgds",
     "view": "form",
     "ok": true
   },
   {
-    "id": "sgds",
-    "view": "buttons",
-    "ok": true
-  },
-  {
-    "id": "sgds",
+    "id": "gestalt",
     "view": "form",
     "ok": true
   },
@@ -140,38 +110,23 @@
     "ok": true
   },
   {
+    "id": "astryx",
+    "view": "overview",
+    "ok": true
+  },
+  {
     "id": "sgds",
     "view": "alerts",
     "ok": true
   },
   {
     "id": "astryx",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "astryx",
-    "view": "buttons",
-    "ok": true
-  },
-  {
-    "id": "astryx",
     "view": "form",
     "ok": true
   },
   {
     "id": "agds",
     "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "agds",
-    "view": "buttons",
-    "ok": true
-  },
-  {
-    "id": "agds",
-    "view": "form",
     "ok": true
   },
   {
@@ -180,8 +135,8 @@
     "ok": true
   },
   {
-    "id": "czech",
-    "view": "buttons",
+    "id": "agds",
+    "view": "form",
     "ok": true
   },
   {
@@ -201,22 +156,17 @@
   },
   {
     "id": "italia",
-    "view": "buttons",
-    "ok": true
-  },
-  {
-    "id": "italia",
     "view": "overview",
     "ok": true
   },
   {
     "id": "italia",
-    "view": "form",
+    "view": "typography",
     "ok": true
   },
   {
     "id": "italia",
-    "view": "typography",
+    "view": "form",
     "ok": true
   },
   {
@@ -231,27 +181,22 @@
   },
   {
     "id": "europa",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "europa",
     "view": "typography",
     "ok": true
   },
   {
     "id": "europa",
-    "view": "form",
-    "ok": true
-  },
-  {
-    "id": "europa",
-    "view": "buttons",
+    "view": "overview",
     "ok": true
   },
   {
     "id": "europa",
     "view": "table",
+    "ok": true
+  },
+  {
+    "id": "europa",
+    "view": "form",
     "ok": true
   },
   {
@@ -265,23 +210,13 @@
     "ok": true
   },
   {
-    "id": "canada",
-    "view": "buttons",
-    "ok": true
-  },
-  {
-    "id": "canada",
-    "view": "form",
-    "ok": true
-  },
-  {
     "id": "cfpb",
     "view": "overview",
     "ok": true
   },
   {
-    "id": "cfpb",
-    "view": "buttons",
+    "id": "canada",
+    "view": "form",
     "ok": true
   },
   {
@@ -301,11 +236,6 @@
   },
   {
     "id": "bristol",
-    "view": "buttons",
-    "ok": true
-  },
-  {
-    "id": "bristol",
     "view": "form",
     "ok": true
   },
@@ -321,11 +251,6 @@
   },
   {
     "id": "bc",
-    "view": "buttons",
-    "ok": true
-  },
-  {
-    "id": "bc",
     "view": "form",
     "ok": true
   },
@@ -336,26 +261,6 @@
   },
   {
     "id": "charcoal",
-    "view": "buttons",
-    "ok": true
-  },
-  {
-    "id": "charcoal",
-    "view": "form",
-    "ok": true
-  },
-  {
-    "id": "serendie",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "serendie",
-    "view": "buttons",
-    "ok": true
-  },
-  {
-    "id": "serendie",
     "view": "form",
     "ok": true
   },
@@ -365,8 +270,13 @@
     "ok": true
   },
   {
-    "id": "vibes",
-    "view": "buttons",
+    "id": "serendie",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "serendie",
+    "view": "form",
     "ok": true
   },
   {
@@ -376,42 +286,17 @@
   },
   {
     "id": "vitals",
-    "view": "buttons",
-    "ok": true
-  },
-  {
-    "id": "vitals",
     "view": "overview",
     "ok": true
   },
   {
     "id": "vitals",
-    "view": "form",
-    "ok": true
-  },
-  {
-    "id": "pajamas",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "pajamas",
-    "view": "buttons",
-    "ok": true
-  },
-  {
-    "id": "pajamas",
     "view": "form",
     "ok": true
   },
   {
     "id": "paste",
     "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "paste",
-    "view": "buttons",
     "ok": true
   },
   {
@@ -435,33 +320,23 @@
     "ok": true
   },
   {
-    "id": "wise",
-    "view": "buttons",
-    "ok": true
-  },
-  {
-    "id": "wise",
-    "view": "form",
-    "ok": true
-  },
-  {
     "id": "semi",
     "view": "overview",
     "ok": true
   },
   {
-    "id": "semi",
-    "view": "buttons",
-    "ok": true
-  },
-  {
-    "id": "semi",
-    "view": "table",
+    "id": "wise",
+    "view": "form",
     "ok": true
   },
   {
     "id": "semi",
     "view": "form",
+    "ok": true
+  },
+  {
+    "id": "semi",
+    "view": "table",
     "ok": true
   },
   {
@@ -481,22 +356,12 @@
   },
   {
     "id": "arco",
-    "view": "buttons",
+    "view": "alerts",
     "ok": true
   },
   {
     "id": "arco",
     "view": "table",
-    "ok": true
-  },
-  {
-    "id": "arco",
-    "view": "alerts",
-    "ok": true
-  },
-  {
-    "id": "spectrum",
-    "view": "form",
     "ok": true
   },
   {
@@ -506,17 +371,12 @@
   },
   {
     "id": "spectrum",
-    "view": "buttons",
+    "view": "form",
     "ok": true
   },
   {
     "id": "spectrum",
     "view": "table",
-    "ok": true
-  },
-  {
-    "id": "carbon",
-    "view": "buttons",
     "ok": true
   },
   {
@@ -551,7 +411,12 @@
   },
   {
     "id": "fluent",
-    "view": "buttons",
+    "view": "form",
+    "ok": true
+  },
+  {
+    "id": "fluent",
+    "view": "table",
     "ok": true
   },
   {
@@ -561,32 +426,12 @@
   },
   {
     "id": "fluent",
-    "view": "form",
-    "ok": true
-  },
-  {
-    "id": "fluent",
-    "view": "table",
-    "ok": true
-  },
-  {
-    "id": "baseweb",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "fluent",
     "view": "alerts",
     "ok": true
   },
   {
     "id": "baseweb",
-    "view": "buttons",
-    "ok": true
-  },
-  {
-    "id": "baseweb",
-    "view": "form",
+    "view": "overview",
     "ok": true
   },
   {
@@ -600,23 +445,23 @@
     "ok": true
   },
   {
+    "id": "baseweb",
+    "view": "form",
+    "ok": true
+  },
+  {
     "id": "polaris",
     "view": "overview",
     "ok": true
   },
   {
     "id": "polaris",
-    "view": "buttons",
+    "view": "form",
     "ok": true
   },
   {
     "id": "polaris",
     "view": "table",
-    "ok": true
-  },
-  {
-    "id": "polaris",
-    "view": "form",
     "ok": true
   },
   {
@@ -630,23 +475,13 @@
     "ok": true
   },
   {
-    "id": "spindle",
-    "view": "buttons",
-    "ok": true
-  },
-  {
-    "id": "spindle",
-    "view": "form",
-    "ok": true
-  },
-  {
     "id": "smarthr",
     "view": "overview",
     "ok": true
   },
   {
-    "id": "smarthr",
-    "view": "buttons",
+    "id": "spindle",
+    "view": "form",
     "ok": true
   },
   {
@@ -656,27 +491,17 @@
   },
   {
     "id": "smarthr",
-    "view": "alerts",
+    "view": "table",
     "ok": true
   },
   {
     "id": "smarthr",
-    "view": "table",
+    "view": "alerts",
     "ok": true
   },
   {
     "id": "porsche",
     "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "coinbase",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "porsche",
-    "view": "buttons",
     "ok": true
   },
   {
@@ -686,7 +511,7 @@
   },
   {
     "id": "coinbase",
-    "view": "buttons",
+    "view": "overview",
     "ok": true
   },
   {
@@ -701,22 +526,12 @@
   },
   {
     "id": "tdesign",
-    "view": "buttons",
-    "ok": true
-  },
-  {
-    "id": "tdesign",
     "view": "form",
     "ok": true
   },
   {
     "id": "tdesign",
     "view": "table",
-    "ok": true
-  },
-  {
-    "id": "ant",
-    "view": "overview",
     "ok": true
   },
   {
@@ -726,7 +541,7 @@
   },
   {
     "id": "ant",
-    "view": "buttons",
+    "view": "overview",
     "ok": true
   },
   {
@@ -747,11 +562,6 @@
   {
     "id": "kumo",
     "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "kumo",
-    "view": "buttons",
     "ok": true
   },
   {
@@ -762,11 +572,6 @@
   {
     "id": "patternfly",
     "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "patternfly",
-    "view": "buttons",
     "ok": true
   },
   {
@@ -782,11 +587,6 @@
   {
     "id": "primer",
     "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "primer",
-    "view": "buttons",
     "ok": true
   },
   {
@@ -816,22 +616,12 @@
   },
   {
     "id": "atlassian",
-    "view": "buttons",
-    "ok": true
-  },
-  {
-    "id": "atlassian",
     "view": "form",
     "ok": true
   },
   {
     "id": "lightning",
     "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "lightning",
-    "view": "buttons",
     "ok": true
   },
   {
@@ -847,11 +637,6 @@
   {
     "id": "forma36",
     "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "forma36",
-    "view": "buttons",
     "ok": true
   },
   {
@@ -872,11 +657,6 @@
   {
     "id": "evergreen",
     "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "evergreen",
-    "view": "buttons",
     "ok": true
   },
   {
@@ -900,23 +680,13 @@
     "ok": true
   },
   {
-    "id": "monday",
-    "view": "buttons",
-    "ok": true
-  },
-  {
     "id": "vitamin",
     "view": "overview",
     "ok": true
   },
   {
     "id": "vitamin",
-    "view": "buttons",
-    "ok": true
-  },
-  {
-    "id": "orbit",
-    "view": "overview",
+    "view": "form",
     "ok": true
   },
   {
@@ -925,13 +695,13 @@
     "ok": true
   },
   {
-    "id": "vitamin",
-    "view": "form",
+    "id": "orbit",
+    "view": "overview",
     "ok": true
   },
   {
     "id": "orbit",
-    "view": "buttons",
+    "view": "form",
     "ok": true
   },
   {
@@ -940,18 +710,8 @@
     "ok": true
   },
   {
-    "id": "orbit",
-    "view": "form",
-    "ok": true
-  },
-  {
     "id": "finastra",
     "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "finastra",
-    "view": "buttons",
     "ok": true
   },
   {
@@ -961,16 +721,6 @@
   },
   {
     "id": "lion",
-    "view": "buttons",
-    "ok": true
-  },
-  {
-    "id": "lion",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "boosted",
     "view": "overview",
     "ok": true
   },
@@ -981,12 +731,17 @@
   },
   {
     "id": "boosted",
-    "view": "buttons",
+    "view": "overview",
     "ok": true
   },
   {
     "id": "boosted",
     "view": "form",
+    "ok": true
+  },
+  {
+    "id": "boosted",
+    "view": "typography",
     "ok": true
   },
   {
@@ -996,11 +751,6 @@
   },
   {
     "id": "boosted",
-    "view": "typography",
-    "ok": true
-  },
-  {
-    "id": "boosted",
     "view": "alerts",
     "ok": true
   },
@@ -1011,7 +761,7 @@
   },
   {
     "id": "calcite",
-    "view": "buttons",
+    "view": "form",
     "ok": true
   },
   {
@@ -1020,23 +770,8 @@
     "ok": true
   },
   {
-    "id": "calcite",
-    "view": "form",
-    "ok": true
-  },
-  {
-    "id": "lexicon",
-    "view": "buttons",
-    "ok": true
-  },
-  {
     "id": "lexicon",
     "view": "form",
-    "ok": true
-  },
-  {
-    "id": "vaadin",
-    "view": "buttons",
     "ok": true
   },
   {
@@ -1056,11 +791,6 @@
   },
   {
     "id": "wfp",
-    "view": "buttons",
-    "ok": true
-  },
-  {
-    "id": "wfp",
     "view": "form",
     "ok": true
   },
@@ -1071,27 +801,12 @@
   },
   {
     "id": "kolibri",
-    "view": "buttons",
-    "ok": true
-  },
-  {
-    "id": "dsfr",
-    "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "kolibri",
     "view": "form",
     "ok": true
   },
   {
     "id": "dsfr",
-    "view": "buttons",
-    "ok": true
-  },
-  {
-    "id": "dsfr",
-    "view": "typography",
+    "view": "overview",
     "ok": true
   },
   {
@@ -1106,6 +821,11 @@
   },
   {
     "id": "dsfr",
+    "view": "typography",
+    "ok": true
+  },
+  {
+    "id": "dsfr",
     "view": "alerts",
     "ok": true
   },
@@ -1116,22 +836,12 @@
   },
   {
     "id": "reactaria",
-    "view": "buttons",
-    "ok": true
-  },
-  {
-    "id": "reactaria",
     "view": "form",
     "ok": true
   },
   {
     "id": "ariakit",
     "view": "overview",
-    "ok": true
-  },
-  {
-    "id": "ariakit",
-    "view": "buttons",
     "ok": true
   },
   {
@@ -1146,11 +856,16 @@
   },
   {
     "id": "kobalte",
-    "view": "buttons",
+    "view": "form",
     "ok": true
   },
   {
-    "id": "kobalte",
+    "id": "pajamas",
+    "view": "overview",
+    "ok": true
+  },
+  {
+    "id": "bitsui",
     "view": "form",
     "ok": true
   },
@@ -1160,12 +875,7 @@
     "ok": true
   },
   {
-    "id": "bitsui",
-    "view": "buttons",
-    "ok": true
-  },
-  {
-    "id": "bitsui",
+    "id": "pajamas",
     "view": "form",
     "ok": true
   }
