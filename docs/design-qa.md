@@ -150,3 +150,5 @@ Deployed source a1d0bec to https://fa9e4667.design-system-catalog-925.pages.dev.
 ## Subdued directional prompt — 2026-11-10
 
 The home selection prompt now uses 13px normal-weight muted gray text, with a light left-arrow icon pointing toward the desktop list. Kept the spacious 160px prompt area and all comparison examples. Reviewed the desktop capture and computed typography. Rebuilt the unchanged specimen bundles, then refreshed the static Astro pages after adding the icon.
+
+The two focused home/history and comparison-navigation checks passed in 1.0 seconds. Deployed source 2b0fd01 to https://fc6fc481.design-system-catalog-925.pages.dev. Production checks confirm 13px normal-weight gray text with a decorative left-arrow icon in Japanese and English; the introduction remains hidden on mobile.
