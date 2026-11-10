@@ -2,7 +2,7 @@
   "project": "design-system-catalog",
   "subdomain": "design-system-catalog-925.pages.dev",
   "productionBranch": "main",
-  "deploymentURL": "https://f8b024c6.design-system-catalog-925.pages.dev",
+  "deploymentURL": "https://d15292a3.design-system-catalog-925.pages.dev",
   "deploymentStatus": "success",
   "usesFunctions": false,
   "url": "https://design-system-catalog.akiyan.tokyo/",
@@ -23,8 +23,8 @@
   "referencePreviews": 51,
   "customDomainStatus": "active",
   "https": true,
-  "sourceCommit": "1da314dd2722a9a72710fc5d6c76aa5f476d5a55",
-  "verifiedAt": "2026-11-10T13:06:04.236473+00:00",
+  "sourceCommit": "4185f341f3c9544174fb3fb03da0fad9e3b6abf9",
+  "verifiedAt": "2026-11-10T13:07:20.064585+00:00",
   "packageManager": "pnpm@12.18.0",
   "richTypographyImplementations": 12,
   "featuredIds": [
@@ -34,11 +34,11 @@
     "ant",
     "primer"
   ],
-  "productionVerification": "Compact catalog metadata places country, category and release date in one row and omits reference badges. Release evidence remains in details. Three production browser checks passed.",
+  "productionVerification": "Desktop catalog grid capped at four columns at 1440, 1920 and 2560px; 1920px thumbnails are 432px wide. Two production browser checks passed for responsive grid, selection, filtering and history.",
   "localBrowserChecks": 172,
   "localBrowserCheckSeconds": 18.1,
-  "productionBrowserChecks": 3,
-  "productionBrowserCheckSeconds": 1.9,
+  "productionBrowserChecks": 2,
+  "productionBrowserCheckSeconds": 1.6,
   "previewScrollAudit": 233,
   "favicon": true,
   "referenceOnlyEntries": 5,
@@ -59,5 +59,6 @@
     "width": 800,
     "height": 600
   },
-  "thumbnailCaptureChecks": 233
+  "thumbnailCaptureChecks": 233,
+  "homeMaxColumns": 4
 }
