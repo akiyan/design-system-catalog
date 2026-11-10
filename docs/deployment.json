@@ -2,7 +2,7 @@
   "project": "design-system-catalog",
   "subdomain": "design-system-catalog-925.pages.dev",
   "productionBranch": "main",
-  "deploymentURL": "https://15e30acf.design-system-catalog-925.pages.dev",
+  "deploymentURL": "https://41d042d3.design-system-catalog-925.pages.dev",
   "deploymentStatus": "success",
   "usesFunctions": false,
   "url": "https://design-system-catalog.akiyan.tokyo/",
@@ -23,8 +23,8 @@
   "referencePreviews": 32,
   "customDomainStatus": "active",
   "https": true,
-  "sourceCommit": "2caefd0ef2cb3bc86045c5bcc82eb4f8fbb0b341",
-  "verifiedAt": "2026-11-10T01:34:20.496182+00:00",
+  "sourceCommit": "0623d82c80edca55135b62136ec9a66f9614d81d",
+  "verifiedAt": "2026-11-10T02:03:11.676044+00:00",
   "packageManager": "pnpm@12.18.0",
   "richTypographyImplementations": 12,
   "featuredIds": [
@@ -34,7 +34,5 @@
     "ant",
     "primer"
   ],
-  "localBrowserChecks": 140,
-  "localBrowserCheckSeconds": 12.9,
-  "productionVerification": "Japanese and English introduction layout, sole system count, removed instructions, one-point smaller domain suffix; no overflow at 390/900/1440px"
+  "productionVerification": "Japanese and English header suffix is 3pt smaller than the main title with font-weight 400"
 }

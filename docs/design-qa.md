@@ -136,3 +136,5 @@ Deployed source 2caefd0 to https://15e30acf.design-system-catalog-925.pages.dev.
 ## Domain suffix typography adjustment — 2026-11-10
 
 The desktop .akiyan.tokyo suffix is now 3pt smaller than the site name with font-weight 400. Japanese and English computed-style checks confirm a 4px (3pt) difference and normal weight; the header screenshot was reviewed. Document titles remain unchanged.
+
+Static pnpm build passed. Deployed source 0623d82 to https://41d042d3.design-system-catalog-925.pages.dev and confirmed the 3pt size difference plus font-weight 400 in both languages on the custom production domain.
