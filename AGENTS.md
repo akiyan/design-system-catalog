@@ -83,7 +83,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Typography specimens include multiple substantial paragraphs plus explicit line breaks within a paragraph, using genuine library typography and unchanged fonts/line heights.
 - Merge the standalone buttons category into forms. Forms include primary/secondary/text actions, disabled buttons and supported size variants in addition to input fields. Remove the buttons category from the catalog controls.
 
-- Show a system-specific GitHub link beside the official-site action when an official repository is known. Preserve GitLab labeling for GitLab sources; footer GitHub remains the catalog repository.
+- Show the official repository under source-code details. Keep the heading action limited to the official-site globe icon; footer GitHub remains the catalog repository.
 
 - Expand release-date evidence and usage/source details by default on desktop. Keep them collapsed by default on mobile.
 
@@ -98,13 +98,12 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - The footer includes a bilingual addition-request link to the catalog repository’s GitHub issue form. The form collects the system name and official URL with optional provider, repository and notes.
 
 - Opening / starts with no selected system. On desktop the right pane explains the catalog with actual specimen examples, counts and keyboard guidance. Individual paths remain selected; Back to / restores the introduction. Category changes on / must not automatically select a system.
-- Desktop branding is デザインシステムカタログ.akiyan.tokyo (English equivalent when switched). Use the full brand in title/OG title; individual titles also include the system name. Keep the short mobile header name.
+- Branding is デザインシステムカタログ (English equivalent when switched). Use this in title/OG title; individual titles also include the system name.
 
 - Rich typography list captures may use a compact two-column article excerpt with the first long paragraph and rich-text samples. Live typography keeps every paragraph and expands the iframe height to avoid clipping long mobile specimens.
 
 - Featured systems are Astryx, Fluent 2, Digital Agency (DADS), Ant Design and Primer, sorted newest public release first. Exclude React Aria from this group. Remove the GitHub-star selection note. Use official-site screenshot previews for unstyled/headless libraries, including React Aria, Ariakit, Lion, Kobalte and Bits UI.
 
-- Display the desktop header suffix `.akiyan.tokyo` three typographic points smaller than the main site name with normal (400) weight in both languages. Keep the full document title unchanged.
 - Omit instructions that are already apparent from the layout. Do not show introductory choose/switch/visit steps or tell visitors to select an item from the visible list.
 - Do not show counts in the home introduction.
 - The home introduction starts with 「デザインシステムを選んで下さい」 (English equivalent) in a spacious prompt area. Remove the prior heading, descriptive sentence and system count. Show genuine overview, table and alert comparison pairs using different systems across groups. Clicking an example opens its matching specimen category. Respect the active catalog filter. Keep keyboard hints compact below the examples.
@@ -118,3 +117,18 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Remove the repeated system-name / component-specimen header inside every implementation. Remove the redundant implementation-preview label. Place the enlarge action below the preview at its right edge beside package provenance.
 - Keep all Japanese and English system descriptions concise enough for one line at desktop 1080p widths. Allow natural wrapping on narrower screens.
 - Favicon selection is the second valid generated option: three blue rounded squares and one blue circle in a 2×2 grid. Source artwork is docs/favicon-selected.png. Export real PNG/ICO assets from this image.
+
+## Richer comparison specimens and compact headings
+
+- Use additional vertical space for meaningful overview content, up to the available 1080p browser area. Prefer genuine badges, notification banners and card surfaces that reveal differences between systems. Keep complete content visible with natural iframe sizing; do not impose a fixed viewport or introduce inner document scrolling.
+- Add Cards, Dialogs, Code blocks and Chat specimen categories. Use the closest genuine published building blocks when no exact category exists (for example Tile/Container for cards or Comment/Avatar for conversation). Record the component mapping and extra package/version provenance. Do not invent a branded equivalent or add a remote chat service.
+- Remove the repository action from the top-right system heading. Keep the repository link under the source-code details. Represent the official-site action with a globe icon and an accessible label.
+- On desktop place the short system description to the right of its name in a single heading row. Allow natural wrapping on mobile.
+- Site branding and document titles omit `.akiyan.tokyo`: use デザインシステムカタログ / Design System Catalog. The canonical production URL stays https://design-system-catalog.akiyan.tokyo/.
+
+- Footer links keep their identifying icons but omit the external-link arrow icons.
+
+- Align the implementation-source and source-code links in one flex row with identical line height and centered icons.
+
+- Specimen canvases and thumbnail padding follow the official site's base palette. Use genuine library theme APIs for dark components (Coinbase CDS and Cloudscape). Keep observed cream, lavender and gray canvases instead of forcing all specimens to white. Record palette evidence and theme configuration in the registry; ignore transient overlays and colored marketing hero panels when identifying the documentation canvas. Reference-only entries keep their original official screenshots.
+- Load each integration's published font/reset entry points where required. Coinbase CDS uses `defaultFontStyles` and `globalStyles` together with its genuine Text typography and dark ThemeProvider.

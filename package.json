@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@ag.ds-next/react": "^1.36.0",
+    "@ant-design/x": "2.10.0",
     "@arco-design/web-react": "^2.66.18",
     "@ariakit/react": "^0.4.43",
     "@ark-ui/react": "^5.40.0",
@@ -36,6 +37,8 @@
     "@clayui/css": "^3.167.0",
     "@clayui/form": "^3.167.0",
     "@cloudflare/kumo": "^2.17.0",
+    "@cloudscape-design/chat-components": "1.0.188",
+    "@cloudscape-design/code-view": "3.0.193",
     "@cloudscape-design/components": "^3.0.1411",
     "@cloudscape-design/global-styles": "^1.0.72",
     "@coinbase/cds-web": "^9.30.0",

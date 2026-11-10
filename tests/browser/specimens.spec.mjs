@@ -151,11 +151,16 @@ test('all integrated forms include action kinds and disabled states',async({page
  }
 });
 
-test('system repository actions appear beside official sites',async({page})=>{
+test('compact system heading keeps the official icon and repository under sources',async({page})=>{
+ await page.setViewportSize({width:1920,height:1080});
  await page.goto('/dads/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
- await expect(page.locator('.system-links a',{hasText:'GitHub'})).toHaveAttribute('href','https://github.com/digital-go-jp/design-system-example-components-react');
- await page.goto('/sugao/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
- await expect(page.locator('.system-links .system-repository')).toHaveCount(0);
+ const heading=page.locator('.preview-heading');
+ await expect(heading.locator('a')).toHaveCount(1);
+ await expect(heading.getByRole('link',{name:/公式サイト/})).toHaveAttribute('href','https://design.digital.go.jp/dads/');
+ await expect(heading.locator('a')).toHaveText('');
+ await expect(page.locator('.source-repository')).toHaveAttribute('href','https://github.com/digital-go-jp/design-system-example-components-react');
+ const title=await heading.locator('h1').boundingBox(),description=await heading.locator('.system-description').boundingBox();
+ expect(description.x).toBeGreaterThan(title.x+title.width);expect(Math.abs(description.y+description.height/2-title.y-title.height/2)).toBeLessThan(3);
 });
 
 test('evidence and usage details are expanded on desktop and collapsed on mobile',async({page})=>{
@@ -193,11 +198,11 @@ test('home starts unselected, shows the introduction and restores it through his
  await page.goto('/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
  await expect(page.locator('.system-row.selected')).toHaveCount(0);await expect(page.locator('.system-row[aria-current]')).toHaveCount(0);
  await expect(page.locator('.catalog-introduction')).toBeVisible();await expect(page.locator('.main-preview iframe')).toHaveCount(0);
- await expect(page).toHaveTitle('デザインシステムカタログ.akiyan.tokyo');await expect(page.locator('.desktop-site-title')).toHaveText('デザインシステムカタログ.akiyan.tokyo');
+ await expect(page).toHaveTitle('デザインシステムカタログ');await expect(page.locator('.desktop-site-title')).toHaveText('デザインシステムカタログ');
  await page.getByRole('navigation',{name:'一覧のプレビューカテゴリ'}).getByRole('button',{name:'フォーム',exact:true}).click();await expect(page.locator('.catalog-introduction')).toBeVisible();
  await page.getByRole('button',{name:'政府・公共 15',exact:true}).click();await expect(page.locator('.catalog-introduction')).toBeVisible();
  await page.locator('.system-row[href="/dads/"]').click();await expect(page.locator('.preview-heading h1')).toBeVisible();
- await expect(page).toHaveTitle(/デジタル庁.*デザインシステムカタログ\.akiyan\.tokyo/);
+ await expect(page).toHaveTitle(/デジタル庁.*デザインシステムカタログ/);
  await page.goBack();await expect(page.locator('.catalog-introduction')).toBeVisible();await expect(page.locator('.system-row[aria-current]')).toHaveCount(0);
 });
 
@@ -248,7 +253,7 @@ test('embedded previews fit their whole contents and keep wheel browsing in the 
   await expect(frame.locator('.specimen-header')).toHaveCount(0);await expect(page.locator('.implementation-toolbar')).toHaveCount(0);
   const measured=await frame.locator('#specimen-root').evaluate(e=>Math.ceil(Math.max(e.scrollHeight,e.getBoundingClientRect().height)));
   await expect.poll(()=>page.locator('.main-preview iframe').evaluate(e=>e.clientHeight)).toBeGreaterThanOrEqual(measured);
-  expect(await frame.locator('html').evaluate(()=>document.scrollingElement.scrollHeight<=innerHeight)).toBe(true);
+  await expect.poll(()=>frame.locator('html').evaluate(()=>document.scrollingElement.scrollHeight<=innerHeight)).toBe(true);
   const canvas=await page.locator('.main-preview').boundingBox();const enlarge=await page.locator('.implementation-meta .specimen-enlarge').boundingBox();expect(enlarge.y).toBeGreaterThan(canvas.y+canvas.height);
   await page.locator('.main-preview iframe').hover();await page.mouse.wheel(0,240);
   await expect.poll(()=>page.locator('.preview-panel').evaluate(e=>e.scrollTop)).toBeGreaterThan(0);
@@ -279,6 +284,6 @@ test('Digital Agency overview shows the complete interactive checkbox and bullet
   const checkbox=frame.getByRole('checkbox',{name:'チームに通知する',exact:true});await expect(checkbox).toBeInViewport();await checkbox.uncheck();await expect(checkbox).not.toBeChecked();await checkbox.check();
   await expect(frame.locator('.specimen-overview-list>li')).toHaveCount(3);await expect(frame.locator('.specimen-overview-list')).toHaveCSS('list-style-type','disc');
   expect(await checkbox.evaluate(el=>{const rect=el.getBoundingClientRect();return innerHeight-rect.bottom;})).toBeGreaterThan(16);
-  expect(await frame.locator('html').evaluate(()=>document.scrollingElement.scrollHeight<=innerHeight)).toBe(true);
+  await expect.poll(()=>frame.locator('html').evaluate(()=>document.scrollingElement.scrollHeight<=innerHeight)).toBe(true);
  }
 });

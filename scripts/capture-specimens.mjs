@@ -15,18 +15,28 @@ async function open(page,id,view,compact=false){
  if(await page.locator('#specimen-root[data-error]').count())throw Error(await page.locator('#specimen-root').innerText());
 }
 async function compactCapture(page,id,view){
- await page.setViewportSize({width:600,height:500});
+ await page.setViewportSize({width:view==='dialog'?1000:600,height:view==='dialog'?720:500});
  await open(page,id,view,true);
  const specimen=page.locator('.specimen');
- // Fit real content to the thumbnail proportions without cropping controls.
- for(let i=0;i<4;i++){
-  const box=await specimen.boundingBox();
-  const width=Math.round(Math.max(420,Math.min(view==='typography'?1600:1000,box.width*Math.sqrt(2.15/(box.width/box.height)))));
-  if(Math.abs(width-box.width)<12)break;
-  await page.setViewportSize({width,height:700});await page.waitForTimeout(40);
+ if(view!=='dialog'){
+  // Fit actual content to the thumbnail proportions without clipping controls.
+  for(let i=0;i<4;i++){
+   const box=await specimen.boundingBox();
+   const width=Math.round(Math.max(420,Math.min(view==='typography'?1600:1000,box.width*Math.sqrt(2.15/(box.width/box.height)))));
+   if(Math.abs(width-box.width)<12)break;
+   await page.setViewportSize({width,height:700});await page.waitForTimeout(40);
+  }
  }
- await sharp(await specimen.screenshot()).resize(480,224,{fit:'contain',background:'#fff'}).webp({quality:86}).toFile(`public/specimens/list-thumbnails/${id}-${view}.webp`);
+ // A modal can live in a body portal. Capture its actual surface, not the launcher behind it.
+ let target=specimen;
+ if(view==='dialog'){
+  const selector=await page.locator('#specimen-root').getAttribute('data-dialog-surface');
+  target=selector?page.locator(selector):page.getByRole('dialog').or(page.getByRole('alertdialog'));
+ }
+ const background=await page.evaluate(()=>{const context=new OffscreenCanvas(1,1).getContext('2d');context.fillStyle=getComputedStyle(document.body).backgroundColor;context.fillRect(0,0,1,1);const [r,g,b,a]=context.getImageData(0,0,1,1).data;return {r,g,b,alpha:a/255}});
+ await sharp(await target.screenshot()).resize(480,224,{fit:'contain',background}).webp({quality:86}).toFile(`public/specimens/list-thumbnails/${id}-${view}.webp`);
 }
+
 await Promise.all(Array.from({length:4},async()=>{
  const page=await browser.newPage({viewport:{width:1000,height:720},deviceScaleFactor:1});
  while(next<jobs.length){
@@ -35,7 +45,12 @@ await Promise.all(Array.from({length:4},async()=>{
    if(!listOnly){
     await page.setViewportSize({width:1000,height:720});await open(page,id,view);
     const buttons=await page.getByRole('button').count();
-    if(!buttons&&!['typography','table','alerts'].includes(view))throw Error('No accessible buttons rendered');
+    if(!buttons&&!['typography','table','alerts','card','code'].includes(view))throw Error('No accessible buttons rendered');
+    if(view==='alerts'&&!await page.locator('.specimen-alerts>*').count())throw Error('No alert specimens rendered');
+    if(view==='card'&&await page.locator('.specimen-card-grid>*').count()<2)throw Error('Missing card specimens');
+    if(view==='chat'&&await page.getByRole('log').innerText()==='')throw Error('No chat messages rendered');
+    if(view==='code'&&!(await page.locator('.specimen').innerText()).includes('const project'))throw Error('No code sample rendered');
+    if(view==='dialog'&&!await page.getByRole('dialog').or(page.getByRole('alertdialog')).isVisible())throw Error('No dialog rendered');
     await sharp(await page.screenshot()).webp({quality:84}).toFile(`public/specimens/thumbnails/${id}-${view}.webp`);
    }
    await compactCapture(page,id,view);

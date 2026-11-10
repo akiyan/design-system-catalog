@@ -109,9 +109,9 @@ Published implementations may lag the latest design guidelines. For example the 
 
 Third-party packages retain their respective licenses. Vendored Digital Agency source preserves its MIT license. Vendored public CFPB/Bristol styles and their fonts retain their original terms and source metadata in `src/specimens/vendor/`. Generated specimen thumbnails depict those third-party components and are excluded from the catalog code's MIT license.
 
-## Overview, tables and alerts
+## Component categories
 
-Every integrated system starts with an overview combining typography, buttons and form controls. Previous/next controls, horizontal swipes and keyboard system navigation reset to this overview. Direct list selection preserves the current component category where supported. Dedicated table examples are available for 23 implementations and alert examples for 25. Only supported official variants are rendered.
+Every integrated system starts with an overview combining typography, buttons and form controls. Where supported, genuine badges, banners and card surfaces emphasize differences between libraries. Previous/next controls, horizontal swipes and keyboard system navigation reset to this overview. Direct list selection preserves the current component category where supported. Dedicated table examples are available for 23 implementations and alert examples for 28. Cards (25 implementations), dialogs (20), code blocks (10) and chat (9) use published components or close official equivalents. Tile/Container surfaces and Comment/Avatar compositions are identified beside package provenance. Chat messages stay local to the specimen. Only supported official variants are rendered.
 
 List images are compact 480×224 captures with an adaptive viewport under `public/specimens/list-thumbnails/`, with shared sample sections arranged for legibility at thumbnail size. Detail selectors retain full specimen captures under `public/specimens/thumbnails/`. Both use the same official components.
 
@@ -124,3 +124,6 @@ List controls switch the shared specimen category across every supported thumbna
 The homepage starts without a selected system and explains the catalog in the desktop right pane. Individual system URLs open directly to the selected system. Typography specimens include original quotation samples with citations, unordered/ordered lists, heading levels, inline emphasis, links, code, keyboard notation and definition lists. Official components and published classes provide the styling; unsupported rich-text elements retain native semantic HTML.
 
 Use [Suggest a system](https://github.com/akiyan/design-system-catalog/issues/new?template=add-design-system.yml) to request an addition through GitHub Issues.
+
+
+Specimen palettes follow each official site's canvas rather than a uniform white background. Coinbase CDS and Cloudscape use their published dark themes; other observed backgrounds include cream, lavender and gray. Palette evidence is stored in `docs/official-theme-validation.json` and `appearance` in the implementation registry. Transient overlays and marketing hero panels are excluded when selecting a documentation canvas.

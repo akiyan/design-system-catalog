@@ -79,7 +79,7 @@ test('automatic language detection follows browser preference', async ({browser}
     const context=await browser.newContext({locale}); const page=await context.newPage();
     await page.goto(test.info().project.use.baseURL); await ready(page);
     await expect(page.locator('html')).toHaveAttribute('lang',expected);
-    await expect(page.locator('.desktop-site-title')).toHaveText(label+'.akiyan.tokyo');
+    await expect(page.locator('.desktop-site-title')).toHaveText(label);
     await context.close();
   }
 });
@@ -117,7 +117,7 @@ test('keyboard selection, boundaries, screenshot switching, zoom and help focus'
   await page.keyboard.press('ArrowRight');
   await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/\/specimens\/astryx\/form\/\?lang=ja(?:&|$)/);
   await page.keyboard.press('v'); await expect(page.locator('.zoom-dialog')).toBeVisible();
-  await page.keyboard.press('ArrowRight'); await expect(page.locator('.zoom-navigation')).toContainText(`1 / ${specimens.astryx.views.length}`);
+  await page.keyboard.press('ArrowRight'); await expect(page.locator('.zoom-navigation')).toContainText(`3 / ${specimens.astryx.views.length}`);
   await page.keyboard.press('Escape'); await expect(page.locator('.zoom-dialog')).not.toBeVisible();
   const help=page.getByRole('button',{name:'キーボード操作',exact:true}); await help.focus();
   await page.keyboard.press('?'); await expect(page.locator('.help-dialog')).toBeVisible();

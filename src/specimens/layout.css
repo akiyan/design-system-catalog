@@ -1,4 +1,4 @@
-html{background:#fff}body{margin:0;background:#fff}*{box-sizing:border-box}.specimen{padding:28px;max-width:1000px;margin:auto}.specimen-header{font:500 12px/1.6 system-ui,sans-serif;color:#667085;margin-bottom:28px;border-bottom:1px solid #e5e7eb;padding-bottom:12px;display:flex;justify-content:space-between;gap:12px}.specimen-section{margin:0 0 30px}.specimen-section>h2,.specimen-field>label,.specimen-note{font:500 13px/1.6 system-ui,sans-serif;color:#475467;margin:0 0 12px;display:block}.specimen-row{display:flex;flex-wrap:wrap;align-items:center;gap:16px;min-height:48px}.specimen-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.specimen-field{min-width:0}.specimen-field>div{max-width:100%}.specimen-status{font:12px/1.6 system-ui,sans-serif;color:#475467;margin-top:22px;min-height:20px}.specimen-error{font:14px/1.8 system-ui,sans-serif;padding:24px;color:#b42318}.specimen-heading-group{display:grid;gap:14px}@media(max-width:520px){.specimen{padding:20px 16px}.specimen-fields{grid-template-columns:1fr}.specimen-row{gap:12px}.specimen-header{margin-bottom:22px}.specimen-section{margin-bottom:24px}}
+html{background:var(--specimen-background,#fff);color:var(--specimen-foreground,#161616)}body{margin:0;background:var(--specimen-background,#fff);color:var(--specimen-foreground,#161616)}*{box-sizing:border-box}.specimen{padding:28px;max-width:1000px;margin:auto}.specimen-header{font:500 12px/1.6 system-ui,sans-serif;color:#667085;margin-bottom:28px;border-bottom:1px solid #e5e7eb;padding-bottom:12px;display:flex;justify-content:space-between;gap:12px}.specimen-section{margin:0 0 30px}.specimen-section>h2,.specimen-field>label,.specimen-note{font:500 13px/1.6 system-ui,sans-serif;color:#475467;margin:0 0 12px;display:block}.specimen-row{display:flex;flex-wrap:wrap;align-items:center;gap:16px;min-height:48px}.specimen-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.specimen-field{min-width:0}.specimen-field>div{max-width:100%}.specimen-status{font:12px/1.6 system-ui,sans-serif;color:#475467;margin-top:22px;min-height:20px}.specimen-error{font:14px/1.8 system-ui,sans-serif;padding:24px;color:#b42318}.specimen-heading-group{display:grid;gap:14px}@media(max-width:520px){.specimen{padding:20px 16px}.specimen-fields{grid-template-columns:1fr}.specimen-row{gap:12px}.specimen-header{margin-bottom:22px}.specimen-section{margin-bottom:24px}}
 
 .specimen-check-label{display:inline-flex;align-items:center;gap:8px}
 
@@ -54,3 +54,23 @@ html{background:#fff}body{margin:0;background:#fff}*{box-sizing:border-box}.spec
 }
 
 .specimen-overview-list{list-style-type:disc;margin-block:16px 0;padding-inline-start:1.5em}.specimen-overview-list li+li{margin-top:8px}.specimen-compact .specimen{padding:24px}.specimen-compact .specimen-section{margin-bottom:24px}
+
+.specimen-badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;align-items:center}
+.specimen-card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-items:start}
+.specimen-overview-banner,.specimen-overview-cards{grid-column:1/-1!important}
+.specimen-dialog-stage{min-height:360px}
+.specimen-chat,.specimen-messages{display:grid;gap:20px}
+.specimen-chat-composer{display:flex;align-items:center;gap:12px;margin-top:8px}
+.specimen-chat-composer>:first-child{flex:1;min-width:0}
+.specimen-message-author{display:block;margin-bottom:8px}
+.specimen-thumbnail #specimen-root[data-view="overview"] .specimen-overview-banner{grid-row:auto}
+.specimen-thumbnail #specimen-root[data-view="overview"] .specimen-overview-cards{grid-row:auto}
+@media(min-width:480px){.specimen-compact #specimen-root[data-view="overview"] .specimen-overview-banner,.specimen-compact #specimen-root[data-view="overview"] .specimen-overview-cards{grid-column:1/-1}}
+@media(max-width:520px){.specimen-card-grid{grid-template-columns:1fr}}
+
+.specimen-card-content{padding:20px}.specimen-code-text{white-space:pre-wrap;overflow-wrap:anywhere;text-align:left}.specimen-dialog-stage>[role="dialog"]{margin:20px auto 0;max-width:600px}
+
+html[data-color-scheme="dark"] :is(.specimen-section>h2,.specimen-field>label,.specimen-note,.specimen-status){color:#b8c2d1}
+
+/* Single comparison surfaces use the whole thumbnail canvas. */
+.specimen-thumbnail #specimen-root:is([data-view="card"],[data-view="dialog"],[data-view="code"],[data-view="chat"]) .specimen{display:block}

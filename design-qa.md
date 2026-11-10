@@ -124,3 +124,7 @@ Source: the user's Digital Agency attachment, retained as docs/dads-clipped-refe
 Headless entries use 19 genuine official-site captures, reviewed in docs/headless-reference-contact.png, with a rendered catalog example in docs/bitsui-reference-desktop.png. They are labeled as reference captures, not unavailable code. All 166 live-frame audit cases have zero vertical overflow, and all 139 browser tests pass. No actionable P0/P1/P2 issues remain in the corrected flow.
 
 final result: passed
+
+## Rich comparison update — 2026-11-10
+
+Passed: preserved list/detail layout; richer overviews; four new component categories; official-site palettes; compact heading; aligned source links; simplified footer. Evidence and final validation are recorded in `docs/design-qa.md`. The static build, 171 browser checks and all 233 view scroll audits pass.

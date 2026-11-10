@@ -8,8 +8,20 @@
     "views": [
       "overview",
       "form",
-      "alerts"
-    ]
+      "alerts",
+      "dialog"
+    ],
+    "components": {
+      "dialog": "ModalDialog / ModalDialogContent"
+    },
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://design.digital.go.jp/dads/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "govuk": {
     "status": "ready",
@@ -21,9 +33,22 @@
       "overview",
       "form",
       "typography",
-      "table"
+      "table",
+      "card",
+      "alerts"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "components": {
+      "card": "Summary card"
+    },
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://design-system.service.gov.uk/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "uswds": {
     "status": "ready",
@@ -36,9 +61,21 @@
       "form",
       "typography",
       "table",
-      "alerts"
+      "alerts",
+      "card"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "components": {
+      "card": "Card"
+    },
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(240, 240, 240)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://designsystem.digital.gov/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "cloudscape": {
     "status": "ready",
@@ -50,9 +87,45 @@
       "overview",
       "form",
       "table",
-      "alerts"
+      "alerts",
+      "card",
+      "dialog",
+      "code",
+      "chat"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "components": {
+      "card": "Container",
+      "dialog": "Modal",
+      "code": "Code view · CodeView",
+      "chat": "Chat components · ChatBubble / Avatar"
+    },
+    "extraPackages": [
+      {
+        "package": "@cloudscape-design/chat-components",
+        "version": "1.0.188",
+        "sourceUrl": "https://github.com/cloudscape-design/chat-components",
+        "views": [
+          "chat"
+        ]
+      },
+      {
+        "package": "@cloudscape-design/code-view",
+        "version": "3.0.193",
+        "sourceUrl": "https://github.com/cloudscape-design/code-view",
+        "views": [
+          "code"
+        ]
+      }
+    ],
+    "appearance": {
+      "scheme": "dark",
+      "background": "rgb(15, 20, 26)",
+      "foreground": "rgb(255, 255, 255)",
+      "sourceUrl": "https://cloudscape.design/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "gestalt": {
     "status": "ready",
@@ -62,9 +135,21 @@
     "sourceUrl": "https://www.npmjs.com/package/gestalt",
     "views": [
       "overview",
-      "form"
+      "form",
+      "card"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "components": {
+      "card": "Box / Heading / Text"
+    },
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://gestalt.pinterest.systems/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "sgds": {
     "status": "ready",
@@ -77,9 +162,23 @@
       "form",
       "typography",
       "table",
-      "alerts"
+      "alerts",
+      "card",
+      "dialog"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "components": {
+      "card": "Card",
+      "dialog": "Modal content · inline"
+    },
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://www.designsystem.tech.gov.sg/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "astryx": {
     "status": "ready",
@@ -89,9 +188,28 @@
     "sourceUrl": "https://www.npmjs.com/package/@astryxdesign/core",
     "views": [
       "overview",
-      "form"
+      "form",
+      "card",
+      "dialog",
+      "code",
+      "chat",
+      "alerts"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "components": {
+      "card": "Card",
+      "dialog": "Dialog",
+      "code": "CodeBlock",
+      "chat": "ChatMessage / ChatMessageBubble"
+    },
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(248, 244, 237)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://astryx.atmeta.com/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "agds": {
     "status": "ready",
@@ -105,7 +223,15 @@
       "table",
       "alerts"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(235, 235, 235)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://design-system.agriculture.gov.au/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "czech": {
     "status": "ready",
@@ -117,7 +243,15 @@
       "overview",
       "form"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://designsystem.gov.cz/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "italia": {
     "status": "ready",
@@ -130,9 +264,23 @@
       "form",
       "typography",
       "table",
-      "alerts"
+      "alerts",
+      "card",
+      "dialog"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "components": {
+      "card": "Card",
+      "dialog": "Modal content · inline"
+    },
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://designers.italia.it/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "europa": {
     "status": "ready",
@@ -147,7 +295,15 @@
       "table",
       "alerts"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://ec.europa.eu/component-library/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "canada": {
     "status": "ready",
@@ -159,7 +315,15 @@
       "overview",
       "form"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://design-system.canada.ca/en/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "cfpb": {
     "status": "ready",
@@ -171,7 +335,15 @@
       "overview",
       "form",
       "typography"
-    ]
+    ],
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://cfpb.github.io/design-system/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "bristol": {
     "status": "ready",
@@ -183,7 +355,15 @@
       "overview",
       "form",
       "typography"
-    ]
+    ],
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://style.bristol.gov.uk/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "bc": {
     "status": "ready",
@@ -195,7 +375,15 @@
       "overview",
       "form"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://www2.gov.bc.ca/gov/content/digital/design-system",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "sansan": {
     "status": "design-only",
@@ -212,7 +400,15 @@
       "overview",
       "form"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://charcoal-web.pixiv.design/?path=/docs/readme--docs",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "serendie": {
     "status": "ready",
@@ -224,7 +420,16 @@
       "overview",
       "form"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "components": {},
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(239, 242, 252)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://serendie.design/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "sugao": {
     "status": "design-only",
@@ -239,9 +444,23 @@
     "sourceUrl": "https://www.npmjs.com/package/@freee_jp/vibes",
     "views": [
       "overview",
-      "form"
+      "form",
+      "card",
+      "chat"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "components": {
+      "card": "CardBase",
+      "chat": "CardBase · message composition"
+    },
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://vibes.freee.co.jp/?path=/docs/doc-readme--docs",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "vitals": {
     "status": "ready",
@@ -253,7 +472,15 @@
       "overview",
       "form"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://vitals.ubie.life/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "pajamas": {
     "status": "ready",
@@ -265,7 +492,15 @@
       "overview",
       "form"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://design.gitlab.com/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "paste": {
     "status": "ready",
@@ -283,7 +518,15 @@
     "alertTones": [
       "info",
       "warning"
-    ]
+    ],
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://github.com/twilio-labs/paste",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "wise": {
     "status": "ready",
@@ -293,9 +536,21 @@
     "sourceUrl": "https://www.npmjs.com/package/@transferwise/components",
     "views": [
       "overview",
-      "form"
+      "form",
+      "card"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "components": {
+      "card": "CardContainer"
+    },
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://wise.design/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "semi": {
     "status": "ready",
@@ -307,9 +562,27 @@
       "overview",
       "form",
       "table",
-      "alerts"
+      "alerts",
+      "card",
+      "dialog",
+      "code",
+      "chat"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "components": {
+      "card": "Card",
+      "dialog": "Modal",
+      "code": "Typography.Text code",
+      "chat": "Chat"
+    },
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://semi.design/zh-CN",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "arco": {
     "status": "ready",
@@ -321,9 +594,27 @@
       "overview",
       "form",
       "table",
-      "alerts"
+      "alerts",
+      "card",
+      "dialog",
+      "code",
+      "chat"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "components": {
+      "card": "Card",
+      "dialog": "Modal",
+      "code": "Typography.Text code",
+      "chat": "Comment / Avatar"
+    },
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://arco.design/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "spectrum": {
     "status": "ready",
@@ -337,7 +628,15 @@
       "table",
       "alerts"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(247, 247, 247)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://spectrum.adobe.com/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "carbon": {
     "status": "ready",
@@ -349,9 +648,27 @@
       "overview",
       "form",
       "table",
-      "alerts"
+      "alerts",
+      "card",
+      "dialog",
+      "code",
+      "chat"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "components": {
+      "card": "Tile",
+      "dialog": "Modal",
+      "code": "CodeSnippet",
+      "chat": "Tile · message composition"
+    },
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(244, 244, 244)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://www.carbondesignsystem.com/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "fluent": {
     "status": "ready",
@@ -364,9 +681,25 @@
       "form",
       "typography",
       "table",
-      "alerts"
+      "alerts",
+      "card",
+      "dialog",
+      "chat"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "components": {
+      "card": "Card / CardHeader",
+      "dialog": "Dialog / DialogSurface",
+      "chat": "Card / CardHeader / Body1"
+    },
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(238, 235, 240)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://fluent2.microsoft.design/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "baseweb": {
     "status": "ready",
@@ -378,9 +711,23 @@
       "overview",
       "form",
       "table",
-      "alerts"
+      "alerts",
+      "card",
+      "dialog"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "components": {
+      "card": "Card",
+      "dialog": "Modal"
+    },
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://baseweb.design/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "polaris": {
     "status": "ready",
@@ -392,12 +739,26 @@
       "overview",
       "form",
       "table",
-      "alerts"
+      "alerts",
+      "card",
+      "dialog"
     ],
     "unstyled": false,
     "notice": {
       "ja": "公開されているPolaris React版の見本です。現行Web Components版とは異なります。",
       "en": "This uses the published Polaris React implementation, which differs from current Web Components."
+    },
+    "components": {
+      "card": "Card",
+      "dialog": "Modal"
+    },
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://shopify.dev/docs/api/polaris",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
     }
   },
   "spindle": {
@@ -410,7 +771,15 @@
       "overview",
       "form"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(245, 246, 246)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://spindle.ameba.design/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "smarthr": {
     "status": "ready",
@@ -422,9 +791,21 @@
       "overview",
       "form",
       "table",
-      "alerts"
+      "alerts",
+      "card"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "components": {
+      "card": "Panel"
+    },
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://smarthr.design/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "ikyu": {
     "status": "design-only",
@@ -450,6 +831,14 @@
     "notice": {
       "ja": "ブランド専用フォントは含まれていません。公開コードの利用条件とブランド素材の条件は異なります。",
       "en": "Proprietary brand fonts are not included. Code and brand assets have separate usage terms."
+    },
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(241, 241, 244)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://designsystem.porsche.com/v4/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
     }
   },
   "audi": {
@@ -467,7 +856,15 @@
       "overview",
       "form"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "appearance": {
+      "scheme": "dark",
+      "background": "rgb(30, 32, 37)",
+      "foreground": "rgb(255, 255, 255)",
+      "sourceUrl": "https://cds.coinbase.com/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "tdesign": {
     "status": "ready",
@@ -479,9 +876,25 @@
       "overview",
       "form",
       "table",
-      "alerts"
+      "alerts",
+      "card",
+      "dialog",
+      "chat"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "components": {
+      "card": "Card",
+      "dialog": "Dialog",
+      "chat": "Comment / Avatar"
+    },
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(245, 245, 245)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://tdesign.tencent.com/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "ant": {
     "status": "ready",
@@ -493,9 +906,38 @@
       "overview",
       "form",
       "table",
-      "alerts"
+      "alerts",
+      "card",
+      "dialog",
+      "code",
+      "chat"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "components": {
+      "card": "Card",
+      "dialog": "Modal",
+      "code": "Ant Design X · CodeHighlighter",
+      "chat": "Ant Design X · Bubble"
+    },
+    "extraPackages": [
+      {
+        "package": "@ant-design/x",
+        "version": "2.10.0",
+        "sourceUrl": "https://github.com/ant-design/x",
+        "views": [
+          "code",
+          "chat"
+        ]
+      }
+    ],
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://ant.design/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "kumo": {
     "status": "ready",
@@ -505,9 +947,25 @@
     "sourceUrl": "https://www.npmjs.com/package/@cloudflare/kumo",
     "views": [
       "overview",
-      "form"
+      "form",
+      "card",
+      "dialog",
+      "code"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "components": {
+      "card": "LayerCard",
+      "dialog": "Dialog",
+      "code": "CodeBlock"
+    },
+    "appearance": {
+      "scheme": "light",
+      "background": "oklch(0.9875 0 0)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://kumo-ui.com/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "patternfly": {
     "status": "ready",
@@ -518,9 +976,25 @@
     "views": [
       "overview",
       "form",
-      "alerts"
+      "alerts",
+      "card",
+      "dialog",
+      "code"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "components": {
+      "card": "Card / CardHeader / CardBody",
+      "dialog": "Modal",
+      "code": "CodeBlock / CodeBlockCode"
+    },
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://www.patternfly.org/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "primer": {
     "status": "ready",
@@ -533,9 +1007,23 @@
       "form",
       "typography",
       "table",
-      "alerts"
+      "alerts",
+      "dialog",
+      "code"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "components": {
+      "dialog": "Dialog",
+      "code": "Text as pre / code"
+    },
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://primer.style/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "atlassian": {
     "status": "ready",
@@ -547,7 +1035,15 @@
       "overview",
       "form"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://atlassian.design/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "lightning": {
     "status": "ready",
@@ -558,12 +1054,27 @@
     "views": [
       "overview",
       "form",
-      "table"
+      "table",
+      "card",
+      "dialog",
+      "alerts"
     ],
     "unstyled": false,
     "notice": {
       "ja": "公開CSSパッケージの見本です。SLDS 2のCosmosテーマではありません。",
       "en": "This specimen uses the public CSS package, not the SLDS 2 Cosmos theme."
+    },
+    "components": {
+      "card": "Card",
+      "dialog": "Modal content · inline"
+    },
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://www.lightningdesignsystem.com/2e1ef8501/p/85bd85-lightning-design-system-2",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
     }
   },
   "forma36": {
@@ -576,9 +1087,23 @@
       "overview",
       "form",
       "table",
-      "alerts"
+      "alerts",
+      "card",
+      "dialog"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "components": {
+      "card": "Card",
+      "dialog": "Modal"
+    },
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://f36.contentful.com/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "evergreen": {
     "status": "ready",
@@ -589,9 +1114,25 @@
     "views": [
       "overview",
       "form",
-      "alerts"
+      "alerts",
+      "card",
+      "dialog",
+      "code"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "components": {
+      "card": "Card",
+      "dialog": "Dialog",
+      "code": "Code as pre"
+    },
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://evergreen.segment.com/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "airtable": {
     "status": "integration-limited",
@@ -608,7 +1149,15 @@
       "overview",
       "form"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://vibe.monday.com/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "vitamin": {
     "status": "ready",
@@ -621,7 +1170,15 @@
       "form",
       "typography"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://decathlon.github.io/vitamin-web/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "orbit": {
     "status": "ready",
@@ -633,7 +1190,15 @@
       "overview",
       "form",
       "alerts"
-    ]
+    ],
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://github.com/kiwicom/orbit",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "apron": {
     "status": "design-only",
@@ -655,7 +1220,15 @@
       "overview",
       "form"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://finastra.github.io/finastra-design-system/?path=/story/welcome--page",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "lion": {
     "status": "reference-only",
@@ -677,9 +1250,23 @@
       "form",
       "typography",
       "table",
-      "alerts"
+      "alerts",
+      "card",
+      "dialog"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "components": {
+      "card": "Card",
+      "dialog": "Modal content · inline"
+    },
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://boosted.orange.com/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "calcite": {
     "status": "ready",
@@ -691,7 +1278,15 @@
       "overview",
       "form"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://developers.arcgis.com/calcite-design-system/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "lexicon": {
     "status": "ready",
@@ -703,7 +1298,15 @@
       "overview",
       "form"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://design.liferay.com/lexicon",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "vaadin": {
     "status": "ready",
@@ -715,7 +1318,15 @@
       "overview",
       "form"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://vaadin.com/design-system",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "falcon": {
     "status": "design-only",
@@ -732,7 +1343,15 @@
       "overview",
       "form"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://uikit.wfp.org/docs/index.html",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "kolibri": {
     "status": "ready",
@@ -744,7 +1363,15 @@
       "overview",
       "form"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://public-ui.github.io/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": true
+    }
   },
   "dsfr": {
     "status": "ready",
@@ -757,9 +1384,21 @@
       "form",
       "typography",
       "table",
-      "alerts"
+      "alerts",
+      "card"
     ],
-    "unstyled": false
+    "unstyled": false,
+    "components": {
+      "card": "Card"
+    },
+    "appearance": {
+      "scheme": "light",
+      "background": "rgb(255, 255, 255)",
+      "foreground": "rgb(22, 22, 22)",
+      "sourceUrl": "https://www.systeme-de-design.gouv.fr/",
+      "basis": "Official site canvas and published component theme; marketing hero panels excluded.",
+      "verified": false
+    }
   },
   "reactaria": {
     "status": "reference-only",

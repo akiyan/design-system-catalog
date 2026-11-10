@@ -102,3 +102,13 @@ a.system-row{cursor:pointer}
 .system-kind{display:inline-block;margin-top:6px;font-size:10px;color:#59616d;border:1px solid var(--line);border-radius:3px;padding:2px 5px}.unstyled-note{margin:0 0 12px;padding:10px 12px;background:#f6f7f9;border:1px solid var(--line);border-radius:4px}
 
 .implementation-meta .specimen-enlarge{margin-left:auto;align-self:flex-start;white-space:nowrap}
+
+/* One compact heading row leaves more space for the actual components. */
+.preview-heading{justify-content:flex-start;gap:14px;margin-bottom:16px;min-height:36px}
+.preview-heading h1{flex-shrink:0;font-size:22px}
+.preview-heading .system-description{flex:1;min-width:0;margin:0;font-size:12px;line-height:1.6;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.preview-heading>.official-link{width:36px;height:36px;padding:0;background:transparent;color:var(--muted)}
+.preview-heading>.official-link:hover{background:#edf1f7;color:var(--blue)}
+@media(max-width:700px){.preview-heading{flex-wrap:wrap;gap:6px 10px;align-items:center}.preview-heading h1{flex:1;min-width:0;font-size:19px}.preview-heading .system-description{flex-basis:100%;order:3;white-space:normal}.preview-heading>.official-link{width:32px;height:32px}}
+
+.source-links{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px}.source-links a{min-height:24px;line-height:24px;vertical-align:middle}.source-links .source-repository{margin-left:0}.source-links svg{display:block;flex-shrink:0}

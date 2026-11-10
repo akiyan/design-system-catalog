@@ -1,0 +1,1175 @@
+[
+  {
+    "id": "agds",
+    "ok": true,
+    "title": "Agriculture Design System",
+    "url": "https://design-system.agriculture.gov.au/",
+    "bodyBackground": "rgb(255, 255, 255)",
+    "bodyColor": "rgb(0, 0, 0)",
+    "samples": [
+      [
+        "rgb(235, 235, 235)",
+        15
+      ],
+      [
+        "rgb(10, 22, 41)",
+        5
+      ],
+      [
+        "rgb(255, 255, 255)",
+        5
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:03:53.542Z"
+  },
+  {
+    "id": "airtable",
+    "ok": true,
+    "title": "AllStylesProps - Airtable Blocks SDK",
+    "url": "https://airtable.com/developers/extensions/api/UI/Style%20System/All%20styles",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(29, 31, 37)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        17
+      ],
+      [
+        "rgb(242, 244, 248)",
+        8
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:09.168Z"
+  },
+  {
+    "id": "ant",
+    "ok": true,
+    "title": "Ant Design - The world's second most popular React UI framework",
+    "url": "https://ant.design/",
+    "bodyBackground": "rgb(255, 255, 255)",
+    "bodyColor": "rgba(0, 0, 0, 0.88)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        20
+      ],
+      [
+        "color(srgb 1 1 1 / 0.3)",
+        5
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:06.307Z"
+  },
+  {
+    "id": "apron",
+    "ok": true,
+    "title": "ERROR: The request could not be satisfied",
+    "url": "https://www.figma.com/community/file/847372282968994272/apron",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(0, 0, 0)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        25
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:10.224Z"
+  },
+  {
+    "id": "arco",
+    "ok": true,
+    "title": "Arco Design - 企业级产品的完整设计和开发解决方案",
+    "url": "https://arco.design/",
+    "bodyBackground": "rgb(255, 255, 255)",
+    "bodyColor": "rgb(0, 0, 0)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        19
+      ],
+      [
+        "rgba(255, 255, 255, 0.2)",
+        6
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:01.460Z"
+  },
+  {
+    "id": "ariakit",
+    "ok": true,
+    "title": "Ariakit - Toolkit for building accessible UIs",
+    "url": "https://ariakit.com/",
+    "bodyBackground": "rgb(252, 253, 253)",
+    "bodyColor": "rgb(0, 0, 0)",
+    "samples": [
+      [
+        "rgb(252, 253, 253)",
+        20
+      ],
+      [
+        "rgb(237, 240, 243)",
+        5
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:18.096Z"
+  },
+  {
+    "id": "astryx",
+    "ok": true,
+    "title": "Astryx Design System",
+    "url": "https://astryx.atmeta.com/",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(0, 0, 0)",
+    "samples": [
+      [
+        "rgb(248, 244, 237)",
+        25
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:03:52.257Z"
+  },
+  {
+    "id": "atlassian",
+    "ok": true,
+    "title": "Atlassian Design",
+    "url": "https://atlassian.design/",
+    "bodyBackground": "rgb(255, 255, 255)",
+    "bodyColor": "rgb(41, 42, 46)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        20
+      ],
+      [
+        "rgb(248, 248, 248)",
+        5
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:07.487Z"
+  },
+  {
+    "id": "audi",
+    "ok": true,
+    "title": "Brand",
+    "url": "https://styleguide.audi.com/",
+    "bodyBackground": "rgb(255, 255, 255)",
+    "bodyColor": "rgb(0, 0, 0)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        25
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:06.000Z"
+  },
+  {
+    "id": "baseweb",
+    "ok": true,
+    "title": "Base Web - Base Web React UI framework",
+    "url": "https://baseweb.design/",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(0, 0, 0)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        21
+      ],
+      [
+        "rgb(0, 0, 0)",
+        4
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:02.306Z"
+  },
+  {
+    "id": "bc",
+    "ok": true,
+    "title": "B.C. Design System - Province of British Columbia",
+    "url": "https://www2.gov.bc.ca/gov/content/digital/design-system",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(41, 41, 41)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        20
+      ],
+      [
+        "rgb(8, 49, 85)",
+        5
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:03:57.170Z"
+  },
+  {
+    "id": "bitsui",
+    "ok": true,
+    "title": "Bits UI – Headless components for Svelte",
+    "url": "https://bits-ui.com/",
+    "bodyBackground": "rgb(255, 255, 255)",
+    "bodyColor": "rgb(23, 23, 23)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        19
+      ],
+      [
+        "rgb(39, 39, 39)",
+        4
+      ],
+      [
+        "rgb(224, 242, 254)",
+        1
+      ],
+      [
+        "rgb(23, 23, 23)",
+        1
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:19.028Z"
+  },
+  {
+    "id": "boosted",
+    "ok": true,
+    "title": "Boosted · Orange Boosted with Bootstrap is a Bootstrap based, Orange branded accessible and ergonomic components library…",
+    "url": "https://boosted.orange.com/",
+    "bodyBackground": "rgb(255, 255, 255)",
+    "bodyColor": "rgb(0, 0, 0)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        24
+      ],
+      [
+        "rgb(0, 0, 0)",
+        1
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:12.296Z"
+  },
+  {
+    "id": "bristol",
+    "ok": true,
+    "title": "Pattern Library | Bristol City Council",
+    "url": "https://style.bristol.gov.uk/",
+    "bodyBackground": "rgb(255, 255, 255)",
+    "bodyColor": "rgb(46, 49, 55)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        25
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:03:55.298Z"
+  },
+  {
+    "id": "calcite",
+    "ok": true,
+    "title": "Calcite Design System | Esri Developer",
+    "url": "https://developers.arcgis.com/calcite-design-system/",
+    "bodyBackground": "rgb(247, 247, 247)",
+    "bodyColor": "rgb(0, 0, 0)",
+    "samples": [
+      [
+        "rgba(0, 0, 0, 0.5)",
+        24
+      ],
+      [
+        "rgb(43, 43, 43)",
+        1
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:13.227Z"
+  },
+  {
+    "id": "canada",
+    "ok": true,
+    "title": "Home | GC Design System",
+    "url": "https://design-system.canada.ca/en/",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(51, 51, 51)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        25
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:03:53.948Z"
+  },
+  {
+    "id": "carbon",
+    "ok": true,
+    "title": "Home | Carbon Design System",
+    "url": "https://www.carbondesignsystem.com/",
+    "bodyBackground": "rgb(244, 244, 244)",
+    "bodyColor": "rgb(22, 22, 22)",
+    "samples": [
+      [
+        "rgb(0, 45, 156)",
+        25
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:02.171Z"
+  },
+  {
+    "id": "cfpb",
+    "ok": true,
+    "title": "Welcome to the CFPB Design System - CFPB Design System",
+    "url": "https://cfpb.github.io/design-system/",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(16, 24, 32)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        25
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:03:55.198Z"
+  },
+  {
+    "id": "charcoal",
+    "ok": true,
+    "title": "README - Docs ⋅ Storybook",
+    "url": "https://charcoal-web.pixiv.design/?path=/docs/readme--docs",
+    "bodyBackground": "rgb(246, 249, 252)",
+    "bodyColor": "rgb(46, 51, 56)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        20
+      ],
+      [
+        "rgb(246, 249, 252)",
+        5
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:03:56.868Z"
+  },
+  {
+    "id": "cloudscape",
+    "ok": true,
+    "title": "Cloudscape Design System",
+    "url": "https://cloudscape.design/",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(0, 0, 0)",
+    "samples": [
+      [
+        "rgb(15, 20, 26)",
+        15
+      ],
+      [
+        "rgb(255, 255, 255)",
+        10
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:03:50.942Z"
+  },
+  {
+    "id": "coinbase",
+    "ok": true,
+    "title": "CDS | Coinbase Design System",
+    "url": "https://cds.coinbase.com/",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(255, 255, 255)",
+    "samples": [
+      [
+        "rgb(30, 32, 37)",
+        17
+      ],
+      [
+        "rgb(20, 21, 25)",
+        8
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:05.807Z"
+  },
+  {
+    "id": "czech",
+    "ok": true,
+    "title": "Rozcestník pro designové manuály | Design systém gov.cz",
+    "url": "https://designsystem.gov.cz/",
+    "bodyBackground": "rgb(246, 246, 246)",
+    "bodyColor": "rgb(38, 38, 38)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        20
+      ],
+      [
+        "rgb(246, 246, 246)",
+        5
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:03:55.129Z"
+  },
+  {
+    "id": "dads",
+    "ok": true,
+    "title": "デジタル庁デザインシステムβ版",
+    "url": "https://design.digital.go.jp/dads/",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(51, 51, 51)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        25
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:03:50.945Z"
+  },
+  {
+    "id": "dbs",
+    "ok": true,
+    "title": "ERROR: The request could not be satisfied",
+    "url": "https://www.figma.com/community/file/1273895245584027076/data-visualisation-dbs-bank",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(0, 0, 0)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        25
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:11.028Z"
+  },
+  {
+    "id": "dsfr",
+    "ok": false,
+    "title": "Just a moment...",
+    "url": "https://www.systeme-de-design.gouv.fr/",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(49, 49, 49)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        25
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:17.376Z"
+  },
+  {
+    "id": "europa",
+    "ok": true,
+    "title": "Europa Component Library",
+    "url": "https://ec.europa.eu/component-library/",
+    "bodyBackground": "rgb(255, 255, 255)",
+    "bodyColor": "rgb(0, 0, 0)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        25
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:03:55.658Z"
+  },
+  {
+    "id": "evergreen",
+    "ok": true,
+    "title": "Evergreen",
+    "url": "https://evergreen.segment.com/",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(0, 0, 0)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        20
+      ],
+      [
+        "rgb(250, 251, 255)",
+        5
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:08.982Z"
+  },
+  {
+    "id": "falcon",
+    "ok": true,
+    "title": "ERROR: The request could not be satisfied",
+    "url": "https://www.figma.com/community/file/1047401907024695662/speeda-designsystem-falcon",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(0, 0, 0)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        25
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:14.263Z"
+  },
+  {
+    "id": "finastra",
+    "ok": true,
+    "title": "Welcome - Page ⋅ Storybook",
+    "url": "https://finastra.github.io/finastra-design-system/?path=/story/welcome--page",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(51, 51, 51)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        25
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:12.061Z"
+  },
+  {
+    "id": "fluent",
+    "ok": true,
+    "title": "Home - Fluent 2 Design System",
+    "url": "https://fluent2.microsoft.design/",
+    "bodyBackground": "rgb(255, 255, 255)",
+    "bodyColor": "rgb(0, 0, 0)",
+    "samples": [
+      [
+        "rgb(238, 235, 240)",
+        16
+      ],
+      [
+        "rgb(255, 255, 255)",
+        9
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:02.461Z"
+  },
+  {
+    "id": "forma36",
+    "ok": true,
+    "title": "Forma 36 - The Contentful Design System",
+    "url": "https://f36.contentful.com/",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(27, 39, 58)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        25
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:08.739Z"
+  },
+  {
+    "id": "francfranc",
+    "ok": true,
+    "title": "Design System - Francfranc Brand Identity",
+    "url": "https://francfranc.io/design-system-guidelines/design-system/",
+    "bodyBackground": "rgb(255, 255, 255)",
+    "bodyColor": "rgb(51, 51, 51)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        25
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:04.961Z"
+  },
+  {
+    "id": "gestalt",
+    "ok": true,
+    "title": "Welcome to Gestalt - Pinterest's Design System",
+    "url": "https://gestalt.pinterest.systems/",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(0, 0, 0)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        25
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:03:52.111Z"
+  },
+  {
+    "id": "govuk",
+    "ok": true,
+    "title": "Home – GOV.UK Design System",
+    "url": "https://design-system.service.gov.uk/",
+    "bodyBackground": "rgb(255, 255, 255)",
+    "bodyColor": "rgb(0, 0, 0)",
+    "samples": [
+      [
+        "rgb(29, 112, 184)",
+        20
+      ],
+      [
+        "rgb(244, 248, 251)",
+        5
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:03:51.896Z"
+  },
+  {
+    "id": "ikyu",
+    "ok": true,
+    "title": "トップ - IKYU Design Guideline",
+    "url": "https://www.ikyu.co.jp/design_guideline/",
+    "bodyBackground": "rgb(255, 255, 255)",
+    "bodyColor": "rgb(0, 0, 0)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        25
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:03.750Z"
+  },
+  {
+    "id": "italia",
+    "ok": true,
+    "title": "Designers Italia",
+    "url": "https://designers.italia.it/",
+    "bodyBackground": "rgb(255, 255, 255)",
+    "bodyColor": "rgb(26, 26, 26)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        25
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:03:53.534Z"
+  },
+  {
+    "id": "kobalte",
+    "ok": true,
+    "title": "Kobalte",
+    "url": "https://kobalte.dev/docs/core/overview/introduction",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(0, 0, 0)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        25
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:21.088Z"
+  },
+  {
+    "id": "kolibri",
+    "ok": true,
+    "title": "Die barrierefreie Web Component Bibliothek | KoliBri - Public UI",
+    "url": "https://public-ui.github.io/",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(28, 30, 33)",
+    "samples": [
+      [
+        "rgb(51, 68, 85)",
+        15
+      ],
+      [
+        "rgb(255, 255, 255)",
+        5
+      ],
+      [
+        "rgb(239, 239, 239)",
+        5
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:16.963Z"
+  },
+  {
+    "id": "kumo",
+    "ok": true,
+    "title": "Kumo",
+    "url": "https://kumo-ui.com/",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "bodyColor": "oklch(0.205 0 none)",
+    "samples": [
+      [
+        "oklch(0.9875 0 0)",
+        24
+      ],
+      [
+        "rgb(255, 255, 255)",
+        1
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:06.958Z"
+  },
+  {
+    "id": "lexicon",
+    "ok": true,
+    "title": "Liferay Design | Articles, Events, and Resources for the Open Source Design Community",
+    "url": "https://design.liferay.com/lexicon",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgba(0, 0, 0, 0.8)",
+    "samples": [
+      [
+        "rgb(11, 95, 255)",
+        19
+      ],
+      [
+        "rgb(255, 255, 255)",
+        6
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:32.483Z"
+  },
+  {
+    "id": "lightning",
+    "ok": true,
+    "title": "Lightning Design System 2",
+    "url": "https://www.lightningdesignsystem.com/2e1ef8501/p/85bd85-lightning-design-system-2",
+    "bodyBackground": "rgb(255, 255, 255)",
+    "bodyColor": "rgb(0, 0, 0)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        25
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:10.611Z"
+  },
+  {
+    "id": "lion",
+    "ok": true,
+    "title": "Lion - Fundamental White Label Web Components",
+    "url": "https://lion.js.org/",
+    "bodyBackground": "rgb(255, 255, 255)",
+    "bodyColor": "rgb(17, 17, 17)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        25
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:12.340Z"
+  },
+  {
+    "id": "monday",
+    "ok": true,
+    "title": "Storybook",
+    "url": "https://vibe.monday.com/",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(46, 52, 56)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        25
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:15.577Z"
+  },
+  {
+    "id": "orbit",
+    "ok": true,
+    "title": "GitHub - kiwicom/orbit: React components of open-source Orbit design system by Kiwi.com · GitHub",
+    "url": "https://github.com/kiwicom/orbit",
+    "bodyBackground": "rgb(255, 255, 255)",
+    "bodyColor": "rgb(31, 35, 40)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        18
+      ],
+      [
+        "rgb(246, 248, 250)",
+        6
+      ],
+      [
+        "rgb(221, 244, 255)",
+        1
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:15.140Z"
+  },
+  {
+    "id": "pajamas",
+    "ok": true,
+    "title": "Pajamas Design System",
+    "url": "https://design.gitlab.com/",
+    "bodyBackground": "rgb(255, 255, 255)",
+    "bodyColor": "rgb(58, 56, 61)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        15
+      ],
+      [
+        "rgb(247, 247, 245)",
+        10
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:00.193Z"
+  },
+  {
+    "id": "paste",
+    "ok": true,
+    "title": "GitHub - twilio-labs/paste: Paste is a design system for designing and building consistent experiences at Twilio. · GitHub",
+    "url": "https://github.com/twilio-labs/paste",
+    "bodyBackground": "rgb(255, 255, 255)",
+    "bodyColor": "rgb(31, 35, 40)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        19
+      ],
+      [
+        "rgb(246, 248, 250)",
+        6
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:04.423Z"
+  },
+  {
+    "id": "patternfly",
+    "ok": true,
+    "title": "PatternFly",
+    "url": "https://www.patternfly.org/",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(21, 21, 21)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        25
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:07.391Z"
+  },
+  {
+    "id": "polaris",
+    "ok": true,
+    "title": "Polaris references",
+    "url": "https://shopify.dev/docs/api/polaris",
+    "bodyBackground": "rgb(255, 255, 255)",
+    "bodyColor": "rgb(68, 71, 74)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        22
+      ],
+      [
+        "rgb(250, 251, 251)",
+        3
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:04.125Z"
+  },
+  {
+    "id": "porsche",
+    "ok": true,
+    "title": "Porsche Design System",
+    "url": "https://designsystem.porsche.com/v4/",
+    "bodyBackground": "rgb(241, 241, 244)",
+    "bodyColor": "rgb(1, 2, 5)",
+    "samples": [
+      [
+        "rgb(241, 241, 244)",
+        23
+      ],
+      [
+        "rgba(175, 175, 182, 0.15)",
+        2
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:05.626Z"
+  },
+  {
+    "id": "primer",
+    "ok": true,
+    "title": "Primer",
+    "url": "https://primer.style/",
+    "bodyBackground": "rgb(255, 255, 255)",
+    "bodyColor": "rgb(0, 0, 0)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        22
+      ],
+      [
+        "rgb(246, 248, 250)",
+        3
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:08.507Z"
+  },
+  {
+    "id": "reactaria",
+    "ok": true,
+    "title": "React Aria",
+    "url": "https://react-aria.adobe.com/",
+    "bodyBackground": "oklch(0.985 0 0)",
+    "bodyColor": "rgb(0, 0, 0)",
+    "samples": [
+      [
+        "oklch(0.985 0 0)",
+        19
+      ],
+      [
+        "rgb(255, 255, 255)",
+        4
+      ],
+      [
+        "lch(0 0 0 / 0.85)",
+        1
+      ],
+      [
+        "lch(0 0 0 / 0.11)",
+        1
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:17.180Z"
+  },
+  {
+    "id": "sansan",
+    "ok": true,
+    "title": "Storybook",
+    "url": "https://ui.one-design-system.sansan.com/",
+    "bodyBackground": "rgb(247, 247, 252)",
+    "bodyColor": "rgb(21, 21, 24)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        20
+      ],
+      [
+        "rgb(247, 247, 252)",
+        5
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:03:59.885Z"
+  },
+  {
+    "id": "semi",
+    "ok": true,
+    "title": "Semi Design",
+    "url": "https://semi.design/zh-CN",
+    "bodyBackground": "rgb(255, 255, 255)",
+    "bodyColor": "rgb(28, 31, 35)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        25
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:03:59.876Z"
+  },
+  {
+    "id": "serendie",
+    "ok": true,
+    "title": "Serendie Design System",
+    "url": "https://serendie.design/",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(0, 0, 0)",
+    "samples": [
+      [
+        "rgb(239, 242, 252)",
+        25
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:03:56.678Z"
+  },
+  {
+    "id": "sgds",
+    "ok": true,
+    "title": "Home – Singapore Government Design System",
+    "url": "https://www.designsystem.tech.gov.sg/",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(26, 26, 26)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        24
+      ],
+      [
+        "rgb(22, 28, 36)",
+        1
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:03:52.350Z"
+  },
+  {
+    "id": "smarthr",
+    "ok": true,
+    "title": "SmartHR Design System",
+    "url": "https://smarthr.design/",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(35, 34, 31)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        15
+      ],
+      [
+        "rgb(0, 196, 204)",
+        10
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:03.895Z"
+  },
+  {
+    "id": "spectrum",
+    "ok": true,
+    "title": "Start with Spectrum",
+    "url": "https://spectrum.adobe.com/",
+    "bodyBackground": "rgb(247, 247, 247)",
+    "bodyColor": "rgb(113, 113, 113)",
+    "samples": [
+      [
+        "rgb(247, 247, 247)",
+        25
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:00.954Z"
+  },
+  {
+    "id": "spindle",
+    "ok": true,
+    "title": "Spindle",
+    "url": "https://spindle.ameba.design/",
+    "bodyBackground": "rgb(255, 255, 255)",
+    "bodyColor": "rgb(8, 18, 26)",
+    "samples": [
+      [
+        "rgb(245, 246, 246)",
+        25
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:03.277Z"
+  },
+  {
+    "id": "sugao",
+    "ok": true,
+    "title": "プロダクトデザインシステム sugao | kaonavi Brand Deck",
+    "url": "https://brand.kaonavi.jp/sugao",
+    "bodyBackground": "rgb(255, 255, 255)",
+    "bodyColor": "rgb(0, 0, 0)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        21
+      ],
+      [
+        "rgb(238, 238, 238)",
+        4
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:03:56.847Z"
+  },
+  {
+    "id": "tdesign",
+    "ok": true,
+    "title": "TDesign - 开源的企业级设计体系，为设计师 & 开发者，打造工作美学",
+    "url": "https://tdesign.tencent.com/",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgba(0, 0, 0, 0.6)",
+    "samples": [
+      [
+        "rgb(245, 245, 245)",
+        15
+      ],
+      [
+        "rgb(255, 255, 255)",
+        10
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:07.605Z"
+  },
+  {
+    "id": "uswds",
+    "ok": true,
+    "title": "USWDS: The United States Web Design System | U.S. Web Design System (USWDS)",
+    "url": "https://designsystem.digital.gov/",
+    "bodyBackground": "rgb(252, 252, 252)",
+    "bodyColor": "rgba(0, 0, 0, 0.8)",
+    "samples": [
+      [
+        "rgb(240, 240, 240)",
+        15
+      ],
+      [
+        "rgb(252, 252, 252)",
+        10
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:03:51.775Z"
+  },
+  {
+    "id": "vaadin",
+    "ok": true,
+    "title": "Design System | Vaadin",
+    "url": "https://vaadin.com/design-system",
+    "bodyBackground": "rgb(255, 255, 255)",
+    "bodyColor": "rgb(63, 77, 98)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        25
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:15.365Z"
+  },
+  {
+    "id": "vibes",
+    "ok": true,
+    "title": "doc / Readme - Docs ⋅ Storybook",
+    "url": "https://vibes.freee.co.jp/?path=/docs/doc-readme--docs",
+    "bodyBackground": "rgb(246, 249, 252)",
+    "bodyColor": "rgb(46, 52, 56)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        25
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:03:58.071Z"
+  },
+  {
+    "id": "vitals",
+    "ok": true,
+    "title": "Ubie Vitals",
+    "url": "https://vitals.ubie.life/",
+    "bodyBackground": "rgb(255, 255, 255)",
+    "bodyColor": "rgb(50, 53, 58)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        20
+      ],
+      [
+        "rgb(240, 242, 252)",
+        5
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:03:58.459Z"
+  },
+  {
+    "id": "vitamin",
+    "ok": true,
+    "title": "Decathlon Design System - Vitamin web libraries showcases",
+    "url": "https://decathlon.github.io/vitamin-web/",
+    "bodyBackground": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(0, 0, 0)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        25
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:09.983Z"
+  },
+  {
+    "id": "wfp",
+    "ok": true,
+    "title": "Storybook",
+    "url": "https://uikit.wfp.org/docs/index.html",
+    "bodyBackground": "rgb(246, 249, 252)",
+    "bodyColor": "rgb(3, 28, 45)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        25
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:04:17.367Z"
+  },
+  {
+    "id": "wise",
+    "ok": true,
+    "title": "Wise Design | Building a System for a Borderless World",
+    "url": "https://wise.design/",
+    "bodyBackground": "rgb(255, 255, 255)",
+    "bodyColor": "rgb(0, 0, 0)",
+    "samples": [
+      [
+        "rgb(255, 255, 255)",
+        25
+      ]
+    ],
+    "checkedAt": "2026-11-10T10:03:59.598Z"
+  }
+]
