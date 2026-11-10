@@ -157,3 +157,6 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 
 - The first official-site screenshot spans the full detail width. Subsequent reference captures remain in a two-column gallery; every image opens enlargement directly.
 - Prioritize the overview when switching systems. Mount later live specimens only near the visible viewport; native iframe lazy loading alone starts too many heavy integrations concurrently. Preserve the sizing handshake and complete natural height.
+
+- Load Google Tag Manager container GTM-N9ZZSCNJ once in the shared catalog page layout. Initialize the data layer before the asynchronous container script. Keep tracking out of isolated specimen documents to avoid counting embedded previews as page views.
+- The configured GA4 container owns initial and History API page views. Do not add duplicate manual page_view events in React.

@@ -260,3 +260,9 @@ Enter now enlarges a selected specimen, including from inside an iframe. Inputs,
 Published source b7a3c3d at https://39f2bee7.design-system-catalog-925.pages.dev. Six focused production checks passed in 3.6 seconds. Same-domain production benchmark (three switches per system, no throttling) median click-to-ready: Fluent 265→194ms; DADS 241→176ms; Ant 680→237ms; Astryx 193→140ms. Ant initial request count dropped from 171 to 38. The small-sample timings include network variability; complete method and raw results are in system-switch-performance.json.
 
 Shadow DOM feasibility: Ant Design officially supports CSS insertion into a ShadowRoot with StyleProvider (https://ant.design/docs/react/compatible-style/); popup containers require separate ConfigProvider/getContainer configuration (https://ant.design/components/config-provider/). Existing adapters load independent global styles, use multiple CSS-in-JS engines and native/custom-element implementations. A migration requires adapter-level handling of stylesheet targets, root selectors, portals and focus. This release retains iframe isolation and removes excess concurrent loading.
+
+## Google Tag Manager and GA4
+
+Added GTM-N9ZZSCNJ to the shared catalog layout with data-layer initialization before its async script and the noscript fallback immediately after body. The published container configures GA4 G-3H0GVLHTFF. All 68 catalog HTML pages include the container once; all 245 isolated specimen HTML pages exclude it.
+
+Headless verification loads the real published container but intercepts Analytics collection requests with HTTP 204 so test visits do not pollute reports. Parsed both query parameters and batched POST lines. Verified exactly one initial page_view, one selection page_view and one Back-navigation page_view with matching titles, and only one container initialization. No manual React page_view code was added because enhanced History API measurement already handles navigation.
