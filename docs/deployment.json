@@ -2,7 +2,7 @@
   "project": "design-system-catalog",
   "subdomain": "design-system-catalog-925.pages.dev",
   "productionBranch": "main",
-  "deploymentURL": "https://a78c6cf5.design-system-catalog-925.pages.dev",
+  "deploymentURL": "https://5f6a7527.design-system-catalog-925.pages.dev",
   "deploymentStatus": "success",
   "usesFunctions": false,
   "url": "https://design-system-catalog.akiyan.tokyo/",
@@ -22,5 +22,9 @@
   "customDomain": "design-system-catalog.akiyan.tokyo",
   "referencePreviews": 32,
   "customDomainStatus": "active",
-  "https": true
+  "https": true,
+  "sourceCommit": "059360799e68bfe15e20a9ebd4ec01afb5a96923",
+  "productionBrowserChecks": 136,
+  "productionBrowserCheckSeconds": 30.4,
+  "verifiedAt": "2026-11-10T00:07:44.918306+00:00"
 }

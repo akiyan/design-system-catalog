@@ -108,3 +108,5 @@ Thumbnail headings identify each system; short descriptions name its provider. L
 All nine reference/host-dependent entries show source captures with 32 previews in total. Eleven additional captures cover sugao, Airtable, Apron, DBS and FALCON. Reference captures remain labeled and link to their original pages; live specimens keep official package provenance.
 
 The canonical origin is https://design-system-catalog.akiyan.tokyo. Cloudflare Pages domain registration and a proxied CNAME target the existing Pages project. Canonical tags, sitemap, robots.txt and llms.txt use the custom domain.
+
+Production verification: PASS at https://design-system-catalog.akiyan.tokyo after deployment https://5f6a7527.design-system-catalog-925.pages.dev (source commit 0593607). All 136 browser checks passed in 30.4 seconds. HTTPS and the Cloudflare custom-domain verification/validation statuses are active. Root, individual catalog paths, robots.txt, llms.txt and the 68-path sitemap return successfully from the custom origin. The final build contains 244 static HTML pages, 176 full specimen images and 176 compact specimen images.
