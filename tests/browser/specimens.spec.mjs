@@ -45,13 +45,16 @@ test('nonimplemented systems explicitly show resources without fabricated specim
 
 test('next and previous system navigation reset typography to the overview',async({page})=>{
  await page.setViewportSize({width:390,height:844});await page.goto('/fluent/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
+ const waitForLayout=async()=>{const root=page.frameLocator('.main-preview iframe').locator('#specimen-root');await expect(root).toHaveAttribute('data-ready','true');const height=await root.evaluate(el=>Math.ceil(el.scrollHeight));await expect(page.locator('.main-preview iframe')).toHaveJSProperty('clientHeight',height);};
+ await waitForLayout();
  await page.locator('.view-thumbnail').filter({hasText:'タイポグラフィ'}).click();
  await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/fluent\/typography\//);
  await page.getByRole('link',{name:'次のデザインシステム',exact:true}).click();
  await expect(page).toHaveURL(/\/dads\/$/);await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/dads\/overview\//);
  await page.getByRole('link',{name:'前のデザインシステム',exact:true}).click();
  await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/fluent\/overview\//);
- await page.locator('.view-thumbnail').filter({hasText:'タイポグラフィ'}).click();await page.keyboard.press('j');
+ await waitForLayout();
+ await page.locator('.view-thumbnail').filter({hasText:'タイポグラフィ'}).click();await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/fluent\/typography\//);await page.keyboard.press('j');
  await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/dads\/overview\//);
 });
 
