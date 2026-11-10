@@ -132,3 +132,5 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 
 - Specimen canvases and thumbnail padding follow the official site's base palette. Use genuine library theme APIs for dark components (Coinbase CDS and Cloudscape). Keep observed cream, lavender and gray canvases instead of forcing all specimens to white. Record palette evidence and theme configuration in the registry; ignore transient overlays and colored marketing hero panels when identifying the documentation canvas. Reference-only entries keep their original official screenshots.
 - Load each integration's published font/reset entry points where required. Coinbase CDS uses `defaultFontStyles` and `globalStyles` together with its genuine Text typography and dark ThemeProvider.
+
+- Specimen sizing uses a parent/request and iframe/response handshake on listener attachment and frame load. Static SSR frames can finish before React hydration; never rely only on the first size notification.

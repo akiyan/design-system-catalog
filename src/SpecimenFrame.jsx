@@ -15,7 +15,10 @@ export default function SpecimenFrame({system,index,language,onSwipe,onKey,expan
    if(event.data?.type==='catalog-specimen-swipe')onSwipe?.(event.data.direction);
    if(event.data?.type==='catalog-specimen-key')onKey?.(event.data.key);
   };
-  window.addEventListener('message',receive);return()=>window.removeEventListener('message',receive);
+  const frame=ref.current;
+  const requestSize=()=>frame?.contentWindow?.postMessage({type:'catalog-specimen-measure'},location.origin);
+  window.addEventListener('message',receive);frame?.addEventListener('load',requestSize);requestSize();
+  return()=>{window.removeEventListener('message',receive);frame?.removeEventListener('load',requestSize)};
  },[onSwipe,onKey,expanded]);
  return <iframe ref={ref} key={url} className={`specimen-frame ${expanded?'expanded':''}`} src={url} title={`${system.shortName} — ${language==='en'?system.views[index].labelEn:system.views[index].label}`} style={{height}} sandbox="allow-scripts allow-same-origin allow-forms"/>;
 }

@@ -1633,8 +1633,8 @@
     "id": "polaris",
     "view": "dialog",
     "ok": true,
-    "height": 366,
-    "naturalHeight": 366,
+    "height": 418,
+    "naturalHeight": 416,
     "outerScrollable": true,
     "innerScroll": 0,
     "innerOverflow": 0

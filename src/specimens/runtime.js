@@ -9,6 +9,10 @@ if(params.has('compact'))document.documentElement.classList.add('specimen-compac
 document.documentElement.lang=language;
 if(new URLSearchParams(location.search).has('thumbnail'))document.documentElement.classList.add('specimen-thumbnail');
 function notify(){parent.postMessage({type:'catalog-specimen-size',height:Math.ceil(Math.max(root.scrollHeight,root.getBoundingClientRect().height))+2},location.origin)}
+// SSR frames may finish before the catalog hydrates. Answer the parent's size handshake.
+window.addEventListener('message',event=>{
+ if(event.origin===location.origin&&event.source===parent&&event.data?.type==='catalog-specimen-measure'&&root.dataset.ready==='true')notify();
+});
 try {
  const module=await modules[`./adapters/${root.dataset.adapter}.jsx`]?.() || await modules[`./adapters/${root.dataset.adapter}.js`]?.();
  if(!module)throw new Error('Implementation adapter unavailable');

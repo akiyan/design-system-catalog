@@ -128,3 +128,5 @@ final result: passed
 ## Rich comparison update — 2026-11-10
 
 Passed: preserved list/detail layout; richer overviews; four new component categories; official-site palettes; compact heading; aligned source links; simplified footer. Evidence and final validation are recorded in `docs/design-qa.md`. The static build, 171 browser checks and all 233 view scroll audits pass.
+
+Loading-order follow-up also passed: explicit iframe sizing handshake handles specimens loaded before catalog hydration. Final local checks: 172 browser tests and all 233 scroll-audit views.

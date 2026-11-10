@@ -62,3 +62,18 @@ test('Digital Agency modal stays the same height after opening and Escape closes
  await frame.getByRole('button',{name:'公開する',exact:true}).focus();await page.keyboard.press('Escape');await expect(frame.getByRole('dialog')).toBeHidden();
  await expect(page).toHaveURL(/\/dads\/$/);
 });
+
+test('a specimen loaded before catalog hydration answers the parent size handshake',async({page})=>{
+ let release;const gate=new Promise(resolve=>{release=resolve});
+ await page.route('**/_astro/*.js',async route=>{await gate;await route.continue()});
+ try{
+  await page.goto('/fluent/',{waitUntil:'commit'});
+  const frame=page.frameLocator('.main-preview iframe');
+  await expect(frame.locator('#specimen-root')).toHaveAttribute('data-ready','true');
+  await expect(page.locator('.catalog-app')).not.toHaveAttribute('data-ready','true');
+  release();await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true',{timeout:15000});
+  const height=await frame.locator('#specimen-root').evaluate(el=>Math.ceil(Math.max(el.scrollHeight,el.getBoundingClientRect().height))+2);
+  await expect(page.locator('.main-preview iframe')).toHaveJSProperty('clientHeight',height);
+  await expect.poll(()=>frame.locator('html').evaluate(()=>document.scrollingElement.scrollHeight<=innerHeight)).toBe(true);
+ }finally{release()}
+});
