@@ -156,3 +156,5 @@ The two focused home/history and comparison-navigation checks passed in 1.0 seco
 ## Remove comparison headings — 2026-11-10
 
 Removed the overview/table/alert example headings in both languages. Retained all six genuine specimen cards and their system labels, with the existing spacing between pairs. Reviewed the updated desktop capture and refreshed the 900px English capture.
+
+Static pnpm build and the two focused home checks passed (1.1s). Deployed source 58b9384 to https://1751cc0d.design-system-catalog-925.pages.dev. The production comparison-navigation check, including absence of comparison headings, passed in 1.6 seconds.

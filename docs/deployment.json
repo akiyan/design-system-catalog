@@ -2,7 +2,7 @@
   "project": "design-system-catalog",
   "subdomain": "design-system-catalog-925.pages.dev",
   "productionBranch": "main",
-  "deploymentURL": "https://fc6fc481.design-system-catalog-925.pages.dev",
+  "deploymentURL": "https://1751cc0d.design-system-catalog-925.pages.dev",
   "deploymentStatus": "success",
   "usesFunctions": false,
   "url": "https://design-system-catalog.akiyan.tokyo/",
@@ -23,8 +23,8 @@
   "referencePreviews": 32,
   "customDomainStatus": "active",
   "https": true,
-  "sourceCommit": "2b0fd0108c1c6f447c479e304585a211db55f57c",
-  "verifiedAt": "2026-11-10T04:37:13.134206+00:00",
+  "sourceCommit": "58b9384156c718bc62df218f2b7ebb72092a114e",
+  "verifiedAt": "2026-11-10T04:46:36.376677+00:00",
   "packageManager": "pnpm@12.18.0",
   "richTypographyImplementations": 12,
   "featuredIds": [
@@ -34,7 +34,7 @@
     "ant",
     "primer"
   ],
-  "productionVerification": "Japanese/English prompt: 13px, normal weight, muted gray, decorative left arrow; introduction stays hidden on mobile",
+  "productionVerification": "Comparison headings removed; all six cards retained; matching specimen navigation and government filtering passed in Japanese/English",
   "localBrowserChecks": 2,
-  "localBrowserCheckSeconds": 1.0
+  "localBrowserCheckSeconds": 1.1
 }
