@@ -182,11 +182,12 @@ test('addition requests link to the issue form in both languages without mobile 
  for(const width of [320,390,900,1440]){await page.setViewportSize({width,height:844});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await expect(link).toBeVisible();}
 });
 
-test('headless libraries display two-column screenshot galleries with direct enlargement',async({page})=>{
+test('headless libraries display a full-width first capture and two-column subsequent captures',async({page})=>{
  for(const id of ['reactaria','ariakit','lion','kobalte','bitsui']){
   await page.goto(`/${id}/`);await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');await expect(page.locator('.main-preview')).toHaveCount(0);
   await expect(page.locator('.reference-thumbnail img').first()).toHaveAttribute('src',`/previews/${id}-0.webp`);await expect(page.locator('.reference-notice')).toHaveCount(0);
   expect(await page.locator('.reference-gallery').evaluate(e=>getComputedStyle(e).gridTemplateColumns.split(' ').length)).toBe(2);
+  const first=await page.locator('.reference-item').first().boundingBox(), second=await page.locator('.reference-item').nth(1).boundingBox();expect(first.width).toBeGreaterThan(second.width*1.9);expect(second.y).toBeGreaterThanOrEqual(first.y+first.height);
   await page.locator('.reference-thumbnail').nth(1).click();await expect(page.locator('.zoom-dialog img')).toHaveAttribute('src',`/previews/${id}-1.webp`);await page.keyboard.press('Escape');
  }
 });

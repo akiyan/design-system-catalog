@@ -243,7 +243,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
       } else if (['ArrowLeft', 'ArrowRight', 'h', 'l'].includes(event.key)) {
         event.preventDefault();
         movePreview(['ArrowRight', 'l'].includes(event.key) ? 1 : -1);
-      } else if (event.key === 'v') {
+      } else if (event.key === 'v' || (event.key === 'Enter' && (!(event.target instanceof Element) || !event.target.closest('button,a[href],summary,[role="button"],[role="tab"],[role="checkbox"],[role="switch"]') || event.target.closest('.system-row[aria-current="page"]')))) {
         event.preventDefault();
         setZoomOpen(true);
       } else if (event.key === 'o') {
@@ -260,7 +260,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
 
   const keyboardRows = [
     [['↓', '↑', 'J', 'K'], t.move], [['Home', 'End'], t.firstLast], [['←', '→', 'H', 'L'], t.changeView],
-    [['V'], t.openZoom], [['O'], t.openSite], [['?'], t.showHelp], [['Esc'], t.dismiss],
+    [['Enter', 'V'], t.openZoom], [['O'], t.openSite], [['?'], t.showHelp], [['Esc'], t.dismiss],
     [['Tab', 'Shift + Tab'], t.tab], [['Enter', 'Space'], t.activate],
   ];
 

@@ -2,6 +2,16 @@ import {useEffect,useRef,useState} from 'react';
 export const specimenUrl=(system,index=0,language='ja')=>`${system.views[index]?.url || system.views[0].url}?lang=${language}`;
 export default function SpecimenFrame({system,index,language,onSwipe,onKey,expanded=false,compact=false,lazy=false}) {
  const ref=useRef(null);const [height,setHeight]=useState(360);
+ const [visible,setVisible]=useState(!lazy);
+ useEffect(()=>{
+  if(!lazy||visible)return;
+  // Native iframe loading=lazy starts several screens ahead and competes with the overview.
+  const observer=new IntersectionObserver(entries=>{
+   if(entries.some(entry=>entry.isIntersecting)){setVisible(true);observer.disconnect()}
+  },{rootMargin:"120px 0px"});
+  if(ref.current)observer.observe(ref.current);
+  return()=>observer.disconnect();
+ },[lazy,visible]);
  const url=specimenUrl(system,index,language)+'&embedded=1'+(compact?'&compact=1':'');
  useEffect(()=>{setHeight(360)},[url]);
  useEffect(()=>{
@@ -20,5 +30,5 @@ export default function SpecimenFrame({system,index,language,onSwipe,onKey,expan
   window.addEventListener('message',receive);frame?.addEventListener('load',requestSize);requestSize();
   return()=>{window.removeEventListener('message',receive);frame?.removeEventListener('load',requestSize)};
  },[onSwipe,onKey,expanded]);
- return <iframe ref={ref} key={url} className={`specimen-frame ${expanded?'expanded':''}`} src={url} loading={lazy?'lazy':'eager'} title={`${system.shortName} — ${language==='en'?system.views[index].labelEn:system.views[index].label}`} style={{height}} sandbox="allow-scripts allow-same-origin allow-forms"/>;
+ return <iframe ref={ref} key={url} className={`specimen-frame ${expanded?'expanded':''}`} src={visible?url:undefined} loading="eager" data-deferred={!visible||undefined} title={`${system.shortName} — ${language==='en'?system.views[index].labelEn:system.views[index].label}`} style={{height}} sandbox="allow-scripts allow-same-origin allow-forms"/>;
 }

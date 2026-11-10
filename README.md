@@ -64,7 +64,7 @@ Capture manifests are saved under `docs/`. Authentication-required source pages 
 | Down / Up or J / K | Select the next / previous system |
 | Home / End | Select the first / last system |
 | Left / Right or H / L | Scroll between specimens; switch inside enlarged view |
-| V | Enlarge the preview |
+| Enter / V | Enlarge the preview (native Enter activation takes precedence on controls) |
 | O | Open the official site |
 | ? | Show or hide shortcut help |
 | Esc | Close overlay or return to the mobile list |

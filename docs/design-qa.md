@@ -248,3 +248,11 @@ Published gallery/spacing source 12d9871 at https://b2868dfa.design-system-catal
 Follow-up: horizontal navigation now clamps at the first and last specimen/reference, both in the scrolling gallery and enlarged viewer. Boundary buttons are disabled. Two new boundary regressions cover a live system and a screenshot-only system; five focused local browser checks passed in 1.9 seconds.
 
 Boundary follow-up source b3592ef was published at https://7cadb3e8.design-system-catalog-925.pages.dev. Five focused production checks passed in 4.9 seconds. Added a globe-icon official-site link after the detail pane’s source/usage information. Verified the destination and new-tab behavior for live and screenshot galleries and the English label. Evidence: docs/detail-official-site-end.png.
+
+## Deferred specimen loading and enlarged first reference capture
+
+The first reference screenshot now spans both gallery columns. Subsequent captures stay in two columns and open directly in the enlarged viewer. Checked desktop 1920×1080 and mobile 390×844; evidence: reference-gallery-first-large.png and reference-gallery-first-large-mobile.png.
+
+Secondary live specimens now receive their URL only when within 120px of the visible viewport. Native iframe lazy loading previously initialized five to nine specimens during switching. The eager overview and sizing handshake remain intact. The new regression verifies an offscreen specimen stays unloaded until scrolling, then initializes, and system switching resets the pane.
+
+Enter now enlarges a selected specimen, including from inside an iframe. Inputs, links and buttons retain native activation. All 198 existing browser checks passed in 13.8 seconds; the new deferred-loading regression and Enter check passed separately (2 checks, 1.6 seconds).

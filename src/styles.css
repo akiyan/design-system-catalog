@@ -143,6 +143,7 @@ a.system-row{cursor:pointer}
 .component-preview{border:1px solid #cbd1dd;border-radius:6px;overflow:hidden}
 .preview-heading>.official-link{width:auto;padding:0 9px;gap:6px;font-size:12px;white-space:nowrap;flex-shrink:0}
 .reference-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 16px}
+.reference-item:first-child{grid-column:1/-1}
 .reference-item{margin:0;min-width:0;scroll-margin-top:20px}
 .reference-thumbnail{display:block;width:100%;padding:0;border:1px solid #dce0e7;border-radius:5px;overflow:hidden;aspect-ratio:1.44;background:#f7f8fa;cursor:zoom-in}
 .reference-thumbnail img{width:100%;height:100%;object-fit:contain;object-position:top}

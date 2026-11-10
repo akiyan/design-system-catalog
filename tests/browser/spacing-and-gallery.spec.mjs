@@ -32,3 +32,18 @@ for(const id of ['astryx','bitsui'])test(`${id}: horizontal navigation stops at 
  for(let i=0;i<count+2;i++)await page.keyboard.press('h');await expect(page.locator('.zoom-navigation')).toContainText(`1 / ${count}`);
  await page.keyboard.press('Escape');await page.keyboard.press('h');await page.keyboard.press('v');await expect(page.locator('.zoom-navigation')).toContainText(`1 / ${count}`);
 });
+test('Enter enlarges the selected specimen while buttons, fields and links retain native activation',async({page,context})=>{
+ await page.goto('/astryx/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
+ await page.keyboard.press('Enter');await expect(page.locator('.zoom-dialog')).toBeVisible();await page.keyboard.press('Escape');
+ await page.locator('.system-row[aria-current="page"]').focus();await page.keyboard.press('Enter');await expect(page.locator('.zoom-dialog')).toBeVisible();await page.keyboard.press('Escape');
+ const frame=page.frameLocator('.main-preview iframe');await frame.getByRole('button',{name:'変更を保存',exact:true}).press('Enter');await expect(frame.locator('.specimen-status')).toHaveText('変更を保存しました');await expect(page.locator('.zoom-dialog')).not.toBeVisible();
+ await frame.getByRole('textbox').press('Enter');await expect(page.locator('.zoom-dialog')).not.toBeVisible();
+ await frame.getByRole('heading',{level:1}).click();await page.keyboard.press('Enter');await expect(page.locator('.zoom-dialog')).toBeVisible();await page.keyboard.press('Escape');
+ await context.route('https://astryx.atmeta.com/',route=>route.fulfill({body:'Official site',contentType:'text/html'}));await page.locator('.preview-heading>.official-link').focus();const popup=page.waitForEvent('popup');await page.keyboard.press('Enter');const opened=await popup;await opened.waitForLoadState();await opened.close();await expect(page.locator('.zoom-dialog')).not.toBeVisible();
+});
+test('offscreen specimens wait for viewport proximity and initialize when scrolled into view',async({page})=>{
+ await page.goto('/ant/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');await expect(page.frameLocator('.main-preview iframe').locator('#specimen-root')).toHaveAttribute('data-ready','true');
+ const extra=page.locator('.component-section[data-view="components"] iframe');await expect(extra).toHaveAttribute('data-deferred','true');await expect(extra).not.toHaveAttribute('src');
+ await extra.scrollIntoViewIfNeeded();await expect(extra).toHaveAttribute('src',/\/ant\/components\//);await expect(extra.contentFrame().locator('#specimen-root')).toHaveAttribute('data-ready','true');await expect(extra).not.toHaveAttribute('data-deferred');
+ await page.locator('.system-row[href="/dads/"]').click();await expect(page.locator('.preview-panel')).toHaveJSProperty('scrollTop',0);await expect(page.frameLocator('.main-preview iframe').locator('#specimen-root')).toHaveAttribute('data-ready','true');await expect(page.locator('.component-section[data-view="components"] iframe')).not.toHaveAttribute('src');
+});

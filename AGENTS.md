@@ -153,3 +153,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Audit overview, form, typography, table, alert, card, dialog, code and chat surfaces for missing padding, touching text and overflow. Source captures must match corrected live components.
 - Left/Right and H/L stop at the first and last specimen or reference image. Never wrap. Enlargement navigation buttons are disabled at their corresponding boundary.
 - Include a globe-icon official-site link at the end of the detail pane, after usage/source information, for both live and reference galleries.
+- Enter, like V, enlarges the current specimen from a non-interactive surface or the selected catalog row. Preserve native Enter activation in inputs, buttons, links, disclosure summaries and other interactive widgets, including inside specimen frames.
+
+- The first official-site screenshot spans the full detail width. Subsequent reference captures remain in a two-column gallery; every image opens enlargement directly.
+- Prioritize the overview when switching systems. Mount later live specimens only near the visible viewport; native iframe lazy loading alone starts too many heavy integrations concurrently. Preserve the sizing handshake and complete natural height.
