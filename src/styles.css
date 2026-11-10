@@ -121,8 +121,8 @@ a.system-row{cursor:pointer}
  .catalog-home .list-preview-categories{top:-18px;margin:-4px 0 0;padding:10px 0 12px}
  .catalog-home .list-toolbar{margin:0;padding:0 0 2px}
  .catalog-home .list-section-heading{padding-top:18px;margin-top:4px}
- .catalog-home .system-row{display:flex;flex-direction:column;align-items:stretch;gap:10px;min-height:0;padding:12px;border:0;border-radius:0;background:transparent}
- .catalog-home .system-row:hover{background:#f8faff}
+ .catalog-home .system-row{display:flex;flex-direction:column;align-items:stretch;gap:10px;min-height:0;padding:12px;border:0;border-radius:6px;background:#f7f8fa}
+ .catalog-home .system-row:hover{background:#eef2f7}
  .catalog-home .row-image{flex:none;aspect-ratio:2.15;border:0;border-radius:0}
  .catalog-home .row-copy{padding:0 2px 2px}
  .catalog-home .system-name{font-size:16px;line-height:1.45;letter-spacing:-.025em}

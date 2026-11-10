@@ -137,7 +137,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Selecting a grid card opens its path and switches to the existing left list/right detail layout. Direct system paths use that detail layout. Browser Back to the root restores the grid and its scroll position. Grid cards are reachable with Tab; keep existing J/K and arrow shortcuts.
 - Mobile retains the current list/detail flow.
 
-- Desktop home grid items have no enclosing card border. Remove decorative thumbnail frames as well; preserve specimen content and a visible keyboard focus outline.
+- Desktop home grid cards group the thumbnail and all metadata on a very subtle #f7f8fa background with 6px corners and 12px padding. Do not add enclosing borders, shadows or decorative thumbnail frames. Preserve a visible keyboard focus outline. The user rejected all three generated grid alternatives in favor of this simple whole-card tint.
 - Do not draw a separator line between the featured group and the remaining catalog systems.
 
 - Capture list thumbnails from a smaller 640×300 screen excerpt so native text and controls remain legible. Do not auto-widen the capture or shrink the whole document to fit. Dialog thumbnails capture their actual surface at a 800×600 viewport; full detail previews keep all content.
