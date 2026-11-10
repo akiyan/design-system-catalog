@@ -213,3 +213,24 @@ test('headless libraries clearly identify their native unstyled appearance',asyn
  await page.frameLocator('.main-preview iframe').getByRole('textbox').first().fill('Accessible input');
  await expect(page.frameLocator('.main-preview iframe').getByRole('textbox').first()).toHaveValue('Accessible input');
 });
+
+
+test('home comparison examples open the matching specimen and respect the active category',async({page})=>{
+ await page.goto('/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
+ await expect(page.locator('.catalog-introduction h1')).toHaveText('デザインシステムを選んで下さい');
+ await expect(page.locator('.welcome-stats,.welcome-intro')).toHaveCount(0);
+ const links=page.locator('.welcome-comparison a');await expect(links).toHaveCount(6);
+ expect(new Set(await links.evaluateAll(elements=>elements.map(el=>el.getAttribute('href')))).size).toBe(6);
+ await page.locator('.welcome-comparison[data-view=table] a[href="/carbon/"]').click();
+ await expect(page).toHaveURL(/\/carbon\/$/);await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/carbon\/table\//);
+ await expect(page.locator('.list-preview-categories button[aria-pressed=true]')).toHaveText('テーブル');
+ await page.goBack();await expect(page.locator('.catalog-introduction')).toBeVisible();
+ await page.locator('.welcome-comparison[data-view=alerts] a[href="/primer/"]').click();
+ await expect(page.locator('.main-preview iframe')).toHaveAttribute('src',/primer\/alerts\//);
+ await page.goBack();await page.getByRole('button',{name:'政府・公共 15',exact:true}).click();
+ const hrefs=await links.evaluateAll(elements=>elements.map(el=>el.getAttribute('href')));
+ for(const href of hrefs)await expect(page.locator(`.system-row[href="${href}"]`)).toBeVisible();
+ await page.getByRole('button',{name:'English',exact:true}).click();
+ await expect(page.locator('.catalog-introduction h1')).toHaveText('Please select a design system');
+ await expect(page.locator('.welcome-comparison[data-view=table] h2')).toHaveText('Table comparison');
+});

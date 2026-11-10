@@ -138,3 +138,9 @@ Deployed source 2caefd0 to https://15e30acf.design-system-catalog-925.pages.dev.
 The desktop .akiyan.tokyo suffix is now 3pt smaller than the site name with font-weight 400. Japanese and English computed-style checks confirm a 4px (3pt) difference and normal weight; the header screenshot was reviewed. Document titles remain unchanged.
 
 Static pnpm build passed. Deployed source 0623d82 to https://41d042d3.design-system-catalog-925.pages.dev and confirmed the 3pt size difference plus font-weight 400 in both languages on the custom production domain.
+
+## Category comparison examples on the unselected home — 2026-11-10
+
+Replaced the introductory headline, description and system count with the requested Japanese selection prompt and its English equivalent in a 160px-high area. The comparison section now includes distinct system pairs: Astryx/Fluent overview, Carbon/Ant Design tables and Primer/Cloudscape alerts. All six images use existing captures of genuine locally rendered components. Example selection opens the matching specimen category and updates the list comparison category. Active government/company filters constrain eligible examples. Retained the 3pt smaller domain suffix with normal font weight.
+
+Reviewed desktop, 900px English and scrolled alert captures against the previous layout. Static pnpm build passed. All 141 browser checks passed in 13.5 seconds, including a new behavior check for matching-category example navigation and government-filter eligibility.
