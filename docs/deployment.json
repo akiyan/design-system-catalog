@@ -2,7 +2,7 @@
   "project": "design-system-catalog",
   "subdomain": "design-system-catalog-925.pages.dev",
   "productionBranch": "main",
-  "deploymentURL": "https://1751cc0d.design-system-catalog-925.pages.dev",
+  "deploymentURL": "https://d89779e2.design-system-catalog-925.pages.dev",
   "deploymentStatus": "success",
   "usesFunctions": false,
   "url": "https://design-system-catalog.akiyan.tokyo/",
@@ -23,8 +23,8 @@
   "referencePreviews": 32,
   "customDomainStatus": "active",
   "https": true,
-  "sourceCommit": "58b9384156c718bc62df218f2b7ebb72092a114e",
-  "verifiedAt": "2026-11-10T04:46:36.376677+00:00",
+  "sourceCommit": "7c7e319a6554528f34117d49bab91e01c8a62ae8",
+  "verifiedAt": "2026-11-10T09:14:49.505398+00:00",
   "packageManager": "pnpm@12.18.0",
   "richTypographyImplementations": 12,
   "featuredIds": [
@@ -34,7 +34,11 @@
     "ant",
     "primer"
   ],
-  "productionVerification": "Comparison headings removed; all six cards retained; matching specimen navigation and government filtering passed in Japanese/English",
-  "localBrowserChecks": 2,
-  "localBrowserCheckSeconds": 1.1
+  "productionVerification": "Wheel input scrolls the outer detail/zoom pane; 440px desktop preview cap, concise bilingual descriptions, native headless styling and selected favicon PNG/ICO verified",
+  "localBrowserChecks": 143,
+  "localBrowserCheckSeconds": 13.1,
+  "productionBrowserChecks": 3,
+  "productionBrowserCheckSeconds": 5.6,
+  "previewScrollAudit": 176,
+  "favicon": true
 }
