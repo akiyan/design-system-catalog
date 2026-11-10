@@ -2,7 +2,7 @@
   "project": "design-system-catalog",
   "subdomain": "design-system-catalog-925.pages.dev",
   "productionBranch": "main",
-  "deploymentURL": "https://b97d73c7.design-system-catalog-925.pages.dev",
+  "deploymentURL": "https://3e5af44a.design-system-catalog-925.pages.dev",
   "deploymentStatus": "success",
   "usesFunctions": false,
   "url": "https://design-system-catalog.akiyan.tokyo/",
@@ -23,8 +23,8 @@
   "referencePreviews": 51,
   "customDomainStatus": "active",
   "https": true,
-  "sourceCommit": "732e2ab5cf4f621ef94c9ccec0772cd3e5ff618c",
-  "verifiedAt": "2026-11-10T10:49:29.608644+00:00",
+  "sourceCommit": "1e7f7b4986ac0ce696f1a7ecc85ec92443816065",
+  "verifiedAt": "2026-11-10T12:22:36.961851+00:00",
   "packageManager": "pnpm@12.18.0",
   "richTypographyImplementations": 12,
   "featuredIds": [
@@ -34,11 +34,11 @@
     "ant",
     "primer"
   ],
-  "productionVerification": "Desktop home displays all 67 systems in a responsive thumbnail grid; selecting a card opens list/detail; Back restores grid scroll. Eight production checks passed for grid density, filters, paths, history, keyboard, mobile and complete iframe sizing.",
+  "productionVerification": "Borderless desktop home with no featured-group separator; 233 native-size list thumbnail excerpts; official-site links in detail headings. Five focused production browser checks passed.",
   "localBrowserChecks": 172,
   "localBrowserCheckSeconds": 18.1,
-  "productionBrowserChecks": 8,
-  "productionBrowserCheckSeconds": 5.0,
+  "productionBrowserChecks": 5,
+  "productionBrowserCheckSeconds": 2.7,
   "previewScrollAudit": 233,
   "favicon": true,
   "referenceOnlyEntries": 5,
@@ -50,5 +50,14 @@
   "productionImageChecks": 466,
   "officialPaletteURLsChecked": 67,
   "officialPaletteURLsInspectable": 66,
-  "homeLayout": "desktop-thumbnail-grid"
+  "homeLayout": "desktop-thumbnail-grid",
+  "thumbnailViewport": {
+    "width": 640,
+    "height": 300
+  },
+  "dialogThumbnailViewport": {
+    "width": 800,
+    "height": 600
+  },
+  "thumbnailCaptureChecks": 233
 }

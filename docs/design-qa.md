@@ -212,3 +212,5 @@ Published source 732e2ab at https://b97d73c7.design-system-catalog-925.pages.dev
 ## Readable thumbnail excerpts and official heading links — 2026-11-10
 
 Removed enclosing home-grid borders, decorative thumbnail outlines and the featured-group separator. Replaced adaptive whole-document shrinking with 640×300 screen excerpts for list thumbnails. Dialogs use an 800×600 viewport and their genuine dialog surface; smaller mobile breakpoints can have zero-height dialog wrappers. Recaptured all 233 list thumbnails successfully and verified every output is 480×224 WebP. Full detail previews and full specimen captures remain unchanged. The detail title now links to its official site in a new tab, preserving heading appearance and keyboard focus. Five focused browser checks pass. Visual evidence: docs/home-grid-readable-thumbnails.png. Grid strengthening alternatives were generated separately for user selection; none has been implemented.
+
+Published source 1e7f7b4 at https://3e5af44a.design-system-catalog-925.pages.dev and the canonical custom domain. Five focused production browser checks passed in 2.7 seconds.
