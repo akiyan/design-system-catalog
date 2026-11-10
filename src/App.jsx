@@ -339,6 +339,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
         <div className="release-info"><span>{t.released}</span><time dateTime={selected.published.date}>{selected.published.date}</time>{selected.published.estimated && <span className="date-reference">{t.reference}</span>}</div>
         <details className="release-details" open={!isMobile}><summary>{t.releaseNote}</summary><p>{selected.published.note[language]}</p><a href={selected.published.sourceUrl} target="_blank" rel="noopener noreferrer">{t.dateSource}<ArrowSquareOut size={14} /></a></details>
         <details className="license-details" open={!isMobile}><summary>{t.conditions}</summary><p>{t.license}: {language === 'en' ? selected.licenseEn : selected.license}</p><p>{selected.specimen.status==='ready'?t.imageNote:t.captureNote}</p><div className="source-links"><a href={selected.specimen.sourceUrl} target="_blank" rel="noopener noreferrer">{selected.specimen.status==='ready'?t.imageSource:t.captureSource}<ArrowSquareOut size={14} /></a>{selected.repository && <a className="source-repository" href={selected.repository} target="_blank" rel="noopener noreferrer"><GithubLogo size={14} />{t.code}</a>}</div></details>
+        <div className="detail-end-links"><a className="detail-official-link" href={selected.url} target="_blank" rel="noopener noreferrer"><Globe size={18} aria-hidden="true"/>{t.official}</a></div>
         </>:null}
       </section>
     </main>

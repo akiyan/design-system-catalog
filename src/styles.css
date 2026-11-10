@@ -152,3 +152,5 @@ a.system-row{cursor:pointer}
 @media(max-width:700px){.preview-heading>.official-link{width:auto;height:32px;padding:0 6px;font-size:11px}.reference-gallery{gap:16px 10px}.reference-item figcaption{flex-wrap:wrap;font-size:11px;gap:2px}.specimen-gallery{gap:28px}}
 
 .zoom-navigation button:disabled{opacity:.35;cursor:default}
+
+.detail-end-links{display:flex;justify-content:flex-end;margin-top:24px}.detail-official-link{display:inline-flex;align-items:center;gap:6px;min-height:36px;padding:4px 0;font-size:13px;color:var(--blue)}.detail-official-link:hover{text-decoration:underline;text-underline-offset:3px}

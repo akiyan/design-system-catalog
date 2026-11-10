@@ -152,3 +152,4 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Preserve official component geometry. Pass required size/variant props; use published Stack/Layout components and spacing tokens for authored card/dialog content. Native Bootstrap-based modal specimens must include their .modal ancestor so inherited spacing tokens resolve. Keep these demonstration wrappers in normal flow so iframe content fits naturally.
 - Audit overview, form, typography, table, alert, card, dialog, code and chat surfaces for missing padding, touching text and overflow. Source captures must match corrected live components.
 - Left/Right and H/L stop at the first and last specimen or reference image. Never wrap. Enlargement navigation buttons are disabled at their corresponding boundary.
+- Include a globe-icon official-site link at the end of the detail pane, after usage/source information, for both live and reference galleries.

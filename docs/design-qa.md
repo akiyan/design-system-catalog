@@ -246,3 +246,5 @@ All 195 browser tests passed in 21.0 seconds, including 23 new spacing and addit
 Published gallery/spacing source 12d9871 at https://b2868dfa.design-system-catalog-925.pages.dev and the canonical domain. All 39 focused production browser checks passed in 24.8 seconds; all 490 full/compact WebP assets returned valid image responses and RIFF/WEBP signatures.
 
 Follow-up: horizontal navigation now clamps at the first and last specimen/reference, both in the scrolling gallery and enlarged viewer. Boundary buttons are disabled. Two new boundary regressions cover a live system and a screenshot-only system; five focused local browser checks passed in 1.9 seconds.
+
+Boundary follow-up source b3592ef was published at https://7cadb3e8.design-system-catalog-925.pages.dev. Five focused production checks passed in 4.9 seconds. Added a globe-icon official-site link after the detail pane’s source/usage information. Verified the destination and new-tab behavior for live and screenshot galleries and the English label. Evidence: docs/detail-official-site-end.png.
