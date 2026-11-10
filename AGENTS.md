@@ -111,7 +111,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Vertical wheel browsing over embedded specimens scrolls the catalog detail pane (or enlarged viewer). Preserve horizontal scrolling, pinch zoom and genuinely scrollable controls. Do not let fractional document overflow trap scrolling inside the iframe.
 - Remove the repeated system-name / component-specimen header inside every implementation. Remove the redundant implementation-preview label. Place the enlarge action below the preview at its right edge beside package provenance.
 - Keep all Japanese and English system descriptions concise enough for one line at desktop 1080p widths. Allow natural wrapping on narrower screens.
-- Favicon selection is the second valid generated option: three blue rounded squares and one blue circle in a 2×2 grid. Source artwork is docs/favicon-selected.png. Export real PNG/ICO assets from this image.
+- Favicon is the user-confirmed blue rounded square containing two stacked white panes at left and one tall white pane at right. Source artwork is docs/favicon-selected.png, cropped directly from the supplied correction image. Export real PNG/ICO assets from it. Version favicon link URLs when changing artwork to invalidate browser caches.
 
 ## Richer comparison specimens and compact headings
 
