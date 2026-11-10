@@ -1,0 +1,38 @@
+{
+  "verifiedAt": "2026-11-10T13:45:14.550513+00:00",
+  "collectionIntercepted": true,
+  "method": "Real GTM container in headless Chromium; Analytics collection requests intercepted with HTTP 204 to avoid recording test traffic. Includes batched POST payload parsing.",
+  "production": {
+    "base": "https://design-system-catalog.akiyan.tokyo/",
+    "loads": [
+      "https://www.googletagmanager.com/gtm.js?id=GTM-N9ZZSCNJ"
+    ],
+    "hits": [
+      {
+        "tid": "G-3H0GVLHTFF",
+        "event": "page_view",
+        "location": "https://design-system-catalog.akiyan.tokyo/",
+        "title": "デザインシステムカタログ"
+      },
+      {
+        "tid": "G-3H0GVLHTFF",
+        "event": "scroll",
+        "location": "https://design-system-catalog.akiyan.tokyo/",
+        "title": "デザインシステムカタログ"
+      },
+      {
+        "tid": "G-3H0GVLHTFF",
+        "event": "page_view",
+        "location": "https://design-system-catalog.akiyan.tokyo/astryx/",
+        "title": "Astryx | デザインシステムカタログ"
+      },
+      {
+        "tid": "G-3H0GVLHTFF",
+        "event": "page_view",
+        "location": "https://design-system-catalog.akiyan.tokyo/",
+        "title": "デザインシステムカタログ"
+      }
+    ],
+    "initialization": 1
+  }
+}

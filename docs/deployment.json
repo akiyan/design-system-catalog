@@ -2,7 +2,7 @@
   "project": "design-system-catalog",
   "subdomain": "design-system-catalog-925.pages.dev",
   "productionBranch": "main",
-  "deploymentURL": "https://39f2bee7.design-system-catalog-925.pages.dev",
+  "deploymentURL": "https://1c84541a.design-system-catalog-925.pages.dev",
   "deploymentStatus": "success",
   "usesFunctions": false,
   "url": "https://design-system-catalog.akiyan.tokyo/",
@@ -23,8 +23,8 @@
   "referencePreviews": 51,
   "customDomainStatus": "active",
   "https": true,
-  "sourceCommit": "b7a3c3d0ac352c440d7761f49cc705284d007a45",
-  "verifiedAt": "2026-11-10T13:35:25.451804+00:00",
+  "sourceCommit": "0f65ae83bcb562ea82d2c806b869a8893f59ddfe",
+  "verifiedAt": "2026-11-10T13:45:14.552345+00:00",
   "packageManager": "pnpm@12.18.0",
   "richTypographyImplementations": 12,
   "featuredIds": [
@@ -99,5 +99,14 @@
       "beforeMedianRequests": 64,
       "afterMedianRequests": 16
     }
-  ]
+  ],
+  "analytics": {
+    "gtmContainer": "GTM-N9ZZSCNJ",
+    "ga4MeasurementId": "G-3H0GVLHTFF",
+    "catalogPages": 68,
+    "excludedSpecimenPages": 245,
+    "navigation": "GA4 automatic History API measurement",
+    "productionPageViewsVerified": 3,
+    "duplicatePageViews": 0
+  }
 }
