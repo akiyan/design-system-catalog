@@ -202,7 +202,8 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
     setZoomOpen(true);
   }
   function movePreview(direction) {
-    const index=(activeView+direction+selected.views.length)%selected.views.length;
+    const index=Math.max(0,Math.min(selected.views.length-1,activeView+direction));
+    if(index===activeView)return;
     setViewIndex(index);
     if(!zoomOpen)document.getElementById(`preview-${selected.id}-${index}`)?.scrollIntoView({block:'start',behavior:'smooth'});
   }
@@ -345,7 +346,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
     <dialog ref={zoomDialog} className="zoom-dialog" onKeyDown={trapDialogFocus} aria-labelledby="zoom-title" onCancel={() => setZoomOpen(false)} onClick={e => { if (e.target === zoomDialog.current) setZoomOpen(false); }}>
       <div className="zoom-toolbar"><h2 id="zoom-title">{systemName(selected, language)}<span>{viewLabel(selected, activeView, language)}</span></h2><button aria-label={t.closeZoom} onClick={() => setZoomOpen(false)}><X size={24} /></button></div>
       <div className="zoom-content">{zoomOpen&&(selected.specimen.status==='ready'?<SpecimenFrame system={selected} index={activeView} language={language} expanded onKey={key=>{if(key==='Escape')setZoomOpen(false);else window.dispatchEvent(new KeyboardEvent('keydown',{key}))}}/>:<PreviewImage system={selected} index={activeView} language={language}/>)}</div>
-      {selected.views.length > 1 && <div className="zoom-navigation"><button aria-label={t.previous} onClick={() => movePreview(-1)}><CaretLeft size={20} /></button><span>{activeView + 1} / {selected.views.length}</span><button aria-label={t.next} onClick={() => movePreview(1)}><CaretRight size={20} /></button></div>}
+      {selected.views.length > 1 && <div className="zoom-navigation"><button aria-label={t.previous} disabled={activeView===0} onClick={() => movePreview(-1)}><CaretLeft size={20} /></button><span>{activeView + 1} / {selected.views.length}</span><button aria-label={t.next} disabled={activeView===selected.views.length-1} onClick={() => movePreview(1)}><CaretRight size={20} /></button></div>}
     </dialog>
     <dialog ref={helpDialog} className="help-dialog" onKeyDown={trapDialogFocus} aria-labelledby="help-title" onCancel={() => setHelpOpen(false)} onClick={e => { if (e.target === helpDialog.current) setHelpOpen(false); }}>
       <div className="zoom-toolbar"><h2 id="help-title"><Keyboard size={22} />{t.helpTitle}</h2><button aria-label={t.closeHelp} onClick={() => setHelpOpen(false)}><X size={24} /></button></div>

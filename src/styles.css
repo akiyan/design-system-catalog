@@ -150,3 +150,5 @@ a.system-row{cursor:pointer}
 .reference-item figcaption a{display:inline-flex;align-items:center;gap:4px;font-size:10px;color:var(--muted)}
 .reference-item figcaption a:hover{text-decoration:underline}
 @media(max-width:700px){.preview-heading>.official-link{width:auto;height:32px;padding:0 6px;font-size:11px}.reference-gallery{gap:16px 10px}.reference-item figcaption{flex-wrap:wrap;font-size:11px;gap:2px}.specimen-gallery{gap:28px}}
+
+.zoom-navigation button:disabled{opacity:.35;cursor:default}

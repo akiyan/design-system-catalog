@@ -22,3 +22,13 @@ for(const id of ['boosted','italia','sgds','kumo'])test(`${id}: modal content re
 test('Fluent rich-text headings and paragraphs occupy separate lines',async({page})=>{
  await page.goto('/specimens/fluent/typography/');await expect(page.locator('#specimen-root')).toHaveAttribute('data-ready','true');const section=page.locator('.specimen-rich-text>section').nth(2);const elements=await section.locator('h2,h3,p').evaluateAll(els=>els.map(e=>e.getBoundingClientRect().toJSON()));for(let i=1;i<elements.length;i++)expect(elements[i].y-elements[i-1].bottom).toBeGreaterThanOrEqual(11);
 });
+for(const id of ['astryx','bitsui'])test(`${id}: horizontal navigation stops at both gallery boundaries`,async({page})=>{
+ await page.goto(`/${id}/`);await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
+ await page.keyboard.press('ArrowLeft');await page.keyboard.press('h');await page.keyboard.press('v');
+ const dialog=page.locator('.zoom-dialog');await expect(dialog).toBeVisible();await expect(page.locator('.zoom-navigation')).toContainText('1 /');await expect(dialog.getByRole('button',{name:'前のプレビュー',exact:true})).toBeDisabled();
+ await page.keyboard.press('ArrowLeft');await page.keyboard.press('h');await expect(page.locator('.zoom-navigation')).toContainText('1 /');
+ const count=Number((await page.locator('.zoom-navigation').innerText()).split('/')[1].trim());
+ for(let i=0;i<count+2;i++)await page.keyboard.press('l');await page.keyboard.press('ArrowRight');await expect(page.locator('.zoom-navigation')).toContainText(`${count} / ${count}`);await expect(dialog.getByRole('button',{name:'次のプレビュー',exact:true})).toBeDisabled();
+ for(let i=0;i<count+2;i++)await page.keyboard.press('h');await expect(page.locator('.zoom-navigation')).toContainText(`1 / ${count}`);
+ await page.keyboard.press('Escape');await page.keyboard.press('h');await page.keyboard.press('v');await expect(page.locator('.zoom-navigation')).toContainText(`1 / ${count}`);
+});
