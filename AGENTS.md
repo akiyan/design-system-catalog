@@ -170,3 +170,5 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Detail views provide sticky controls for Original / Light / Dark themes of actual components. Apply genuine published theme APIs; never simulate dark mode with filters or recolor official screenshots. The catalog shell and list thumbnails keep their existing palette.
 - Keep the theme choice while navigating systems. Hide the entire theme toolbar for integrations that do not yet support switching and for screenshot-only entries. Switching themes preserves specimen form state and pane position; enlargement follows the same choice.
 - The user approved publishing the theme controls on 2026-11-12. Release through the GitHub Actions workflow after verification.
+
+- Omit Original when it duplicates Light. Ant Design, Primer, Arco and Semi use their original light canvas for the Light option and show only Light / Dark. Preserve Original for genuinely different official-site palettes. The visible Light choice carries across system navigation.

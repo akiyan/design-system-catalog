@@ -1,12 +1,12 @@
 {
  "astryx":{"light":{"background":"#ffffff","foreground":"#171717"},"dark":{"background":"#171717","foreground":"#fafafa"},"sourceUrl":"https://github.com/meta/astryx","api":"Theme mode"},
  "fluent":{"light":{"background":"#ffffff","foreground":"#242424"},"dark":{"background":"#292929","foreground":"#ffffff"},"sourceUrl":"https://react.fluentui.dev/?path=/docs/theme-designer--docs","api":"FluentProvider webLightTheme / webDarkTheme"},
- "ant":{"light":{"background":"#ffffff","foreground":"#141414"},"dark":{"background":"#141414","foreground":"#ffffff"},"sourceUrl":"https://ant.design/docs/react/customize-theme/","api":"ConfigProvider theme.algorithm defaultAlgorithm / darkAlgorithm"},
+ "ant":{"light":{"background":"rgb(255, 255, 255)","foreground":"rgb(22, 22, 22)"},"dark":{"background":"#141414","foreground":"#ffffff"},"sourceUrl":"https://ant.design/docs/react/customize-theme/","api":"ConfigProvider theme.algorithm defaultAlgorithm / darkAlgorithm","defaultIsLight":true},
  "coinbase":{"light":{"background":"#ffffff","foreground":"#0a0b0d"},"dark":{"background":"#0a0b0d","foreground":"#ffffff"},"sourceUrl":"https://cds.coinbase.com/components/theme-provider/","api":"ThemeProvider activeColorScheme"},
  "cloudscape":{"light":{"background":"#ffffff","foreground":"#000716"},"dark":{"background":"#0f1b2a","foreground":"#d1d5db"},"sourceUrl":"https://cloudscape.design/foundation/visual-foundation/color-modes/","api":"applyMode Mode.Light / Mode.Dark"},
  "carbon":{"light":{"background":"#ffffff","foreground":"#161616"},"dark":{"background":"#161616","foreground":"#f4f4f4"},"sourceUrl":"https://carbondesignsystem.com/guidelines/themes/overview/","api":"Theme white / g100"},
- "primer":{"light":{"background":"#ffffff","foreground":"#1f2328"},"dark":{"background":"#0d1117","foreground":"#f0f6fc"},"sourceUrl":"https://primer.style/product/getting-started/react/","api":"ThemeProvider colorMode day / night"},
+ "primer":{"light":{"background":"rgb(255, 255, 255)","foreground":"rgb(22, 22, 22)"},"dark":{"background":"#0d1117","foreground":"#f0f6fc"},"sourceUrl":"https://primer.style/product/getting-started/react/","api":"ThemeProvider colorMode day / night","defaultIsLight":true},
  "spectrum":{"light":{"background":"#f8f8f8","foreground":"#222222"},"dark":{"background":"#1d1d1d","foreground":"#ebebeb"},"sourceUrl":"https://react-spectrum.adobe.com/Provider","api":"Provider colorScheme"},
- "arco":{"light":{"background":"#ffffff","foreground":"#1d2129"},"dark":{"background":"#17171a","foreground":"#f6f6f6"},"sourceUrl":"https://arco.design/react/docs/dark","api":"body arco-theme=dark"},
- "semi":{"light":{"background":"#ffffff","foreground":"#1c1f23"},"dark":{"background":"#16161a","foreground":"#f9f9f9"},"sourceUrl":"https://semi.design/en-US/start/dark-mode","api":"body theme-mode=dark"}
+ "arco":{"light":{"background":"rgb(255, 255, 255)","foreground":"rgb(22, 22, 22)"},"dark":{"background":"#17171a","foreground":"#f6f6f6"},"sourceUrl":"https://arco.design/react/docs/dark","api":"body arco-theme=dark","defaultIsLight":true},
+ "semi":{"light":{"background":"rgb(255, 255, 255)","foreground":"rgb(22, 22, 22)"},"dark":{"background":"#16161a","foreground":"#f9f9f9"},"sourceUrl":"https://semi.design/en-US/start/dark-mode","api":"body theme-mode=dark","defaultIsLight":true}
 }
