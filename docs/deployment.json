@@ -2,7 +2,7 @@
   "project": "design-system-catalog",
   "subdomain": "design-system-catalog-925.pages.dev",
   "productionBranch": "main",
-  "deploymentURL": "https://cc7a999d.design-system-catalog-925.pages.dev",
+  "deploymentURL": "https://718cfe87.design-system-catalog-925.pages.dev",
   "deploymentStatus": "success",
   "usesFunctions": false,
   "url": "https://design-system-catalog.akiyan.tokyo/",
@@ -23,8 +23,8 @@
   "referencePreviews": 51,
   "customDomainStatus": "active",
   "https": true,
-  "sourceCommit": "0852d788932d64457decf0747793c65e5c5b6895",
-  "verifiedAt": "2026-11-12T04:53:14.179088+00:00",
+  "sourceCommit": "d560c4501b077aa763e268620442bffb4e818829",
+  "verifiedAt": "2026-11-12T06:31:54.310756+00:00",
   "packageManager": "pnpm@12.18.0",
   "richTypographyImplementations": 12,
   "featuredIds": [
@@ -112,5 +112,16 @@
   "faviconArtwork": "blue rounded tile with two stacked white left panes and one tall white right pane",
   "faviconAssetVersion": "layout-2",
   "textSitemap": true,
-  "textSitemapURLs": 68
+  "textSitemapURLs": 68,
+  "releaseWorkflow": ".github/workflows/release.yml",
+  "releaseWorkflowRun": "https://github.com/akiyan/design-system-catalog/actions/runs/43167957463",
+  "releaseWorkflowStatus": "success",
+  "releaseBrowserChecks": 199,
+  "releaseBrowserCheckSeconds": 60,
+  "releaseAuthentication": "Dedicated user API token restricted to Pages Write in the project account; stored only in GitHub Actions secret",
+  "releaseTriggers": [
+    "push to main excluding documentation-only changes",
+    "pull_request validation only",
+    "workflow_dispatch; deploy only from main"
+  ]
 }
