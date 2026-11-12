@@ -127,3 +127,14 @@ Use [Suggest a system](https://github.com/akiyan/design-system-catalog/issues/ne
 
 
 Specimen palettes follow each official site's canvas rather than a uniform white background. Coinbase CDS and Cloudscape use their published dark themes; other observed backgrounds include cream, lavender and gray. Palette evidence is stored in `docs/official-theme-validation.json` and `appearance` in the implementation registry. Transient overlays and marketing hero panels are excluded when selecting a documentation canvas.
+
+## GitHub Actions release
+
+`.github/workflows/release.yml` builds the static site and runs the Chromium browser suite on pull requests and pushes to `main`. Production deploys run only after those checks succeed on `main`. The Actions page also provides **Run workflow** for a manual release of `main`. Changes limited to documentation or the issue template do not trigger a release.
+
+Configure these once under the repository's **Settings → Secrets and variables → Actions**:
+
+- Secret `CLOUDFLARE_API_TOKEN`: a dedicated Cloudflare API token with **Account → Cloudflare Pages → Edit**, restricted to the account containing this Pages project. Do not use an interactive OAuth session token.
+- Variable `CLOUDFLARE_ACCOUNT_ID`: the account ID containing the existing `design-system-catalog` Pages project.
+
+The workflow uses pnpm 12.18.0, Node.js 22 and standard Ubuntu runners. It deploys `dist/client` with the lockfile-pinned Wrangler package; it does not run Cloudflare's build service or upload Actions artifacts. The pnpm dependency cache is reused. The public repository's standard GitHub-hosted runner time is free; see [GitHub Actions billing](https://docs.github.com/en/billing/concepts/product-billing/github-actions). Cloudflare's own Pages plan limits still apply.
