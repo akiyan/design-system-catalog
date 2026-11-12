@@ -70,6 +70,7 @@
     "@phosphor-icons/react": "^2.1.10",
     "@porsche-design-system/components-js": "4.10.1",
     "@porsche-design-system/components-react": "^4.10.1",
+    "@primer/primitives": "11.10.0",
     "@primer/react": "^38.45.0",
     "@public-ui/components": "^4.5.0",
     "@public-ui/theme-default": "^4.5.0",

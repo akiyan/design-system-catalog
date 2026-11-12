@@ -39,7 +39,7 @@ function ChatSpecimen({kit,t}) {
  const send=()=>{if(draft.trim()){setMessages([...messages,{author:'Aki',self:true,text:draft.trim()}]);setDraft('')}};
  return <div className="specimen-chat"><div className="specimen-messages" role="log" aria-label={t.chat}>{messages.map((message,index)=><kit.Message key={index} {...message}/>)}</div><form className="specimen-chat-composer" onSubmit={event=>{event.preventDefault();send()}}><kit.Input aria-label={t.message} value={draft} onValueChange={setDraft}/><kit.Button variant="primary" aria-label={t.send} disabled={!draft.trim()} onClick={send}>{t.send}</kit.Button></form></div>;
 }
-function Example({kit,view,language,name,copy}) {
+function Example({kit,view,language,name,copy,colorScheme}) {
  const t={...words(language,copy),extraTabs:language==='en'?['Overview','Access']:['概要','アクセス権'],extraDisclosure:language==='en'?'Publishing options':'公開時の設定',extraProgress:language==='en'?'Preparing the release':'公開の準備',extraAccessBody:language==='en'?'Only invited team members can update this project.':'招待されたチームメンバーのみがこのプロジェクトを更新できます。'};const [value,setValue]=useState(t.placeholder);const [checked,setChecked]=useState(true);const [selection,setSelection]=useState('team');const [status,setStatus]=useState('');
  const B=kit.Button, I=kit.Input, C=kit.Checkbox, S=kit.Select;
  const button=(label,variant='primary',extra={})=><B variant={variant} onClick={()=>setStatus(t.status)} {...extra}>{label}</B>;
@@ -56,8 +56,8 @@ function Example({kit,view,language,name,copy}) {
  if(view==='code'&&kit.Code)content=<kit.Code t={t}/>;
  if(view==='chat'&&kit.Message&&I)content=<ChatSpecimen kit={kit} t={t}/>;
  const page=<div className="specimen">{content}<div className="specimen-status" role="status">{status}</div></div>;
- return kit.Provider?<kit.Provider>{page}</kit.Provider>:page;
+ return kit.Provider?<kit.Provider colorScheme={colorScheme}>{page}</kit.Provider>:page;
 }
 export default function reactKit(kit) {
- return (container,options)=>{container.dataset.dialogSurface=kit.dialogCapture||kit.dialogMeasure||'';const root=createRoot(container,{onUncaughtError(error){container.dataset.error="true";container.textContent=error.message;console.error(error)}});root.render(<Example kit={kit} {...options}/>);return()=>root.unmount()};
+ return (container,options)=>{container.dataset.dialogSurface=kit.dialogCapture||kit.dialogMeasure||'';const root=createRoot(container,{onUncaughtError(error){container.dataset.error="true";container.textContent=error.message;console.error(error)}});const render=colorScheme=>root.render(<Example kit={kit} {...options} colorScheme={colorScheme}/>);render(options.colorScheme);const dispose=()=>root.unmount();dispose.setColorScheme=render;return dispose};
 }

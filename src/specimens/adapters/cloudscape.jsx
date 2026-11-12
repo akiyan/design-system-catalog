@@ -1,5 +1,6 @@
 import ExtraTabs from'@cloudscape-design/components/tabs';import ExtraExpandable from'@cloudscape-design/components/expandable-section';import ExtraProgress from'@cloudscape-design/components/progress-bar';import ExtraPagination from'@cloudscape-design/components/pagination';
-import{applyMode,Mode}from'@cloudscape-design/global-styles';applyMode(Mode.Dark);
+import{applyMode,Mode}from'@cloudscape-design/global-styles';
+export function setColorScheme(scheme){applyMode(scheme==='dark'?Mode.Dark:Mode.Light)}
 import{Badge as SpecBadge,Container as SpecCard,Modal as SpecDialog}from'@cloudscape-design/components';import{Avatar as SpecAvatar,ChatBubble}from'@cloudscape-design/chat-components';import CodeView from'@cloudscape-design/code-view/code-view';
 import tableKit,{tableColumns,tableData}from'../table-kit';import{Table,Alert}from'@cloudscape-design/components';import React from'react';import{Button,Input,Checkbox,Select,Header,Box}from'@cloudscape-design/components';import kit from'../react-kit';
 function AdditionalComponents({t}){const[page,setPage]=React.useState(2);return <div className="specimen-extra-grid"><ExtraTabs tabs={t.extraTabs.map((label,i)=>({id:String(i),label,content:i?t.extraAccessBody:t.dialogBody}))}/><ExtraExpandable headerText={t.extraDisclosure} defaultExpanded>{t.dialogBody}</ExtraExpandable><ExtraProgress label={t.extraProgress} value={65}/><ExtraPagination currentPageIndex={page} pagesCount={5} onChange={({detail})=>setPage(detail.currentPageIndex)}/></div>;}

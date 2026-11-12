@@ -276,3 +276,21 @@ Corrected favicon to the supplied split-pane artwork: two stacked white panes on
 Added statically generated /sitemap.txt with one absolute canonical URL per line. Its 68 unique URLs (home plus 67 catalog pages) exactly match sitemap.xml; isolated specimen pages are excluded. Browser-verified locally and on production against the built file. Source 6c0adb4 deployed at https://573f1009.design-system-catalog-925.pages.dev.
 
 Copyright attribution @akiyan now links to https://x.com/akiyan. Verified locally and on the canonical production domain. Source 0852d78 deployed at https://cc7a999d.design-system-catalog-925.pages.dev.
+
+## Local component color-theme prototype — 2026-11-12
+
+Implemented detail-only sticky Original / Light / Dark controls for actual component previews. Supported integrations: Astryx, Fluent, Ant Design, Coinbase CDS, Cloudscape, Carbon, Primer, Spectrum 2, Arco and Semi. Each uses its published provider, algorithm, mode API or official CSS attributes. Primer now imports the official light/dark primitives. The catalog shell, list thumbnails and reference screenshots are unchanged. Unsupported integrations and reference screenshots omit the theme toolbar entirely.
+
+Theme changes use an origin/source-checked parent message and update the existing React root, preserving field values and scroll position. Newly visible deferred frames and enlarged frames inherit the selected theme. The preference stays in component state while navigating systems. Radio controls support native keyboard behavior and are exempt from catalog shortcuts. Scroll padding keeps scroll-into-view targets clear of the sticky toolbar on desktop/mobile.
+
+Validation: complete static/specimen build passed. The first full browser run passed 211 of 212 checks; the added sticky bar exposed a mobile touch target overlap. After scroll-padding correction all 17 selected theme, touch, scroll and hydration checks passed in 7.9 seconds, including all 13 new theme checks. The final toolbar alignment polish passed three additional focused checks; flush alignment with the pane top was also asserted. Desktop 1920×1080 and mobile 390×844 captures were reviewed. Screenshots: preview-theme-light-desktop.png, preview-theme-dark-desktop.png, preview-theme-dark-scrolled.png and preview-theme-dark-mobile.png.
+
+Local preview: http://127.0.0.1:4175/fluent/. This prototype has not been committed, pushed or deployed; production remains unchanged.
+
+Local follow-up: hide the complete theme toolbar on unsupported integrations and screenshot entries. Three focused checks passed in 2.2 seconds, including desktop/mobile absence, retained choice when returning to a supported system, fixed positioning and keyboard controls. Not deployed.
+
+GitHub Actions release automation completed: PR #1 merged as d560c45. The dedicated account-restricted Pages Write user token was created through cf CLI and supplied directly to the GitHub secret without printing the token. Both PR and main runs succeeded; the main run passed 199 browser checks and deployed https://718cfe87.design-system-catalog-925.pages.dev. Production catalog, author link and Fluent implementation verified; the unreleased theme prototype is absent. Workflow run: https://github.com/akiyan/design-system-catalog/actions/runs/43167957463.
+
+## Approved theme release — 2026-11-12
+
+The user approved publishing component theme controls. Final verification passed all 212 browser checks in 34.2 seconds. Fixed an initial-hydration keyboard race by installing the ready keyboard listener in a layout effect; the existing Enter regression passed 10 consecutive runs (5.2 seconds). Re-generated all eight Primer specimen captures with official primitive tokens; both full and compact exports succeeded. Unsupported systems and reference captures omit the theme toolbar. Release is triggered through the existing main-push GitHub Actions workflow.

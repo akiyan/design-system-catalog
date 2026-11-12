@@ -1,6 +1,7 @@
 import {useEffect,useRef,useState} from 'react';
 export const specimenUrl=(system,index=0,language='ja')=>`${system.views[index]?.url || system.views[0].url}?lang=${language}`;
-export default function SpecimenFrame({system,index,language,onSwipe,onKey,expanded=false,compact=false,lazy=false}) {
+export default function SpecimenFrame({system,index,language,onSwipe,onKey,expanded=false,compact=false,lazy=false,theme='default'}) {
+ const initialTheme=useRef(theme);
  const ref=useRef(null);const [height,setHeight]=useState(360);
  const [visible,setVisible]=useState(!lazy);
  useEffect(()=>{
@@ -12,8 +13,15 @@ export default function SpecimenFrame({system,index,language,onSwipe,onKey,expan
   if(ref.current)observer.observe(ref.current);
   return()=>observer.disconnect();
  },[lazy,visible]);
- const url=specimenUrl(system,index,language)+'&embedded=1'+(compact?'&compact=1':'');
+ const url=specimenUrl(system,index,language)+'&embedded=1'+(compact?'&compact=1':'')+(initialTheme.current!=='default'?`&theme=${initialTheme.current}`:'');
  useEffect(()=>{setHeight(360)},[url]);
+ useEffect(()=>{
+  const frame=ref.current;
+  const update=()=>frame?.contentWindow?.postMessage({type:'catalog-specimen-theme',theme},location.origin);
+  update();frame?.addEventListener('load',update);
+  return()=>frame?.removeEventListener('load',update);
+ },[theme,url]);
+
  useEffect(()=>{
   const receive=event=>{
    if(event.origin!==location.origin||event.source!==ref.current?.contentWindow)return;

@@ -164,3 +164,9 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - Reserve the external-link arrow icon for links that open a new tab. Enlargement opens an in-page dialog and uses the text label alone.
 
 - The copyright attribution @akiyan links to https://x.com/akiyan.
+
+## Preview color themes
+
+- Detail views provide sticky controls for Original / Light / Dark themes of actual components. Apply genuine published theme APIs; never simulate dark mode with filters or recolor official screenshots. The catalog shell and list thumbnails keep their existing palette.
+- Keep the theme choice while navigating systems. Hide the entire theme toolbar for integrations that do not yet support switching and for screenshot-only entries. Switching themes preserves specimen form state and pane position; enlargement follows the same choice.
+- The user approved publishing the theme controls on 2026-11-12. Release through the GitHub Actions workflow after verification.

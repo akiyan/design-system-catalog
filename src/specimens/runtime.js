@@ -1,9 +1,36 @@
+import themes from '../data/preview-themes.json';
 import layoutStyles from './layout.css?inline';
 const modules=import.meta.glob('./adapters/*.{jsx,js}');
 const root=document.getElementById('specimen-root');
 const params=new URLSearchParams(location.search);
 const embedded=parent!==window&&params.has('embedded');
 const language=params.get('lang')==='en'?'en':'ja';
+const themeConfig=themes[root.dataset.system];
+const originalAppearance={scheme:document.documentElement.dataset.colorScheme,background:document.documentElement.style.getPropertyValue('--specimen-background'),foreground:document.documentElement.style.getPropertyValue('--specimen-foreground')};
+let requestedTheme=['light','dark'].includes(params.get('theme'))?params.get('theme'):'default';
+let mounted,adapter;
+function applyTheme(){
+ const scheme=themeConfig&&requestedTheme!=='default'?requestedTheme:originalAppearance.scheme;
+ const palette=themeConfig&&requestedTheme!=='default'?themeConfig[scheme]:originalAppearance;
+ document.documentElement.dataset.colorScheme=scheme;
+ document.documentElement.style.colorScheme=scheme;
+ document.documentElement.style.setProperty('--specimen-background',palette.background);
+ document.documentElement.style.setProperty('--specimen-foreground',palette.foreground);
+ if(themeConfig){
+  if(root.dataset.system==='arco')document.body.setAttribute('arco-theme',scheme);
+  if(root.dataset.system==='semi')document.body.setAttribute('theme-mode',scheme);
+  if(root.dataset.system==='carbon')document.documentElement.dataset.carbonTheme=scheme==='dark'?'g100':'white';
+  adapter?.setColorScheme?.(scheme);
+  mounted?.setColorScheme?.(scheme);
+ }
+ return scheme;
+}
+applyTheme();
+window.addEventListener('message',event=>{
+ if(event.origin!==location.origin||event.source!==parent||event.data?.type!=='catalog-specimen-theme'||!['default','light','dark'].includes(event.data.theme))return;
+ requestedTheme=event.data.theme;applyTheme();
+});
+
 if(embedded)document.documentElement.classList.add('specimen-embedded');
 if(params.has('compact'))document.documentElement.classList.add('specimen-compact');
 document.documentElement.lang=language;
@@ -17,7 +44,8 @@ try {
  const module=await modules[`./adapters/${root.dataset.adapter}.jsx`]?.() || await modules[`./adapters/${root.dataset.adapter}.js`]?.();
  if(!module)throw new Error('Implementation adapter unavailable');
  const shellStyles=document.createElement('style');shellStyles.textContent=layoutStyles;document.head.append(shellStyles);
- await module.default(root,{view:root.dataset.view,language,name:root.dataset.name,copy:JSON.parse(root.dataset.thumbnailCopy)[language]});
+ adapter=module;const colorScheme=applyTheme();
+ mounted=await module.default(root,{colorScheme,view:root.dataset.view,language,name:root.dataset.name,copy:JSON.parse(root.dataset.thumbnailCopy)[language]});
  await document.fonts.ready;
  await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
  root.dataset.ready='true';notify();new ResizeObserver(notify).observe(document.body);

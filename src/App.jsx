@@ -1,8 +1,9 @@
-import { Fragment, useEffect, useRef, useState } from 'react';
-import { Globe, ArrowSquareOut, PlusCircle, ArrowLeft, CaretLeft, CaretRight, GithubLogo, Keyboard, X, ImageBroken, Cube } from '@phosphor-icons/react';
+import { Fragment, useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { Globe, ArrowSquareOut, PlusCircle, ArrowLeft, CaretLeft, CaretRight, GithubLogo, Keyboard, X, ImageBroken, Cube, Sun, Moon, CircleHalf } from '@phosphor-icons/react';
 import { systems, featuredIds, systemPath, systemFromPath, systemName } from './catalog';
 import { messages, detectLanguage } from './i18n';
 import SpecimenFrame from './SpecimenFrame';
+import previewThemes from './data/preview-themes.json';
 
 const categories = ['all', 'public', 'oss'];
 const imagePath = (system, index = 0, compact = false) => system.specimen.status!=='ready'?`/previews/${system.id}-${system.views[index]?.referenceIndex ?? 0}.webp`:`/specimens/${compact ? 'list-thumbnails' : 'thumbnails'}/${system.id}-${system.views[index]?.key || 'overview'}.webp`;
@@ -42,6 +43,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
   const [category, setCategory] = useState('all');
   const [selectedId, setSelectedId] = useState(initialId);
   const [viewIndex, setViewIndex] = useState(0);
+  const [previewTheme,setPreviewTheme]=useState('default');
   const [mobilePreview, setMobilePreview] = useState(Boolean(initialId));
   const [zoomOpen, setZoomOpen] = useState(false);
   const [helpOpen, setHelpOpen] = useState(false);
@@ -58,6 +60,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
   const featuredCount = filtered.filter(s => featuredIds.includes(s.id)).length;
   const selected = systems.find(s => s.id === selectedId) || systems[0];
   const activeView = selected.views[viewIndex] ? viewIndex : 0;
+  const supportsPreviewTheme=selected.specimen.status==='ready'&&Boolean(previewThemes[selected.id]);
 
   useEffect(()=>{
     previewPanel.current?.scrollTo({top:0,behavior:'instant'});
@@ -208,11 +211,11 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
     if(!zoomOpen)document.getElementById(`preview-${selected.id}-${index}`)?.scrollIntoView({block:'start',behavior:'smooth'});
   }
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!ready) return;
     const onKeyDown = event => {
       if (event.isComposing || event.ctrlKey || event.metaKey || event.altKey || event.defaultPrevented) return;
-      const editable = event.target instanceof HTMLElement && event.target.closest('.language-control, input, textarea, select, [contenteditable]:not([contenteditable="false"])');
+      const editable = event.target instanceof HTMLElement && event.target.closest('.language-control, .preview-theme-bar, input, textarea, select, [contenteditable]:not([contenteditable="false"])');
       if (editable) return;
       if (event.key === '?') {
         event.preventDefault();
@@ -301,6 +304,12 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
       </section>
       <section ref={previewPanel} className="preview-panel" aria-label={selectedId?t.preview:t.aboutSite}>
         {selectedId?<>
+        {supportsPreviewTheme&&<div className="preview-theme-bar">
+          <span className="preview-theme-label">{language==='en'?'Color theme':'カラーテーマ'}</span>
+          <fieldset className="preview-theme-options" aria-label={language==='en'?'Preview color theme':'プレビューのカラーテーマ'}>
+            {[['default',language==='en'?'Original':'標準',CircleHalf],['light',language==='en'?'Light':'ライト',Sun],['dark',language==='en'?'Dark':'ダーク',Moon]].map(([value,label,Icon])=><label key={value}><input type="radio" name="preview-theme" value={value} checked={previewTheme===value} onChange={()=>setPreviewTheme(value)}/><span><Icon size={15} aria-hidden="true"/>{label}</span></label>)}
+          </fieldset>
+        </div>}
         <div className="mobile-detail-toolbar">
           <button className="back-to-list text-button" onClick={returnToList}><ArrowLeft size={18} />{t.back}</button>
           <nav className="system-navigation" aria-label={t.browseSystems}>
@@ -315,7 +324,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
             {selected.views.map((view,index)=><section id={`preview-${selected.id}-${index}`} className={`component-section ${index===0?'overview-section':''}`} data-view={view.key} key={view.key}>
               {index>0&&<h2 className="component-section-title">{viewLabel(selected,index,language)}</h2>}
               <div className={`${index===0?'main-preview':'component-preview'} specimen-canvas`} onTouchStart={index===0?startSwipe:undefined} onTouchEnd={index===0?endSwipe:undefined} onTouchCancel={()=>{swipeStart.current=null;}}>
-                <SpecimenFrame compact={!isMobile} system={selected} index={index} language={language} lazy={index>0} onSwipe={direction=>{if(isMobile&&index===0)navigateAdjacent(direction>0?nextSystem:previousSystem)}} onKey={key=>{if(key==='Escape'&&isMobile)returnToList();else window.dispatchEvent(new KeyboardEvent('keydown',{key}))}}/>
+                <SpecimenFrame theme={previewTheme} compact={!isMobile} system={selected} index={index} language={language} lazy={index>0} onSwipe={direction=>{if(isMobile&&index===0)navigateAdjacent(direction>0?nextSystem:previousSystem)}} onKey={key=>{if(key==='Escape'&&isMobile)returnToList();else window.dispatchEvent(new KeyboardEvent('keydown',{key}))}}/>
               </div>
               <div className="implementation-meta"><a href={selected.specimen.sourceUrl} target="_blank" rel="noopener noreferrer">{selected.specimen.package} <span>{selected.specimen.version}</span><ArrowSquareOut size={12}/></a>{selected.specimen.components?.[view.key]&&<span>{selected.specimen.components[view.key]}</span>}{selected.specimen.extraPackages?.filter(pkg=>pkg.views.includes(view.key)).map(pkg=><a key={pkg.package} href={pkg.sourceUrl} target="_blank" rel="noopener noreferrer">{pkg.package} <span>{pkg.version}</span><ArrowSquareOut size={12}/></a>)}<button type="button" className="specimen-enlarge text-button" aria-label={`${viewLabel(selected,index,language)} — ${t.enlarge}`} onClick={()=>openPreview(index)}>{t.enlarge}</button></div>
             </section>)}
@@ -346,7 +355,7 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
     <footer className="site-footer"><span>Copyright © 2026 <a href="https://x.com/akiyan" target="_blank" rel="noopener noreferrer">@akiyan</a></span><nav className="footer-links" aria-label={t.footerLinks}><a className="addition-request" href="https://github.com/akiyan/design-system-catalog/issues/new?template=add-design-system.yml" target="_blank" rel="noopener noreferrer"><PlusCircle size={17}/>{t.requestAddition}</a><a className="github-link" href={githubUrl} target="_blank" rel="noopener noreferrer"><GithubLogo size={19} weight="fill" aria-hidden="true" />GitHub</a></nav></footer>
     <dialog ref={zoomDialog} className="zoom-dialog" onKeyDown={trapDialogFocus} aria-labelledby="zoom-title" onCancel={() => setZoomOpen(false)} onClick={e => { if (e.target === zoomDialog.current) setZoomOpen(false); }}>
       <div className="zoom-toolbar"><h2 id="zoom-title">{systemName(selected, language)}<span>{viewLabel(selected, activeView, language)}</span></h2><button aria-label={t.closeZoom} onClick={() => setZoomOpen(false)}><X size={24} /></button></div>
-      <div className="zoom-content">{zoomOpen&&(selected.specimen.status==='ready'?<SpecimenFrame system={selected} index={activeView} language={language} expanded onKey={key=>{if(key==='Escape')setZoomOpen(false);else window.dispatchEvent(new KeyboardEvent('keydown',{key}))}}/>:<PreviewImage system={selected} index={activeView} language={language}/>)}</div>
+      <div className="zoom-content">{zoomOpen&&(selected.specimen.status==='ready'?<SpecimenFrame theme={previewTheme} system={selected} index={activeView} language={language} expanded onKey={key=>{if(key==='Escape')setZoomOpen(false);else window.dispatchEvent(new KeyboardEvent('keydown',{key}))}}/>:<PreviewImage system={selected} index={activeView} language={language}/>)}</div>
       {selected.views.length > 1 && <div className="zoom-navigation"><button aria-label={t.previous} disabled={activeView===0} onClick={() => movePreview(-1)}><CaretLeft size={20} /></button><span>{activeView + 1} / {selected.views.length}</span><button aria-label={t.next} disabled={activeView===selected.views.length-1} onClick={() => movePreview(1)}><CaretRight size={20} /></button></div>}
     </dialog>
     <dialog ref={helpDialog} className="help-dialog" onKeyDown={trapDialogFocus} aria-labelledby="help-title" onCancel={() => setHelpOpen(false)} onClick={e => { if (e.target === helpDialog.current) setHelpOpen(false); }}>

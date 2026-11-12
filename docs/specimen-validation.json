@@ -1830,86 +1830,6 @@
     "thumbnailFraming": "dialog-surface"
   },
   {
-    "id": "primer",
-    "view": "form",
-    "ok": true,
-    "thumbnailViewport": {
-      "width": 640,
-      "height": 300
-    },
-    "thumbnailFraming": "screen-excerpt"
-  },
-  {
-    "id": "primer",
-    "view": "table",
-    "ok": true,
-    "thumbnailViewport": {
-      "width": 640,
-      "height": 300
-    },
-    "thumbnailFraming": "screen-excerpt"
-  },
-  {
-    "id": "primer",
-    "view": "typography",
-    "ok": true,
-    "thumbnailViewport": {
-      "width": 640,
-      "height": 300
-    },
-    "thumbnailFraming": "screen-excerpt"
-  },
-  {
-    "id": "primer",
-    "view": "overview",
-    "ok": true,
-    "thumbnailViewport": {
-      "width": 640,
-      "height": 300
-    },
-    "thumbnailFraming": "screen-excerpt"
-  },
-  {
-    "id": "primer",
-    "view": "components",
-    "ok": true,
-    "thumbnailViewport": {
-      "width": 640,
-      "height": 300
-    },
-    "thumbnailFraming": "screen-excerpt"
-  },
-  {
-    "id": "primer",
-    "view": "code",
-    "ok": true,
-    "thumbnailViewport": {
-      "width": 640,
-      "height": 300
-    },
-    "thumbnailFraming": "screen-excerpt"
-  },
-  {
-    "id": "primer",
-    "view": "alerts",
-    "ok": true,
-    "thumbnailViewport": {
-      "width": 640,
-      "height": 300
-    },
-    "thumbnailFraming": "screen-excerpt"
-  },
-  {
-    "id": "primer",
-    "view": "dialog",
-    "ok": true,
-    "thumbnailViewport": {
-      "width": 800,
-      "height": 600
-    },
-    "thumbnailFraming": "dialog-surface"
-  },
-  {
     "id": "lightning",
     "view": "overview",
     "ok": true,
@@ -2448,5 +2368,85 @@
       "height": 300
     },
     "thumbnailFraming": "screen-excerpt"
+  },
+  {
+    "id": "primer",
+    "view": "table",
+    "ok": true,
+    "thumbnailViewport": {
+      "width": 640,
+      "height": 300
+    },
+    "thumbnailFraming": "screen-excerpt"
+  },
+  {
+    "id": "primer",
+    "view": "overview",
+    "ok": true,
+    "thumbnailViewport": {
+      "width": 640,
+      "height": 300
+    },
+    "thumbnailFraming": "screen-excerpt"
+  },
+  {
+    "id": "primer",
+    "view": "form",
+    "ok": true,
+    "thumbnailViewport": {
+      "width": 640,
+      "height": 300
+    },
+    "thumbnailFraming": "screen-excerpt"
+  },
+  {
+    "id": "primer",
+    "view": "typography",
+    "ok": true,
+    "thumbnailViewport": {
+      "width": 640,
+      "height": 300
+    },
+    "thumbnailFraming": "screen-excerpt"
+  },
+  {
+    "id": "primer",
+    "view": "components",
+    "ok": true,
+    "thumbnailViewport": {
+      "width": 640,
+      "height": 300
+    },
+    "thumbnailFraming": "screen-excerpt"
+  },
+  {
+    "id": "primer",
+    "view": "code",
+    "ok": true,
+    "thumbnailViewport": {
+      "width": 640,
+      "height": 300
+    },
+    "thumbnailFraming": "screen-excerpt"
+  },
+  {
+    "id": "primer",
+    "view": "alerts",
+    "ok": true,
+    "thumbnailViewport": {
+      "width": 640,
+      "height": 300
+    },
+    "thumbnailFraming": "screen-excerpt"
+  },
+  {
+    "id": "primer",
+    "view": "dialog",
+    "ok": true,
+    "thumbnailViewport": {
+      "width": 800,
+      "height": 600
+    },
+    "thumbnailFraming": "dialog-surface"
   }
 ]
