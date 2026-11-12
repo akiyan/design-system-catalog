@@ -162,3 +162,5 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 - The configured GA4 container owns initial and History API page views. Do not add duplicate manual page_view events in React.
 
 - Reserve the external-link arrow icon for links that open a new tab. Enlargement opens an in-page dialog and uses the text label alone.
+
+- The copyright attribution @akiyan links to https://x.com/akiyan.
