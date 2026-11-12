@@ -2,7 +2,7 @@
   "project": "design-system-catalog",
   "subdomain": "design-system-catalog-925.pages.dev",
   "productionBranch": "main",
-  "deploymentURL": "https://d95416cb.design-system-catalog-925.pages.dev",
+  "deploymentURL": "https://04e5889a.design-system-catalog-925.pages.dev",
   "deploymentStatus": "success",
   "usesFunctions": false,
   "url": "https://design-system-catalog.akiyan.tokyo/",
@@ -23,8 +23,8 @@
   "referencePreviews": 51,
   "customDomainStatus": "active",
   "https": true,
-  "sourceCommit": "5ca64aa50d5f0b2649bc3677f8adc758f950e8c0",
-  "verifiedAt": "2026-11-12T08:53:13.800774+00:00",
+  "sourceCommit": "75e048332d75783ffe49bcbf0515be6a9030eac0",
+  "verifiedAt": "2026-11-12T09:09:21.578377+00:00",
   "packageManager": "pnpm@12.18.0",
   "richTypographyImplementations": 12,
   "featuredIds": [
@@ -33,11 +33,11 @@
     "dads",
     "ant"
   ],
-  "productionVerification": "GitHub Actions built and tested the approved theme release (212 checks) and deployed successfully. All 13 theme-focused production checks passed, covering 10 genuine integrations, unsupported/capture toolbar omission on desktop/mobile, form state, deferred frames, enlargement, fixed positioning, native keyboard controls and language switching.",
-  "localBrowserChecks": 212,
-  "localBrowserCheckSeconds": 34.2,
-  "productionBrowserChecks": 13,
-  "productionBrowserCheckSeconds": 24.3,
+  "productionVerification": "Actions passed 214 browser checks and deployed the duplicate-theme simplification. All 15 theme checks passed on production, including two-option Japanese/English controls for Ant/Primer/Arco/Semi, retained distinct Original palettes and persistent Light selection when navigating to dark-default systems.",
+  "localBrowserChecks": 15,
+  "localBrowserCheckSeconds": 9.4,
+  "productionBrowserChecks": 15,
+  "productionBrowserCheckSeconds": 19.6,
   "previewScrollAudit": 245,
   "favicon": true,
   "referenceOnlyEntries": 5,
@@ -61,7 +61,7 @@
   "thumbnailCaptureChecks": 245,
   "homeMaxColumns": 4,
   "additionalComponentImplementations": 12,
-  "localBrowserCheckNote": "All 212 browser checks passed on the final theme release; initial Enter regression additionally passed 10 consecutive runs.",
+  "localBrowserCheckNote": "Focused theme suite passed all 15 checks before release.",
   "detailLayout": "scrolling-gallery",
   "thumbnailSelection": "overview-only",
   "referenceLayout": "full-width-first-two-column-rest",
@@ -114,10 +114,10 @@
   "textSitemap": true,
   "textSitemapURLs": 68,
   "releaseWorkflow": ".github/workflows/release.yml",
-  "releaseWorkflowRun": "https://github.com/akiyan/design-system-catalog/actions/runs/43185567910",
+  "releaseWorkflowRun": "https://github.com/akiyan/design-system-catalog/actions/runs/43187947114",
   "releaseWorkflowStatus": "success",
-  "releaseBrowserChecks": 212,
-  "releaseBrowserCheckSeconds": 66,
+  "releaseBrowserChecks": 214,
+  "releaseBrowserCheckSeconds": 72,
   "releaseAuthentication": "Dedicated user API token restricted to Pages Write in the project account; stored only in GitHub Actions secret",
   "releaseTriggers": [
     "push to main excluding documentation-only changes",
@@ -145,6 +145,12 @@
     "placement": "sticky detail toolbar",
     "unsupported": "hidden",
     "screenshots": "unchanged",
-    "statePreserved": true
+    "statePreserved": true,
+    "originalLightEquivalentIds": [
+      "ant",
+      "primer",
+      "arco",
+      "semi"
+    ]
   }
 }

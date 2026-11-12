@@ -300,3 +300,5 @@ Published theme release 5ca64aa through successful GitHub Actions run https://gi
 ## Remove duplicate Original/Light choices
 
 Ant Design, Primer, Arco and Semi now show only Light / Dark. Their Light canvas reuses the exact original palette, so removing Original does not change the initial appearance. Original remains available for distinct official-site palettes. The collapsed Light choice is retained when navigating to systems whose original theme is dark. All 15 focused theme browser checks passed locally in 9.4 seconds, including Japanese/English option counts and selection continuity.
+
+Published duplicate-theme release 75e0483 through successful Actions run https://github.com/akiyan/design-system-catalog/actions/runs/43187947114 (214 browser checks passed in 1.2 minutes). Deployment: https://04e5889a.design-system-catalog-925.pages.dev. All 15 focused theme checks passed on the canonical production domain in 19.6 seconds.
