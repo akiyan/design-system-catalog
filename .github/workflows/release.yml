@@ -1,0 +1,97 @@
+name: Build, test and release
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'docs/**'
+      - 'AGENTS.md'
+      - 'README.md'
+      - '.github/ISSUE_TEMPLATE/**'
+  pull_request:
+    paths-ignore:
+      - 'docs/**'
+      - 'AGENTS.md'
+      - 'README.md'
+      - '.github/ISSUE_TEMPLATE/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  release:
+    name: Verify static site and deploy main
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      CI: 'true'
+      TEST_BASE_URL: http://127.0.0.1:4173
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '22'
+          package-manager-cache: false
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@73e46992e05b19abd31f2f3c20e0e7370d762115 # v6.1.1
+        with:
+          version: 12.18.0
+          cache: true
+          run_install: false
+
+      - name: Install locked dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build static pages and specimen bundles
+        run: pnpm build
+
+      - name: Install Chromium for browser tests
+        run: pnpm exec playwright install --with-deps chromium
+
+      - name: Start static preview
+        shell: bash
+        run: |
+          pnpm exec astro preview --host 127.0.0.1 --port 4173 > /tmp/catalog-preview.log 2>&1 &
+          node --input-type=module <<'JS'
+          let ready = false;
+          for (let attempt = 0; attempt < 60; attempt++) {
+            try {
+              const response = await fetch(process.env.TEST_BASE_URL);
+              if (response.ok) { ready = true; break; }
+            } catch {}
+            await new Promise(resolve => setTimeout(resolve, 500));
+          }
+          if (!ready) throw new Error('Static preview did not become ready');
+          JS
+
+      - name: Run browser checks
+        run: pnpm test --workers=2
+
+      - name: Show preview log on failure
+        if: failure()
+        run: cat /tmp/catalog-preview.log 2>/dev/null || true
+
+      - name: Deploy verified main to Cloudflare Pages
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+        shell: bash
+        run: |
+          if [[ -z "$CLOUDFLARE_API_TOKEN" || -z "$CLOUDFLARE_ACCOUNT_ID" ]]; then
+            echo '::error::Configure the CLOUDFLARE_API_TOKEN repository secret and CLOUDFLARE_ACCOUNT_ID repository variable before releasing.'
+            exit 1
+          fi
+          pnpm exec wrangler pages deploy dist/client --project-name=design-system-catalog --branch=main --commit-hash "$GITHUB_SHA"
+          echo 'Released https://design-system-catalog.akiyan.tokyo/' >> "$GITHUB_STEP_SUMMARY"
