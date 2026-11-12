@@ -2,7 +2,7 @@
   "project": "design-system-catalog",
   "subdomain": "design-system-catalog-925.pages.dev",
   "productionBranch": "main",
-  "deploymentURL": "https://718cfe87.design-system-catalog-925.pages.dev",
+  "deploymentURL": "https://d95416cb.design-system-catalog-925.pages.dev",
   "deploymentStatus": "success",
   "usesFunctions": false,
   "url": "https://design-system-catalog.akiyan.tokyo/",
@@ -23,8 +23,8 @@
   "referencePreviews": 51,
   "customDomainStatus": "active",
   "https": true,
-  "sourceCommit": "d560c4501b077aa763e268620442bffb4e818829",
-  "verifiedAt": "2026-11-12T06:31:54.310756+00:00",
+  "sourceCommit": "5ca64aa50d5f0b2649bc3677f8adc758f950e8c0",
+  "verifiedAt": "2026-11-12T08:53:13.800774+00:00",
   "packageManager": "pnpm@12.18.0",
   "richTypographyImplementations": 12,
   "featuredIds": [
@@ -33,11 +33,11 @@
     "dads",
     "ant"
   ],
-  "productionVerification": "Scrolling live galleries retain natural sizing with viewport-deferred subsequent specimens. Six focused production checks passed for keyboard enlargement, navigation boundaries, reference first-capture layout, desktop selection/history and deferred loading. Earlier complete gallery release passed 39 production checks and validated 490 WebP assets. System switching benchmark: 12 transitions before and after this deployment.",
-  "localBrowserChecks": 199,
-  "localBrowserCheckSeconds": 13.8,
-  "productionBrowserChecks": 6,
-  "productionBrowserCheckSeconds": 3.6,
+  "productionVerification": "GitHub Actions built and tested the approved theme release (212 checks) and deployed successfully. All 13 theme-focused production checks passed, covering 10 genuine integrations, unsupported/capture toolbar omission on desktop/mobile, form state, deferred frames, enlargement, fixed positioning, native keyboard controls and language switching.",
+  "localBrowserChecks": 212,
+  "localBrowserCheckSeconds": 34.2,
+  "productionBrowserChecks": 13,
+  "productionBrowserCheckSeconds": 24.3,
   "previewScrollAudit": 245,
   "favicon": true,
   "referenceOnlyEntries": 5,
@@ -61,7 +61,7 @@
   "thumbnailCaptureChecks": 245,
   "homeMaxColumns": 4,
   "additionalComponentImplementations": 12,
-  "localBrowserCheckNote": "198 suite checks passed in 13.8s; additional deferred-loading regression passed separately together with Enter (2 checks in 1.6s).",
+  "localBrowserCheckNote": "All 212 browser checks passed on the final theme release; initial Enter regression additionally passed 10 consecutive runs.",
   "detailLayout": "scrolling-gallery",
   "thumbnailSelection": "overview-only",
   "referenceLayout": "full-width-first-two-column-rest",
@@ -114,14 +114,37 @@
   "textSitemap": true,
   "textSitemapURLs": 68,
   "releaseWorkflow": ".github/workflows/release.yml",
-  "releaseWorkflowRun": "https://github.com/akiyan/design-system-catalog/actions/runs/43167957463",
+  "releaseWorkflowRun": "https://github.com/akiyan/design-system-catalog/actions/runs/43185567910",
   "releaseWorkflowStatus": "success",
-  "releaseBrowserChecks": 199,
-  "releaseBrowserCheckSeconds": 60,
+  "releaseBrowserChecks": 212,
+  "releaseBrowserCheckSeconds": 66,
   "releaseAuthentication": "Dedicated user API token restricted to Pages Write in the project account; stored only in GitHub Actions secret",
   "releaseTriggers": [
     "push to main excluding documentation-only changes",
     "pull_request validation only",
     "workflow_dispatch; deploy only from main"
-  ]
+  ],
+  "componentColorThemes": {
+    "supportedIds": [
+      "astryx",
+      "fluent",
+      "ant",
+      "coinbase",
+      "cloudscape",
+      "carbon",
+      "primer",
+      "spectrum",
+      "arco",
+      "semi"
+    ],
+    "controls": [
+      "default",
+      "light",
+      "dark"
+    ],
+    "placement": "sticky detail toolbar",
+    "unsupported": "hidden",
+    "screenshots": "unchanged",
+    "statePreserved": true
+  }
 }
