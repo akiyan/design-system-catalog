@@ -1,0 +1,31 @@
+{
+  "errors": [],
+  "checks": [
+    {
+      "name": "home-desktop",
+      "visibleFavicons": 15,
+      "allLoaded": true,
+      "placementCorrect": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "name": "list-desktop",
+      "visibleFavicons": 5,
+      "allLoaded": true,
+      "placementCorrect": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "name": "list-mobile",
+      "visibleFavicons": 5,
+      "allLoaded": true,
+      "placementCorrect": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "name": "failure-fallback",
+      "hidden": true,
+      "specimenKept": true
+    }
+  ]
+}

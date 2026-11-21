@@ -165,6 +165,12 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 
 - The copyright attribution @akiyan links to https://x.com/akiyan.
 
+## Site favicon prototype
+
+- Keep the company-logo permission research in `docs/research/`. Do not replace or discard it when trying site icons.
+- Use each design-system site's favicon instead of introducing corporate logo assets. The user rejected the top-left overlay because it covered too much content: desktop home grid cards put it at the thumbnail's top-right; desktop detail lists and mobile lists put a small icon before the system name in normal flow, never over the thumbnail. The user approved this placement for publication on 2026-11-21. Release it through the existing GitHub Actions workflow and verify production.
+- Preserve favicon source URLs and missing states. Do not substitute invented icons or third-party logo APIs. A fetched favicon is not evidence of reuse permission; resolve publication conditions separately.
+
 ## Preview color themes
 
 - Detail views provide sticky controls for Original / Light / Dark themes of actual components. Apply genuine published theme APIs; never simulate dark mode with filters or recolor official screenshots. The catalog shell and list thumbnails keep their existing palette.

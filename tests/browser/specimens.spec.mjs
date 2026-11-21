@@ -86,7 +86,7 @@ test('thumbnail headings and descriptions identify each system across rendering 
 test('H and L scroll between specimens without replacing overview thumbnails',async({page})=>{
  await page.goto('/ant/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
  const preview=page.locator('.main-preview iframe');await page.keyboard.press('l');await expect.poll(()=>page.locator('.preview-panel').evaluate(e=>e.scrollTop)).toBeGreaterThan(0);
- await expect(preview).toHaveAttribute('src',/\/overview\//);await expect(page.locator('.system-row[href="/ant/"] img')).toHaveAttribute('src',/ant-overview.webp/);
+ await expect(preview).toHaveAttribute('src',/\/overview\//);await expect(page.locator('.system-row[href="/ant/"] .row-image > img')).toHaveAttribute('src',/ant-overview.webp/);
  await page.keyboard.press('h');await page.keyboard.press('v');await expect(page.locator('.zoom-dialog')).toBeVisible();
  await page.keyboard.press('l');await expect(page.locator('.zoom-navigation')).toContainText('2 /');await page.keyboard.press('h');await expect(page.locator('.zoom-navigation')).toContainText('1 /');await page.keyboard.press('Escape');
  const input=page.frameLocator('.main-preview iframe').getByRole('textbox').first();await input.fill('hl');await input.press('h');await input.press('l');await expect(preview).toHaveAttribute('src',/\/overview\//);
@@ -94,7 +94,7 @@ test('H and L scroll between specimens without replacing overview thumbnails',as
 
 test('preview category selectors are absent and reference images open directly in zoom',async({page})=>{
  await page.goto('/ant/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');await expect(page.locator('.list-preview-categories,.preview-thumbnails')).toHaveCount(0);
- await expect(page.locator('.system-row[href="/ant/"] img')).toHaveAttribute('src',/ant-overview.webp/);
+ await expect(page.locator('.system-row[href="/ant/"] .row-image > img')).toHaveAttribute('src',/ant-overview.webp/);
  await page.locator('.system-row[href="/sansan/"]').click();await expect(page.locator('.reference-gallery')).toBeVisible();await expect(page.locator('.main-preview')).toHaveCount(0);
  const images=page.locator('.reference-thumbnail');await images.nth(1).click();await expect(page.locator('.zoom-dialog')).toBeVisible();await expect(page.locator('.zoom-dialog img')).toHaveAttribute('src',/sansan-0.webp/);await page.keyboard.press('Escape');await expect(page.locator('.reference-gallery')).toBeVisible();
 });
@@ -205,7 +205,7 @@ test('desktop grid shows every system and opens its overview with a scrolling de
  const nextRow=await page.locator('.system-row').nth(4).boundingBox();expect(nextRow.y).toBeGreaterThan(cards[0].bottom);
  await expect(page.locator('.list-preview-categories')).toHaveCount(0);
  const card=page.locator('.system-row[href="/carbon/"]');await card.scrollIntoViewIfNeeded();
- await expect(card.locator('img')).toHaveAttribute('src','/specimens/list-thumbnails/carbon-overview.webp');
+ await expect(card.locator('.row-image > img')).toHaveAttribute('src','/specimens/list-thumbnails/carbon-overview.webp');
  const scroll=await page.locator('.catalog-list').evaluate(el=>el.scrollTop);expect(scroll).toBeGreaterThan(0);
  await card.click();await expect(page).toHaveURL(/\/carbon\/$/);
  await expect(page.locator('.catalog-app')).not.toHaveClass(/catalog-home/);

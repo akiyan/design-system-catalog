@@ -1,0 +1,2095 @@
+{
+  "dads": {
+    "src": "/site-favicons/dads.ico",
+    "sourceUrl": "https://design.digital.go.jp/dads/favicon.ico",
+    "pageUrl": "https://design.digital.go.jp/dads/",
+    "resolvedPageUrl": "https://design.digital.go.jp/dads/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://design.digital.go.jp/dads/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://design.digital.go.jp/dads/"
+      },
+      {
+        "url": "https://design.digital.go.jp/dads/favicon.ico",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://design.digital.go.jp/dads/favicon.ico"
+      }
+    ],
+    "declarationCount": 2,
+    "declaredSourceUrl": "https://design.digital.go.jp/dads/favicon.ico",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/vnd.microsoft.icon",
+    "bytes": 104897,
+    "width": 256,
+    "height": 256,
+    "validation": "ICO directory, frame bounds and PNG decode / DIB dimensions"
+  },
+  "govuk": {
+    "src": "/site-favicons/govuk.ico",
+    "sourceUrl": "https://design-system.service.gov.uk/assets/images/favicon.ico",
+    "pageUrl": "https://design-system.service.gov.uk/",
+    "resolvedPageUrl": "https://design-system.service.gov.uk/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://design-system.service.gov.uk/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://design-system.service.gov.uk/"
+      },
+      {
+        "url": "https://design-system.service.gov.uk/assets/images/favicon.ico",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://design-system.service.gov.uk/assets/images/favicon.ico"
+      }
+    ],
+    "declarationCount": 4,
+    "declaredSourceUrl": "https://design-system.service.gov.uk/assets/images/favicon.ico",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/vnd.microsoft.icon",
+    "bytes": 6318,
+    "width": 48,
+    "height": 48,
+    "validation": "ICO directory, frame bounds and PNG decode / DIB dimensions"
+  },
+  "uswds": {
+    "src": "/site-favicons/uswds.ico",
+    "sourceUrl": "https://designsystem.digital.gov/assets/img/favicons/favicon.ico",
+    "pageUrl": "https://designsystem.digital.gov/",
+    "resolvedPageUrl": "https://designsystem.digital.gov/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://designsystem.digital.gov/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://designsystem.digital.gov/"
+      },
+      {
+        "url": "https://designsystem.digital.gov/assets/img/favicons/favicon.ico",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://designsystem.digital.gov/assets/img/favicons/favicon.ico"
+      }
+    ],
+    "declarationCount": 7,
+    "declaredSourceUrl": "https://designsystem.digital.gov/assets/img/favicons/favicon.ico",
+    "method": "html-declaration",
+    "rel": "shortcut icon",
+    "contentType": "image/vnd.microsoft.icon",
+    "bytes": 15086,
+    "width": 48,
+    "height": 48,
+    "validation": "ICO directory, frame bounds and PNG decode / DIB dimensions"
+  },
+  "cloudscape": {
+    "src": "/site-favicons/cloudscape.ico",
+    "sourceUrl": "https://cloudscape.design/favicon.ico",
+    "pageUrl": "https://cloudscape.design/",
+    "resolvedPageUrl": "https://cloudscape.design/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://cloudscape.design/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://cloudscape.design/"
+      },
+      {
+        "url": "https://cloudscape.design/favicon.ico",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://cloudscape.design/favicon.ico"
+      }
+    ],
+    "declarationCount": 1,
+    "declaredSourceUrl": "https://cloudscape.design/favicon.ico",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/vnd.microsoft.icon",
+    "bytes": 15086,
+    "width": 48,
+    "height": 48,
+    "validation": "ICO directory, frame bounds and PNG decode / DIB dimensions"
+  },
+  "gestalt": {
+    "src": "/site-favicons/gestalt.png",
+    "sourceUrl": "https://gestalt.pinterest.systems/gestalt-logo.png",
+    "pageUrl": "https://gestalt.pinterest.systems/",
+    "resolvedPageUrl": "https://gestalt.pinterest.systems/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://gestalt.pinterest.systems/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://gestalt.pinterest.systems/"
+      },
+      {
+        "url": "https://gestalt.pinterest.systems/gestalt-logo.png",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://gestalt.pinterest.systems/gestalt-logo.png"
+      }
+    ],
+    "declarationCount": 1,
+    "declaredSourceUrl": "https://gestalt.pinterest.systems/gestalt-logo.png",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/png",
+    "bytes": 268,
+    "width": 32,
+    "height": 32,
+    "validation": "sharp metadata and pixel decode"
+  },
+  "sgds": {
+    "src": "/site-favicons/sgds.png",
+    "sourceUrl": "https://www.designsystem.tech.gov.sg/favicon-96x96.png",
+    "pageUrl": "https://www.designsystem.tech.gov.sg/",
+    "resolvedPageUrl": "https://www.designsystem.tech.gov.sg/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://www.designsystem.tech.gov.sg/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://www.designsystem.tech.gov.sg/"
+      },
+      {
+        "url": "https://www.designsystem.tech.gov.sg/favicon-96x96.png",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://www.designsystem.tech.gov.sg/favicon-96x96.png"
+      }
+    ],
+    "declarationCount": 4,
+    "declaredSourceUrl": "https://www.designsystem.tech.gov.sg/favicon-96x96.png",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/png",
+    "bytes": 3034,
+    "width": 96,
+    "height": 96,
+    "validation": "sharp metadata and pixel decode"
+  },
+  "astryx": {
+    "src": "/site-favicons/astryx.svg",
+    "sourceUrl": "https://astryx.atmeta.com/favicon.svg",
+    "pageUrl": "https://astryx.atmeta.com/",
+    "resolvedPageUrl": "https://astryx.atmeta.com/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://astryx.atmeta.com/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://astryx.atmeta.com/"
+      },
+      {
+        "url": "https://astryx.atmeta.com/favicon.svg",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://astryx.atmeta.com/favicon.svg"
+      }
+    ],
+    "declarationCount": 1,
+    "declaredSourceUrl": "https://astryx.atmeta.com/favicon.svg",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/svg+xml",
+    "bytes": 748,
+    "width": 96,
+    "height": 96,
+    "validation": "SVG passive-element/internal-reference checks and raster decode"
+  },
+  "agds": {
+    "src": "/site-favicons/agds.png",
+    "sourceUrl": "https://design-system.agriculture.gov.au/favicon/favicon.png",
+    "pageUrl": "https://design-system.agriculture.gov.au/",
+    "resolvedPageUrl": "https://design-system.agriculture.gov.au/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://design-system.agriculture.gov.au/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://design-system.agriculture.gov.au/"
+      },
+      {
+        "url": "https://design-system.agriculture.gov.au/favicon/favicon.png",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://design-system.agriculture.gov.au/favicon/favicon.png"
+      }
+    ],
+    "declarationCount": 2,
+    "declaredSourceUrl": "https://design-system.agriculture.gov.au/favicon/favicon.png",
+    "method": "html-declaration",
+    "rel": "alternate icon",
+    "contentType": "image/png",
+    "bytes": 713,
+    "width": 32,
+    "height": 32,
+    "validation": "sharp metadata and pixel decode"
+  },
+  "czech": {
+    "src": null,
+    "sourceUrl": null,
+    "pageUrl": "https://designsystem.gov.cz/",
+    "resolvedPageUrl": null,
+    "status": "missing",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://designsystem.gov.cz/",
+        "kind": "page",
+        "status": "failed",
+        "reason": "fetch failed"
+      },
+      {
+        "url": "https://designsystem.gov.cz/favicon.ico",
+        "kind": "image",
+        "status": "failed",
+        "reason": "fetch failed"
+      }
+    ]
+  },
+  "italia": {
+    "src": "/site-favicons/italia.png",
+    "sourceUrl": "https://designers.italia.it/favicons/favicon-32x32.png",
+    "pageUrl": "https://designers.italia.it/",
+    "resolvedPageUrl": "https://designers.italia.it/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://designers.italia.it/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://designers.italia.it/"
+      },
+      {
+        "url": "https://designers.italia.it/favicons/favicon-32x32.png",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://designers.italia.it/favicons/favicon-32x32.png"
+      }
+    ],
+    "declarationCount": 5,
+    "declaredSourceUrl": "https://designers.italia.it/favicons/favicon-32x32.png",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/png",
+    "bytes": 354,
+    "width": 32,
+    "height": 32,
+    "validation": "sharp metadata and pixel decode"
+  },
+  "europa": {
+    "src": null,
+    "sourceUrl": null,
+    "pageUrl": "https://ec.europa.eu/component-library/",
+    "resolvedPageUrl": "https://ec.europa.eu/component-library/",
+    "status": "missing",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://ec.europa.eu/component-library/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://ec.europa.eu/component-library/"
+      },
+      {
+        "url": "https://ec.europa.eu/favicon.ico",
+        "kind": "image",
+        "status": "failed",
+        "reason": "Image Content-Type mismatch: image/x-icon / png"
+      }
+    ],
+    "declarationCount": 0
+  },
+  "canada": {
+    "src": null,
+    "sourceUrl": null,
+    "pageUrl": "https://design-system.canada.ca/",
+    "resolvedPageUrl": "https://design-system.canada.ca/",
+    "status": "missing",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://design-system.canada.ca/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://design-system.canada.ca/"
+      },
+      {
+        "url": "https://design-system.canada.ca/favicon.ico",
+        "kind": "image",
+        "status": "failed",
+        "reason": "HTML is not an image"
+      }
+    ],
+    "declarationCount": 1
+  },
+  "cfpb": {
+    "src": "/site-favicons/cfpb.ico",
+    "sourceUrl": "https://cfpb.github.io/favicon.ico",
+    "pageUrl": "https://cfpb.github.io/design-system/",
+    "resolvedPageUrl": "https://cfpb.github.io/design-system/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://cfpb.github.io/design-system/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://cfpb.github.io/design-system/"
+      },
+      {
+        "url": "https://cfpb.github.io/favicon.ico",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://cfpb.github.io/favicon.ico"
+      }
+    ],
+    "declarationCount": 0,
+    "declaredSourceUrl": "https://cfpb.github.io/favicon.ico",
+    "method": "same-origin-fallback",
+    "rel": null,
+    "contentType": "image/vnd.microsoft.icon",
+    "bytes": 5390,
+    "width": 32,
+    "height": 32,
+    "validation": "ICO directory, frame bounds and PNG decode / DIB dimensions"
+  },
+  "bristol": {
+    "src": null,
+    "sourceUrl": null,
+    "pageUrl": "https://style.bristol.gov.uk/",
+    "resolvedPageUrl": "https://style.bristol.gov.uk/",
+    "status": "missing",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://style.bristol.gov.uk/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://style.bristol.gov.uk/"
+      },
+      {
+        "url": "https://style.bristol.gov.uk/favicon.ico",
+        "kind": "image",
+        "status": "failed",
+        "reason": "HTTP 404"
+      }
+    ],
+    "declarationCount": 0
+  },
+  "bc": {
+    "src": "/site-favicons/bc.ico",
+    "sourceUrl": "https://www2.gov.bc.ca/favicon.ico",
+    "pageUrl": "https://www2.gov.bc.ca/gov/content/digital/design-system",
+    "resolvedPageUrl": "https://www2.gov.bc.ca/gov/content/digital/design-system",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://www2.gov.bc.ca/gov/content/digital/design-system",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://www2.gov.bc.ca/gov/content/digital/design-system"
+      },
+      {
+        "url": "https://www2.gov.bc.ca/favicon.ico",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://www2.gov.bc.ca/favicon.ico"
+      }
+    ],
+    "declarationCount": 0,
+    "declaredSourceUrl": "https://www2.gov.bc.ca/favicon.ico",
+    "method": "same-origin-fallback",
+    "rel": null,
+    "contentType": "image/vnd.microsoft.icon",
+    "bytes": 22486,
+    "width": 48,
+    "height": 48,
+    "validation": "ICO directory, frame bounds and PNG decode / DIB dimensions"
+  },
+  "sansan": {
+    "src": "/site-favicons/sansan.ico",
+    "sourceUrl": "https://ui.one-design-system.sansan.com/favicon.ico",
+    "pageUrl": "https://ui.one-design-system.sansan.com/",
+    "resolvedPageUrl": "https://ui.one-design-system.sansan.com/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://ui.one-design-system.sansan.com/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://ui.one-design-system.sansan.com/"
+      },
+      {
+        "url": "https://ui.one-design-system.sansan.com/favicon.ico",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://ui.one-design-system.sansan.com/favicon.ico"
+      }
+    ],
+    "declarationCount": 1,
+    "declaredSourceUrl": "https://ui.one-design-system.sansan.com/favicon.ico",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/vnd.microsoft.icon",
+    "bytes": 4286,
+    "width": 32,
+    "height": 32,
+    "validation": "ICO directory, frame bounds and PNG decode / DIB dimensions"
+  },
+  "charcoal": {
+    "src": "/site-favicons/charcoal.svg",
+    "sourceUrl": "https://charcoal-web.pixiv.design/favicon.svg",
+    "pageUrl": "https://charcoal-web.pixiv.design/",
+    "resolvedPageUrl": "https://charcoal-web.pixiv.design/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://charcoal-web.pixiv.design/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://charcoal-web.pixiv.design/"
+      },
+      {
+        "url": "https://charcoal-web.pixiv.design/favicon.svg",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://charcoal-web.pixiv.design/favicon.svg"
+      }
+    ],
+    "declarationCount": 1,
+    "declaredSourceUrl": "https://charcoal-web.pixiv.design/favicon.svg",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/svg+xml",
+    "bytes": 2163,
+    "width": 32,
+    "height": 32,
+    "validation": "SVG passive-element/internal-reference checks and raster decode"
+  },
+  "serendie": {
+    "src": "/site-favicons/serendie.svg",
+    "sourceUrl": "https://serendie.design/favicon.svg",
+    "pageUrl": "https://serendie.design/",
+    "resolvedPageUrl": "https://serendie.design/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://serendie.design/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://serendie.design/"
+      },
+      {
+        "url": "https://serendie.design/favicon.svg",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://serendie.design/favicon.svg"
+      }
+    ],
+    "declarationCount": 1,
+    "declaredSourceUrl": "https://serendie.design/favicon.svg",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/svg+xml",
+    "bytes": 1569,
+    "width": 180,
+    "height": 180,
+    "validation": "SVG passive-element/internal-reference checks and raster decode"
+  },
+  "sugao": {
+    "src": "/site-favicons/sugao.png",
+    "sourceUrl": "https://storage.googleapis.com/production-os-assets/assets/51510bfa-aaea-4470-81b6-336ef1a6a867",
+    "pageUrl": "https://brand.kaonavi.jp/sugao",
+    "resolvedPageUrl": "https://brand.kaonavi.jp/sugao",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://brand.kaonavi.jp/sugao",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://brand.kaonavi.jp/sugao"
+      },
+      {
+        "url": "https://storage.googleapis.com/production-os-assets/assets/51510bfa-aaea-4470-81b6-336ef1a6a867",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://storage.googleapis.com/production-os-assets/assets/51510bfa-aaea-4470-81b6-336ef1a6a867"
+      }
+    ],
+    "declarationCount": 1,
+    "declaredSourceUrl": "https://storage.googleapis.com/production-os-assets/assets/51510bfa-aaea-4470-81b6-336ef1a6a867",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/png",
+    "bytes": 1136,
+    "width": 32,
+    "height": 32,
+    "validation": "sharp metadata and pixel decode"
+  },
+  "vibes": {
+    "src": "/site-favicons/vibes.svg",
+    "sourceUrl": "https://vibes.freee.co.jp/favicon.svg",
+    "pageUrl": "https://vibes.freee.co.jp/",
+    "resolvedPageUrl": "https://vibes.freee.co.jp/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://vibes.freee.co.jp/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://vibes.freee.co.jp/"
+      },
+      {
+        "url": "https://vibes.freee.co.jp/favicon.svg",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://vibes.freee.co.jp/favicon.svg"
+      }
+    ],
+    "declarationCount": 1,
+    "declaredSourceUrl": "https://vibes.freee.co.jp/favicon.svg",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/svg+xml",
+    "bytes": 1292,
+    "width": 164,
+    "height": 164,
+    "validation": "SVG passive-element/internal-reference checks and raster decode"
+  },
+  "vitals": {
+    "src": "/site-favicons/vitals.ico",
+    "sourceUrl": "https://vitals.ubie.life/assets/images/favicon.ico",
+    "pageUrl": "https://vitals.ubie.life/",
+    "resolvedPageUrl": "https://vitals.ubie.life/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://vitals.ubie.life/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://vitals.ubie.life/"
+      },
+      {
+        "url": "https://vitals.ubie.life/assets/images/favicon.ico",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://vitals.ubie.life/assets/images/favicon.ico"
+      }
+    ],
+    "declarationCount": 1,
+    "declaredSourceUrl": "https://vitals.ubie.life/assets/images/favicon.ico",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/vnd.microsoft.icon",
+    "bytes": 17542,
+    "width": 48,
+    "height": 48,
+    "validation": "ICO directory, frame bounds and PNG decode / DIB dimensions"
+  },
+  "pajamas": {
+    "src": "/site-favicons/pajamas.ico",
+    "sourceUrl": "https://design.gitlab.com/favicon.ico",
+    "pageUrl": "https://design.gitlab.com/",
+    "resolvedPageUrl": "https://design.gitlab.com/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://design.gitlab.com/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://design.gitlab.com/"
+      },
+      {
+        "url": "https://design.gitlab.com/favicon.ico",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://design.gitlab.com/favicon.ico"
+      }
+    ],
+    "declarationCount": 3,
+    "declaredSourceUrl": "https://design.gitlab.com/favicon.ico",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/vnd.microsoft.icon",
+    "bytes": 5430,
+    "width": 32,
+    "height": 32,
+    "validation": "ICO directory, frame bounds and PNG decode / DIB dimensions"
+  },
+  "paste": {
+    "src": "/site-favicons/paste.png",
+    "sourceUrl": "https://github.githubassets.com/favicons/favicon.png",
+    "pageUrl": "https://github.com/twilio-labs/paste",
+    "resolvedPageUrl": "https://github.com/twilio-labs/paste",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://github.com/twilio-labs/paste",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://github.com/twilio-labs/paste"
+      },
+      {
+        "url": "https://github.githubassets.com/favicons/favicon.png",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://github.githubassets.com/favicons/favicon.png"
+      }
+    ],
+    "declarationCount": 3,
+    "declaredSourceUrl": "https://github.githubassets.com/favicons/favicon.png",
+    "method": "html-declaration",
+    "rel": "alternate icon",
+    "contentType": "image/png",
+    "bytes": 958,
+    "width": 32,
+    "height": 32,
+    "validation": "sharp metadata and pixel decode"
+  },
+  "wise": {
+    "src": "/site-favicons/wise.png",
+    "sourceUrl": "https://wise.design/_assets/v11/fd37cc54f076ecddabe5a385fe6bb1e580e2028c.png",
+    "pageUrl": "https://wise.design/",
+    "resolvedPageUrl": "https://wise.design/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://wise.design/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://wise.design/"
+      },
+      {
+        "url": "https://wise.design/_assets/v11/fd37cc54f076ecddabe5a385fe6bb1e580e2028c.png",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://wise.design/_assets/v11/fd37cc54f076ecddabe5a385fe6bb1e580e2028c.png"
+      }
+    ],
+    "declarationCount": 1,
+    "declaredSourceUrl": "https://wise.design/_assets/v11/fd37cc54f076ecddabe5a385fe6bb1e580e2028c.png",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/png",
+    "bytes": 1489,
+    "width": 48,
+    "height": 48,
+    "validation": "sharp metadata and pixel decode"
+  },
+  "semi": {
+    "src": "/site-favicons/semi.ico",
+    "sourceUrl": "https://lf9-static.semi.design/obj/semi-tos/images/favicon.ico",
+    "pageUrl": "https://semi.design/",
+    "resolvedPageUrl": "https://semi.design/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://semi.design/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://semi.design/"
+      },
+      {
+        "url": "https://lf9-static.semi.design/obj/semi-tos/images/favicon.ico",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://lf9-static.semi.design/obj/semi-tos/images/favicon.ico"
+      }
+    ],
+    "declarationCount": 1,
+    "declaredSourceUrl": "https://lf9-static.semi.design/obj/semi-tos/images/favicon.ico",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/vnd.microsoft.icon",
+    "bytes": 15406,
+    "width": 48,
+    "height": 48,
+    "validation": "ICO directory, frame bounds and PNG decode / DIB dimensions"
+  },
+  "arco": {
+    "src": "/site-favicons/arco.ico",
+    "sourceUrl": "https://unpkg.byted-static.com/latest/byted/arco-config/assets/favicon.ico",
+    "pageUrl": "https://arco.design/",
+    "resolvedPageUrl": "https://arco.design/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://arco.design/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://arco.design/"
+      },
+      {
+        "url": "https://unpkg.byted-static.com/latest/byted/arco-config/assets/favicon.ico",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://unpkg.byted-static.com/latest/byted/arco-config/assets/favicon.ico"
+      }
+    ],
+    "declarationCount": 1,
+    "declaredSourceUrl": "https://unpkg.byted-static.com/latest/byted/arco-config/assets/favicon.ico",
+    "method": "html-declaration",
+    "rel": "shortcut icon",
+    "contentType": "image/vnd.microsoft.icon",
+    "bytes": 93062,
+    "width": 150,
+    "height": 150,
+    "validation": "ICO directory, frame bounds and PNG decode / DIB dimensions"
+  },
+  "spectrum": {
+    "src": "/site-favicons/spectrum.ico",
+    "sourceUrl": "https://spectrum.adobe.com/favicon.ico",
+    "pageUrl": "https://spectrum.adobe.com/",
+    "resolvedPageUrl": "https://spectrum.adobe.com/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://spectrum.adobe.com/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://spectrum.adobe.com/"
+      },
+      {
+        "url": "https://spectrum.adobe.com/favicon.ico",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://spectrum.adobe.com/favicon.ico"
+      }
+    ],
+    "declarationCount": 0,
+    "declaredSourceUrl": "https://spectrum.adobe.com/favicon.ico",
+    "method": "same-origin-fallback",
+    "rel": null,
+    "contentType": "image/vnd.microsoft.icon",
+    "bytes": 15406,
+    "width": 48,
+    "height": 48,
+    "validation": "ICO directory, frame bounds and PNG decode / DIB dimensions"
+  },
+  "carbon": {
+    "src": "/site-favicons/carbon.svg",
+    "sourceUrl": "https://www.carbondesignsystem.com/favicon.svg",
+    "pageUrl": "https://www.carbondesignsystem.com/",
+    "resolvedPageUrl": "https://www.carbondesignsystem.com/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://www.carbondesignsystem.com/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://www.carbondesignsystem.com/"
+      },
+      {
+        "url": "https://www.carbondesignsystem.com/favicon.ico",
+        "kind": "image",
+        "status": "failed",
+        "reason": "HTTP 404"
+      },
+      {
+        "url": "https://www.carbondesignsystem.com/favicon.svg",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://www.carbondesignsystem.com/favicon.svg"
+      }
+    ],
+    "declarationCount": 2,
+    "declaredSourceUrl": "https://www.carbondesignsystem.com/favicon.svg",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/svg+xml",
+    "bytes": 673,
+    "width": 512,
+    "height": 512,
+    "validation": "SVG passive-element/internal-reference checks and raster decode"
+  },
+  "fluent": {
+    "src": "/site-favicons/fluent.ico",
+    "sourceUrl": "https://fluent2.microsoft.design/favicons/favicon.ico",
+    "pageUrl": "https://fluent2.microsoft.design/",
+    "resolvedPageUrl": "https://fluent2.microsoft.design/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://fluent2.microsoft.design/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://fluent2.microsoft.design/"
+      },
+      {
+        "url": "https://fluent2.microsoft.design/favicons/favicon.ico",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://fluent2.microsoft.design/favicons/favicon.ico"
+      }
+    ],
+    "declarationCount": 1,
+    "declaredSourceUrl": "https://fluent2.microsoft.design/favicons/favicon.ico",
+    "method": "html-declaration",
+    "rel": "shortcut icon",
+    "contentType": "image/vnd.microsoft.icon",
+    "bytes": 17174,
+    "width": 128,
+    "height": 128,
+    "validation": "ICO directory, frame bounds and PNG decode / DIB dimensions"
+  },
+  "baseweb": {
+    "src": "/site-favicons/baseweb.png",
+    "sourceUrl": "https://baseweb.design/favicon-32x32.png",
+    "pageUrl": "https://baseweb.design/",
+    "resolvedPageUrl": "https://baseweb.design/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://baseweb.design/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://baseweb.design/"
+      },
+      {
+        "url": "https://baseweb.design/favicon-32x32.png",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://baseweb.design/favicon-32x32.png"
+      }
+    ],
+    "declarationCount": 4,
+    "declaredSourceUrl": "https://baseweb.design/favicon-32x32.png",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/png",
+    "bytes": 1294,
+    "width": 32,
+    "height": 32,
+    "validation": "sharp metadata and pixel decode"
+  },
+  "polaris": {
+    "src": "/site-favicons/polaris.ico",
+    "sourceUrl": "https://shopify.dev/favicon.ico",
+    "pageUrl": "https://shopify.dev/docs/api/polaris",
+    "resolvedPageUrl": "https://shopify.dev/docs/api/polaris",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://shopify.dev/docs/api/polaris",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://shopify.dev/docs/api/polaris"
+      },
+      {
+        "url": "https://shopify.dev/favicon.ico",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://shopify.dev/favicon.ico"
+      }
+    ],
+    "declarationCount": 1,
+    "declaredSourceUrl": "https://shopify.dev/favicon.ico",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/vnd.microsoft.icon",
+    "bytes": 15086,
+    "width": 48,
+    "height": 48,
+    "validation": "ICO directory, frame bounds and PNG decode / DIB dimensions"
+  },
+  "spindle": {
+    "src": "/site-favicons/spindle.png",
+    "sourceUrl": "https://spindle.ameba.design/favicon-32x32.png?v=624ff24603d8d57c2ac7fdbac89409f7",
+    "pageUrl": "https://spindle.ameba.design/",
+    "resolvedPageUrl": "https://spindle.ameba.design/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://spindle.ameba.design/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://spindle.ameba.design/"
+      },
+      {
+        "url": "https://spindle.ameba.design/favicon-32x32.png?v=624ff24603d8d57c2ac7fdbac89409f7",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://spindle.ameba.design/favicon-32x32.png?v=624ff24603d8d57c2ac7fdbac89409f7"
+      }
+    ],
+    "declarationCount": 9,
+    "declaredSourceUrl": "https://spindle.ameba.design/favicon-32x32.png?v=624ff24603d8d57c2ac7fdbac89409f7",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/png",
+    "bytes": 1048,
+    "width": 32,
+    "height": 32,
+    "validation": "sharp metadata and pixel decode"
+  },
+  "smarthr": {
+    "src": "/site-favicons/smarthr.png",
+    "sourceUrl": "https://smarthr.design/icons/apple-touch-icon.png",
+    "pageUrl": "https://smarthr.design/",
+    "resolvedPageUrl": "https://smarthr.design/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://smarthr.design/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://smarthr.design/"
+      },
+      {
+        "url": "https://smarthr.design/favicon.ico",
+        "kind": "image",
+        "status": "failed",
+        "reason": "Image Content-Type mismatch: image/vnd.microsoft.icon / png"
+      },
+      {
+        "url": "https://smarthr.design/icons/apple-touch-icon.png",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://smarthr.design/icons/apple-touch-icon.png"
+      }
+    ],
+    "declarationCount": 2,
+    "declaredSourceUrl": "https://smarthr.design/icons/apple-touch-icon.png",
+    "method": "html-declaration",
+    "rel": "apple-touch-icon",
+    "contentType": "image/png",
+    "bytes": 4567,
+    "width": 180,
+    "height": 180,
+    "validation": "sharp metadata and pixel decode"
+  },
+  "ikyu": {
+    "src": null,
+    "sourceUrl": null,
+    "pageUrl": "https://www.ikyu.co.jp/design_guideline/",
+    "resolvedPageUrl": "https://www.ikyu.co.jp/design_guideline/",
+    "status": "missing",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://www.ikyu.co.jp/design_guideline/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://www.ikyu.co.jp/design_guideline/"
+      },
+      {
+        "url": "https://storage.googleapis.com/production-os-assets/assets/6a6704c7-e051-453b-8ca2-b4de651af59e",
+        "kind": "image",
+        "status": "failed",
+        "reason": "ICO Content-Type mismatch: image/png"
+      },
+      {
+        "url": "https://www.ikyu.co.jp/favicon.ico",
+        "kind": "image",
+        "status": "failed",
+        "reason": "HTTP 404"
+      }
+    ],
+    "declarationCount": 1
+  },
+  "francfranc": {
+    "src": "/site-favicons/francfranc.ico",
+    "sourceUrl": "https://francfranc.io/favicon.ico",
+    "pageUrl": "https://francfranc.io/design-system-guidelines/design-system/",
+    "resolvedPageUrl": "https://francfranc.io/design-system-guidelines/design-system/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://francfranc.io/design-system-guidelines/design-system/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://francfranc.io/design-system-guidelines/design-system/"
+      },
+      {
+        "url": "https://francfranc.io/favicon.ico",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://francfranc.io/favicon.ico"
+      }
+    ],
+    "declarationCount": 2,
+    "declaredSourceUrl": "https://francfranc.io/favicon.ico",
+    "method": "html-declaration",
+    "rel": "shortcut icon",
+    "contentType": "image/vnd.microsoft.icon",
+    "bytes": 4286,
+    "width": 32,
+    "height": 32,
+    "validation": "ICO directory, frame bounds and PNG decode / DIB dimensions"
+  },
+  "porsche": {
+    "src": "/site-favicons/porsche.ico",
+    "sourceUrl": "https://cdn.ui.porsche.com/porsche-design-system/meta-icons/favicon.ed9a926.ico",
+    "pageUrl": "https://designsystem.porsche.com/v4/",
+    "resolvedPageUrl": "https://designsystem.porsche.com/v4/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://designsystem.porsche.com/v4/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://designsystem.porsche.com/v4/"
+      },
+      {
+        "url": "https://cdn.ui.porsche.com/porsche-design-system/meta-icons/favicon.ed9a926.ico",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://cdn.ui.porsche.com/porsche-design-system/meta-icons/favicon.ed9a926.ico"
+      }
+    ],
+    "declarationCount": 3,
+    "declaredSourceUrl": "https://cdn.ui.porsche.com/porsche-design-system/meta-icons/favicon.ed9a926.ico",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/vnd.microsoft.icon",
+    "bytes": 15086,
+    "width": 48,
+    "height": 48,
+    "validation": "ICO directory, frame bounds and PNG decode / DIB dimensions"
+  },
+  "audi": {
+    "src": "/site-favicons/audi.png",
+    "sourceUrl": "https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoidm9sa3N3YWdlblwvZmlsZVwvRmNkdmg5TWRCUTVSeXpyMVN4OTYucG5nIn0:volkswagen:McFzjkTo9wQH1e4Bp4TTgInytwtMtQaMiwnCfjVgzcM?width={width}",
+    "pageUrl": "https://styleguide.audi.com/",
+    "resolvedPageUrl": "https://styleguide.audi.com/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://styleguide.audi.com/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://styleguide.audi.com/"
+      },
+      {
+        "url": "https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoidm9sa3N3YWdlblwvZmlsZVwvRmNkdmg5TWRCUTVSeXpyMVN4OTYucG5nIn0:volkswagen:McFzjkTo9wQH1e4Bp4TTgInytwtMtQaMiwnCfjVgzcM?width={width}",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoidm9sa3N3YWdlblwvZmlsZVwvRmNkdmg5TWRCUTVSeXpyMVN4OTYucG5nIn0:volkswagen:McFzjkTo9wQH1e4Bp4TTgInytwtMtQaMiwnCfjVgzcM?width={width}"
+      }
+    ],
+    "declarationCount": 1,
+    "declaredSourceUrl": "https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoidm9sa3N3YWdlblwvZmlsZVwvRmNkdmg5TWRCUTVSeXpyMVN4OTYucG5nIn0:volkswagen:McFzjkTo9wQH1e4Bp4TTgInytwtMtQaMiwnCfjVgzcM?width={width}",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/png",
+    "bytes": 5565,
+    "width": 192,
+    "height": 192,
+    "validation": "sharp metadata and pixel decode"
+  },
+  "coinbase": {
+    "src": "/site-favicons/coinbase.ico",
+    "sourceUrl": "https://cds.coinbase.com/img/favicon.ico",
+    "pageUrl": "https://cds.coinbase.com/",
+    "resolvedPageUrl": "https://cds.coinbase.com/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://cds.coinbase.com/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://cds.coinbase.com/"
+      },
+      {
+        "url": "https://cds.coinbase.com/img/favicon.ico",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://cds.coinbase.com/img/favicon.ico"
+      }
+    ],
+    "declarationCount": 1,
+    "declaredSourceUrl": "https://cds.coinbase.com/img/favicon.ico",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/vnd.microsoft.icon",
+    "bytes": 7406,
+    "width": 48,
+    "height": 48,
+    "validation": "ICO directory, frame bounds and PNG decode / DIB dimensions"
+  },
+  "tdesign": {
+    "src": "/site-favicons/tdesign.ico",
+    "sourceUrl": "https://static.tdesign.tencent.com/favicon.ico",
+    "pageUrl": "https://tdesign.tencent.com/",
+    "resolvedPageUrl": "https://tdesign.tencent.com/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://tdesign.tencent.com/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://tdesign.tencent.com/"
+      },
+      {
+        "url": "https://static.tdesign.tencent.com/favicon.ico",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://static.tdesign.tencent.com/favicon.ico"
+      }
+    ],
+    "declarationCount": 1,
+    "declaredSourceUrl": "https://static.tdesign.tencent.com/favicon.ico",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/vnd.microsoft.icon",
+    "bytes": 16958,
+    "width": 64,
+    "height": 64,
+    "validation": "ICO directory, frame bounds and PNG decode / DIB dimensions"
+  },
+  "ant": {
+    "src": "/site-favicons/ant.png",
+    "sourceUrl": "https://gw.alipayobjects.com/zos/rmsportal/rlpTLlbMzTNYuZGGCVYM.png",
+    "pageUrl": "https://ant.design/",
+    "resolvedPageUrl": "https://ant.design/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://ant.design/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://ant.design/"
+      },
+      {
+        "url": "https://gw.alipayobjects.com/zos/rmsportal/rlpTLlbMzTNYuZGGCVYM.png",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://gw.alipayobjects.com/zos/rmsportal/rlpTLlbMzTNYuZGGCVYM.png"
+      }
+    ],
+    "declarationCount": 2,
+    "declaredSourceUrl": "https://gw.alipayobjects.com/zos/rmsportal/rlpTLlbMzTNYuZGGCVYM.png",
+    "method": "html-declaration",
+    "rel": "shortcut icon",
+    "contentType": "image/png",
+    "bytes": 20228,
+    "width": 200,
+    "height": 200,
+    "validation": "sharp metadata and pixel decode"
+  },
+  "kumo": {
+    "src": "/site-favicons/kumo.svg",
+    "sourceUrl": "https://kumo-ui.com/favicon.svg",
+    "pageUrl": "https://kumo-ui.com/",
+    "resolvedPageUrl": "https://kumo-ui.com/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://kumo-ui.com/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://kumo-ui.com/"
+      },
+      {
+        "url": "https://kumo-ui.com/favicon.svg",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://kumo-ui.com/favicon.svg"
+      }
+    ],
+    "declarationCount": 2,
+    "declaredSourceUrl": "https://kumo-ui.com/favicon.svg",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/svg+xml",
+    "bytes": 1420,
+    "width": 40,
+    "height": 40,
+    "validation": "SVG passive-element/internal-reference checks and raster decode"
+  },
+  "patternfly": {
+    "src": "/site-favicons/patternfly.png",
+    "sourceUrl": "https://www.patternfly.org/assets/Favicon-Light.png",
+    "pageUrl": "https://www.patternfly.org/",
+    "resolvedPageUrl": "https://www.patternfly.org/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://www.patternfly.org/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://www.patternfly.org/"
+      },
+      {
+        "url": "https://www.patternfly.org/assets/Favicon-Light.png",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://www.patternfly.org/assets/Favicon-Light.png"
+      }
+    ],
+    "declarationCount": 4,
+    "declaredSourceUrl": "https://www.patternfly.org/assets/Favicon-Light.png",
+    "method": "html-declaration",
+    "rel": "shortcut icon",
+    "contentType": "image/png",
+    "bytes": 4949,
+    "width": 96,
+    "height": 96,
+    "validation": "sharp metadata and pixel decode"
+  },
+  "primer": {
+    "src": "/site-favicons/primer.svg",
+    "sourceUrl": "https://primer.style/icon.svg?icon.1ohssj3nq107e.svg",
+    "pageUrl": "https://primer.style/",
+    "resolvedPageUrl": "https://primer.style/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://primer.style/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://primer.style/"
+      },
+      {
+        "url": "https://primer.style/icon.svg?icon.1ohssj3nq107e.svg",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://primer.style/icon.svg?icon.1ohssj3nq107e.svg"
+      }
+    ],
+    "declarationCount": 1,
+    "declaredSourceUrl": "https://primer.style/icon.svg?icon.1ohssj3nq107e.svg",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/svg+xml",
+    "bytes": 1077,
+    "width": 32,
+    "height": 32,
+    "validation": "SVG passive-element/internal-reference checks and raster decode"
+  },
+  "atlassian": {
+    "src": "/site-favicons/atlassian.png",
+    "sourceUrl": "https://atlassian.design/assets/3ed431de8fd6/favicon-32x32.png?v=f3b457b5551bdc77176991812213b3c8",
+    "pageUrl": "https://atlassian.design/",
+    "resolvedPageUrl": "https://atlassian.design/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://atlassian.design/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://atlassian.design/"
+      },
+      {
+        "url": "https://atlassian.design/assets/3ed431de8fd6/favicon-32x32.png?v=f3b457b5551bdc77176991812213b3c8",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://atlassian.design/assets/3ed431de8fd6/favicon-32x32.png?v=f3b457b5551bdc77176991812213b3c8"
+      }
+    ],
+    "declarationCount": 10,
+    "declaredSourceUrl": "https://atlassian.design/assets/3ed431de8fd6/favicon-32x32.png?v=f3b457b5551bdc77176991812213b3c8",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/png",
+    "bytes": 1409,
+    "width": 32,
+    "height": 32,
+    "validation": "sharp metadata and pixel decode"
+  },
+  "lightning": {
+    "src": "/site-favicons/lightning.ico",
+    "sourceUrl": "https://cdn.zeroheight.com/images/salesforce_favicon.ico?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uemVyb2hlaWdodC5jb20vaW1hZ2VzL3NhbGVzZm9yY2VfZmF2aWNvbi5pY28iLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTUyNDA4MTJ9fX1dfQ__&Signature=Dswl63OR1nzL2~831FiQsxoen0RWXs9RWFksDr6xhkCrbPUTCS~ze7Xzkju5hc21U1HLi0fZQWVdXY4afN~VbJ1wp91TxSVNwVpdMRwB0GvWrrp8NsqP9s9U0Kr4V4eEUzUb406j5h8iGY9Jw~fJgkhvfowLs8nyIioHbZxIgf5DEQvwZUsBSOD25hdIH-EX-~xS-9MW1mYipzF7ROEGklnqvOD8Yc5zI3IrXPEMShqgz2ulic5WAwjebgxd-sw5WIZn4B3~fh8zBIpFs~ZwgiZpPWrEbGmzNv3npuRIZvl1pKF7MWAECJkH9Rjr0OmC2ANQBLdIBfrB~pGT3SgC7w__&Key-Pair-Id=KDUNFXWNWK45P",
+    "pageUrl": "https://www.lightningdesignsystem.com/",
+    "resolvedPageUrl": "https://www.lightningdesignsystem.com/2e1ef8501",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://www.lightningdesignsystem.com/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://www.lightningdesignsystem.com/2e1ef8501"
+      },
+      {
+        "url": "https://www.lightningdesignsystem.com/uploads/salesforce_favicon.ico",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://cdn.zeroheight.com/images/salesforce_favicon.ico?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9jZG4uemVyb2hlaWdodC5jb20vaW1hZ2VzL3NhbGVzZm9yY2VfZmF2aWNvbi5pY28iLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTUyNDA4MTJ9fX1dfQ__&Signature=Dswl63OR1nzL2~831FiQsxoen0RWXs9RWFksDr6xhkCrbPUTCS~ze7Xzkju5hc21U1HLi0fZQWVdXY4afN~VbJ1wp91TxSVNwVpdMRwB0GvWrrp8NsqP9s9U0Kr4V4eEUzUb406j5h8iGY9Jw~fJgkhvfowLs8nyIioHbZxIgf5DEQvwZUsBSOD25hdIH-EX-~xS-9MW1mYipzF7ROEGklnqvOD8Yc5zI3IrXPEMShqgz2ulic5WAwjebgxd-sw5WIZn4B3~fh8zBIpFs~ZwgiZpPWrEbGmzNv3npuRIZvl1pKF7MWAECJkH9Rjr0OmC2ANQBLdIBfrB~pGT3SgC7w__&Key-Pair-Id=KDUNFXWNWK45P"
+      }
+    ],
+    "declarationCount": 1,
+    "declaredSourceUrl": "https://www.lightningdesignsystem.com/uploads/salesforce_favicon.ico",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/vnd.microsoft.icon",
+    "bytes": 15086,
+    "width": 48,
+    "height": 48,
+    "validation": "ICO directory, frame bounds and PNG decode / DIB dimensions"
+  },
+  "forma36": {
+    "src": "/site-favicons/forma36.png",
+    "sourceUrl": "https://f36.contentful.com/favicon.png",
+    "pageUrl": "https://f36.contentful.com/",
+    "resolvedPageUrl": "https://f36.contentful.com/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://f36.contentful.com/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://f36.contentful.com/"
+      },
+      {
+        "url": "https://f36.contentful.com/favicon.png",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://f36.contentful.com/favicon.png"
+      }
+    ],
+    "declarationCount": 1,
+    "declaredSourceUrl": "https://f36.contentful.com/favicon.png",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/png",
+    "bytes": 730,
+    "width": 32,
+    "height": 32,
+    "validation": "sharp metadata and pixel decode"
+  },
+  "evergreen": {
+    "src": "/site-favicons/evergreen.png",
+    "sourceUrl": "https://evergreen.segment.com/favicon-16x16.png",
+    "pageUrl": "https://evergreen.segment.com/",
+    "resolvedPageUrl": "https://evergreen.segment.com/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://evergreen.segment.com/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://evergreen.segment.com/"
+      },
+      {
+        "url": "https://evergreen.segment.com/favicon-16x16.png",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://evergreen.segment.com/favicon-16x16.png"
+      }
+    ],
+    "declarationCount": 2,
+    "declaredSourceUrl": "https://evergreen.segment.com/favicon-16x16.png",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/png",
+    "bytes": 1591,
+    "width": 16,
+    "height": 16,
+    "validation": "sharp metadata and pixel decode"
+  },
+  "airtable": {
+    "src": "/site-favicons/airtable.svg",
+    "sourceUrl": "https://airtable.com/images/favicon/baymax/favicon.svg?v=3",
+    "pageUrl": "https://airtable.com/developers/extensions/api/UI/Style%20System/All%20styles",
+    "resolvedPageUrl": "https://airtable.com/developers/extensions/api/UI/Style%20System/All%20styles",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://airtable.com/developers/extensions/api/UI/Style%20System/All%20styles",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://airtable.com/developers/extensions/api/UI/Style%20System/All%20styles"
+      },
+      {
+        "url": "https://airtable.com/images/favicon/baymax/favicon.svg?v=3",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://airtable.com/images/favicon/baymax/favicon.svg?v=3"
+      }
+    ],
+    "declarationCount": 4,
+    "declaredSourceUrl": "https://airtable.com/images/favicon/baymax/favicon.svg?v=3",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/svg+xml",
+    "bytes": 938,
+    "width": 66,
+    "height": 66,
+    "validation": "SVG passive-element/internal-reference checks and raster decode"
+  },
+  "monday": {
+    "src": "/site-favicons/monday.ico",
+    "sourceUrl": "https://vibe.monday.com/favicon.ico",
+    "pageUrl": "https://vibe.monday.com/",
+    "resolvedPageUrl": "https://vibe.monday.com/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://vibe.monday.com/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://vibe.monday.com/"
+      },
+      {
+        "url": "https://vibe.monday.com/favicon.ico",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://vibe.monday.com/favicon.ico"
+      }
+    ],
+    "declarationCount": 1,
+    "declaredSourceUrl": "https://vibe.monday.com/favicon.ico",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/vnd.microsoft.icon",
+    "bytes": 15406,
+    "width": 48,
+    "height": 48,
+    "validation": "ICO directory, frame bounds and PNG decode / DIB dimensions"
+  },
+  "vitamin": {
+    "src": null,
+    "sourceUrl": null,
+    "pageUrl": "https://decathlon.github.io/vitamin-web/",
+    "resolvedPageUrl": "https://decathlon.github.io/vitamin-web/",
+    "status": "missing",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://decathlon.github.io/vitamin-web/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://decathlon.github.io/vitamin-web/"
+      },
+      {
+        "url": "https://decathlon.github.io/favicon.ico",
+        "kind": "image",
+        "status": "failed",
+        "reason": "HTTP 404"
+      }
+    ],
+    "declarationCount": 0
+  },
+  "orbit": {
+    "src": "/site-favicons/orbit.png",
+    "sourceUrl": "https://github.githubassets.com/favicons/favicon.png",
+    "pageUrl": "https://github.com/kiwicom/orbit",
+    "resolvedPageUrl": "https://github.com/kiwicom/orbit",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://github.com/kiwicom/orbit",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://github.com/kiwicom/orbit"
+      },
+      {
+        "url": "https://github.githubassets.com/favicons/favicon.png",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://github.githubassets.com/favicons/favicon.png"
+      }
+    ],
+    "declarationCount": 3,
+    "declaredSourceUrl": "https://github.githubassets.com/favicons/favicon.png",
+    "method": "html-declaration",
+    "rel": "alternate icon",
+    "contentType": "image/png",
+    "bytes": 958,
+    "width": 32,
+    "height": 32,
+    "validation": "sharp metadata and pixel decode"
+  },
+  "apron": {
+    "src": "/site-favicons/apron.ico",
+    "sourceUrl": "https://www.figma.com/favicon.ico",
+    "pageUrl": "https://www.figma.com/community/file/847372282968994272/apron",
+    "resolvedPageUrl": null,
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://www.figma.com/community/file/847372282968994272/apron",
+        "kind": "page",
+        "status": "failed",
+        "reason": "HTTP 403"
+      },
+      {
+        "url": "https://www.figma.com/favicon.ico",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://www.figma.com/favicon.ico"
+      }
+    ],
+    "declaredSourceUrl": "https://www.figma.com/favicon.ico",
+    "method": "same-origin-fallback",
+    "rel": null,
+    "contentType": "image/x-icon",
+    "bytes": 16958,
+    "width": 64,
+    "height": 64,
+    "validation": "ICO directory, frame bounds and PNG decode / DIB dimensions"
+  },
+  "dbs": {
+    "src": "/site-favicons/dbs.ico",
+    "sourceUrl": "https://www.figma.com/favicon.ico",
+    "pageUrl": "https://www.figma.com/community/file/1273895245584027076/data-visualisation-dbs-bank",
+    "resolvedPageUrl": null,
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://www.figma.com/community/file/1273895245584027076/data-visualisation-dbs-bank",
+        "kind": "page",
+        "status": "failed",
+        "reason": "HTTP 403"
+      },
+      {
+        "url": "https://www.figma.com/favicon.ico",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://www.figma.com/favicon.ico"
+      }
+    ],
+    "declaredSourceUrl": "https://www.figma.com/favicon.ico",
+    "method": "same-origin-fallback",
+    "rel": null,
+    "contentType": "image/x-icon",
+    "bytes": 16958,
+    "width": 64,
+    "height": 64,
+    "validation": "ICO directory, frame bounds and PNG decode / DIB dimensions"
+  },
+  "finastra": {
+    "src": null,
+    "sourceUrl": null,
+    "pageUrl": "https://finastra.github.io/finastra-design-system/",
+    "resolvedPageUrl": "https://finastra.github.io/finastra-design-system/",
+    "status": "missing",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://finastra.github.io/finastra-design-system/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://finastra.github.io/finastra-design-system/"
+      },
+      {
+        "url": "https://finastra.github.io/favicon.ico",
+        "kind": "image",
+        "status": "failed",
+        "reason": "HTTP 404"
+      }
+    ],
+    "declarationCount": 0
+  },
+  "lion": {
+    "src": "/site-favicons/lion.svg",
+    "sourceUrl": "https://lion.js.org/favicon.svg",
+    "pageUrl": "https://lion.js.org/",
+    "resolvedPageUrl": "https://lion.js.org/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://lion.js.org/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://lion.js.org/"
+      },
+      {
+        "url": "https://lion.js.org/favicon.svg",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://lion.js.org/favicon.svg"
+      }
+    ],
+    "declarationCount": 1,
+    "declaredSourceUrl": "https://lion.js.org/favicon.svg",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/svg+xml",
+    "bytes": 749,
+    "width": 128,
+    "height": 128,
+    "validation": "SVG passive-element/internal-reference checks and raster decode"
+  },
+  "boosted": {
+    "src": "/site-favicons/boosted.png",
+    "sourceUrl": "https://boosted.orange.com/docs/5.3/assets/img/favicons/favicon-32x32.png",
+    "pageUrl": "https://boosted.orange.com/",
+    "resolvedPageUrl": "https://boosted.orange.com/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://boosted.orange.com/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://boosted.orange.com/"
+      },
+      {
+        "url": "https://boosted.orange.com/docs/5.3/assets/img/favicons/favicon-32x32.png",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://boosted.orange.com/docs/5.3/assets/img/favicons/favicon-32x32.png"
+      }
+    ],
+    "declarationCount": 5,
+    "declaredSourceUrl": "https://boosted.orange.com/docs/5.3/assets/img/favicons/favicon-32x32.png",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/png",
+    "bytes": 126,
+    "width": 32,
+    "height": 32,
+    "validation": "sharp metadata and pixel decode"
+  },
+  "calcite": {
+    "src": "/site-favicons/calcite.ico",
+    "sourceUrl": "https://developers.arcgis.com/favicon.ico",
+    "pageUrl": "https://developers.arcgis.com/calcite-design-system/",
+    "resolvedPageUrl": "https://developers.arcgis.com/calcite-design-system/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://developers.arcgis.com/calcite-design-system/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://developers.arcgis.com/calcite-design-system/"
+      },
+      {
+        "url": "https://developers.arcgis.com/favicon.ico",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://developers.arcgis.com/favicon.ico"
+      }
+    ],
+    "declarationCount": 4,
+    "declaredSourceUrl": "https://developers.arcgis.com/favicon.ico",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/vnd.microsoft.icon",
+    "bytes": 15086,
+    "width": 48,
+    "height": 48,
+    "validation": "ICO directory, frame bounds and PNG decode / DIB dimensions"
+  },
+  "lexicon": {
+    "src": "/site-favicons/lexicon.png",
+    "sourceUrl": "https://design.liferay.com/favicon-32x32.png?v=a3111ba5edc59505aa95969de54e7aa8",
+    "pageUrl": "https://design.liferay.com/lexicon/",
+    "resolvedPageUrl": "https://design.liferay.com/lexicon",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://design.liferay.com/lexicon/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://design.liferay.com/lexicon"
+      },
+      {
+        "url": "https://design.liferay.com/favicon-32x32.png?v=a3111ba5edc59505aa95969de54e7aa8",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://design.liferay.com/favicon-32x32.png?v=a3111ba5edc59505aa95969de54e7aa8"
+      }
+    ],
+    "declarationCount": 10,
+    "declaredSourceUrl": "https://design.liferay.com/favicon-32x32.png?v=a3111ba5edc59505aa95969de54e7aa8",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/png",
+    "bytes": 841,
+    "width": 32,
+    "height": 32,
+    "validation": "sharp metadata and pixel decode"
+  },
+  "vaadin": {
+    "src": "/site-favicons/vaadin.png",
+    "sourceUrl": "https://website.vaadin.com/hubfs/vaadin-favicon-32x32.png",
+    "pageUrl": "https://vaadin.com/design-system",
+    "resolvedPageUrl": "https://vaadin.com/design-system",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://vaadin.com/design-system",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://vaadin.com/design-system"
+      },
+      {
+        "url": "https://website.vaadin.com/hubfs/vaadin-favicon-32x32.png",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://website.vaadin.com/hubfs/vaadin-favicon-32x32.png"
+      }
+    ],
+    "declarationCount": 1,
+    "declaredSourceUrl": "https://website.vaadin.com/hubfs/vaadin-favicon-32x32.png",
+    "method": "html-declaration",
+    "rel": "shortcut icon",
+    "contentType": "image/png",
+    "bytes": 536,
+    "width": 32,
+    "height": 32,
+    "validation": "sharp metadata and pixel decode"
+  },
+  "falcon": {
+    "src": "/site-favicons/falcon.ico",
+    "sourceUrl": "https://www.figma.com/favicon.ico",
+    "pageUrl": "https://www.figma.com/community/file/1047401907024695662/speeda-designsystem-falcon",
+    "resolvedPageUrl": null,
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://www.figma.com/community/file/1047401907024695662/speeda-designsystem-falcon",
+        "kind": "page",
+        "status": "failed",
+        "reason": "HTTP 403"
+      },
+      {
+        "url": "https://www.figma.com/favicon.ico",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://www.figma.com/favicon.ico"
+      }
+    ],
+    "declaredSourceUrl": "https://www.figma.com/favicon.ico",
+    "method": "same-origin-fallback",
+    "rel": null,
+    "contentType": "image/x-icon",
+    "bytes": 16958,
+    "width": 64,
+    "height": 64,
+    "validation": "ICO directory, frame bounds and PNG decode / DIB dimensions"
+  },
+  "wfp": {
+    "src": "/site-favicons/wfp.png",
+    "sourceUrl": "https://uikit.wfp.org/docs/internal/wfp-favicon-png32.png",
+    "pageUrl": "https://uikit.wfp.org/docs/index.html",
+    "resolvedPageUrl": "https://uikit.wfp.org/docs/index.html",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://uikit.wfp.org/docs/index.html",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://uikit.wfp.org/docs/index.html"
+      },
+      {
+        "url": "https://uikit.wfp.org/docs/internal/wfp-favicon-png32.png",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://uikit.wfp.org/docs/internal/wfp-favicon-png32.png"
+      }
+    ],
+    "declarationCount": 2,
+    "declaredSourceUrl": "https://uikit.wfp.org/docs/internal/wfp-favicon-png32.png",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/png",
+    "bytes": 470,
+    "width": 32,
+    "height": 32,
+    "validation": "sharp metadata and pixel decode"
+  },
+  "kolibri": {
+    "src": "/site-favicons/kolibri.ico",
+    "sourceUrl": "https://public-ui.github.io/assets/favicon.ico",
+    "pageUrl": "https://public-ui.github.io/",
+    "resolvedPageUrl": "https://public-ui.github.io/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://public-ui.github.io/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://public-ui.github.io/"
+      },
+      {
+        "url": "https://public-ui.github.io/assets/favicon.ico",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://public-ui.github.io/assets/favicon.ico"
+      }
+    ],
+    "declarationCount": 1,
+    "declaredSourceUrl": "https://public-ui.github.io/assets/favicon.ico",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/vnd.microsoft.icon",
+    "bytes": 15086,
+    "width": 48,
+    "height": 48,
+    "validation": "ICO directory, frame bounds and PNG decode / DIB dimensions"
+  },
+  "dsfr": {
+    "src": null,
+    "sourceUrl": null,
+    "pageUrl": "https://www.systeme-de-design.gouv.fr/",
+    "resolvedPageUrl": null,
+    "status": "missing",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://www.systeme-de-design.gouv.fr/",
+        "kind": "page",
+        "status": "failed",
+        "reason": "HTTP 403"
+      },
+      {
+        "url": "https://www.systeme-de-design.gouv.fr/favicon.ico",
+        "kind": "image",
+        "status": "failed",
+        "reason": "HTTP 404"
+      }
+    ]
+  },
+  "reactaria": {
+    "src": "/site-favicons/reactaria.svg",
+    "sourceUrl": "https://react-aria.adobe.com/server/react-aria-favicon.0d52b4c6.svg",
+    "pageUrl": "https://react-aria.adobe.com/",
+    "resolvedPageUrl": "https://react-aria.adobe.com/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://react-aria.adobe.com/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://react-aria.adobe.com/"
+      },
+      {
+        "url": "https://react-aria.adobe.com/server/react-aria-favicon.0d52b4c6.svg",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://react-aria.adobe.com/server/react-aria-favicon.0d52b4c6.svg"
+      }
+    ],
+    "declarationCount": 1,
+    "declaredSourceUrl": "https://react-aria.adobe.com/server/react-aria-favicon.0d52b4c6.svg",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/svg+xml",
+    "bytes": 859,
+    "width": 800,
+    "height": 790,
+    "validation": "SVG passive-element/internal-reference checks and raster decode"
+  },
+  "ariakit": {
+    "src": "/site-favicons/ariakit.png",
+    "sourceUrl": "https://ariakit.com/favicon-32x32.png",
+    "pageUrl": "https://ariakit.com/",
+    "resolvedPageUrl": "https://ariakit.com/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://ariakit.com/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://ariakit.com/"
+      },
+      {
+        "url": "https://ariakit.com/favicon-32x32.png",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://ariakit.com/favicon-32x32.png"
+      }
+    ],
+    "declarationCount": 5,
+    "declaredSourceUrl": "https://ariakit.com/favicon-32x32.png",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/png",
+    "bytes": 694,
+    "width": 32,
+    "height": 32,
+    "validation": "sharp metadata and pixel decode"
+  },
+  "kobalte": {
+    "src": "/site-favicons/kobalte.ico",
+    "sourceUrl": "https://kobalte.dev/favicon.ico",
+    "pageUrl": "https://kobalte.dev/",
+    "resolvedPageUrl": "https://kobalte.dev/docs/core/overview/introduction",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://kobalte.dev/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://kobalte.dev/docs/core/overview/introduction"
+      },
+      {
+        "url": "https://kobalte.dev/favicon.ico",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://kobalte.dev/favicon.ico"
+      }
+    ],
+    "declarationCount": 4,
+    "declaredSourceUrl": "https://kobalte.dev/favicon.ico",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/vnd.microsoft.icon",
+    "bytes": 15406,
+    "width": 48,
+    "height": 48,
+    "validation": "ICO directory, frame bounds and PNG decode / DIB dimensions"
+  },
+  "bitsui": {
+    "src": "/site-favicons/bitsui.svg",
+    "sourceUrl": "https://bits-ui.com/favicon-light.svg",
+    "pageUrl": "https://bits-ui.com/",
+    "resolvedPageUrl": "https://bits-ui.com/",
+    "status": "ok",
+    "checkedAt": "2026-11-20T06:00:04.629Z",
+    "usage": "catalog-site-icon; permission-not-verified",
+    "attempts": [
+      {
+        "url": "https://bits-ui.com/",
+        "kind": "page",
+        "status": "ok",
+        "resolvedUrl": "https://bits-ui.com/"
+      },
+      {
+        "url": "https://bits-ui.com/favicon-light.svg",
+        "kind": "image",
+        "status": "ok",
+        "resolvedUrl": "https://bits-ui.com/favicon-light.svg"
+      }
+    ],
+    "declarationCount": 2,
+    "declaredSourceUrl": "https://bits-ui.com/favicon-light.svg",
+    "method": "html-declaration",
+    "rel": "icon",
+    "contentType": "image/svg+xml",
+    "bytes": 197,
+    "width": 11,
+    "height": 11,
+    "validation": "SVG passive-element/internal-reference checks and raster decode"
+  }
+}

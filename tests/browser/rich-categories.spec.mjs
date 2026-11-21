@@ -27,7 +27,7 @@ test('all specimen groups coexist while list thumbnails stay on the overview',as
   await expect(section.locator('iframe')).toHaveAttribute('src',new RegExp(`/astryx/${key}/`));
   await expect(page.frameLocator(`.component-section[data-view="${key}"] iframe`).locator('#specimen-root')).toHaveAttribute('data-ready','true');
  }
- await expect(page.locator('.system-row[href="/astryx/"] img')).toHaveAttribute('src','/specimens/list-thumbnails/astryx-overview.webp');
+ await expect(page.locator('.system-row[href="/astryx/"] .row-image > img')).toHaveAttribute('src','/specimens/list-thumbnails/astryx-overview.webp');
 });
 
 for(const id of ['coinbase','cloudscape'])test(`${id}: genuine dark theme and canvas remain in sync`,async({page})=>{

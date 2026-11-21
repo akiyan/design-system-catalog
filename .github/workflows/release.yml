@@ -53,6 +53,9 @@ jobs:
       - name: Install locked dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Validate official-site favicon assets
+        run: pnpm exec node --test tests/collect-site-favicons.test.mjs
+
       - name: Build static pages and specimen bundles
         run: pnpm build
 

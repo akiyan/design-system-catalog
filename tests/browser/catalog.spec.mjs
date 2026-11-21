@@ -142,7 +142,7 @@ test('all images load and desktop has no horizontal overflow', async ({page}) =>
   await expect(page.locator('.system-row')).toHaveCount(systems.length);
   for (const row of await page.locator('.system-row').all()) {
     await row.scrollIntoViewIfNeeded();
-    if(await row.locator('img').count())await expect.poll(()=>row.locator('img').evaluate(e=>e.complete&&e.naturalWidth>0)).toBe(true);
+    if(await row.locator('.row-image > img').count())await expect.poll(()=>row.locator('.row-image > img').evaluate(e=>e.complete&&e.naturalWidth>0)).toBe(true);
     else await expect(row.locator('.implementation-unavailable')).toBeVisible();
   }
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);

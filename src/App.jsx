@@ -4,6 +4,7 @@ import { systems, featuredIds, systemPath, systemFromPath, systemName } from './
 import { messages, detectLanguage } from './i18n';
 import SpecimenFrame from './SpecimenFrame';
 import previewThemes from './data/preview-themes.json';
+import siteFavicons from './data/site-favicons.json';
 
 const categories = ['all', 'public', 'oss'];
 const imagePath = (system, index = 0, compact = false) => system.specimen.status!=='ready'?`/previews/${system.id}-${system.views[index]?.referenceIndex ?? 0}.webp`:`/specimens/${compact ? 'list-thumbnails' : 'thumbnails'}/${system.id}-${system.views[index]?.key || 'overview'}.webp`;
@@ -16,6 +17,15 @@ function PreviewImage({ system, index = 0, language, compact = false, ...props }
   useEffect(() => setFailed(false), [src]);
   return failed ? <span className="image-unavailable"><ImageBroken size={32} weight="light" /><span>{t.unavailable}</span></span> :
     <img {...props} src={src} alt={`${systemName(system, language)} — ${viewLabel(system, index, language)} — ${system.specimen.status==='ready'?t.imageAlt:t.siteCapture}`} onError={() => setFailed(true)} />;
+}
+
+function SiteFavicon({ system, placement }) {
+  const src = siteFavicons[system.id]?.src;
+  const [failed, setFailed] = useState(false);
+  if (!src || failed) return null;
+  return <span className={`site-favicon site-favicon-${placement}`} aria-hidden="true">
+    <img src={src} alt="" width="24" height="24" decoding="async" onError={() => setFailed(true)} />
+  </span>;
 }
 
 function trapDialogFocus(event) {
@@ -300,8 +310,8 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
             event.preventDefault();
             selectSystem(s);
           }}>
-          <span className="row-image"><PreviewImage compact system={s} index={0} language={language} loading={s.id === selected.id ? 'eager' : 'lazy'} width="1440" height="1000" />{s.specimen.status!=='ready'?<span className="reference-badge">{t.siteCapture}</span>:null}</span>
-          <span className="row-copy"><span className="system-name">{systemName(s, language)}</span>{s.specimen.unstyled&&<span className="system-kind">{t.unstyled}</span>}
+          <span className="row-image"><PreviewImage compact system={s} index={0} language={language} loading={s.id === selected.id ? 'eager' : 'lazy'} width="1440" height="1000" /><SiteFavicon system={s} placement="thumbnail" />{s.specimen.status!=='ready'?<span className="reference-badge">{t.siteCapture}</span>:null}</span>
+          <span className="row-copy"><span className="system-name"><SiteFavicon system={s} placement="name" /><span>{systemName(s, language)}</span></span>{s.specimen.unstyled&&<span className="system-kind">{t.unstyled}</span>}
             <span className="system-meta"><span>{language === 'en' ? s.countryEn : s.country}</span><span className="meta-divider" aria-hidden="true" /><span>{t[s.category]}</span>
               <span className="release-line"><span className="meta-divider" aria-hidden="true" /><time dateTime={s.published.date}>{s.published.date}</time></span>
             </span>

@@ -112,6 +112,16 @@ a.system-row{cursor:pointer}
 
 .source-links{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px}.source-links a{min-height:24px;line-height:24px;vertical-align:middle}.source-links .source-repository{margin-left:0}.source-links svg{display:block;flex-shrink:0}
 
+/* Home cards use a top-right badge; list icons stay in the name's normal flow. */
+.site-favicon{pointer-events:none;flex-shrink:0}
+.site-favicon img{display:block;object-fit:contain;object-position:center}
+.site-favicon-thumbnail{display:none;position:absolute;top:8px;right:8px;z-index:1;place-items:center;width:36px;height:36px;padding:6px;background:#fff;border:1px solid #e5e8ed;border-radius:7px;box-shadow:0 1px 4px #11172214}
+.row-image .site-favicon img{width:24px;height:24px;max-width:100%;object-fit:contain}
+.system-row .system-name{display:flex;align-items:flex-start;gap:8px}
+.site-favicon-name{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;margin-top:.15em}
+.site-favicon-name img{width:20px;height:20px}
+@media(min-width:701px){.catalog-home .site-favicon-thumbnail{display:grid}.catalog-home .site-favicon-name{display:none}}
+
 /* The unselected desktop catalog fills the workspace with thumbnail cards. */
 .catalog-home .preview-panel{display:none}
 @media(min-width:701px){
