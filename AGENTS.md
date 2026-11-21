@@ -163,7 +163,7 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 
 - Reserve the external-link arrow icon for links that open a new tab. Enlargement opens an in-page dialog and uses the text label alone.
 
-- The copyright attribution @akiyan links to https://x.com/akiyan.
+- The copyright attribution @akiyan links to https://x.com/akiyan. Group three icon-only links at the footer's right edge, in order: globe to https://www.akiyan.com/blog/archives/2026/11/design-system-catalog.html, X to https://x.com/akiyan, GitHub to the catalog repository. Keep the addition-request link and accessible names for the icons.
 
 ## Site favicon prototype
 

@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useLayoutEffect, useRef, useState } from 'react';
-import { Globe, ArrowSquareOut, PlusCircle, ArrowLeft, CaretLeft, CaretRight, GithubLogo, Keyboard, X, ImageBroken, Cube, Sun, Moon, CircleHalf } from '@phosphor-icons/react';
+import { Globe, ArrowSquareOut, PlusCircle, ArrowLeft, CaretLeft, CaretRight, GithubLogo, XLogo, Keyboard, X, ImageBroken, Cube, Sun, Moon, CircleHalf } from '@phosphor-icons/react';
 import { systems, featuredIds, systemPath, systemFromPath, systemName } from './catalog';
 import { messages, detectLanguage } from './i18n';
 import SpecimenFrame from './SpecimenFrame';
@@ -368,7 +368,17 @@ export function App({ githubUrl = 'https://github.com/akiyan/design-system-catal
         </>:null}
       </section>
     </main>
-    <footer className="site-footer"><span>Copyright © 2026 <a href="https://x.com/akiyan" target="_blank" rel="noopener noreferrer">@akiyan</a></span><nav className="footer-links" aria-label={t.footerLinks}><a className="addition-request" href="https://github.com/akiyan/design-system-catalog/issues/new?template=add-design-system.yml" target="_blank" rel="noopener noreferrer"><PlusCircle size={17}/>{t.requestAddition}</a><a className="github-link" href={githubUrl} target="_blank" rel="noopener noreferrer"><GithubLogo size={19} weight="fill" aria-hidden="true" />GitHub</a></nav></footer>
+    <footer className="site-footer">
+      <span>Copyright © 2026 <a href="https://x.com/akiyan" target="_blank" rel="noopener noreferrer">@akiyan</a></span>
+      <nav className="footer-links" aria-label={t.footerLinks}>
+        <a className="addition-request" href="https://github.com/akiyan/design-system-catalog/issues/new?template=add-design-system.yml" target="_blank" rel="noopener noreferrer"><PlusCircle size={17} aria-hidden="true" />{t.requestAddition}</a>
+        <div className="footer-icons">
+          <a href="https://www.akiyan.com/blog/archives/2026/11/design-system-catalog.html" target="_blank" rel="noopener noreferrer" aria-label={t.aboutArticle} title={t.aboutArticle}><Globe size={19} aria-hidden="true" /></a>
+          <a href="https://x.com/akiyan" target="_blank" rel="noopener noreferrer" aria-label="@akiyan on X" title="@akiyan on X"><XLogo size={19} aria-hidden="true" /></a>
+          <a className="github-link" href={githubUrl} target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub"><GithubLogo size={19} weight="fill" aria-hidden="true" /></a>
+        </div>
+      </nav>
+    </footer>
     <dialog ref={zoomDialog} className="zoom-dialog" onKeyDown={trapDialogFocus} aria-labelledby="zoom-title" onCancel={() => setZoomOpen(false)} onClick={e => { if (e.target === zoomDialog.current) setZoomOpen(false); }}>
       <div className="zoom-toolbar"><h2 id="zoom-title">{systemName(selected, language)}<span>{viewLabel(selected, activeView, language)}</span></h2><button aria-label={t.closeZoom} onClick={() => setZoomOpen(false)}><X size={24} /></button></div>
       <div className="zoom-content">{zoomOpen&&(selected.specimen.status==='ready'?<SpecimenFrame theme={activePreviewTheme} system={selected} index={activeView} language={language} expanded onKey={key=>{if(key==='Escape')setZoomOpen(false);else window.dispatchEvent(new KeyboardEvent('keydown',{key}))}}/>:<PreviewImage system={selected} index={activeView} language={language}/>)}</div>

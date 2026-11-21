@@ -40,7 +40,13 @@ for(const id of ['coinbase','cloudscape'])test(`${id}: genuine dark theme and ca
 });
 test('footer has no external arrows and source-link text shares one baseline',async({page})=>{
  await page.goto('/dads/');await expect(page.locator('.catalog-app')).toHaveAttribute('data-ready','true');
- await expect(page.locator('.site-footer svg')).toHaveCount(2);
+ const footer=page.locator('.site-footer');
+ await expect(footer.locator('svg')).toHaveCount(4);
+ const icons=footer.locator('.footer-icons');
+ await expect(icons.getByRole('link')).toHaveCount(3);
+ await expect(icons.getByRole('link',{name:'カタログの紹介記事（akiyan.com）'})).toHaveAttribute('href','https://www.akiyan.com/blog/archives/2026/11/design-system-catalog.html');
+ await expect(icons.getByRole('link',{name:'@akiyan on X'})).toHaveAttribute('href','https://x.com/akiyan');
+ await expect(icons.getByRole('link',{name:'GitHub'})).toHaveAttribute('href','https://github.com/akiyan/design-system-catalog');
  await expect(page.locator('.source-links a')).toHaveCount(2);
  const positions=await page.locator('.source-links a').evaluateAll(links=>links.map(link=>{const range=document.createRange();range.selectNodeContents([...link.childNodes].find(node=>node.nodeType===Node.TEXT_NODE));const rect=range.getBoundingClientRect();return {y:rect.y,height:rect.height}}));
  expect(positions[0].y).toBe(positions[1].y);expect(positions[0].height).toBe(positions[1].height);
